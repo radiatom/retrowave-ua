@@ -1,7 +1,7 @@
 {
   "name": "retrowave",
   "version": "0.1.0",
-  "homepage": "https://radiatom.github.io/retrowave-player",
+  "homepage": "https://radiatom.github.io/retrowave-ua",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
