@@ -1,0 +1,26 @@
+.logo {
+    width: 580px;
+    height: 144px;
+    position: relative;
+    @media (max-width: 600px) {
+        width: 100%;
+        margin: 0;
+    }
+    &__img {
+        will-change: opacity;// це CSS властивість, яка дозволяє вказати браузеру, що елемент буде змінювати певні властивості, і браузер може підготуватися до цього, забезпечивши кращу продуктивність анімацій і перетворень. 
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        transition: opacity 0.4s ;
+        opacity: 1;
+        &.closed {
+            opacity: 0;
+        }
+        &.1 {
+            background-image: url("/img/logo.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    }
+}

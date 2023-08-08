@@ -1,0 +1,22 @@
+.rating {
+    display: inline-block;
+    &__item {
+        display: inline-block;
+        padding: 0 3px;
+        width: 24px;
+        height: 100%;
+        background-image: url("/img/icons/star.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+        &.active{
+            background-image: url("/img/icons/star_fill.svg");
+        }
+    }
+    &:hover &__item {
+        background-image: url("/img/icons/star_fill.svg");
+    }
+    &:hover &__item:hover ~ &__item {
+        background-image: url("/img/icons/star.svg");
+    }
+}

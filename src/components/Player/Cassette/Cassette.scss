@@ -1,0 +1,145 @@
+.cassette {
+    position: relative;
+    top: 0;
+    width: 310px;
+    height: 195px;
+    margin: 0 auto;
+    @media (max-width: 500px) {
+        width: 155px;
+        height: 97px;
+    }
+    &__downloadIcon {
+        will-change: opacity;
+        position: absolute;
+        top: 150px;
+        left: 10px;
+        z-index: 120;
+        width: 40px;
+        cursor: pointer;
+        transition: opacity 0.3s;
+        opacity: 0.5;
+        @media (max-width: 500px) {
+            width: 30px;
+            top: 69px;
+            left: 2px;
+        }
+        &:hover,&.active{
+            opacity: 1;
+        }
+    }
+    &__spoiler {
+        will-change: max-height; // це CSS властивість, яка дозволяє вказати браузеру, що елемент буде змінювати певні властивості, і браузер може підготуватися до цього, забезпечивши кращу продуктивність анімацій і перетворень.
+        position: absolute;
+        top: 197px;
+        left: 12px;
+        z-index: 120;
+        max-height: 0;
+        transition: max-height 0.5s;
+        overflow: hidden;
+        &.open {
+            max-height: 100px;
+        }
+        @media (max-width: 500px) {
+            top: 105px;
+            left: 6px;
+        }
+    }
+    &__body {
+        position: absolute;
+        z-index: 100;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: url("./../../../img/cassette-body.png") 0 0/100% 100%
+            no-repeat;
+    } //картинка касети
+    &__cover {
+        position: absolute;
+        z-index: 100;
+        top: 13px;
+        left: 16px;
+        width: 278px;
+        height: 132px;
+        background-color: #343331;
+        background-size: cover;
+        background-position: center center;
+        clip-path: polygon(
+            278px 132px,
+            278px 0,
+            0 0,
+            0 132px,
+            278px 132px,
+            67px 90px,
+            54px 80px,
+            54px 64px,
+            68px 52px,
+            210px 52px,
+            224px 65px,
+            224px 77px,
+            211px 90px,
+            67px 90px
+        ); //вирізання куска елемента в середині касети
+        @media (max-width: 500px) {
+            width: 139px;
+            height: 66px;
+            clip-path: none;
+            top: 7px;
+            left: 8px;
+        }
+    } //покриття касети
+    &__reel {
+        position: absolute;
+        z-index: 90;
+        top: 65px;
+        width: 34px;
+        height: 39px;
+        background: url("./../../../img/cassette-reel.png") 0 0/100% 100%
+            no-repeat; //кружок що обертається в касеті
+        background-repeat: no-repeat;
+        // box-shadow: 0 0 0 0;
+        color: #16181a;
+        border-radius: 50%;
+        // clip-path: circle(50% at 50% 50%);
+        &_left {
+            left: 72px;
+        }
+        &_right {
+            left: 204px;
+        }
+        @media (max-width: 500px) {
+            z-index: 100;
+            width: 17px;
+            height: 18.5px;
+            top: 32.3px;
+            &_left {
+                left: 36px;
+            }
+            &_right {
+                left: 102px;
+            }
+        }
+    } //колеса з анімацією де колесо повільніше обертається, коли не задана анімація на праве колесо то обидва будуть крутитись повільно
+}
+.download {
+    will-change: color; // це CSS властивість, яка дозволяє вказати браузеру, що елемент буде змінювати певні властивості, і браузер може підготуватися до цього, забезпечивши кращу продуктивність анімацій і перетворень.
+    display: flex;
+    justify-content: space-around;
+    width: 287px;
+    background-color: rgb(75, 25, 2);
+    border-radius: 0 0 15px 15px;
+    &__link {
+        padding: 0 5px;
+        width: 50px;
+        display: flex;
+        flex-direction: column;
+        color: #ff3ae6;
+        font-size: 16px;
+        transition: color 0.3s;
+        &:hover {
+            color: #fc7deb;
+        }
+    }
+    @media (max-width: 500px) {
+        width: 143px;
+    }
+}

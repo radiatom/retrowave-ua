@@ -1,0 +1,19 @@
+.time {
+    cursor: default;
+    &.elapsed {
+        display: inline-block;
+        vertical-align: bottom;
+        width: 80px;
+        line-height: 30px;
+        text-align: left;
+    } //лічильник
+    &.total {
+        display: inline-block;
+        vertical-align: bottom;
+        width: 60px;
+        line-height: 22px;
+        overflow: hidden;
+        color: #9cf1ff;
+        font-size: 18px;
+    }
+}
