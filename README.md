@@ -1,2 +1,2 @@
 #Retrovawe radio player
-page: "https://radiatom.github.io/retrowave-player",
+page: https://radiatom.github.io/retrowave-ua/,
