@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import "./Cassette.scss";
 import download from "./../../../img/icons/downloadMp3.svg";
-
+import list from './../../../img/icons/list.png'
 const Cassette = ({ music }) => {
     const [open, setOpen] = useState(false);
+    const [openList, setOpenList] = useState(false);
+
     return (
         <div className="cassette">
             {/*зображення касети*/}
@@ -12,6 +14,12 @@ const Cassette = ({ music }) => {
                 className={open?"cassette__downloadIcon active":"cassette__downloadIcon"}
                 src={download}
                 alt="download"
+            />
+            <img
+                onClick={() => setOpenList(!openList)}
+                className={openList?"cassette__listIcon active":"cassette__listIcon"}
+                src={list}
+                alt="list"
             />
             <div
                 className={

@@ -26,7 +26,7 @@ function App() {
             //виконається при першому заході на сторінку і коли в локал сторі нема данних
             dispatch(addMusics()); //відправити запит на пісні якщо наш стор пустий
         } else {
-            dispatch({ type: "addIndexsList" }); //створити масив рандомних чисел від 0-199
+            dispatch({ type: "crateRandomList" }); //створити масив рандомних треків
             dispatch({ type: "addMusic", position }); //завантажити трек під індексом 'position' перший раз
         }
     }, [totalMusicList]);
@@ -77,7 +77,7 @@ function App() {
                         <Logo />
                         <Player music={music} prev={prev} next={next} position={position}/>
                         <h2 className="theme__title"><span>{music.idTrack}.</span> {music.title}</h2>
-                        <h2 className="theme__title"><span>{position}.</span> {music.title}</h2>
+                        {/* <h2 className="theme__title"><span>{position}.</span> {music.title}</h2> */}
                         <Time
                             audioRef={audioRef}
                             duration={music.duration}

@@ -28,6 +28,27 @@
             opacity: 1;
         }
     }
+    &__listIcon {
+        will-change: opacity;
+        position: absolute;
+        top: 150px;
+        left: 260px;
+        z-index: 120;
+        width: 40px;
+        padding: 5px;
+        cursor: pointer;
+        transition: opacity 0.3s;
+        opacity: 0.5;
+        @media (max-width: 500px) {
+            width: 30px;
+            top: 69px;
+            left: 126px;
+        }
+        &:hover,
+        &.active {
+            opacity: 1;
+        }
+    }
     &__spoiler {
         will-change: max-height; // це CSS властивість, яка дозволяє вказати браузеру, що елемент буде змінювати певні властивості, і браузер може підготуватися до цього, забезпечивши кращу продуктивність анімацій і перетворень.
         position: absolute;

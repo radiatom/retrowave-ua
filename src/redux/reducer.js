@@ -3,7 +3,8 @@ import { allApi } from "../api/api";
 const initialState = {
     totalMusicList: [],
     music: {},
-    totalIndexsList: [],
+    randomList: [],
+    playList:'random',
     position: 0,
     volume: 50,
 };
@@ -16,24 +17,16 @@ const reducer = (state = initialState, action) => {
                 return state;
             }
         }
-        case "addIndexsList": {
-            const numbersArray = [];
-            for (let i = 0; i < state.totalMusicList.length; i++) {
-                numbersArray.push(i);
+        case "crateRandomList": {
+            const shuffledArray = [...state.totalMusicList];
+            for (let i = shuffledArray.length - 1; i > 0; i--) {
+              const j = Math.floor(Math.random() * (i + 1));
+              [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
             }
-            for (let i = numbersArray.length - 1; i > 0; i--) {
-                const j = Math.floor(Math.random() * (i + 1));
-                [numbersArray[i], numbersArray[j]] = [
-                    numbersArray[j],
-                    numbersArray[i],
-                ];
-            }
-            return { ...state, totalIndexsList: numbersArray };
+            return { ...state, randomList: shuffledArray  };
         }
         case "addMusic": {
-            const music =
-                state.totalMusicList[state.totalIndexsList[action.position]];
-            return { ...state, music: music };
+            if(state.playList==='random'){return {...state, music:state.randomList[action.position]}};
         }
         case "setPosition": {
             return { ...state, position: action.position };
@@ -71,27 +64,3 @@ export const addMusics = () => async (dispatch) => {
     dispatch({ type: "addMusicList", data:updatedData });
 };
 export default reducer;
-
-// tracks= [
-//     {
-//     "id": "594ea8427e44a724a5ce1782c3d3dcf058735e1e",
-//     "title": "Muscle – All My Ex's Died In Texas",
-//     "duration": 249000,
-//     "streamUrl": "/audio/594ea8427e44a724a5ce1782c3d3dcf058735e1e.mp3",
-//     "artworkUrl": "/artwork/594ea8427e44a724a5ce1782c3d3dcf058735e1e.jpg"
-//     },
-//     {
-//     "id": "9341a4b27134252d998579054639c1a4c7e00d11",
-//     "title": "GUNSHIP – Revel in Your Time",
-//     "duration": 247704.25,
-//     "streamUrl": "/audio/9341a4b27134252d998579054639c1a4c7e00d11.mp3",
-//     "artworkUrl": "/artwork/9341a4b27134252d998579054639c1a4c7e00d11.jpg"
-//     },
-//     {
-//     "id": "83e93a0a5131b43b7050eb3bf9b57299ce031afe",
-//     "title": "Botnit – Jupiter Style",
-//     "duration": 398000,
-//     "streamUrl": "/audio/83e93a0a5131b43b7050eb3bf9b57299ce031afe.mp3",
-//     "artworkUrl": "/artwork/83e93a0a5131b43b7050eb3bf9b57299ce031afe.jpg"
-//     },
-// ]
