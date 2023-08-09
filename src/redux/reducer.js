@@ -18,7 +18,7 @@ const reducer = (state = initialState, action) => {
         }
         case "addIndexsList": {
             const numbersArray = [];
-            for (let i = 0; i < 199; i++) {
+            for (let i = 0; i < state.totalMusicList.length; i++) {
                 numbersArray.push(i);
             }
             for (let i = numbersArray.length - 1; i > 0; i--) {
@@ -64,9 +64,9 @@ export const addMusics = () => async (dispatch) => {
     const updatedData = data.map((track,index) => ({
         ...track,
         rating: 0,
-        idTrack:index+1
-        // artworkUrl:"https://retrowave.ru"+track.artworkUrl,
-        // streamUrl:"https://retrowave.ru"+track.streamUrl
+        idTrack:index+1,
+        artworkUrl:"https://retrowave.ru"+track.artworkUrl,//для api
+        streamUrl:"https://retrowave.ru"+track.streamUrl//для api
     }));
     dispatch({ type: "addMusicList", data:updatedData });
 };
