@@ -65,8 +65,8 @@ export const addMusics = () => async (dispatch) => {
         ...track,
         rating: 0,
         idTrack:index+1,
-        artworkUrl:"https://retrowave.ru"+track.artworkUrl,//для api
-        streamUrl:"https://retrowave.ru"+track.streamUrl//для api
+        // artworkUrl:"https://retrowave.ru"+track.artworkUrl,//для api
+        // streamUrl:"https://retrowave.ru"+track.streamUrl//для api
     }));
     dispatch({ type: "addMusicList", data:updatedData });
 };

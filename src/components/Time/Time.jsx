@@ -12,8 +12,10 @@ const Time = ({ duration, audioRef, next }) => {
 console.log(newTime(150))
     const [time, setTime] = useState(0);
     useEffect(() => {
-        const timesSeconds = parseInt(duration.toString().substr(0, 3));
-        setTime(newTime(timesSeconds));
+        if(duration>0){
+            const timesSeconds = parseInt(duration.toString().substr(0, 3));
+            setTime(newTime(timesSeconds));
+        }
     }, [duration]); //перетворення мілісекунд з реквеста в хвилини це є загальна довжина треку
 
     useEffect(() => {
