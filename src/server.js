@@ -596,7 +596,76 @@ const img298 = `${process.env.PUBLIC_URL}/artwork/9a3ccfcdc1393277bc6005c86fd297
 const track298 = `${process.env.PUBLIC_URL}/audio/9a3ccfcdc1393277bc6005c86fd2977089c16284.mp3`;
 const img299 = `${process.env.PUBLIC_URL}/artwork/ee1ab0a93274e1e08c4500f3eb8e49c29d35d8fa.jpg`;
 const track299 = `${process.env.PUBLIC_URL}/audio/ee1ab0a93274e1e08c4500f3eb8e49c29d35d8fa.mp3`;
-
+const img300 = `${process.env.PUBLIC_URL}/artwork/d93e764bb7c8c28d235f2d7520bca7da9adf7090.jpg`;
+const track300 = `${process.env.PUBLIC_URL}/audio/d93e764bb7c8c28d235f2d7520bca7da9adf7090.mp3`;
+const img301 = `${process.env.PUBLIC_URL}/artwork/e648f122678f17549e84aa2fb55f0ab046495b54.jpg`;
+const track301 = `${process.env.PUBLIC_URL}/audio/e648f122678f17549e84aa2fb55f0ab046495b54.mp3`;
+const img302 = `${process.env.PUBLIC_URL}/artwork/c2490e19575b503d43b083913525a7f3d48d7164.jpg`;
+const track302 = `${process.env.PUBLIC_URL}/audio/c2490e19575b503d43b083913525a7f3d48d7164.mp3`;
+const img303 = `${process.env.PUBLIC_URL}/artwork/5705080a6bad0d7b4ea8704234c237a68c1cd9b4.jpg`;
+const track303 = `${process.env.PUBLIC_URL}/audio/5705080a6bad0d7b4ea8704234c237a68c1cd9b4.mp3`;
+const img304 = `${process.env.PUBLIC_URL}/artwork/4cfe64e8052e910e4370cdead00b706ea6bbf279.jpg`;
+const track304 = `${process.env.PUBLIC_URL}/audio/4cfe64e8052e910e4370cdead00b706ea6bbf279.mp3`;
+const img305 = `${process.env.PUBLIC_URL}/artwork/abf58ed918bfb1b4a4b8f93ab208b0ce56e258f2.jpg`;
+const track305 = `${process.env.PUBLIC_URL}/audio/abf58ed918bfb1b4a4b8f93ab208b0ce56e258f2.mp3`;
+const img306 = `${process.env.PUBLIC_URL}/artwork/7aac5c4753ca9859e3c67685c72b5a8529f14e67.jpg`;
+const track306 = `${process.env.PUBLIC_URL}/audio/7aac5c4753ca9859e3c67685c72b5a8529f14e67.mp3`;
+const img307 = `${process.env.PUBLIC_URL}/artwork/1b1b89bc8ab9d0d19274190e6b5d50cc292dee96.jpg`;
+const track307 = `${process.env.PUBLIC_URL}/audio/1b1b89bc8ab9d0d19274190e6b5d50cc292dee96.mp3`;
+const img308 = `${process.env.PUBLIC_URL}/artwork/9a2e79f2a904d52481f9a692837de243596e06ed.jpg`;
+const track308 = `${process.env.PUBLIC_URL}/audio/9a2e79f2a904d52481f9a692837de243596e06ed.mp3`;
+const img309 = `${process.env.PUBLIC_URL}/artwork/b5fe4283a475ec0a61e0bf0ce173676f6e83f504.jpg`;
+const track309 = `${process.env.PUBLIC_URL}/audio/b5fe4283a475ec0a61e0bf0ce173676f6e83f504.mp3`;
+const img310 = `${process.env.PUBLIC_URL}/artwork/42aa24303041266a446cf3ebbc0409db2cba4b5f.jpg`;
+const track310 = `${process.env.PUBLIC_URL}/audio/42aa24303041266a446cf3ebbc0409db2cba4b5f.mp3`;
+const img311 = `${process.env.PUBLIC_URL}/artwork/7747de1cdc8b332b962da47174adbf709fb3c970.jpg`;
+const track311 = `${process.env.PUBLIC_URL}/audio/7747de1cdc8b332b962da47174adbf709fb3c970.mp3`;
+const img312 = `${process.env.PUBLIC_URL}/artwork/a44fa631a47b8bf2eb253ff72da2ea9d3c8ecd20.jpg`;
+const track312 = `${process.env.PUBLIC_URL}/audio/a44fa631a47b8bf2eb253ff72da2ea9d3c8ecd20.mp3`;
+const img313 = `${process.env.PUBLIC_URL}/artwork/55d26f152537801780f812ffab63b5aa6567c0f2.jpg`;
+const track313 = `${process.env.PUBLIC_URL}/audio/55d26f152537801780f812ffab63b5aa6567c0f2.mp3`;
+const img314 = `${process.env.PUBLIC_URL}/artwork/c8774500da6af4b048e560ba4f85c26ffc9a1fd6.jpg`;
+const track314 = `${process.env.PUBLIC_URL}/audio/c8774500da6af4b048e560ba4f85c26ffc9a1fd6.mp3`;
+const img315 = `${process.env.PUBLIC_URL}/artwork/b5eb9b5e12d2cb3a3c1ec3bccb22d140ca6231bb.jpg`;
+const track315 = `${process.env.PUBLIC_URL}/audio/b5eb9b5e12d2cb3a3c1ec3bccb22d140ca6231bb.mp3`;
+const img316 = `${process.env.PUBLIC_URL}/artwork/15e9642798b73e75e4f99ad4547b9368d2b8ad83.jpg`;
+const track316 = `${process.env.PUBLIC_URL}/audio/15e9642798b73e75e4f99ad4547b9368d2b8ad83.mp3`;
+const img317 = `${process.env.PUBLIC_URL}/artwork/6ae33f6d06cab43ea5bd7b4d676df702d96d8bba.jpg`;
+const track317 = `${process.env.PUBLIC_URL}/audio/6ae33f6d06cab43ea5bd7b4d676df702d96d8bba.mp3`;
+const img318 = `${process.env.PUBLIC_URL}/artwork/d93e764bb7c8c28d235f2d7520bca7da9adf7090.jpg`;
+const track318 = `${process.env.PUBLIC_URL}/audio/d93e764bb7c8c28d235f2d7520bca7da9adf7090.mp3`;
+const img319 = `${process.env.PUBLIC_URL}/artwork/e648f122678f17549e84aa2fb55f0ab046495b54.jpg`;
+const track319 = `${process.env.PUBLIC_URL}/audio/e648f122678f17549e84aa2fb55f0ab046495b54.mp3`;
+const img320 = `${process.env.PUBLIC_URL}/artwork/c2490e19575b503d43b083913525a7f3d48d7164.jpg`;
+const track320 = `${process.env.PUBLIC_URL}/audio/c2490e19575b503d43b083913525a7f3d48d7164.mp3`;
+const img321 = `${process.env.PUBLIC_URL}/artwork/5705080a6bad0d7b4ea8704234c237a68c1cd9b4.jpg`;
+const track321 = `${process.env.PUBLIC_URL}/audio/5705080a6bad0d7b4ea8704234c237a68c1cd9b4.mp3`;
+const img322 = `${process.env.PUBLIC_URL}/artwork/4cfe64e8052e910e4370cdead00b706ea6bbf279.jpg`;
+const track322 = `${process.env.PUBLIC_URL}/audio/4cfe64e8052e910e4370cdead00b706ea6bbf279.mp3`;
+const img323 = `${process.env.PUBLIC_URL}/artwork/abf58ed918bfb1b4a4b8f93ab208b0ce56e258f2.jpg`;
+const track323 = `${process.env.PUBLIC_URL}/audio/abf58ed918bfb1b4a4b8f93ab208b0ce56e258f2.mp3`;
+const img324 = `${process.env.PUBLIC_URL}/artwork/7aac5c4753ca9859e3c67685c72b5a8529f14e67.jpg`;
+const track324 = `${process.env.PUBLIC_URL}/audio/7aac5c4753ca9859e3c67685c72b5a8529f14e67.mp3`;
+const img325 = `${process.env.PUBLIC_URL}/artwork/1b1b89bc8ab9d0d19274190e6b5d50cc292dee96.jpg`;
+const track325 = `${process.env.PUBLIC_URL}/audio/1b1b89bc8ab9d0d19274190e6b5d50cc292dee96.mp3`;
+const img326 = `${process.env.PUBLIC_URL}/artwork/9a2e79f2a904d52481f9a692837de243596e06ed.jpg`;
+const track326 = `${process.env.PUBLIC_URL}/audio/9a2e79f2a904d52481f9a692837de243596e06ed.mp3`;
+const img327 = `${process.env.PUBLIC_URL}/artwork/b5fe4283a475ec0a61e0bf0ce173676f6e83f504.jpg`;
+const track327 = `${process.env.PUBLIC_URL}/audio/b5fe4283a475ec0a61e0bf0ce173676f6e83f504.mp3`;
+const img328 = `${process.env.PUBLIC_URL}/artwork/42aa24303041266a446cf3ebbc0409db2cba4b5f.jpg`;
+const track328 = `${process.env.PUBLIC_URL}/audio/42aa24303041266a446cf3ebbc0409db2cba4b5f.mp3`;
+const img329 = `${process.env.PUBLIC_URL}/artwork/7747de1cdc8b332b962da47174adbf709fb3c970.jpg`;
+const track329 = `${process.env.PUBLIC_URL}/audio/7747de1cdc8b332b962da47174adbf709fb3c970.mp3`;
+const img330 = `${process.env.PUBLIC_URL}/artwork/a44fa631a47b8bf2eb253ff72da2ea9d3c8ecd20.jpg`;
+const track330 = `${process.env.PUBLIC_URL}/audio/a44fa631a47b8bf2eb253ff72da2ea9d3c8ecd20.mp3`;
+const img331 = `${process.env.PUBLIC_URL}/artwork/55d26f152537801780f812ffab63b5aa6567c0f2.jpg`;
+const track331 = `${process.env.PUBLIC_URL}/audio/55d26f152537801780f812ffab63b5aa6567c0f2.mp3`;
+const img332 = `${process.env.PUBLIC_URL}/artwork/c8774500da6af4b048e560ba4f85c26ffc9a1fd6.jpg`;
+const track332 = `${process.env.PUBLIC_URL}/audio/c8774500da6af4b048e560ba4f85c26ffc9a1fd6.mp3`;
+const img333 = `${process.env.PUBLIC_URL}/artwork/b5eb9b5e12d2cb3a3c1ec3bccb22d140ca6231bb.jpg`;
+const track333 = `${process.env.PUBLIC_URL}/audio/b5eb9b5e12d2cb3a3c1ec3bccb22d140ca6231bb.mp3`;
+const img334 = `${process.env.PUBLIC_URL}/artwork/15e9642798b73e75e4f99ad4547b9368d2b8ad83.jpg`;
+const track334 = `${process.env.PUBLIC_URL}/audio/15e9642798b73e75e4f99ad4547b9368d2b8ad83.mp3`;
 const data = [
     {
         id: "5d4ca036e66f3ae771c008e56b111d116f7142cb",
@@ -2690,6 +2759,251 @@ const data = [
         duration: 249132.5,
         streamUrl: track299,
         artworkUrl: img299,
+    },
+    {
+        id: "d93e764bb7c8c28d235f2d7520bca7da9adf7090",
+        title: "Makeup and Vanity Set – From a Distance (Theme from Hit TV)",
+        duration: 274000,
+        streamUrl: track300,
+        artworkUrl: img300,
+    },
+    {
+        id: "e648f122678f17549e84aa2fb55f0ab046495b54",
+        title: "ALEX – Occult",
+        duration: 331000,
+        streamUrl: track301,
+        artworkUrl: img301,
+    },
+    {
+        id: "c2490e19575b503d43b083913525a7f3d48d7164",
+        title: "Danger Mode – Meridian Cruisin'",
+        duration: 178000,
+        streamUrl: track302,
+        artworkUrl: img302,
+    },
+    {
+        id: "5705080a6bad0d7b4ea8704234c237a68c1cd9b4",
+        title: "Run Vaylor – Rush",
+        duration: 209000,
+        streamUrl: track303,
+        artworkUrl: img303,
+    },
+    {
+        id: "4cfe64e8052e910e4370cdead00b706ea6bbf279",
+        title: "Meteor – Night Riders",
+        duration: 199000,
+        streamUrl: track304,
+        artworkUrl: img304,
+    },
+    {
+        id: "abf58ed918bfb1b4a4b8f93ab208b0ce56e258f2",
+        title: "Judge Bitch – Striker (feat. Perturbator)",
+        duration: 186000,
+        streamUrl: track305,
+        artworkUrl: img305,
+    },
+    {
+        id: "7aac5c4753ca9859e3c67685c72b5a8529f14e67",
+        title: "Prius An Sich – Hyperion Booster",
+        duration: 273244.25,
+        streamUrl: track306,
+        artworkUrl: img306,
+    },
+    {
+        id: "1b1b89bc8ab9d0d19274190e6b5d50cc292dee96",
+        title: "Judge Bitch – MDK",
+        duration: 220000,
+        streamUrl: track307,
+        artworkUrl: img307,
+    },
+    {
+        id: "9a2e79f2a904d52481f9a692837de243596e06ed",
+        title: "Miami Nights 1984 – Saved By The Bell",
+        duration: 266000,
+        streamUrl: track308,
+        artworkUrl: img308,
+    },
+    {
+        id: "b5fe4283a475ec0a61e0bf0ce173676f6e83f504",
+        title: "DATAStream – Cinder Sunset",
+        duration: 334000,
+        streamUrl: track309,
+        artworkUrl: img309,
+    },
+    {
+        id: "42aa24303041266a446cf3ebbc0409db2cba4b5f",
+        title: "Highway Superstar – Save You (feat. Sebastian Gampl & Miranda Carey)",
+        duration: 336312.25,
+        streamUrl: track310,
+        artworkUrl: img310,
+    },
+    {
+        id: "7747de1cdc8b332b962da47174adbf709fb3c970",
+        title: "Carpenter Brut – Hang'Em All",
+        duration: 337000,
+        streamUrl: track311,
+        artworkUrl: img311,
+    },
+    {
+        id: "a44fa631a47b8bf2eb253ff72da2ea9d3c8ecd20",
+        title: "Street Cleaner – Nightlife",
+        duration: 200000,
+        streamUrl: track312,
+        artworkUrl: img312,
+    },
+    {
+        id: "55d26f152537801780f812ffab63b5aa6567c0f2",
+        title: "D/A/D – Backbone of the Night",
+        duration: 292000,
+        streamUrl: track313,
+        artworkUrl: img313,
+    },
+    {
+        id: "c8774500da6af4b048e560ba4f85c26ffc9a1fd6",
+        title: "Compilerbau – Leaving Earth",
+        duration: 338000,
+        streamUrl: track314,
+        artworkUrl: img314,
+    },
+    {
+        id: "b5eb9b5e12d2cb3a3c1ec3bccb22d140ca6231bb",
+        title: "Mega Drive – Crimewave",
+        duration: 296000,
+        streamUrl: track315,
+        artworkUrl: img315,
+    },
+    {
+        id: "15e9642798b73e75e4f99ad4547b9368d2b8ad83",
+        title: "Meteor – Grim Memories",
+        duration: 327000,
+        streamUrl: track316,
+        artworkUrl: img316,
+    },
+    {
+        id: "6ae33f6d06cab43ea5bd7b4d676df702d96d8bba",
+        title: "Block 35 – Skyline",
+        duration: 275000,
+        streamUrl: track317,
+        artworkUrl: img317,
+    },
+    {
+        id: "d93e764bb7c8c28d235f2d7520bca7da9adf7090",
+        title: "Makeup and Vanity Set – From a Distance (Theme from Hit TV)",
+        duration: 274000,
+        streamUrl: track318,
+        artworkUrl: img318,
+    },
+    {
+        id: "e648f122678f17549e84aa2fb55f0ab046495b54",
+        title: "ALEX – Occult",
+        duration: 331000,
+        streamUrl: track319,
+        artworkUrl: img319,
+    },
+    {
+        id: "c2490e19575b503d43b083913525a7f3d48d7164",
+        title: "Danger Mode – Meridian Cruisin'",
+        duration: 178000,
+        streamUrl: track320,
+        artworkUrl: img320,
+    },
+    {
+        id: "5705080a6bad0d7b4ea8704234c237a68c1cd9b4",
+        title: "Run Vaylor – Rush",
+        duration: 209000,
+        streamUrl: track321,
+        artworkUrl: img321,
+    },
+    {
+        id: "4cfe64e8052e910e4370cdead00b706ea6bbf279",
+        title: "Meteor – Night Riders",
+        duration: 199000,
+        streamUrl: track322,
+        artworkUrl: img322,
+    },
+    {
+        id: "abf58ed918bfb1b4a4b8f93ab208b0ce56e258f2",
+        title: "Judge Bitch – Striker (feat. Perturbator)",
+        duration: 186000,
+        streamUrl: track323,
+        artworkUrl: img323,
+    },
+    {
+        id: "7aac5c4753ca9859e3c67685c72b5a8529f14e67",
+        title: "Prius An Sich – Hyperion Booster",
+        duration: 273244.25,
+        streamUrl: track324,
+        artworkUrl: img324,
+    },
+    {
+        id: "1b1b89bc8ab9d0d19274190e6b5d50cc292dee96",
+        title: "Judge Bitch – MDK",
+        duration: 220000,
+        streamUrl: track325,
+        artworkUrl: img325,
+    },
+    {
+        id: "9a2e79f2a904d52481f9a692837de243596e06ed",
+        title: "Miami Nights 1984 – Saved By The Bell",
+        duration: 266000,
+        streamUrl: track326,
+        artworkUrl: img326,
+    },
+    {
+        id: "b5fe4283a475ec0a61e0bf0ce173676f6e83f504",
+        title: "DATAStream – Cinder Sunset",
+        duration: 334000,
+        streamUrl: track327,
+        artworkUrl: img327,
+    },
+    {
+        id: "42aa24303041266a446cf3ebbc0409db2cba4b5f",
+        title: "Highway Superstar – Save You (feat. Sebastian Gampl & Miranda Carey)",
+        duration: 336312.25,
+        streamUrl: track328,
+        artworkUrl: img328,
+    },
+    {
+        id: "7747de1cdc8b332b962da47174adbf709fb3c970",
+        title: "Carpenter Brut – Hang'Em All",
+        duration: 337000,
+        streamUrl: track329,
+        artworkUrl: img329,
+    },
+    {
+        id: "a44fa631a47b8bf2eb253ff72da2ea9d3c8ecd20",
+        title: "Street Cleaner – Nightlife",
+        duration: 200000,
+        streamUrl: track330,
+        artworkUrl: img330,
+    },
+    {
+        id: "55d26f152537801780f812ffab63b5aa6567c0f2",
+        title: "D/A/D – Backbone of the Night",
+        duration: 292000,
+        streamUrl: track331,
+        artworkUrl: img331,
+    },
+    {
+        id: "c8774500da6af4b048e560ba4f85c26ffc9a1fd6",
+        title: "Compilerbau – Leaving Earth",
+        duration: 338000,
+        streamUrl: track332,
+        artworkUrl: img332,
+    },
+    {
+        id: "b5eb9b5e12d2cb3a3c1ec3bccb22d140ca6231bb",
+        title: "Mega Drive – Crimewave",
+        duration: 296000,
+        streamUrl: track333,
+        artworkUrl: img333,
+    },
+    {
+        id: "15e9642798b73e75e4f99ad4547b9368d2b8ad83",
+        title: "Meteor – Grim Memories",
+        duration: 327000,
+        streamUrl: track334,
+        artworkUrl: img334,
     },
 ];
 export const getData = () => {
