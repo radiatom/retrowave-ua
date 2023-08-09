@@ -3,13 +3,13 @@ import "./Time.scss";
 
 const Time = ({ duration, audioRef, next }) => {
     const newTime = (second) => {
-        const minutes = Math.round(second / 60);
+        const minutes = Math.floor(second / 60);
         const remainingSeconds = second % 60;
         return `${minutes}:${
             remainingSeconds < 10 ? "0" : ""
         }${remainingSeconds}`;
     }; //функція для перетворення мілісекунд в хвилини
-
+console.log(newTime(150))
     const [time, setTime] = useState(0);
     useEffect(() => {
         const timesSeconds = duration / 1000;

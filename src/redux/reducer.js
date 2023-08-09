@@ -61,9 +61,10 @@ const reducer = (state = initialState, action) => {
 };
 export const addMusics = () => async (dispatch) => {
     const data = await allApi.getAddMusics();
-    const updatedData = data.map(track => ({
+    const updatedData = data.map((track,index) => ({
         ...track,
         rating: 0,
+        idTrack:index+1
         // artworkUrl:"https://retrowave.ru"+track.artworkUrl,
         // streamUrl:"https://retrowave.ru"+track.streamUrl
     }));
