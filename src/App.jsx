@@ -20,16 +20,18 @@ function App() {
     const dispatch = useDispatch();
     const audioRef = useRef(null);
     const [back, setBack] = useState(false); //завантаження фонової картинки
+    
+
     useEffect(() => {
         setBack(true); //заблюрити фон
         if (totalMusicList.length === 0) {
             //виконається при першому заході на сторінку і коли в локал сторі нема данних
             dispatch(addMusics()); //відправити запит на пісні якщо наш стор пустий
-        } else {
+        }else {
             dispatch({ type: "crateRandomList" }); //створити масив рандомних треків
             dispatch({ type: "addMusic", position }); //завантажити трек під індексом 'position' перший раз
         }
-    }, [totalMusicList]);
+    }, [totalMusicList.length]);
 
     useEffect(() => {
         dispatch({ type: "addMusic", position }); //завантажити трек під індексом 'position' при зміні позиції

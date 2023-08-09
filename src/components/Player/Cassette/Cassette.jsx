@@ -2,10 +2,15 @@ import React, { useState } from "react";
 import "./Cassette.scss";
 import download from "./../../../img/icons/downloadMp3.svg";
 import list from './../../../img/icons/list.png'
+import { useDispatch } from "react-redux";
 const Cassette = ({ music }) => {
     const [open, setOpen] = useState(false);
     const [openList, setOpenList] = useState(false);
-
+    const dispatch = useDispatch()
+    const clickListIcon=()=>{
+        dispatch({type:"crateRatingList"})
+        dispatch({type:"setPosition",position:0})
+    }
     return (
         <div className="cassette">
             {/*зображення касети*/}
@@ -16,7 +21,8 @@ const Cassette = ({ music }) => {
                 alt="download"
             />
             <img
-                onClick={() => setOpenList(!openList)}
+                // onClick={() => setOpenList(!openList)}
+                onClick={()=>clickListIcon()}
                 className={openList?"cassette__listIcon active":"cassette__listIcon"}
                 src={list}
                 alt="list"

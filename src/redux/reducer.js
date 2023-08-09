@@ -3,8 +3,11 @@ import { allApi } from "../api/api";
 const initialState = {
     totalMusicList: [],
     music: {},
+    playList: "",
     randomList: [],
-    playList:'random',
+    defaultList: [],
+    ratingList: [],
+    userList: [],
     position: 0,
     volume: 50,
 };
@@ -18,15 +21,53 @@ const reducer = (state = initialState, action) => {
             }
         }
         case "crateRandomList": {
-            const shuffledArray = [...state.totalMusicList];
-            for (let i = shuffledArray.length - 1; i > 0; i--) {
-              const j = Math.floor(Math.random() * (i + 1));
-              [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
+            if (state.randomList.length === 0) {
+                const shuffledArray = [...state.totalMusicList];
+                for (let i = shuffledArray.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [shuffledArray[i], shuffledArray[j]] = [
+                        shuffledArray[j],
+                        shuffledArray[i],
+                    ];
+                }
+                return {
+                    ...state,
+                    playList: "random",
+                    randomList: shuffledArray,
+                };
+            } else {
+                return state;
             }
-            return { ...state, randomList: shuffledArray  };
+        }
+        case "crateDefaultList": {
+            return {
+                ...state,
+                playList: "default",
+                defaultList: state.totalMusicList,
+            };
+        }
+        case "crateRatingList": {
+            const newArray = [...state.totalMusicList];
+            newArray.sort((a, b) => b.rating - a.rating);
+            return { ...state, playList: "rating", ratingList: newArray };
         }
         case "addMusic": {
-            if(state.playList==='random'){return {...state, music:state.randomList[action.position]}};
+            switch (state.playList) {
+                case "random": {
+                    return {
+                        ...state,
+                        music: state.randomList[action.position],
+                    };
+                }
+                case "rating": {
+                    return {
+                        ...state,
+                        music: state.ratingList[action.position],
+                    };
+                }
+                default:
+                    return state;
+            }
         }
         case "setPosition": {
             return { ...state, position: action.position };
@@ -35,8 +76,8 @@ const reducer = (state = initialState, action) => {
             return { ...state, volume: action.volume };
         }
         case "setRating": {
-            const updateValueById=(array, idToFind, newValue) =>{
-                const updatedArray = array.map(item => {
+            const updateValueById = (array, idToFind, newValue) => {
+                const updatedArray = array.map((item) => {
                     if (item.id === idToFind) {
                         // Копіюємо об'єкт і змінюємо значення
                         return { ...item, rating: newValue };
@@ -44,9 +85,35 @@ const reducer = (state = initialState, action) => {
                     return item;
                 });
                 return updatedArray;
-            }//шукаємо обєкт по айді , змінюємо його рейтинг, та вертаємо новий масив з новими данними
-            const updatedArray = updateValueById(state.totalMusicList, action.id, action.rating)
-            return { ...state, totalMusicList: updatedArray,music:{...state.music, rating: action.rating} };
+            };
+            const updatedTotalMusicList = updateValueById(
+                state.totalMusicList,
+                action.id,
+                action.rating
+            ); //шукаємо обєкт по айді , змінюємо його рейтинг, та вертаємо новий масив з новими данними
+            const updatedRandomList = updateValueById(
+                state.randomList,
+                action.id,
+                action.rating
+            ); //шукаємо обєкт по айді , змінюємо його рейтинг, та вертаємо новий масив з новими данними
+            const updatedDefaultList = updateValueById(
+                state.defaultList,
+                action.id,
+                action.rating
+            ); //шукаємо обєкт по айді , змінюємо його рейтинг, та вертаємо новий масив з новими данними
+            const updatedRatingList = updateValueById(
+                state.ratingList,
+                action.id,
+                action.rating
+            ); //шукаємо обєкт по айді , змінюємо його рейтинг, та вертаємо новий масив з новими данними
+            return {
+                ...state,
+                totalMusicList: updatedTotalMusicList,
+                randomList:updatedRandomList,
+                defaultList:updatedDefaultList,
+                ratingList:updatedRatingList,
+                music: { ...state.music, rating: action.rating },
+            };
         }
         default:
             return state;
@@ -54,13 +121,13 @@ const reducer = (state = initialState, action) => {
 };
 export const addMusics = () => async (dispatch) => {
     const data = await allApi.getAddMusics();
-    const updatedData = data.map((track,index) => ({
+    const updatedData = data.map((track, index) => ({
         ...track,
         rating: 0,
-        idTrack:index+1,
+        idTrack: index + 1,
         // artworkUrl:"https://retrowave.ru"+track.artworkUrl,//для api
         // streamUrl:"https://retrowave.ru"+track.streamUrl//для api
     }));
-    dispatch({ type: "addMusicList", data:updatedData });
+    dispatch({ type: "addMusicList", data: updatedData });
 };
 export default reducer;
