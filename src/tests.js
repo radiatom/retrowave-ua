@@ -596,6 +596,40 @@ const img298 = `${process.env.PUBLIC_URL}/artwork/9a3ccfcdc1393277bc6005c86fd297
 const track298 = `${process.env.PUBLIC_URL}/audio/9a3ccfcdc1393277bc6005c86fd2977089c16284.mp3`;
 const img299 = `${process.env.PUBLIC_URL}/artwork/ee1ab0a93274e1e08c4500f3eb8e49c29d35d8fa.jpg`;
 const track299 = `${process.env.PUBLIC_URL}/audio/ee1ab0a93274e1e08c4500f3eb8e49c29d35d8fa.mp3`;
+const img300 = `${process.env.PUBLIC_URL}/artwork/d93e764bb7c8c28d235f2d7520bca7da9adf7090.jpg`;
+const track300 = `${process.env.PUBLIC_URL}/audio/d93e764bb7c8c28d235f2d7520bca7da9adf7090.mp3`;
+const img301 = `${process.env.PUBLIC_URL}/artwork/e648f122678f17549e84aa2fb55f0ab046495b54.jpg`;
+const track301 = `${process.env.PUBLIC_URL}/audio/e648f122678f17549e84aa2fb55f0ab046495b54.mp3`;
+const img302 = `${process.env.PUBLIC_URL}/artwork/c2490e19575b503d43b083913525a7f3d48d7164.jpg`;
+const track302 = `${process.env.PUBLIC_URL}/audio/c2490e19575b503d43b083913525a7f3d48d7164.mp3`;
+const img303 = `${process.env.PUBLIC_URL}/artwork/5705080a6bad0d7b4ea8704234c237a68c1cd9b4.jpg`;
+const track303 = `${process.env.PUBLIC_URL}/audio/5705080a6bad0d7b4ea8704234c237a68c1cd9b4.mp3`;
+const img304 = `${process.env.PUBLIC_URL}/artwork/4cfe64e8052e910e4370cdead00b706ea6bbf279.jpg`;
+const track304 = `${process.env.PUBLIC_URL}/audio/4cfe64e8052e910e4370cdead00b706ea6bbf279.mp3`;
+const img305 = `${process.env.PUBLIC_URL}/artwork/abf58ed918bfb1b4a4b8f93ab208b0ce56e258f2.jpg`;
+const track305 = `${process.env.PUBLIC_URL}/audio/abf58ed918bfb1b4a4b8f93ab208b0ce56e258f2.mp3`;
+const img306 = `${process.env.PUBLIC_URL}/artwork/7aac5c4753ca9859e3c67685c72b5a8529f14e67.jpg`;
+const track306 = `${process.env.PUBLIC_URL}/audio/7aac5c4753ca9859e3c67685c72b5a8529f14e67.mp3`;
+const img307 = `${process.env.PUBLIC_URL}/artwork/1b1b89bc8ab9d0d19274190e6b5d50cc292dee96.jpg`;
+const track307 = `${process.env.PUBLIC_URL}/audio/1b1b89bc8ab9d0d19274190e6b5d50cc292dee96.mp3`;
+const img308 = `${process.env.PUBLIC_URL}/artwork/9a2e79f2a904d52481f9a692837de243596e06ed.jpg`;
+const track308 = `${process.env.PUBLIC_URL}/audio/9a2e79f2a904d52481f9a692837de243596e06ed.mp3`;
+const img309 = `${process.env.PUBLIC_URL}/artwork/b5fe4283a475ec0a61e0bf0ce173676f6e83f504.jpg`;
+const track309 = `${process.env.PUBLIC_URL}/audio/b5fe4283a475ec0a61e0bf0ce173676f6e83f504.mp3`;
+const img310 = `${process.env.PUBLIC_URL}/artwork/42aa24303041266a446cf3ebbc0409db2cba4b5f.jpg`;
+const track310 = `${process.env.PUBLIC_URL}/audio/42aa24303041266a446cf3ebbc0409db2cba4b5f.mp3`;
+const img311 = `${process.env.PUBLIC_URL}/artwork/7747de1cdc8b332b962da47174adbf709fb3c970.jpg`;
+const track311 = `${process.env.PUBLIC_URL}/audio/7747de1cdc8b332b962da47174adbf709fb3c970.mp3`;
+const img312 = `${process.env.PUBLIC_URL}/artwork/a44fa631a47b8bf2eb253ff72da2ea9d3c8ecd20.jpg`;
+const track312 = `${process.env.PUBLIC_URL}/audio/a44fa631a47b8bf2eb253ff72da2ea9d3c8ecd20.mp3`;
+const img313 = `${process.env.PUBLIC_URL}/artwork/55d26f152537801780f812ffab63b5aa6567c0f2.jpg`;
+const track313 = `${process.env.PUBLIC_URL}/audio/55d26f152537801780f812ffab63b5aa6567c0f2.mp3`;
+const img314 = `${process.env.PUBLIC_URL}/artwork/c8774500da6af4b048e560ba4f85c26ffc9a1fd6.jpg`;
+const track314 = `${process.env.PUBLIC_URL}/audio/c8774500da6af4b048e560ba4f85c26ffc9a1fd6.mp3`;
+const img315 = `${process.env.PUBLIC_URL}/artwork/b5eb9b5e12d2cb3a3c1ec3bccb22d140ca6231bb.jpg`;
+const track315 = `${process.env.PUBLIC_URL}/audio/b5eb9b5e12d2cb3a3c1ec3bccb22d140ca6231bb.mp3`;
+const img316 = `${process.env.PUBLIC_URL}/artwork/15e9642798b73e75e4f99ad4547b9368d2b8ad83.jpg`;
+const track316 = `${process.env.PUBLIC_URL}/audio/15e9642798b73e75e4f99ad4547b9368d2b8ad83.mp3`;
 
 const data = [
     {
@@ -2691,3552 +2725,3688 @@ const data = [
         streamUrl: track299,
         artworkUrl: img299,
     },
+    {
+        id: "d93e764bb7c8c28d235f2d7520bca7da9adf7090",
+        title: "Makeup and Vanity Set – From a Distance (Theme from Hit TV)",
+        duration: 274000,
+        streamUrl: track300,
+        artworkUrl: img300,
+    },
+    {
+        id: "e648f122678f17549e84aa2fb55f0ab046495b54",
+        title: "ALEX – Occult",
+        duration: 331000,
+        streamUrl: track301,
+        artworkUrl: img301,
+    },
+    {
+        id: "c2490e19575b503d43b083913525a7f3d48d7164",
+        title: "Danger Mode – Meridian Cruisin'",
+        duration: 178000,
+        streamUrl: track302,
+        artworkUrl: img302,
+    },
+    {
+        id: "5705080a6bad0d7b4ea8704234c237a68c1cd9b4",
+        title: "Run Vaylor – Rush",
+        duration: 209000,
+        streamUrl: track303,
+        artworkUrl: img303,
+    },
+    {
+        id: "4cfe64e8052e910e4370cdead00b706ea6bbf279",
+        title: "Meteor – Night Riders",
+        duration: 199000,
+        streamUrl: track304,
+        artworkUrl: img304,
+    },
+    {
+        id: "abf58ed918bfb1b4a4b8f93ab208b0ce56e258f2",
+        title: "Judge Bitch – Striker (feat. Perturbator)",
+        duration: 186000,
+        streamUrl: track305,
+        artworkUrl: img305,
+    },
+    {
+        id: "7aac5c4753ca9859e3c67685c72b5a8529f14e67",
+        title: "Prius An Sich – Hyperion Booster",
+        duration: 273244.25,
+        streamUrl: track306,
+        artworkUrl: img306,
+    },
+    {
+        id: "1b1b89bc8ab9d0d19274190e6b5d50cc292dee96",
+        title: "Judge Bitch – MDK",
+        duration: 220000,
+        streamUrl: track307,
+        artworkUrl: img307,
+    },
+    {
+        id: "9a2e79f2a904d52481f9a692837de243596e06ed",
+        title: "Miami Nights 1984 – Saved By The Bell",
+        duration: 266000,
+        streamUrl: track308,
+        artworkUrl: img308,
+    },
+    {
+        id: "b5fe4283a475ec0a61e0bf0ce173676f6e83f504",
+        title: "DATAStream – Cinder Sunset",
+        duration: 334000,
+        streamUrl: track309,
+        artworkUrl: img309,
+    },
+    {
+        id: "42aa24303041266a446cf3ebbc0409db2cba4b5f",
+        title: "Highway Superstar – Save You (feat. Sebastian Gampl & Miranda Carey)",
+        duration: 336312.25,
+        streamUrl: track310,
+        artworkUrl: img310,
+    },
+    {
+        id: "7747de1cdc8b332b962da47174adbf709fb3c970",
+        title: "Carpenter Brut – Hang'Em All",
+        duration: 337000,
+        streamUrl: track311,
+        artworkUrl: img311,
+    },
+    {
+        id: "a44fa631a47b8bf2eb253ff72da2ea9d3c8ecd20",
+        title: "Street Cleaner – Nightlife",
+        duration: 200000,
+        streamUrl: track312,
+        artworkUrl: img312,
+    },
+    {
+        id: "55d26f152537801780f812ffab63b5aa6567c0f2",
+        title: "D/A/D – Backbone of the Night",
+        duration: 292000,
+        streamUrl: track313,
+        artworkUrl: img313,
+    },
+    {
+        id: "c8774500da6af4b048e560ba4f85c26ffc9a1fd6",
+        title: "Compilerbau – Leaving Earth",
+        duration: 338000,
+        streamUrl: track314,
+        artworkUrl: img314,
+    },
+    {
+        id: "b5eb9b5e12d2cb3a3c1ec3bccb22d140ca6231bb",
+        title: "Mega Drive – Crimewave",
+        duration: 296000,
+        streamUrl: track315,
+        artworkUrl: img315,
+    },
+    {
+        id: "15e9642798b73e75e4f99ad4547b9368d2b8ad83",
+        title: "Meteor – Grim Memories",
+        duration: 327000,
+        streamUrl: track316,
+        artworkUrl: img316,
+    },
 ];
 
+const tracks = [
+    {
+        id: "37380dadbbc99cfd2e182d7ae6a7f3db45665436",
+        title: "Lueur Verte – Onyx Noir",
+        duration: 281000,
+        streamUrl: "/audio/37380dadbbc99cfd2e182d7ae6a7f3db45665436.mp3",
+        artworkUrl: "/artwork/37380dadbbc99cfd2e182d7ae6a7f3db45665436.jpg",
+    },
+    {
+        id: "712d29adc4d335e0e054f86e2d6c74b0415586d5",
+        title: "Drifting Dreamer – Semi Automatic Neon Love",
+        duration: 219000,
+        streamUrl: "/audio/712d29adc4d335e0e054f86e2d6c74b0415586d5.mp3",
+        artworkUrl: "/artwork/712d29adc4d335e0e054f86e2d6c74b0415586d5.jpg",
+    },
+    {
+        id: "44bb8fe47bf3d366062afa182d896a4595dbda06",
+        title: "Camille R – 2001",
+        duration: 213000,
+        streamUrl: "/audio/44bb8fe47bf3d366062afa182d896a4595dbda06.mp3",
+        artworkUrl: "/artwork/44bb8fe47bf3d366062afa182d896a4595dbda06.jpg",
+    },
+    {
+        id: "e71a89ebfd78bc22555c0602dc610c130f951a14",
+        title: "NightStop – Night Beach",
+        duration: 245000,
+        streamUrl: "/audio/e71a89ebfd78bc22555c0602dc610c130f951a14.mp3",
+        artworkUrl: "/artwork/e71a89ebfd78bc22555c0602dc610c130f951a14.jpg",
+    },
+    {
+        id: "372567cee9b7c876f08a8685d4f472472ecafe04",
+        title: "Darknous – Outrage",
+        duration: 295000,
+        streamUrl: "/audio/372567cee9b7c876f08a8685d4f472472ecafe04.mp3",
+        artworkUrl: "/artwork/372567cee9b7c876f08a8685d4f472472ecafe04.jpg",
+    },
+    {
+        id: "4171b319ab7e0c828aca696cdbd5501cc84ffa36",
+        title: "Night Action – All About U",
+        duration: 291000,
+        streamUrl: "/audio/4171b319ab7e0c828aca696cdbd5501cc84ffa36.mp3",
+        artworkUrl: "/artwork/4171b319ab7e0c828aca696cdbd5501cc84ffa36.jpg",
+    },
+    {
+        id: "d51e049836e528a8c7ce3fb3fc7afc17e0b4d2f0",
+        title: "Raken – Sunset Place",
+        duration: 204000,
+        streamUrl: "/audio/d51e049836e528a8c7ce3fb3fc7afc17e0b4d2f0.mp3",
+        artworkUrl: "/artwork/d51e049836e528a8c7ce3fb3fc7afc17e0b4d2f0.jpg",
+    },
+    {
+        id: "050ac3a6b4cdb52161217ea1c6beee2902aa97d6",
+        title: "Miami Supercops – Night Chase",
+        duration: 259000,
+        streamUrl: "/audio/050ac3a6b4cdb52161217ea1c6beee2902aa97d6.mp3",
+        artworkUrl: "/artwork/050ac3a6b4cdb52161217ea1c6beee2902aa97d6.jpg",
+    },
+    {
+        id: "23ed5b51c8d7dc496c0102680c508dde1b41c2ff",
+        title: "Danger Danger – A Mistery",
+        duration: 265000,
+        streamUrl: "/audio/23ed5b51c8d7dc496c0102680c508dde1b41c2ff.mp3",
+        artworkUrl: "/artwork/23ed5b51c8d7dc496c0102680c508dde1b41c2ff.jpg",
+    },
+    {
+        id: "67c1c608198f805c75b56a4b0c1c4cab5b556ffa",
+        title: "Double Dragon – Traversee",
+        duration: 245000,
+        streamUrl: "/audio/67c1c608198f805c75b56a4b0c1c4cab5b556ffa.mp3",
+        artworkUrl: "/artwork/67c1c608198f805c75b56a4b0c1c4cab5b556ffa.jpg",
+    },
+    {
+        id: "ddefc580bcfc9a424bf95b9dfbb3225fb4b89ce4",
+        title: "Dance with the Dead – Snapped",
+        duration: 229000,
+        streamUrl: "/audio/ddefc580bcfc9a424bf95b9dfbb3225fb4b89ce4.mp3",
+        artworkUrl: "/artwork/ddefc580bcfc9a424bf95b9dfbb3225fb4b89ce4.jpg",
+    },
+    {
+        id: "baaad0dfcddc351bc849be935740803dbce74665",
+        title: "Andromeda Dreams – Space Highway",
+        duration: 215000,
+        streamUrl: "/audio/baaad0dfcddc351bc849be935740803dbce74665.mp3",
+        artworkUrl: "/artwork/baaad0dfcddc351bc849be935740803dbce74665.jpg",
+    },
+    {
+        id: "b77b5efcdc591b839e4fba4de7602405333084a5",
+        title: "Robert Parker – Waiting",
+        duration: 263000,
+        streamUrl: "/audio/b77b5efcdc591b839e4fba4de7602405333084a5.mp3",
+        artworkUrl: "/artwork/b77b5efcdc591b839e4fba4de7602405333084a5.jpg",
+    },
+    {
+        id: "f8a970b802ffc8a192f34deb8e461fe0bb0d9e04",
+        title: "C-jeff – Momo's Truck Stop",
+        duration: 208000,
+        streamUrl: "/audio/f8a970b802ffc8a192f34deb8e461fe0bb0d9e04.mp3",
+        artworkUrl: "/artwork/f8a970b802ffc8a192f34deb8e461fe0bb0d9e04.png",
+    },
+    {
+        id: "7b839de882534b5491656f3388932c3aabfcbdd6",
+        title: "Jasper Byrne – Decade Dance",
+        duration: 321000,
+        streamUrl: "/audio/7b839de882534b5491656f3388932c3aabfcbdd6.mp3",
+        artworkUrl: "/artwork/7b839de882534b5491656f3388932c3aabfcbdd6.jpg",
+    },
+    {
+        id: "6d331273dca80961384d55247923fc812097dd78",
+        title: "Monomer – Warden",
+        duration: 258000,
+        streamUrl: "/audio/6d331273dca80961384d55247923fc812097dd78.mp3",
+        artworkUrl: "/artwork/6d331273dca80961384d55247923fc812097dd78.jpg",
+    },
+    {
+        id: "dad32f0817a1528a13b5e7d243bfeb0858423e70",
+        title: "Midnight Kid – Aggressor",
+        duration: 227000,
+        streamUrl: "/audio/dad32f0817a1528a13b5e7d243bfeb0858423e70.mp3",
+        artworkUrl: "/artwork/dad32f0817a1528a13b5e7d243bfeb0858423e70.jpg",
+    },
+    {
+        id: "5176b936e146ba98d18a42ce0b470ed1af063838",
+        title: "FM-84 – Mainframe",
+        duration: 292000,
+        streamUrl: "/audio/5176b936e146ba98d18a42ce0b470ed1af063838.mp3",
+        artworkUrl: "/artwork/5176b936e146ba98d18a42ce0b470ed1af063838.jpg",
+    },
+    {
+        id: "237e602291fea214cbdaebb6cd4a11944517cf8c",
+        title: "Le Matos – Wasteland",
+        duration: 336000,
+        streamUrl: "/audio/237e602291fea214cbdaebb6cd4a11944517cf8c.mp3",
+        artworkUrl: "/artwork/237e602291fea214cbdaebb6cd4a11944517cf8c.jpg",
+    },
+    {
+        id: "62c27ac75b511738fee0f7a657f57eacfa2ab98e",
+        title: "DJ Ten – Chrome Lust (feat. The Boy & Sister Alma)",
+        duration: 282000,
+        streamUrl: "/audio/62c27ac75b511738fee0f7a657f57eacfa2ab98e.mp3",
+        artworkUrl: "/artwork/62c27ac75b511738fee0f7a657f57eacfa2ab98e.jpg",
+    },
+    {
+        id: "305769e2d12310ac5761defdd3e57e377fa2f84e",
+        title: "Lost Years – Converter",
+        duration: 258000,
+        streamUrl: "/audio/305769e2d12310ac5761defdd3e57e377fa2f84e.mp3",
+        artworkUrl: "/artwork/305769e2d12310ac5761defdd3e57e377fa2f84e.jpg",
+    },
+    {
+        id: "56746093c8426c1298daa46ff1da9472ff6beaf1",
+        title: "Cluster Buster – How Can He Go So Fast",
+        duration: 284000,
+        streamUrl: "/audio/56746093c8426c1298daa46ff1da9472ff6beaf1.mp3",
+        artworkUrl: "/artwork/56746093c8426c1298daa46ff1da9472ff6beaf1.jpg",
+    },
+    {
+        id: "bdecf489c41177c3e5d94b395b3df4939a09d302",
+        title: "Cartridge 1987 – Chase",
+        duration: 350000,
+        streamUrl: "/audio/bdecf489c41177c3e5d94b395b3df4939a09d302.mp3",
+        artworkUrl: "/artwork/bdecf489c41177c3e5d94b395b3df4939a09d302.jpg",
+    },
+    {
+        id: "b8069445174238c3bfab152d8edbd0cfdbb56640",
+        title: "Robert Parker – Generation '82 (feat. Shyguys)",
+        duration: 256000,
+        streamUrl: "/audio/b8069445174238c3bfab152d8edbd0cfdbb56640.mp3",
+        artworkUrl: "/artwork/b8069445174238c3bfab152d8edbd0cfdbb56640.jpg",
+    },
+    {
+        id: "1b53f0b38f9f9584ff485c4a54381b1c105afcce",
+        title: "FM Attack – Magic (feat. Kristine)",
+        duration: 276000,
+        streamUrl: "/audio/1b53f0b38f9f9584ff485c4a54381b1c105afcce.mp3",
+        artworkUrl: "/artwork/1b53f0b38f9f9584ff485c4a54381b1c105afcce.jpg",
+    },
+    {
+        id: "243236a6b088274f35d66ae62f2661ef218db6f6",
+        title: "D.Notive – Second Chances",
+        duration: 360000,
+        streamUrl: "/audio/243236a6b088274f35d66ae62f2661ef218db6f6.mp3",
+        artworkUrl: "/artwork/243236a6b088274f35d66ae62f2661ef218db6f6.png",
+    },
+    {
+        id: "121a615ea7d12d0650c3cacfb281723a8ce81e84",
+        title: "Mild Peril – The Duel",
+        duration: 383000,
+        streamUrl: "/audio/121a615ea7d12d0650c3cacfb281723a8ce81e84.mp3",
+        artworkUrl: "/artwork/121a615ea7d12d0650c3cacfb281723a8ce81e84.jpg",
+    },
+    {
+        id: "113b87ab43b7c13d9b8048fd49f21a3485a6b4fd",
+        title: "Bixby Snyder – Filthy Streets",
+        duration: 351000,
+        streamUrl: "/audio/113b87ab43b7c13d9b8048fd49f21a3485a6b4fd.mp3",
+        artworkUrl: "/artwork/113b87ab43b7c13d9b8048fd49f21a3485a6b4fd.jpg",
+    },
+    {
+        id: "d54cbf054a8384d627527d602328cfea2c4842fb",
+        title: "GAMER – Old Money",
+        duration: 146000,
+        streamUrl: "/audio/d54cbf054a8384d627527d602328cfea2c4842fb.mp3",
+        artworkUrl: "/artwork/d54cbf054a8384d627527d602328cfea2c4842fb.jpg",
+    },
+    {
+        id: "6665d573d5de5a66c6061334612f20e54a83597c",
+        title: "Miles Prower – This World Won't Let Me Down",
+        duration: 269000,
+        streamUrl: "/audio/6665d573d5de5a66c6061334612f20e54a83597c.mp3",
+        artworkUrl: "/artwork/6665d573d5de5a66c6061334612f20e54a83597c.jpg",
+    },
+    {
+        id: "1fc86f3e86905a5b6069a9180e56e378bfc50c1b",
+        title: "DJ Ten – Show Me The Night (feat. Dead Astronauts)",
+        duration: 272000,
+        streamUrl: "/audio/1fc86f3e86905a5b6069a9180e56e378bfc50c1b.mp3",
+        artworkUrl: "/artwork/1fc86f3e86905a5b6069a9180e56e378bfc50c1b.jpg",
+    },
+    {
+        id: "a7436fc5334dfdd733a5fdb42a2ce627aef3fe3b",
+        title: "Le Matos – No Tomorrow feat PAWWS",
+        duration: 271000,
+        streamUrl: "/audio/a7436fc5334dfdd733a5fdb42a2ce627aef3fe3b.mp3",
+        artworkUrl: "/artwork/a7436fc5334dfdd733a5fdb42a2ce627aef3fe3b.jpg",
+    },
+    {
+        id: "8ab19cd0a3fe579eebd5bd598581399a329ce960",
+        title: "Shirobon – Regain Control",
+        duration: 195000,
+        streamUrl: "/audio/8ab19cd0a3fe579eebd5bd598581399a329ce960.mp3",
+        artworkUrl: "/artwork/8ab19cd0a3fe579eebd5bd598581399a329ce960.jpg",
+    },
+    {
+        id: "22ea2a7715fe109547c5c8a5ee47418873bcd85a",
+        title: "Moondragon – Eye in the Sky",
+        duration: 246000,
+        streamUrl: "/audio/22ea2a7715fe109547c5c8a5ee47418873bcd85a.mp3",
+        artworkUrl: "/artwork/22ea2a7715fe109547c5c8a5ee47418873bcd85a.jpg",
+    },
+    {
+        id: "abf67a16c705b47e5acf45fcf5a976582c764c91",
+        title: "A Space Love Adventure – Red Blaze",
+        duration: 230000,
+        streamUrl: "/audio/abf67a16c705b47e5acf45fcf5a976582c764c91.mp3",
+        artworkUrl: "/artwork/abf67a16c705b47e5acf45fcf5a976582c764c91.jpg",
+    },
+    {
+        id: "ca6a555e348a4c495a1a9c35e14551d67e814b37",
+        title: "TWRP – Japanquest",
+        duration: 272000,
+        streamUrl: "/audio/ca6a555e348a4c495a1a9c35e14551d67e814b37.mp3",
+        artworkUrl: "/artwork/ca6a555e348a4c495a1a9c35e14551d67e814b37.png",
+    },
+    {
+        id: "37e70082b58a52e5a051e578a49bf8e2af22bcf8",
+        title: "Perturbator – Sexualizer (feat. Flash Arnold)",
+        duration: 299000,
+        streamUrl: "/audio/37e70082b58a52e5a051e578a49bf8e2af22bcf8.mp3",
+        artworkUrl: "/artwork/37e70082b58a52e5a051e578a49bf8e2af22bcf8.jpg",
+    },
+    {
+        id: "55963b04a9c541b7877f0c68c1d9c76f2f5766e6",
+        title: "Meteor – Manhattan 2019",
+        duration: 223000,
+        streamUrl: "/audio/55963b04a9c541b7877f0c68c1d9c76f2f5766e6.mp3",
+        artworkUrl: "/artwork/55963b04a9c541b7877f0c68c1d9c76f2f5766e6.jpg",
+    },
+    {
+        id: "42ec2a5d905d239b06decf60abe41cd94317ba3c",
+        title: "Retouch – Event Horizon",
+        duration: 223803.45,
+        streamUrl: "/audio/42ec2a5d905d239b06decf60abe41cd94317ba3c.mp3",
+        artworkUrl: "/artwork/42ec2a5d905d239b06decf60abe41cd94317ba3c.jpg",
+    },
+    {
+        id: "ac35967fdb74fe194f0d87965610c9049f889dd4",
+        title: "Nemix – The Core",
+        duration: 242000,
+        streamUrl: "/audio/ac35967fdb74fe194f0d87965610c9049f889dd4.mp3",
+        artworkUrl: "/artwork/ac35967fdb74fe194f0d87965610c9049f889dd4.jpg",
+    },
+    {
+        id: "1c93cba8419c5397359a6fdf9a02808a1014bbe8",
+        title: "Moondragon – Blackbird (feat. Phaserland)",
+        duration: 378000,
+        streamUrl: "/audio/1c93cba8419c5397359a6fdf9a02808a1014bbe8.mp3",
+        artworkUrl: "/artwork/1c93cba8419c5397359a6fdf9a02808a1014bbe8.jpg",
+    },
+    {
+        id: "4ebdcbe1b26296410af5af5fbefd8035f7760114",
+        title: "D/A/D – The Look of Being Old",
+        duration: 258000,
+        streamUrl: "/audio/4ebdcbe1b26296410af5af5fbefd8035f7760114.mp3",
+        artworkUrl: "/artwork/4ebdcbe1b26296410af5af5fbefd8035f7760114.jpg",
+    },
+    {
+        id: "bf3d8843a3ca65f54dbe4459ecd9068f475669f6",
+        title: "Pengus – Azimut",
+        duration: 266000,
+        streamUrl: "/audio/bf3d8843a3ca65f54dbe4459ecd9068f475669f6.mp3",
+        artworkUrl: "/artwork/bf3d8843a3ca65f54dbe4459ecd9068f475669f6.jpg",
+    },
+    {
+        id: "c6ffff3b532c923d7e80e87c7a4ff83cd4078fe3",
+        title: "Lazerhawk – The King of the Streets",
+        duration: 297000,
+        streamUrl: "/audio/c6ffff3b532c923d7e80e87c7a4ff83cd4078fe3.mp3",
+        artworkUrl: "/artwork/c6ffff3b532c923d7e80e87c7a4ff83cd4078fe3.jpg",
+    },
+    {
+        id: "788062ec6d7f140413dcece66f1a286420e6c03e",
+        title: "Absolute Valentine – Disco Lover",
+        duration: 237000,
+        streamUrl: "/audio/788062ec6d7f140413dcece66f1a286420e6c03e.mp3",
+        artworkUrl: "/artwork/788062ec6d7f140413dcece66f1a286420e6c03e.jpg",
+    },
+    {
+        id: "4c85d4dcb6d818416b201cdb670629d6cfd2fc50",
+        title: "CONFRONTATIONAL – Like A Curse (Feat. Monte Pittman)",
+        duration: 304000,
+        streamUrl: "/audio/4c85d4dcb6d818416b201cdb670629d6cfd2fc50.mp3",
+        artworkUrl: "/artwork/4c85d4dcb6d818416b201cdb670629d6cfd2fc50.jpg",
+    },
+    {
+        id: "f3b0d80c4ca4675cfea7294468ff8ff93c0fb72e",
+        title: "Mega Drive – Take Me Home",
+        duration: 398000,
+        streamUrl: "/audio/f3b0d80c4ca4675cfea7294468ff8ff93c0fb72e.mp3",
+        artworkUrl: "/artwork/f3b0d80c4ca4675cfea7294468ff8ff93c0fb72e.png",
+    },
+    {
+        id: "6015e051f9ccb294304966c317065d26a13d019c",
+        title: "Kille ft. Future Holotape – Strangers in the Night",
+        duration: 256000,
+        streamUrl: "/audio/6015e051f9ccb294304966c317065d26a13d019c.mp3",
+        artworkUrl: "/artwork/6015e051f9ccb294304966c317065d26a13d019c.jpg",
+    },
+    {
+        id: "541807d75a4bd9fe5a09104287c0ef162f06ad56",
+        title: "20SIX Hundred – Open World",
+        duration: 216000,
+        streamUrl: "/audio/541807d75a4bd9fe5a09104287c0ef162f06ad56.mp3",
+        artworkUrl: "/artwork/541807d75a4bd9fe5a09104287c0ef162f06ad56.jpg",
+    },
+    {
+        id: "9d97a16658f429473802c8d1ac26305719336a8b",
+        title: "Arcade High – Phone Lines (feat. Hayley Stewart)",
+        duration: 253000,
+        streamUrl: "/audio/9d97a16658f429473802c8d1ac26305719336a8b.mp3",
+        artworkUrl: "/artwork/9d97a16658f429473802c8d1ac26305719336a8b.jpg",
+    },
+    {
+        id: "a3d003e3e979906ced75d5b256964076fb826610",
+        title: "Power Glove – Night Force",
+        duration: 255000,
+        streamUrl: "/audio/a3d003e3e979906ced75d5b256964076fb826610.mp3",
+        artworkUrl: "/artwork/a3d003e3e979906ced75d5b256964076fb826610.jpg",
+    },
+    {
+        id: "a6f8318c62f6426baf77f00d2f29b7a8973467e3",
+        title: "Retouch – Arm of Creation",
+        duration: 230067.45,
+        streamUrl: "/audio/a6f8318c62f6426baf77f00d2f29b7a8973467e3.mp3",
+        artworkUrl: "/artwork/a6f8318c62f6426baf77f00d2f29b7a8973467e3.jpg",
+    },
+    {
+        id: "d5d524b70b222e6c3675366dcdfb01e14d1cfc80",
+        title: "LeveL -1 – Dive in VR",
+        duration: 231000,
+        streamUrl: "/audio/d5d524b70b222e6c3675366dcdfb01e14d1cfc80.mp3",
+        artworkUrl: "/artwork/d5d524b70b222e6c3675366dcdfb01e14d1cfc80.jpg",
+    },
+    {
+        id: "0d0b249c78e18fc77af6ce7680ff25789ec6c3c3",
+        title: "GUNSHIP – The Mountain",
+        duration: 264480.25,
+        streamUrl: "/audio/0d0b249c78e18fc77af6ce7680ff25789ec6c3c3.mp3",
+        artworkUrl: "/artwork/0d0b249c78e18fc77af6ce7680ff25789ec6c3c3.jpg",
+    },
+    {
+        id: "a8a1ab1c2fc7a23096beb0f0f680511eea60e0e2",
+        title: "Orax – Dreaming",
+        duration: 290000,
+        streamUrl: "/audio/a8a1ab1c2fc7a23096beb0f0f680511eea60e0e2.mp3",
+        artworkUrl: "/artwork/a8a1ab1c2fc7a23096beb0f0f680511eea60e0e2.jpg",
+    },
+    {
+        id: "9e5e9a4acdc394221bf2fe6b37ada4ba8d1170d1",
+        title: "Lazerhawk – The Looks that Kill",
+        duration: 249000,
+        streamUrl: "/audio/9e5e9a4acdc394221bf2fe6b37ada4ba8d1170d1.mp3",
+        artworkUrl: "/artwork/9e5e9a4acdc394221bf2fe6b37ada4ba8d1170d1.jpg",
+    },
+    {
+        id: "d3891c11749bd63159ccb52ed16e5454354a03e5",
+        title: "Vincenzo Salvia – Chromelove",
+        duration: 283056.25,
+        streamUrl: "/audio/d3891c11749bd63159ccb52ed16e5454354a03e5.mp3",
+        artworkUrl: "/artwork/d3891c11749bd63159ccb52ed16e5454354a03e5.jpg",
+    },
+    {
+        id: "ac51d0ef3fa01b5da82169dba91bcb16a69ab553",
+        title: "Phaserland – Resemblance In Machine",
+        duration: 292000,
+        streamUrl: "/audio/ac51d0ef3fa01b5da82169dba91bcb16a69ab553.mp3",
+        artworkUrl: "/artwork/ac51d0ef3fa01b5da82169dba91bcb16a69ab553.jpg",
+    },
+    {
+        id: "f4aa7673571ef901f6047dd88482d3c20a4bc761",
+        title: "GAMER – Overpass",
+        duration: 220000,
+        streamUrl: "/audio/f4aa7673571ef901f6047dd88482d3c20a4bc761.mp3",
+        artworkUrl: "/artwork/f4aa7673571ef901f6047dd88482d3c20a4bc761.jpg",
+    },
+    {
+        id: "309e6cd359673462c2ad18f2383e75cc6efb113d",
+        title: "Empathy Test – Losing Touch",
+        duration: 232102.5,
+        streamUrl: "/audio/309e6cd359673462c2ad18f2383e75cc6efb113d.mp3",
+        artworkUrl: "/artwork/309e6cd359673462c2ad18f2383e75cc6efb113d.jpg",
+    },
+    {
+        id: "7771fc38ff6941480d64f22de2cd85836e43f639",
+        title: "Mega Drive – Pulse of The Streets",
+        duration: 263000,
+        streamUrl: "/audio/7771fc38ff6941480d64f22de2cd85836e43f639.mp3",
+        artworkUrl: "/artwork/7771fc38ff6941480d64f22de2cd85836e43f639.png",
+    },
+    {
+        id: "b551c2d4e90b22f0ea9c44769c65cb460e9cb7fe",
+        title: "Stallions – We Are Stallions",
+        duration: 222000,
+        streamUrl: "/audio/b551c2d4e90b22f0ea9c44769c65cb460e9cb7fe.mp3",
+        artworkUrl: "/artwork/b551c2d4e90b22f0ea9c44769c65cb460e9cb7fe.jpg",
+    },
+    {
+        id: "c0ea05cdb88400c1ab77b960fceb876201ed6228",
+        title: "Lucy in Disguise – 1987",
+        duration: 279000,
+        streamUrl: "/audio/c0ea05cdb88400c1ab77b960fceb876201ed6228.mp3",
+        artworkUrl: "/artwork/c0ea05cdb88400c1ab77b960fceb876201ed6228.jpg",
+    },
+    {
+        id: "48e93989a6bd463855d3a34fb8b830f7c8ae75a2",
+        title: "NeodroneX – Suburban Cowboys",
+        duration: 187000,
+        streamUrl: "/audio/48e93989a6bd463855d3a34fb8b830f7c8ae75a2.mp3",
+        artworkUrl: "/artwork/48e93989a6bd463855d3a34fb8b830f7c8ae75a2.jpg",
+    },
+    {
+        id: "c98973b3a848eb9621e3d83f27d6d43d664d0d5d",
+        title: "Makeup and Vanity Set – Quadra IV",
+        duration: 245000,
+        streamUrl: "/audio/c98973b3a848eb9621e3d83f27d6d43d664d0d5d.mp3",
+        artworkUrl: "/artwork/c98973b3a848eb9621e3d83f27d6d43d664d0d5d.jpg",
+    },
+    {
+        id: "188963be7196d6c333bc77fc07c4f9fe445e4ee3",
+        title: "Highway Superstar – Deadlock Danger",
+        duration: 241800.25,
+        streamUrl: "/audio/188963be7196d6c333bc77fc07c4f9fe445e4ee3.mp3",
+        artworkUrl: "/artwork/188963be7196d6c333bc77fc07c4f9fe445e4ee3.jpg",
+    },
+    {
+        id: "0205d9dc38917a14540b58d1a65fe43ec9353de5",
+        title: "The Hunt – Brain Test",
+        duration: 297000,
+        streamUrl: "/audio/0205d9dc38917a14540b58d1a65fe43ec9353de5.mp3",
+        artworkUrl: "/artwork/0205d9dc38917a14540b58d1a65fe43ec9353de5.jpg",
+    },
+    {
+        id: "8b7306e130139c49d2d1b6df6699ad09d751015f",
+        title: "Zone Tripper – Cyber Dream",
+        duration: 281976.25,
+        streamUrl: "/audio/8b7306e130139c49d2d1b6df6699ad09d751015f.mp3",
+        artworkUrl: "/artwork/8b7306e130139c49d2d1b6df6699ad09d751015f.jpg",
+    },
+    {
+        id: "a0334abe1770eeda2b395106a578cf647563896c",
+        title: "Lachi James – Champagne Wishes (& Caviar Dreams)",
+        duration: 183264.25,
+        streamUrl: "/audio/a0334abe1770eeda2b395106a578cf647563896c.mp3",
+        artworkUrl: "/artwork/a0334abe1770eeda2b395106a578cf647563896c.jpg",
+    },
+    {
+        id: "11761072788d7cc9d1e1fb1bcc924f900a166e67",
+        title: "Saint-Samuel – Videoflex",
+        duration: 206064.25,
+        streamUrl: "/audio/11761072788d7cc9d1e1fb1bcc924f900a166e67.mp3",
+        artworkUrl: "/artwork/11761072788d7cc9d1e1fb1bcc924f900a166e67.jpg",
+    },
+    {
+        id: "29b322523eaad9b6dc2b0d0d46792d4baa65c8e5",
+        title: "Duett – Running Scared (Feat. Stewart Lockwood)",
+        duration: 199000,
+        streamUrl: "/audio/29b322523eaad9b6dc2b0d0d46792d4baa65c8e5.mp3",
+        artworkUrl: "/artwork/29b322523eaad9b6dc2b0d0d46792d4baa65c8e5.jpg",
+    },
+    {
+        id: "90a447bffaf5657a5b7ea30d4c1ebfb36a8c31be",
+        title: "Bestrack – Stamina",
+        duration: 243986.425,
+        streamUrl: "/audio/90a447bffaf5657a5b7ea30d4c1ebfb36a8c31be.mp3",
+        artworkUrl: "/artwork/90a447bffaf5657a5b7ea30d4c1ebfb36a8c31be.jpg",
+    },
+    {
+        id: "1a0832814890e9f64bf3e481fd5ffdfa1fa5d9f9",
+        title: "Magic Dance – The Mirror of Dreams",
+        duration: 348000,
+        streamUrl: "/audio/1a0832814890e9f64bf3e481fd5ffdfa1fa5d9f9.mp3",
+        artworkUrl: "/artwork/1a0832814890e9f64bf3e481fd5ffdfa1fa5d9f9.jpg",
+    },
+    {
+        id: "d0b13220e5536e140c8eb1fd5bbb713114971050",
+        title: "Meteor – Black Holes",
+        duration: 211000,
+        streamUrl: "/audio/d0b13220e5536e140c8eb1fd5bbb713114971050.mp3",
+        artworkUrl: "/artwork/d0b13220e5536e140c8eb1fd5bbb713114971050.jpg",
+    },
+    {
+        id: "a97b1b6d51d887ddb419fa7a9fdeb4dc4f7fa4b7",
+        title: "Block 35 – Central Control",
+        duration: 333000,
+        streamUrl: "/audio/a97b1b6d51d887ddb419fa7a9fdeb4dc4f7fa4b7.mp3",
+        artworkUrl: "/artwork/a97b1b6d51d887ddb419fa7a9fdeb4dc4f7fa4b7.jpg",
+    },
+    {
+        id: "f03e9c717020ff38b48c966229063e69b57f5f83",
+        title: "CRYOSAT – CrimeCom",
+        duration: 228000,
+        streamUrl: "/audio/f03e9c717020ff38b48c966229063e69b57f5f83.mp3",
+        artworkUrl: "/artwork/f03e9c717020ff38b48c966229063e69b57f5f83.jpg",
+    },
+    {
+        id: "5f17b882793fe22f9d71ff65d3d93b92c709fac8",
+        title: "Dream Fiend – Morning Light",
+        duration: 210000,
+        streamUrl: "/audio/5f17b882793fe22f9d71ff65d3d93b92c709fac8.mp3",
+        artworkUrl: "/artwork/5f17b882793fe22f9d71ff65d3d93b92c709fac8.jpg",
+    },
+    {
+        id: "0e74467715e043c05147f2c4e5adae3ba2a8e4c5",
+        title: "SAYAK STRIKER – EASY CHOPPER",
+        duration: 296000,
+        streamUrl: "/audio/0e74467715e043c05147f2c4e5adae3ba2a8e4c5.mp3",
+        artworkUrl: "/artwork/0e74467715e043c05147f2c4e5adae3ba2a8e4c5.jpg",
+    },
+    {
+        id: "9d58966dbc0dace3434fc89c73047cc664b17acb",
+        title: "Duett – Horizons",
+        duration: 233000,
+        streamUrl: "/audio/9d58966dbc0dace3434fc89c73047cc664b17acb.mp3",
+        artworkUrl: "/artwork/9d58966dbc0dace3434fc89c73047cc664b17acb.jpg",
+    },
+    {
+        id: "6cc16ed37a4b418ec3d5358257ff3142fc4bf0e5",
+        title: "LeBrock – One Night",
+        duration: 212000,
+        streamUrl: "/audio/6cc16ed37a4b418ec3d5358257ff3142fc4bf0e5.mp3",
+        artworkUrl: "/artwork/6cc16ed37a4b418ec3d5358257ff3142fc4bf0e5.jpg",
+    },
+    {
+        id: "cddac66ea9198739a8abfdaa9a088d8439bcc2f3",
+        title: "Bellemaison – The Brand New Age",
+        duration: 246000,
+        streamUrl: "/audio/cddac66ea9198739a8abfdaa9a088d8439bcc2f3.mp3",
+        artworkUrl: "/artwork/cddac66ea9198739a8abfdaa9a088d8439bcc2f3.jpg",
+    },
+    {
+        id: "7dd77c06f31d4e8a1a94ac9d2832434ee1ebc94f",
+        title: "Gost – They",
+        duration: 253000,
+        streamUrl: "/audio/7dd77c06f31d4e8a1a94ac9d2832434ee1ebc94f.mp3",
+        artworkUrl: "/artwork/7dd77c06f31d4e8a1a94ac9d2832434ee1ebc94f.jpg",
+    },
+    {
+        id: "0a7f83bc97fce9011c53081b56db1e6d3c1eec29",
+        title: "moskva-kassiopeya – Odyssey Pt. I",
+        duration: 260000,
+        streamUrl: "/audio/0a7f83bc97fce9011c53081b56db1e6d3c1eec29.mp3",
+        artworkUrl: "/artwork/0a7f83bc97fce9011c53081b56db1e6d3c1eec29.png",
+    },
+    {
+        id: "d9838e969794fae7d88f03692aecf6d1a5b69648",
+        title: "Orax – Blue Cross",
+        duration: 231000,
+        streamUrl: "/audio/d9838e969794fae7d88f03692aecf6d1a5b69648.mp3",
+        artworkUrl: "/artwork/d9838e969794fae7d88f03692aecf6d1a5b69648.jpg",
+    },
+    {
+        id: "6c0df79116c2e8a53087823bf4b16e28666b515e",
+        title: "DESTRYUR – Endurance",
+        duration: 248000,
+        streamUrl: "/audio/6c0df79116c2e8a53087823bf4b16e28666b515e.mp3",
+        artworkUrl: "/artwork/6c0df79116c2e8a53087823bf4b16e28666b515e.jpg",
+    },
+    {
+        id: "24d8d047dafe17dc6717d04aa7359a3ebf62d75f",
+        title: "Danger Mode – Chroma Drive",
+        duration: 294000,
+        streamUrl: "/audio/24d8d047dafe17dc6717d04aa7359a3ebf62d75f.mp3",
+        artworkUrl: "/artwork/24d8d047dafe17dc6717d04aa7359a3ebf62d75f.jpg",
+    },
+    {
+        id: "7efd02f39dd8b71bf85159ff0d8aabb33f48be52",
+        title: "Nowtro – Seeker",
+        duration: 347000,
+        streamUrl: "/audio/7efd02f39dd8b71bf85159ff0d8aabb33f48be52.mp3",
+        artworkUrl: "/artwork/7efd02f39dd8b71bf85159ff0d8aabb33f48be52.jpg",
+    },
+    {
+        id: "17aa22a9811d515370cb000336cb4ca79e8cfc99",
+        title: "Duett – Touch",
+        duration: 208000,
+        streamUrl: "/audio/17aa22a9811d515370cb000336cb4ca79e8cfc99.mp3",
+        artworkUrl: "/artwork/17aa22a9811d515370cb000336cb4ca79e8cfc99.jpg",
+    },
+    {
+        id: "6933da1461930205e86ff0b3f3021add9a69ab01",
+        title: "Lazerhawk – Redline",
+        duration: 244000,
+        streamUrl: "/audio/6933da1461930205e86ff0b3f3021add9a69ab01.mp3",
+        artworkUrl: "/artwork/6933da1461930205e86ff0b3f3021add9a69ab01.jpg",
+    },
+    {
+        id: "89a46b1556d22e2809447d9065598ee47ce9b87a",
+        title: "OGRE – Shore Thing",
+        duration: 257000,
+        streamUrl: "/audio/89a46b1556d22e2809447d9065598ee47ce9b87a.mp3",
+        artworkUrl: "/artwork/89a46b1556d22e2809447d9065598ee47ce9b87a.jpg",
+    },
+    {
+        id: "bfefb3e78b333f41200bfe188f911885e495cf53",
+        title: "Midnight Static – VHS Hallucinations",
+        duration: 240000,
+        streamUrl: "/audio/bfefb3e78b333f41200bfe188f911885e495cf53.mp3",
+        artworkUrl: "/artwork/bfefb3e78b333f41200bfe188f911885e495cf53.jpg",
+    },
+    {
+        id: "d37ee09b5293270ad415c26054421f1ac8d83fa1",
+        title: "Jasper Byrne – Decade Dance",
+        duration: 279000,
+        streamUrl: "/audio/d37ee09b5293270ad415c26054421f1ac8d83fa1.mp3",
+        artworkUrl: "/artwork/d37ee09b5293270ad415c26054421f1ac8d83fa1.png",
+    },
+    {
+        id: "bcd15c2d818e8408cb43f0b7e43438bddc97199a",
+        title: "Magic Dance – Last Light",
+        duration: 279000,
+        streamUrl: "/audio/bcd15c2d818e8408cb43f0b7e43438bddc97199a.mp3",
+        artworkUrl: "/artwork/bcd15c2d818e8408cb43f0b7e43438bddc97199a.jpg",
+    },
+    {
+        id: "3ca0b480afbe763bcf545ecac432b47050641d5f",
+        title: "Mega Drive – Power Driver",
+        duration: 344000,
+        streamUrl: "/audio/3ca0b480afbe763bcf545ecac432b47050641d5f.mp3",
+        artworkUrl: "/artwork/3ca0b480afbe763bcf545ecac432b47050641d5f.jpg",
+    },
+    {
+        id: "d94929c827a1918ab1150260e9d87782ebf64d8e",
+        title: "Perturbator – Miami Disco",
+        duration: 271000,
+        streamUrl: "/audio/d94929c827a1918ab1150260e9d87782ebf64d8e.mp3",
+        artworkUrl: "/artwork/d94929c827a1918ab1150260e9d87782ebf64d8e.jpg",
+    },
+    {
+        id: "deda267d7df00c8f2f27a014b2e2d0326563ee97",
+        title: "Exemia – Dragoknight",
+        duration: 301000,
+        streamUrl: "/audio/deda267d7df00c8f2f27a014b2e2d0326563ee97.mp3",
+        artworkUrl: "/artwork/deda267d7df00c8f2f27a014b2e2d0326563ee97.jpg",
+    },
+    {
+        id: "df925ce4d84ecda916a49787bc980b5ccc5a8639",
+        title: "Alpha Boy – Digital Dawn",
+        duration: 224000,
+        streamUrl: "/audio/df925ce4d84ecda916a49787bc980b5ccc5a8639.mp3",
+        artworkUrl: "/artwork/df925ce4d84ecda916a49787bc980b5ccc5a8639.jpg",
+    },
+    {
+        id: "963d53044d83cac67ea568d1e7a769e171310f14",
+        title: "OGRE – Always Outnumbered, Never Outrun",
+        duration: 267000,
+        streamUrl: "/audio/963d53044d83cac67ea568d1e7a769e171310f14.mp3",
+        artworkUrl: "/artwork/963d53044d83cac67ea568d1e7a769e171310f14.jpg",
+    },
+    {
+        id: "622b379ab9306a074982e8ebb47c8728bb2036a3",
+        title: "Le Cassette – Digital Power",
+        duration: 291000,
+        streamUrl: "/audio/622b379ab9306a074982e8ebb47c8728bb2036a3.mp3",
+        artworkUrl: "/artwork/622b379ab9306a074982e8ebb47c8728bb2036a3.jpg",
+    },
+    {
+        id: "516dee63000a83f401f451c8d8d49a244cd31bb7",
+        title: "Let Em Riot – The Manual",
+        duration: 244056.25,
+        streamUrl: "/audio/516dee63000a83f401f451c8d8d49a244cd31bb7.mp3",
+        artworkUrl: "/artwork/516dee63000a83f401f451c8d8d49a244cd31bb7.jpg",
+    },
+    {
+        id: "a8ff6b6b0ad0ef42ef330a59bde034c5789a8bae",
+        title: "Worship – Close Encounter",
+        duration: 258048.25,
+        streamUrl: "/audio/a8ff6b6b0ad0ef42ef330a59bde034c5789a8bae.mp3",
+        artworkUrl: "/artwork/a8ff6b6b0ad0ef42ef330a59bde034c5789a8bae.jpg",
+    },
+    {
+        id: "ebb006a0827baf0bf4d4c8338ed0d877aa30d103",
+        title: "Nowtro – Tears Don't Fall In Space",
+        duration: 358000,
+        streamUrl: "/audio/ebb006a0827baf0bf4d4c8338ed0d877aa30d103.mp3",
+        artworkUrl: "/artwork/ebb006a0827baf0bf4d4c8338ed0d877aa30d103.jpg",
+    },
+    {
+        id: "22a749c245a6810ac61157b2c8b6c644d15d7e4d",
+        title: "Betamaxx – Redlining 6th",
+        duration: 189000,
+        streamUrl: "/audio/22a749c245a6810ac61157b2c8b6c644d15d7e4d.mp3",
+        artworkUrl: "/artwork/22a749c245a6810ac61157b2c8b6c644d15d7e4d.jpg",
+    },
+    {
+        id: "6a96480a0e965070c7cf82b858188e131cfcf186",
+        title: "Perturbator – I Am The Night",
+        duration: 379000,
+        streamUrl: "/audio/6a96480a0e965070c7cf82b858188e131cfcf186.mp3",
+        artworkUrl: "/artwork/6a96480a0e965070c7cf82b858188e131cfcf186.jpg",
+    },
+    {
+        id: "28ddfd663e367668b0e86cd984e95311f63608db",
+        title: "Drifting Dreamer – Lights Out",
+        duration: 273000,
+        streamUrl: "/audio/28ddfd663e367668b0e86cd984e95311f63608db.mp3",
+        artworkUrl: "/artwork/28ddfd663e367668b0e86cd984e95311f63608db.jpg",
+    },
+    {
+        id: "27bf995a049f76b8dda3ca16254fe46e79720410",
+        title: "Hide and Sequence – Resurrection",
+        duration: 325000,
+        streamUrl: "/audio/27bf995a049f76b8dda3ca16254fe46e79720410.mp3",
+        artworkUrl: "/artwork/27bf995a049f76b8dda3ca16254fe46e79720410.jpg",
+    },
+    {
+        id: "9903c122b227587145e3b6f5fda054cc26fc03d0",
+        title: "Renz Wilde – Home Computer",
+        duration: 189000,
+        streamUrl: "/audio/9903c122b227587145e3b6f5fda054cc26fc03d0.mp3",
+        artworkUrl: "/artwork/9903c122b227587145e3b6f5fda054cc26fc03d0.jpg",
+    },
+    {
+        id: "de5e0ad7afbf5bc0055d766d1f6261b9fb0eae0a",
+        title: "Droid Bishop – Vanisher",
+        duration: 236000,
+        streamUrl: "/audio/de5e0ad7afbf5bc0055d766d1f6261b9fb0eae0a.mp3",
+        artworkUrl: "/artwork/de5e0ad7afbf5bc0055d766d1f6261b9fb0eae0a.jpg",
+    },
+    {
+        id: "abe3c0f48d6bf0014328f2189cc17db2b631df2f",
+        title: "Atrey – Supernova",
+        duration: 257000,
+        streamUrl: "/audio/abe3c0f48d6bf0014328f2189cc17db2b631df2f.mp3",
+        artworkUrl: "/artwork/abe3c0f48d6bf0014328f2189cc17db2b631df2f.jpg",
+    },
+    {
+        id: "9e9efee4c0c7e95135757b49521b873cd8ea1440",
+        title: "Dreamtime – Saturday Morning Heroes",
+        duration: 248000,
+        streamUrl: "/audio/9e9efee4c0c7e95135757b49521b873cd8ea1440.mp3",
+        artworkUrl: "/artwork/9e9efee4c0c7e95135757b49521b873cd8ea1440.jpg",
+    },
+    {
+        id: "dac784bac1f669babcfbbd40e8a2767f00e344a6",
+        title: "Betamaxx – Dreamer (feat. Rat Rios)",
+        duration: 243000,
+        streamUrl: "/audio/dac784bac1f669babcfbbd40e8a2767f00e344a6.mp3",
+        artworkUrl: "/artwork/dac784bac1f669babcfbbd40e8a2767f00e344a6.jpg",
+    },
+    {
+        id: "1ffecb1c64a70d2554e9db6a259165fe3680b58e",
+        title: "Dead Astronauts – Witch Hunt",
+        duration: 298000,
+        streamUrl: "/audio/1ffecb1c64a70d2554e9db6a259165fe3680b58e.mp3",
+        artworkUrl: "/artwork/1ffecb1c64a70d2554e9db6a259165fe3680b58e.jpg",
+    },
+    {
+        id: "96fad1acecbc3caa4fe95dcd9b6d8e0e7e26d078",
+        title: "Orax – Ascent of The Blessed",
+        duration: 239000,
+        streamUrl: "/audio/96fad1acecbc3caa4fe95dcd9b6d8e0e7e26d078.mp3",
+        artworkUrl: "/artwork/96fad1acecbc3caa4fe95dcd9b6d8e0e7e26d078.jpg",
+    },
+    {
+        id: "4c0b10397725b3b27198080f2bbf8aa44c9d4127",
+        title: "Danger Mode – Survivor",
+        duration: 241000,
+        streamUrl: "/audio/4c0b10397725b3b27198080f2bbf8aa44c9d4127.mp3",
+        artworkUrl: "/artwork/4c0b10397725b3b27198080f2bbf8aa44c9d4127.jpg",
+    },
+    {
+        id: "054b303ead31a68d839178e9e782e367b054a7d9",
+        title: "Nickee B – Cover Girl",
+        duration: 262000,
+        streamUrl: "/audio/054b303ead31a68d839178e9e782e367b054a7d9.mp3",
+        artworkUrl: "/artwork/054b303ead31a68d839178e9e782e367b054a7d9.jpg",
+    },
+    {
+        id: "4b0e2ee44a24a562b3fde9eab8e678731b19c2d6",
+        title: "Tommy '86 – Test Drive",
+        duration: 402000,
+        streamUrl: "/audio/4b0e2ee44a24a562b3fde9eab8e678731b19c2d6.mp3",
+        artworkUrl: "/artwork/4b0e2ee44a24a562b3fde9eab8e678731b19c2d6.jpg",
+    },
+    {
+        id: "0697c2e524a441161e7ed2975111b0d84342ad90",
+        title: "Monomer – Quite Operational",
+        duration: 210000,
+        streamUrl: "/audio/0697c2e524a441161e7ed2975111b0d84342ad90.mp3",
+        artworkUrl: "/artwork/0697c2e524a441161e7ed2975111b0d84342ad90.jpg",
+    },
+    {
+        id: "ffd65c85c036971075677e76e6b250eef4c6ef2e",
+        title: "Prius An Sich – Chrome Eyes",
+        duration: 268591.25,
+        streamUrl: "/audio/ffd65c85c036971075677e76e6b250eef4c6ef2e.mp3",
+        artworkUrl: "/artwork/ffd65c85c036971075677e76e6b250eef4c6ef2e.jpg",
+    },
+    {
+        id: "fef2f2a6148f8837a336e7ca76b71dd032492a46",
+        title: "Mitch Murder – High Performance",
+        duration: 220685.9,
+        streamUrl: "/audio/fef2f2a6148f8837a336e7ca76b71dd032492a46.mp3",
+        artworkUrl: "/artwork/fef2f2a6148f8837a336e7ca76b71dd032492a46.jpg",
+    },
+    {
+        id: "e4e941c1dbedd6914ed516b3b071ac2bdd9ddba8",
+        title: "INDEX CODE – The Baj",
+        duration: 202000,
+        streamUrl: "/audio/e4e941c1dbedd6914ed516b3b071ac2bdd9ddba8.mp3",
+        artworkUrl: "/artwork/e4e941c1dbedd6914ed516b3b071ac2bdd9ddba8.jpg",
+    },
+    {
+        id: "5434ce38252dff4782c3a3f9024c946e58b58c1a",
+        title: "Compilerbau – North Wall",
+        duration: 264000,
+        streamUrl: "/audio/5434ce38252dff4782c3a3f9024c946e58b58c1a.mp3",
+        artworkUrl: "/artwork/5434ce38252dff4782c3a3f9024c946e58b58c1a.jpg",
+    },
+    {
+        id: "919714356b1f3eeed3bc836c41f15e46790e05f8",
+        title: "Miami Nights 1984 – Streets On Fire",
+        duration: 197000,
+        streamUrl: "/audio/919714356b1f3eeed3bc836c41f15e46790e05f8.mp3",
+        artworkUrl: "/artwork/919714356b1f3eeed3bc836c41f15e46790e05f8.jpg",
+    },
+    {
+        id: "40e6312155d3658574e32c356e64b716d6ceebfd",
+        title: "Power Glove – Sloan's Assault",
+        duration: 213000,
+        streamUrl: "/audio/40e6312155d3658574e32c356e64b716d6ceebfd.mp3",
+        artworkUrl: "/artwork/40e6312155d3658574e32c356e64b716d6ceebfd.jpg",
+    },
+    {
+        id: "787022b67699b3300026ddc4563cf3f94f60afb1",
+        title: "Arcade High – On The Edge Of Summer",
+        duration: 307000,
+        streamUrl: "/audio/787022b67699b3300026ddc4563cf3f94f60afb1.mp3",
+        artworkUrl: "/artwork/787022b67699b3300026ddc4563cf3f94f60afb1.jpg",
+    },
+    {
+        id: "68cd3ec26606e107bb032a65603ddec9621469ba",
+        title: "Forgotten Illusions – Electric Legion",
+        duration: 152000,
+        streamUrl: "/audio/68cd3ec26606e107bb032a65603ddec9621469ba.mp3",
+        artworkUrl: "/artwork/68cd3ec26606e107bb032a65603ddec9621469ba.jpg",
+    },
+    {
+        id: "4ea94188e2997f7aeeb6fdbcc74d3a760ffabe7b",
+        title: "Lost Years – Nuclear",
+        duration: 321000,
+        streamUrl: "/audio/4ea94188e2997f7aeeb6fdbcc74d3a760ffabe7b.mp3",
+        artworkUrl: "/artwork/4ea94188e2997f7aeeb6fdbcc74d3a760ffabe7b.jpg",
+    },
+    {
+        id: "49e69e5d52a06255c8e1341aa91dd7e6db778daa",
+        title: "80s Stallone – Beach (Original Mix)",
+        duration: 230000,
+        streamUrl: "/audio/49e69e5d52a06255c8e1341aa91dd7e6db778daa.mp3",
+        artworkUrl: "/artwork/49e69e5d52a06255c8e1341aa91dd7e6db778daa.jpg",
+    },
+    {
+        id: "c9257805c3b70ceb57a5c701db78cb6d4a448cf7",
+        title: "Le Matos – La Mer Des Possibilites",
+        duration: 359000,
+        streamUrl: "/audio/c9257805c3b70ceb57a5c701db78cb6d4a448cf7.mp3",
+        artworkUrl: "/artwork/c9257805c3b70ceb57a5c701db78cb6d4a448cf7.jpg",
+    },
+    {
+        id: "ba7ab0c24176dabc96b2085a4e503333e08c311b",
+        title: "INDEX CODE – In Paris",
+        duration: 232000,
+        streamUrl: "/audio/ba7ab0c24176dabc96b2085a4e503333e08c311b.mp3",
+        artworkUrl: "/artwork/ba7ab0c24176dabc96b2085a4e503333e08c311b.jpg",
+    },
+    {
+        id: "d8f484b66dfd10d9476206d33d79d883474eb483",
+        title: "Botnit – Ex-Cathedra",
+        duration: 324000,
+        streamUrl: "/audio/d8f484b66dfd10d9476206d33d79d883474eb483.mp3",
+        artworkUrl: "/artwork/d8f484b66dfd10d9476206d33d79d883474eb483.jpg",
+    },
+    {
+        id: "2e772770ef61c86c83677bebfec04d0b2f3f87d9",
+        title: "Kalax – The Race",
+        duration: 328000,
+        streamUrl: "/audio/2e772770ef61c86c83677bebfec04d0b2f3f87d9.mp3",
+        artworkUrl: "/artwork/2e772770ef61c86c83677bebfec04d0b2f3f87d9.jpg",
+    },
+    {
+        id: "c3bf4f463239955b5ae74d4a22641dfbdd20a55a",
+        title: "Oscillian – Starlights",
+        duration: 240000,
+        streamUrl: "/audio/c3bf4f463239955b5ae74d4a22641dfbdd20a55a.mp3",
+        artworkUrl: "/artwork/c3bf4f463239955b5ae74d4a22641dfbdd20a55a.jpg",
+    },
+    {
+        id: "2c09682215c758af55f75709af92306e7767f8bd",
+        title: "Daniel Deluxe – Soul Siphon",
+        duration: 240216.25,
+        streamUrl: "/audio/2c09682215c758af55f75709af92306e7767f8bd.mp3",
+        artworkUrl: "/artwork/2c09682215c758af55f75709af92306e7767f8bd.jpg",
+    },
+    {
+        id: "0a0fb6b8fc1effcccd47b18ef0f4c2989d9a9a36",
+        title: "Betamaxx – Mechanized",
+        duration: 281000,
+        streamUrl: "/audio/0a0fb6b8fc1effcccd47b18ef0f4c2989d9a9a36.mp3",
+        artworkUrl: "/artwork/0a0fb6b8fc1effcccd47b18ef0f4c2989d9a9a36.jpg",
+    },
+    {
+        id: "a9e194fd41e0e3d34409e613e31492cf510d2d64",
+        title: "Bluezz Vylez – Craters and Lovers",
+        duration: 321000,
+        streamUrl: "/audio/a9e194fd41e0e3d34409e613e31492cf510d2d64.mp3",
+        artworkUrl: "/artwork/a9e194fd41e0e3d34409e613e31492cf510d2d64.jpg",
+    },
+    {
+        id: "72f2ca84f893a343b981ee8aad70ae93447e0d6e",
+        title: "Perturbator – Raining Steel",
+        duration: 250000,
+        streamUrl: "/audio/72f2ca84f893a343b981ee8aad70ae93447e0d6e.mp3",
+        artworkUrl: "/artwork/72f2ca84f893a343b981ee8aad70ae93447e0d6e.jpg",
+    },
+    {
+        id: "c596929ce73d1fd3951fbe7bce0457060d500adb",
+        title: "The Hunt – The Abomination",
+        duration: 260000,
+        streamUrl: "/audio/c596929ce73d1fd3951fbe7bce0457060d500adb.mp3",
+        artworkUrl: "/artwork/c596929ce73d1fd3951fbe7bce0457060d500adb.jpg",
+    },
+    {
+        id: "682e39707497c702ddc26a87f2c18d1458eee247",
+        title: "Midnight Heir/Patrick Baker – Tonight (feat. Patrick Baker)",
+        duration: 306000,
+        streamUrl: "/audio/682e39707497c702ddc26a87f2c18d1458eee247.mp3",
+        artworkUrl: "/artwork/682e39707497c702ddc26a87f2c18d1458eee247.jpg",
+    },
+    {
+        id: "bd5e3682730c3bd459730303ab434ad0025b7c60",
+        title: "Cosmic Sand – Give Us a First Chance",
+        duration: 202000,
+        streamUrl: "/audio/bd5e3682730c3bd459730303ab434ad0025b7c60.mp3",
+        artworkUrl: "/artwork/bd5e3682730c3bd459730303ab434ad0025b7c60.jpg",
+    },
+    {
+        id: "914cb3bbe433147e173a9cc64751df2bab29868a",
+        title: "Aysyne – Nite Life",
+        duration: 254000,
+        streamUrl: "/audio/914cb3bbe433147e173a9cc64751df2bab29868a.mp3",
+        artworkUrl: "/artwork/914cb3bbe433147e173a9cc64751df2bab29868a.jpg",
+    },
+    {
+        id: "c3b7cf7f10aa82f99c988bb368195b2deb70b90f",
+        title: "GreKanE – Rectified",
+        duration: 224000,
+        streamUrl: "/audio/c3b7cf7f10aa82f99c988bb368195b2deb70b90f.mp3",
+        artworkUrl: "/artwork/c3b7cf7f10aa82f99c988bb368195b2deb70b90f.jpg",
+    },
+    {
+        id: "6ddbef50dfdb019a9cc9003c19833f07f3b1d38d",
+        title: "LeveL -1 – Attacking The Headquarters",
+        duration: 223000,
+        streamUrl: "/audio/6ddbef50dfdb019a9cc9003c19833f07f3b1d38d.mp3",
+        artworkUrl: "/artwork/6ddbef50dfdb019a9cc9003c19833f07f3b1d38d.jpg",
+    },
+    {
+        id: "6450bb773878069074411d3ec1be31666bd768fb",
+        title: "Nightcrawler – Road Blaster (Dynatron Remix)",
+        duration: 263000,
+        streamUrl: "/audio/6450bb773878069074411d3ec1be31666bd768fb.mp3",
+        artworkUrl: "/artwork/6450bb773878069074411d3ec1be31666bd768fb.jpg",
+    },
+    {
+        id: "b82dfb64a576c808b49a8e3c2cb77572b6927188",
+        title: "Rosco – Gridlinked (feat. Kaspar Funk)",
+        duration: 249000,
+        streamUrl: "/audio/b82dfb64a576c808b49a8e3c2cb77572b6927188.mp3",
+        artworkUrl: "/artwork/b82dfb64a576c808b49a8e3c2cb77572b6927188.jpg",
+    },
+    {
+        id: "9e24d884d2044a5a7b13c1f1c6d9bb60f21d4a22",
+        title: "Gost – Night Crawler",
+        duration: 281000,
+        streamUrl: "/audio/9e24d884d2044a5a7b13c1f1c6d9bb60f21d4a22.mp3",
+        artworkUrl: "/artwork/9e24d884d2044a5a7b13c1f1c6d9bb60f21d4a22.jpg",
+    },
+    {
+        id: "da55dda32bb7ff387d17a25a1626f5e90ee14b29",
+        title: "Nightrun – Ningen",
+        duration: 364000,
+        streamUrl: "/audio/da55dda32bb7ff387d17a25a1626f5e90ee14b29.mp3",
+        artworkUrl: "/artwork/da55dda32bb7ff387d17a25a1626f5e90ee14b29.jpg",
+    },
+    {
+        id: "aff9bc54e32ab497bd04e17cd2a43eba202c23ee",
+        title: "Midnight Heir – Badlands",
+        duration: 288000,
+        streamUrl: "/audio/aff9bc54e32ab497bd04e17cd2a43eba202c23ee.mp3",
+        artworkUrl: "/artwork/aff9bc54e32ab497bd04e17cd2a43eba202c23ee.jpg",
+    },
+    {
+        id: "6049f0377e2c325a6a90b90db1e8bf7c5e657161",
+        title: "Empathy Test – Holding On",
+        duration: 249159.34999999998,
+        streamUrl: "/audio/6049f0377e2c325a6a90b90db1e8bf7c5e657161.mp3",
+        artworkUrl: "/artwork/6049f0377e2c325a6a90b90db1e8bf7c5e657161.jpg",
+    },
+    {
+        id: "a054b5c0ebb7765ef84317fba68b5a4211ea780b",
+        title: "Arcade High – Heat Wave (feat. Morissa Trunzo)",
+        duration: 251000,
+        streamUrl: "/audio/a054b5c0ebb7765ef84317fba68b5a4211ea780b.mp3",
+        artworkUrl: "/artwork/a054b5c0ebb7765ef84317fba68b5a4211ea780b.jpg",
+    },
+    {
+        id: "ae270cc8a590589302309fdae7ab8864137c6df7",
+        title: "FM Attack – Sleepless Nights",
+        duration: 408000,
+        streamUrl: "/audio/ae270cc8a590589302309fdae7ab8864137c6df7.mp3",
+        artworkUrl: "/artwork/ae270cc8a590589302309fdae7ab8864137c6df7.jpg",
+    },
+    {
+        id: "1af5503d2e3f4b941af82138b2ee1ea35addf4d5",
+        title: "Perturbator – Payback Pursuit",
+        duration: 243000,
+        streamUrl: "/audio/1af5503d2e3f4b941af82138b2ee1ea35addf4d5.mp3",
+        artworkUrl: "/artwork/1af5503d2e3f4b941af82138b2ee1ea35addf4d5.jpg",
+    },
+    {
+        id: "01ebeb2baab8a0564619cc0ca3a7fefe5413eef2",
+        title: "D/A/D – Love Will Make You Stay (with USA Gold and Sharaya Mikael)",
+        duration: 374000,
+        streamUrl: "/audio/01ebeb2baab8a0564619cc0ca3a7fefe5413eef2.mp3",
+        artworkUrl: "/artwork/01ebeb2baab8a0564619cc0ca3a7fefe5413eef2.jpg",
+    },
+    {
+        id: "7dd230b22929c716c379f7999c1d820d4ad88c69",
+        title: "Miami Nights 1984 – One Last Time",
+        duration: 146000,
+        streamUrl: "/audio/7dd230b22929c716c379f7999c1d820d4ad88c69.mp3",
+        artworkUrl: "/artwork/7dd230b22929c716c379f7999c1d820d4ad88c69.jpg",
+    },
+    {
+        id: "a0c9f1b970f2481e880d8ca6c7c0a9e3ee7cea24",
+        title: "Magic Sword – In The Face Of Evil",
+        duration: 409077.80000000005,
+        streamUrl: "/audio/a0c9f1b970f2481e880d8ca6c7c0a9e3ee7cea24.mp3",
+        artworkUrl: "/artwork/a0c9f1b970f2481e880d8ca6c7c0a9e3ee7cea24.jpg",
+    },
+    {
+        id: "1c5779501ab90dd73bdfcc9d25c0ce468f5deb6f",
+        title: "Lost Years – Phoenix Rising",
+        duration: 328000,
+        streamUrl: "/audio/1c5779501ab90dd73bdfcc9d25c0ce468f5deb6f.mp3",
+        artworkUrl: "/artwork/1c5779501ab90dd73bdfcc9d25c0ce468f5deb6f.jpg",
+    },
+    {
+        id: "93d11545d14e05cdfe2289a917b72cb38d67f34e",
+        title: "Danger Mode – Crime Wave",
+        duration: 163000,
+        streamUrl: "/audio/93d11545d14e05cdfe2289a917b72cb38d67f34e.mp3",
+        artworkUrl: "/artwork/93d11545d14e05cdfe2289a917b72cb38d67f34e.jpg",
+    },
+    {
+        id: "efa2f7e5bc4d049a9db5fd7b166342b56128c2d4",
+        title: "Compilerbau – Tachyon",
+        duration: 277000,
+        streamUrl: "/audio/efa2f7e5bc4d049a9db5fd7b166342b56128c2d4.mp3",
+        artworkUrl: "/artwork/efa2f7e5bc4d049a9db5fd7b166342b56128c2d4.jpg",
+    },
+    {
+        id: "bf055980678604503070f402961ad5471c97549e",
+        title: "Midnight Heir – Battery",
+        duration: 213000,
+        streamUrl: "/audio/bf055980678604503070f402961ad5471c97549e.mp3",
+        artworkUrl: "/artwork/bf055980678604503070f402961ad5471c97549e.jpg",
+    },
+    {
+        id: "f8cdb8a86b751e81e1c18a78d8247f177e807cc7",
+        title: "Lazerhawk – Wrong Side Of Town",
+        duration: 212000,
+        streamUrl: "/audio/f8cdb8a86b751e81e1c18a78d8247f177e807cc7.mp3",
+        artworkUrl: "/artwork/f8cdb8a86b751e81e1c18a78d8247f177e807cc7.jpg",
+    },
+    {
+        id: "e0bc76f49dc7c5c3a99750361b5a79529e3a7141",
+        title: "Morgan Willis – Sunset Ridge",
+        duration: 328000,
+        streamUrl: "/audio/e0bc76f49dc7c5c3a99750361b5a79529e3a7141.mp3",
+        artworkUrl: "/artwork/e0bc76f49dc7c5c3a99750361b5a79529e3a7141.jpg",
+    },
+    {
+        id: "7914f8b5aaaeb0632f6fa63e6c0f61e768318689",
+        title: "Lazerhawk – Fight to the Top",
+        duration: 250000,
+        streamUrl: "/audio/7914f8b5aaaeb0632f6fa63e6c0f61e768318689.mp3",
+        artworkUrl: "/artwork/7914f8b5aaaeb0632f6fa63e6c0f61e768318689.jpg",
+    },
+    {
+        id: "45fe7b51432ca4ea5c0702fb95366cb247a88d7e",
+        title: "3FORCE – Highway Jupiter",
+        duration: 324000,
+        streamUrl: "/audio/45fe7b51432ca4ea5c0702fb95366cb247a88d7e.mp3",
+        artworkUrl: "/artwork/45fe7b51432ca4ea5c0702fb95366cb247a88d7e.jpg",
+    },
+    {
+        id: "00076cc3b4f5bd6b1528e646d7c0db5f4e538b6a",
+        title: "Action Jackson – Palm Kill",
+        duration: 349000,
+        streamUrl: "/audio/00076cc3b4f5bd6b1528e646d7c0db5f4e538b6a.mp3",
+        artworkUrl: "/artwork/00076cc3b4f5bd6b1528e646d7c0db5f4e538b6a.jpg",
+    },
+    {
+        id: "23a2dfcc04ca72329589fe1dea5fa10dc234467c",
+        title: "Bestrack – Workout 2000",
+        duration: 340404.375,
+        streamUrl: "/audio/23a2dfcc04ca72329589fe1dea5fa10dc234467c.mp3",
+        artworkUrl: "/artwork/23a2dfcc04ca72329589fe1dea5fa10dc234467c.jpg",
+    },
+    {
+        id: "008996f9685b1157e65fc708a95632983d95fe71",
+        title: "INDEX CODE – Article 37",
+        duration: 226000,
+        streamUrl: "/audio/008996f9685b1157e65fc708a95632983d95fe71.mp3",
+        artworkUrl: "/artwork/008996f9685b1157e65fc708a95632983d95fe71.jpg",
+    },
+    {
+        id: "009cb039108b41412a674e3ed5283d5da33dce1a",
+        title: "Crockett – Changing Lanes",
+        duration: 336000,
+        streamUrl: "/audio/009cb039108b41412a674e3ed5283d5da33dce1a.mp3",
+        artworkUrl: "/artwork/009cb039108b41412a674e3ed5283d5da33dce1a.jpg",
+    },
+    {
+        id: "439d440f5dcb602d2a29fea2c4128eaa42368d79",
+        title: "Mitch Murder – The Touch",
+        duration: 326246.72500000003,
+        streamUrl: "/audio/439d440f5dcb602d2a29fea2c4128eaa42368d79.mp3",
+        artworkUrl: "/artwork/439d440f5dcb602d2a29fea2c4128eaa42368d79.jpg",
+    },
+    {
+        id: "6ba811971c53419d1dfd5df1c048316fabff7868",
+        title: "Night Runner – The Driver",
+        duration: 246000,
+        streamUrl: "/audio/6ba811971c53419d1dfd5df1c048316fabff7868.mp3",
+        artworkUrl: "/artwork/6ba811971c53419d1dfd5df1c048316fabff7868.jpg",
+    },
+    {
+        id: "77cf51db21d1b79f57cbdb486f6868325a1bbfbf",
+        title: "Muscle – Feel The Steel",
+        duration: 207000,
+        streamUrl: "/audio/77cf51db21d1b79f57cbdb486f6868325a1bbfbf.mp3",
+        artworkUrl: "/artwork/77cf51db21d1b79f57cbdb486f6868325a1bbfbf.jpg",
+    },
+    {
+        id: "dc06db7952bf78b76fce2549a3a109f2177b3486",
+        title: "Michael Perkins – Esteban",
+        duration: 195000,
+        streamUrl: "/audio/dc06db7952bf78b76fce2549a3a109f2177b3486.mp3",
+        artworkUrl: "/artwork/dc06db7952bf78b76fce2549a3a109f2177b3486.jpg",
+    },
+    {
+        id: "9a3ccfcdc1393277bc6005c86fd2977089c16284",
+        title: "Judge Bitch – Tropicool",
+        duration: 266000,
+        streamUrl: "/audio/9a3ccfcdc1393277bc6005c86fd2977089c16284.mp3",
+        artworkUrl: "/artwork/9a3ccfcdc1393277bc6005c86fd2977089c16284.jpg",
+    },
+    {
+        id: "ee1ab0a93274e1e08c4500f3eb8e49c29d35d8fa",
+        title: "Bestrack – Burn the night",
+        duration: 249132.5,
+        streamUrl: "/audio/ee1ab0a93274e1e08c4500f3eb8e49c29d35d8fa.mp3",
+        artworkUrl: "/artwork/ee1ab0a93274e1e08c4500f3eb8e49c29d35d8fa.jpg",
+    },
+    {
+        id: "d48ec511aa389fe5d300b4fde8955ef2a5ba9fac",
+        title: "Mirage – Midas' Hand",
+        duration: 304000,
+        streamUrl: "/audio/d48ec511aa389fe5d300b4fde8955ef2a5ba9fac.mp3",
+        artworkUrl: "/artwork/d48ec511aa389fe5d300b4fde8955ef2a5ba9fac.jpg",
+    },
+    {
+        id: "d93e764bb7c8c28d235f2d7520bca7da9adf7090",
+        title: "Makeup and Vanity Set – From a Distance (Theme from Hit TV)",
+        duration: 274000,
+        streamUrl: "/audio/d93e764bb7c8c28d235f2d7520bca7da9adf7090.mp3",
+        artworkUrl: "/artwork/d93e764bb7c8c28d235f2d7520bca7da9adf7090.jpg",
+    },
+    {
+        id: "e648f122678f17549e84aa2fb55f0ab046495b54",
+        title: "ALEX – Occult",
+        duration: 331000,
+        streamUrl: "/audio/e648f122678f17549e84aa2fb55f0ab046495b54.mp3",
+        artworkUrl: "/artwork/e648f122678f17549e84aa2fb55f0ab046495b54.jpg",
+    },
+    {
+        id: "61c77617d9a04ca404a087a1a978a2a4f207fe05",
+        title: "NIKY NINE – ROAD",
+        duration: 292000,
+        streamUrl: "/audio/61c77617d9a04ca404a087a1a978a2a4f207fe05.mp3",
+        artworkUrl: "/artwork/61c77617d9a04ca404a087a1a978a2a4f207fe05.jpg",
+    },
+    {
+        id: "c2490e19575b503d43b083913525a7f3d48d7164",
+        title: "Danger Mode – Meridian Cruisin'",
+        duration: 178000,
+        streamUrl: "/audio/c2490e19575b503d43b083913525a7f3d48d7164.mp3",
+        artworkUrl: "/artwork/c2490e19575b503d43b083913525a7f3d48d7164.jpg",
+    },
+    {
+        id: "5705080a6bad0d7b4ea8704234c237a68c1cd9b4",
+        title: "Run Vaylor – Rush",
+        duration: 209000,
+        streamUrl: "/audio/5705080a6bad0d7b4ea8704234c237a68c1cd9b4.mp3",
+        artworkUrl: "/artwork/5705080a6bad0d7b4ea8704234c237a68c1cd9b4.jpg",
+    },
+    {
+        id: "6e531164c4804e9db56db9baa9fd1512e7de72af",
+        title: "OGRE – Job For A Cowboy",
+        duration: 141000,
+        streamUrl: "/audio/6e531164c4804e9db56db9baa9fd1512e7de72af.mp3",
+        artworkUrl: "/artwork/6e531164c4804e9db56db9baa9fd1512e7de72af.jpg",
+    },
+    {
+        id: "4cfe64e8052e910e4370cdead00b706ea6bbf279",
+        title: "Meteor – Night Riders",
+        duration: 199000,
+        streamUrl: "/audio/4cfe64e8052e910e4370cdead00b706ea6bbf279.mp3",
+        artworkUrl: "/artwork/4cfe64e8052e910e4370cdead00b706ea6bbf279.jpg",
+    },
+    {
+        id: "857cc2061d26380bf35599ae683f68cb0ceea990",
+        title: "Dance with the Dead – The Entity",
+        duration: 234000,
+        streamUrl: "/audio/857cc2061d26380bf35599ae683f68cb0ceea990.mp3",
+        artworkUrl: "/artwork/857cc2061d26380bf35599ae683f68cb0ceea990.jpg",
+    },
+    {
+        id: "abf58ed918bfb1b4a4b8f93ab208b0ce56e258f2",
+        title: "Judge Bitch – Striker (feat. Perturbator)",
+        duration: 186000,
+        streamUrl: "/audio/abf58ed918bfb1b4a4b8f93ab208b0ce56e258f2.mp3",
+        artworkUrl: "/artwork/abf58ed918bfb1b4a4b8f93ab208b0ce56e258f2.jpg",
+    },
+    {
+        id: "7aac5c4753ca9859e3c67685c72b5a8529f14e67",
+        title: "Prius An Sich – Hyperion Booster",
+        duration: 273244.25,
+        streamUrl: "/audio/7aac5c4753ca9859e3c67685c72b5a8529f14e67.mp3",
+        artworkUrl: "/artwork/7aac5c4753ca9859e3c67685c72b5a8529f14e67.jpg",
+    },
+    {
+        id: "8b26847f4751208715912bae97ac526a83984479",
+        title: "Midnight Static – Synthesized Dreams",
+        duration: 224000,
+        streamUrl: "/audio/8b26847f4751208715912bae97ac526a83984479.mp3",
+        artworkUrl: "/artwork/8b26847f4751208715912bae97ac526a83984479.jpg",
+    },
+    {
+        id: "a3b05ee7fe8b8981618ff0debf01a94b1f6e3649",
+        title: "Phaserland – We Go Tonight",
+        duration: 340000,
+        streamUrl: "/audio/a3b05ee7fe8b8981618ff0debf01a94b1f6e3649.mp3",
+        artworkUrl: "/artwork/a3b05ee7fe8b8981618ff0debf01a94b1f6e3649.jpg",
+    },
+    {
+        id: "1b1b89bc8ab9d0d19274190e6b5d50cc292dee96",
+        title: "Judge Bitch – MDK",
+        duration: 220000,
+        streamUrl: "/audio/1b1b89bc8ab9d0d19274190e6b5d50cc292dee96.mp3",
+        artworkUrl: "/artwork/1b1b89bc8ab9d0d19274190e6b5d50cc292dee96.jpg",
+    },
+    {
+        id: "9a2e79f2a904d52481f9a692837de243596e06ed",
+        title: "Miami Nights 1984 – Saved By The Bell",
+        duration: 266000,
+        streamUrl: "/audio/9a2e79f2a904d52481f9a692837de243596e06ed.mp3",
+        artworkUrl: "/artwork/9a2e79f2a904d52481f9a692837de243596e06ed.jpg",
+    },
+    {
+        id: "b5fe4283a475ec0a61e0bf0ce173676f6e83f504",
+        title: "DATAStream – Cinder Sunset",
+        duration: 334000,
+        streamUrl: "/audio/b5fe4283a475ec0a61e0bf0ce173676f6e83f504.mp3",
+        artworkUrl: "/artwork/b5fe4283a475ec0a61e0bf0ce173676f6e83f504.jpg",
+    },
+    {
+        id: "42aa24303041266a446cf3ebbc0409db2cba4b5f",
+        title: "Highway Superstar – Save You (feat. Sebastian Gampl & Miranda Carey)",
+        duration: 336312.25,
+        streamUrl: "/audio/42aa24303041266a446cf3ebbc0409db2cba4b5f.mp3",
+        artworkUrl: "/artwork/42aa24303041266a446cf3ebbc0409db2cba4b5f.jpg",
+    },
+    {
+        id: "6da24383d808d8f04275829aeaac1b32ab945309",
+        title: "NightStop – Synth City",
+        duration: 218000,
+        streamUrl: "/audio/6da24383d808d8f04275829aeaac1b32ab945309.mp3",
+        artworkUrl: "/artwork/6da24383d808d8f04275829aeaac1b32ab945309.jpg",
+    },
+    {
+        id: "7747de1cdc8b332b962da47174adbf709fb3c970",
+        title: "Carpenter Brut – Hang'Em All",
+        duration: 337000,
+        streamUrl: "/audio/7747de1cdc8b332b962da47174adbf709fb3c970.mp3",
+        artworkUrl: "/artwork/7747de1cdc8b332b962da47174adbf709fb3c970.jpg",
+    },
+    {
+        id: "a44fa631a47b8bf2eb253ff72da2ea9d3c8ecd20",
+        title: "Street Cleaner – Nightlife",
+        duration: 200000,
+        streamUrl: "/audio/a44fa631a47b8bf2eb253ff72da2ea9d3c8ecd20.mp3",
+        artworkUrl: "/artwork/a44fa631a47b8bf2eb253ff72da2ea9d3c8ecd20.jpg",
+    },
+    {
+        id: "52d7ead95644e8ba65fcb198811f8d358440863a",
+        title: "Sung – Wayfarer",
+        duration: 253000,
+        streamUrl: "/audio/52d7ead95644e8ba65fcb198811f8d358440863a.mp3",
+        artworkUrl: "/artwork/52d7ead95644e8ba65fcb198811f8d358440863a.jpg",
+    },
+    {
+        id: "55d26f152537801780f812ffab63b5aa6567c0f2",
+        title: "D/A/D – Backbone of the Night",
+        duration: 292000,
+        streamUrl: "/audio/55d26f152537801780f812ffab63b5aa6567c0f2.mp3",
+        artworkUrl: "/artwork/55d26f152537801780f812ffab63b5aa6567c0f2.jpg",
+    },
+    {
+        id: "c8774500da6af4b048e560ba4f85c26ffc9a1fd6",
+        title: "Compilerbau – Leaving Earth",
+        duration: 338000,
+        streamUrl: "/audio/c8774500da6af4b048e560ba4f85c26ffc9a1fd6.mp3",
+        artworkUrl: "/artwork/c8774500da6af4b048e560ba4f85c26ffc9a1fd6.jpg",
+    },
+    {
+        id: "2e82b833532f5c4611fce6b4957ac0dba5348d57",
+        title: "Android Automatic – Camaro Dreams",
+        duration: 204000,
+        streamUrl: "/audio/2e82b833532f5c4611fce6b4957ac0dba5348d57.mp3",
+        artworkUrl: "/artwork/2e82b833532f5c4611fce6b4957ac0dba5348d57.jpg",
+    },
+    {
+        id: "b5eb9b5e12d2cb3a3c1ec3bccb22d140ca6231bb",
+        title: "Mega Drive – Crimewave",
+        duration: 296000,
+        streamUrl: "/audio/b5eb9b5e12d2cb3a3c1ec3bccb22d140ca6231bb.mp3",
+        artworkUrl: "/artwork/b5eb9b5e12d2cb3a3c1ec3bccb22d140ca6231bb.jpg",
+    },
+    {
+        id: "04a8b8ae0427136d2d466f673d014fccaa9ea9aa",
+        title: "NightStop – PoWer Prostitute",
+        duration: 207000,
+        streamUrl: "/audio/04a8b8ae0427136d2d466f673d014fccaa9ea9aa.mp3",
+        artworkUrl: "/artwork/04a8b8ae0427136d2d466f673d014fccaa9ea9aa.jpg",
+    },
+    {
+        id: "15e9642798b73e75e4f99ad4547b9368d2b8ad83",
+        title: "Meteor – Grim Memories",
+        duration: 327000,
+        streamUrl: "/audio/15e9642798b73e75e4f99ad4547b9368d2b8ad83.mp3",
+        artworkUrl: "/artwork/15e9642798b73e75e4f99ad4547b9368d2b8ad83.jpg",
+    },
+    {
+        id: "6ae33f6d06cab43ea5bd7b4d676df702d96d8bba",
+        title: "Block 35 – Skyline",
+        duration: 275000,
+        streamUrl: "/audio/6ae33f6d06cab43ea5bd7b4d676df702d96d8bba.mp3",
+        artworkUrl: "/artwork/6ae33f6d06cab43ea5bd7b4d676df702d96d8bba.jpg",
+    },
+    {
+        id: "37380dadbbc99cfd2e182d7ae6a7f3db45665436",
+        title: "Lueur Verte – Onyx Noir",
+        duration: 281000,
+        streamUrl: "/audio/37380dadbbc99cfd2e182d7ae6a7f3db45665436.mp3",
+        artworkUrl: "/artwork/37380dadbbc99cfd2e182d7ae6a7f3db45665436.jpg",
+    },
+    {
+        id: "712d29adc4d335e0e054f86e2d6c74b0415586d5",
+        title: "Drifting Dreamer – Semi Automatic Neon Love",
+        duration: 219000,
+        streamUrl: "/audio/712d29adc4d335e0e054f86e2d6c74b0415586d5.mp3",
+        artworkUrl: "/artwork/712d29adc4d335e0e054f86e2d6c74b0415586d5.jpg",
+    },
+    {
+        id: "44bb8fe47bf3d366062afa182d896a4595dbda06",
+        title: "Camille R – 2001",
+        duration: 213000,
+        streamUrl: "/audio/44bb8fe47bf3d366062afa182d896a4595dbda06.mp3",
+        artworkUrl: "/artwork/44bb8fe47bf3d366062afa182d896a4595dbda06.jpg",
+    },
+    {
+        id: "e71a89ebfd78bc22555c0602dc610c130f951a14",
+        title: "NightStop – Night Beach",
+        duration: 245000,
+        streamUrl: "/audio/e71a89ebfd78bc22555c0602dc610c130f951a14.mp3",
+        artworkUrl: "/artwork/e71a89ebfd78bc22555c0602dc610c130f951a14.jpg",
+    },
+    {
+        id: "372567cee9b7c876f08a8685d4f472472ecafe04",
+        title: "Darknous – Outrage",
+        duration: 295000,
+        streamUrl: "/audio/372567cee9b7c876f08a8685d4f472472ecafe04.mp3",
+        artworkUrl: "/artwork/372567cee9b7c876f08a8685d4f472472ecafe04.jpg",
+    },
+    {
+        id: "4171b319ab7e0c828aca696cdbd5501cc84ffa36",
+        title: "Night Action – All About U",
+        duration: 291000,
+        streamUrl: "/audio/4171b319ab7e0c828aca696cdbd5501cc84ffa36.mp3",
+        artworkUrl: "/artwork/4171b319ab7e0c828aca696cdbd5501cc84ffa36.jpg",
+    },
+    {
+        id: "d51e049836e528a8c7ce3fb3fc7afc17e0b4d2f0",
+        title: "Raken – Sunset Place",
+        duration: 204000,
+        streamUrl: "/audio/d51e049836e528a8c7ce3fb3fc7afc17e0b4d2f0.mp3",
+        artworkUrl: "/artwork/d51e049836e528a8c7ce3fb3fc7afc17e0b4d2f0.jpg",
+    },
+    {
+        id: "050ac3a6b4cdb52161217ea1c6beee2902aa97d6",
+        title: "Miami Supercops – Night Chase",
+        duration: 259000,
+        streamUrl: "/audio/050ac3a6b4cdb52161217ea1c6beee2902aa97d6.mp3",
+        artworkUrl: "/artwork/050ac3a6b4cdb52161217ea1c6beee2902aa97d6.jpg",
+    },
+    {
+        id: "23ed5b51c8d7dc496c0102680c508dde1b41c2ff",
+        title: "Danger Danger – A Mistery",
+        duration: 265000,
+        streamUrl: "/audio/23ed5b51c8d7dc496c0102680c508dde1b41c2ff.mp3",
+        artworkUrl: "/artwork/23ed5b51c8d7dc496c0102680c508dde1b41c2ff.jpg",
+    },
+    {
+        id: "67c1c608198f805c75b56a4b0c1c4cab5b556ffa",
+        title: "Double Dragon – Traversee",
+        duration: 245000,
+        streamUrl: "/audio/67c1c608198f805c75b56a4b0c1c4cab5b556ffa.mp3",
+        artworkUrl: "/artwork/67c1c608198f805c75b56a4b0c1c4cab5b556ffa.jpg",
+    },
+    {
+        id: "ddefc580bcfc9a424bf95b9dfbb3225fb4b89ce4",
+        title: "Dance with the Dead – Snapped",
+        duration: 229000,
+        streamUrl: "/audio/ddefc580bcfc9a424bf95b9dfbb3225fb4b89ce4.mp3",
+        artworkUrl: "/artwork/ddefc580bcfc9a424bf95b9dfbb3225fb4b89ce4.jpg",
+    },
+    {
+        id: "baaad0dfcddc351bc849be935740803dbce74665",
+        title: "Andromeda Dreams – Space Highway",
+        duration: 215000,
+        streamUrl: "/audio/baaad0dfcddc351bc849be935740803dbce74665.mp3",
+        artworkUrl: "/artwork/baaad0dfcddc351bc849be935740803dbce74665.jpg",
+    },
+    {
+        id: "b77b5efcdc591b839e4fba4de7602405333084a5",
+        title: "Robert Parker – Waiting",
+        duration: 263000,
+        streamUrl: "/audio/b77b5efcdc591b839e4fba4de7602405333084a5.mp3",
+        artworkUrl: "/artwork/b77b5efcdc591b839e4fba4de7602405333084a5.jpg",
+    },
+    {
+        id: "f8a970b802ffc8a192f34deb8e461fe0bb0d9e04",
+        title: "C-jeff – Momo's Truck Stop",
+        duration: 208000,
+        streamUrl: "/audio/f8a970b802ffc8a192f34deb8e461fe0bb0d9e04.mp3",
+        artworkUrl: "/artwork/f8a970b802ffc8a192f34deb8e461fe0bb0d9e04.png",
+    },
+    {
+        id: "7b839de882534b5491656f3388932c3aabfcbdd6",
+        title: "Jasper Byrne – Decade Dance",
+        duration: 321000,
+        streamUrl: "/audio/7b839de882534b5491656f3388932c3aabfcbdd6.mp3",
+        artworkUrl: "/artwork/7b839de882534b5491656f3388932c3aabfcbdd6.jpg",
+    },
+    {
+        id: "6d331273dca80961384d55247923fc812097dd78",
+        title: "Monomer – Warden",
+        duration: 258000,
+        streamUrl: "/audio/6d331273dca80961384d55247923fc812097dd78.mp3",
+        artworkUrl: "/artwork/6d331273dca80961384d55247923fc812097dd78.jpg",
+    },
+    {
+        id: "dad32f0817a1528a13b5e7d243bfeb0858423e70",
+        title: "Midnight Kid – Aggressor",
+        duration: 227000,
+        streamUrl: "/audio/dad32f0817a1528a13b5e7d243bfeb0858423e70.mp3",
+        artworkUrl: "/artwork/dad32f0817a1528a13b5e7d243bfeb0858423e70.jpg",
+    },
+    {
+        id: "5176b936e146ba98d18a42ce0b470ed1af063838",
+        title: "FM-84 – Mainframe",
+        duration: 292000,
+        streamUrl: "/audio/5176b936e146ba98d18a42ce0b470ed1af063838.mp3",
+        artworkUrl: "/artwork/5176b936e146ba98d18a42ce0b470ed1af063838.jpg",
+    },
+    {
+        id: "237e602291fea214cbdaebb6cd4a11944517cf8c",
+        title: "Le Matos – Wasteland",
+        duration: 336000,
+        streamUrl: "/audio/237e602291fea214cbdaebb6cd4a11944517cf8c.mp3",
+        artworkUrl: "/artwork/237e602291fea214cbdaebb6cd4a11944517cf8c.jpg",
+    },
+    {
+        id: "62c27ac75b511738fee0f7a657f57eacfa2ab98e",
+        title: "DJ Ten – Chrome Lust (feat. The Boy & Sister Alma)",
+        duration: 282000,
+        streamUrl: "/audio/62c27ac75b511738fee0f7a657f57eacfa2ab98e.mp3",
+        artworkUrl: "/artwork/62c27ac75b511738fee0f7a657f57eacfa2ab98e.jpg",
+    },
+    {
+        id: "305769e2d12310ac5761defdd3e57e377fa2f84e",
+        title: "Lost Years – Converter",
+        duration: 258000,
+        streamUrl: "/audio/305769e2d12310ac5761defdd3e57e377fa2f84e.mp3",
+        artworkUrl: "/artwork/305769e2d12310ac5761defdd3e57e377fa2f84e.jpg",
+    },
+    {
+        id: "56746093c8426c1298daa46ff1da9472ff6beaf1",
+        title: "Cluster Buster – How Can He Go So Fast",
+        duration: 284000,
+        streamUrl: "/audio/56746093c8426c1298daa46ff1da9472ff6beaf1.mp3",
+        artworkUrl: "/artwork/56746093c8426c1298daa46ff1da9472ff6beaf1.jpg",
+    },
+    {
+        id: "bdecf489c41177c3e5d94b395b3df4939a09d302",
+        title: "Cartridge 1987 – Chase",
+        duration: 350000,
+        streamUrl: "/audio/bdecf489c41177c3e5d94b395b3df4939a09d302.mp3",
+        artworkUrl: "/artwork/bdecf489c41177c3e5d94b395b3df4939a09d302.jpg",
+    },
+    {
+        id: "b8069445174238c3bfab152d8edbd0cfdbb56640",
+        title: "Robert Parker – Generation '82 (feat. Shyguys)",
+        duration: 256000,
+        streamUrl: "/audio/b8069445174238c3bfab152d8edbd0cfdbb56640.mp3",
+        artworkUrl: "/artwork/b8069445174238c3bfab152d8edbd0cfdbb56640.jpg",
+    },
+    {
+        id: "1b53f0b38f9f9584ff485c4a54381b1c105afcce",
+        title: "FM Attack – Magic (feat. Kristine)",
+        duration: 276000,
+        streamUrl: "/audio/1b53f0b38f9f9584ff485c4a54381b1c105afcce.mp3",
+        artworkUrl: "/artwork/1b53f0b38f9f9584ff485c4a54381b1c105afcce.jpg",
+    },
+    {
+        id: "243236a6b088274f35d66ae62f2661ef218db6f6",
+        title: "D.Notive – Second Chances",
+        duration: 360000,
+        streamUrl: "/audio/243236a6b088274f35d66ae62f2661ef218db6f6.mp3",
+        artworkUrl: "/artwork/243236a6b088274f35d66ae62f2661ef218db6f6.png",
+    },
+    {
+        id: "121a615ea7d12d0650c3cacfb281723a8ce81e84",
+        title: "Mild Peril – The Duel",
+        duration: 383000,
+        streamUrl: "/audio/121a615ea7d12d0650c3cacfb281723a8ce81e84.mp3",
+        artworkUrl: "/artwork/121a615ea7d12d0650c3cacfb281723a8ce81e84.jpg",
+    },
+    {
+        id: "113b87ab43b7c13d9b8048fd49f21a3485a6b4fd",
+        title: "Bixby Snyder – Filthy Streets",
+        duration: 351000,
+        streamUrl: "/audio/113b87ab43b7c13d9b8048fd49f21a3485a6b4fd.mp3",
+        artworkUrl: "/artwork/113b87ab43b7c13d9b8048fd49f21a3485a6b4fd.jpg",
+    },
+    {
+        id: "d54cbf054a8384d627527d602328cfea2c4842fb",
+        title: "GAMER – Old Money",
+        duration: 146000,
+        streamUrl: "/audio/d54cbf054a8384d627527d602328cfea2c4842fb.mp3",
+        artworkUrl: "/artwork/d54cbf054a8384d627527d602328cfea2c4842fb.jpg",
+    },
+    {
+        id: "6665d573d5de5a66c6061334612f20e54a83597c",
+        title: "Miles Prower – This World Won't Let Me Down",
+        duration: 269000,
+        streamUrl: "/audio/6665d573d5de5a66c6061334612f20e54a83597c.mp3",
+        artworkUrl: "/artwork/6665d573d5de5a66c6061334612f20e54a83597c.jpg",
+    },
+    {
+        id: "1fc86f3e86905a5b6069a9180e56e378bfc50c1b",
+        title: "DJ Ten – Show Me The Night (feat. Dead Astronauts)",
+        duration: 272000,
+        streamUrl: "/audio/1fc86f3e86905a5b6069a9180e56e378bfc50c1b.mp3",
+        artworkUrl: "/artwork/1fc86f3e86905a5b6069a9180e56e378bfc50c1b.jpg",
+    },
+    {
+        id: "a7436fc5334dfdd733a5fdb42a2ce627aef3fe3b",
+        title: "Le Matos – No Tomorrow feat PAWWS",
+        duration: 271000,
+        streamUrl: "/audio/a7436fc5334dfdd733a5fdb42a2ce627aef3fe3b.mp3",
+        artworkUrl: "/artwork/a7436fc5334dfdd733a5fdb42a2ce627aef3fe3b.jpg",
+    },
+    {
+        id: "8ab19cd0a3fe579eebd5bd598581399a329ce960",
+        title: "Shirobon – Regain Control",
+        duration: 195000,
+        streamUrl: "/audio/8ab19cd0a3fe579eebd5bd598581399a329ce960.mp3",
+        artworkUrl: "/artwork/8ab19cd0a3fe579eebd5bd598581399a329ce960.jpg",
+    },
+    {
+        id: "22ea2a7715fe109547c5c8a5ee47418873bcd85a",
+        title: "Moondragon – Eye in the Sky",
+        duration: 246000,
+        streamUrl: "/audio/22ea2a7715fe109547c5c8a5ee47418873bcd85a.mp3",
+        artworkUrl: "/artwork/22ea2a7715fe109547c5c8a5ee47418873bcd85a.jpg",
+    },
+    {
+        id: "abf67a16c705b47e5acf45fcf5a976582c764c91",
+        title: "A Space Love Adventure – Red Blaze",
+        duration: 230000,
+        streamUrl: "/audio/abf67a16c705b47e5acf45fcf5a976582c764c91.mp3",
+        artworkUrl: "/artwork/abf67a16c705b47e5acf45fcf5a976582c764c91.jpg",
+    },
+    {
+        id: "ca6a555e348a4c495a1a9c35e14551d67e814b37",
+        title: "TWRP – Japanquest",
+        duration: 272000,
+        streamUrl: "/audio/ca6a555e348a4c495a1a9c35e14551d67e814b37.mp3",
+        artworkUrl: "/artwork/ca6a555e348a4c495a1a9c35e14551d67e814b37.png",
+    },
+    {
+        id: "37e70082b58a52e5a051e578a49bf8e2af22bcf8",
+        title: "Perturbator – Sexualizer (feat. Flash Arnold)",
+        duration: 299000,
+        streamUrl: "/audio/37e70082b58a52e5a051e578a49bf8e2af22bcf8.mp3",
+        artworkUrl: "/artwork/37e70082b58a52e5a051e578a49bf8e2af22bcf8.jpg",
+    },
+    {
+        id: "55963b04a9c541b7877f0c68c1d9c76f2f5766e6",
+        title: "Meteor – Manhattan 2019",
+        duration: 223000,
+        streamUrl: "/audio/55963b04a9c541b7877f0c68c1d9c76f2f5766e6.mp3",
+        artworkUrl: "/artwork/55963b04a9c541b7877f0c68c1d9c76f2f5766e6.jpg",
+    },
+    {
+        id: "42ec2a5d905d239b06decf60abe41cd94317ba3c",
+        title: "Retouch – Event Horizon",
+        duration: 223803.45,
+        streamUrl: "/audio/42ec2a5d905d239b06decf60abe41cd94317ba3c.mp3",
+        artworkUrl: "/artwork/42ec2a5d905d239b06decf60abe41cd94317ba3c.jpg",
+    },
+    {
+        id: "ac35967fdb74fe194f0d87965610c9049f889dd4",
+        title: "Nemix – The Core",
+        duration: 242000,
+        streamUrl: "/audio/ac35967fdb74fe194f0d87965610c9049f889dd4.mp3",
+        artworkUrl: "/artwork/ac35967fdb74fe194f0d87965610c9049f889dd4.jpg",
+    },
+    {
+        id: "1c93cba8419c5397359a6fdf9a02808a1014bbe8",
+        title: "Moondragon – Blackbird (feat. Phaserland)",
+        duration: 378000,
+        streamUrl: "/audio/1c93cba8419c5397359a6fdf9a02808a1014bbe8.mp3",
+        artworkUrl: "/artwork/1c93cba8419c5397359a6fdf9a02808a1014bbe8.jpg",
+    },
+    {
+        id: "4ebdcbe1b26296410af5af5fbefd8035f7760114",
+        title: "D/A/D – The Look of Being Old",
+        duration: 258000,
+        streamUrl: "/audio/4ebdcbe1b26296410af5af5fbefd8035f7760114.mp3",
+        artworkUrl: "/artwork/4ebdcbe1b26296410af5af5fbefd8035f7760114.jpg",
+    },
+    {
+        id: "bf3d8843a3ca65f54dbe4459ecd9068f475669f6",
+        title: "Pengus – Azimut",
+        duration: 266000,
+        streamUrl: "/audio/bf3d8843a3ca65f54dbe4459ecd9068f475669f6.mp3",
+        artworkUrl: "/artwork/bf3d8843a3ca65f54dbe4459ecd9068f475669f6.jpg",
+    },
+    {
+        id: "c6ffff3b532c923d7e80e87c7a4ff83cd4078fe3",
+        title: "Lazerhawk – The King of the Streets",
+        duration: 297000,
+        streamUrl: "/audio/c6ffff3b532c923d7e80e87c7a4ff83cd4078fe3.mp3",
+        artworkUrl: "/artwork/c6ffff3b532c923d7e80e87c7a4ff83cd4078fe3.jpg",
+    },
+    {
+        id: "788062ec6d7f140413dcece66f1a286420e6c03e",
+        title: "Absolute Valentine – Disco Lover",
+        duration: 237000,
+        streamUrl: "/audio/788062ec6d7f140413dcece66f1a286420e6c03e.mp3",
+        artworkUrl: "/artwork/788062ec6d7f140413dcece66f1a286420e6c03e.jpg",
+    },
+    {
+        id: "4c85d4dcb6d818416b201cdb670629d6cfd2fc50",
+        title: "CONFRONTATIONAL – Like A Curse (Feat. Monte Pittman)",
+        duration: 304000,
+        streamUrl: "/audio/4c85d4dcb6d818416b201cdb670629d6cfd2fc50.mp3",
+        artworkUrl: "/artwork/4c85d4dcb6d818416b201cdb670629d6cfd2fc50.jpg",
+    },
+    {
+        id: "f3b0d80c4ca4675cfea7294468ff8ff93c0fb72e",
+        title: "Mega Drive – Take Me Home",
+        duration: 398000,
+        streamUrl: "/audio/f3b0d80c4ca4675cfea7294468ff8ff93c0fb72e.mp3",
+        artworkUrl: "/artwork/f3b0d80c4ca4675cfea7294468ff8ff93c0fb72e.png",
+    },
+    {
+        id: "6015e051f9ccb294304966c317065d26a13d019c",
+        title: "Kille ft. Future Holotape – Strangers in the Night",
+        duration: 256000,
+        streamUrl: "/audio/6015e051f9ccb294304966c317065d26a13d019c.mp3",
+        artworkUrl: "/artwork/6015e051f9ccb294304966c317065d26a13d019c.jpg",
+    },
+    {
+        id: "541807d75a4bd9fe5a09104287c0ef162f06ad56",
+        title: "20SIX Hundred – Open World",
+        duration: 216000,
+        streamUrl: "/audio/541807d75a4bd9fe5a09104287c0ef162f06ad56.mp3",
+        artworkUrl: "/artwork/541807d75a4bd9fe5a09104287c0ef162f06ad56.jpg",
+    },
+    {
+        id: "9d97a16658f429473802c8d1ac26305719336a8b",
+        title: "Arcade High – Phone Lines (feat. Hayley Stewart)",
+        duration: 253000,
+        streamUrl: "/audio/9d97a16658f429473802c8d1ac26305719336a8b.mp3",
+        artworkUrl: "/artwork/9d97a16658f429473802c8d1ac26305719336a8b.jpg",
+    },
+    {
+        id: "a3d003e3e979906ced75d5b256964076fb826610",
+        title: "Power Glove – Night Force",
+        duration: 255000,
+        streamUrl: "/audio/a3d003e3e979906ced75d5b256964076fb826610.mp3",
+        artworkUrl: "/artwork/a3d003e3e979906ced75d5b256964076fb826610.jpg",
+    },
+    {
+        id: "a6f8318c62f6426baf77f00d2f29b7a8973467e3",
+        title: "Retouch – Arm of Creation",
+        duration: 230067.45,
+        streamUrl: "/audio/a6f8318c62f6426baf77f00d2f29b7a8973467e3.mp3",
+        artworkUrl: "/artwork/a6f8318c62f6426baf77f00d2f29b7a8973467e3.jpg",
+    },
+    {
+        id: "d5d524b70b222e6c3675366dcdfb01e14d1cfc80",
+        title: "LeveL -1 – Dive in VR",
+        duration: 231000,
+        streamUrl: "/audio/d5d524b70b222e6c3675366dcdfb01e14d1cfc80.mp3",
+        artworkUrl: "/artwork/d5d524b70b222e6c3675366dcdfb01e14d1cfc80.jpg",
+    },
+    {
+        id: "0d0b249c78e18fc77af6ce7680ff25789ec6c3c3",
+        title: "GUNSHIP – The Mountain",
+        duration: 264480.25,
+        streamUrl: "/audio/0d0b249c78e18fc77af6ce7680ff25789ec6c3c3.mp3",
+        artworkUrl: "/artwork/0d0b249c78e18fc77af6ce7680ff25789ec6c3c3.jpg",
+    },
+    {
+        id: "a8a1ab1c2fc7a23096beb0f0f680511eea60e0e2",
+        title: "Orax – Dreaming",
+        duration: 290000,
+        streamUrl: "/audio/a8a1ab1c2fc7a23096beb0f0f680511eea60e0e2.mp3",
+        artworkUrl: "/artwork/a8a1ab1c2fc7a23096beb0f0f680511eea60e0e2.jpg",
+    },
+    {
+        id: "9e5e9a4acdc394221bf2fe6b37ada4ba8d1170d1",
+        title: "Lazerhawk – The Looks that Kill",
+        duration: 249000,
+        streamUrl: "/audio/9e5e9a4acdc394221bf2fe6b37ada4ba8d1170d1.mp3",
+        artworkUrl: "/artwork/9e5e9a4acdc394221bf2fe6b37ada4ba8d1170d1.jpg",
+    },
+    {
+        id: "d3891c11749bd63159ccb52ed16e5454354a03e5",
+        title: "Vincenzo Salvia – Chromelove",
+        duration: 283056.25,
+        streamUrl: "/audio/d3891c11749bd63159ccb52ed16e5454354a03e5.mp3",
+        artworkUrl: "/artwork/d3891c11749bd63159ccb52ed16e5454354a03e5.jpg",
+    },
+    {
+        id: "ac51d0ef3fa01b5da82169dba91bcb16a69ab553",
+        title: "Phaserland – Resemblance In Machine",
+        duration: 292000,
+        streamUrl: "/audio/ac51d0ef3fa01b5da82169dba91bcb16a69ab553.mp3",
+        artworkUrl: "/artwork/ac51d0ef3fa01b5da82169dba91bcb16a69ab553.jpg",
+    },
+    {
+        id: "f4aa7673571ef901f6047dd88482d3c20a4bc761",
+        title: "GAMER – Overpass",
+        duration: 220000,
+        streamUrl: "/audio/f4aa7673571ef901f6047dd88482d3c20a4bc761.mp3",
+        artworkUrl: "/artwork/f4aa7673571ef901f6047dd88482d3c20a4bc761.jpg",
+    },
+    {
+        id: "309e6cd359673462c2ad18f2383e75cc6efb113d",
+        title: "Empathy Test – Losing Touch",
+        duration: 232102.5,
+        streamUrl: "/audio/309e6cd359673462c2ad18f2383e75cc6efb113d.mp3",
+        artworkUrl: "/artwork/309e6cd359673462c2ad18f2383e75cc6efb113d.jpg",
+    },
+    {
+        id: "7771fc38ff6941480d64f22de2cd85836e43f639",
+        title: "Mega Drive – Pulse of The Streets",
+        duration: 263000,
+        streamUrl: "/audio/7771fc38ff6941480d64f22de2cd85836e43f639.mp3",
+        artworkUrl: "/artwork/7771fc38ff6941480d64f22de2cd85836e43f639.png",
+    },
+    {
+        id: "b551c2d4e90b22f0ea9c44769c65cb460e9cb7fe",
+        title: "Stallions – We Are Stallions",
+        duration: 222000,
+        streamUrl: "/audio/b551c2d4e90b22f0ea9c44769c65cb460e9cb7fe.mp3",
+        artworkUrl: "/artwork/b551c2d4e90b22f0ea9c44769c65cb460e9cb7fe.jpg",
+    },
+    {
+        id: "c0ea05cdb88400c1ab77b960fceb876201ed6228",
+        title: "Lucy in Disguise – 1987",
+        duration: 279000,
+        streamUrl: "/audio/c0ea05cdb88400c1ab77b960fceb876201ed6228.mp3",
+        artworkUrl: "/artwork/c0ea05cdb88400c1ab77b960fceb876201ed6228.jpg",
+    },
+    {
+        id: "48e93989a6bd463855d3a34fb8b830f7c8ae75a2",
+        title: "NeodroneX – Suburban Cowboys",
+        duration: 187000,
+        streamUrl: "/audio/48e93989a6bd463855d3a34fb8b830f7c8ae75a2.mp3",
+        artworkUrl: "/artwork/48e93989a6bd463855d3a34fb8b830f7c8ae75a2.jpg",
+    },
+    {
+        id: "c98973b3a848eb9621e3d83f27d6d43d664d0d5d",
+        title: "Makeup and Vanity Set – Quadra IV",
+        duration: 245000,
+        streamUrl: "/audio/c98973b3a848eb9621e3d83f27d6d43d664d0d5d.mp3",
+        artworkUrl: "/artwork/c98973b3a848eb9621e3d83f27d6d43d664d0d5d.jpg",
+    },
+    {
+        id: "188963be7196d6c333bc77fc07c4f9fe445e4ee3",
+        title: "Highway Superstar – Deadlock Danger",
+        duration: 241800.25,
+        streamUrl: "/audio/188963be7196d6c333bc77fc07c4f9fe445e4ee3.mp3",
+        artworkUrl: "/artwork/188963be7196d6c333bc77fc07c4f9fe445e4ee3.jpg",
+    },
+    {
+        id: "0205d9dc38917a14540b58d1a65fe43ec9353de5",
+        title: "The Hunt – Brain Test",
+        duration: 297000,
+        streamUrl: "/audio/0205d9dc38917a14540b58d1a65fe43ec9353de5.mp3",
+        artworkUrl: "/artwork/0205d9dc38917a14540b58d1a65fe43ec9353de5.jpg",
+    },
+    {
+        id: "8b7306e130139c49d2d1b6df6699ad09d751015f",
+        title: "Zone Tripper – Cyber Dream",
+        duration: 281976.25,
+        streamUrl: "/audio/8b7306e130139c49d2d1b6df6699ad09d751015f.mp3",
+        artworkUrl: "/artwork/8b7306e130139c49d2d1b6df6699ad09d751015f.jpg",
+    },
+    {
+        id: "a0334abe1770eeda2b395106a578cf647563896c",
+        title: "Lachi James – Champagne Wishes (& Caviar Dreams)",
+        duration: 183264.25,
+        streamUrl: "/audio/a0334abe1770eeda2b395106a578cf647563896c.mp3",
+        artworkUrl: "/artwork/a0334abe1770eeda2b395106a578cf647563896c.jpg",
+    },
+    {
+        id: "11761072788d7cc9d1e1fb1bcc924f900a166e67",
+        title: "Saint-Samuel – Videoflex",
+        duration: 206064.25,
+        streamUrl: "/audio/11761072788d7cc9d1e1fb1bcc924f900a166e67.mp3",
+        artworkUrl: "/artwork/11761072788d7cc9d1e1fb1bcc924f900a166e67.jpg",
+    },
+    {
+        id: "29b322523eaad9b6dc2b0d0d46792d4baa65c8e5",
+        title: "Duett – Running Scared (Feat. Stewart Lockwood)",
+        duration: 199000,
+        streamUrl: "/audio/29b322523eaad9b6dc2b0d0d46792d4baa65c8e5.mp3",
+        artworkUrl: "/artwork/29b322523eaad9b6dc2b0d0d46792d4baa65c8e5.jpg",
+    },
+    {
+        id: "90a447bffaf5657a5b7ea30d4c1ebfb36a8c31be",
+        title: "Bestrack – Stamina",
+        duration: 243986.425,
+        streamUrl: "/audio/90a447bffaf5657a5b7ea30d4c1ebfb36a8c31be.mp3",
+        artworkUrl: "/artwork/90a447bffaf5657a5b7ea30d4c1ebfb36a8c31be.jpg",
+    },
+    {
+        id: "1a0832814890e9f64bf3e481fd5ffdfa1fa5d9f9",
+        title: "Magic Dance – The Mirror of Dreams",
+        duration: 348000,
+        streamUrl: "/audio/1a0832814890e9f64bf3e481fd5ffdfa1fa5d9f9.mp3",
+        artworkUrl: "/artwork/1a0832814890e9f64bf3e481fd5ffdfa1fa5d9f9.jpg",
+    },
+    {
+        id: "d0b13220e5536e140c8eb1fd5bbb713114971050",
+        title: "Meteor – Black Holes",
+        duration: 211000,
+        streamUrl: "/audio/d0b13220e5536e140c8eb1fd5bbb713114971050.mp3",
+        artworkUrl: "/artwork/d0b13220e5536e140c8eb1fd5bbb713114971050.jpg",
+    },
+    {
+        id: "a97b1b6d51d887ddb419fa7a9fdeb4dc4f7fa4b7",
+        title: "Block 35 – Central Control",
+        duration: 333000,
+        streamUrl: "/audio/a97b1b6d51d887ddb419fa7a9fdeb4dc4f7fa4b7.mp3",
+        artworkUrl: "/artwork/a97b1b6d51d887ddb419fa7a9fdeb4dc4f7fa4b7.jpg",
+    },
+    {
+        id: "f03e9c717020ff38b48c966229063e69b57f5f83",
+        title: "CRYOSAT – CrimeCom",
+        duration: 228000,
+        streamUrl: "/audio/f03e9c717020ff38b48c966229063e69b57f5f83.mp3",
+        artworkUrl: "/artwork/f03e9c717020ff38b48c966229063e69b57f5f83.jpg",
+    },
+    {
+        id: "5f17b882793fe22f9d71ff65d3d93b92c709fac8",
+        title: "Dream Fiend – Morning Light",
+        duration: 210000,
+        streamUrl: "/audio/5f17b882793fe22f9d71ff65d3d93b92c709fac8.mp3",
+        artworkUrl: "/artwork/5f17b882793fe22f9d71ff65d3d93b92c709fac8.jpg",
+    },
+    {
+        id: "0e74467715e043c05147f2c4e5adae3ba2a8e4c5",
+        title: "SAYAK STRIKER – EASY CHOPPER",
+        duration: 296000,
+        streamUrl: "/audio/0e74467715e043c05147f2c4e5adae3ba2a8e4c5.mp3",
+        artworkUrl: "/artwork/0e74467715e043c05147f2c4e5adae3ba2a8e4c5.jpg",
+    },
+    {
+        id: "9d58966dbc0dace3434fc89c73047cc664b17acb",
+        title: "Duett – Horizons",
+        duration: 233000,
+        streamUrl: "/audio/9d58966dbc0dace3434fc89c73047cc664b17acb.mp3",
+        artworkUrl: "/artwork/9d58966dbc0dace3434fc89c73047cc664b17acb.jpg",
+    },
+    {
+        id: "6cc16ed37a4b418ec3d5358257ff3142fc4bf0e5",
+        title: "LeBrock – One Night",
+        duration: 212000,
+        streamUrl: "/audio/6cc16ed37a4b418ec3d5358257ff3142fc4bf0e5.mp3",
+        artworkUrl: "/artwork/6cc16ed37a4b418ec3d5358257ff3142fc4bf0e5.jpg",
+    },
+    {
+        id: "cddac66ea9198739a8abfdaa9a088d8439bcc2f3",
+        title: "Bellemaison – The Brand New Age",
+        duration: 246000,
+        streamUrl: "/audio/cddac66ea9198739a8abfdaa9a088d8439bcc2f3.mp3",
+        artworkUrl: "/artwork/cddac66ea9198739a8abfdaa9a088d8439bcc2f3.jpg",
+    },
+    {
+        id: "7dd77c06f31d4e8a1a94ac9d2832434ee1ebc94f",
+        title: "Gost – They",
+        duration: 253000,
+        streamUrl: "/audio/7dd77c06f31d4e8a1a94ac9d2832434ee1ebc94f.mp3",
+        artworkUrl: "/artwork/7dd77c06f31d4e8a1a94ac9d2832434ee1ebc94f.jpg",
+    },
+    {
+        id: "0a7f83bc97fce9011c53081b56db1e6d3c1eec29",
+        title: "moskva-kassiopeya – Odyssey Pt. I",
+        duration: 260000,
+        streamUrl: "/audio/0a7f83bc97fce9011c53081b56db1e6d3c1eec29.mp3",
+        artworkUrl: "/artwork/0a7f83bc97fce9011c53081b56db1e6d3c1eec29.png",
+    },
+    {
+        id: "d9838e969794fae7d88f03692aecf6d1a5b69648",
+        title: "Orax – Blue Cross",
+        duration: 231000,
+        streamUrl: "/audio/d9838e969794fae7d88f03692aecf6d1a5b69648.mp3",
+        artworkUrl: "/artwork/d9838e969794fae7d88f03692aecf6d1a5b69648.jpg",
+    },
+    {
+        id: "6c0df79116c2e8a53087823bf4b16e28666b515e",
+        title: "DESTRYUR – Endurance",
+        duration: 248000,
+        streamUrl: "/audio/6c0df79116c2e8a53087823bf4b16e28666b515e.mp3",
+        artworkUrl: "/artwork/6c0df79116c2e8a53087823bf4b16e28666b515e.jpg",
+    },
+    {
+        id: "24d8d047dafe17dc6717d04aa7359a3ebf62d75f",
+        title: "Danger Mode – Chroma Drive",
+        duration: 294000,
+        streamUrl: "/audio/24d8d047dafe17dc6717d04aa7359a3ebf62d75f.mp3",
+        artworkUrl: "/artwork/24d8d047dafe17dc6717d04aa7359a3ebf62d75f.jpg",
+    },
+    {
+        id: "7efd02f39dd8b71bf85159ff0d8aabb33f48be52",
+        title: "Nowtro – Seeker",
+        duration: 347000,
+        streamUrl: "/audio/7efd02f39dd8b71bf85159ff0d8aabb33f48be52.mp3",
+        artworkUrl: "/artwork/7efd02f39dd8b71bf85159ff0d8aabb33f48be52.jpg",
+    },
+    {
+        id: "17aa22a9811d515370cb000336cb4ca79e8cfc99",
+        title: "Duett – Touch",
+        duration: 208000,
+        streamUrl: "/audio/17aa22a9811d515370cb000336cb4ca79e8cfc99.mp3",
+        artworkUrl: "/artwork/17aa22a9811d515370cb000336cb4ca79e8cfc99.jpg",
+    },
+    {
+        id: "6933da1461930205e86ff0b3f3021add9a69ab01",
+        title: "Lazerhawk – Redline",
+        duration: 244000,
+        streamUrl: "/audio/6933da1461930205e86ff0b3f3021add9a69ab01.mp3",
+        artworkUrl: "/artwork/6933da1461930205e86ff0b3f3021add9a69ab01.jpg",
+    },
+    {
+        id: "89a46b1556d22e2809447d9065598ee47ce9b87a",
+        title: "OGRE – Shore Thing",
+        duration: 257000,
+        streamUrl: "/audio/89a46b1556d22e2809447d9065598ee47ce9b87a.mp3",
+        artworkUrl: "/artwork/89a46b1556d22e2809447d9065598ee47ce9b87a.jpg",
+    },
+    {
+        id: "bfefb3e78b333f41200bfe188f911885e495cf53",
+        title: "Midnight Static – VHS Hallucinations",
+        duration: 240000,
+        streamUrl: "/audio/bfefb3e78b333f41200bfe188f911885e495cf53.mp3",
+        artworkUrl: "/artwork/bfefb3e78b333f41200bfe188f911885e495cf53.jpg",
+    },
+    {
+        id: "d37ee09b5293270ad415c26054421f1ac8d83fa1",
+        title: "Jasper Byrne – Decade Dance",
+        duration: 279000,
+        streamUrl: "/audio/d37ee09b5293270ad415c26054421f1ac8d83fa1.mp3",
+        artworkUrl: "/artwork/d37ee09b5293270ad415c26054421f1ac8d83fa1.png",
+    },
+    {
+        id: "bcd15c2d818e8408cb43f0b7e43438bddc97199a",
+        title: "Magic Dance – Last Light",
+        duration: 279000,
+        streamUrl: "/audio/bcd15c2d818e8408cb43f0b7e43438bddc97199a.mp3",
+        artworkUrl: "/artwork/bcd15c2d818e8408cb43f0b7e43438bddc97199a.jpg",
+    },
+    {
+        id: "3ca0b480afbe763bcf545ecac432b47050641d5f",
+        title: "Mega Drive – Power Driver",
+        duration: 344000,
+        streamUrl: "/audio/3ca0b480afbe763bcf545ecac432b47050641d5f.mp3",
+        artworkUrl: "/artwork/3ca0b480afbe763bcf545ecac432b47050641d5f.jpg",
+    },
+    {
+        id: "d94929c827a1918ab1150260e9d87782ebf64d8e",
+        title: "Perturbator – Miami Disco",
+        duration: 271000,
+        streamUrl: "/audio/d94929c827a1918ab1150260e9d87782ebf64d8e.mp3",
+        artworkUrl: "/artwork/d94929c827a1918ab1150260e9d87782ebf64d8e.jpg",
+    },
+    {
+        id: "deda267d7df00c8f2f27a014b2e2d0326563ee97",
+        title: "Exemia – Dragoknight",
+        duration: 301000,
+        streamUrl: "/audio/deda267d7df00c8f2f27a014b2e2d0326563ee97.mp3",
+        artworkUrl: "/artwork/deda267d7df00c8f2f27a014b2e2d0326563ee97.jpg",
+    },
+    {
+        id: "df925ce4d84ecda916a49787bc980b5ccc5a8639",
+        title: "Alpha Boy – Digital Dawn",
+        duration: 224000,
+        streamUrl: "/audio/df925ce4d84ecda916a49787bc980b5ccc5a8639.mp3",
+        artworkUrl: "/artwork/df925ce4d84ecda916a49787bc980b5ccc5a8639.jpg",
+    },
+    {
+        id: "963d53044d83cac67ea568d1e7a769e171310f14",
+        title: "OGRE – Always Outnumbered, Never Outrun",
+        duration: 267000,
+        streamUrl: "/audio/963d53044d83cac67ea568d1e7a769e171310f14.mp3",
+        artworkUrl: "/artwork/963d53044d83cac67ea568d1e7a769e171310f14.jpg",
+    },
+    {
+        id: "622b379ab9306a074982e8ebb47c8728bb2036a3",
+        title: "Le Cassette – Digital Power",
+        duration: 291000,
+        streamUrl: "/audio/622b379ab9306a074982e8ebb47c8728bb2036a3.mp3",
+        artworkUrl: "/artwork/622b379ab9306a074982e8ebb47c8728bb2036a3.jpg",
+    },
+    {
+        id: "516dee63000a83f401f451c8d8d49a244cd31bb7",
+        title: "Let Em Riot – The Manual",
+        duration: 244056.25,
+        streamUrl: "/audio/516dee63000a83f401f451c8d8d49a244cd31bb7.mp3",
+        artworkUrl: "/artwork/516dee63000a83f401f451c8d8d49a244cd31bb7.jpg",
+    },
+    {
+        id: "a8ff6b6b0ad0ef42ef330a59bde034c5789a8bae",
+        title: "Worship – Close Encounter",
+        duration: 258048.25,
+        streamUrl: "/audio/a8ff6b6b0ad0ef42ef330a59bde034c5789a8bae.mp3",
+        artworkUrl: "/artwork/a8ff6b6b0ad0ef42ef330a59bde034c5789a8bae.jpg",
+    },
+    {
+        id: "ebb006a0827baf0bf4d4c8338ed0d877aa30d103",
+        title: "Nowtro – Tears Don't Fall In Space",
+        duration: 358000,
+        streamUrl: "/audio/ebb006a0827baf0bf4d4c8338ed0d877aa30d103.mp3",
+        artworkUrl: "/artwork/ebb006a0827baf0bf4d4c8338ed0d877aa30d103.jpg",
+    },
+    {
+        id: "22a749c245a6810ac61157b2c8b6c644d15d7e4d",
+        title: "Betamaxx – Redlining 6th",
+        duration: 189000,
+        streamUrl: "/audio/22a749c245a6810ac61157b2c8b6c644d15d7e4d.mp3",
+        artworkUrl: "/artwork/22a749c245a6810ac61157b2c8b6c644d15d7e4d.jpg",
+    },
+    {
+        id: "6a96480a0e965070c7cf82b858188e131cfcf186",
+        title: "Perturbator – I Am The Night",
+        duration: 379000,
+        streamUrl: "/audio/6a96480a0e965070c7cf82b858188e131cfcf186.mp3",
+        artworkUrl: "/artwork/6a96480a0e965070c7cf82b858188e131cfcf186.jpg",
+    },
+    {
+        id: "28ddfd663e367668b0e86cd984e95311f63608db",
+        title: "Drifting Dreamer – Lights Out",
+        duration: 273000,
+        streamUrl: "/audio/28ddfd663e367668b0e86cd984e95311f63608db.mp3",
+        artworkUrl: "/artwork/28ddfd663e367668b0e86cd984e95311f63608db.jpg",
+    },
+    {
+        id: "27bf995a049f76b8dda3ca16254fe46e79720410",
+        title: "Hide and Sequence – Resurrection",
+        duration: 325000,
+        streamUrl: "/audio/27bf995a049f76b8dda3ca16254fe46e79720410.mp3",
+        artworkUrl: "/artwork/27bf995a049f76b8dda3ca16254fe46e79720410.jpg",
+    },
+    {
+        id: "9903c122b227587145e3b6f5fda054cc26fc03d0",
+        title: "Renz Wilde – Home Computer",
+        duration: 189000,
+        streamUrl: "/audio/9903c122b227587145e3b6f5fda054cc26fc03d0.mp3",
+        artworkUrl: "/artwork/9903c122b227587145e3b6f5fda054cc26fc03d0.jpg",
+    },
+    {
+        id: "de5e0ad7afbf5bc0055d766d1f6261b9fb0eae0a",
+        title: "Droid Bishop – Vanisher",
+        duration: 236000,
+        streamUrl: "/audio/de5e0ad7afbf5bc0055d766d1f6261b9fb0eae0a.mp3",
+        artworkUrl: "/artwork/de5e0ad7afbf5bc0055d766d1f6261b9fb0eae0a.jpg",
+    },
+    {
+        id: "abe3c0f48d6bf0014328f2189cc17db2b631df2f",
+        title: "Atrey – Supernova",
+        duration: 257000,
+        streamUrl: "/audio/abe3c0f48d6bf0014328f2189cc17db2b631df2f.mp3",
+        artworkUrl: "/artwork/abe3c0f48d6bf0014328f2189cc17db2b631df2f.jpg",
+    },
+    {
+        id: "9e9efee4c0c7e95135757b49521b873cd8ea1440",
+        title: "Dreamtime – Saturday Morning Heroes",
+        duration: 248000,
+        streamUrl: "/audio/9e9efee4c0c7e95135757b49521b873cd8ea1440.mp3",
+        artworkUrl: "/artwork/9e9efee4c0c7e95135757b49521b873cd8ea1440.jpg",
+    },
+    {
+        id: "dac784bac1f669babcfbbd40e8a2767f00e344a6",
+        title: "Betamaxx – Dreamer (feat. Rat Rios)",
+        duration: 243000,
+        streamUrl: "/audio/dac784bac1f669babcfbbd40e8a2767f00e344a6.mp3",
+        artworkUrl: "/artwork/dac784bac1f669babcfbbd40e8a2767f00e344a6.jpg",
+    },
+    {
+        id: "1ffecb1c64a70d2554e9db6a259165fe3680b58e",
+        title: "Dead Astronauts – Witch Hunt",
+        duration: 298000,
+        streamUrl: "/audio/1ffecb1c64a70d2554e9db6a259165fe3680b58e.mp3",
+        artworkUrl: "/artwork/1ffecb1c64a70d2554e9db6a259165fe3680b58e.jpg",
+    },
+    {
+        id: "96fad1acecbc3caa4fe95dcd9b6d8e0e7e26d078",
+        title: "Orax – Ascent of The Blessed",
+        duration: 239000,
+        streamUrl: "/audio/96fad1acecbc3caa4fe95dcd9b6d8e0e7e26d078.mp3",
+        artworkUrl: "/artwork/96fad1acecbc3caa4fe95dcd9b6d8e0e7e26d078.jpg",
+    },
+    {
+        id: "4c0b10397725b3b27198080f2bbf8aa44c9d4127",
+        title: "Danger Mode – Survivor",
+        duration: 241000,
+        streamUrl: "/audio/4c0b10397725b3b27198080f2bbf8aa44c9d4127.mp3",
+        artworkUrl: "/artwork/4c0b10397725b3b27198080f2bbf8aa44c9d4127.jpg",
+    },
+    {
+        id: "054b303ead31a68d839178e9e782e367b054a7d9",
+        title: "Nickee B – Cover Girl",
+        duration: 262000,
+        streamUrl: "/audio/054b303ead31a68d839178e9e782e367b054a7d9.mp3",
+        artworkUrl: "/artwork/054b303ead31a68d839178e9e782e367b054a7d9.jpg",
+    },
+    {
+        id: "4b0e2ee44a24a562b3fde9eab8e678731b19c2d6",
+        title: "Tommy '86 – Test Drive",
+        duration: 402000,
+        streamUrl: "/audio/4b0e2ee44a24a562b3fde9eab8e678731b19c2d6.mp3",
+        artworkUrl: "/artwork/4b0e2ee44a24a562b3fde9eab8e678731b19c2d6.jpg",
+    },
+    {
+        id: "0697c2e524a441161e7ed2975111b0d84342ad90",
+        title: "Monomer – Quite Operational",
+        duration: 210000,
+        streamUrl: "/audio/0697c2e524a441161e7ed2975111b0d84342ad90.mp3",
+        artworkUrl: "/artwork/0697c2e524a441161e7ed2975111b0d84342ad90.jpg",
+    },
+    {
+        id: "ffd65c85c036971075677e76e6b250eef4c6ef2e",
+        title: "Prius An Sich – Chrome Eyes",
+        duration: 268591.25,
+        streamUrl: "/audio/ffd65c85c036971075677e76e6b250eef4c6ef2e.mp3",
+        artworkUrl: "/artwork/ffd65c85c036971075677e76e6b250eef4c6ef2e.jpg",
+    },
+    {
+        id: "fef2f2a6148f8837a336e7ca76b71dd032492a46",
+        title: "Mitch Murder – High Performance",
+        duration: 220685.9,
+        streamUrl: "/audio/fef2f2a6148f8837a336e7ca76b71dd032492a46.mp3",
+        artworkUrl: "/artwork/fef2f2a6148f8837a336e7ca76b71dd032492a46.jpg",
+    },
+    {
+        id: "e4e941c1dbedd6914ed516b3b071ac2bdd9ddba8",
+        title: "INDEX CODE – The Baj",
+        duration: 202000,
+        streamUrl: "/audio/e4e941c1dbedd6914ed516b3b071ac2bdd9ddba8.mp3",
+        artworkUrl: "/artwork/e4e941c1dbedd6914ed516b3b071ac2bdd9ddba8.jpg",
+    },
+    {
+        id: "5434ce38252dff4782c3a3f9024c946e58b58c1a",
+        title: "Compilerbau – North Wall",
+        duration: 264000,
+        streamUrl: "/audio/5434ce38252dff4782c3a3f9024c946e58b58c1a.mp3",
+        artworkUrl: "/artwork/5434ce38252dff4782c3a3f9024c946e58b58c1a.jpg",
+    },
+    {
+        id: "919714356b1f3eeed3bc836c41f15e46790e05f8",
+        title: "Miami Nights 1984 – Streets On Fire",
+        duration: 197000,
+        streamUrl: "/audio/919714356b1f3eeed3bc836c41f15e46790e05f8.mp3",
+        artworkUrl: "/artwork/919714356b1f3eeed3bc836c41f15e46790e05f8.jpg",
+    },
+    {
+        id: "40e6312155d3658574e32c356e64b716d6ceebfd",
+        title: "Power Glove – Sloan's Assault",
+        duration: 213000,
+        streamUrl: "/audio/40e6312155d3658574e32c356e64b716d6ceebfd.mp3",
+        artworkUrl: "/artwork/40e6312155d3658574e32c356e64b716d6ceebfd.jpg",
+    },
+    {
+        id: "787022b67699b3300026ddc4563cf3f94f60afb1",
+        title: "Arcade High – On The Edge Of Summer",
+        duration: 307000,
+        streamUrl: "/audio/787022b67699b3300026ddc4563cf3f94f60afb1.mp3",
+        artworkUrl: "/artwork/787022b67699b3300026ddc4563cf3f94f60afb1.jpg",
+    },
+    {
+        id: "68cd3ec26606e107bb032a65603ddec9621469ba",
+        title: "Forgotten Illusions – Electric Legion",
+        duration: 152000,
+        streamUrl: "/audio/68cd3ec26606e107bb032a65603ddec9621469ba.mp3",
+        artworkUrl: "/artwork/68cd3ec26606e107bb032a65603ddec9621469ba.jpg",
+    },
+    {
+        id: "4ea94188e2997f7aeeb6fdbcc74d3a760ffabe7b",
+        title: "Lost Years – Nuclear",
+        duration: 321000,
+        streamUrl: "/audio/4ea94188e2997f7aeeb6fdbcc74d3a760ffabe7b.mp3",
+        artworkUrl: "/artwork/4ea94188e2997f7aeeb6fdbcc74d3a760ffabe7b.jpg",
+    },
+    {
+        id: "49e69e5d52a06255c8e1341aa91dd7e6db778daa",
+        title: "80s Stallone – Beach (Original Mix)",
+        duration: 230000,
+        streamUrl: "/audio/49e69e5d52a06255c8e1341aa91dd7e6db778daa.mp3",
+        artworkUrl: "/artwork/49e69e5d52a06255c8e1341aa91dd7e6db778daa.jpg",
+    },
+    {
+        id: "c9257805c3b70ceb57a5c701db78cb6d4a448cf7",
+        title: "Le Matos – La Mer Des Possibilites",
+        duration: 359000,
+        streamUrl: "/audio/c9257805c3b70ceb57a5c701db78cb6d4a448cf7.mp3",
+        artworkUrl: "/artwork/c9257805c3b70ceb57a5c701db78cb6d4a448cf7.jpg",
+    },
+    {
+        id: "ba7ab0c24176dabc96b2085a4e503333e08c311b",
+        title: "INDEX CODE – In Paris",
+        duration: 232000,
+        streamUrl: "/audio/ba7ab0c24176dabc96b2085a4e503333e08c311b.mp3",
+        artworkUrl: "/artwork/ba7ab0c24176dabc96b2085a4e503333e08c311b.jpg",
+    },
+    {
+        id: "d8f484b66dfd10d9476206d33d79d883474eb483",
+        title: "Botnit – Ex-Cathedra",
+        duration: 324000,
+        streamUrl: "/audio/d8f484b66dfd10d9476206d33d79d883474eb483.mp3",
+        artworkUrl: "/artwork/d8f484b66dfd10d9476206d33d79d883474eb483.jpg",
+    },
+    {
+        id: "2e772770ef61c86c83677bebfec04d0b2f3f87d9",
+        title: "Kalax – The Race",
+        duration: 328000,
+        streamUrl: "/audio/2e772770ef61c86c83677bebfec04d0b2f3f87d9.mp3",
+        artworkUrl: "/artwork/2e772770ef61c86c83677bebfec04d0b2f3f87d9.jpg",
+    },
+    {
+        id: "c3bf4f463239955b5ae74d4a22641dfbdd20a55a",
+        title: "Oscillian – Starlights",
+        duration: 240000,
+        streamUrl: "/audio/c3bf4f463239955b5ae74d4a22641dfbdd20a55a.mp3",
+        artworkUrl: "/artwork/c3bf4f463239955b5ae74d4a22641dfbdd20a55a.jpg",
+    },
+    {
+        id: "2c09682215c758af55f75709af92306e7767f8bd",
+        title: "Daniel Deluxe – Soul Siphon",
+        duration: 240216.25,
+        streamUrl: "/audio/2c09682215c758af55f75709af92306e7767f8bd.mp3",
+        artworkUrl: "/artwork/2c09682215c758af55f75709af92306e7767f8bd.jpg",
+    },
+    {
+        id: "0a0fb6b8fc1effcccd47b18ef0f4c2989d9a9a36",
+        title: "Betamaxx – Mechanized",
+        duration: 281000,
+        streamUrl: "/audio/0a0fb6b8fc1effcccd47b18ef0f4c2989d9a9a36.mp3",
+        artworkUrl: "/artwork/0a0fb6b8fc1effcccd47b18ef0f4c2989d9a9a36.jpg",
+    },
+    {
+        id: "a9e194fd41e0e3d34409e613e31492cf510d2d64",
+        title: "Bluezz Vylez – Craters and Lovers",
+        duration: 321000,
+        streamUrl: "/audio/a9e194fd41e0e3d34409e613e31492cf510d2d64.mp3",
+        artworkUrl: "/artwork/a9e194fd41e0e3d34409e613e31492cf510d2d64.jpg",
+    },
+    {
+        id: "72f2ca84f893a343b981ee8aad70ae93447e0d6e",
+        title: "Perturbator – Raining Steel",
+        duration: 250000,
+        streamUrl: "/audio/72f2ca84f893a343b981ee8aad70ae93447e0d6e.mp3",
+        artworkUrl: "/artwork/72f2ca84f893a343b981ee8aad70ae93447e0d6e.jpg",
+    },
+    {
+        id: "c596929ce73d1fd3951fbe7bce0457060d500adb",
+        title: "The Hunt – The Abomination",
+        duration: 260000,
+        streamUrl: "/audio/c596929ce73d1fd3951fbe7bce0457060d500adb.mp3",
+        artworkUrl: "/artwork/c596929ce73d1fd3951fbe7bce0457060d500adb.jpg",
+    },
+    {
+        id: "682e39707497c702ddc26a87f2c18d1458eee247",
+        title: "Midnight Heir/Patrick Baker – Tonight (feat. Patrick Baker)",
+        duration: 306000,
+        streamUrl: "/audio/682e39707497c702ddc26a87f2c18d1458eee247.mp3",
+        artworkUrl: "/artwork/682e39707497c702ddc26a87f2c18d1458eee247.jpg",
+    },
+    {
+        id: "bd5e3682730c3bd459730303ab434ad0025b7c60",
+        title: "Cosmic Sand – Give Us a First Chance",
+        duration: 202000,
+        streamUrl: "/audio/bd5e3682730c3bd459730303ab434ad0025b7c60.mp3",
+        artworkUrl: "/artwork/bd5e3682730c3bd459730303ab434ad0025b7c60.jpg",
+    },
+    {
+        id: "914cb3bbe433147e173a9cc64751df2bab29868a",
+        title: "Aysyne – Nite Life",
+        duration: 254000,
+        streamUrl: "/audio/914cb3bbe433147e173a9cc64751df2bab29868a.mp3",
+        artworkUrl: "/artwork/914cb3bbe433147e173a9cc64751df2bab29868a.jpg",
+    },
+    {
+        id: "c3b7cf7f10aa82f99c988bb368195b2deb70b90f",
+        title: "GreKanE – Rectified",
+        duration: 224000,
+        streamUrl: "/audio/c3b7cf7f10aa82f99c988bb368195b2deb70b90f.mp3",
+        artworkUrl: "/artwork/c3b7cf7f10aa82f99c988bb368195b2deb70b90f.jpg",
+    },
+    {
+        id: "6ddbef50dfdb019a9cc9003c19833f07f3b1d38d",
+        title: "LeveL -1 – Attacking The Headquarters",
+        duration: 223000,
+        streamUrl: "/audio/6ddbef50dfdb019a9cc9003c19833f07f3b1d38d.mp3",
+        artworkUrl: "/artwork/6ddbef50dfdb019a9cc9003c19833f07f3b1d38d.jpg",
+    },
+    {
+        id: "6450bb773878069074411d3ec1be31666bd768fb",
+        title: "Nightcrawler – Road Blaster (Dynatron Remix)",
+        duration: 263000,
+        streamUrl: "/audio/6450bb773878069074411d3ec1be31666bd768fb.mp3",
+        artworkUrl: "/artwork/6450bb773878069074411d3ec1be31666bd768fb.jpg",
+    },
+    {
+        id: "b82dfb64a576c808b49a8e3c2cb77572b6927188",
+        title: "Rosco – Gridlinked (feat. Kaspar Funk)",
+        duration: 249000,
+        streamUrl: "/audio/b82dfb64a576c808b49a8e3c2cb77572b6927188.mp3",
+        artworkUrl: "/artwork/b82dfb64a576c808b49a8e3c2cb77572b6927188.jpg",
+    },
+    {
+        id: "9e24d884d2044a5a7b13c1f1c6d9bb60f21d4a22",
+        title: "Gost – Night Crawler",
+        duration: 281000,
+        streamUrl: "/audio/9e24d884d2044a5a7b13c1f1c6d9bb60f21d4a22.mp3",
+        artworkUrl: "/artwork/9e24d884d2044a5a7b13c1f1c6d9bb60f21d4a22.jpg",
+    },
+    {
+        id: "da55dda32bb7ff387d17a25a1626f5e90ee14b29",
+        title: "Nightrun – Ningen",
+        duration: 364000,
+        streamUrl: "/audio/da55dda32bb7ff387d17a25a1626f5e90ee14b29.mp3",
+        artworkUrl: "/artwork/da55dda32bb7ff387d17a25a1626f5e90ee14b29.jpg",
+    },
+    {
+        id: "aff9bc54e32ab497bd04e17cd2a43eba202c23ee",
+        title: "Midnight Heir – Badlands",
+        duration: 288000,
+        streamUrl: "/audio/aff9bc54e32ab497bd04e17cd2a43eba202c23ee.mp3",
+        artworkUrl: "/artwork/aff9bc54e32ab497bd04e17cd2a43eba202c23ee.jpg",
+    },
+    {
+        id: "6049f0377e2c325a6a90b90db1e8bf7c5e657161",
+        title: "Empathy Test – Holding On",
+        duration: 249159.34999999998,
+        streamUrl: "/audio/6049f0377e2c325a6a90b90db1e8bf7c5e657161.mp3",
+        artworkUrl: "/artwork/6049f0377e2c325a6a90b90db1e8bf7c5e657161.jpg",
+    },
+    {
+        id: "a054b5c0ebb7765ef84317fba68b5a4211ea780b",
+        title: "Arcade High – Heat Wave (feat. Morissa Trunzo)",
+        duration: 251000,
+        streamUrl: "/audio/a054b5c0ebb7765ef84317fba68b5a4211ea780b.mp3",
+        artworkUrl: "/artwork/a054b5c0ebb7765ef84317fba68b5a4211ea780b.jpg",
+    },
+    {
+        id: "ae270cc8a590589302309fdae7ab8864137c6df7",
+        title: "FM Attack – Sleepless Nights",
+        duration: 408000,
+        streamUrl: "/audio/ae270cc8a590589302309fdae7ab8864137c6df7.mp3",
+        artworkUrl: "/artwork/ae270cc8a590589302309fdae7ab8864137c6df7.jpg",
+    },
+    {
+        id: "1af5503d2e3f4b941af82138b2ee1ea35addf4d5",
+        title: "Perturbator – Payback Pursuit",
+        duration: 243000,
+        streamUrl: "/audio/1af5503d2e3f4b941af82138b2ee1ea35addf4d5.mp3",
+        artworkUrl: "/artwork/1af5503d2e3f4b941af82138b2ee1ea35addf4d5.jpg",
+    },
+    {
+        id: "01ebeb2baab8a0564619cc0ca3a7fefe5413eef2",
+        title: "D/A/D – Love Will Make You Stay (with USA Gold and Sharaya Mikael)",
+        duration: 374000,
+        streamUrl: "/audio/01ebeb2baab8a0564619cc0ca3a7fefe5413eef2.mp3",
+        artworkUrl: "/artwork/01ebeb2baab8a0564619cc0ca3a7fefe5413eef2.jpg",
+    },
+    {
+        id: "7dd230b22929c716c379f7999c1d820d4ad88c69",
+        title: "Miami Nights 1984 – One Last Time",
+        duration: 146000,
+        streamUrl: "/audio/7dd230b22929c716c379f7999c1d820d4ad88c69.mp3",
+        artworkUrl: "/artwork/7dd230b22929c716c379f7999c1d820d4ad88c69.jpg",
+    },
+    {
+        id: "a0c9f1b970f2481e880d8ca6c7c0a9e3ee7cea24",
+        title: "Magic Sword – In The Face Of Evil",
+        duration: 409077.80000000005,
+        streamUrl: "/audio/a0c9f1b970f2481e880d8ca6c7c0a9e3ee7cea24.mp3",
+        artworkUrl: "/artwork/a0c9f1b970f2481e880d8ca6c7c0a9e3ee7cea24.jpg",
+    },
+    {
+        id: "1c5779501ab90dd73bdfcc9d25c0ce468f5deb6f",
+        title: "Lost Years – Phoenix Rising",
+        duration: 328000,
+        streamUrl: "/audio/1c5779501ab90dd73bdfcc9d25c0ce468f5deb6f.mp3",
+        artworkUrl: "/artwork/1c5779501ab90dd73bdfcc9d25c0ce468f5deb6f.jpg",
+    },
+    {
+        id: "93d11545d14e05cdfe2289a917b72cb38d67f34e",
+        title: "Danger Mode – Crime Wave",
+        duration: 163000,
+        streamUrl: "/audio/93d11545d14e05cdfe2289a917b72cb38d67f34e.mp3",
+        artworkUrl: "/artwork/93d11545d14e05cdfe2289a917b72cb38d67f34e.jpg",
+    },
+    {
+        id: "efa2f7e5bc4d049a9db5fd7b166342b56128c2d4",
+        title: "Compilerbau – Tachyon",
+        duration: 277000,
+        streamUrl: "/audio/efa2f7e5bc4d049a9db5fd7b166342b56128c2d4.mp3",
+        artworkUrl: "/artwork/efa2f7e5bc4d049a9db5fd7b166342b56128c2d4.jpg",
+    },
+    {
+        id: "bf055980678604503070f402961ad5471c97549e",
+        title: "Midnight Heir – Battery",
+        duration: 213000,
+        streamUrl: "/audio/bf055980678604503070f402961ad5471c97549e.mp3",
+        artworkUrl: "/artwork/bf055980678604503070f402961ad5471c97549e.jpg",
+    },
+    {
+        id: "f8cdb8a86b751e81e1c18a78d8247f177e807cc7",
+        title: "Lazerhawk – Wrong Side Of Town",
+        duration: 212000,
+        streamUrl: "/audio/f8cdb8a86b751e81e1c18a78d8247f177e807cc7.mp3",
+        artworkUrl: "/artwork/f8cdb8a86b751e81e1c18a78d8247f177e807cc7.jpg",
+    },
+    {
+        id: "e0bc76f49dc7c5c3a99750361b5a79529e3a7141",
+        title: "Morgan Willis – Sunset Ridge",
+        duration: 328000,
+        streamUrl: "/audio/e0bc76f49dc7c5c3a99750361b5a79529e3a7141.mp3",
+        artworkUrl: "/artwork/e0bc76f49dc7c5c3a99750361b5a79529e3a7141.jpg",
+    },
+    {
+        id: "7914f8b5aaaeb0632f6fa63e6c0f61e768318689",
+        title: "Lazerhawk – Fight to the Top",
+        duration: 250000,
+        streamUrl: "/audio/7914f8b5aaaeb0632f6fa63e6c0f61e768318689.mp3",
+        artworkUrl: "/artwork/7914f8b5aaaeb0632f6fa63e6c0f61e768318689.jpg",
+    },
+    {
+        id: "45fe7b51432ca4ea5c0702fb95366cb247a88d7e",
+        title: "3FORCE – Highway Jupiter",
+        duration: 324000,
+        streamUrl: "/audio/45fe7b51432ca4ea5c0702fb95366cb247a88d7e.mp3",
+        artworkUrl: "/artwork/45fe7b51432ca4ea5c0702fb95366cb247a88d7e.jpg",
+    },
+    {
+        id: "00076cc3b4f5bd6b1528e646d7c0db5f4e538b6a",
+        title: "Action Jackson – Palm Kill",
+        duration: 349000,
+        streamUrl: "/audio/00076cc3b4f5bd6b1528e646d7c0db5f4e538b6a.mp3",
+        artworkUrl: "/artwork/00076cc3b4f5bd6b1528e646d7c0db5f4e538b6a.jpg",
+    },
+    {
+        id: "23a2dfcc04ca72329589fe1dea5fa10dc234467c",
+        title: "Bestrack – Workout 2000",
+        duration: 340404.375,
+        streamUrl: "/audio/23a2dfcc04ca72329589fe1dea5fa10dc234467c.mp3",
+        artworkUrl: "/artwork/23a2dfcc04ca72329589fe1dea5fa10dc234467c.jpg",
+    },
+    {
+        id: "008996f9685b1157e65fc708a95632983d95fe71",
+        title: "INDEX CODE – Article 37",
+        duration: 226000,
+        streamUrl: "/audio/008996f9685b1157e65fc708a95632983d95fe71.mp3",
+        artworkUrl: "/artwork/008996f9685b1157e65fc708a95632983d95fe71.jpg",
+    },
+    {
+        id: "009cb039108b41412a674e3ed5283d5da33dce1a",
+        title: "Crockett – Changing Lanes",
+        duration: 336000,
+        streamUrl: "/audio/009cb039108b41412a674e3ed5283d5da33dce1a.mp3",
+        artworkUrl: "/artwork/009cb039108b41412a674e3ed5283d5da33dce1a.jpg",
+    },
+    {
+        id: "439d440f5dcb602d2a29fea2c4128eaa42368d79",
+        title: "Mitch Murder – The Touch",
+        duration: 326246.72500000003,
+        streamUrl: "/audio/439d440f5dcb602d2a29fea2c4128eaa42368d79.mp3",
+        artworkUrl: "/artwork/439d440f5dcb602d2a29fea2c4128eaa42368d79.jpg",
+    },
+    {
+        id: "6ba811971c53419d1dfd5df1c048316fabff7868",
+        title: "Night Runner – The Driver",
+        duration: 246000,
+        streamUrl: "/audio/6ba811971c53419d1dfd5df1c048316fabff7868.mp3",
+        artworkUrl: "/artwork/6ba811971c53419d1dfd5df1c048316fabff7868.jpg",
+    },
+    {
+        id: "77cf51db21d1b79f57cbdb486f6868325a1bbfbf",
+        title: "Muscle – Feel The Steel",
+        duration: 207000,
+        streamUrl: "/audio/77cf51db21d1b79f57cbdb486f6868325a1bbfbf.mp3",
+        artworkUrl: "/artwork/77cf51db21d1b79f57cbdb486f6868325a1bbfbf.jpg",
+    },
+    {
+        id: "dc06db7952bf78b76fce2549a3a109f2177b3486",
+        title: "Michael Perkins – Esteban",
+        duration: 195000,
+        streamUrl: "/audio/dc06db7952bf78b76fce2549a3a109f2177b3486.mp3",
+        artworkUrl: "/artwork/dc06db7952bf78b76fce2549a3a109f2177b3486.jpg",
+    },
+    {
+        id: "9a3ccfcdc1393277bc6005c86fd2977089c16284",
+        title: "Judge Bitch – Tropicool",
+        duration: 266000,
+        streamUrl: "/audio/9a3ccfcdc1393277bc6005c86fd2977089c16284.mp3",
+        artworkUrl: "/artwork/9a3ccfcdc1393277bc6005c86fd2977089c16284.jpg",
+    },
+    {
+        id: "ee1ab0a93274e1e08c4500f3eb8e49c29d35d8fa",
+        title: "Bestrack – Burn the night",
+        duration: 249132.5,
+        streamUrl: "/audio/ee1ab0a93274e1e08c4500f3eb8e49c29d35d8fa.mp3",
+        artworkUrl: "/artwork/ee1ab0a93274e1e08c4500f3eb8e49c29d35d8fa.jpg",
+    },
+    {
+        id: "d48ec511aa389fe5d300b4fde8955ef2a5ba9fac",
+        title: "Mirage – Midas' Hand",
+        duration: 304000,
+        streamUrl: "/audio/d48ec511aa389fe5d300b4fde8955ef2a5ba9fac.mp3",
+        artworkUrl: "/artwork/d48ec511aa389fe5d300b4fde8955ef2a5ba9fac.jpg",
+    },
+    {
+        id: "d93e764bb7c8c28d235f2d7520bca7da9adf7090",
+        title: "Makeup and Vanity Set – From a Distance (Theme from Hit TV)",
+        duration: 274000,
+        streamUrl: "/audio/d93e764bb7c8c28d235f2d7520bca7da9adf7090.mp3",
+        artworkUrl: "/artwork/d93e764bb7c8c28d235f2d7520bca7da9adf7090.jpg",
+    },
+    {
+        id: "e648f122678f17549e84aa2fb55f0ab046495b54",
+        title: "ALEX – Occult",
+        duration: 331000,
+        streamUrl: "/audio/e648f122678f17549e84aa2fb55f0ab046495b54.mp3",
+        artworkUrl: "/artwork/e648f122678f17549e84aa2fb55f0ab046495b54.jpg",
+    },
+    {
+        id: "61c77617d9a04ca404a087a1a978a2a4f207fe05",
+        title: "NIKY NINE – ROAD",
+        duration: 292000,
+        streamUrl: "/audio/61c77617d9a04ca404a087a1a978a2a4f207fe05.mp3",
+        artworkUrl: "/artwork/61c77617d9a04ca404a087a1a978a2a4f207fe05.jpg",
+    },
+    {
+        id: "c2490e19575b503d43b083913525a7f3d48d7164",
+        title: "Danger Mode – Meridian Cruisin'",
+        duration: 178000,
+        streamUrl: "/audio/c2490e19575b503d43b083913525a7f3d48d7164.mp3",
+        artworkUrl: "/artwork/c2490e19575b503d43b083913525a7f3d48d7164.jpg",
+    },
+    {
+        id: "5705080a6bad0d7b4ea8704234c237a68c1cd9b4",
+        title: "Run Vaylor – Rush",
+        duration: 209000,
+        streamUrl: "/audio/5705080a6bad0d7b4ea8704234c237a68c1cd9b4.mp3",
+        artworkUrl: "/artwork/5705080a6bad0d7b4ea8704234c237a68c1cd9b4.jpg",
+    },
+    {
+        id: "6e531164c4804e9db56db9baa9fd1512e7de72af",
+        title: "OGRE – Job For A Cowboy",
+        duration: 141000,
+        streamUrl: "/audio/6e531164c4804e9db56db9baa9fd1512e7de72af.mp3",
+        artworkUrl: "/artwork/6e531164c4804e9db56db9baa9fd1512e7de72af.jpg",
+    },
+    {
+        id: "4cfe64e8052e910e4370cdead00b706ea6bbf279",
+        title: "Meteor – Night Riders",
+        duration: 199000,
+        streamUrl: "/audio/4cfe64e8052e910e4370cdead00b706ea6bbf279.mp3",
+        artworkUrl: "/artwork/4cfe64e8052e910e4370cdead00b706ea6bbf279.jpg",
+    },
+    {
+        id: "857cc2061d26380bf35599ae683f68cb0ceea990",
+        title: "Dance with the Dead – The Entity",
+        duration: 234000,
+        streamUrl: "/audio/857cc2061d26380bf35599ae683f68cb0ceea990.mp3",
+        artworkUrl: "/artwork/857cc2061d26380bf35599ae683f68cb0ceea990.jpg",
+    },
+    {
+        id: "abf58ed918bfb1b4a4b8f93ab208b0ce56e258f2",
+        title: "Judge Bitch – Striker (feat. Perturbator)",
+        duration: 186000,
+        streamUrl: "/audio/abf58ed918bfb1b4a4b8f93ab208b0ce56e258f2.mp3",
+        artworkUrl: "/artwork/abf58ed918bfb1b4a4b8f93ab208b0ce56e258f2.jpg",
+    },
+    {
+        id: "7aac5c4753ca9859e3c67685c72b5a8529f14e67",
+        title: "Prius An Sich – Hyperion Booster",
+        duration: 273244.25,
+        streamUrl: "/audio/7aac5c4753ca9859e3c67685c72b5a8529f14e67.mp3",
+        artworkUrl: "/artwork/7aac5c4753ca9859e3c67685c72b5a8529f14e67.jpg",
+    },
+    {
+        id: "8b26847f4751208715912bae97ac526a83984479",
+        title: "Midnight Static – Synthesized Dreams",
+        duration: 224000,
+        streamUrl: "/audio/8b26847f4751208715912bae97ac526a83984479.mp3",
+        artworkUrl: "/artwork/8b26847f4751208715912bae97ac526a83984479.jpg",
+    },
+    {
+        id: "a3b05ee7fe8b8981618ff0debf01a94b1f6e3649",
+        title: "Phaserland – We Go Tonight",
+        duration: 340000,
+        streamUrl: "/audio/a3b05ee7fe8b8981618ff0debf01a94b1f6e3649.mp3",
+        artworkUrl: "/artwork/a3b05ee7fe8b8981618ff0debf01a94b1f6e3649.jpg",
+    },
+    {
+        id: "1b1b89bc8ab9d0d19274190e6b5d50cc292dee96",
+        title: "Judge Bitch – MDK",
+        duration: 220000,
+        streamUrl: "/audio/1b1b89bc8ab9d0d19274190e6b5d50cc292dee96.mp3",
+        artworkUrl: "/artwork/1b1b89bc8ab9d0d19274190e6b5d50cc292dee96.jpg",
+    },
+    {
+        id: "9a2e79f2a904d52481f9a692837de243596e06ed",
+        title: "Miami Nights 1984 – Saved By The Bell",
+        duration: 266000,
+        streamUrl: "/audio/9a2e79f2a904d52481f9a692837de243596e06ed.mp3",
+        artworkUrl: "/artwork/9a2e79f2a904d52481f9a692837de243596e06ed.jpg",
+    },
+    {
+        id: "b5fe4283a475ec0a61e0bf0ce173676f6e83f504",
+        title: "DATAStream – Cinder Sunset",
+        duration: 334000,
+        streamUrl: "/audio/b5fe4283a475ec0a61e0bf0ce173676f6e83f504.mp3",
+        artworkUrl: "/artwork/b5fe4283a475ec0a61e0bf0ce173676f6e83f504.jpg",
+    },
+    {
+        id: "42aa24303041266a446cf3ebbc0409db2cba4b5f",
+        title: "Highway Superstar – Save You (feat. Sebastian Gampl & Miranda Carey)",
+        duration: 336312.25,
+        streamUrl: "/audio/42aa24303041266a446cf3ebbc0409db2cba4b5f.mp3",
+        artworkUrl: "/artwork/42aa24303041266a446cf3ebbc0409db2cba4b5f.jpg",
+    },
+    {
+        id: "6da24383d808d8f04275829aeaac1b32ab945309",
+        title: "NightStop – Synth City",
+        duration: 218000,
+        streamUrl: "/audio/6da24383d808d8f04275829aeaac1b32ab945309.mp3",
+        artworkUrl: "/artwork/6da24383d808d8f04275829aeaac1b32ab945309.jpg",
+    },
+    {
+        id: "7747de1cdc8b332b962da47174adbf709fb3c970",
+        title: "Carpenter Brut – Hang'Em All",
+        duration: 337000,
+        streamUrl: "/audio/7747de1cdc8b332b962da47174adbf709fb3c970.mp3",
+        artworkUrl: "/artwork/7747de1cdc8b332b962da47174adbf709fb3c970.jpg",
+    },
+    {
+        id: "a44fa631a47b8bf2eb253ff72da2ea9d3c8ecd20",
+        title: "Street Cleaner – Nightlife",
+        duration: 200000,
+        streamUrl: "/audio/a44fa631a47b8bf2eb253ff72da2ea9d3c8ecd20.mp3",
+        artworkUrl: "/artwork/a44fa631a47b8bf2eb253ff72da2ea9d3c8ecd20.jpg",
+    },
+    {
+        id: "52d7ead95644e8ba65fcb198811f8d358440863a",
+        title: "Sung – Wayfarer",
+        duration: 253000,
+        streamUrl: "/audio/52d7ead95644e8ba65fcb198811f8d358440863a.mp3",
+        artworkUrl: "/artwork/52d7ead95644e8ba65fcb198811f8d358440863a.jpg",
+    },
+    {
+        id: "55d26f152537801780f812ffab63b5aa6567c0f2",
+        title: "D/A/D – Backbone of the Night",
+        duration: 292000,
+        streamUrl: "/audio/55d26f152537801780f812ffab63b5aa6567c0f2.mp3",
+        artworkUrl: "/artwork/55d26f152537801780f812ffab63b5aa6567c0f2.jpg",
+    },
+    {
+        id: "c8774500da6af4b048e560ba4f85c26ffc9a1fd6",
+        title: "Compilerbau – Leaving Earth",
+        duration: 338000,
+        streamUrl: "/audio/c8774500da6af4b048e560ba4f85c26ffc9a1fd6.mp3",
+        artworkUrl: "/artwork/c8774500da6af4b048e560ba4f85c26ffc9a1fd6.jpg",
+    },
+    {
+        id: "2e82b833532f5c4611fce6b4957ac0dba5348d57",
+        title: "Android Automatic – Camaro Dreams",
+        duration: 204000,
+        streamUrl: "/audio/2e82b833532f5c4611fce6b4957ac0dba5348d57.mp3",
+        artworkUrl: "/artwork/2e82b833532f5c4611fce6b4957ac0dba5348d57.jpg",
+    },
+    {
+        id: "b5eb9b5e12d2cb3a3c1ec3bccb22d140ca6231bb",
+        title: "Mega Drive – Crimewave",
+        duration: 296000,
+        streamUrl: "/audio/b5eb9b5e12d2cb3a3c1ec3bccb22d140ca6231bb.mp3",
+        artworkUrl: "/artwork/b5eb9b5e12d2cb3a3c1ec3bccb22d140ca6231bb.jpg",
+    },
+    {
+        id: "04a8b8ae0427136d2d466f673d014fccaa9ea9aa",
+        title: "NightStop – PoWer Prostitute",
+        duration: 207000,
+        streamUrl: "/audio/04a8b8ae0427136d2d466f673d014fccaa9ea9aa.mp3",
+        artworkUrl: "/artwork/04a8b8ae0427136d2d466f673d014fccaa9ea9aa.jpg",
+    },
+    {
+        id: "15e9642798b73e75e4f99ad4547b9368d2b8ad83",
+        title: "Meteor – Grim Memories",
+        duration: 327000,
+        streamUrl: "/audio/15e9642798b73e75e4f99ad4547b9368d2b8ad83.mp3",
+        artworkUrl: "/artwork/15e9642798b73e75e4f99ad4547b9368d2b8ad83.jpg",
+    },
+];
+function getUniqueObjects(array2) {
+    const uniqueObjects = [];
+    // Додаємо об'єкти з другого масиву, які не мають однакового значення в першому масиві
+    for (const obj of array2) {
+        if (!data.some((item) => item.title === obj.title)) {
+            uniqueObjects.push(obj);
+        }
+    }
+    const uniqueArray = uniqueObjects.filter(
+        //фільтруємо щоб не було одинакових
+        (obj, index, self) =>
+            index ===
+            self.findIndex(
+                (o) =>
+                    o.id === obj.id &&
+                    o.title === obj.title &&
+                    o.duration === obj.duration &&
+                    o.streamUrl === obj.streamUrl &&
+                    o.artworkUrl === obj.artworkUrl
+            )
+    );
+    return uniqueArray;
+} //беремо новий масив з інтернета, порівнюється який пісень в мене нема та повертає масив обєктів яких в мене нема
+console.log(getUniqueObjects(tracks));
 
+const data1Dowland = [
+    {
+        id: "44bb8fe47bf3d366062afa182d896a4595dbda06",
+        title: "Camille R – 2001",
+        duration: 213000,
+        streamUrl: "/audio/44bb8fe47bf3d366062afa182d896a4595dbda06.mp3",
+        artworkUrl: "/artwork/44bb8fe47bf3d366062afa182d896a4595dbda06.jpg",
+    },
+    {
+        id: "372567cee9b7c876f08a8685d4f472472ecafe04",
+        title: "Darknous – Outrage",
+        duration: 295000,
+        streamUrl: "/audio/372567cee9b7c876f08a8685d4f472472ecafe04.mp3",
+        artworkUrl: "/artwork/372567cee9b7c876f08a8685d4f472472ecafe04.jpg",
+    },
+    {
+        id: "4171b319ab7e0c828aca696cdbd5501cc84ffa36",
+        title: "Night Action – All About U",
+        duration: 291000,
+        streamUrl: "/audio/4171b319ab7e0c828aca696cdbd5501cc84ffa36.mp3",
+        artworkUrl: "/artwork/4171b319ab7e0c828aca696cdbd5501cc84ffa36.jpg",
+    },
+    {
+        id: "d51e049836e528a8c7ce3fb3fc7afc17e0b4d2f0",
+        title: "Raken – Sunset Place",
+        duration: 204000,
+        streamUrl: "/audio/d51e049836e528a8c7ce3fb3fc7afc17e0b4d2f0.mp3",
+        artworkUrl: "/artwork/d51e049836e528a8c7ce3fb3fc7afc17e0b4d2f0.jpg",
+    },
+    {
+        id: "67c1c608198f805c75b56a4b0c1c4cab5b556ffa",
+        title: "Double Dragon – Traversee",
+        duration: 245000,
+        streamUrl: "/audio/67c1c608198f805c75b56a4b0c1c4cab5b556ffa.mp3",
+        artworkUrl: "/artwork/67c1c608198f805c75b56a4b0c1c4cab5b556ffa.jpg",
+    },
+    {
+        id: "ddefc580bcfc9a424bf95b9dfbb3225fb4b89ce4",
+        title: "Dance with the Dead – Snapped",
+        duration: 229000,
+        streamUrl: "/audio/ddefc580bcfc9a424bf95b9dfbb3225fb4b89ce4.mp3",
+        artworkUrl: "/artwork/ddefc580bcfc9a424bf95b9dfbb3225fb4b89ce4.jpg",
+    },
+    {
+        id: "baaad0dfcddc351bc849be935740803dbce74665",
+        title: "Andromeda Dreams – Space Highway",
+        duration: 215000,
+        streamUrl: "/audio/baaad0dfcddc351bc849be935740803dbce74665.mp3",
+        artworkUrl: "/artwork/baaad0dfcddc351bc849be935740803dbce74665.jpg",
+    },
+    {
+        id: "b77b5efcdc591b839e4fba4de7602405333084a5",
+        title: "Robert Parker – Waiting",
+        duration: 263000,
+        streamUrl: "/audio/b77b5efcdc591b839e4fba4de7602405333084a5.mp3",
+        artworkUrl: "/artwork/b77b5efcdc591b839e4fba4de7602405333084a5.jpg",
+    },
+    {
+        id: "f8a970b802ffc8a192f34deb8e461fe0bb0d9e04",
+        title: "C-jeff – Momo's Truck Stop",
+        duration: 208000,
+        streamUrl: "/audio/f8a970b802ffc8a192f34deb8e461fe0bb0d9e04.mp3",
+        artworkUrl: "/artwork/f8a970b802ffc8a192f34deb8e461fe0bb0d9e04.png",
+    },
+    {
+        id: "7b839de882534b5491656f3388932c3aabfcbdd6",
+        title: "Jasper Byrne – Decade Dance",
+        duration: 321000,
+        streamUrl: "/audio/7b839de882534b5491656f3388932c3aabfcbdd6.mp3",
+        artworkUrl: "/artwork/7b839de882534b5491656f3388932c3aabfcbdd6.jpg",
+    },
+    {
+        id: "6d331273dca80961384d55247923fc812097dd78",
+        title: "Monomer – Warden",
+        duration: 258000,
+        streamUrl: "/audio/6d331273dca80961384d55247923fc812097dd78.mp3",
+        artworkUrl: "/artwork/6d331273dca80961384d55247923fc812097dd78.jpg",
+    },
+    {
+        id: "237e602291fea214cbdaebb6cd4a11944517cf8c",
+        title: "Le Matos – Wasteland",
+        duration: 336000,
+        streamUrl: "/audio/237e602291fea214cbdaebb6cd4a11944517cf8c.mp3",
+        artworkUrl: "/artwork/237e602291fea214cbdaebb6cd4a11944517cf8c.jpg",
+    },
+    {
+        id: "56746093c8426c1298daa46ff1da9472ff6beaf1",
+        title: "Cluster Buster – How Can He Go So Fast",
+        duration: 284000,
+        streamUrl: "/audio/56746093c8426c1298daa46ff1da9472ff6beaf1.mp3",
+        artworkUrl: "/artwork/56746093c8426c1298daa46ff1da9472ff6beaf1.jpg",
+    },
+    {
+        id: "b8069445174238c3bfab152d8edbd0cfdbb56640",
+        title: "Robert Parker – Generation '82 (feat. Shyguys)",
+        duration: 256000,
+        streamUrl: "/audio/b8069445174238c3bfab152d8edbd0cfdbb56640.mp3",
+        artworkUrl: "/artwork/b8069445174238c3bfab152d8edbd0cfdbb56640.jpg",
+    },
+    {
+        id: "1b53f0b38f9f9584ff485c4a54381b1c105afcce",
+        title: "FM Attack – Magic (feat. Kristine)",
+        duration: 276000,
+        streamUrl: "/audio/1b53f0b38f9f9584ff485c4a54381b1c105afcce.mp3",
+        artworkUrl: "/artwork/1b53f0b38f9f9584ff485c4a54381b1c105afcce.jpg",
+    },
+    {
+        id: "d54cbf054a8384d627527d602328cfea2c4842fb",
+        title: "GAMER – Old Money",
+        duration: 146000,
+        streamUrl: "/audio/d54cbf054a8384d627527d602328cfea2c4842fb.mp3",
+        artworkUrl: "/artwork/d54cbf054a8384d627527d602328cfea2c4842fb.jpg",
+    },
+    {
+        id: "abf67a16c705b47e5acf45fcf5a976582c764c91",
+        title: "A Space Love Adventure – Red Blaze",
+        duration: 230000,
+        streamUrl: "/audio/abf67a16c705b47e5acf45fcf5a976582c764c91.mp3",
+        artworkUrl: "/artwork/abf67a16c705b47e5acf45fcf5a976582c764c91.jpg",
+    },
+    {
+        id: "ca6a555e348a4c495a1a9c35e14551d67e814b37",
+        title: "TWRP – Japanquest",
+        duration: 272000,
+        streamUrl: "/audio/ca6a555e348a4c495a1a9c35e14551d67e814b37.mp3",
+        artworkUrl: "/artwork/ca6a555e348a4c495a1a9c35e14551d67e814b37.png",
+    },
+    {
+        id: "37e70082b58a52e5a051e578a49bf8e2af22bcf8",
+        title: "Perturbator – Sexualizer (feat. Flash Arnold)",
+        duration: 299000,
+        streamUrl: "/audio/37e70082b58a52e5a051e578a49bf8e2af22bcf8.mp3",
+        artworkUrl: "/artwork/37e70082b58a52e5a051e578a49bf8e2af22bcf8.jpg",
+    },
+    {
+        id: "55963b04a9c541b7877f0c68c1d9c76f2f5766e6",
+        title: "Meteor – Manhattan 2019",
+        duration: 223000,
+        streamUrl: "/audio/55963b04a9c541b7877f0c68c1d9c76f2f5766e6.mp3",
+        artworkUrl: "/artwork/55963b04a9c541b7877f0c68c1d9c76f2f5766e6.jpg",
+    },
+    {
+        id: "42ec2a5d905d239b06decf60abe41cd94317ba3c",
+        title: "Retouch – Event Horizon",
+        duration: 223803.45,
+        streamUrl: "/audio/42ec2a5d905d239b06decf60abe41cd94317ba3c.mp3",
+        artworkUrl: "/artwork/42ec2a5d905d239b06decf60abe41cd94317ba3c.jpg",
+    },
+    {
+        id: "bf3d8843a3ca65f54dbe4459ecd9068f475669f6",
+        title: "Pengus – Azimut",
+        duration: 266000,
+        streamUrl: "/audio/bf3d8843a3ca65f54dbe4459ecd9068f475669f6.mp3",
+        artworkUrl: "/artwork/bf3d8843a3ca65f54dbe4459ecd9068f475669f6.jpg",
+    },
+    {
+        id: "c6ffff3b532c923d7e80e87c7a4ff83cd4078fe3",
+        title: "Lazerhawk – The King of the Streets",
+        duration: 297000,
+        streamUrl: "/audio/c6ffff3b532c923d7e80e87c7a4ff83cd4078fe3.mp3",
+        artworkUrl: "/artwork/c6ffff3b532c923d7e80e87c7a4ff83cd4078fe3.jpg",
+    },
+    {
+        id: "788062ec6d7f140413dcece66f1a286420e6c03e",
+        title: "Absolute Valentine – Disco Lover",
+        duration: 237000,
+        streamUrl: "/audio/788062ec6d7f140413dcece66f1a286420e6c03e.mp3",
+        artworkUrl: "/artwork/788062ec6d7f140413dcece66f1a286420e6c03e.jpg",
+    },
+    {
+        id: "4c85d4dcb6d818416b201cdb670629d6cfd2fc50",
+        title: "CONFRONTATIONAL – Like A Curse (Feat. Monte Pittman)",
+        duration: 304000,
+        streamUrl: "/audio/4c85d4dcb6d818416b201cdb670629d6cfd2fc50.mp3",
+        artworkUrl: "/artwork/4c85d4dcb6d818416b201cdb670629d6cfd2fc50.jpg",
+    },
+    {
+        id: "f3b0d80c4ca4675cfea7294468ff8ff93c0fb72e",
+        title: "Mega Drive – Take Me Home",
+        duration: 398000,
+        streamUrl: "/audio/f3b0d80c4ca4675cfea7294468ff8ff93c0fb72e.mp3",
+        artworkUrl: "/artwork/f3b0d80c4ca4675cfea7294468ff8ff93c0fb72e.png",
+    },
+    {
+        id: "6015e051f9ccb294304966c317065d26a13d019c",
+        title: "Kille ft. Future Holotape – Strangers in the Night",
+        duration: 256000,
+        streamUrl: "/audio/6015e051f9ccb294304966c317065d26a13d019c.mp3",
+        artworkUrl: "/artwork/6015e051f9ccb294304966c317065d26a13d019c.jpg",
+    },
+    {
+        id: "541807d75a4bd9fe5a09104287c0ef162f06ad56",
+        title: "20SIX Hundred – Open World",
+        duration: 216000,
+        streamUrl: "/audio/541807d75a4bd9fe5a09104287c0ef162f06ad56.mp3",
+        artworkUrl: "/artwork/541807d75a4bd9fe5a09104287c0ef162f06ad56.jpg",
+    },
+    {
+        id: "9d97a16658f429473802c8d1ac26305719336a8b",
+        title: "Arcade High – Phone Lines (feat. Hayley Stewart)",
+        duration: 253000,
+        streamUrl: "/audio/9d97a16658f429473802c8d1ac26305719336a8b.mp3",
+        artworkUrl: "/artwork/9d97a16658f429473802c8d1ac26305719336a8b.jpg",
+    },
+    {
+        id: "d5d524b70b222e6c3675366dcdfb01e14d1cfc80",
+        title: "LeveL -1 – Dive in VR",
+        duration: 231000,
+        streamUrl: "/audio/d5d524b70b222e6c3675366dcdfb01e14d1cfc80.mp3",
+        artworkUrl: "/artwork/d5d524b70b222e6c3675366dcdfb01e14d1cfc80.jpg",
+    },
+    {
+        id: "0d0b249c78e18fc77af6ce7680ff25789ec6c3c3",
+        title: "GUNSHIP – The Mountain",
+        duration: 264480.25,
+        streamUrl: "/audio/0d0b249c78e18fc77af6ce7680ff25789ec6c3c3.mp3",
+        artworkUrl: "/artwork/0d0b249c78e18fc77af6ce7680ff25789ec6c3c3.jpg",
+    },
+    {
+        id: "d3891c11749bd63159ccb52ed16e5454354a03e5",
+        title: "Vincenzo Salvia – Chromelove",
+        duration: 283056.25,
+        streamUrl: "/audio/d3891c11749bd63159ccb52ed16e5454354a03e5.mp3",
+        artworkUrl: "/artwork/d3891c11749bd63159ccb52ed16e5454354a03e5.jpg",
+    },
+    {
+        id: "ac51d0ef3fa01b5da82169dba91bcb16a69ab553",
+        title: "Phaserland – Resemblance In Machine",
+        duration: 292000,
+        streamUrl: "/audio/ac51d0ef3fa01b5da82169dba91bcb16a69ab553.mp3",
+        artworkUrl: "/artwork/ac51d0ef3fa01b5da82169dba91bcb16a69ab553.jpg",
+    },
+    {
+        id: "f4aa7673571ef901f6047dd88482d3c20a4bc761",
+        title: "GAMER – Overpass",
+        duration: 220000,
+        streamUrl: "/audio/f4aa7673571ef901f6047dd88482d3c20a4bc761.mp3",
+        artworkUrl: "/artwork/f4aa7673571ef901f6047dd88482d3c20a4bc761.jpg",
+    },
+    {
+        id: "7771fc38ff6941480d64f22de2cd85836e43f639",
+        title: "Mega Drive – Pulse of The Streets",
+        duration: 263000,
+        streamUrl: "/audio/7771fc38ff6941480d64f22de2cd85836e43f639.mp3",
+        artworkUrl: "/artwork/7771fc38ff6941480d64f22de2cd85836e43f639.png",
+    },
+    {
+        id: "c0ea05cdb88400c1ab77b960fceb876201ed6228",
+        title: "Lucy in Disguise – 1987",
+        duration: 279000,
+        streamUrl: "/audio/c0ea05cdb88400c1ab77b960fceb876201ed6228.mp3",
+        artworkUrl: "/artwork/c0ea05cdb88400c1ab77b960fceb876201ed6228.jpg",
+    },
+    {
+        id: "48e93989a6bd463855d3a34fb8b830f7c8ae75a2",
+        title: "NeodroneX – Suburban Cowboys",
+        duration: 187000,
+        streamUrl: "/audio/48e93989a6bd463855d3a34fb8b830f7c8ae75a2.mp3",
+        artworkUrl: "/artwork/48e93989a6bd463855d3a34fb8b830f7c8ae75a2.jpg",
+    },
+    {
+        id: "0205d9dc38917a14540b58d1a65fe43ec9353de5",
+        title: "The Hunt – Brain Test",
+        duration: 297000,
+        streamUrl: "/audio/0205d9dc38917a14540b58d1a65fe43ec9353de5.mp3",
+        artworkUrl: "/artwork/0205d9dc38917a14540b58d1a65fe43ec9353de5.jpg",
+    },
+    {
+        id: "11761072788d7cc9d1e1fb1bcc924f900a166e67",
+        title: "Saint-Samuel – Videoflex",
+        duration: 206064.25,
+        streamUrl: "/audio/11761072788d7cc9d1e1fb1bcc924f900a166e67.mp3",
+        artworkUrl: "/artwork/11761072788d7cc9d1e1fb1bcc924f900a166e67.jpg",
+    },
+    {
+        id: "1a0832814890e9f64bf3e481fd5ffdfa1fa5d9f9",
+        title: "Magic Dance – The Mirror of Dreams",
+        duration: 348000,
+        streamUrl: "/audio/1a0832814890e9f64bf3e481fd5ffdfa1fa5d9f9.mp3",
+        artworkUrl: "/artwork/1a0832814890e9f64bf3e481fd5ffdfa1fa5d9f9.jpg",
+    },
+    {
+        id: "a97b1b6d51d887ddb419fa7a9fdeb4dc4f7fa4b7",
+        title: "Block 35 – Central Control",
+        duration: 333000,
+        streamUrl: "/audio/a97b1b6d51d887ddb419fa7a9fdeb4dc4f7fa4b7.mp3",
+        artworkUrl: "/artwork/a97b1b6d51d887ddb419fa7a9fdeb4dc4f7fa4b7.jpg",
+    },
+    {
+        id: "f03e9c717020ff38b48c966229063e69b57f5f83",
+        title: "CRYOSAT – CrimeCom",
+        duration: 228000,
+        streamUrl: "/audio/f03e9c717020ff38b48c966229063e69b57f5f83.mp3",
+        artworkUrl: "/artwork/f03e9c717020ff38b48c966229063e69b57f5f83.jpg",
+    },
+    {
+        id: "5f17b882793fe22f9d71ff65d3d93b92c709fac8",
+        title: "Dream Fiend – Morning Light",
+        duration: 210000,
+        streamUrl: "/audio/5f17b882793fe22f9d71ff65d3d93b92c709fac8.mp3",
+        artworkUrl: "/artwork/5f17b882793fe22f9d71ff65d3d93b92c709fac8.jpg",
+    },
+    {
+        id: "6cc16ed37a4b418ec3d5358257ff3142fc4bf0e5",
+        title: "LeBrock – One Night",
+        duration: 212000,
+        streamUrl: "/audio/6cc16ed37a4b418ec3d5358257ff3142fc4bf0e5.mp3",
+        artworkUrl: "/artwork/6cc16ed37a4b418ec3d5358257ff3142fc4bf0e5.jpg",
+    },
+    {
+        id: "cddac66ea9198739a8abfdaa9a088d8439bcc2f3",
+        title: "Bellemaison – The Brand New Age",
+        duration: 246000,
+        streamUrl: "/audio/cddac66ea9198739a8abfdaa9a088d8439bcc2f3.mp3",
+        artworkUrl: "/artwork/cddac66ea9198739a8abfdaa9a088d8439bcc2f3.jpg",
+    },
+    {
+        id: "7dd77c06f31d4e8a1a94ac9d2832434ee1ebc94f",
+        title: "Gost – They",
+        duration: 253000,
+        streamUrl: "/audio/7dd77c06f31d4e8a1a94ac9d2832434ee1ebc94f.mp3",
+        artworkUrl: "/artwork/7dd77c06f31d4e8a1a94ac9d2832434ee1ebc94f.jpg",
+    },
+    {
+        id: "24d8d047dafe17dc6717d04aa7359a3ebf62d75f",
+        title: "Danger Mode – Chroma Drive",
+        duration: 294000,
+        streamUrl: "/audio/24d8d047dafe17dc6717d04aa7359a3ebf62d75f.mp3",
+        artworkUrl: "/artwork/24d8d047dafe17dc6717d04aa7359a3ebf62d75f.jpg",
+    },
+    {
+        id: "17aa22a9811d515370cb000336cb4ca79e8cfc99",
+        title: "Duett – Touch",
+        duration: 208000,
+        streamUrl: "/audio/17aa22a9811d515370cb000336cb4ca79e8cfc99.mp3",
+        artworkUrl: "/artwork/17aa22a9811d515370cb000336cb4ca79e8cfc99.jpg",
+    },
+    {
+        id: "89a46b1556d22e2809447d9065598ee47ce9b87a",
+        title: "OGRE – Shore Thing",
+        duration: 257000,
+        streamUrl: "/audio/89a46b1556d22e2809447d9065598ee47ce9b87a.mp3",
+        artworkUrl: "/artwork/89a46b1556d22e2809447d9065598ee47ce9b87a.jpg",
+    },
+    {
+        id: "bfefb3e78b333f41200bfe188f911885e495cf53",
+        title: "Midnight Static – VHS Hallucinations",
+        duration: 240000,
+        streamUrl: "/audio/bfefb3e78b333f41200bfe188f911885e495cf53.mp3",
+        artworkUrl: "/artwork/bfefb3e78b333f41200bfe188f911885e495cf53.jpg",
+    },
+    {
+        id: "d37ee09b5293270ad415c26054421f1ac8d83fa1",
+        title: "Jasper Byrne – Decade Dance",
+        duration: 279000,
+        streamUrl: "/audio/d37ee09b5293270ad415c26054421f1ac8d83fa1.mp3",
+        artworkUrl: "/artwork/d37ee09b5293270ad415c26054421f1ac8d83fa1.png",
+    },
+    {
+        id: "bcd15c2d818e8408cb43f0b7e43438bddc97199a",
+        title: "Magic Dance – Last Light",
+        duration: 279000,
+        streamUrl: "/audio/bcd15c2d818e8408cb43f0b7e43438bddc97199a.mp3",
+        artworkUrl: "/artwork/bcd15c2d818e8408cb43f0b7e43438bddc97199a.jpg",
+    },
+    {
+        id: "3ca0b480afbe763bcf545ecac432b47050641d5f",
+        title: "Mega Drive – Power Driver",
+        duration: 344000,
+        streamUrl: "/audio/3ca0b480afbe763bcf545ecac432b47050641d5f.mp3",
+        artworkUrl: "/artwork/3ca0b480afbe763bcf545ecac432b47050641d5f.jpg",
+    },
+    {
+        id: "d94929c827a1918ab1150260e9d87782ebf64d8e",
+        title: "Perturbator – Miami Disco",
+        duration: 271000,
+        streamUrl: "/audio/d94929c827a1918ab1150260e9d87782ebf64d8e.mp3",
+        artworkUrl: "/artwork/d94929c827a1918ab1150260e9d87782ebf64d8e.jpg",
+    },
+    {
+        id: "963d53044d83cac67ea568d1e7a769e171310f14",
+        title: "OGRE – Always Outnumbered, Never Outrun",
+        duration: 267000,
+        streamUrl: "/audio/963d53044d83cac67ea568d1e7a769e171310f14.mp3",
+        artworkUrl: "/artwork/963d53044d83cac67ea568d1e7a769e171310f14.jpg",
+    },
+    {
+        id: "a8ff6b6b0ad0ef42ef330a59bde034c5789a8bae",
+        title: "Worship – Close Encounter",
+        duration: 258048.25,
+        streamUrl: "/audio/a8ff6b6b0ad0ef42ef330a59bde034c5789a8bae.mp3",
+        artworkUrl: "/artwork/a8ff6b6b0ad0ef42ef330a59bde034c5789a8bae.jpg",
+    },
+    {
+        id: "22a749c245a6810ac61157b2c8b6c644d15d7e4d",
+        title: "Betamaxx – Redlining 6th",
+        duration: 189000,
+        streamUrl: "/audio/22a749c245a6810ac61157b2c8b6c644d15d7e4d.mp3",
+        artworkUrl: "/artwork/22a749c245a6810ac61157b2c8b6c644d15d7e4d.jpg",
+    },
+    {
+        id: "6a96480a0e965070c7cf82b858188e131cfcf186",
+        title: "Perturbator – I Am The Night",
+        duration: 379000,
+        streamUrl: "/audio/6a96480a0e965070c7cf82b858188e131cfcf186.mp3",
+        artworkUrl: "/artwork/6a96480a0e965070c7cf82b858188e131cfcf186.jpg",
+    },
+    {
+        id: "28ddfd663e367668b0e86cd984e95311f63608db",
+        title: "Drifting Dreamer – Lights Out",
+        duration: 273000,
+        streamUrl: "/audio/28ddfd663e367668b0e86cd984e95311f63608db.mp3",
+        artworkUrl: "/artwork/28ddfd663e367668b0e86cd984e95311f63608db.jpg",
+    },
+    {
+        id: "9903c122b227587145e3b6f5fda054cc26fc03d0",
+        title: "Renz Wilde – Home Computer",
+        duration: 189000,
+        streamUrl: "/audio/9903c122b227587145e3b6f5fda054cc26fc03d0.mp3",
+        artworkUrl: "/artwork/9903c122b227587145e3b6f5fda054cc26fc03d0.jpg",
+    },
+    {
+        id: "de5e0ad7afbf5bc0055d766d1f6261b9fb0eae0a",
+        title: "Droid Bishop – Vanisher",
+        duration: 236000,
+        streamUrl: "/audio/de5e0ad7afbf5bc0055d766d1f6261b9fb0eae0a.mp3",
+        artworkUrl: "/artwork/de5e0ad7afbf5bc0055d766d1f6261b9fb0eae0a.jpg",
+    },
+    {
+        id: "abe3c0f48d6bf0014328f2189cc17db2b631df2f",
+        title: "Atrey – Supernova",
+        duration: 257000,
+        streamUrl: "/audio/abe3c0f48d6bf0014328f2189cc17db2b631df2f.mp3",
+        artworkUrl: "/artwork/abe3c0f48d6bf0014328f2189cc17db2b631df2f.jpg",
+    },
+    {
+        id: "dac784bac1f669babcfbbd40e8a2767f00e344a6",
+        title: "Betamaxx – Dreamer (feat. Rat Rios)",
+        duration: 243000,
+        streamUrl: "/audio/dac784bac1f669babcfbbd40e8a2767f00e344a6.mp3",
+        artworkUrl: "/artwork/dac784bac1f669babcfbbd40e8a2767f00e344a6.jpg",
+    },
+    {
+        id: "1ffecb1c64a70d2554e9db6a259165fe3680b58e",
+        title: "Dead Astronauts – Witch Hunt",
+        duration: 298000,
+        streamUrl: "/audio/1ffecb1c64a70d2554e9db6a259165fe3680b58e.mp3",
+        artworkUrl: "/artwork/1ffecb1c64a70d2554e9db6a259165fe3680b58e.jpg",
+    },
+    {
+        id: "4c0b10397725b3b27198080f2bbf8aa44c9d4127",
+        title: "Danger Mode – Survivor",
+        duration: 241000,
+        streamUrl: "/audio/4c0b10397725b3b27198080f2bbf8aa44c9d4127.mp3",
+        artworkUrl: "/artwork/4c0b10397725b3b27198080f2bbf8aa44c9d4127.jpg",
+    },
+    {
+        id: "4b0e2ee44a24a562b3fde9eab8e678731b19c2d6",
+        title: "Tommy '86 – Test Drive",
+        duration: 402000,
+        streamUrl: "/audio/4b0e2ee44a24a562b3fde9eab8e678731b19c2d6.mp3",
+        artworkUrl: "/artwork/4b0e2ee44a24a562b3fde9eab8e678731b19c2d6.jpg",
+    },
+    {
+        id: "fef2f2a6148f8837a336e7ca76b71dd032492a46",
+        title: "Mitch Murder – High Performance",
+        duration: 220685.9,
+        streamUrl: "/audio/fef2f2a6148f8837a336e7ca76b71dd032492a46.mp3",
+        artworkUrl: "/artwork/fef2f2a6148f8837a336e7ca76b71dd032492a46.jpg",
+    },
+    {
+        id: "5434ce38252dff4782c3a3f9024c946e58b58c1a",
+        title: "Compilerbau – North Wall",
+        duration: 264000,
+        streamUrl: "/audio/5434ce38252dff4782c3a3f9024c946e58b58c1a.mp3",
+        artworkUrl: "/artwork/5434ce38252dff4782c3a3f9024c946e58b58c1a.jpg",
+    },
+    {
+        id: "919714356b1f3eeed3bc836c41f15e46790e05f8",
+        title: "Miami Nights 1984 – Streets On Fire",
+        duration: 197000,
+        streamUrl: "/audio/919714356b1f3eeed3bc836c41f15e46790e05f8.mp3",
+        artworkUrl: "/artwork/919714356b1f3eeed3bc836c41f15e46790e05f8.jpg",
+    },
+    {
+        id: "787022b67699b3300026ddc4563cf3f94f60afb1",
+        title: "Arcade High – On The Edge Of Summer",
+        duration: 307000,
+        streamUrl: "/audio/787022b67699b3300026ddc4563cf3f94f60afb1.mp3",
+        artworkUrl: "/artwork/787022b67699b3300026ddc4563cf3f94f60afb1.jpg",
+    },
+    {
+        id: "68cd3ec26606e107bb032a65603ddec9621469ba",
+        title: "Forgotten Illusions – Electric Legion",
+        duration: 152000,
+        streamUrl: "/audio/68cd3ec26606e107bb032a65603ddec9621469ba.mp3",
+        artworkUrl: "/artwork/68cd3ec26606e107bb032a65603ddec9621469ba.jpg",
+    },
+    {
+        id: "49e69e5d52a06255c8e1341aa91dd7e6db778daa",
+        title: "80s Stallone – Beach (Original Mix)",
+        duration: 230000,
+        streamUrl: "/audio/49e69e5d52a06255c8e1341aa91dd7e6db778daa.mp3",
+        artworkUrl: "/artwork/49e69e5d52a06255c8e1341aa91dd7e6db778daa.jpg",
+    },
+    {
+        id: "c9257805c3b70ceb57a5c701db78cb6d4a448cf7",
+        title: "Le Matos – La Mer Des Possibilites",
+        duration: 359000,
+        streamUrl: "/audio/c9257805c3b70ceb57a5c701db78cb6d4a448cf7.mp3",
+        artworkUrl: "/artwork/c9257805c3b70ceb57a5c701db78cb6d4a448cf7.jpg",
+    },
+    {
+        id: "d8f484b66dfd10d9476206d33d79d883474eb483",
+        title: "Botnit – Ex-Cathedra",
+        duration: 324000,
+        streamUrl: "/audio/d8f484b66dfd10d9476206d33d79d883474eb483.mp3",
+        artworkUrl: "/artwork/d8f484b66dfd10d9476206d33d79d883474eb483.jpg",
+    },
+    {
+        id: "0a0fb6b8fc1effcccd47b18ef0f4c2989d9a9a36",
+        title: "Betamaxx – Mechanized",
+        duration: 281000,
+        streamUrl: "/audio/0a0fb6b8fc1effcccd47b18ef0f4c2989d9a9a36.mp3",
+        artworkUrl: "/artwork/0a0fb6b8fc1effcccd47b18ef0f4c2989d9a9a36.jpg",
+    },
+    {
+        id: "a9e194fd41e0e3d34409e613e31492cf510d2d64",
+        title: "Bluezz Vylez – Craters and Lovers",
+        duration: 321000,
+        streamUrl: "/audio/a9e194fd41e0e3d34409e613e31492cf510d2d64.mp3",
+        artworkUrl: "/artwork/a9e194fd41e0e3d34409e613e31492cf510d2d64.jpg",
+    },
+    {
+        id: "c596929ce73d1fd3951fbe7bce0457060d500adb",
+        title: "The Hunt – The Abomination",
+        duration: 260000,
+        streamUrl: "/audio/c596929ce73d1fd3951fbe7bce0457060d500adb.mp3",
+        artworkUrl: "/artwork/c596929ce73d1fd3951fbe7bce0457060d500adb.jpg",
+    },
+    {
+        id: "bd5e3682730c3bd459730303ab434ad0025b7c60",
+        title: "Cosmic Sand – Give Us a First Chance",
+        duration: 202000,
+        streamUrl: "/audio/bd5e3682730c3bd459730303ab434ad0025b7c60.mp3",
+        artworkUrl: "/artwork/bd5e3682730c3bd459730303ab434ad0025b7c60.jpg",
+    },
+    {
+        id: "914cb3bbe433147e173a9cc64751df2bab29868a",
+        title: "Aysyne – Nite Life",
+        duration: 254000,
+        streamUrl: "/audio/914cb3bbe433147e173a9cc64751df2bab29868a.mp3",
+        artworkUrl: "/artwork/914cb3bbe433147e173a9cc64751df2bab29868a.jpg",
+    },
+    {
+        id: "c3b7cf7f10aa82f99c988bb368195b2deb70b90f",
+        title: "GreKanE – Rectified",
+        duration: 224000,
+        streamUrl: "/audio/c3b7cf7f10aa82f99c988bb368195b2deb70b90f.mp3",
+        artworkUrl: "/artwork/c3b7cf7f10aa82f99c988bb368195b2deb70b90f.jpg",
+    },
+    {
+        id: "6ddbef50dfdb019a9cc9003c19833f07f3b1d38d",
+        title: "LeveL -1 – Attacking The Headquarters",
+        duration: 223000,
+        streamUrl: "/audio/6ddbef50dfdb019a9cc9003c19833f07f3b1d38d.mp3",
+        artworkUrl: "/artwork/6ddbef50dfdb019a9cc9003c19833f07f3b1d38d.jpg",
+    },
+    {
+        id: "b82dfb64a576c808b49a8e3c2cb77572b6927188",
+        title: "Rosco – Gridlinked (feat. Kaspar Funk)",
+        duration: 249000,
+        streamUrl: "/audio/b82dfb64a576c808b49a8e3c2cb77572b6927188.mp3",
+        artworkUrl: "/artwork/b82dfb64a576c808b49a8e3c2cb77572b6927188.jpg",
+    },
+    {
+        id: "9e24d884d2044a5a7b13c1f1c6d9bb60f21d4a22",
+        title: "Gost – Night Crawler",
+        duration: 281000,
+        streamUrl: "/audio/9e24d884d2044a5a7b13c1f1c6d9bb60f21d4a22.mp3",
+        artworkUrl: "/artwork/9e24d884d2044a5a7b13c1f1c6d9bb60f21d4a22.jpg",
+    },
+    {
+        id: "a054b5c0ebb7765ef84317fba68b5a4211ea780b",
+        title: "Arcade High – Heat Wave (feat. Morissa Trunzo)",
+        duration: 251000,
+        streamUrl: "/audio/a054b5c0ebb7765ef84317fba68b5a4211ea780b.mp3",
+        artworkUrl: "/artwork/a054b5c0ebb7765ef84317fba68b5a4211ea780b.jpg",
+    },
+    {
+        id: "ae270cc8a590589302309fdae7ab8864137c6df7",
+        title: "FM Attack – Sleepless Nights",
+        duration: 408000,
+        streamUrl: "/audio/ae270cc8a590589302309fdae7ab8864137c6df7.mp3",
+        artworkUrl: "/artwork/ae270cc8a590589302309fdae7ab8864137c6df7.jpg",
+    },
+    {
+        id: "1af5503d2e3f4b941af82138b2ee1ea35addf4d5",
+        title: "Perturbator – Payback Pursuit",
+        duration: 243000,
+        streamUrl: "/audio/1af5503d2e3f4b941af82138b2ee1ea35addf4d5.mp3",
+        artworkUrl: "/artwork/1af5503d2e3f4b941af82138b2ee1ea35addf4d5.jpg",
+    },
+    {
+        id: "7dd230b22929c716c379f7999c1d820d4ad88c69",
+        title: "Miami Nights 1984 – One Last Time",
+        duration: 146000,
+        streamUrl: "/audio/7dd230b22929c716c379f7999c1d820d4ad88c69.mp3",
+        artworkUrl: "/artwork/7dd230b22929c716c379f7999c1d820d4ad88c69.jpg",
+    },
+    {
+        id: "a0c9f1b970f2481e880d8ca6c7c0a9e3ee7cea24",
+        title: "Magic Sword – In The Face Of Evil",
+        duration: 409077.80000000005,
+        streamUrl: "/audio/a0c9f1b970f2481e880d8ca6c7c0a9e3ee7cea24.mp3",
+        artworkUrl: "/artwork/a0c9f1b970f2481e880d8ca6c7c0a9e3ee7cea24.jpg",
+    },
+    {
+        id: "1c5779501ab90dd73bdfcc9d25c0ce468f5deb6f",
+        title: "Lost Years – Phoenix Rising",
+        duration: 328000,
+        streamUrl: "/audio/1c5779501ab90dd73bdfcc9d25c0ce468f5deb6f.mp3",
+        artworkUrl: "/artwork/1c5779501ab90dd73bdfcc9d25c0ce468f5deb6f.jpg",
+    },
+    {
+        id: "93d11545d14e05cdfe2289a917b72cb38d67f34e",
+        title: "Danger Mode – Crime Wave",
+        duration: 163000,
+        streamUrl: "/audio/93d11545d14e05cdfe2289a917b72cb38d67f34e.mp3",
+        artworkUrl: "/artwork/93d11545d14e05cdfe2289a917b72cb38d67f34e.jpg",
+    },
+    {
+        id: "efa2f7e5bc4d049a9db5fd7b166342b56128c2d4",
+        title: "Compilerbau – Tachyon",
+        duration: 277000,
+        streamUrl: "/audio/efa2f7e5bc4d049a9db5fd7b166342b56128c2d4.mp3",
+        artworkUrl: "/artwork/efa2f7e5bc4d049a9db5fd7b166342b56128c2d4.jpg",
+    },
+    {
+        id: "45fe7b51432ca4ea5c0702fb95366cb247a88d7e",
+        title: "3FORCE – Highway Jupiter",
+        duration: 324000,
+        streamUrl: "/audio/45fe7b51432ca4ea5c0702fb95366cb247a88d7e.mp3",
+        artworkUrl: "/artwork/45fe7b51432ca4ea5c0702fb95366cb247a88d7e.jpg",
+    },
+    {
+        id: "00076cc3b4f5bd6b1528e646d7c0db5f4e538b6a",
+        title: "Action Jackson – Palm Kill",
+        duration: 349000,
+        streamUrl: "/audio/00076cc3b4f5bd6b1528e646d7c0db5f4e538b6a.mp3",
+        artworkUrl: "/artwork/00076cc3b4f5bd6b1528e646d7c0db5f4e538b6a.jpg",
+    },
+    {
+        id: "23a2dfcc04ca72329589fe1dea5fa10dc234467c",
+        title: "Bestrack – Workout 2000",
+        duration: 340404.375,
+        streamUrl: "/audio/23a2dfcc04ca72329589fe1dea5fa10dc234467c.mp3",
+        artworkUrl: "/artwork/23a2dfcc04ca72329589fe1dea5fa10dc234467c.jpg",
+    },
+    {
+        id: "009cb039108b41412a674e3ed5283d5da33dce1a",
+        title: "Crockett – Changing Lanes",
+        duration: 336000,
+        streamUrl: "/audio/009cb039108b41412a674e3ed5283d5da33dce1a.mp3",
+        artworkUrl: "/artwork/009cb039108b41412a674e3ed5283d5da33dce1a.jpg",
+    },
+    {
+        id: "439d440f5dcb602d2a29fea2c4128eaa42368d79",
+        title: "Mitch Murder – The Touch",
+        duration: 326246.72500000003,
+        streamUrl: "/audio/439d440f5dcb602d2a29fea2c4128eaa42368d79.mp3",
+        artworkUrl: "/artwork/439d440f5dcb602d2a29fea2c4128eaa42368d79.jpg",
+    },
+    {
+        id: "77cf51db21d1b79f57cbdb486f6868325a1bbfbf",
+        title: "Muscle – Feel The Steel",
+        duration: 207000,
+        streamUrl: "/audio/77cf51db21d1b79f57cbdb486f6868325a1bbfbf.mp3",
+        artworkUrl: "/artwork/77cf51db21d1b79f57cbdb486f6868325a1bbfbf.jpg",
+    },
+    {
+        id: "dc06db7952bf78b76fce2549a3a109f2177b3486",
+        title: "Michael Perkins – Esteban",
+        duration: 195000,
+        streamUrl: "/audio/dc06db7952bf78b76fce2549a3a109f2177b3486.mp3",
+        artworkUrl: "/artwork/dc06db7952bf78b76fce2549a3a109f2177b3486.jpg",
+    },
+    {
+        id: "9a3ccfcdc1393277bc6005c86fd2977089c16284",
+        title: "Judge Bitch – Tropicool",
+        duration: 266000,
+        streamUrl: "/audio/9a3ccfcdc1393277bc6005c86fd2977089c16284.mp3",
+        artworkUrl: "/artwork/9a3ccfcdc1393277bc6005c86fd2977089c16284.jpg",
+    },
+    {
+        id: "ee1ab0a93274e1e08c4500f3eb8e49c29d35d8fa",
+        title: "Bestrack – Burn the night",
+        duration: 249132.5,
+        streamUrl: "/audio/ee1ab0a93274e1e08c4500f3eb8e49c29d35d8fa.mp3",
+        artworkUrl: "/artwork/ee1ab0a93274e1e08c4500f3eb8e49c29d35d8fa.jpg",
+    },
+]; //масив нових  пісень не більше ста штук які хочу добавити
 
-const tracks= [
-      {
-      "id": "37380dadbbc99cfd2e182d7ae6a7f3db45665436",
-      "title": "Lueur Verte – Onyx Noir",
-      "duration": 281000,
-      "streamUrl": "/audio/37380dadbbc99cfd2e182d7ae6a7f3db45665436.mp3",
-      "artworkUrl": "/artwork/37380dadbbc99cfd2e182d7ae6a7f3db45665436.jpg"
-      },
-      {
-      "id": "712d29adc4d335e0e054f86e2d6c74b0415586d5",
-      "title": "Drifting Dreamer – Semi Automatic Neon Love",
-      "duration": 219000,
-      "streamUrl": "/audio/712d29adc4d335e0e054f86e2d6c74b0415586d5.mp3",
-      "artworkUrl": "/artwork/712d29adc4d335e0e054f86e2d6c74b0415586d5.jpg"
-      },
-      {
-      "id": "44bb8fe47bf3d366062afa182d896a4595dbda06",
-      "title": "Camille R – 2001",
-      "duration": 213000,
-      "streamUrl": "/audio/44bb8fe47bf3d366062afa182d896a4595dbda06.mp3",
-      "artworkUrl": "/artwork/44bb8fe47bf3d366062afa182d896a4595dbda06.jpg"
-      },
-      {
-      "id": "e71a89ebfd78bc22555c0602dc610c130f951a14",
-      "title": "NightStop – Night Beach",
-      "duration": 245000,
-      "streamUrl": "/audio/e71a89ebfd78bc22555c0602dc610c130f951a14.mp3",
-      "artworkUrl": "/artwork/e71a89ebfd78bc22555c0602dc610c130f951a14.jpg"
-      },
-      {
-      "id": "372567cee9b7c876f08a8685d4f472472ecafe04",
-      "title": "Darknous – Outrage",
-      "duration": 295000,
-      "streamUrl": "/audio/372567cee9b7c876f08a8685d4f472472ecafe04.mp3",
-      "artworkUrl": "/artwork/372567cee9b7c876f08a8685d4f472472ecafe04.jpg"
-      },
-      {
-      "id": "4171b319ab7e0c828aca696cdbd5501cc84ffa36",
-      "title": "Night Action – All About U",
-      "duration": 291000,
-      "streamUrl": "/audio/4171b319ab7e0c828aca696cdbd5501cc84ffa36.mp3",
-      "artworkUrl": "/artwork/4171b319ab7e0c828aca696cdbd5501cc84ffa36.jpg"
-      },
-      {
-      "id": "d51e049836e528a8c7ce3fb3fc7afc17e0b4d2f0",
-      "title": "Raken – Sunset Place",
-      "duration": 204000,
-      "streamUrl": "/audio/d51e049836e528a8c7ce3fb3fc7afc17e0b4d2f0.mp3",
-      "artworkUrl": "/artwork/d51e049836e528a8c7ce3fb3fc7afc17e0b4d2f0.jpg"
-      },
-      {
-      "id": "050ac3a6b4cdb52161217ea1c6beee2902aa97d6",
-      "title": "Miami Supercops – Night Chase",
-      "duration": 259000,
-      "streamUrl": "/audio/050ac3a6b4cdb52161217ea1c6beee2902aa97d6.mp3",
-      "artworkUrl": "/artwork/050ac3a6b4cdb52161217ea1c6beee2902aa97d6.jpg"
-      },
-      {
-      "id": "23ed5b51c8d7dc496c0102680c508dde1b41c2ff",
-      "title": "Danger Danger – A Mistery",
-      "duration": 265000,
-      "streamUrl": "/audio/23ed5b51c8d7dc496c0102680c508dde1b41c2ff.mp3",
-      "artworkUrl": "/artwork/23ed5b51c8d7dc496c0102680c508dde1b41c2ff.jpg"
-      },
-      {
-      "id": "67c1c608198f805c75b56a4b0c1c4cab5b556ffa",
-      "title": "Double Dragon – Traversee",
-      "duration": 245000,
-      "streamUrl": "/audio/67c1c608198f805c75b56a4b0c1c4cab5b556ffa.mp3",
-      "artworkUrl": "/artwork/67c1c608198f805c75b56a4b0c1c4cab5b556ffa.jpg"
-      },
-      {
-      "id": "ddefc580bcfc9a424bf95b9dfbb3225fb4b89ce4",
-      "title": "Dance with the Dead – Snapped",
-      "duration": 229000,
-      "streamUrl": "/audio/ddefc580bcfc9a424bf95b9dfbb3225fb4b89ce4.mp3",
-      "artworkUrl": "/artwork/ddefc580bcfc9a424bf95b9dfbb3225fb4b89ce4.jpg"
-      },
-      {
-      "id": "baaad0dfcddc351bc849be935740803dbce74665",
-      "title": "Andromeda Dreams – Space Highway",
-      "duration": 215000,
-      "streamUrl": "/audio/baaad0dfcddc351bc849be935740803dbce74665.mp3",
-      "artworkUrl": "/artwork/baaad0dfcddc351bc849be935740803dbce74665.jpg"
-      },
-      {
-      "id": "b77b5efcdc591b839e4fba4de7602405333084a5",
-      "title": "Robert Parker – Waiting",
-      "duration": 263000,
-      "streamUrl": "/audio/b77b5efcdc591b839e4fba4de7602405333084a5.mp3",
-      "artworkUrl": "/artwork/b77b5efcdc591b839e4fba4de7602405333084a5.jpg"
-      },
-      {
-      "id": "f8a970b802ffc8a192f34deb8e461fe0bb0d9e04",
-      "title": "C-jeff – Momo's Truck Stop",
-      "duration": 208000,
-      "streamUrl": "/audio/f8a970b802ffc8a192f34deb8e461fe0bb0d9e04.mp3",
-      "artworkUrl": "/artwork/f8a970b802ffc8a192f34deb8e461fe0bb0d9e04.png"
-      },
-      {
-      "id": "7b839de882534b5491656f3388932c3aabfcbdd6",
-      "title": "Jasper Byrne – Decade Dance",
-      "duration": 321000,
-      "streamUrl": "/audio/7b839de882534b5491656f3388932c3aabfcbdd6.mp3",
-      "artworkUrl": "/artwork/7b839de882534b5491656f3388932c3aabfcbdd6.jpg"
-      },
-      {
-      "id": "6d331273dca80961384d55247923fc812097dd78",
-      "title": "Monomer – Warden",
-      "duration": 258000,
-      "streamUrl": "/audio/6d331273dca80961384d55247923fc812097dd78.mp3",
-      "artworkUrl": "/artwork/6d331273dca80961384d55247923fc812097dd78.jpg"
-      },
-      {
-      "id": "dad32f0817a1528a13b5e7d243bfeb0858423e70",
-      "title": "Midnight Kid – Aggressor",
-      "duration": 227000,
-      "streamUrl": "/audio/dad32f0817a1528a13b5e7d243bfeb0858423e70.mp3",
-      "artworkUrl": "/artwork/dad32f0817a1528a13b5e7d243bfeb0858423e70.jpg"
-      },
-      {
-      "id": "5176b936e146ba98d18a42ce0b470ed1af063838",
-      "title": "FM-84 – Mainframe",
-      "duration": 292000,
-      "streamUrl": "/audio/5176b936e146ba98d18a42ce0b470ed1af063838.mp3",
-      "artworkUrl": "/artwork/5176b936e146ba98d18a42ce0b470ed1af063838.jpg"
-      },
-      {
-      "id": "237e602291fea214cbdaebb6cd4a11944517cf8c",
-      "title": "Le Matos – Wasteland",
-      "duration": 336000,
-      "streamUrl": "/audio/237e602291fea214cbdaebb6cd4a11944517cf8c.mp3",
-      "artworkUrl": "/artwork/237e602291fea214cbdaebb6cd4a11944517cf8c.jpg"
-      },
-      {
-      "id": "62c27ac75b511738fee0f7a657f57eacfa2ab98e",
-      "title": "DJ Ten – Chrome Lust (feat. The Boy & Sister Alma)",
-      "duration": 282000,
-      "streamUrl": "/audio/62c27ac75b511738fee0f7a657f57eacfa2ab98e.mp3",
-      "artworkUrl": "/artwork/62c27ac75b511738fee0f7a657f57eacfa2ab98e.jpg"
-      },
-      {
-      "id": "305769e2d12310ac5761defdd3e57e377fa2f84e",
-      "title": "Lost Years – Converter",
-      "duration": 258000,
-      "streamUrl": "/audio/305769e2d12310ac5761defdd3e57e377fa2f84e.mp3",
-      "artworkUrl": "/artwork/305769e2d12310ac5761defdd3e57e377fa2f84e.jpg"
-      },
-      {
-      "id": "56746093c8426c1298daa46ff1da9472ff6beaf1",
-      "title": "Cluster Buster – How Can He Go So Fast",
-      "duration": 284000,
-      "streamUrl": "/audio/56746093c8426c1298daa46ff1da9472ff6beaf1.mp3",
-      "artworkUrl": "/artwork/56746093c8426c1298daa46ff1da9472ff6beaf1.jpg"
-      },
-      {
-      "id": "bdecf489c41177c3e5d94b395b3df4939a09d302",
-      "title": "Cartridge 1987 – Chase",
-      "duration": 350000,
-      "streamUrl": "/audio/bdecf489c41177c3e5d94b395b3df4939a09d302.mp3",
-      "artworkUrl": "/artwork/bdecf489c41177c3e5d94b395b3df4939a09d302.jpg"
-      },
-      {
-      "id": "b8069445174238c3bfab152d8edbd0cfdbb56640",
-      "title": "Robert Parker – Generation '82 (feat. Shyguys)",
-      "duration": 256000,
-      "streamUrl": "/audio/b8069445174238c3bfab152d8edbd0cfdbb56640.mp3",
-      "artworkUrl": "/artwork/b8069445174238c3bfab152d8edbd0cfdbb56640.jpg"
-      },
-      {
-      "id": "1b53f0b38f9f9584ff485c4a54381b1c105afcce",
-      "title": "FM Attack – Magic (feat. Kristine)",
-      "duration": 276000,
-      "streamUrl": "/audio/1b53f0b38f9f9584ff485c4a54381b1c105afcce.mp3",
-      "artworkUrl": "/artwork/1b53f0b38f9f9584ff485c4a54381b1c105afcce.jpg"
-      },
-      {
-      "id": "243236a6b088274f35d66ae62f2661ef218db6f6",
-      "title": "D.Notive – Second Chances",
-      "duration": 360000,
-      "streamUrl": "/audio/243236a6b088274f35d66ae62f2661ef218db6f6.mp3",
-      "artworkUrl": "/artwork/243236a6b088274f35d66ae62f2661ef218db6f6.png"
-      },
-      {
-      "id": "121a615ea7d12d0650c3cacfb281723a8ce81e84",
-      "title": "Mild Peril – The Duel",
-      "duration": 383000,
-      "streamUrl": "/audio/121a615ea7d12d0650c3cacfb281723a8ce81e84.mp3",
-      "artworkUrl": "/artwork/121a615ea7d12d0650c3cacfb281723a8ce81e84.jpg"
-      },
-      {
-      "id": "113b87ab43b7c13d9b8048fd49f21a3485a6b4fd",
-      "title": "Bixby Snyder – Filthy Streets",
-      "duration": 351000,
-      "streamUrl": "/audio/113b87ab43b7c13d9b8048fd49f21a3485a6b4fd.mp3",
-      "artworkUrl": "/artwork/113b87ab43b7c13d9b8048fd49f21a3485a6b4fd.jpg"
-      },
-      {
-      "id": "d54cbf054a8384d627527d602328cfea2c4842fb",
-      "title": "GAMER – Old Money",
-      "duration": 146000,
-      "streamUrl": "/audio/d54cbf054a8384d627527d602328cfea2c4842fb.mp3",
-      "artworkUrl": "/artwork/d54cbf054a8384d627527d602328cfea2c4842fb.jpg"
-      },
-      {
-      "id": "6665d573d5de5a66c6061334612f20e54a83597c",
-      "title": "Miles Prower – This World Won't Let Me Down",
-      "duration": 269000,
-      "streamUrl": "/audio/6665d573d5de5a66c6061334612f20e54a83597c.mp3",
-      "artworkUrl": "/artwork/6665d573d5de5a66c6061334612f20e54a83597c.jpg"
-      },
-      {
-      "id": "1fc86f3e86905a5b6069a9180e56e378bfc50c1b",
-      "title": "DJ Ten – Show Me The Night (feat. Dead Astronauts)",
-      "duration": 272000,
-      "streamUrl": "/audio/1fc86f3e86905a5b6069a9180e56e378bfc50c1b.mp3",
-      "artworkUrl": "/artwork/1fc86f3e86905a5b6069a9180e56e378bfc50c1b.jpg"
-      },
-      {
-      "id": "a7436fc5334dfdd733a5fdb42a2ce627aef3fe3b",
-      "title": "Le Matos – No Tomorrow feat PAWWS",
-      "duration": 271000,
-      "streamUrl": "/audio/a7436fc5334dfdd733a5fdb42a2ce627aef3fe3b.mp3",
-      "artworkUrl": "/artwork/a7436fc5334dfdd733a5fdb42a2ce627aef3fe3b.jpg"
-      },
-      {
-      "id": "8ab19cd0a3fe579eebd5bd598581399a329ce960",
-      "title": "Shirobon – Regain Control",
-      "duration": 195000,
-      "streamUrl": "/audio/8ab19cd0a3fe579eebd5bd598581399a329ce960.mp3",
-      "artworkUrl": "/artwork/8ab19cd0a3fe579eebd5bd598581399a329ce960.jpg"
-      },
-      {
-      "id": "22ea2a7715fe109547c5c8a5ee47418873bcd85a",
-      "title": "Moondragon – Eye in the Sky",
-      "duration": 246000,
-      "streamUrl": "/audio/22ea2a7715fe109547c5c8a5ee47418873bcd85a.mp3",
-      "artworkUrl": "/artwork/22ea2a7715fe109547c5c8a5ee47418873bcd85a.jpg"
-      },
-      {
-      "id": "abf67a16c705b47e5acf45fcf5a976582c764c91",
-      "title": "A Space Love Adventure – Red Blaze",
-      "duration": 230000,
-      "streamUrl": "/audio/abf67a16c705b47e5acf45fcf5a976582c764c91.mp3",
-      "artworkUrl": "/artwork/abf67a16c705b47e5acf45fcf5a976582c764c91.jpg"
-      },
-      {
-      "id": "ca6a555e348a4c495a1a9c35e14551d67e814b37",
-      "title": "TWRP – Japanquest",
-      "duration": 272000,
-      "streamUrl": "/audio/ca6a555e348a4c495a1a9c35e14551d67e814b37.mp3",
-      "artworkUrl": "/artwork/ca6a555e348a4c495a1a9c35e14551d67e814b37.png"
-      },
-      {
-      "id": "37e70082b58a52e5a051e578a49bf8e2af22bcf8",
-      "title": "Perturbator – Sexualizer (feat. Flash Arnold)",
-      "duration": 299000,
-      "streamUrl": "/audio/37e70082b58a52e5a051e578a49bf8e2af22bcf8.mp3",
-      "artworkUrl": "/artwork/37e70082b58a52e5a051e578a49bf8e2af22bcf8.jpg"
-      },
-      {
-      "id": "55963b04a9c541b7877f0c68c1d9c76f2f5766e6",
-      "title": "Meteor – Manhattan 2019",
-      "duration": 223000,
-      "streamUrl": "/audio/55963b04a9c541b7877f0c68c1d9c76f2f5766e6.mp3",
-      "artworkUrl": "/artwork/55963b04a9c541b7877f0c68c1d9c76f2f5766e6.jpg"
-      },
-      {
-      "id": "42ec2a5d905d239b06decf60abe41cd94317ba3c",
-      "title": "Retouch – Event Horizon",
-      "duration": 223803.45,
-      "streamUrl": "/audio/42ec2a5d905d239b06decf60abe41cd94317ba3c.mp3",
-      "artworkUrl": "/artwork/42ec2a5d905d239b06decf60abe41cd94317ba3c.jpg"
-      },
-      {
-      "id": "ac35967fdb74fe194f0d87965610c9049f889dd4",
-      "title": "Nemix – The Core",
-      "duration": 242000,
-      "streamUrl": "/audio/ac35967fdb74fe194f0d87965610c9049f889dd4.mp3",
-      "artworkUrl": "/artwork/ac35967fdb74fe194f0d87965610c9049f889dd4.jpg"
-      },
-      {
-      "id": "1c93cba8419c5397359a6fdf9a02808a1014bbe8",
-      "title": "Moondragon – Blackbird (feat. Phaserland)",
-      "duration": 378000,
-      "streamUrl": "/audio/1c93cba8419c5397359a6fdf9a02808a1014bbe8.mp3",
-      "artworkUrl": "/artwork/1c93cba8419c5397359a6fdf9a02808a1014bbe8.jpg"
-      },
-      {
-      "id": "4ebdcbe1b26296410af5af5fbefd8035f7760114",
-      "title": "D/A/D – The Look of Being Old",
-      "duration": 258000,
-      "streamUrl": "/audio/4ebdcbe1b26296410af5af5fbefd8035f7760114.mp3",
-      "artworkUrl": "/artwork/4ebdcbe1b26296410af5af5fbefd8035f7760114.jpg"
-      },
-      {
-      "id": "bf3d8843a3ca65f54dbe4459ecd9068f475669f6",
-      "title": "Pengus – Azimut",
-      "duration": 266000,
-      "streamUrl": "/audio/bf3d8843a3ca65f54dbe4459ecd9068f475669f6.mp3",
-      "artworkUrl": "/artwork/bf3d8843a3ca65f54dbe4459ecd9068f475669f6.jpg"
-      },
-      {
-      "id": "c6ffff3b532c923d7e80e87c7a4ff83cd4078fe3",
-      "title": "Lazerhawk – The King of the Streets",
-      "duration": 297000,
-      "streamUrl": "/audio/c6ffff3b532c923d7e80e87c7a4ff83cd4078fe3.mp3",
-      "artworkUrl": "/artwork/c6ffff3b532c923d7e80e87c7a4ff83cd4078fe3.jpg"
-      },
-      {
-      "id": "788062ec6d7f140413dcece66f1a286420e6c03e",
-      "title": "Absolute Valentine – Disco Lover",
-      "duration": 237000,
-      "streamUrl": "/audio/788062ec6d7f140413dcece66f1a286420e6c03e.mp3",
-      "artworkUrl": "/artwork/788062ec6d7f140413dcece66f1a286420e6c03e.jpg"
-      },
-      {
-      "id": "4c85d4dcb6d818416b201cdb670629d6cfd2fc50",
-      "title": "CONFRONTATIONAL – Like A Curse (Feat. Monte Pittman)",
-      "duration": 304000,
-      "streamUrl": "/audio/4c85d4dcb6d818416b201cdb670629d6cfd2fc50.mp3",
-      "artworkUrl": "/artwork/4c85d4dcb6d818416b201cdb670629d6cfd2fc50.jpg"
-      },
-      {
-      "id": "f3b0d80c4ca4675cfea7294468ff8ff93c0fb72e",
-      "title": "Mega Drive – Take Me Home",
-      "duration": 398000,
-      "streamUrl": "/audio/f3b0d80c4ca4675cfea7294468ff8ff93c0fb72e.mp3",
-      "artworkUrl": "/artwork/f3b0d80c4ca4675cfea7294468ff8ff93c0fb72e.png"
-      },
-      {
-      "id": "6015e051f9ccb294304966c317065d26a13d019c",
-      "title": "Kille ft. Future Holotape – Strangers in the Night",
-      "duration": 256000,
-      "streamUrl": "/audio/6015e051f9ccb294304966c317065d26a13d019c.mp3",
-      "artworkUrl": "/artwork/6015e051f9ccb294304966c317065d26a13d019c.jpg"
-      },
-      {
-      "id": "541807d75a4bd9fe5a09104287c0ef162f06ad56",
-      "title": "20SIX Hundred – Open World",
-      "duration": 216000,
-      "streamUrl": "/audio/541807d75a4bd9fe5a09104287c0ef162f06ad56.mp3",
-      "artworkUrl": "/artwork/541807d75a4bd9fe5a09104287c0ef162f06ad56.jpg"
-      },
-      {
-      "id": "9d97a16658f429473802c8d1ac26305719336a8b",
-      "title": "Arcade High – Phone Lines (feat. Hayley Stewart)",
-      "duration": 253000,
-      "streamUrl": "/audio/9d97a16658f429473802c8d1ac26305719336a8b.mp3",
-      "artworkUrl": "/artwork/9d97a16658f429473802c8d1ac26305719336a8b.jpg"
-      },
-      {
-      "id": "a3d003e3e979906ced75d5b256964076fb826610",
-      "title": "Power Glove – Night Force",
-      "duration": 255000,
-      "streamUrl": "/audio/a3d003e3e979906ced75d5b256964076fb826610.mp3",
-      "artworkUrl": "/artwork/a3d003e3e979906ced75d5b256964076fb826610.jpg"
-      },
-      {
-      "id": "a6f8318c62f6426baf77f00d2f29b7a8973467e3",
-      "title": "Retouch – Arm of Creation",
-      "duration": 230067.45,
-      "streamUrl": "/audio/a6f8318c62f6426baf77f00d2f29b7a8973467e3.mp3",
-      "artworkUrl": "/artwork/a6f8318c62f6426baf77f00d2f29b7a8973467e3.jpg"
-      },
-      {
-      "id": "d5d524b70b222e6c3675366dcdfb01e14d1cfc80",
-      "title": "LeveL -1 – Dive in VR",
-      "duration": 231000,
-      "streamUrl": "/audio/d5d524b70b222e6c3675366dcdfb01e14d1cfc80.mp3",
-      "artworkUrl": "/artwork/d5d524b70b222e6c3675366dcdfb01e14d1cfc80.jpg"
-      },
-      {
-      "id": "0d0b249c78e18fc77af6ce7680ff25789ec6c3c3",
-      "title": "GUNSHIP – The Mountain",
-      "duration": 264480.25,
-      "streamUrl": "/audio/0d0b249c78e18fc77af6ce7680ff25789ec6c3c3.mp3",
-      "artworkUrl": "/artwork/0d0b249c78e18fc77af6ce7680ff25789ec6c3c3.jpg"
-      },
-      {
-      "id": "a8a1ab1c2fc7a23096beb0f0f680511eea60e0e2",
-      "title": "Orax – Dreaming",
-      "duration": 290000,
-      "streamUrl": "/audio/a8a1ab1c2fc7a23096beb0f0f680511eea60e0e2.mp3",
-      "artworkUrl": "/artwork/a8a1ab1c2fc7a23096beb0f0f680511eea60e0e2.jpg"
-      },
-      {
-      "id": "9e5e9a4acdc394221bf2fe6b37ada4ba8d1170d1",
-      "title": "Lazerhawk – The Looks that Kill",
-      "duration": 249000,
-      "streamUrl": "/audio/9e5e9a4acdc394221bf2fe6b37ada4ba8d1170d1.mp3",
-      "artworkUrl": "/artwork/9e5e9a4acdc394221bf2fe6b37ada4ba8d1170d1.jpg"
-      },
-      {
-      "id": "d3891c11749bd63159ccb52ed16e5454354a03e5",
-      "title": "Vincenzo Salvia – Chromelove",
-      "duration": 283056.25,
-      "streamUrl": "/audio/d3891c11749bd63159ccb52ed16e5454354a03e5.mp3",
-      "artworkUrl": "/artwork/d3891c11749bd63159ccb52ed16e5454354a03e5.jpg"
-      },
-      {
-      "id": "ac51d0ef3fa01b5da82169dba91bcb16a69ab553",
-      "title": "Phaserland – Resemblance In Machine",
-      "duration": 292000,
-      "streamUrl": "/audio/ac51d0ef3fa01b5da82169dba91bcb16a69ab553.mp3",
-      "artworkUrl": "/artwork/ac51d0ef3fa01b5da82169dba91bcb16a69ab553.jpg"
-      },
-      {
-      "id": "f4aa7673571ef901f6047dd88482d3c20a4bc761",
-      "title": "GAMER – Overpass",
-      "duration": 220000,
-      "streamUrl": "/audio/f4aa7673571ef901f6047dd88482d3c20a4bc761.mp3",
-      "artworkUrl": "/artwork/f4aa7673571ef901f6047dd88482d3c20a4bc761.jpg"
-      },
-      {
-      "id": "309e6cd359673462c2ad18f2383e75cc6efb113d",
-      "title": "Empathy Test – Losing Touch",
-      "duration": 232102.5,
-      "streamUrl": "/audio/309e6cd359673462c2ad18f2383e75cc6efb113d.mp3",
-      "artworkUrl": "/artwork/309e6cd359673462c2ad18f2383e75cc6efb113d.jpg"
-      },
-      {
-      "id": "7771fc38ff6941480d64f22de2cd85836e43f639",
-      "title": "Mega Drive – Pulse of The Streets",
-      "duration": 263000,
-      "streamUrl": "/audio/7771fc38ff6941480d64f22de2cd85836e43f639.mp3",
-      "artworkUrl": "/artwork/7771fc38ff6941480d64f22de2cd85836e43f639.png"
-      },
-      {
-      "id": "b551c2d4e90b22f0ea9c44769c65cb460e9cb7fe",
-      "title": "Stallions – We Are Stallions",
-      "duration": 222000,
-      "streamUrl": "/audio/b551c2d4e90b22f0ea9c44769c65cb460e9cb7fe.mp3",
-      "artworkUrl": "/artwork/b551c2d4e90b22f0ea9c44769c65cb460e9cb7fe.jpg"
-      },
-      {
-      "id": "c0ea05cdb88400c1ab77b960fceb876201ed6228",
-      "title": "Lucy in Disguise – 1987",
-      "duration": 279000,
-      "streamUrl": "/audio/c0ea05cdb88400c1ab77b960fceb876201ed6228.mp3",
-      "artworkUrl": "/artwork/c0ea05cdb88400c1ab77b960fceb876201ed6228.jpg"
-      },
-      {
-      "id": "48e93989a6bd463855d3a34fb8b830f7c8ae75a2",
-      "title": "NeodroneX – Suburban Cowboys",
-      "duration": 187000,
-      "streamUrl": "/audio/48e93989a6bd463855d3a34fb8b830f7c8ae75a2.mp3",
-      "artworkUrl": "/artwork/48e93989a6bd463855d3a34fb8b830f7c8ae75a2.jpg"
-      },
-      {
-      "id": "c98973b3a848eb9621e3d83f27d6d43d664d0d5d",
-      "title": "Makeup and Vanity Set – Quadra IV",
-      "duration": 245000,
-      "streamUrl": "/audio/c98973b3a848eb9621e3d83f27d6d43d664d0d5d.mp3",
-      "artworkUrl": "/artwork/c98973b3a848eb9621e3d83f27d6d43d664d0d5d.jpg"
-      },
-      {
-      "id": "188963be7196d6c333bc77fc07c4f9fe445e4ee3",
-      "title": "Highway Superstar – Deadlock Danger",
-      "duration": 241800.25,
-      "streamUrl": "/audio/188963be7196d6c333bc77fc07c4f9fe445e4ee3.mp3",
-      "artworkUrl": "/artwork/188963be7196d6c333bc77fc07c4f9fe445e4ee3.jpg"
-      },
-      {
-      "id": "0205d9dc38917a14540b58d1a65fe43ec9353de5",
-      "title": "The Hunt – Brain Test",
-      "duration": 297000,
-      "streamUrl": "/audio/0205d9dc38917a14540b58d1a65fe43ec9353de5.mp3",
-      "artworkUrl": "/artwork/0205d9dc38917a14540b58d1a65fe43ec9353de5.jpg"
-      },
-      {
-      "id": "8b7306e130139c49d2d1b6df6699ad09d751015f",
-      "title": "Zone Tripper – Cyber Dream",
-      "duration": 281976.25,
-      "streamUrl": "/audio/8b7306e130139c49d2d1b6df6699ad09d751015f.mp3",
-      "artworkUrl": "/artwork/8b7306e130139c49d2d1b6df6699ad09d751015f.jpg"
-      },
-      {
-      "id": "a0334abe1770eeda2b395106a578cf647563896c",
-      "title": "Lachi James – Champagne Wishes (& Caviar Dreams)",
-      "duration": 183264.25,
-      "streamUrl": "/audio/a0334abe1770eeda2b395106a578cf647563896c.mp3",
-      "artworkUrl": "/artwork/a0334abe1770eeda2b395106a578cf647563896c.jpg"
-      },
-      {
-      "id": "11761072788d7cc9d1e1fb1bcc924f900a166e67",
-      "title": "Saint-Samuel – Videoflex",
-      "duration": 206064.25,
-      "streamUrl": "/audio/11761072788d7cc9d1e1fb1bcc924f900a166e67.mp3",
-      "artworkUrl": "/artwork/11761072788d7cc9d1e1fb1bcc924f900a166e67.jpg"
-      },
-      {
-      "id": "29b322523eaad9b6dc2b0d0d46792d4baa65c8e5",
-      "title": "Duett – Running Scared (Feat. Stewart Lockwood)",
-      "duration": 199000,
-      "streamUrl": "/audio/29b322523eaad9b6dc2b0d0d46792d4baa65c8e5.mp3",
-      "artworkUrl": "/artwork/29b322523eaad9b6dc2b0d0d46792d4baa65c8e5.jpg"
-      },
-      {
-      "id": "90a447bffaf5657a5b7ea30d4c1ebfb36a8c31be",
-      "title": "Bestrack – Stamina",
-      "duration": 243986.425,
-      "streamUrl": "/audio/90a447bffaf5657a5b7ea30d4c1ebfb36a8c31be.mp3",
-      "artworkUrl": "/artwork/90a447bffaf5657a5b7ea30d4c1ebfb36a8c31be.jpg"
-      },
-      {
-      "id": "1a0832814890e9f64bf3e481fd5ffdfa1fa5d9f9",
-      "title": "Magic Dance – The Mirror of Dreams",
-      "duration": 348000,
-      "streamUrl": "/audio/1a0832814890e9f64bf3e481fd5ffdfa1fa5d9f9.mp3",
-      "artworkUrl": "/artwork/1a0832814890e9f64bf3e481fd5ffdfa1fa5d9f9.jpg"
-      },
-      {
-      "id": "d0b13220e5536e140c8eb1fd5bbb713114971050",
-      "title": "Meteor – Black Holes",
-      "duration": 211000,
-      "streamUrl": "/audio/d0b13220e5536e140c8eb1fd5bbb713114971050.mp3",
-      "artworkUrl": "/artwork/d0b13220e5536e140c8eb1fd5bbb713114971050.jpg"
-      },
-      {
-      "id": "a97b1b6d51d887ddb419fa7a9fdeb4dc4f7fa4b7",
-      "title": "Block 35 – Central Control",
-      "duration": 333000,
-      "streamUrl": "/audio/a97b1b6d51d887ddb419fa7a9fdeb4dc4f7fa4b7.mp3",
-      "artworkUrl": "/artwork/a97b1b6d51d887ddb419fa7a9fdeb4dc4f7fa4b7.jpg"
-      },
-      {
-      "id": "f03e9c717020ff38b48c966229063e69b57f5f83",
-      "title": "CRYOSAT – CrimeCom",
-      "duration": 228000,
-      "streamUrl": "/audio/f03e9c717020ff38b48c966229063e69b57f5f83.mp3",
-      "artworkUrl": "/artwork/f03e9c717020ff38b48c966229063e69b57f5f83.jpg"
-      },
-      {
-      "id": "5f17b882793fe22f9d71ff65d3d93b92c709fac8",
-      "title": "Dream Fiend – Morning Light",
-      "duration": 210000,
-      "streamUrl": "/audio/5f17b882793fe22f9d71ff65d3d93b92c709fac8.mp3",
-      "artworkUrl": "/artwork/5f17b882793fe22f9d71ff65d3d93b92c709fac8.jpg"
-      },
-      {
-      "id": "0e74467715e043c05147f2c4e5adae3ba2a8e4c5",
-      "title": "SAYAK STRIKER – EASY CHOPPER",
-      "duration": 296000,
-      "streamUrl": "/audio/0e74467715e043c05147f2c4e5adae3ba2a8e4c5.mp3",
-      "artworkUrl": "/artwork/0e74467715e043c05147f2c4e5adae3ba2a8e4c5.jpg"
-      },
-      {
-      "id": "9d58966dbc0dace3434fc89c73047cc664b17acb",
-      "title": "Duett – Horizons",
-      "duration": 233000,
-      "streamUrl": "/audio/9d58966dbc0dace3434fc89c73047cc664b17acb.mp3",
-      "artworkUrl": "/artwork/9d58966dbc0dace3434fc89c73047cc664b17acb.jpg"
-      },
-      {
-      "id": "6cc16ed37a4b418ec3d5358257ff3142fc4bf0e5",
-      "title": "LeBrock – One Night",
-      "duration": 212000,
-      "streamUrl": "/audio/6cc16ed37a4b418ec3d5358257ff3142fc4bf0e5.mp3",
-      "artworkUrl": "/artwork/6cc16ed37a4b418ec3d5358257ff3142fc4bf0e5.jpg"
-      },
-      {
-      "id": "cddac66ea9198739a8abfdaa9a088d8439bcc2f3",
-      "title": "Bellemaison – The Brand New Age",
-      "duration": 246000,
-      "streamUrl": "/audio/cddac66ea9198739a8abfdaa9a088d8439bcc2f3.mp3",
-      "artworkUrl": "/artwork/cddac66ea9198739a8abfdaa9a088d8439bcc2f3.jpg"
-      },
-      {
-      "id": "7dd77c06f31d4e8a1a94ac9d2832434ee1ebc94f",
-      "title": "Gost – They",
-      "duration": 253000,
-      "streamUrl": "/audio/7dd77c06f31d4e8a1a94ac9d2832434ee1ebc94f.mp3",
-      "artworkUrl": "/artwork/7dd77c06f31d4e8a1a94ac9d2832434ee1ebc94f.jpg"
-      },
-      {
-      "id": "0a7f83bc97fce9011c53081b56db1e6d3c1eec29",
-      "title": "moskva-kassiopeya – Odyssey Pt. I",
-      "duration": 260000,
-      "streamUrl": "/audio/0a7f83bc97fce9011c53081b56db1e6d3c1eec29.mp3",
-      "artworkUrl": "/artwork/0a7f83bc97fce9011c53081b56db1e6d3c1eec29.png"
-      },
-      {
-      "id": "d9838e969794fae7d88f03692aecf6d1a5b69648",
-      "title": "Orax – Blue Cross",
-      "duration": 231000,
-      "streamUrl": "/audio/d9838e969794fae7d88f03692aecf6d1a5b69648.mp3",
-      "artworkUrl": "/artwork/d9838e969794fae7d88f03692aecf6d1a5b69648.jpg"
-      },
-      {
-      "id": "6c0df79116c2e8a53087823bf4b16e28666b515e",
-      "title": "DESTRYUR – Endurance",
-      "duration": 248000,
-      "streamUrl": "/audio/6c0df79116c2e8a53087823bf4b16e28666b515e.mp3",
-      "artworkUrl": "/artwork/6c0df79116c2e8a53087823bf4b16e28666b515e.jpg"
-      },
-      {
-      "id": "24d8d047dafe17dc6717d04aa7359a3ebf62d75f",
-      "title": "Danger Mode – Chroma Drive",
-      "duration": 294000,
-      "streamUrl": "/audio/24d8d047dafe17dc6717d04aa7359a3ebf62d75f.mp3",
-      "artworkUrl": "/artwork/24d8d047dafe17dc6717d04aa7359a3ebf62d75f.jpg"
-      },
-      {
-      "id": "7efd02f39dd8b71bf85159ff0d8aabb33f48be52",
-      "title": "Nowtro – Seeker",
-      "duration": 347000,
-      "streamUrl": "/audio/7efd02f39dd8b71bf85159ff0d8aabb33f48be52.mp3",
-      "artworkUrl": "/artwork/7efd02f39dd8b71bf85159ff0d8aabb33f48be52.jpg"
-      },
-      {
-      "id": "17aa22a9811d515370cb000336cb4ca79e8cfc99",
-      "title": "Duett – Touch",
-      "duration": 208000,
-      "streamUrl": "/audio/17aa22a9811d515370cb000336cb4ca79e8cfc99.mp3",
-      "artworkUrl": "/artwork/17aa22a9811d515370cb000336cb4ca79e8cfc99.jpg"
-      },
-      {
-      "id": "6933da1461930205e86ff0b3f3021add9a69ab01",
-      "title": "Lazerhawk – Redline",
-      "duration": 244000,
-      "streamUrl": "/audio/6933da1461930205e86ff0b3f3021add9a69ab01.mp3",
-      "artworkUrl": "/artwork/6933da1461930205e86ff0b3f3021add9a69ab01.jpg"
-      },
-      {
-      "id": "89a46b1556d22e2809447d9065598ee47ce9b87a",
-      "title": "OGRE – Shore Thing",
-      "duration": 257000,
-      "streamUrl": "/audio/89a46b1556d22e2809447d9065598ee47ce9b87a.mp3",
-      "artworkUrl": "/artwork/89a46b1556d22e2809447d9065598ee47ce9b87a.jpg"
-      },
-      {
-      "id": "bfefb3e78b333f41200bfe188f911885e495cf53",
-      "title": "Midnight Static – VHS Hallucinations",
-      "duration": 240000,
-      "streamUrl": "/audio/bfefb3e78b333f41200bfe188f911885e495cf53.mp3",
-      "artworkUrl": "/artwork/bfefb3e78b333f41200bfe188f911885e495cf53.jpg"
-      },
-      {
-      "id": "d37ee09b5293270ad415c26054421f1ac8d83fa1",
-      "title": "Jasper Byrne – Decade Dance",
-      "duration": 279000,
-      "streamUrl": "/audio/d37ee09b5293270ad415c26054421f1ac8d83fa1.mp3",
-      "artworkUrl": "/artwork/d37ee09b5293270ad415c26054421f1ac8d83fa1.png"
-      },
-      {
-      "id": "bcd15c2d818e8408cb43f0b7e43438bddc97199a",
-      "title": "Magic Dance – Last Light",
-      "duration": 279000,
-      "streamUrl": "/audio/bcd15c2d818e8408cb43f0b7e43438bddc97199a.mp3",
-      "artworkUrl": "/artwork/bcd15c2d818e8408cb43f0b7e43438bddc97199a.jpg"
-      },
-      {
-      "id": "3ca0b480afbe763bcf545ecac432b47050641d5f",
-      "title": "Mega Drive – Power Driver",
-      "duration": 344000,
-      "streamUrl": "/audio/3ca0b480afbe763bcf545ecac432b47050641d5f.mp3",
-      "artworkUrl": "/artwork/3ca0b480afbe763bcf545ecac432b47050641d5f.jpg"
-      },
-      {
-      "id": "d94929c827a1918ab1150260e9d87782ebf64d8e",
-      "title": "Perturbator – Miami Disco",
-      "duration": 271000,
-      "streamUrl": "/audio/d94929c827a1918ab1150260e9d87782ebf64d8e.mp3",
-      "artworkUrl": "/artwork/d94929c827a1918ab1150260e9d87782ebf64d8e.jpg"
-      },
-      {
-      "id": "deda267d7df00c8f2f27a014b2e2d0326563ee97",
-      "title": "Exemia – Dragoknight",
-      "duration": 301000,
-      "streamUrl": "/audio/deda267d7df00c8f2f27a014b2e2d0326563ee97.mp3",
-      "artworkUrl": "/artwork/deda267d7df00c8f2f27a014b2e2d0326563ee97.jpg"
-      },
-      {
-      "id": "df925ce4d84ecda916a49787bc980b5ccc5a8639",
-      "title": "Alpha Boy – Digital Dawn",
-      "duration": 224000,
-      "streamUrl": "/audio/df925ce4d84ecda916a49787bc980b5ccc5a8639.mp3",
-      "artworkUrl": "/artwork/df925ce4d84ecda916a49787bc980b5ccc5a8639.jpg"
-      },
-      {
-      "id": "963d53044d83cac67ea568d1e7a769e171310f14",
-      "title": "OGRE – Always Outnumbered, Never Outrun",
-      "duration": 267000,
-      "streamUrl": "/audio/963d53044d83cac67ea568d1e7a769e171310f14.mp3",
-      "artworkUrl": "/artwork/963d53044d83cac67ea568d1e7a769e171310f14.jpg"
-      },
-      {
-      "id": "622b379ab9306a074982e8ebb47c8728bb2036a3",
-      "title": "Le Cassette – Digital Power",
-      "duration": 291000,
-      "streamUrl": "/audio/622b379ab9306a074982e8ebb47c8728bb2036a3.mp3",
-      "artworkUrl": "/artwork/622b379ab9306a074982e8ebb47c8728bb2036a3.jpg"
-      },
-      {
-      "id": "516dee63000a83f401f451c8d8d49a244cd31bb7",
-      "title": "Let Em Riot – The Manual",
-      "duration": 244056.25,
-      "streamUrl": "/audio/516dee63000a83f401f451c8d8d49a244cd31bb7.mp3",
-      "artworkUrl": "/artwork/516dee63000a83f401f451c8d8d49a244cd31bb7.jpg"
-      },
-      {
-      "id": "a8ff6b6b0ad0ef42ef330a59bde034c5789a8bae",
-      "title": "Worship – Close Encounter",
-      "duration": 258048.25,
-      "streamUrl": "/audio/a8ff6b6b0ad0ef42ef330a59bde034c5789a8bae.mp3",
-      "artworkUrl": "/artwork/a8ff6b6b0ad0ef42ef330a59bde034c5789a8bae.jpg"
-      },
-      {
-      "id": "ebb006a0827baf0bf4d4c8338ed0d877aa30d103",
-      "title": "Nowtro – Tears Don't Fall In Space",
-      "duration": 358000,
-      "streamUrl": "/audio/ebb006a0827baf0bf4d4c8338ed0d877aa30d103.mp3",
-      "artworkUrl": "/artwork/ebb006a0827baf0bf4d4c8338ed0d877aa30d103.jpg"
-      },
-      {
-      "id": "22a749c245a6810ac61157b2c8b6c644d15d7e4d",
-      "title": "Betamaxx – Redlining 6th",
-      "duration": 189000,
-      "streamUrl": "/audio/22a749c245a6810ac61157b2c8b6c644d15d7e4d.mp3",
-      "artworkUrl": "/artwork/22a749c245a6810ac61157b2c8b6c644d15d7e4d.jpg"
-      },
-      {
-      "id": "6a96480a0e965070c7cf82b858188e131cfcf186",
-      "title": "Perturbator – I Am The Night",
-      "duration": 379000,
-      "streamUrl": "/audio/6a96480a0e965070c7cf82b858188e131cfcf186.mp3",
-      "artworkUrl": "/artwork/6a96480a0e965070c7cf82b858188e131cfcf186.jpg"
-      },
-      {
-      "id": "28ddfd663e367668b0e86cd984e95311f63608db",
-      "title": "Drifting Dreamer – Lights Out",
-      "duration": 273000,
-      "streamUrl": "/audio/28ddfd663e367668b0e86cd984e95311f63608db.mp3",
-      "artworkUrl": "/artwork/28ddfd663e367668b0e86cd984e95311f63608db.jpg"
-      },
-      {
-      "id": "27bf995a049f76b8dda3ca16254fe46e79720410",
-      "title": "Hide and Sequence – Resurrection",
-      "duration": 325000,
-      "streamUrl": "/audio/27bf995a049f76b8dda3ca16254fe46e79720410.mp3",
-      "artworkUrl": "/artwork/27bf995a049f76b8dda3ca16254fe46e79720410.jpg"
-      },
-      {
-      "id": "9903c122b227587145e3b6f5fda054cc26fc03d0",
-      "title": "Renz Wilde – Home Computer",
-      "duration": 189000,
-      "streamUrl": "/audio/9903c122b227587145e3b6f5fda054cc26fc03d0.mp3",
-      "artworkUrl": "/artwork/9903c122b227587145e3b6f5fda054cc26fc03d0.jpg"
-      },
-      {
-      "id": "de5e0ad7afbf5bc0055d766d1f6261b9fb0eae0a",
-      "title": "Droid Bishop – Vanisher",
-      "duration": 236000,
-      "streamUrl": "/audio/de5e0ad7afbf5bc0055d766d1f6261b9fb0eae0a.mp3",
-      "artworkUrl": "/artwork/de5e0ad7afbf5bc0055d766d1f6261b9fb0eae0a.jpg"
-      },
-      {
-      "id": "abe3c0f48d6bf0014328f2189cc17db2b631df2f",
-      "title": "Atrey – Supernova",
-      "duration": 257000,
-      "streamUrl": "/audio/abe3c0f48d6bf0014328f2189cc17db2b631df2f.mp3",
-      "artworkUrl": "/artwork/abe3c0f48d6bf0014328f2189cc17db2b631df2f.jpg"
-      },
-      {
-      "id": "9e9efee4c0c7e95135757b49521b873cd8ea1440",
-      "title": "Dreamtime – Saturday Morning Heroes",
-      "duration": 248000,
-      "streamUrl": "/audio/9e9efee4c0c7e95135757b49521b873cd8ea1440.mp3",
-      "artworkUrl": "/artwork/9e9efee4c0c7e95135757b49521b873cd8ea1440.jpg"
-      },
-      {
-      "id": "dac784bac1f669babcfbbd40e8a2767f00e344a6",
-      "title": "Betamaxx – Dreamer (feat. Rat Rios)",
-      "duration": 243000,
-      "streamUrl": "/audio/dac784bac1f669babcfbbd40e8a2767f00e344a6.mp3",
-      "artworkUrl": "/artwork/dac784bac1f669babcfbbd40e8a2767f00e344a6.jpg"
-      },
-      {
-      "id": "1ffecb1c64a70d2554e9db6a259165fe3680b58e",
-      "title": "Dead Astronauts – Witch Hunt",
-      "duration": 298000,
-      "streamUrl": "/audio/1ffecb1c64a70d2554e9db6a259165fe3680b58e.mp3",
-      "artworkUrl": "/artwork/1ffecb1c64a70d2554e9db6a259165fe3680b58e.jpg"
-      },
-      {
-      "id": "96fad1acecbc3caa4fe95dcd9b6d8e0e7e26d078",
-      "title": "Orax – Ascent of The Blessed",
-      "duration": 239000,
-      "streamUrl": "/audio/96fad1acecbc3caa4fe95dcd9b6d8e0e7e26d078.mp3",
-      "artworkUrl": "/artwork/96fad1acecbc3caa4fe95dcd9b6d8e0e7e26d078.jpg"
-      },
-      {
-      "id": "4c0b10397725b3b27198080f2bbf8aa44c9d4127",
-      "title": "Danger Mode – Survivor",
-      "duration": 241000,
-      "streamUrl": "/audio/4c0b10397725b3b27198080f2bbf8aa44c9d4127.mp3",
-      "artworkUrl": "/artwork/4c0b10397725b3b27198080f2bbf8aa44c9d4127.jpg"
-      },
-      {
-      "id": "054b303ead31a68d839178e9e782e367b054a7d9",
-      "title": "Nickee B – Cover Girl",
-      "duration": 262000,
-      "streamUrl": "/audio/054b303ead31a68d839178e9e782e367b054a7d9.mp3",
-      "artworkUrl": "/artwork/054b303ead31a68d839178e9e782e367b054a7d9.jpg"
-      },
-      {
-      "id": "4b0e2ee44a24a562b3fde9eab8e678731b19c2d6",
-      "title": "Tommy '86 – Test Drive",
-      "duration": 402000,
-      "streamUrl": "/audio/4b0e2ee44a24a562b3fde9eab8e678731b19c2d6.mp3",
-      "artworkUrl": "/artwork/4b0e2ee44a24a562b3fde9eab8e678731b19c2d6.jpg"
-      },
-      {
-      "id": "0697c2e524a441161e7ed2975111b0d84342ad90",
-      "title": "Monomer – Quite Operational",
-      "duration": 210000,
-      "streamUrl": "/audio/0697c2e524a441161e7ed2975111b0d84342ad90.mp3",
-      "artworkUrl": "/artwork/0697c2e524a441161e7ed2975111b0d84342ad90.jpg"
-      },
-      {
-      "id": "ffd65c85c036971075677e76e6b250eef4c6ef2e",
-      "title": "Prius An Sich – Chrome Eyes",
-      "duration": 268591.25,
-      "streamUrl": "/audio/ffd65c85c036971075677e76e6b250eef4c6ef2e.mp3",
-      "artworkUrl": "/artwork/ffd65c85c036971075677e76e6b250eef4c6ef2e.jpg"
-      },
-      {
-      "id": "fef2f2a6148f8837a336e7ca76b71dd032492a46",
-      "title": "Mitch Murder – High Performance",
-      "duration": 220685.9,
-      "streamUrl": "/audio/fef2f2a6148f8837a336e7ca76b71dd032492a46.mp3",
-      "artworkUrl": "/artwork/fef2f2a6148f8837a336e7ca76b71dd032492a46.jpg"
-      },
-      {
-      "id": "e4e941c1dbedd6914ed516b3b071ac2bdd9ddba8",
-      "title": "INDEX CODE – The Baj",
-      "duration": 202000,
-      "streamUrl": "/audio/e4e941c1dbedd6914ed516b3b071ac2bdd9ddba8.mp3",
-      "artworkUrl": "/artwork/e4e941c1dbedd6914ed516b3b071ac2bdd9ddba8.jpg"
-      },
-      {
-      "id": "5434ce38252dff4782c3a3f9024c946e58b58c1a",
-      "title": "Compilerbau – North Wall",
-      "duration": 264000,
-      "streamUrl": "/audio/5434ce38252dff4782c3a3f9024c946e58b58c1a.mp3",
-      "artworkUrl": "/artwork/5434ce38252dff4782c3a3f9024c946e58b58c1a.jpg"
-      },
-      {
-      "id": "919714356b1f3eeed3bc836c41f15e46790e05f8",
-      "title": "Miami Nights 1984 – Streets On Fire",
-      "duration": 197000,
-      "streamUrl": "/audio/919714356b1f3eeed3bc836c41f15e46790e05f8.mp3",
-      "artworkUrl": "/artwork/919714356b1f3eeed3bc836c41f15e46790e05f8.jpg"
-      },
-      {
-      "id": "40e6312155d3658574e32c356e64b716d6ceebfd",
-      "title": "Power Glove – Sloan's Assault",
-      "duration": 213000,
-      "streamUrl": "/audio/40e6312155d3658574e32c356e64b716d6ceebfd.mp3",
-      "artworkUrl": "/artwork/40e6312155d3658574e32c356e64b716d6ceebfd.jpg"
-      },
-      {
-      "id": "787022b67699b3300026ddc4563cf3f94f60afb1",
-      "title": "Arcade High – On The Edge Of Summer",
-      "duration": 307000,
-      "streamUrl": "/audio/787022b67699b3300026ddc4563cf3f94f60afb1.mp3",
-      "artworkUrl": "/artwork/787022b67699b3300026ddc4563cf3f94f60afb1.jpg"
-      },
-      {
-      "id": "68cd3ec26606e107bb032a65603ddec9621469ba",
-      "title": "Forgotten Illusions – Electric Legion",
-      "duration": 152000,
-      "streamUrl": "/audio/68cd3ec26606e107bb032a65603ddec9621469ba.mp3",
-      "artworkUrl": "/artwork/68cd3ec26606e107bb032a65603ddec9621469ba.jpg"
-      },
-      {
-      "id": "4ea94188e2997f7aeeb6fdbcc74d3a760ffabe7b",
-      "title": "Lost Years – Nuclear",
-      "duration": 321000,
-      "streamUrl": "/audio/4ea94188e2997f7aeeb6fdbcc74d3a760ffabe7b.mp3",
-      "artworkUrl": "/artwork/4ea94188e2997f7aeeb6fdbcc74d3a760ffabe7b.jpg"
-      },
-      {
-      "id": "49e69e5d52a06255c8e1341aa91dd7e6db778daa",
-      "title": "80s Stallone – Beach (Original Mix)",
-      "duration": 230000,
-      "streamUrl": "/audio/49e69e5d52a06255c8e1341aa91dd7e6db778daa.mp3",
-      "artworkUrl": "/artwork/49e69e5d52a06255c8e1341aa91dd7e6db778daa.jpg"
-      },
-      {
-      "id": "c9257805c3b70ceb57a5c701db78cb6d4a448cf7",
-      "title": "Le Matos – La Mer Des Possibilites",
-      "duration": 359000,
-      "streamUrl": "/audio/c9257805c3b70ceb57a5c701db78cb6d4a448cf7.mp3",
-      "artworkUrl": "/artwork/c9257805c3b70ceb57a5c701db78cb6d4a448cf7.jpg"
-      },
-      {
-      "id": "ba7ab0c24176dabc96b2085a4e503333e08c311b",
-      "title": "INDEX CODE – In Paris",
-      "duration": 232000,
-      "streamUrl": "/audio/ba7ab0c24176dabc96b2085a4e503333e08c311b.mp3",
-      "artworkUrl": "/artwork/ba7ab0c24176dabc96b2085a4e503333e08c311b.jpg"
-      },
-      {
-      "id": "d8f484b66dfd10d9476206d33d79d883474eb483",
-      "title": "Botnit – Ex-Cathedra",
-      "duration": 324000,
-      "streamUrl": "/audio/d8f484b66dfd10d9476206d33d79d883474eb483.mp3",
-      "artworkUrl": "/artwork/d8f484b66dfd10d9476206d33d79d883474eb483.jpg"
-      },
-      {
-      "id": "2e772770ef61c86c83677bebfec04d0b2f3f87d9",
-      "title": "Kalax – The Race",
-      "duration": 328000,
-      "streamUrl": "/audio/2e772770ef61c86c83677bebfec04d0b2f3f87d9.mp3",
-      "artworkUrl": "/artwork/2e772770ef61c86c83677bebfec04d0b2f3f87d9.jpg"
-      },
-      {
-      "id": "c3bf4f463239955b5ae74d4a22641dfbdd20a55a",
-      "title": "Oscillian – Starlights",
-      "duration": 240000,
-      "streamUrl": "/audio/c3bf4f463239955b5ae74d4a22641dfbdd20a55a.mp3",
-      "artworkUrl": "/artwork/c3bf4f463239955b5ae74d4a22641dfbdd20a55a.jpg"
-      },
-      {
-      "id": "2c09682215c758af55f75709af92306e7767f8bd",
-      "title": "Daniel Deluxe – Soul Siphon",
-      "duration": 240216.25,
-      "streamUrl": "/audio/2c09682215c758af55f75709af92306e7767f8bd.mp3",
-      "artworkUrl": "/artwork/2c09682215c758af55f75709af92306e7767f8bd.jpg"
-      },
-      {
-      "id": "0a0fb6b8fc1effcccd47b18ef0f4c2989d9a9a36",
-      "title": "Betamaxx – Mechanized",
-      "duration": 281000,
-      "streamUrl": "/audio/0a0fb6b8fc1effcccd47b18ef0f4c2989d9a9a36.mp3",
-      "artworkUrl": "/artwork/0a0fb6b8fc1effcccd47b18ef0f4c2989d9a9a36.jpg"
-      },
-      {
-      "id": "a9e194fd41e0e3d34409e613e31492cf510d2d64",
-      "title": "Bluezz Vylez – Craters and Lovers",
-      "duration": 321000,
-      "streamUrl": "/audio/a9e194fd41e0e3d34409e613e31492cf510d2d64.mp3",
-      "artworkUrl": "/artwork/a9e194fd41e0e3d34409e613e31492cf510d2d64.jpg"
-      },
-      {
-      "id": "72f2ca84f893a343b981ee8aad70ae93447e0d6e",
-      "title": "Perturbator – Raining Steel",
-      "duration": 250000,
-      "streamUrl": "/audio/72f2ca84f893a343b981ee8aad70ae93447e0d6e.mp3",
-      "artworkUrl": "/artwork/72f2ca84f893a343b981ee8aad70ae93447e0d6e.jpg"
-      },
-      {
-      "id": "c596929ce73d1fd3951fbe7bce0457060d500adb",
-      "title": "The Hunt – The Abomination",
-      "duration": 260000,
-      "streamUrl": "/audio/c596929ce73d1fd3951fbe7bce0457060d500adb.mp3",
-      "artworkUrl": "/artwork/c596929ce73d1fd3951fbe7bce0457060d500adb.jpg"
-      },
-      {
-      "id": "682e39707497c702ddc26a87f2c18d1458eee247",
-      "title": "Midnight Heir/Patrick Baker – Tonight (feat. Patrick Baker)",
-      "duration": 306000,
-      "streamUrl": "/audio/682e39707497c702ddc26a87f2c18d1458eee247.mp3",
-      "artworkUrl": "/artwork/682e39707497c702ddc26a87f2c18d1458eee247.jpg"
-      },
-      {
-      "id": "bd5e3682730c3bd459730303ab434ad0025b7c60",
-      "title": "Cosmic Sand – Give Us a First Chance",
-      "duration": 202000,
-      "streamUrl": "/audio/bd5e3682730c3bd459730303ab434ad0025b7c60.mp3",
-      "artworkUrl": "/artwork/bd5e3682730c3bd459730303ab434ad0025b7c60.jpg"
-      },
-      {
-      "id": "914cb3bbe433147e173a9cc64751df2bab29868a",
-      "title": "Aysyne – Nite Life",
-      "duration": 254000,
-      "streamUrl": "/audio/914cb3bbe433147e173a9cc64751df2bab29868a.mp3",
-      "artworkUrl": "/artwork/914cb3bbe433147e173a9cc64751df2bab29868a.jpg"
-      },
-      {
-      "id": "c3b7cf7f10aa82f99c988bb368195b2deb70b90f",
-      "title": "GreKanE – Rectified",
-      "duration": 224000,
-      "streamUrl": "/audio/c3b7cf7f10aa82f99c988bb368195b2deb70b90f.mp3",
-      "artworkUrl": "/artwork/c3b7cf7f10aa82f99c988bb368195b2deb70b90f.jpg"
-      },
-      {
-      "id": "6ddbef50dfdb019a9cc9003c19833f07f3b1d38d",
-      "title": "LeveL -1 – Attacking The Headquarters",
-      "duration": 223000,
-      "streamUrl": "/audio/6ddbef50dfdb019a9cc9003c19833f07f3b1d38d.mp3",
-      "artworkUrl": "/artwork/6ddbef50dfdb019a9cc9003c19833f07f3b1d38d.jpg"
-      },
-      {
-      "id": "6450bb773878069074411d3ec1be31666bd768fb",
-      "title": "Nightcrawler – Road Blaster (Dynatron Remix)",
-      "duration": 263000,
-      "streamUrl": "/audio/6450bb773878069074411d3ec1be31666bd768fb.mp3",
-      "artworkUrl": "/artwork/6450bb773878069074411d3ec1be31666bd768fb.jpg"
-      },
-      {
-      "id": "b82dfb64a576c808b49a8e3c2cb77572b6927188",
-      "title": "Rosco – Gridlinked (feat. Kaspar Funk)",
-      "duration": 249000,
-      "streamUrl": "/audio/b82dfb64a576c808b49a8e3c2cb77572b6927188.mp3",
-      "artworkUrl": "/artwork/b82dfb64a576c808b49a8e3c2cb77572b6927188.jpg"
-      },
-      {
-      "id": "9e24d884d2044a5a7b13c1f1c6d9bb60f21d4a22",
-      "title": "Gost – Night Crawler",
-      "duration": 281000,
-      "streamUrl": "/audio/9e24d884d2044a5a7b13c1f1c6d9bb60f21d4a22.mp3",
-      "artworkUrl": "/artwork/9e24d884d2044a5a7b13c1f1c6d9bb60f21d4a22.jpg"
-      },
-      {
-      "id": "da55dda32bb7ff387d17a25a1626f5e90ee14b29",
-      "title": "Nightrun – Ningen",
-      "duration": 364000,
-      "streamUrl": "/audio/da55dda32bb7ff387d17a25a1626f5e90ee14b29.mp3",
-      "artworkUrl": "/artwork/da55dda32bb7ff387d17a25a1626f5e90ee14b29.jpg"
-      },
-      {
-      "id": "aff9bc54e32ab497bd04e17cd2a43eba202c23ee",
-      "title": "Midnight Heir – Badlands",
-      "duration": 288000,
-      "streamUrl": "/audio/aff9bc54e32ab497bd04e17cd2a43eba202c23ee.mp3",
-      "artworkUrl": "/artwork/aff9bc54e32ab497bd04e17cd2a43eba202c23ee.jpg"
-      },
-      {
-      "id": "6049f0377e2c325a6a90b90db1e8bf7c5e657161",
-      "title": "Empathy Test – Holding On",
-      "duration": 249159.34999999998,
-      "streamUrl": "/audio/6049f0377e2c325a6a90b90db1e8bf7c5e657161.mp3",
-      "artworkUrl": "/artwork/6049f0377e2c325a6a90b90db1e8bf7c5e657161.jpg"
-      },
-      {
-      "id": "a054b5c0ebb7765ef84317fba68b5a4211ea780b",
-      "title": "Arcade High – Heat Wave (feat. Morissa Trunzo)",
-      "duration": 251000,
-      "streamUrl": "/audio/a054b5c0ebb7765ef84317fba68b5a4211ea780b.mp3",
-      "artworkUrl": "/artwork/a054b5c0ebb7765ef84317fba68b5a4211ea780b.jpg"
-      },
-      {
-      "id": "ae270cc8a590589302309fdae7ab8864137c6df7",
-      "title": "FM Attack – Sleepless Nights",
-      "duration": 408000,
-      "streamUrl": "/audio/ae270cc8a590589302309fdae7ab8864137c6df7.mp3",
-      "artworkUrl": "/artwork/ae270cc8a590589302309fdae7ab8864137c6df7.jpg"
-      },
-      {
-      "id": "1af5503d2e3f4b941af82138b2ee1ea35addf4d5",
-      "title": "Perturbator – Payback Pursuit",
-      "duration": 243000,
-      "streamUrl": "/audio/1af5503d2e3f4b941af82138b2ee1ea35addf4d5.mp3",
-      "artworkUrl": "/artwork/1af5503d2e3f4b941af82138b2ee1ea35addf4d5.jpg"
-      },
-      {
-      "id": "01ebeb2baab8a0564619cc0ca3a7fefe5413eef2",
-      "title": "D/A/D – Love Will Make You Stay (with USA Gold and Sharaya Mikael)",
-      "duration": 374000,
-      "streamUrl": "/audio/01ebeb2baab8a0564619cc0ca3a7fefe5413eef2.mp3",
-      "artworkUrl": "/artwork/01ebeb2baab8a0564619cc0ca3a7fefe5413eef2.jpg"
-      },
-      {
-      "id": "7dd230b22929c716c379f7999c1d820d4ad88c69",
-      "title": "Miami Nights 1984 – One Last Time",
-      "duration": 146000,
-      "streamUrl": "/audio/7dd230b22929c716c379f7999c1d820d4ad88c69.mp3",
-      "artworkUrl": "/artwork/7dd230b22929c716c379f7999c1d820d4ad88c69.jpg"
-      },
-      {
-      "id": "a0c9f1b970f2481e880d8ca6c7c0a9e3ee7cea24",
-      "title": "Magic Sword – In The Face Of Evil",
-      "duration": 409077.80000000005,
-      "streamUrl": "/audio/a0c9f1b970f2481e880d8ca6c7c0a9e3ee7cea24.mp3",
-      "artworkUrl": "/artwork/a0c9f1b970f2481e880d8ca6c7c0a9e3ee7cea24.jpg"
-      },
-      {
-      "id": "1c5779501ab90dd73bdfcc9d25c0ce468f5deb6f",
-      "title": "Lost Years – Phoenix Rising",
-      "duration": 328000,
-      "streamUrl": "/audio/1c5779501ab90dd73bdfcc9d25c0ce468f5deb6f.mp3",
-      "artworkUrl": "/artwork/1c5779501ab90dd73bdfcc9d25c0ce468f5deb6f.jpg"
-      },
-      {
-      "id": "93d11545d14e05cdfe2289a917b72cb38d67f34e",
-      "title": "Danger Mode – Crime Wave",
-      "duration": 163000,
-      "streamUrl": "/audio/93d11545d14e05cdfe2289a917b72cb38d67f34e.mp3",
-      "artworkUrl": "/artwork/93d11545d14e05cdfe2289a917b72cb38d67f34e.jpg"
-      },
-      {
-      "id": "efa2f7e5bc4d049a9db5fd7b166342b56128c2d4",
-      "title": "Compilerbau – Tachyon",
-      "duration": 277000,
-      "streamUrl": "/audio/efa2f7e5bc4d049a9db5fd7b166342b56128c2d4.mp3",
-      "artworkUrl": "/artwork/efa2f7e5bc4d049a9db5fd7b166342b56128c2d4.jpg"
-      },
-      {
-      "id": "bf055980678604503070f402961ad5471c97549e",
-      "title": "Midnight Heir – Battery",
-      "duration": 213000,
-      "streamUrl": "/audio/bf055980678604503070f402961ad5471c97549e.mp3",
-      "artworkUrl": "/artwork/bf055980678604503070f402961ad5471c97549e.jpg"
-      },
-      {
-      "id": "f8cdb8a86b751e81e1c18a78d8247f177e807cc7",
-      "title": "Lazerhawk – Wrong Side Of Town",
-      "duration": 212000,
-      "streamUrl": "/audio/f8cdb8a86b751e81e1c18a78d8247f177e807cc7.mp3",
-      "artworkUrl": "/artwork/f8cdb8a86b751e81e1c18a78d8247f177e807cc7.jpg"
-      },
-      {
-      "id": "e0bc76f49dc7c5c3a99750361b5a79529e3a7141",
-      "title": "Morgan Willis – Sunset Ridge",
-      "duration": 328000,
-      "streamUrl": "/audio/e0bc76f49dc7c5c3a99750361b5a79529e3a7141.mp3",
-      "artworkUrl": "/artwork/e0bc76f49dc7c5c3a99750361b5a79529e3a7141.jpg"
-      },
-      {
-      "id": "7914f8b5aaaeb0632f6fa63e6c0f61e768318689",
-      "title": "Lazerhawk – Fight to the Top",
-      "duration": 250000,
-      "streamUrl": "/audio/7914f8b5aaaeb0632f6fa63e6c0f61e768318689.mp3",
-      "artworkUrl": "/artwork/7914f8b5aaaeb0632f6fa63e6c0f61e768318689.jpg"
-      },
-      {
-      "id": "45fe7b51432ca4ea5c0702fb95366cb247a88d7e",
-      "title": "3FORCE – Highway Jupiter",
-      "duration": 324000,
-      "streamUrl": "/audio/45fe7b51432ca4ea5c0702fb95366cb247a88d7e.mp3",
-      "artworkUrl": "/artwork/45fe7b51432ca4ea5c0702fb95366cb247a88d7e.jpg"
-      },
-      {
-      "id": "00076cc3b4f5bd6b1528e646d7c0db5f4e538b6a",
-      "title": "Action Jackson – Palm Kill",
-      "duration": 349000,
-      "streamUrl": "/audio/00076cc3b4f5bd6b1528e646d7c0db5f4e538b6a.mp3",
-      "artworkUrl": "/artwork/00076cc3b4f5bd6b1528e646d7c0db5f4e538b6a.jpg"
-      },
-      {
-      "id": "23a2dfcc04ca72329589fe1dea5fa10dc234467c",
-      "title": "Bestrack – Workout 2000",
-      "duration": 340404.375,
-      "streamUrl": "/audio/23a2dfcc04ca72329589fe1dea5fa10dc234467c.mp3",
-      "artworkUrl": "/artwork/23a2dfcc04ca72329589fe1dea5fa10dc234467c.jpg"
-      },
-      {
-      "id": "008996f9685b1157e65fc708a95632983d95fe71",
-      "title": "INDEX CODE – Article 37",
-      "duration": 226000,
-      "streamUrl": "/audio/008996f9685b1157e65fc708a95632983d95fe71.mp3",
-      "artworkUrl": "/artwork/008996f9685b1157e65fc708a95632983d95fe71.jpg"
-      },
-      {
-      "id": "009cb039108b41412a674e3ed5283d5da33dce1a",
-      "title": "Crockett – Changing Lanes",
-      "duration": 336000,
-      "streamUrl": "/audio/009cb039108b41412a674e3ed5283d5da33dce1a.mp3",
-      "artworkUrl": "/artwork/009cb039108b41412a674e3ed5283d5da33dce1a.jpg"
-      },
-      {
-      "id": "439d440f5dcb602d2a29fea2c4128eaa42368d79",
-      "title": "Mitch Murder – The Touch",
-      "duration": 326246.72500000003,
-      "streamUrl": "/audio/439d440f5dcb602d2a29fea2c4128eaa42368d79.mp3",
-      "artworkUrl": "/artwork/439d440f5dcb602d2a29fea2c4128eaa42368d79.jpg"
-      },
-      {
-      "id": "6ba811971c53419d1dfd5df1c048316fabff7868",
-      "title": "Night Runner – The Driver",
-      "duration": 246000,
-      "streamUrl": "/audio/6ba811971c53419d1dfd5df1c048316fabff7868.mp3",
-      "artworkUrl": "/artwork/6ba811971c53419d1dfd5df1c048316fabff7868.jpg"
-      },
-      {
-      "id": "77cf51db21d1b79f57cbdb486f6868325a1bbfbf",
-      "title": "Muscle – Feel The Steel",
-      "duration": 207000,
-      "streamUrl": "/audio/77cf51db21d1b79f57cbdb486f6868325a1bbfbf.mp3",
-      "artworkUrl": "/artwork/77cf51db21d1b79f57cbdb486f6868325a1bbfbf.jpg"
-      },
-      {
-      "id": "dc06db7952bf78b76fce2549a3a109f2177b3486",
-      "title": "Michael Perkins – Esteban",
-      "duration": 195000,
-      "streamUrl": "/audio/dc06db7952bf78b76fce2549a3a109f2177b3486.mp3",
-      "artworkUrl": "/artwork/dc06db7952bf78b76fce2549a3a109f2177b3486.jpg"
-      },
-      {
-      "id": "9a3ccfcdc1393277bc6005c86fd2977089c16284",
-      "title": "Judge Bitch – Tropicool",
-      "duration": 266000,
-      "streamUrl": "/audio/9a3ccfcdc1393277bc6005c86fd2977089c16284.mp3",
-      "artworkUrl": "/artwork/9a3ccfcdc1393277bc6005c86fd2977089c16284.jpg"
-      },
-      {
-      "id": "ee1ab0a93274e1e08c4500f3eb8e49c29d35d8fa",
-      "title": "Bestrack – Burn the night",
-      "duration": 249132.5,
-      "streamUrl": "/audio/ee1ab0a93274e1e08c4500f3eb8e49c29d35d8fa.mp3",
-      "artworkUrl": "/artwork/ee1ab0a93274e1e08c4500f3eb8e49c29d35d8fa.jpg"
-      },
-      {
-      "id": "d48ec511aa389fe5d300b4fde8955ef2a5ba9fac",
-      "title": "Mirage – Midas' Hand",
-      "duration": 304000,
-      "streamUrl": "/audio/d48ec511aa389fe5d300b4fde8955ef2a5ba9fac.mp3",
-      "artworkUrl": "/artwork/d48ec511aa389fe5d300b4fde8955ef2a5ba9fac.jpg"
-      },
-      {
-      "id": "d93e764bb7c8c28d235f2d7520bca7da9adf7090",
-      "title": "Makeup and Vanity Set – From a Distance (Theme from Hit TV)",
-      "duration": 274000,
-      "streamUrl": "/audio/d93e764bb7c8c28d235f2d7520bca7da9adf7090.mp3",
-      "artworkUrl": "/artwork/d93e764bb7c8c28d235f2d7520bca7da9adf7090.jpg"
-      },
-      {
-      "id": "e648f122678f17549e84aa2fb55f0ab046495b54",
-      "title": "ALEX – Occult",
-      "duration": 331000,
-      "streamUrl": "/audio/e648f122678f17549e84aa2fb55f0ab046495b54.mp3",
-      "artworkUrl": "/artwork/e648f122678f17549e84aa2fb55f0ab046495b54.jpg"
-      },
-      {
-      "id": "61c77617d9a04ca404a087a1a978a2a4f207fe05",
-      "title": "NIKY NINE – ROAD",
-      "duration": 292000,
-      "streamUrl": "/audio/61c77617d9a04ca404a087a1a978a2a4f207fe05.mp3",
-      "artworkUrl": "/artwork/61c77617d9a04ca404a087a1a978a2a4f207fe05.jpg"
-      },
-      {
-      "id": "c2490e19575b503d43b083913525a7f3d48d7164",
-      "title": "Danger Mode – Meridian Cruisin'",
-      "duration": 178000,
-      "streamUrl": "/audio/c2490e19575b503d43b083913525a7f3d48d7164.mp3",
-      "artworkUrl": "/artwork/c2490e19575b503d43b083913525a7f3d48d7164.jpg"
-      },
-      {
-      "id": "5705080a6bad0d7b4ea8704234c237a68c1cd9b4",
-      "title": "Run Vaylor – Rush",
-      "duration": 209000,
-      "streamUrl": "/audio/5705080a6bad0d7b4ea8704234c237a68c1cd9b4.mp3",
-      "artworkUrl": "/artwork/5705080a6bad0d7b4ea8704234c237a68c1cd9b4.jpg"
-      },
-      {
-      "id": "6e531164c4804e9db56db9baa9fd1512e7de72af",
-      "title": "OGRE – Job For A Cowboy",
-      "duration": 141000,
-      "streamUrl": "/audio/6e531164c4804e9db56db9baa9fd1512e7de72af.mp3",
-      "artworkUrl": "/artwork/6e531164c4804e9db56db9baa9fd1512e7de72af.jpg"
-      },
-      {
-      "id": "4cfe64e8052e910e4370cdead00b706ea6bbf279",
-      "title": "Meteor – Night Riders",
-      "duration": 199000,
-      "streamUrl": "/audio/4cfe64e8052e910e4370cdead00b706ea6bbf279.mp3",
-      "artworkUrl": "/artwork/4cfe64e8052e910e4370cdead00b706ea6bbf279.jpg"
-      },
-      {
-      "id": "857cc2061d26380bf35599ae683f68cb0ceea990",
-      "title": "Dance with the Dead – The Entity",
-      "duration": 234000,
-      "streamUrl": "/audio/857cc2061d26380bf35599ae683f68cb0ceea990.mp3",
-      "artworkUrl": "/artwork/857cc2061d26380bf35599ae683f68cb0ceea990.jpg"
-      },
-      {
-      "id": "abf58ed918bfb1b4a4b8f93ab208b0ce56e258f2",
-      "title": "Judge Bitch – Striker (feat. Perturbator)",
-      "duration": 186000,
-      "streamUrl": "/audio/abf58ed918bfb1b4a4b8f93ab208b0ce56e258f2.mp3",
-      "artworkUrl": "/artwork/abf58ed918bfb1b4a4b8f93ab208b0ce56e258f2.jpg"
-      },
-      {
-      "id": "7aac5c4753ca9859e3c67685c72b5a8529f14e67",
-      "title": "Prius An Sich – Hyperion Booster",
-      "duration": 273244.25,
-      "streamUrl": "/audio/7aac5c4753ca9859e3c67685c72b5a8529f14e67.mp3",
-      "artworkUrl": "/artwork/7aac5c4753ca9859e3c67685c72b5a8529f14e67.jpg"
-      },
-      {
-      "id": "8b26847f4751208715912bae97ac526a83984479",
-      "title": "Midnight Static – Synthesized Dreams",
-      "duration": 224000,
-      "streamUrl": "/audio/8b26847f4751208715912bae97ac526a83984479.mp3",
-      "artworkUrl": "/artwork/8b26847f4751208715912bae97ac526a83984479.jpg"
-      },
-      {
-      "id": "a3b05ee7fe8b8981618ff0debf01a94b1f6e3649",
-      "title": "Phaserland – We Go Tonight",
-      "duration": 340000,
-      "streamUrl": "/audio/a3b05ee7fe8b8981618ff0debf01a94b1f6e3649.mp3",
-      "artworkUrl": "/artwork/a3b05ee7fe8b8981618ff0debf01a94b1f6e3649.jpg"
-      },
-      {
-      "id": "1b1b89bc8ab9d0d19274190e6b5d50cc292dee96",
-      "title": "Judge Bitch – MDK",
-      "duration": 220000,
-      "streamUrl": "/audio/1b1b89bc8ab9d0d19274190e6b5d50cc292dee96.mp3",
-      "artworkUrl": "/artwork/1b1b89bc8ab9d0d19274190e6b5d50cc292dee96.jpg"
-      },
-      {
-      "id": "9a2e79f2a904d52481f9a692837de243596e06ed",
-      "title": "Miami Nights 1984 – Saved By The Bell",
-      "duration": 266000,
-      "streamUrl": "/audio/9a2e79f2a904d52481f9a692837de243596e06ed.mp3",
-      "artworkUrl": "/artwork/9a2e79f2a904d52481f9a692837de243596e06ed.jpg"
-      },
-      {
-      "id": "b5fe4283a475ec0a61e0bf0ce173676f6e83f504",
-      "title": "DATAStream – Cinder Sunset",
-      "duration": 334000,
-      "streamUrl": "/audio/b5fe4283a475ec0a61e0bf0ce173676f6e83f504.mp3",
-      "artworkUrl": "/artwork/b5fe4283a475ec0a61e0bf0ce173676f6e83f504.jpg"
-      },
-      {
-      "id": "42aa24303041266a446cf3ebbc0409db2cba4b5f",
-      "title": "Highway Superstar – Save You (feat. Sebastian Gampl & Miranda Carey)",
-      "duration": 336312.25,
-      "streamUrl": "/audio/42aa24303041266a446cf3ebbc0409db2cba4b5f.mp3",
-      "artworkUrl": "/artwork/42aa24303041266a446cf3ebbc0409db2cba4b5f.jpg"
-      },
-      {
-      "id": "6da24383d808d8f04275829aeaac1b32ab945309",
-      "title": "NightStop – Synth City",
-      "duration": 218000,
-      "streamUrl": "/audio/6da24383d808d8f04275829aeaac1b32ab945309.mp3",
-      "artworkUrl": "/artwork/6da24383d808d8f04275829aeaac1b32ab945309.jpg"
-      },
-      {
-      "id": "7747de1cdc8b332b962da47174adbf709fb3c970",
-      "title": "Carpenter Brut – Hang'Em All",
-      "duration": 337000,
-      "streamUrl": "/audio/7747de1cdc8b332b962da47174adbf709fb3c970.mp3",
-      "artworkUrl": "/artwork/7747de1cdc8b332b962da47174adbf709fb3c970.jpg"
-      },
-      {
-      "id": "a44fa631a47b8bf2eb253ff72da2ea9d3c8ecd20",
-      "title": "Street Cleaner – Nightlife",
-      "duration": 200000,
-      "streamUrl": "/audio/a44fa631a47b8bf2eb253ff72da2ea9d3c8ecd20.mp3",
-      "artworkUrl": "/artwork/a44fa631a47b8bf2eb253ff72da2ea9d3c8ecd20.jpg"
-      },
-      {
-      "id": "52d7ead95644e8ba65fcb198811f8d358440863a",
-      "title": "Sung – Wayfarer",
-      "duration": 253000,
-      "streamUrl": "/audio/52d7ead95644e8ba65fcb198811f8d358440863a.mp3",
-      "artworkUrl": "/artwork/52d7ead95644e8ba65fcb198811f8d358440863a.jpg"
-      },
-      {
-      "id": "55d26f152537801780f812ffab63b5aa6567c0f2",
-      "title": "D/A/D – Backbone of the Night",
-      "duration": 292000,
-      "streamUrl": "/audio/55d26f152537801780f812ffab63b5aa6567c0f2.mp3",
-      "artworkUrl": "/artwork/55d26f152537801780f812ffab63b5aa6567c0f2.jpg"
-      },
-      {
-      "id": "c8774500da6af4b048e560ba4f85c26ffc9a1fd6",
-      "title": "Compilerbau – Leaving Earth",
-      "duration": 338000,
-      "streamUrl": "/audio/c8774500da6af4b048e560ba4f85c26ffc9a1fd6.mp3",
-      "artworkUrl": "/artwork/c8774500da6af4b048e560ba4f85c26ffc9a1fd6.jpg"
-      },
-      {
-      "id": "2e82b833532f5c4611fce6b4957ac0dba5348d57",
-      "title": "Android Automatic – Camaro Dreams",
-      "duration": 204000,
-      "streamUrl": "/audio/2e82b833532f5c4611fce6b4957ac0dba5348d57.mp3",
-      "artworkUrl": "/artwork/2e82b833532f5c4611fce6b4957ac0dba5348d57.jpg"
-      },
-      {
-      "id": "b5eb9b5e12d2cb3a3c1ec3bccb22d140ca6231bb",
-      "title": "Mega Drive – Crimewave",
-      "duration": 296000,
-      "streamUrl": "/audio/b5eb9b5e12d2cb3a3c1ec3bccb22d140ca6231bb.mp3",
-      "artworkUrl": "/artwork/b5eb9b5e12d2cb3a3c1ec3bccb22d140ca6231bb.jpg"
-      },
-      {
-      "id": "04a8b8ae0427136d2d466f673d014fccaa9ea9aa",
-      "title": "NightStop – PoWer Prostitute",
-      "duration": 207000,
-      "streamUrl": "/audio/04a8b8ae0427136d2d466f673d014fccaa9ea9aa.mp3",
-      "artworkUrl": "/artwork/04a8b8ae0427136d2d466f673d014fccaa9ea9aa.jpg"
-      },
-      {
-      "id": "15e9642798b73e75e4f99ad4547b9368d2b8ad83",
-      "title": "Meteor – Grim Memories",
-      "duration": 327000,
-      "streamUrl": "/audio/15e9642798b73e75e4f99ad4547b9368d2b8ad83.mp3",
-      "artworkUrl": "/artwork/15e9642798b73e75e4f99ad4547b9368d2b8ad83.jpg"
-      },
-      {
-      "id": "6ae33f6d06cab43ea5bd7b4d676df702d96d8bba",
-      "title": "Block 35 – Skyline",
-      "duration": 275000,
-      "streamUrl": "/audio/6ae33f6d06cab43ea5bd7b4d676df702d96d8bba.mp3",
-      "artworkUrl": "/artwork/6ae33f6d06cab43ea5bd7b4d676df702d96d8bba.jpg"
-      },
-      {
-      "id": "37380dadbbc99cfd2e182d7ae6a7f3db45665436",
-      "title": "Lueur Verte – Onyx Noir",
-      "duration": 281000,
-      "streamUrl": "/audio/37380dadbbc99cfd2e182d7ae6a7f3db45665436.mp3",
-      "artworkUrl": "/artwork/37380dadbbc99cfd2e182d7ae6a7f3db45665436.jpg"
-      },
-      {
-      "id": "712d29adc4d335e0e054f86e2d6c74b0415586d5",
-      "title": "Drifting Dreamer – Semi Automatic Neon Love",
-      "duration": 219000,
-      "streamUrl": "/audio/712d29adc4d335e0e054f86e2d6c74b0415586d5.mp3",
-      "artworkUrl": "/artwork/712d29adc4d335e0e054f86e2d6c74b0415586d5.jpg"
-      },
-      {
-      "id": "44bb8fe47bf3d366062afa182d896a4595dbda06",
-      "title": "Camille R – 2001",
-      "duration": 213000,
-      "streamUrl": "/audio/44bb8fe47bf3d366062afa182d896a4595dbda06.mp3",
-      "artworkUrl": "/artwork/44bb8fe47bf3d366062afa182d896a4595dbda06.jpg"
-      },
-      {
-      "id": "e71a89ebfd78bc22555c0602dc610c130f951a14",
-      "title": "NightStop – Night Beach",
-      "duration": 245000,
-      "streamUrl": "/audio/e71a89ebfd78bc22555c0602dc610c130f951a14.mp3",
-      "artworkUrl": "/artwork/e71a89ebfd78bc22555c0602dc610c130f951a14.jpg"
-      },
-      {
-      "id": "372567cee9b7c876f08a8685d4f472472ecafe04",
-      "title": "Darknous – Outrage",
-      "duration": 295000,
-      "streamUrl": "/audio/372567cee9b7c876f08a8685d4f472472ecafe04.mp3",
-      "artworkUrl": "/artwork/372567cee9b7c876f08a8685d4f472472ecafe04.jpg"
-      },
-      {
-      "id": "4171b319ab7e0c828aca696cdbd5501cc84ffa36",
-      "title": "Night Action – All About U",
-      "duration": 291000,
-      "streamUrl": "/audio/4171b319ab7e0c828aca696cdbd5501cc84ffa36.mp3",
-      "artworkUrl": "/artwork/4171b319ab7e0c828aca696cdbd5501cc84ffa36.jpg"
-      },
-      {
-      "id": "d51e049836e528a8c7ce3fb3fc7afc17e0b4d2f0",
-      "title": "Raken – Sunset Place",
-      "duration": 204000,
-      "streamUrl": "/audio/d51e049836e528a8c7ce3fb3fc7afc17e0b4d2f0.mp3",
-      "artworkUrl": "/artwork/d51e049836e528a8c7ce3fb3fc7afc17e0b4d2f0.jpg"
-      },
-      {
-      "id": "050ac3a6b4cdb52161217ea1c6beee2902aa97d6",
-      "title": "Miami Supercops – Night Chase",
-      "duration": 259000,
-      "streamUrl": "/audio/050ac3a6b4cdb52161217ea1c6beee2902aa97d6.mp3",
-      "artworkUrl": "/artwork/050ac3a6b4cdb52161217ea1c6beee2902aa97d6.jpg"
-      },
-      {
-      "id": "23ed5b51c8d7dc496c0102680c508dde1b41c2ff",
-      "title": "Danger Danger – A Mistery",
-      "duration": 265000,
-      "streamUrl": "/audio/23ed5b51c8d7dc496c0102680c508dde1b41c2ff.mp3",
-      "artworkUrl": "/artwork/23ed5b51c8d7dc496c0102680c508dde1b41c2ff.jpg"
-      },
-      {
-      "id": "67c1c608198f805c75b56a4b0c1c4cab5b556ffa",
-      "title": "Double Dragon – Traversee",
-      "duration": 245000,
-      "streamUrl": "/audio/67c1c608198f805c75b56a4b0c1c4cab5b556ffa.mp3",
-      "artworkUrl": "/artwork/67c1c608198f805c75b56a4b0c1c4cab5b556ffa.jpg"
-      },
-      {
-      "id": "ddefc580bcfc9a424bf95b9dfbb3225fb4b89ce4",
-      "title": "Dance with the Dead – Snapped",
-      "duration": 229000,
-      "streamUrl": "/audio/ddefc580bcfc9a424bf95b9dfbb3225fb4b89ce4.mp3",
-      "artworkUrl": "/artwork/ddefc580bcfc9a424bf95b9dfbb3225fb4b89ce4.jpg"
-      },
-      {
-      "id": "baaad0dfcddc351bc849be935740803dbce74665",
-      "title": "Andromeda Dreams – Space Highway",
-      "duration": 215000,
-      "streamUrl": "/audio/baaad0dfcddc351bc849be935740803dbce74665.mp3",
-      "artworkUrl": "/artwork/baaad0dfcddc351bc849be935740803dbce74665.jpg"
-      },
-      {
-      "id": "b77b5efcdc591b839e4fba4de7602405333084a5",
-      "title": "Robert Parker – Waiting",
-      "duration": 263000,
-      "streamUrl": "/audio/b77b5efcdc591b839e4fba4de7602405333084a5.mp3",
-      "artworkUrl": "/artwork/b77b5efcdc591b839e4fba4de7602405333084a5.jpg"
-      },
-      {
-      "id": "f8a970b802ffc8a192f34deb8e461fe0bb0d9e04",
-      "title": "C-jeff – Momo's Truck Stop",
-      "duration": 208000,
-      "streamUrl": "/audio/f8a970b802ffc8a192f34deb8e461fe0bb0d9e04.mp3",
-      "artworkUrl": "/artwork/f8a970b802ffc8a192f34deb8e461fe0bb0d9e04.png"
-      },
-      {
-      "id": "7b839de882534b5491656f3388932c3aabfcbdd6",
-      "title": "Jasper Byrne – Decade Dance",
-      "duration": 321000,
-      "streamUrl": "/audio/7b839de882534b5491656f3388932c3aabfcbdd6.mp3",
-      "artworkUrl": "/artwork/7b839de882534b5491656f3388932c3aabfcbdd6.jpg"
-      },
-      {
-      "id": "6d331273dca80961384d55247923fc812097dd78",
-      "title": "Monomer – Warden",
-      "duration": 258000,
-      "streamUrl": "/audio/6d331273dca80961384d55247923fc812097dd78.mp3",
-      "artworkUrl": "/artwork/6d331273dca80961384d55247923fc812097dd78.jpg"
-      },
-      {
-      "id": "dad32f0817a1528a13b5e7d243bfeb0858423e70",
-      "title": "Midnight Kid – Aggressor",
-      "duration": 227000,
-      "streamUrl": "/audio/dad32f0817a1528a13b5e7d243bfeb0858423e70.mp3",
-      "artworkUrl": "/artwork/dad32f0817a1528a13b5e7d243bfeb0858423e70.jpg"
-      },
-      {
-      "id": "5176b936e146ba98d18a42ce0b470ed1af063838",
-      "title": "FM-84 – Mainframe",
-      "duration": 292000,
-      "streamUrl": "/audio/5176b936e146ba98d18a42ce0b470ed1af063838.mp3",
-      "artworkUrl": "/artwork/5176b936e146ba98d18a42ce0b470ed1af063838.jpg"
-      },
-      {
-      "id": "237e602291fea214cbdaebb6cd4a11944517cf8c",
-      "title": "Le Matos – Wasteland",
-      "duration": 336000,
-      "streamUrl": "/audio/237e602291fea214cbdaebb6cd4a11944517cf8c.mp3",
-      "artworkUrl": "/artwork/237e602291fea214cbdaebb6cd4a11944517cf8c.jpg"
-      },
-      {
-      "id": "62c27ac75b511738fee0f7a657f57eacfa2ab98e",
-      "title": "DJ Ten – Chrome Lust (feat. The Boy & Sister Alma)",
-      "duration": 282000,
-      "streamUrl": "/audio/62c27ac75b511738fee0f7a657f57eacfa2ab98e.mp3",
-      "artworkUrl": "/artwork/62c27ac75b511738fee0f7a657f57eacfa2ab98e.jpg"
-      },
-      {
-      "id": "305769e2d12310ac5761defdd3e57e377fa2f84e",
-      "title": "Lost Years – Converter",
-      "duration": 258000,
-      "streamUrl": "/audio/305769e2d12310ac5761defdd3e57e377fa2f84e.mp3",
-      "artworkUrl": "/artwork/305769e2d12310ac5761defdd3e57e377fa2f84e.jpg"
-      },
-      {
-      "id": "56746093c8426c1298daa46ff1da9472ff6beaf1",
-      "title": "Cluster Buster – How Can He Go So Fast",
-      "duration": 284000,
-      "streamUrl": "/audio/56746093c8426c1298daa46ff1da9472ff6beaf1.mp3",
-      "artworkUrl": "/artwork/56746093c8426c1298daa46ff1da9472ff6beaf1.jpg"
-      },
-      {
-      "id": "bdecf489c41177c3e5d94b395b3df4939a09d302",
-      "title": "Cartridge 1987 – Chase",
-      "duration": 350000,
-      "streamUrl": "/audio/bdecf489c41177c3e5d94b395b3df4939a09d302.mp3",
-      "artworkUrl": "/artwork/bdecf489c41177c3e5d94b395b3df4939a09d302.jpg"
-      },
-      {
-      "id": "b8069445174238c3bfab152d8edbd0cfdbb56640",
-      "title": "Robert Parker – Generation '82 (feat. Shyguys)",
-      "duration": 256000,
-      "streamUrl": "/audio/b8069445174238c3bfab152d8edbd0cfdbb56640.mp3",
-      "artworkUrl": "/artwork/b8069445174238c3bfab152d8edbd0cfdbb56640.jpg"
-      },
-      {
-      "id": "1b53f0b38f9f9584ff485c4a54381b1c105afcce",
-      "title": "FM Attack – Magic (feat. Kristine)",
-      "duration": 276000,
-      "streamUrl": "/audio/1b53f0b38f9f9584ff485c4a54381b1c105afcce.mp3",
-      "artworkUrl": "/artwork/1b53f0b38f9f9584ff485c4a54381b1c105afcce.jpg"
-      },
-      {
-      "id": "243236a6b088274f35d66ae62f2661ef218db6f6",
-      "title": "D.Notive – Second Chances",
-      "duration": 360000,
-      "streamUrl": "/audio/243236a6b088274f35d66ae62f2661ef218db6f6.mp3",
-      "artworkUrl": "/artwork/243236a6b088274f35d66ae62f2661ef218db6f6.png"
-      },
-      {
-      "id": "121a615ea7d12d0650c3cacfb281723a8ce81e84",
-      "title": "Mild Peril – The Duel",
-      "duration": 383000,
-      "streamUrl": "/audio/121a615ea7d12d0650c3cacfb281723a8ce81e84.mp3",
-      "artworkUrl": "/artwork/121a615ea7d12d0650c3cacfb281723a8ce81e84.jpg"
-      },
-      {
-      "id": "113b87ab43b7c13d9b8048fd49f21a3485a6b4fd",
-      "title": "Bixby Snyder – Filthy Streets",
-      "duration": 351000,
-      "streamUrl": "/audio/113b87ab43b7c13d9b8048fd49f21a3485a6b4fd.mp3",
-      "artworkUrl": "/artwork/113b87ab43b7c13d9b8048fd49f21a3485a6b4fd.jpg"
-      },
-      {
-      "id": "d54cbf054a8384d627527d602328cfea2c4842fb",
-      "title": "GAMER – Old Money",
-      "duration": 146000,
-      "streamUrl": "/audio/d54cbf054a8384d627527d602328cfea2c4842fb.mp3",
-      "artworkUrl": "/artwork/d54cbf054a8384d627527d602328cfea2c4842fb.jpg"
-      },
-      {
-      "id": "6665d573d5de5a66c6061334612f20e54a83597c",
-      "title": "Miles Prower – This World Won't Let Me Down",
-      "duration": 269000,
-      "streamUrl": "/audio/6665d573d5de5a66c6061334612f20e54a83597c.mp3",
-      "artworkUrl": "/artwork/6665d573d5de5a66c6061334612f20e54a83597c.jpg"
-      },
-      {
-      "id": "1fc86f3e86905a5b6069a9180e56e378bfc50c1b",
-      "title": "DJ Ten – Show Me The Night (feat. Dead Astronauts)",
-      "duration": 272000,
-      "streamUrl": "/audio/1fc86f3e86905a5b6069a9180e56e378bfc50c1b.mp3",
-      "artworkUrl": "/artwork/1fc86f3e86905a5b6069a9180e56e378bfc50c1b.jpg"
-      },
-      {
-      "id": "a7436fc5334dfdd733a5fdb42a2ce627aef3fe3b",
-      "title": "Le Matos – No Tomorrow feat PAWWS",
-      "duration": 271000,
-      "streamUrl": "/audio/a7436fc5334dfdd733a5fdb42a2ce627aef3fe3b.mp3",
-      "artworkUrl": "/artwork/a7436fc5334dfdd733a5fdb42a2ce627aef3fe3b.jpg"
-      },
-      {
-      "id": "8ab19cd0a3fe579eebd5bd598581399a329ce960",
-      "title": "Shirobon – Regain Control",
-      "duration": 195000,
-      "streamUrl": "/audio/8ab19cd0a3fe579eebd5bd598581399a329ce960.mp3",
-      "artworkUrl": "/artwork/8ab19cd0a3fe579eebd5bd598581399a329ce960.jpg"
-      },
-      {
-      "id": "22ea2a7715fe109547c5c8a5ee47418873bcd85a",
-      "title": "Moondragon – Eye in the Sky",
-      "duration": 246000,
-      "streamUrl": "/audio/22ea2a7715fe109547c5c8a5ee47418873bcd85a.mp3",
-      "artworkUrl": "/artwork/22ea2a7715fe109547c5c8a5ee47418873bcd85a.jpg"
-      },
-      {
-      "id": "abf67a16c705b47e5acf45fcf5a976582c764c91",
-      "title": "A Space Love Adventure – Red Blaze",
-      "duration": 230000,
-      "streamUrl": "/audio/abf67a16c705b47e5acf45fcf5a976582c764c91.mp3",
-      "artworkUrl": "/artwork/abf67a16c705b47e5acf45fcf5a976582c764c91.jpg"
-      },
-      {
-      "id": "ca6a555e348a4c495a1a9c35e14551d67e814b37",
-      "title": "TWRP – Japanquest",
-      "duration": 272000,
-      "streamUrl": "/audio/ca6a555e348a4c495a1a9c35e14551d67e814b37.mp3",
-      "artworkUrl": "/artwork/ca6a555e348a4c495a1a9c35e14551d67e814b37.png"
-      },
-      {
-      "id": "37e70082b58a52e5a051e578a49bf8e2af22bcf8",
-      "title": "Perturbator – Sexualizer (feat. Flash Arnold)",
-      "duration": 299000,
-      "streamUrl": "/audio/37e70082b58a52e5a051e578a49bf8e2af22bcf8.mp3",
-      "artworkUrl": "/artwork/37e70082b58a52e5a051e578a49bf8e2af22bcf8.jpg"
-      },
-      {
-      "id": "55963b04a9c541b7877f0c68c1d9c76f2f5766e6",
-      "title": "Meteor – Manhattan 2019",
-      "duration": 223000,
-      "streamUrl": "/audio/55963b04a9c541b7877f0c68c1d9c76f2f5766e6.mp3",
-      "artworkUrl": "/artwork/55963b04a9c541b7877f0c68c1d9c76f2f5766e6.jpg"
-      },
-      {
-      "id": "42ec2a5d905d239b06decf60abe41cd94317ba3c",
-      "title": "Retouch – Event Horizon",
-      "duration": 223803.45,
-      "streamUrl": "/audio/42ec2a5d905d239b06decf60abe41cd94317ba3c.mp3",
-      "artworkUrl": "/artwork/42ec2a5d905d239b06decf60abe41cd94317ba3c.jpg"
-      },
-      {
-      "id": "ac35967fdb74fe194f0d87965610c9049f889dd4",
-      "title": "Nemix – The Core",
-      "duration": 242000,
-      "streamUrl": "/audio/ac35967fdb74fe194f0d87965610c9049f889dd4.mp3",
-      "artworkUrl": "/artwork/ac35967fdb74fe194f0d87965610c9049f889dd4.jpg"
-      },
-      {
-      "id": "1c93cba8419c5397359a6fdf9a02808a1014bbe8",
-      "title": "Moondragon – Blackbird (feat. Phaserland)",
-      "duration": 378000,
-      "streamUrl": "/audio/1c93cba8419c5397359a6fdf9a02808a1014bbe8.mp3",
-      "artworkUrl": "/artwork/1c93cba8419c5397359a6fdf9a02808a1014bbe8.jpg"
-      },
-      {
-      "id": "4ebdcbe1b26296410af5af5fbefd8035f7760114",
-      "title": "D/A/D – The Look of Being Old",
-      "duration": 258000,
-      "streamUrl": "/audio/4ebdcbe1b26296410af5af5fbefd8035f7760114.mp3",
-      "artworkUrl": "/artwork/4ebdcbe1b26296410af5af5fbefd8035f7760114.jpg"
-      },
-      {
-      "id": "bf3d8843a3ca65f54dbe4459ecd9068f475669f6",
-      "title": "Pengus – Azimut",
-      "duration": 266000,
-      "streamUrl": "/audio/bf3d8843a3ca65f54dbe4459ecd9068f475669f6.mp3",
-      "artworkUrl": "/artwork/bf3d8843a3ca65f54dbe4459ecd9068f475669f6.jpg"
-      },
-      {
-      "id": "c6ffff3b532c923d7e80e87c7a4ff83cd4078fe3",
-      "title": "Lazerhawk – The King of the Streets",
-      "duration": 297000,
-      "streamUrl": "/audio/c6ffff3b532c923d7e80e87c7a4ff83cd4078fe3.mp3",
-      "artworkUrl": "/artwork/c6ffff3b532c923d7e80e87c7a4ff83cd4078fe3.jpg"
-      },
-      {
-      "id": "788062ec6d7f140413dcece66f1a286420e6c03e",
-      "title": "Absolute Valentine – Disco Lover",
-      "duration": 237000,
-      "streamUrl": "/audio/788062ec6d7f140413dcece66f1a286420e6c03e.mp3",
-      "artworkUrl": "/artwork/788062ec6d7f140413dcece66f1a286420e6c03e.jpg"
-      },
-      {
-      "id": "4c85d4dcb6d818416b201cdb670629d6cfd2fc50",
-      "title": "CONFRONTATIONAL – Like A Curse (Feat. Monte Pittman)",
-      "duration": 304000,
-      "streamUrl": "/audio/4c85d4dcb6d818416b201cdb670629d6cfd2fc50.mp3",
-      "artworkUrl": "/artwork/4c85d4dcb6d818416b201cdb670629d6cfd2fc50.jpg"
-      },
-      {
-      "id": "f3b0d80c4ca4675cfea7294468ff8ff93c0fb72e",
-      "title": "Mega Drive – Take Me Home",
-      "duration": 398000,
-      "streamUrl": "/audio/f3b0d80c4ca4675cfea7294468ff8ff93c0fb72e.mp3",
-      "artworkUrl": "/artwork/f3b0d80c4ca4675cfea7294468ff8ff93c0fb72e.png"
-      },
-      {
-      "id": "6015e051f9ccb294304966c317065d26a13d019c",
-      "title": "Kille ft. Future Holotape – Strangers in the Night",
-      "duration": 256000,
-      "streamUrl": "/audio/6015e051f9ccb294304966c317065d26a13d019c.mp3",
-      "artworkUrl": "/artwork/6015e051f9ccb294304966c317065d26a13d019c.jpg"
-      },
-      {
-      "id": "541807d75a4bd9fe5a09104287c0ef162f06ad56",
-      "title": "20SIX Hundred – Open World",
-      "duration": 216000,
-      "streamUrl": "/audio/541807d75a4bd9fe5a09104287c0ef162f06ad56.mp3",
-      "artworkUrl": "/artwork/541807d75a4bd9fe5a09104287c0ef162f06ad56.jpg"
-      },
-      {
-      "id": "9d97a16658f429473802c8d1ac26305719336a8b",
-      "title": "Arcade High – Phone Lines (feat. Hayley Stewart)",
-      "duration": 253000,
-      "streamUrl": "/audio/9d97a16658f429473802c8d1ac26305719336a8b.mp3",
-      "artworkUrl": "/artwork/9d97a16658f429473802c8d1ac26305719336a8b.jpg"
-      },
-      {
-      "id": "a3d003e3e979906ced75d5b256964076fb826610",
-      "title": "Power Glove – Night Force",
-      "duration": 255000,
-      "streamUrl": "/audio/a3d003e3e979906ced75d5b256964076fb826610.mp3",
-      "artworkUrl": "/artwork/a3d003e3e979906ced75d5b256964076fb826610.jpg"
-      },
-      {
-      "id": "a6f8318c62f6426baf77f00d2f29b7a8973467e3",
-      "title": "Retouch – Arm of Creation",
-      "duration": 230067.45,
-      "streamUrl": "/audio/a6f8318c62f6426baf77f00d2f29b7a8973467e3.mp3",
-      "artworkUrl": "/artwork/a6f8318c62f6426baf77f00d2f29b7a8973467e3.jpg"
-      },
-      {
-      "id": "d5d524b70b222e6c3675366dcdfb01e14d1cfc80",
-      "title": "LeveL -1 – Dive in VR",
-      "duration": 231000,
-      "streamUrl": "/audio/d5d524b70b222e6c3675366dcdfb01e14d1cfc80.mp3",
-      "artworkUrl": "/artwork/d5d524b70b222e6c3675366dcdfb01e14d1cfc80.jpg"
-      },
-      {
-      "id": "0d0b249c78e18fc77af6ce7680ff25789ec6c3c3",
-      "title": "GUNSHIP – The Mountain",
-      "duration": 264480.25,
-      "streamUrl": "/audio/0d0b249c78e18fc77af6ce7680ff25789ec6c3c3.mp3",
-      "artworkUrl": "/artwork/0d0b249c78e18fc77af6ce7680ff25789ec6c3c3.jpg"
-      },
-      {
-      "id": "a8a1ab1c2fc7a23096beb0f0f680511eea60e0e2",
-      "title": "Orax – Dreaming",
-      "duration": 290000,
-      "streamUrl": "/audio/a8a1ab1c2fc7a23096beb0f0f680511eea60e0e2.mp3",
-      "artworkUrl": "/artwork/a8a1ab1c2fc7a23096beb0f0f680511eea60e0e2.jpg"
-      },
-      {
-      "id": "9e5e9a4acdc394221bf2fe6b37ada4ba8d1170d1",
-      "title": "Lazerhawk – The Looks that Kill",
-      "duration": 249000,
-      "streamUrl": "/audio/9e5e9a4acdc394221bf2fe6b37ada4ba8d1170d1.mp3",
-      "artworkUrl": "/artwork/9e5e9a4acdc394221bf2fe6b37ada4ba8d1170d1.jpg"
-      },
-      {
-      "id": "d3891c11749bd63159ccb52ed16e5454354a03e5",
-      "title": "Vincenzo Salvia – Chromelove",
-      "duration": 283056.25,
-      "streamUrl": "/audio/d3891c11749bd63159ccb52ed16e5454354a03e5.mp3",
-      "artworkUrl": "/artwork/d3891c11749bd63159ccb52ed16e5454354a03e5.jpg"
-      },
-      {
-      "id": "ac51d0ef3fa01b5da82169dba91bcb16a69ab553",
-      "title": "Phaserland – Resemblance In Machine",
-      "duration": 292000,
-      "streamUrl": "/audio/ac51d0ef3fa01b5da82169dba91bcb16a69ab553.mp3",
-      "artworkUrl": "/artwork/ac51d0ef3fa01b5da82169dba91bcb16a69ab553.jpg"
-      },
-      {
-      "id": "f4aa7673571ef901f6047dd88482d3c20a4bc761",
-      "title": "GAMER – Overpass",
-      "duration": 220000,
-      "streamUrl": "/audio/f4aa7673571ef901f6047dd88482d3c20a4bc761.mp3",
-      "artworkUrl": "/artwork/f4aa7673571ef901f6047dd88482d3c20a4bc761.jpg"
-      },
-      {
-      "id": "309e6cd359673462c2ad18f2383e75cc6efb113d",
-      "title": "Empathy Test – Losing Touch",
-      "duration": 232102.5,
-      "streamUrl": "/audio/309e6cd359673462c2ad18f2383e75cc6efb113d.mp3",
-      "artworkUrl": "/artwork/309e6cd359673462c2ad18f2383e75cc6efb113d.jpg"
-      },
-      {
-      "id": "7771fc38ff6941480d64f22de2cd85836e43f639",
-      "title": "Mega Drive – Pulse of The Streets",
-      "duration": 263000,
-      "streamUrl": "/audio/7771fc38ff6941480d64f22de2cd85836e43f639.mp3",
-      "artworkUrl": "/artwork/7771fc38ff6941480d64f22de2cd85836e43f639.png"
-      },
-      {
-      "id": "b551c2d4e90b22f0ea9c44769c65cb460e9cb7fe",
-      "title": "Stallions – We Are Stallions",
-      "duration": 222000,
-      "streamUrl": "/audio/b551c2d4e90b22f0ea9c44769c65cb460e9cb7fe.mp3",
-      "artworkUrl": "/artwork/b551c2d4e90b22f0ea9c44769c65cb460e9cb7fe.jpg"
-      },
-      {
-      "id": "c0ea05cdb88400c1ab77b960fceb876201ed6228",
-      "title": "Lucy in Disguise – 1987",
-      "duration": 279000,
-      "streamUrl": "/audio/c0ea05cdb88400c1ab77b960fceb876201ed6228.mp3",
-      "artworkUrl": "/artwork/c0ea05cdb88400c1ab77b960fceb876201ed6228.jpg"
-      },
-      {
-      "id": "48e93989a6bd463855d3a34fb8b830f7c8ae75a2",
-      "title": "NeodroneX – Suburban Cowboys",
-      "duration": 187000,
-      "streamUrl": "/audio/48e93989a6bd463855d3a34fb8b830f7c8ae75a2.mp3",
-      "artworkUrl": "/artwork/48e93989a6bd463855d3a34fb8b830f7c8ae75a2.jpg"
-      },
-      {
-      "id": "c98973b3a848eb9621e3d83f27d6d43d664d0d5d",
-      "title": "Makeup and Vanity Set – Quadra IV",
-      "duration": 245000,
-      "streamUrl": "/audio/c98973b3a848eb9621e3d83f27d6d43d664d0d5d.mp3",
-      "artworkUrl": "/artwork/c98973b3a848eb9621e3d83f27d6d43d664d0d5d.jpg"
-      },
-      {
-      "id": "188963be7196d6c333bc77fc07c4f9fe445e4ee3",
-      "title": "Highway Superstar – Deadlock Danger",
-      "duration": 241800.25,
-      "streamUrl": "/audio/188963be7196d6c333bc77fc07c4f9fe445e4ee3.mp3",
-      "artworkUrl": "/artwork/188963be7196d6c333bc77fc07c4f9fe445e4ee3.jpg"
-      },
-      {
-      "id": "0205d9dc38917a14540b58d1a65fe43ec9353de5",
-      "title": "The Hunt – Brain Test",
-      "duration": 297000,
-      "streamUrl": "/audio/0205d9dc38917a14540b58d1a65fe43ec9353de5.mp3",
-      "artworkUrl": "/artwork/0205d9dc38917a14540b58d1a65fe43ec9353de5.jpg"
-      },
-      {
-      "id": "8b7306e130139c49d2d1b6df6699ad09d751015f",
-      "title": "Zone Tripper – Cyber Dream",
-      "duration": 281976.25,
-      "streamUrl": "/audio/8b7306e130139c49d2d1b6df6699ad09d751015f.mp3",
-      "artworkUrl": "/artwork/8b7306e130139c49d2d1b6df6699ad09d751015f.jpg"
-      },
-      {
-      "id": "a0334abe1770eeda2b395106a578cf647563896c",
-      "title": "Lachi James – Champagne Wishes (& Caviar Dreams)",
-      "duration": 183264.25,
-      "streamUrl": "/audio/a0334abe1770eeda2b395106a578cf647563896c.mp3",
-      "artworkUrl": "/artwork/a0334abe1770eeda2b395106a578cf647563896c.jpg"
-      },
-      {
-      "id": "11761072788d7cc9d1e1fb1bcc924f900a166e67",
-      "title": "Saint-Samuel – Videoflex",
-      "duration": 206064.25,
-      "streamUrl": "/audio/11761072788d7cc9d1e1fb1bcc924f900a166e67.mp3",
-      "artworkUrl": "/artwork/11761072788d7cc9d1e1fb1bcc924f900a166e67.jpg"
-      },
-      {
-      "id": "29b322523eaad9b6dc2b0d0d46792d4baa65c8e5",
-      "title": "Duett – Running Scared (Feat. Stewart Lockwood)",
-      "duration": 199000,
-      "streamUrl": "/audio/29b322523eaad9b6dc2b0d0d46792d4baa65c8e5.mp3",
-      "artworkUrl": "/artwork/29b322523eaad9b6dc2b0d0d46792d4baa65c8e5.jpg"
-      },
-      {
-      "id": "90a447bffaf5657a5b7ea30d4c1ebfb36a8c31be",
-      "title": "Bestrack – Stamina",
-      "duration": 243986.425,
-      "streamUrl": "/audio/90a447bffaf5657a5b7ea30d4c1ebfb36a8c31be.mp3",
-      "artworkUrl": "/artwork/90a447bffaf5657a5b7ea30d4c1ebfb36a8c31be.jpg"
-      },
-      {
-      "id": "1a0832814890e9f64bf3e481fd5ffdfa1fa5d9f9",
-      "title": "Magic Dance – The Mirror of Dreams",
-      "duration": 348000,
-      "streamUrl": "/audio/1a0832814890e9f64bf3e481fd5ffdfa1fa5d9f9.mp3",
-      "artworkUrl": "/artwork/1a0832814890e9f64bf3e481fd5ffdfa1fa5d9f9.jpg"
-      },
-      {
-      "id": "d0b13220e5536e140c8eb1fd5bbb713114971050",
-      "title": "Meteor – Black Holes",
-      "duration": 211000,
-      "streamUrl": "/audio/d0b13220e5536e140c8eb1fd5bbb713114971050.mp3",
-      "artworkUrl": "/artwork/d0b13220e5536e140c8eb1fd5bbb713114971050.jpg"
-      },
-      {
-      "id": "a97b1b6d51d887ddb419fa7a9fdeb4dc4f7fa4b7",
-      "title": "Block 35 – Central Control",
-      "duration": 333000,
-      "streamUrl": "/audio/a97b1b6d51d887ddb419fa7a9fdeb4dc4f7fa4b7.mp3",
-      "artworkUrl": "/artwork/a97b1b6d51d887ddb419fa7a9fdeb4dc4f7fa4b7.jpg"
-      },
-      {
-      "id": "f03e9c717020ff38b48c966229063e69b57f5f83",
-      "title": "CRYOSAT – CrimeCom",
-      "duration": 228000,
-      "streamUrl": "/audio/f03e9c717020ff38b48c966229063e69b57f5f83.mp3",
-      "artworkUrl": "/artwork/f03e9c717020ff38b48c966229063e69b57f5f83.jpg"
-      },
-      {
-      "id": "5f17b882793fe22f9d71ff65d3d93b92c709fac8",
-      "title": "Dream Fiend – Morning Light",
-      "duration": 210000,
-      "streamUrl": "/audio/5f17b882793fe22f9d71ff65d3d93b92c709fac8.mp3",
-      "artworkUrl": "/artwork/5f17b882793fe22f9d71ff65d3d93b92c709fac8.jpg"
-      },
-      {
-      "id": "0e74467715e043c05147f2c4e5adae3ba2a8e4c5",
-      "title": "SAYAK STRIKER – EASY CHOPPER",
-      "duration": 296000,
-      "streamUrl": "/audio/0e74467715e043c05147f2c4e5adae3ba2a8e4c5.mp3",
-      "artworkUrl": "/artwork/0e74467715e043c05147f2c4e5adae3ba2a8e4c5.jpg"
-      },
-      {
-      "id": "9d58966dbc0dace3434fc89c73047cc664b17acb",
-      "title": "Duett – Horizons",
-      "duration": 233000,
-      "streamUrl": "/audio/9d58966dbc0dace3434fc89c73047cc664b17acb.mp3",
-      "artworkUrl": "/artwork/9d58966dbc0dace3434fc89c73047cc664b17acb.jpg"
-      },
-      {
-      "id": "6cc16ed37a4b418ec3d5358257ff3142fc4bf0e5",
-      "title": "LeBrock – One Night",
-      "duration": 212000,
-      "streamUrl": "/audio/6cc16ed37a4b418ec3d5358257ff3142fc4bf0e5.mp3",
-      "artworkUrl": "/artwork/6cc16ed37a4b418ec3d5358257ff3142fc4bf0e5.jpg"
-      },
-      {
-      "id": "cddac66ea9198739a8abfdaa9a088d8439bcc2f3",
-      "title": "Bellemaison – The Brand New Age",
-      "duration": 246000,
-      "streamUrl": "/audio/cddac66ea9198739a8abfdaa9a088d8439bcc2f3.mp3",
-      "artworkUrl": "/artwork/cddac66ea9198739a8abfdaa9a088d8439bcc2f3.jpg"
-      },
-      {
-      "id": "7dd77c06f31d4e8a1a94ac9d2832434ee1ebc94f",
-      "title": "Gost – They",
-      "duration": 253000,
-      "streamUrl": "/audio/7dd77c06f31d4e8a1a94ac9d2832434ee1ebc94f.mp3",
-      "artworkUrl": "/artwork/7dd77c06f31d4e8a1a94ac9d2832434ee1ebc94f.jpg"
-      },
-      {
-      "id": "0a7f83bc97fce9011c53081b56db1e6d3c1eec29",
-      "title": "moskva-kassiopeya – Odyssey Pt. I",
-      "duration": 260000,
-      "streamUrl": "/audio/0a7f83bc97fce9011c53081b56db1e6d3c1eec29.mp3",
-      "artworkUrl": "/artwork/0a7f83bc97fce9011c53081b56db1e6d3c1eec29.png"
-      },
-      {
-      "id": "d9838e969794fae7d88f03692aecf6d1a5b69648",
-      "title": "Orax – Blue Cross",
-      "duration": 231000,
-      "streamUrl": "/audio/d9838e969794fae7d88f03692aecf6d1a5b69648.mp3",
-      "artworkUrl": "/artwork/d9838e969794fae7d88f03692aecf6d1a5b69648.jpg"
-      },
-      {
-      "id": "6c0df79116c2e8a53087823bf4b16e28666b515e",
-      "title": "DESTRYUR – Endurance",
-      "duration": 248000,
-      "streamUrl": "/audio/6c0df79116c2e8a53087823bf4b16e28666b515e.mp3",
-      "artworkUrl": "/artwork/6c0df79116c2e8a53087823bf4b16e28666b515e.jpg"
-      },
-      {
-      "id": "24d8d047dafe17dc6717d04aa7359a3ebf62d75f",
-      "title": "Danger Mode – Chroma Drive",
-      "duration": 294000,
-      "streamUrl": "/audio/24d8d047dafe17dc6717d04aa7359a3ebf62d75f.mp3",
-      "artworkUrl": "/artwork/24d8d047dafe17dc6717d04aa7359a3ebf62d75f.jpg"
-      },
-      {
-      "id": "7efd02f39dd8b71bf85159ff0d8aabb33f48be52",
-      "title": "Nowtro – Seeker",
-      "duration": 347000,
-      "streamUrl": "/audio/7efd02f39dd8b71bf85159ff0d8aabb33f48be52.mp3",
-      "artworkUrl": "/artwork/7efd02f39dd8b71bf85159ff0d8aabb33f48be52.jpg"
-      },
-      {
-      "id": "17aa22a9811d515370cb000336cb4ca79e8cfc99",
-      "title": "Duett – Touch",
-      "duration": 208000,
-      "streamUrl": "/audio/17aa22a9811d515370cb000336cb4ca79e8cfc99.mp3",
-      "artworkUrl": "/artwork/17aa22a9811d515370cb000336cb4ca79e8cfc99.jpg"
-      },
-      {
-      "id": "6933da1461930205e86ff0b3f3021add9a69ab01",
-      "title": "Lazerhawk – Redline",
-      "duration": 244000,
-      "streamUrl": "/audio/6933da1461930205e86ff0b3f3021add9a69ab01.mp3",
-      "artworkUrl": "/artwork/6933da1461930205e86ff0b3f3021add9a69ab01.jpg"
-      },
-      {
-      "id": "89a46b1556d22e2809447d9065598ee47ce9b87a",
-      "title": "OGRE – Shore Thing",
-      "duration": 257000,
-      "streamUrl": "/audio/89a46b1556d22e2809447d9065598ee47ce9b87a.mp3",
-      "artworkUrl": "/artwork/89a46b1556d22e2809447d9065598ee47ce9b87a.jpg"
-      },
-      {
-      "id": "bfefb3e78b333f41200bfe188f911885e495cf53",
-      "title": "Midnight Static – VHS Hallucinations",
-      "duration": 240000,
-      "streamUrl": "/audio/bfefb3e78b333f41200bfe188f911885e495cf53.mp3",
-      "artworkUrl": "/artwork/bfefb3e78b333f41200bfe188f911885e495cf53.jpg"
-      },
-      {
-      "id": "d37ee09b5293270ad415c26054421f1ac8d83fa1",
-      "title": "Jasper Byrne – Decade Dance",
-      "duration": 279000,
-      "streamUrl": "/audio/d37ee09b5293270ad415c26054421f1ac8d83fa1.mp3",
-      "artworkUrl": "/artwork/d37ee09b5293270ad415c26054421f1ac8d83fa1.png"
-      },
-      {
-      "id": "bcd15c2d818e8408cb43f0b7e43438bddc97199a",
-      "title": "Magic Dance – Last Light",
-      "duration": 279000,
-      "streamUrl": "/audio/bcd15c2d818e8408cb43f0b7e43438bddc97199a.mp3",
-      "artworkUrl": "/artwork/bcd15c2d818e8408cb43f0b7e43438bddc97199a.jpg"
-      },
-      {
-      "id": "3ca0b480afbe763bcf545ecac432b47050641d5f",
-      "title": "Mega Drive – Power Driver",
-      "duration": 344000,
-      "streamUrl": "/audio/3ca0b480afbe763bcf545ecac432b47050641d5f.mp3",
-      "artworkUrl": "/artwork/3ca0b480afbe763bcf545ecac432b47050641d5f.jpg"
-      },
-      {
-      "id": "d94929c827a1918ab1150260e9d87782ebf64d8e",
-      "title": "Perturbator – Miami Disco",
-      "duration": 271000,
-      "streamUrl": "/audio/d94929c827a1918ab1150260e9d87782ebf64d8e.mp3",
-      "artworkUrl": "/artwork/d94929c827a1918ab1150260e9d87782ebf64d8e.jpg"
-      },
-      {
-      "id": "deda267d7df00c8f2f27a014b2e2d0326563ee97",
-      "title": "Exemia – Dragoknight",
-      "duration": 301000,
-      "streamUrl": "/audio/deda267d7df00c8f2f27a014b2e2d0326563ee97.mp3",
-      "artworkUrl": "/artwork/deda267d7df00c8f2f27a014b2e2d0326563ee97.jpg"
-      },
-      {
-      "id": "df925ce4d84ecda916a49787bc980b5ccc5a8639",
-      "title": "Alpha Boy – Digital Dawn",
-      "duration": 224000,
-      "streamUrl": "/audio/df925ce4d84ecda916a49787bc980b5ccc5a8639.mp3",
-      "artworkUrl": "/artwork/df925ce4d84ecda916a49787bc980b5ccc5a8639.jpg"
-      },
-      {
-      "id": "963d53044d83cac67ea568d1e7a769e171310f14",
-      "title": "OGRE – Always Outnumbered, Never Outrun",
-      "duration": 267000,
-      "streamUrl": "/audio/963d53044d83cac67ea568d1e7a769e171310f14.mp3",
-      "artworkUrl": "/artwork/963d53044d83cac67ea568d1e7a769e171310f14.jpg"
-      },
-      {
-      "id": "622b379ab9306a074982e8ebb47c8728bb2036a3",
-      "title": "Le Cassette – Digital Power",
-      "duration": 291000,
-      "streamUrl": "/audio/622b379ab9306a074982e8ebb47c8728bb2036a3.mp3",
-      "artworkUrl": "/artwork/622b379ab9306a074982e8ebb47c8728bb2036a3.jpg"
-      },
-      {
-      "id": "516dee63000a83f401f451c8d8d49a244cd31bb7",
-      "title": "Let Em Riot – The Manual",
-      "duration": 244056.25,
-      "streamUrl": "/audio/516dee63000a83f401f451c8d8d49a244cd31bb7.mp3",
-      "artworkUrl": "/artwork/516dee63000a83f401f451c8d8d49a244cd31bb7.jpg"
-      },
-      {
-      "id": "a8ff6b6b0ad0ef42ef330a59bde034c5789a8bae",
-      "title": "Worship – Close Encounter",
-      "duration": 258048.25,
-      "streamUrl": "/audio/a8ff6b6b0ad0ef42ef330a59bde034c5789a8bae.mp3",
-      "artworkUrl": "/artwork/a8ff6b6b0ad0ef42ef330a59bde034c5789a8bae.jpg"
-      },
-      {
-      "id": "ebb006a0827baf0bf4d4c8338ed0d877aa30d103",
-      "title": "Nowtro – Tears Don't Fall In Space",
-      "duration": 358000,
-      "streamUrl": "/audio/ebb006a0827baf0bf4d4c8338ed0d877aa30d103.mp3",
-      "artworkUrl": "/artwork/ebb006a0827baf0bf4d4c8338ed0d877aa30d103.jpg"
-      },
-      {
-      "id": "22a749c245a6810ac61157b2c8b6c644d15d7e4d",
-      "title": "Betamaxx – Redlining 6th",
-      "duration": 189000,
-      "streamUrl": "/audio/22a749c245a6810ac61157b2c8b6c644d15d7e4d.mp3",
-      "artworkUrl": "/artwork/22a749c245a6810ac61157b2c8b6c644d15d7e4d.jpg"
-      },
-      {
-      "id": "6a96480a0e965070c7cf82b858188e131cfcf186",
-      "title": "Perturbator – I Am The Night",
-      "duration": 379000,
-      "streamUrl": "/audio/6a96480a0e965070c7cf82b858188e131cfcf186.mp3",
-      "artworkUrl": "/artwork/6a96480a0e965070c7cf82b858188e131cfcf186.jpg"
-      },
-      {
-      "id": "28ddfd663e367668b0e86cd984e95311f63608db",
-      "title": "Drifting Dreamer – Lights Out",
-      "duration": 273000,
-      "streamUrl": "/audio/28ddfd663e367668b0e86cd984e95311f63608db.mp3",
-      "artworkUrl": "/artwork/28ddfd663e367668b0e86cd984e95311f63608db.jpg"
-      },
-      {
-      "id": "27bf995a049f76b8dda3ca16254fe46e79720410",
-      "title": "Hide and Sequence – Resurrection",
-      "duration": 325000,
-      "streamUrl": "/audio/27bf995a049f76b8dda3ca16254fe46e79720410.mp3",
-      "artworkUrl": "/artwork/27bf995a049f76b8dda3ca16254fe46e79720410.jpg"
-      },
-      {
-      "id": "9903c122b227587145e3b6f5fda054cc26fc03d0",
-      "title": "Renz Wilde – Home Computer",
-      "duration": 189000,
-      "streamUrl": "/audio/9903c122b227587145e3b6f5fda054cc26fc03d0.mp3",
-      "artworkUrl": "/artwork/9903c122b227587145e3b6f5fda054cc26fc03d0.jpg"
-      },
-      {
-      "id": "de5e0ad7afbf5bc0055d766d1f6261b9fb0eae0a",
-      "title": "Droid Bishop – Vanisher",
-      "duration": 236000,
-      "streamUrl": "/audio/de5e0ad7afbf5bc0055d766d1f6261b9fb0eae0a.mp3",
-      "artworkUrl": "/artwork/de5e0ad7afbf5bc0055d766d1f6261b9fb0eae0a.jpg"
-      },
-      {
-      "id": "abe3c0f48d6bf0014328f2189cc17db2b631df2f",
-      "title": "Atrey – Supernova",
-      "duration": 257000,
-      "streamUrl": "/audio/abe3c0f48d6bf0014328f2189cc17db2b631df2f.mp3",
-      "artworkUrl": "/artwork/abe3c0f48d6bf0014328f2189cc17db2b631df2f.jpg"
-      },
-      {
-      "id": "9e9efee4c0c7e95135757b49521b873cd8ea1440",
-      "title": "Dreamtime – Saturday Morning Heroes",
-      "duration": 248000,
-      "streamUrl": "/audio/9e9efee4c0c7e95135757b49521b873cd8ea1440.mp3",
-      "artworkUrl": "/artwork/9e9efee4c0c7e95135757b49521b873cd8ea1440.jpg"
-      },
-      {
-      "id": "dac784bac1f669babcfbbd40e8a2767f00e344a6",
-      "title": "Betamaxx – Dreamer (feat. Rat Rios)",
-      "duration": 243000,
-      "streamUrl": "/audio/dac784bac1f669babcfbbd40e8a2767f00e344a6.mp3",
-      "artworkUrl": "/artwork/dac784bac1f669babcfbbd40e8a2767f00e344a6.jpg"
-      },
-      {
-      "id": "1ffecb1c64a70d2554e9db6a259165fe3680b58e",
-      "title": "Dead Astronauts – Witch Hunt",
-      "duration": 298000,
-      "streamUrl": "/audio/1ffecb1c64a70d2554e9db6a259165fe3680b58e.mp3",
-      "artworkUrl": "/artwork/1ffecb1c64a70d2554e9db6a259165fe3680b58e.jpg"
-      },
-      {
-      "id": "96fad1acecbc3caa4fe95dcd9b6d8e0e7e26d078",
-      "title": "Orax – Ascent of The Blessed",
-      "duration": 239000,
-      "streamUrl": "/audio/96fad1acecbc3caa4fe95dcd9b6d8e0e7e26d078.mp3",
-      "artworkUrl": "/artwork/96fad1acecbc3caa4fe95dcd9b6d8e0e7e26d078.jpg"
-      },
-      {
-      "id": "4c0b10397725b3b27198080f2bbf8aa44c9d4127",
-      "title": "Danger Mode – Survivor",
-      "duration": 241000,
-      "streamUrl": "/audio/4c0b10397725b3b27198080f2bbf8aa44c9d4127.mp3",
-      "artworkUrl": "/artwork/4c0b10397725b3b27198080f2bbf8aa44c9d4127.jpg"
-      },
-      {
-      "id": "054b303ead31a68d839178e9e782e367b054a7d9",
-      "title": "Nickee B – Cover Girl",
-      "duration": 262000,
-      "streamUrl": "/audio/054b303ead31a68d839178e9e782e367b054a7d9.mp3",
-      "artworkUrl": "/artwork/054b303ead31a68d839178e9e782e367b054a7d9.jpg"
-      },
-      {
-      "id": "4b0e2ee44a24a562b3fde9eab8e678731b19c2d6",
-      "title": "Tommy '86 – Test Drive",
-      "duration": 402000,
-      "streamUrl": "/audio/4b0e2ee44a24a562b3fde9eab8e678731b19c2d6.mp3",
-      "artworkUrl": "/artwork/4b0e2ee44a24a562b3fde9eab8e678731b19c2d6.jpg"
-      },
-      {
-      "id": "0697c2e524a441161e7ed2975111b0d84342ad90",
-      "title": "Monomer – Quite Operational",
-      "duration": 210000,
-      "streamUrl": "/audio/0697c2e524a441161e7ed2975111b0d84342ad90.mp3",
-      "artworkUrl": "/artwork/0697c2e524a441161e7ed2975111b0d84342ad90.jpg"
-      },
-      {
-      "id": "ffd65c85c036971075677e76e6b250eef4c6ef2e",
-      "title": "Prius An Sich – Chrome Eyes",
-      "duration": 268591.25,
-      "streamUrl": "/audio/ffd65c85c036971075677e76e6b250eef4c6ef2e.mp3",
-      "artworkUrl": "/artwork/ffd65c85c036971075677e76e6b250eef4c6ef2e.jpg"
-      },
-      {
-      "id": "fef2f2a6148f8837a336e7ca76b71dd032492a46",
-      "title": "Mitch Murder – High Performance",
-      "duration": 220685.9,
-      "streamUrl": "/audio/fef2f2a6148f8837a336e7ca76b71dd032492a46.mp3",
-      "artworkUrl": "/artwork/fef2f2a6148f8837a336e7ca76b71dd032492a46.jpg"
-      },
-      {
-      "id": "e4e941c1dbedd6914ed516b3b071ac2bdd9ddba8",
-      "title": "INDEX CODE – The Baj",
-      "duration": 202000,
-      "streamUrl": "/audio/e4e941c1dbedd6914ed516b3b071ac2bdd9ddba8.mp3",
-      "artworkUrl": "/artwork/e4e941c1dbedd6914ed516b3b071ac2bdd9ddba8.jpg"
-      },
-      {
-      "id": "5434ce38252dff4782c3a3f9024c946e58b58c1a",
-      "title": "Compilerbau – North Wall",
-      "duration": 264000,
-      "streamUrl": "/audio/5434ce38252dff4782c3a3f9024c946e58b58c1a.mp3",
-      "artworkUrl": "/artwork/5434ce38252dff4782c3a3f9024c946e58b58c1a.jpg"
-      },
-      {
-      "id": "919714356b1f3eeed3bc836c41f15e46790e05f8",
-      "title": "Miami Nights 1984 – Streets On Fire",
-      "duration": 197000,
-      "streamUrl": "/audio/919714356b1f3eeed3bc836c41f15e46790e05f8.mp3",
-      "artworkUrl": "/artwork/919714356b1f3eeed3bc836c41f15e46790e05f8.jpg"
-      },
-      {
-      "id": "40e6312155d3658574e32c356e64b716d6ceebfd",
-      "title": "Power Glove – Sloan's Assault",
-      "duration": 213000,
-      "streamUrl": "/audio/40e6312155d3658574e32c356e64b716d6ceebfd.mp3",
-      "artworkUrl": "/artwork/40e6312155d3658574e32c356e64b716d6ceebfd.jpg"
-      },
-      {
-      "id": "787022b67699b3300026ddc4563cf3f94f60afb1",
-      "title": "Arcade High – On The Edge Of Summer",
-      "duration": 307000,
-      "streamUrl": "/audio/787022b67699b3300026ddc4563cf3f94f60afb1.mp3",
-      "artworkUrl": "/artwork/787022b67699b3300026ddc4563cf3f94f60afb1.jpg"
-      },
-      {
-      "id": "68cd3ec26606e107bb032a65603ddec9621469ba",
-      "title": "Forgotten Illusions – Electric Legion",
-      "duration": 152000,
-      "streamUrl": "/audio/68cd3ec26606e107bb032a65603ddec9621469ba.mp3",
-      "artworkUrl": "/artwork/68cd3ec26606e107bb032a65603ddec9621469ba.jpg"
-      },
-      {
-      "id": "4ea94188e2997f7aeeb6fdbcc74d3a760ffabe7b",
-      "title": "Lost Years – Nuclear",
-      "duration": 321000,
-      "streamUrl": "/audio/4ea94188e2997f7aeeb6fdbcc74d3a760ffabe7b.mp3",
-      "artworkUrl": "/artwork/4ea94188e2997f7aeeb6fdbcc74d3a760ffabe7b.jpg"
-      },
-      {
-      "id": "49e69e5d52a06255c8e1341aa91dd7e6db778daa",
-      "title": "80s Stallone – Beach (Original Mix)",
-      "duration": 230000,
-      "streamUrl": "/audio/49e69e5d52a06255c8e1341aa91dd7e6db778daa.mp3",
-      "artworkUrl": "/artwork/49e69e5d52a06255c8e1341aa91dd7e6db778daa.jpg"
-      },
-      {
-      "id": "c9257805c3b70ceb57a5c701db78cb6d4a448cf7",
-      "title": "Le Matos – La Mer Des Possibilites",
-      "duration": 359000,
-      "streamUrl": "/audio/c9257805c3b70ceb57a5c701db78cb6d4a448cf7.mp3",
-      "artworkUrl": "/artwork/c9257805c3b70ceb57a5c701db78cb6d4a448cf7.jpg"
-      },
-      {
-      "id": "ba7ab0c24176dabc96b2085a4e503333e08c311b",
-      "title": "INDEX CODE – In Paris",
-      "duration": 232000,
-      "streamUrl": "/audio/ba7ab0c24176dabc96b2085a4e503333e08c311b.mp3",
-      "artworkUrl": "/artwork/ba7ab0c24176dabc96b2085a4e503333e08c311b.jpg"
-      },
-      {
-      "id": "d8f484b66dfd10d9476206d33d79d883474eb483",
-      "title": "Botnit – Ex-Cathedra",
-      "duration": 324000,
-      "streamUrl": "/audio/d8f484b66dfd10d9476206d33d79d883474eb483.mp3",
-      "artworkUrl": "/artwork/d8f484b66dfd10d9476206d33d79d883474eb483.jpg"
-      },
-      {
-      "id": "2e772770ef61c86c83677bebfec04d0b2f3f87d9",
-      "title": "Kalax – The Race",
-      "duration": 328000,
-      "streamUrl": "/audio/2e772770ef61c86c83677bebfec04d0b2f3f87d9.mp3",
-      "artworkUrl": "/artwork/2e772770ef61c86c83677bebfec04d0b2f3f87d9.jpg"
-      },
-      {
-      "id": "c3bf4f463239955b5ae74d4a22641dfbdd20a55a",
-      "title": "Oscillian – Starlights",
-      "duration": 240000,
-      "streamUrl": "/audio/c3bf4f463239955b5ae74d4a22641dfbdd20a55a.mp3",
-      "artworkUrl": "/artwork/c3bf4f463239955b5ae74d4a22641dfbdd20a55a.jpg"
-      },
-      {
-      "id": "2c09682215c758af55f75709af92306e7767f8bd",
-      "title": "Daniel Deluxe – Soul Siphon",
-      "duration": 240216.25,
-      "streamUrl": "/audio/2c09682215c758af55f75709af92306e7767f8bd.mp3",
-      "artworkUrl": "/artwork/2c09682215c758af55f75709af92306e7767f8bd.jpg"
-      },
-      {
-      "id": "0a0fb6b8fc1effcccd47b18ef0f4c2989d9a9a36",
-      "title": "Betamaxx – Mechanized",
-      "duration": 281000,
-      "streamUrl": "/audio/0a0fb6b8fc1effcccd47b18ef0f4c2989d9a9a36.mp3",
-      "artworkUrl": "/artwork/0a0fb6b8fc1effcccd47b18ef0f4c2989d9a9a36.jpg"
-      },
-      {
-      "id": "a9e194fd41e0e3d34409e613e31492cf510d2d64",
-      "title": "Bluezz Vylez – Craters and Lovers",
-      "duration": 321000,
-      "streamUrl": "/audio/a9e194fd41e0e3d34409e613e31492cf510d2d64.mp3",
-      "artworkUrl": "/artwork/a9e194fd41e0e3d34409e613e31492cf510d2d64.jpg"
-      },
-      {
-      "id": "72f2ca84f893a343b981ee8aad70ae93447e0d6e",
-      "title": "Perturbator – Raining Steel",
-      "duration": 250000,
-      "streamUrl": "/audio/72f2ca84f893a343b981ee8aad70ae93447e0d6e.mp3",
-      "artworkUrl": "/artwork/72f2ca84f893a343b981ee8aad70ae93447e0d6e.jpg"
-      },
-      {
-      "id": "c596929ce73d1fd3951fbe7bce0457060d500adb",
-      "title": "The Hunt – The Abomination",
-      "duration": 260000,
-      "streamUrl": "/audio/c596929ce73d1fd3951fbe7bce0457060d500adb.mp3",
-      "artworkUrl": "/artwork/c596929ce73d1fd3951fbe7bce0457060d500adb.jpg"
-      },
-      {
-      "id": "682e39707497c702ddc26a87f2c18d1458eee247",
-      "title": "Midnight Heir/Patrick Baker – Tonight (feat. Patrick Baker)",
-      "duration": 306000,
-      "streamUrl": "/audio/682e39707497c702ddc26a87f2c18d1458eee247.mp3",
-      "artworkUrl": "/artwork/682e39707497c702ddc26a87f2c18d1458eee247.jpg"
-      },
-      {
-      "id": "bd5e3682730c3bd459730303ab434ad0025b7c60",
-      "title": "Cosmic Sand – Give Us a First Chance",
-      "duration": 202000,
-      "streamUrl": "/audio/bd5e3682730c3bd459730303ab434ad0025b7c60.mp3",
-      "artworkUrl": "/artwork/bd5e3682730c3bd459730303ab434ad0025b7c60.jpg"
-      },
-      {
-      "id": "914cb3bbe433147e173a9cc64751df2bab29868a",
-      "title": "Aysyne – Nite Life",
-      "duration": 254000,
-      "streamUrl": "/audio/914cb3bbe433147e173a9cc64751df2bab29868a.mp3",
-      "artworkUrl": "/artwork/914cb3bbe433147e173a9cc64751df2bab29868a.jpg"
-      },
-      {
-      "id": "c3b7cf7f10aa82f99c988bb368195b2deb70b90f",
-      "title": "GreKanE – Rectified",
-      "duration": 224000,
-      "streamUrl": "/audio/c3b7cf7f10aa82f99c988bb368195b2deb70b90f.mp3",
-      "artworkUrl": "/artwork/c3b7cf7f10aa82f99c988bb368195b2deb70b90f.jpg"
-      },
-      {
-      "id": "6ddbef50dfdb019a9cc9003c19833f07f3b1d38d",
-      "title": "LeveL -1 – Attacking The Headquarters",
-      "duration": 223000,
-      "streamUrl": "/audio/6ddbef50dfdb019a9cc9003c19833f07f3b1d38d.mp3",
-      "artworkUrl": "/artwork/6ddbef50dfdb019a9cc9003c19833f07f3b1d38d.jpg"
-      },
-      {
-      "id": "6450bb773878069074411d3ec1be31666bd768fb",
-      "title": "Nightcrawler – Road Blaster (Dynatron Remix)",
-      "duration": 263000,
-      "streamUrl": "/audio/6450bb773878069074411d3ec1be31666bd768fb.mp3",
-      "artworkUrl": "/artwork/6450bb773878069074411d3ec1be31666bd768fb.jpg"
-      },
-      {
-      "id": "b82dfb64a576c808b49a8e3c2cb77572b6927188",
-      "title": "Rosco – Gridlinked (feat. Kaspar Funk)",
-      "duration": 249000,
-      "streamUrl": "/audio/b82dfb64a576c808b49a8e3c2cb77572b6927188.mp3",
-      "artworkUrl": "/artwork/b82dfb64a576c808b49a8e3c2cb77572b6927188.jpg"
-      },
-      {
-      "id": "9e24d884d2044a5a7b13c1f1c6d9bb60f21d4a22",
-      "title": "Gost – Night Crawler",
-      "duration": 281000,
-      "streamUrl": "/audio/9e24d884d2044a5a7b13c1f1c6d9bb60f21d4a22.mp3",
-      "artworkUrl": "/artwork/9e24d884d2044a5a7b13c1f1c6d9bb60f21d4a22.jpg"
-      },
-      {
-      "id": "da55dda32bb7ff387d17a25a1626f5e90ee14b29",
-      "title": "Nightrun – Ningen",
-      "duration": 364000,
-      "streamUrl": "/audio/da55dda32bb7ff387d17a25a1626f5e90ee14b29.mp3",
-      "artworkUrl": "/artwork/da55dda32bb7ff387d17a25a1626f5e90ee14b29.jpg"
-      },
-      {
-      "id": "aff9bc54e32ab497bd04e17cd2a43eba202c23ee",
-      "title": "Midnight Heir – Badlands",
-      "duration": 288000,
-      "streamUrl": "/audio/aff9bc54e32ab497bd04e17cd2a43eba202c23ee.mp3",
-      "artworkUrl": "/artwork/aff9bc54e32ab497bd04e17cd2a43eba202c23ee.jpg"
-      },
-      {
-      "id": "6049f0377e2c325a6a90b90db1e8bf7c5e657161",
-      "title": "Empathy Test – Holding On",
-      "duration": 249159.34999999998,
-      "streamUrl": "/audio/6049f0377e2c325a6a90b90db1e8bf7c5e657161.mp3",
-      "artworkUrl": "/artwork/6049f0377e2c325a6a90b90db1e8bf7c5e657161.jpg"
-      },
-      {
-      "id": "a054b5c0ebb7765ef84317fba68b5a4211ea780b",
-      "title": "Arcade High – Heat Wave (feat. Morissa Trunzo)",
-      "duration": 251000,
-      "streamUrl": "/audio/a054b5c0ebb7765ef84317fba68b5a4211ea780b.mp3",
-      "artworkUrl": "/artwork/a054b5c0ebb7765ef84317fba68b5a4211ea780b.jpg"
-      },
-      {
-      "id": "ae270cc8a590589302309fdae7ab8864137c6df7",
-      "title": "FM Attack – Sleepless Nights",
-      "duration": 408000,
-      "streamUrl": "/audio/ae270cc8a590589302309fdae7ab8864137c6df7.mp3",
-      "artworkUrl": "/artwork/ae270cc8a590589302309fdae7ab8864137c6df7.jpg"
-      },
-      {
-      "id": "1af5503d2e3f4b941af82138b2ee1ea35addf4d5",
-      "title": "Perturbator – Payback Pursuit",
-      "duration": 243000,
-      "streamUrl": "/audio/1af5503d2e3f4b941af82138b2ee1ea35addf4d5.mp3",
-      "artworkUrl": "/artwork/1af5503d2e3f4b941af82138b2ee1ea35addf4d5.jpg"
-      },
-      {
-      "id": "01ebeb2baab8a0564619cc0ca3a7fefe5413eef2",
-      "title": "D/A/D – Love Will Make You Stay (with USA Gold and Sharaya Mikael)",
-      "duration": 374000,
-      "streamUrl": "/audio/01ebeb2baab8a0564619cc0ca3a7fefe5413eef2.mp3",
-      "artworkUrl": "/artwork/01ebeb2baab8a0564619cc0ca3a7fefe5413eef2.jpg"
-      },
-      {
-      "id": "7dd230b22929c716c379f7999c1d820d4ad88c69",
-      "title": "Miami Nights 1984 – One Last Time",
-      "duration": 146000,
-      "streamUrl": "/audio/7dd230b22929c716c379f7999c1d820d4ad88c69.mp3",
-      "artworkUrl": "/artwork/7dd230b22929c716c379f7999c1d820d4ad88c69.jpg"
-      },
-      {
-      "id": "a0c9f1b970f2481e880d8ca6c7c0a9e3ee7cea24",
-      "title": "Magic Sword – In The Face Of Evil",
-      "duration": 409077.80000000005,
-      "streamUrl": "/audio/a0c9f1b970f2481e880d8ca6c7c0a9e3ee7cea24.mp3",
-      "artworkUrl": "/artwork/a0c9f1b970f2481e880d8ca6c7c0a9e3ee7cea24.jpg"
-      },
-      {
-      "id": "1c5779501ab90dd73bdfcc9d25c0ce468f5deb6f",
-      "title": "Lost Years – Phoenix Rising",
-      "duration": 328000,
-      "streamUrl": "/audio/1c5779501ab90dd73bdfcc9d25c0ce468f5deb6f.mp3",
-      "artworkUrl": "/artwork/1c5779501ab90dd73bdfcc9d25c0ce468f5deb6f.jpg"
-      },
-      {
-      "id": "93d11545d14e05cdfe2289a917b72cb38d67f34e",
-      "title": "Danger Mode – Crime Wave",
-      "duration": 163000,
-      "streamUrl": "/audio/93d11545d14e05cdfe2289a917b72cb38d67f34e.mp3",
-      "artworkUrl": "/artwork/93d11545d14e05cdfe2289a917b72cb38d67f34e.jpg"
-      },
-      {
-      "id": "efa2f7e5bc4d049a9db5fd7b166342b56128c2d4",
-      "title": "Compilerbau – Tachyon",
-      "duration": 277000,
-      "streamUrl": "/audio/efa2f7e5bc4d049a9db5fd7b166342b56128c2d4.mp3",
-      "artworkUrl": "/artwork/efa2f7e5bc4d049a9db5fd7b166342b56128c2d4.jpg"
-      },
-      {
-      "id": "bf055980678604503070f402961ad5471c97549e",
-      "title": "Midnight Heir – Battery",
-      "duration": 213000,
-      "streamUrl": "/audio/bf055980678604503070f402961ad5471c97549e.mp3",
-      "artworkUrl": "/artwork/bf055980678604503070f402961ad5471c97549e.jpg"
-      },
-      {
-      "id": "f8cdb8a86b751e81e1c18a78d8247f177e807cc7",
-      "title": "Lazerhawk – Wrong Side Of Town",
-      "duration": 212000,
-      "streamUrl": "/audio/f8cdb8a86b751e81e1c18a78d8247f177e807cc7.mp3",
-      "artworkUrl": "/artwork/f8cdb8a86b751e81e1c18a78d8247f177e807cc7.jpg"
-      },
-      {
-      "id": "e0bc76f49dc7c5c3a99750361b5a79529e3a7141",
-      "title": "Morgan Willis – Sunset Ridge",
-      "duration": 328000,
-      "streamUrl": "/audio/e0bc76f49dc7c5c3a99750361b5a79529e3a7141.mp3",
-      "artworkUrl": "/artwork/e0bc76f49dc7c5c3a99750361b5a79529e3a7141.jpg"
-      },
-      {
-      "id": "7914f8b5aaaeb0632f6fa63e6c0f61e768318689",
-      "title": "Lazerhawk – Fight to the Top",
-      "duration": 250000,
-      "streamUrl": "/audio/7914f8b5aaaeb0632f6fa63e6c0f61e768318689.mp3",
-      "artworkUrl": "/artwork/7914f8b5aaaeb0632f6fa63e6c0f61e768318689.jpg"
-      },
-      {
-      "id": "45fe7b51432ca4ea5c0702fb95366cb247a88d7e",
-      "title": "3FORCE – Highway Jupiter",
-      "duration": 324000,
-      "streamUrl": "/audio/45fe7b51432ca4ea5c0702fb95366cb247a88d7e.mp3",
-      "artworkUrl": "/artwork/45fe7b51432ca4ea5c0702fb95366cb247a88d7e.jpg"
-      },
-      {
-      "id": "00076cc3b4f5bd6b1528e646d7c0db5f4e538b6a",
-      "title": "Action Jackson – Palm Kill",
-      "duration": 349000,
-      "streamUrl": "/audio/00076cc3b4f5bd6b1528e646d7c0db5f4e538b6a.mp3",
-      "artworkUrl": "/artwork/00076cc3b4f5bd6b1528e646d7c0db5f4e538b6a.jpg"
-      },
-      {
-      "id": "23a2dfcc04ca72329589fe1dea5fa10dc234467c",
-      "title": "Bestrack – Workout 2000",
-      "duration": 340404.375,
-      "streamUrl": "/audio/23a2dfcc04ca72329589fe1dea5fa10dc234467c.mp3",
-      "artworkUrl": "/artwork/23a2dfcc04ca72329589fe1dea5fa10dc234467c.jpg"
-      },
-      {
-      "id": "008996f9685b1157e65fc708a95632983d95fe71",
-      "title": "INDEX CODE – Article 37",
-      "duration": 226000,
-      "streamUrl": "/audio/008996f9685b1157e65fc708a95632983d95fe71.mp3",
-      "artworkUrl": "/artwork/008996f9685b1157e65fc708a95632983d95fe71.jpg"
-      },
-      {
-      "id": "009cb039108b41412a674e3ed5283d5da33dce1a",
-      "title": "Crockett – Changing Lanes",
-      "duration": 336000,
-      "streamUrl": "/audio/009cb039108b41412a674e3ed5283d5da33dce1a.mp3",
-      "artworkUrl": "/artwork/009cb039108b41412a674e3ed5283d5da33dce1a.jpg"
-      },
-      {
-      "id": "439d440f5dcb602d2a29fea2c4128eaa42368d79",
-      "title": "Mitch Murder – The Touch",
-      "duration": 326246.72500000003,
-      "streamUrl": "/audio/439d440f5dcb602d2a29fea2c4128eaa42368d79.mp3",
-      "artworkUrl": "/artwork/439d440f5dcb602d2a29fea2c4128eaa42368d79.jpg"
-      },
-      {
-      "id": "6ba811971c53419d1dfd5df1c048316fabff7868",
-      "title": "Night Runner – The Driver",
-      "duration": 246000,
-      "streamUrl": "/audio/6ba811971c53419d1dfd5df1c048316fabff7868.mp3",
-      "artworkUrl": "/artwork/6ba811971c53419d1dfd5df1c048316fabff7868.jpg"
-      },
-      {
-      "id": "77cf51db21d1b79f57cbdb486f6868325a1bbfbf",
-      "title": "Muscle – Feel The Steel",
-      "duration": 207000,
-      "streamUrl": "/audio/77cf51db21d1b79f57cbdb486f6868325a1bbfbf.mp3",
-      "artworkUrl": "/artwork/77cf51db21d1b79f57cbdb486f6868325a1bbfbf.jpg"
-      },
-      {
-      "id": "dc06db7952bf78b76fce2549a3a109f2177b3486",
-      "title": "Michael Perkins – Esteban",
-      "duration": 195000,
-      "streamUrl": "/audio/dc06db7952bf78b76fce2549a3a109f2177b3486.mp3",
-      "artworkUrl": "/artwork/dc06db7952bf78b76fce2549a3a109f2177b3486.jpg"
-      },
-      {
-      "id": "9a3ccfcdc1393277bc6005c86fd2977089c16284",
-      "title": "Judge Bitch – Tropicool",
-      "duration": 266000,
-      "streamUrl": "/audio/9a3ccfcdc1393277bc6005c86fd2977089c16284.mp3",
-      "artworkUrl": "/artwork/9a3ccfcdc1393277bc6005c86fd2977089c16284.jpg"
-      },
-      {
-      "id": "ee1ab0a93274e1e08c4500f3eb8e49c29d35d8fa",
-      "title": "Bestrack – Burn the night",
-      "duration": 249132.5,
-      "streamUrl": "/audio/ee1ab0a93274e1e08c4500f3eb8e49c29d35d8fa.mp3",
-      "artworkUrl": "/artwork/ee1ab0a93274e1e08c4500f3eb8e49c29d35d8fa.jpg"
-      },
-      {
-      "id": "d48ec511aa389fe5d300b4fde8955ef2a5ba9fac",
-      "title": "Mirage – Midas' Hand",
-      "duration": 304000,
-      "streamUrl": "/audio/d48ec511aa389fe5d300b4fde8955ef2a5ba9fac.mp3",
-      "artworkUrl": "/artwork/d48ec511aa389fe5d300b4fde8955ef2a5ba9fac.jpg"
-      },
-      {
-      "id": "d93e764bb7c8c28d235f2d7520bca7da9adf7090",
-      "title": "Makeup and Vanity Set – From a Distance (Theme from Hit TV)",
-      "duration": 274000,
-      "streamUrl": "/audio/d93e764bb7c8c28d235f2d7520bca7da9adf7090.mp3",
-      "artworkUrl": "/artwork/d93e764bb7c8c28d235f2d7520bca7da9adf7090.jpg"
-      },
-      {
-      "id": "e648f122678f17549e84aa2fb55f0ab046495b54",
-      "title": "ALEX – Occult",
-      "duration": 331000,
-      "streamUrl": "/audio/e648f122678f17549e84aa2fb55f0ab046495b54.mp3",
-      "artworkUrl": "/artwork/e648f122678f17549e84aa2fb55f0ab046495b54.jpg"
-      },
-      {
-      "id": "61c77617d9a04ca404a087a1a978a2a4f207fe05",
-      "title": "NIKY NINE – ROAD",
-      "duration": 292000,
-      "streamUrl": "/audio/61c77617d9a04ca404a087a1a978a2a4f207fe05.mp3",
-      "artworkUrl": "/artwork/61c77617d9a04ca404a087a1a978a2a4f207fe05.jpg"
-      },
-      {
-      "id": "c2490e19575b503d43b083913525a7f3d48d7164",
-      "title": "Danger Mode – Meridian Cruisin'",
-      "duration": 178000,
-      "streamUrl": "/audio/c2490e19575b503d43b083913525a7f3d48d7164.mp3",
-      "artworkUrl": "/artwork/c2490e19575b503d43b083913525a7f3d48d7164.jpg"
-      },
-      {
-      "id": "5705080a6bad0d7b4ea8704234c237a68c1cd9b4",
-      "title": "Run Vaylor – Rush",
-      "duration": 209000,
-      "streamUrl": "/audio/5705080a6bad0d7b4ea8704234c237a68c1cd9b4.mp3",
-      "artworkUrl": "/artwork/5705080a6bad0d7b4ea8704234c237a68c1cd9b4.jpg"
-      },
-      {
-      "id": "6e531164c4804e9db56db9baa9fd1512e7de72af",
-      "title": "OGRE – Job For A Cowboy",
-      "duration": 141000,
-      "streamUrl": "/audio/6e531164c4804e9db56db9baa9fd1512e7de72af.mp3",
-      "artworkUrl": "/artwork/6e531164c4804e9db56db9baa9fd1512e7de72af.jpg"
-      },
-      {
-      "id": "4cfe64e8052e910e4370cdead00b706ea6bbf279",
-      "title": "Meteor – Night Riders",
-      "duration": 199000,
-      "streamUrl": "/audio/4cfe64e8052e910e4370cdead00b706ea6bbf279.mp3",
-      "artworkUrl": "/artwork/4cfe64e8052e910e4370cdead00b706ea6bbf279.jpg"
-      },
-      {
-      "id": "857cc2061d26380bf35599ae683f68cb0ceea990",
-      "title": "Dance with the Dead – The Entity",
-      "duration": 234000,
-      "streamUrl": "/audio/857cc2061d26380bf35599ae683f68cb0ceea990.mp3",
-      "artworkUrl": "/artwork/857cc2061d26380bf35599ae683f68cb0ceea990.jpg"
-      },
-      {
-      "id": "abf58ed918bfb1b4a4b8f93ab208b0ce56e258f2",
-      "title": "Judge Bitch – Striker (feat. Perturbator)",
-      "duration": 186000,
-      "streamUrl": "/audio/abf58ed918bfb1b4a4b8f93ab208b0ce56e258f2.mp3",
-      "artworkUrl": "/artwork/abf58ed918bfb1b4a4b8f93ab208b0ce56e258f2.jpg"
-      },
-      {
-      "id": "7aac5c4753ca9859e3c67685c72b5a8529f14e67",
-      "title": "Prius An Sich – Hyperion Booster",
-      "duration": 273244.25,
-      "streamUrl": "/audio/7aac5c4753ca9859e3c67685c72b5a8529f14e67.mp3",
-      "artworkUrl": "/artwork/7aac5c4753ca9859e3c67685c72b5a8529f14e67.jpg"
-      },
-      {
-      "id": "8b26847f4751208715912bae97ac526a83984479",
-      "title": "Midnight Static – Synthesized Dreams",
-      "duration": 224000,
-      "streamUrl": "/audio/8b26847f4751208715912bae97ac526a83984479.mp3",
-      "artworkUrl": "/artwork/8b26847f4751208715912bae97ac526a83984479.jpg"
-      },
-      {
-      "id": "a3b05ee7fe8b8981618ff0debf01a94b1f6e3649",
-      "title": "Phaserland – We Go Tonight",
-      "duration": 340000,
-      "streamUrl": "/audio/a3b05ee7fe8b8981618ff0debf01a94b1f6e3649.mp3",
-      "artworkUrl": "/artwork/a3b05ee7fe8b8981618ff0debf01a94b1f6e3649.jpg"
-      },
-      {
-      "id": "1b1b89bc8ab9d0d19274190e6b5d50cc292dee96",
-      "title": "Judge Bitch – MDK",
-      "duration": 220000,
-      "streamUrl": "/audio/1b1b89bc8ab9d0d19274190e6b5d50cc292dee96.mp3",
-      "artworkUrl": "/artwork/1b1b89bc8ab9d0d19274190e6b5d50cc292dee96.jpg"
-      },
-      {
-      "id": "9a2e79f2a904d52481f9a692837de243596e06ed",
-      "title": "Miami Nights 1984 – Saved By The Bell",
-      "duration": 266000,
-      "streamUrl": "/audio/9a2e79f2a904d52481f9a692837de243596e06ed.mp3",
-      "artworkUrl": "/artwork/9a2e79f2a904d52481f9a692837de243596e06ed.jpg"
-      },
-      {
-      "id": "b5fe4283a475ec0a61e0bf0ce173676f6e83f504",
-      "title": "DATAStream – Cinder Sunset",
-      "duration": 334000,
-      "streamUrl": "/audio/b5fe4283a475ec0a61e0bf0ce173676f6e83f504.mp3",
-      "artworkUrl": "/artwork/b5fe4283a475ec0a61e0bf0ce173676f6e83f504.jpg"
-      },
-      {
-      "id": "42aa24303041266a446cf3ebbc0409db2cba4b5f",
-      "title": "Highway Superstar – Save You (feat. Sebastian Gampl & Miranda Carey)",
-      "duration": 336312.25,
-      "streamUrl": "/audio/42aa24303041266a446cf3ebbc0409db2cba4b5f.mp3",
-      "artworkUrl": "/artwork/42aa24303041266a446cf3ebbc0409db2cba4b5f.jpg"
-      },
-      {
-      "id": "6da24383d808d8f04275829aeaac1b32ab945309",
-      "title": "NightStop – Synth City",
-      "duration": 218000,
-      "streamUrl": "/audio/6da24383d808d8f04275829aeaac1b32ab945309.mp3",
-      "artworkUrl": "/artwork/6da24383d808d8f04275829aeaac1b32ab945309.jpg"
-      },
-      {
-      "id": "7747de1cdc8b332b962da47174adbf709fb3c970",
-      "title": "Carpenter Brut – Hang'Em All",
-      "duration": 337000,
-      "streamUrl": "/audio/7747de1cdc8b332b962da47174adbf709fb3c970.mp3",
-      "artworkUrl": "/artwork/7747de1cdc8b332b962da47174adbf709fb3c970.jpg"
-      },
-      {
-      "id": "a44fa631a47b8bf2eb253ff72da2ea9d3c8ecd20",
-      "title": "Street Cleaner – Nightlife",
-      "duration": 200000,
-      "streamUrl": "/audio/a44fa631a47b8bf2eb253ff72da2ea9d3c8ecd20.mp3",
-      "artworkUrl": "/artwork/a44fa631a47b8bf2eb253ff72da2ea9d3c8ecd20.jpg"
-      },
-      {
-      "id": "52d7ead95644e8ba65fcb198811f8d358440863a",
-      "title": "Sung – Wayfarer",
-      "duration": 253000,
-      "streamUrl": "/audio/52d7ead95644e8ba65fcb198811f8d358440863a.mp3",
-      "artworkUrl": "/artwork/52d7ead95644e8ba65fcb198811f8d358440863a.jpg"
-      },
-      {
-      "id": "55d26f152537801780f812ffab63b5aa6567c0f2",
-      "title": "D/A/D – Backbone of the Night",
-      "duration": 292000,
-      "streamUrl": "/audio/55d26f152537801780f812ffab63b5aa6567c0f2.mp3",
-      "artworkUrl": "/artwork/55d26f152537801780f812ffab63b5aa6567c0f2.jpg"
-      },
-      {
-      "id": "c8774500da6af4b048e560ba4f85c26ffc9a1fd6",
-      "title": "Compilerbau – Leaving Earth",
-      "duration": 338000,
-      "streamUrl": "/audio/c8774500da6af4b048e560ba4f85c26ffc9a1fd6.mp3",
-      "artworkUrl": "/artwork/c8774500da6af4b048e560ba4f85c26ffc9a1fd6.jpg"
-      },
-      {
-      "id": "2e82b833532f5c4611fce6b4957ac0dba5348d57",
-      "title": "Android Automatic – Camaro Dreams",
-      "duration": 204000,
-      "streamUrl": "/audio/2e82b833532f5c4611fce6b4957ac0dba5348d57.mp3",
-      "artworkUrl": "/artwork/2e82b833532f5c4611fce6b4957ac0dba5348d57.jpg"
-      },
-      {
-      "id": "b5eb9b5e12d2cb3a3c1ec3bccb22d140ca6231bb",
-      "title": "Mega Drive – Crimewave",
-      "duration": 296000,
-      "streamUrl": "/audio/b5eb9b5e12d2cb3a3c1ec3bccb22d140ca6231bb.mp3",
-      "artworkUrl": "/artwork/b5eb9b5e12d2cb3a3c1ec3bccb22d140ca6231bb.jpg"
-      },
-      {
-      "id": "04a8b8ae0427136d2d466f673d014fccaa9ea9aa",
-      "title": "NightStop – PoWer Prostitute",
-      "duration": 207000,
-      "streamUrl": "/audio/04a8b8ae0427136d2d466f673d014fccaa9ea9aa.mp3",
-      "artworkUrl": "/artwork/04a8b8ae0427136d2d466f673d014fccaa9ea9aa.jpg"
-      },
-      {
-      "id": "15e9642798b73e75e4f99ad4547b9368d2b8ad83",
-      "title": "Meteor – Grim Memories",
-      "duration": 327000,
-      "streamUrl": "/audio/15e9642798b73e75e4f99ad4547b9368d2b8ad83.mp3",
-      "artworkUrl": "/artwork/15e9642798b73e75e4f99ad4547b9368d2b8ad83.jpg"
-    },]
-    function getUniqueObjects(array2) {
-      const uniqueObjects = [];
-      // Додаємо об'єкти з другого масиву, які не мають однакового значення в першому масиві
-      for (const obj of array2) {
-          if (!data.some(item => item.title === obj.title)) {
-              uniqueObjects.push(obj);
-          }
-      }
-  
-      return uniqueObjects;
-  }//беремо новий масив з інтернета, порівнюється який пісень в мене нема та повертає масив обєктів яких в мене нема
-console.log(getUniqueObjects(tracks))
-
-
-  const data1Dowland=[
-    {
-      id: '44bb8fe47bf3d366062afa182d896a4595dbda06',
-      title: 'Camille R – 2001',
-      duration: 213000,
-      streamUrl: '/audio/44bb8fe47bf3d366062afa182d896a4595dbda06.mp3',
-      artworkUrl: '/artwork/44bb8fe47bf3d366062afa182d896a4595dbda06.jpg'
-    },
-    {
-      id: '372567cee9b7c876f08a8685d4f472472ecafe04',
-      title: 'Darknous – Outrage',
-      duration: 295000,
-      streamUrl: '/audio/372567cee9b7c876f08a8685d4f472472ecafe04.mp3',
-      artworkUrl: '/artwork/372567cee9b7c876f08a8685d4f472472ecafe04.jpg'
-    },
-    {
-      id: '4171b319ab7e0c828aca696cdbd5501cc84ffa36',
-      title: 'Night Action – All About U',
-      duration: 291000,
-      streamUrl: '/audio/4171b319ab7e0c828aca696cdbd5501cc84ffa36.mp3',
-      artworkUrl: '/artwork/4171b319ab7e0c828aca696cdbd5501cc84ffa36.jpg'
-    },
-    {
-      id: 'd51e049836e528a8c7ce3fb3fc7afc17e0b4d2f0',
-      title: 'Raken – Sunset Place',
-      duration: 204000,
-      streamUrl: '/audio/d51e049836e528a8c7ce3fb3fc7afc17e0b4d2f0.mp3',
-      artworkUrl: '/artwork/d51e049836e528a8c7ce3fb3fc7afc17e0b4d2f0.jpg'
-    },
-    {
-      id: '67c1c608198f805c75b56a4b0c1c4cab5b556ffa',
-      title: 'Double Dragon – Traversee',
-      duration: 245000,
-      streamUrl: '/audio/67c1c608198f805c75b56a4b0c1c4cab5b556ffa.mp3',
-      artworkUrl: '/artwork/67c1c608198f805c75b56a4b0c1c4cab5b556ffa.jpg'
-    },
-    {
-      id: 'ddefc580bcfc9a424bf95b9dfbb3225fb4b89ce4',
-      title: 'Dance with the Dead – Snapped',
-      duration: 229000,
-      streamUrl: '/audio/ddefc580bcfc9a424bf95b9dfbb3225fb4b89ce4.mp3',
-      artworkUrl: '/artwork/ddefc580bcfc9a424bf95b9dfbb3225fb4b89ce4.jpg'
-    },
-    {
-      id: 'baaad0dfcddc351bc849be935740803dbce74665',
-      title: 'Andromeda Dreams – Space Highway',
-      duration: 215000,
-      streamUrl: '/audio/baaad0dfcddc351bc849be935740803dbce74665.mp3',
-      artworkUrl: '/artwork/baaad0dfcddc351bc849be935740803dbce74665.jpg'
-    },
-    {
-      id: 'b77b5efcdc591b839e4fba4de7602405333084a5',
-      title: 'Robert Parker – Waiting',
-      duration: 263000,
-      streamUrl: '/audio/b77b5efcdc591b839e4fba4de7602405333084a5.mp3',
-      artworkUrl: '/artwork/b77b5efcdc591b839e4fba4de7602405333084a5.jpg'
-    },
-    {
-      id: 'f8a970b802ffc8a192f34deb8e461fe0bb0d9e04',
-      title: "C-jeff – Momo's Truck Stop",
-      duration: 208000,
-      streamUrl: '/audio/f8a970b802ffc8a192f34deb8e461fe0bb0d9e04.mp3',
-      artworkUrl: '/artwork/f8a970b802ffc8a192f34deb8e461fe0bb0d9e04.png'
-    },
-    {
-      id: '7b839de882534b5491656f3388932c3aabfcbdd6',
-      title: 'Jasper Byrne – Decade Dance',
-      duration: 321000,
-      streamUrl: '/audio/7b839de882534b5491656f3388932c3aabfcbdd6.mp3',
-      artworkUrl: '/artwork/7b839de882534b5491656f3388932c3aabfcbdd6.jpg'
-    },
-    {
-      id: '6d331273dca80961384d55247923fc812097dd78',
-      title: 'Monomer – Warden',
-      duration: 258000,
-      streamUrl: '/audio/6d331273dca80961384d55247923fc812097dd78.mp3',
-      artworkUrl: '/artwork/6d331273dca80961384d55247923fc812097dd78.jpg'
-    },
-    {
-      id: '237e602291fea214cbdaebb6cd4a11944517cf8c',
-      title: 'Le Matos – Wasteland',
-      duration: 336000,
-      streamUrl: '/audio/237e602291fea214cbdaebb6cd4a11944517cf8c.mp3',
-      artworkUrl: '/artwork/237e602291fea214cbdaebb6cd4a11944517cf8c.jpg'
-    },
-    {
-      id: '56746093c8426c1298daa46ff1da9472ff6beaf1',
-      title: 'Cluster Buster – How Can He Go So Fast',
-      duration: 284000,
-      streamUrl: '/audio/56746093c8426c1298daa46ff1da9472ff6beaf1.mp3',
-      artworkUrl: '/artwork/56746093c8426c1298daa46ff1da9472ff6beaf1.jpg'
-    },
-    {
-      id: 'b8069445174238c3bfab152d8edbd0cfdbb56640',
-      title: "Robert Parker – Generation '82 (feat. Shyguys)",
-      duration: 256000,
-      streamUrl: '/audio/b8069445174238c3bfab152d8edbd0cfdbb56640.mp3',
-      artworkUrl: '/artwork/b8069445174238c3bfab152d8edbd0cfdbb56640.jpg'
-    },
-    {
-      id: '1b53f0b38f9f9584ff485c4a54381b1c105afcce',
-      title: 'FM Attack – Magic (feat. Kristine)',
-      duration: 276000,
-      streamUrl: '/audio/1b53f0b38f9f9584ff485c4a54381b1c105afcce.mp3',
-      artworkUrl: '/artwork/1b53f0b38f9f9584ff485c4a54381b1c105afcce.jpg'
-    },
-    {
-      id: 'd54cbf054a8384d627527d602328cfea2c4842fb',
-      title: 'GAMER – Old Money',
-      duration: 146000,
-      streamUrl: '/audio/d54cbf054a8384d627527d602328cfea2c4842fb.mp3',
-      artworkUrl: '/artwork/d54cbf054a8384d627527d602328cfea2c4842fb.jpg'
-    },
-    {
-      id: 'abf67a16c705b47e5acf45fcf5a976582c764c91',
-      title: 'A Space Love Adventure – Red Blaze',
-      duration: 230000,
-      streamUrl: '/audio/abf67a16c705b47e5acf45fcf5a976582c764c91.mp3',
-      artworkUrl: '/artwork/abf67a16c705b47e5acf45fcf5a976582c764c91.jpg'
-    },
-    {
-      id: 'ca6a555e348a4c495a1a9c35e14551d67e814b37',
-      title: 'TWRP – Japanquest',
-      duration: 272000,
-      streamUrl: '/audio/ca6a555e348a4c495a1a9c35e14551d67e814b37.mp3',
-      artworkUrl: '/artwork/ca6a555e348a4c495a1a9c35e14551d67e814b37.png'
-    },
-    {
-      id: '37e70082b58a52e5a051e578a49bf8e2af22bcf8',
-      title: 'Perturbator – Sexualizer (feat. Flash Arnold)',
-      duration: 299000,
-      streamUrl: '/audio/37e70082b58a52e5a051e578a49bf8e2af22bcf8.mp3',
-      artworkUrl: '/artwork/37e70082b58a52e5a051e578a49bf8e2af22bcf8.jpg'
-    },
-    {
-      id: '55963b04a9c541b7877f0c68c1d9c76f2f5766e6',
-      title: 'Meteor – Manhattan 2019',
-      duration: 223000,
-      streamUrl: '/audio/55963b04a9c541b7877f0c68c1d9c76f2f5766e6.mp3',
-      artworkUrl: '/artwork/55963b04a9c541b7877f0c68c1d9c76f2f5766e6.jpg'
-    },
-    {
-      id: '42ec2a5d905d239b06decf60abe41cd94317ba3c',
-      title: 'Retouch – Event Horizon',
-      duration: 223803.45,
-      streamUrl: '/audio/42ec2a5d905d239b06decf60abe41cd94317ba3c.mp3',
-      artworkUrl: '/artwork/42ec2a5d905d239b06decf60abe41cd94317ba3c.jpg'
-    },
-    {
-      id: 'bf3d8843a3ca65f54dbe4459ecd9068f475669f6',
-      title: 'Pengus – Azimut',
-      duration: 266000,
-      streamUrl: '/audio/bf3d8843a3ca65f54dbe4459ecd9068f475669f6.mp3',
-      artworkUrl: '/artwork/bf3d8843a3ca65f54dbe4459ecd9068f475669f6.jpg'
-    },
-    {
-      id: 'c6ffff3b532c923d7e80e87c7a4ff83cd4078fe3',
-      title: 'Lazerhawk – The King of the Streets',
-      duration: 297000,
-      streamUrl: '/audio/c6ffff3b532c923d7e80e87c7a4ff83cd4078fe3.mp3',
-      artworkUrl: '/artwork/c6ffff3b532c923d7e80e87c7a4ff83cd4078fe3.jpg'
-    },
-    {
-      id: '788062ec6d7f140413dcece66f1a286420e6c03e',
-      title: 'Absolute Valentine – Disco Lover',
-      duration: 237000,
-      streamUrl: '/audio/788062ec6d7f140413dcece66f1a286420e6c03e.mp3',
-      artworkUrl: '/artwork/788062ec6d7f140413dcece66f1a286420e6c03e.jpg'
-    },
-    {
-      id: '4c85d4dcb6d818416b201cdb670629d6cfd2fc50',
-      title: 'CONFRONTATIONAL – Like A Curse (Feat. Monte Pittman)',
-      duration: 304000,
-      streamUrl: '/audio/4c85d4dcb6d818416b201cdb670629d6cfd2fc50.mp3',
-      artworkUrl: '/artwork/4c85d4dcb6d818416b201cdb670629d6cfd2fc50.jpg'
-    },
-    {
-      id: 'f3b0d80c4ca4675cfea7294468ff8ff93c0fb72e',
-      title: 'Mega Drive – Take Me Home',
-      duration: 398000,
-      streamUrl: '/audio/f3b0d80c4ca4675cfea7294468ff8ff93c0fb72e.mp3',
-      artworkUrl: '/artwork/f3b0d80c4ca4675cfea7294468ff8ff93c0fb72e.png'
-    },
-    {
-      id: '6015e051f9ccb294304966c317065d26a13d019c',
-      title: 'Kille ft. Future Holotape – Strangers in the Night',
-      duration: 256000,
-      streamUrl: '/audio/6015e051f9ccb294304966c317065d26a13d019c.mp3',
-      artworkUrl: '/artwork/6015e051f9ccb294304966c317065d26a13d019c.jpg'
-    },
-    {
-      id: '541807d75a4bd9fe5a09104287c0ef162f06ad56',
-      title: '20SIX Hundred – Open World',
-      duration: 216000,
-      streamUrl: '/audio/541807d75a4bd9fe5a09104287c0ef162f06ad56.mp3',
-      artworkUrl: '/artwork/541807d75a4bd9fe5a09104287c0ef162f06ad56.jpg'
-    },
-    {
-      id: '9d97a16658f429473802c8d1ac26305719336a8b',
-      title: 'Arcade High – Phone Lines (feat. Hayley Stewart)',
-      duration: 253000,
-      streamUrl: '/audio/9d97a16658f429473802c8d1ac26305719336a8b.mp3',
-      artworkUrl: '/artwork/9d97a16658f429473802c8d1ac26305719336a8b.jpg'
-    },
-    {
-      id: 'd5d524b70b222e6c3675366dcdfb01e14d1cfc80',
-      title: 'LeveL -1 – Dive in VR',
-      duration: 231000,
-      streamUrl: '/audio/d5d524b70b222e6c3675366dcdfb01e14d1cfc80.mp3',
-      artworkUrl: '/artwork/d5d524b70b222e6c3675366dcdfb01e14d1cfc80.jpg'
-    },
-    {
-      id: '0d0b249c78e18fc77af6ce7680ff25789ec6c3c3',
-      title: 'GUNSHIP – The Mountain',
-      duration: 264480.25,
-      streamUrl: '/audio/0d0b249c78e18fc77af6ce7680ff25789ec6c3c3.mp3',
-      artworkUrl: '/artwork/0d0b249c78e18fc77af6ce7680ff25789ec6c3c3.jpg'
-    },
-    {
-      id: 'd3891c11749bd63159ccb52ed16e5454354a03e5',
-      title: 'Vincenzo Salvia – Chromelove',
-      duration: 283056.25,
-      streamUrl: '/audio/d3891c11749bd63159ccb52ed16e5454354a03e5.mp3',
-      artworkUrl: '/artwork/d3891c11749bd63159ccb52ed16e5454354a03e5.jpg'
-    },
-    {
-      id: 'ac51d0ef3fa01b5da82169dba91bcb16a69ab553',
-      title: 'Phaserland – Resemblance In Machine',
-      duration: 292000,
-      streamUrl: '/audio/ac51d0ef3fa01b5da82169dba91bcb16a69ab553.mp3',
-      artworkUrl: '/artwork/ac51d0ef3fa01b5da82169dba91bcb16a69ab553.jpg'
-    },
-    {
-      id: 'f4aa7673571ef901f6047dd88482d3c20a4bc761',
-      title: 'GAMER – Overpass',
-      duration: 220000,
-      streamUrl: '/audio/f4aa7673571ef901f6047dd88482d3c20a4bc761.mp3',
-      artworkUrl: '/artwork/f4aa7673571ef901f6047dd88482d3c20a4bc761.jpg'
-    },
-    {
-      id: '7771fc38ff6941480d64f22de2cd85836e43f639',
-      title: 'Mega Drive – Pulse of The Streets',
-      duration: 263000,
-      streamUrl: '/audio/7771fc38ff6941480d64f22de2cd85836e43f639.mp3',
-      artworkUrl: '/artwork/7771fc38ff6941480d64f22de2cd85836e43f639.png'
-    },
-    {
-      id: 'c0ea05cdb88400c1ab77b960fceb876201ed6228',
-      title: 'Lucy in Disguise – 1987',
-      duration: 279000,
-      streamUrl: '/audio/c0ea05cdb88400c1ab77b960fceb876201ed6228.mp3',
-      artworkUrl: '/artwork/c0ea05cdb88400c1ab77b960fceb876201ed6228.jpg'
-    },
-    {
-      id: '48e93989a6bd463855d3a34fb8b830f7c8ae75a2',
-      title: 'NeodroneX – Suburban Cowboys',
-      duration: 187000,
-      streamUrl: '/audio/48e93989a6bd463855d3a34fb8b830f7c8ae75a2.mp3',
-      artworkUrl: '/artwork/48e93989a6bd463855d3a34fb8b830f7c8ae75a2.jpg'
-    },
-    {
-      id: '0205d9dc38917a14540b58d1a65fe43ec9353de5',
-      title: 'The Hunt – Brain Test',
-      duration: 297000,
-      streamUrl: '/audio/0205d9dc38917a14540b58d1a65fe43ec9353de5.mp3',
-      artworkUrl: '/artwork/0205d9dc38917a14540b58d1a65fe43ec9353de5.jpg'
-    },
-    {
-      id: '11761072788d7cc9d1e1fb1bcc924f900a166e67',
-      title: 'Saint-Samuel – Videoflex',
-      duration: 206064.25,
-      streamUrl: '/audio/11761072788d7cc9d1e1fb1bcc924f900a166e67.mp3',
-      artworkUrl: '/artwork/11761072788d7cc9d1e1fb1bcc924f900a166e67.jpg'
-    },
-    {
-      id: '1a0832814890e9f64bf3e481fd5ffdfa1fa5d9f9',
-      title: 'Magic Dance – The Mirror of Dreams',
-      duration: 348000,
-      streamUrl: '/audio/1a0832814890e9f64bf3e481fd5ffdfa1fa5d9f9.mp3',
-      artworkUrl: '/artwork/1a0832814890e9f64bf3e481fd5ffdfa1fa5d9f9.jpg'
-    },
-    {
-      id: 'a97b1b6d51d887ddb419fa7a9fdeb4dc4f7fa4b7',
-      title: 'Block 35 – Central Control',
-      duration: 333000,
-      streamUrl: '/audio/a97b1b6d51d887ddb419fa7a9fdeb4dc4f7fa4b7.mp3',
-      artworkUrl: '/artwork/a97b1b6d51d887ddb419fa7a9fdeb4dc4f7fa4b7.jpg'
-    },
-    {
-      id: 'f03e9c717020ff38b48c966229063e69b57f5f83',
-      title: 'CRYOSAT – CrimeCom',
-      duration: 228000,
-      streamUrl: '/audio/f03e9c717020ff38b48c966229063e69b57f5f83.mp3',
-      artworkUrl: '/artwork/f03e9c717020ff38b48c966229063e69b57f5f83.jpg'
-    },
-    {
-      id: '5f17b882793fe22f9d71ff65d3d93b92c709fac8',
-      title: 'Dream Fiend – Morning Light',
-      duration: 210000,
-      streamUrl: '/audio/5f17b882793fe22f9d71ff65d3d93b92c709fac8.mp3',
-      artworkUrl: '/artwork/5f17b882793fe22f9d71ff65d3d93b92c709fac8.jpg'
-    },
-    {
-      id: '6cc16ed37a4b418ec3d5358257ff3142fc4bf0e5',
-      title: 'LeBrock – One Night',
-      duration: 212000,
-      streamUrl: '/audio/6cc16ed37a4b418ec3d5358257ff3142fc4bf0e5.mp3',
-      artworkUrl: '/artwork/6cc16ed37a4b418ec3d5358257ff3142fc4bf0e5.jpg'
-    },
-    {
-      id: 'cddac66ea9198739a8abfdaa9a088d8439bcc2f3',
-      title: 'Bellemaison – The Brand New Age',
-      duration: 246000,
-      streamUrl: '/audio/cddac66ea9198739a8abfdaa9a088d8439bcc2f3.mp3',
-      artworkUrl: '/artwork/cddac66ea9198739a8abfdaa9a088d8439bcc2f3.jpg'
-    },
-    {
-      id: '7dd77c06f31d4e8a1a94ac9d2832434ee1ebc94f',
-      title: 'Gost – They',
-      duration: 253000,
-      streamUrl: '/audio/7dd77c06f31d4e8a1a94ac9d2832434ee1ebc94f.mp3',
-      artworkUrl: '/artwork/7dd77c06f31d4e8a1a94ac9d2832434ee1ebc94f.jpg'
-    },
-    {
-      id: '24d8d047dafe17dc6717d04aa7359a3ebf62d75f',
-      title: 'Danger Mode – Chroma Drive',
-      duration: 294000,
-      streamUrl: '/audio/24d8d047dafe17dc6717d04aa7359a3ebf62d75f.mp3',
-      artworkUrl: '/artwork/24d8d047dafe17dc6717d04aa7359a3ebf62d75f.jpg'
-    },
-    {
-      id: '17aa22a9811d515370cb000336cb4ca79e8cfc99',
-      title: 'Duett – Touch',
-      duration: 208000,
-      streamUrl: '/audio/17aa22a9811d515370cb000336cb4ca79e8cfc99.mp3',
-      artworkUrl: '/artwork/17aa22a9811d515370cb000336cb4ca79e8cfc99.jpg'
-    },
-    {
-      id: '89a46b1556d22e2809447d9065598ee47ce9b87a',
-      title: 'OGRE – Shore Thing',
-      duration: 257000,
-      streamUrl: '/audio/89a46b1556d22e2809447d9065598ee47ce9b87a.mp3',
-      artworkUrl: '/artwork/89a46b1556d22e2809447d9065598ee47ce9b87a.jpg'
-    },
-    {
-      id: 'bfefb3e78b333f41200bfe188f911885e495cf53',
-      title: 'Midnight Static – VHS Hallucinations',
-      duration: 240000,
-      streamUrl: '/audio/bfefb3e78b333f41200bfe188f911885e495cf53.mp3',
-      artworkUrl: '/artwork/bfefb3e78b333f41200bfe188f911885e495cf53.jpg'
-    },
-    {
-      id: 'd37ee09b5293270ad415c26054421f1ac8d83fa1',
-      title: 'Jasper Byrne – Decade Dance',
-      duration: 279000,
-      streamUrl: '/audio/d37ee09b5293270ad415c26054421f1ac8d83fa1.mp3',
-      artworkUrl: '/artwork/d37ee09b5293270ad415c26054421f1ac8d83fa1.png'
-    },
-    {
-      id: 'bcd15c2d818e8408cb43f0b7e43438bddc97199a',
-      title: 'Magic Dance – Last Light',
-      duration: 279000,
-      streamUrl: '/audio/bcd15c2d818e8408cb43f0b7e43438bddc97199a.mp3',
-      artworkUrl: '/artwork/bcd15c2d818e8408cb43f0b7e43438bddc97199a.jpg'
-    },
-    {
-      id: '3ca0b480afbe763bcf545ecac432b47050641d5f',
-      title: 'Mega Drive – Power Driver',
-      duration: 344000,
-      streamUrl: '/audio/3ca0b480afbe763bcf545ecac432b47050641d5f.mp3',
-      artworkUrl: '/artwork/3ca0b480afbe763bcf545ecac432b47050641d5f.jpg'
-    },
-    {
-      id: 'd94929c827a1918ab1150260e9d87782ebf64d8e',
-      title: 'Perturbator – Miami Disco',
-      duration: 271000,
-      streamUrl: '/audio/d94929c827a1918ab1150260e9d87782ebf64d8e.mp3',
-      artworkUrl: '/artwork/d94929c827a1918ab1150260e9d87782ebf64d8e.jpg'
-    },
-    {
-      id: '963d53044d83cac67ea568d1e7a769e171310f14',
-      title: 'OGRE – Always Outnumbered, Never Outrun',
-      duration: 267000,
-      streamUrl: '/audio/963d53044d83cac67ea568d1e7a769e171310f14.mp3',
-      artworkUrl: '/artwork/963d53044d83cac67ea568d1e7a769e171310f14.jpg'
-    },
-    {
-      id: 'a8ff6b6b0ad0ef42ef330a59bde034c5789a8bae',
-      title: 'Worship – Close Encounter',
-      duration: 258048.25,
-      streamUrl: '/audio/a8ff6b6b0ad0ef42ef330a59bde034c5789a8bae.mp3',
-      artworkUrl: '/artwork/a8ff6b6b0ad0ef42ef330a59bde034c5789a8bae.jpg'
-    },
-    {
-      id: '22a749c245a6810ac61157b2c8b6c644d15d7e4d',
-      title: 'Betamaxx – Redlining 6th',
-      duration: 189000,
-      streamUrl: '/audio/22a749c245a6810ac61157b2c8b6c644d15d7e4d.mp3',
-      artworkUrl: '/artwork/22a749c245a6810ac61157b2c8b6c644d15d7e4d.jpg'
-    },
-    {
-      id: '6a96480a0e965070c7cf82b858188e131cfcf186',
-      title: 'Perturbator – I Am The Night',
-      duration: 379000,
-      streamUrl: '/audio/6a96480a0e965070c7cf82b858188e131cfcf186.mp3',
-      artworkUrl: '/artwork/6a96480a0e965070c7cf82b858188e131cfcf186.jpg'
-    },
-    {
-      id: '28ddfd663e367668b0e86cd984e95311f63608db',
-      title: 'Drifting Dreamer – Lights Out',
-      duration: 273000,
-      streamUrl: '/audio/28ddfd663e367668b0e86cd984e95311f63608db.mp3',
-      artworkUrl: '/artwork/28ddfd663e367668b0e86cd984e95311f63608db.jpg'
-    },
-    {
-      id: '9903c122b227587145e3b6f5fda054cc26fc03d0',
-      title: 'Renz Wilde – Home Computer',
-      duration: 189000,
-      streamUrl: '/audio/9903c122b227587145e3b6f5fda054cc26fc03d0.mp3',
-      artworkUrl: '/artwork/9903c122b227587145e3b6f5fda054cc26fc03d0.jpg'
-    },
-    {
-      id: 'de5e0ad7afbf5bc0055d766d1f6261b9fb0eae0a',
-      title: 'Droid Bishop – Vanisher',
-      duration: 236000,
-      streamUrl: '/audio/de5e0ad7afbf5bc0055d766d1f6261b9fb0eae0a.mp3',
-      artworkUrl: '/artwork/de5e0ad7afbf5bc0055d766d1f6261b9fb0eae0a.jpg'
-    },
-    {
-      id: 'abe3c0f48d6bf0014328f2189cc17db2b631df2f',
-      title: 'Atrey – Supernova',
-      duration: 257000,
-      streamUrl: '/audio/abe3c0f48d6bf0014328f2189cc17db2b631df2f.mp3',
-      artworkUrl: '/artwork/abe3c0f48d6bf0014328f2189cc17db2b631df2f.jpg'
-    },
-    {
-      id: 'dac784bac1f669babcfbbd40e8a2767f00e344a6',
-      title: 'Betamaxx – Dreamer (feat. Rat Rios)',
-      duration: 243000,
-      streamUrl: '/audio/dac784bac1f669babcfbbd40e8a2767f00e344a6.mp3',
-      artworkUrl: '/artwork/dac784bac1f669babcfbbd40e8a2767f00e344a6.jpg'
-    },
-    {
-      id: '1ffecb1c64a70d2554e9db6a259165fe3680b58e',
-      title: 'Dead Astronauts – Witch Hunt',
-      duration: 298000,
-      streamUrl: '/audio/1ffecb1c64a70d2554e9db6a259165fe3680b58e.mp3',
-      artworkUrl: '/artwork/1ffecb1c64a70d2554e9db6a259165fe3680b58e.jpg'
-    },
-    {
-      id: '4c0b10397725b3b27198080f2bbf8aa44c9d4127',
-      title: 'Danger Mode – Survivor',
-      duration: 241000,
-      streamUrl: '/audio/4c0b10397725b3b27198080f2bbf8aa44c9d4127.mp3',
-      artworkUrl: '/artwork/4c0b10397725b3b27198080f2bbf8aa44c9d4127.jpg'
-    },
-    {
-      id: '4b0e2ee44a24a562b3fde9eab8e678731b19c2d6',
-      title: "Tommy '86 – Test Drive",
-      duration: 402000,
-      streamUrl: '/audio/4b0e2ee44a24a562b3fde9eab8e678731b19c2d6.mp3',
-      artworkUrl: '/artwork/4b0e2ee44a24a562b3fde9eab8e678731b19c2d6.jpg'
-    },
-    {
-      id: 'fef2f2a6148f8837a336e7ca76b71dd032492a46',
-      title: 'Mitch Murder – High Performance',
-      duration: 220685.9,
-      streamUrl: '/audio/fef2f2a6148f8837a336e7ca76b71dd032492a46.mp3',
-      artworkUrl: '/artwork/fef2f2a6148f8837a336e7ca76b71dd032492a46.jpg'
-    },
-    {
-      id: '5434ce38252dff4782c3a3f9024c946e58b58c1a',
-      title: 'Compilerbau – North Wall',
-      duration: 264000,
-      streamUrl: '/audio/5434ce38252dff4782c3a3f9024c946e58b58c1a.mp3',
-      artworkUrl: '/artwork/5434ce38252dff4782c3a3f9024c946e58b58c1a.jpg'
-    },
-    {
-      id: '919714356b1f3eeed3bc836c41f15e46790e05f8',
-      title: 'Miami Nights 1984 – Streets On Fire',
-      duration: 197000,
-      streamUrl: '/audio/919714356b1f3eeed3bc836c41f15e46790e05f8.mp3',
-      artworkUrl: '/artwork/919714356b1f3eeed3bc836c41f15e46790e05f8.jpg'
-    },
-    {
-      id: '787022b67699b3300026ddc4563cf3f94f60afb1',
-      title: 'Arcade High – On The Edge Of Summer',
-      duration: 307000,
-      streamUrl: '/audio/787022b67699b3300026ddc4563cf3f94f60afb1.mp3',
-      artworkUrl: '/artwork/787022b67699b3300026ddc4563cf3f94f60afb1.jpg'
-    },
-    {
-      id: '68cd3ec26606e107bb032a65603ddec9621469ba',
-      title: 'Forgotten Illusions – Electric Legion',
-      duration: 152000,
-      streamUrl: '/audio/68cd3ec26606e107bb032a65603ddec9621469ba.mp3',
-      artworkUrl: '/artwork/68cd3ec26606e107bb032a65603ddec9621469ba.jpg'
-    },
-    {
-      id: '49e69e5d52a06255c8e1341aa91dd7e6db778daa',
-      title: '80s Stallone – Beach (Original Mix)',
-      duration: 230000,
-      streamUrl: '/audio/49e69e5d52a06255c8e1341aa91dd7e6db778daa.mp3',
-      artworkUrl: '/artwork/49e69e5d52a06255c8e1341aa91dd7e6db778daa.jpg'
-    },
-    {
-      id: 'c9257805c3b70ceb57a5c701db78cb6d4a448cf7',
-      title: 'Le Matos – La Mer Des Possibilites',
-      duration: 359000,
-      streamUrl: '/audio/c9257805c3b70ceb57a5c701db78cb6d4a448cf7.mp3',
-      artworkUrl: '/artwork/c9257805c3b70ceb57a5c701db78cb6d4a448cf7.jpg'
-    },
-    {
-      id: 'd8f484b66dfd10d9476206d33d79d883474eb483',
-      title: 'Botnit – Ex-Cathedra',
-      duration: 324000,
-      streamUrl: '/audio/d8f484b66dfd10d9476206d33d79d883474eb483.mp3',
-      artworkUrl: '/artwork/d8f484b66dfd10d9476206d33d79d883474eb483.jpg'
-    },
-    {
-      id: '0a0fb6b8fc1effcccd47b18ef0f4c2989d9a9a36',
-      title: 'Betamaxx – Mechanized',
-      duration: 281000,
-      streamUrl: '/audio/0a0fb6b8fc1effcccd47b18ef0f4c2989d9a9a36.mp3',
-      artworkUrl: '/artwork/0a0fb6b8fc1effcccd47b18ef0f4c2989d9a9a36.jpg'
-    },
-    {
-      id: 'a9e194fd41e0e3d34409e613e31492cf510d2d64',
-      title: 'Bluezz Vylez – Craters and Lovers',
-      duration: 321000,
-      streamUrl: '/audio/a9e194fd41e0e3d34409e613e31492cf510d2d64.mp3',
-      artworkUrl: '/artwork/a9e194fd41e0e3d34409e613e31492cf510d2d64.jpg'
-    },
-    {
-      id: 'c596929ce73d1fd3951fbe7bce0457060d500adb',
-      title: 'The Hunt – The Abomination',
-      duration: 260000,
-      streamUrl: '/audio/c596929ce73d1fd3951fbe7bce0457060d500adb.mp3',
-      artworkUrl: '/artwork/c596929ce73d1fd3951fbe7bce0457060d500adb.jpg'
-    },
-    {
-      id: 'bd5e3682730c3bd459730303ab434ad0025b7c60',
-      title: 'Cosmic Sand – Give Us a First Chance',
-      duration: 202000,
-      streamUrl: '/audio/bd5e3682730c3bd459730303ab434ad0025b7c60.mp3',
-      artworkUrl: '/artwork/bd5e3682730c3bd459730303ab434ad0025b7c60.jpg'
-    },
-    {
-      id: '914cb3bbe433147e173a9cc64751df2bab29868a',
-      title: 'Aysyne – Nite Life',
-      duration: 254000,
-      streamUrl: '/audio/914cb3bbe433147e173a9cc64751df2bab29868a.mp3',
-      artworkUrl: '/artwork/914cb3bbe433147e173a9cc64751df2bab29868a.jpg'
-    },
-    {
-      id: 'c3b7cf7f10aa82f99c988bb368195b2deb70b90f',
-      title: 'GreKanE – Rectified',
-      duration: 224000,
-      streamUrl: '/audio/c3b7cf7f10aa82f99c988bb368195b2deb70b90f.mp3',
-      artworkUrl: '/artwork/c3b7cf7f10aa82f99c988bb368195b2deb70b90f.jpg'
-    },
-    {
-      id: '6ddbef50dfdb019a9cc9003c19833f07f3b1d38d',
-      title: 'LeveL -1 – Attacking The Headquarters',
-      duration: 223000,
-      streamUrl: '/audio/6ddbef50dfdb019a9cc9003c19833f07f3b1d38d.mp3',
-      artworkUrl: '/artwork/6ddbef50dfdb019a9cc9003c19833f07f3b1d38d.jpg'
-    },
-    {
-      id: 'b82dfb64a576c808b49a8e3c2cb77572b6927188',
-      title: 'Rosco – Gridlinked (feat. Kaspar Funk)',
-      duration: 249000,
-      streamUrl: '/audio/b82dfb64a576c808b49a8e3c2cb77572b6927188.mp3',
-      artworkUrl: '/artwork/b82dfb64a576c808b49a8e3c2cb77572b6927188.jpg'
-    },
-    {
-      id: '9e24d884d2044a5a7b13c1f1c6d9bb60f21d4a22',
-      title: 'Gost – Night Crawler',
-      duration: 281000,
-      streamUrl: '/audio/9e24d884d2044a5a7b13c1f1c6d9bb60f21d4a22.mp3',
-      artworkUrl: '/artwork/9e24d884d2044a5a7b13c1f1c6d9bb60f21d4a22.jpg'
-    },
-    {
-      id: 'a054b5c0ebb7765ef84317fba68b5a4211ea780b',
-      title: 'Arcade High – Heat Wave (feat. Morissa Trunzo)',
-      duration: 251000,
-      streamUrl: '/audio/a054b5c0ebb7765ef84317fba68b5a4211ea780b.mp3',
-      artworkUrl: '/artwork/a054b5c0ebb7765ef84317fba68b5a4211ea780b.jpg'
-    },
-    {
-      id: 'ae270cc8a590589302309fdae7ab8864137c6df7',
-      title: 'FM Attack – Sleepless Nights',
-      duration: 408000,
-      streamUrl: '/audio/ae270cc8a590589302309fdae7ab8864137c6df7.mp3',
-      artworkUrl: '/artwork/ae270cc8a590589302309fdae7ab8864137c6df7.jpg'
-    },
-    {
-      id: '1af5503d2e3f4b941af82138b2ee1ea35addf4d5',
-      title: 'Perturbator – Payback Pursuit',
-      duration: 243000,
-      streamUrl: '/audio/1af5503d2e3f4b941af82138b2ee1ea35addf4d5.mp3',
-      artworkUrl: '/artwork/1af5503d2e3f4b941af82138b2ee1ea35addf4d5.jpg'
-    },
-    {
-      id: '7dd230b22929c716c379f7999c1d820d4ad88c69',
-      title: 'Miami Nights 1984 – One Last Time',
-      duration: 146000,
-      streamUrl: '/audio/7dd230b22929c716c379f7999c1d820d4ad88c69.mp3',
-      artworkUrl: '/artwork/7dd230b22929c716c379f7999c1d820d4ad88c69.jpg'
-    },
-    {
-      id: 'a0c9f1b970f2481e880d8ca6c7c0a9e3ee7cea24',
-      title: 'Magic Sword – In The Face Of Evil',
-      duration: 409077.80000000005,
-      streamUrl: '/audio/a0c9f1b970f2481e880d8ca6c7c0a9e3ee7cea24.mp3',
-      artworkUrl: '/artwork/a0c9f1b970f2481e880d8ca6c7c0a9e3ee7cea24.jpg'
-    },
-    {
-      id: '1c5779501ab90dd73bdfcc9d25c0ce468f5deb6f',
-      title: 'Lost Years – Phoenix Rising',
-      duration: 328000,
-      streamUrl: '/audio/1c5779501ab90dd73bdfcc9d25c0ce468f5deb6f.mp3',
-      artworkUrl: '/artwork/1c5779501ab90dd73bdfcc9d25c0ce468f5deb6f.jpg'
-    },
-    {
-      id: '93d11545d14e05cdfe2289a917b72cb38d67f34e',
-      title: 'Danger Mode – Crime Wave',
-      duration: 163000,
-      streamUrl: '/audio/93d11545d14e05cdfe2289a917b72cb38d67f34e.mp3',
-      artworkUrl: '/artwork/93d11545d14e05cdfe2289a917b72cb38d67f34e.jpg'
-    },
-    {
-      id: 'efa2f7e5bc4d049a9db5fd7b166342b56128c2d4',
-      title: 'Compilerbau – Tachyon',
-      duration: 277000,
-      streamUrl: '/audio/efa2f7e5bc4d049a9db5fd7b166342b56128c2d4.mp3',
-      artworkUrl: '/artwork/efa2f7e5bc4d049a9db5fd7b166342b56128c2d4.jpg'
-    },
-    {
-      id: '45fe7b51432ca4ea5c0702fb95366cb247a88d7e',
-      title: '3FORCE – Highway Jupiter',
-      duration: 324000,
-      streamUrl: '/audio/45fe7b51432ca4ea5c0702fb95366cb247a88d7e.mp3',
-      artworkUrl: '/artwork/45fe7b51432ca4ea5c0702fb95366cb247a88d7e.jpg'
-    },
-    {
-      id: '00076cc3b4f5bd6b1528e646d7c0db5f4e538b6a',
-      title: 'Action Jackson – Palm Kill',
-      duration: 349000,
-      streamUrl: '/audio/00076cc3b4f5bd6b1528e646d7c0db5f4e538b6a.mp3',
-      artworkUrl: '/artwork/00076cc3b4f5bd6b1528e646d7c0db5f4e538b6a.jpg'
-    },
-    {
-      id: '23a2dfcc04ca72329589fe1dea5fa10dc234467c',
-      title: 'Bestrack – Workout 2000',
-      duration: 340404.375,
-      streamUrl: '/audio/23a2dfcc04ca72329589fe1dea5fa10dc234467c.mp3',
-      artworkUrl: '/artwork/23a2dfcc04ca72329589fe1dea5fa10dc234467c.jpg'
-    },
-    {
-      id: '009cb039108b41412a674e3ed5283d5da33dce1a',
-      title: 'Crockett – Changing Lanes',
-      duration: 336000,
-      streamUrl: '/audio/009cb039108b41412a674e3ed5283d5da33dce1a.mp3',
-      artworkUrl: '/artwork/009cb039108b41412a674e3ed5283d5da33dce1a.jpg'
-    },
-    {
-      id: '439d440f5dcb602d2a29fea2c4128eaa42368d79',
-      title: 'Mitch Murder – The Touch',
-      duration: 326246.72500000003,
-      streamUrl: '/audio/439d440f5dcb602d2a29fea2c4128eaa42368d79.mp3',
-      artworkUrl: '/artwork/439d440f5dcb602d2a29fea2c4128eaa42368d79.jpg'
-    },
-    {
-      id: '77cf51db21d1b79f57cbdb486f6868325a1bbfbf',
-      title: 'Muscle – Feel The Steel',
-      duration: 207000,
-      streamUrl: '/audio/77cf51db21d1b79f57cbdb486f6868325a1bbfbf.mp3',
-      artworkUrl: '/artwork/77cf51db21d1b79f57cbdb486f6868325a1bbfbf.jpg'
-    },
-    {
-      id: 'dc06db7952bf78b76fce2549a3a109f2177b3486',
-      title: 'Michael Perkins – Esteban',
-      duration: 195000,
-      streamUrl: '/audio/dc06db7952bf78b76fce2549a3a109f2177b3486.mp3',
-      artworkUrl: '/artwork/dc06db7952bf78b76fce2549a3a109f2177b3486.jpg'
-    },
-    {
-      id: '9a3ccfcdc1393277bc6005c86fd2977089c16284',
-      title: 'Judge Bitch – Tropicool',
-      duration: 266000,
-      streamUrl: '/audio/9a3ccfcdc1393277bc6005c86fd2977089c16284.mp3',
-      artworkUrl: '/artwork/9a3ccfcdc1393277bc6005c86fd2977089c16284.jpg'
-    },
-    {
-      id: 'ee1ab0a93274e1e08c4500f3eb8e49c29d35d8fa',
-      title: 'Bestrack – Burn the night',
-      duration: 249132.5,
-      streamUrl: '/audio/ee1ab0a93274e1e08c4500f3eb8e49c29d35d8fa.mp3',
-      artworkUrl: '/artwork/ee1ab0a93274e1e08c4500f3eb8e49c29d35d8fa.jpg'
-    },]//масив нових  пісень не більше ста штук які хочу добавити
-
-
-  const uniqueObjects = getUniqueObjects(data, tracks);
+const uniqueObjects = getUniqueObjects(data, tracks);
 //   console.log(uniqueObjects);
-  const newArray=(array)=>{//новий вигляд масива для мого сервера 
-    const updatedData = array.map((item,index) => ({
+const newArray = (array) => {
+    //новий вигляд масива для мого сервера
+    const updatedData = array.map((item, index) => ({
         ...item,
-        artworkUrl:300+index,
-        streamUrl:300+index
+        artworkUrl: 300 + index,
+        streamUrl: 300 + index,
     }));
-    return updatedData
-  }
-  // console.log(newArray(getUniqueObjects(tracks)))
+    return updatedData;
+};
+// console.log(newArray(getUniqueObjects(tracks)))
 
-
-  const newImport =(array)=>{
-    const updatedData = array.map((item,index) => ({
-        artworkUrl:` const img${index+300} =`+"`${process.env.PUBLIC_URL}"+item.artworkUrl+"`; ",
-        streamUrl:` const track${index+300} =`+"`${process.env.PUBLIC_URL}"+item.streamUrl+"`; "
+const newImport = (array) => {
+    const updatedData = array.map((item, index) => ({
+        artworkUrl:
+            ` const img${index + 300} =` +
+            "`${process.env.PUBLIC_URL}" +
+            item.artworkUrl +
+            "`; ",
+        streamUrl:
+            ` const track${index + 300} =` +
+            "`${process.env.PUBLIC_URL}" +
+            item.streamUrl +
+            "`; ",
     }));
-    return updatedData
-  }//перероблення в строки деякі значення
-  // console.log(newImport(newArray(getUniqueObjects(tracks))))
+    return updatedData;
+}; //перероблення в строки деякі значення
+// console.log(newImport(newArray(getUniqueObjects(tracks))))
 
-
-  function combineUrls(data) {
-    const combinedArray = data.map(item => {
-        return item.artworkUrl+ item.streamUrl;
+function combineUrls(data) {
+    const combinedArray = data.map((item) => {
+        return item.artworkUrl + item.streamUrl;
     });
 
-    const combinedString = combinedArray.join('\n');
+    const combinedString = combinedArray.join("\n");
 
     return combinedString;
 }
-const resultString = combineUrls(newImport(getUniqueObjects(tracks)));//повернення нового імпорут у вигляді строки
+const resultString = combineUrls(newImport(getUniqueObjects(tracks))); //повернення нового імпорут у вигляді строки
 // console.log(resultString);
