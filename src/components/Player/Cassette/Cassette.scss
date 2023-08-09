@@ -23,7 +23,8 @@
             top: 69px;
             left: 2px;
         }
-        &:hover,&.active{
+        &:hover,
+        &.active {
             opacity: 1;
         }
     }
@@ -82,7 +83,22 @@
         @media (max-width: 500px) {
             width: 139px;
             height: 66px;
-            clip-path: none;
+            clip-path: polygon(
+                139px 66px,
+                139px 0,
+                0 0,
+                0 66px,
+                139px 66px,
+                33.5px 45px,
+                27px 40px,
+                27px 32px,
+                34px 26px,
+                105px 26px,
+                112px 32.5px,
+                112px 38.5px,
+                105.5px 45px,
+                33.5px 45px
+            );
             top: 7px;
             left: 8px;
         }
