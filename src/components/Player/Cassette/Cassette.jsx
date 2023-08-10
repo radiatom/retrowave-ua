@@ -13,6 +13,15 @@ const Cassette = ({ music }) => {
     const [open, setOpen] = useState(false);
     const [openList, setOpenList] = useState(false);
     const dispatch = useDispatch();
+    const clickOnListIco=()=>{
+        setOpenList(!openList)
+    }
+    if(openList===true){
+        setTimeout(()=>setOpenList(false),10000)
+    }//ховати вікно якщо його не сховав сам користувач
+    if(open===true){
+        setTimeout(()=>setOpen(false),10000)
+    }//ховати вікно якщо його не сховав сам користувач
     const clickRatingListIcon = () => {
         dispatch({ type: "crateRatingList" });
         dispatch({ type: "setPosition", position: 0 });
@@ -48,7 +57,7 @@ const Cassette = ({ music }) => {
         <div className="cassette">
             {/*зображення касети*/}
             <img
-                onClick={() => setOpenList(!openList)}
+                onClick={() => clickOnListIco()}
                 className={
                     openList
                         ? "cassette__listIcon active"

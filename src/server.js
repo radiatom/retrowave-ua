@@ -1,3 +1,4 @@
+const track0 = `${process.env.PUBLIC_URL}/audio/Electric Youth – WeAreTheYouth.mp3`;
 const track1 = `${process.env.PUBLIC_URL}/audio/5d4ca036e66f3ae771c008e56b111d116f7142cb.mp3`;
 const img1 = `${process.env.PUBLIC_URL}/artwork/5d4ca036e66f3ae771c008e56b111d116f7142cb.jpg`;
 const track2 = `${process.env.PUBLIC_URL}/audio/594ea8427e44a724a5ce1782c3d3dcf058735e1e.mp3 `;
@@ -632,24 +633,27 @@ const img316 = `${process.env.PUBLIC_URL}/artwork/15e9642798b73e75e4f99ad4547b93
 const track316 = `${process.env.PUBLIC_URL}/audio/15e9642798b73e75e4f99ad4547b9368d2b8ad83.mp3`;
 const img317 = `${process.env.PUBLIC_URL}/artwork/6ae33f6d06cab43ea5bd7b4d676df702d96d8bba.jpg`;
 const track317 = `${process.env.PUBLIC_URL}/audio/6ae33f6d06cab43ea5bd7b4d676df702d96d8bba.mp3`;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+const img318 = `${process.env.PUBLIC_URL}/artwork/ab67616d0000b273bed49abd1a97264f89b60e41.jpg`;
+const track318 = `${process.env.PUBLIC_URL}/audio/ab67616d0000b273bed49abd1a97264f89b60e41.mp3`;
+const img319 = `${process.env.PUBLIC_URL}/artwork/dc1c05d3abc491d8d747a1c804f3b1bf.jpg`;
+const track319 = `${process.env.PUBLIC_URL}/audio/dc1c05d3abc491d8d747a1c804f3b1bf.mp3`;
+const img320 = `${process.env.PUBLIC_URL}/artwork/ab67616d0000b273b5b88522c8bb1c121e41e964.jpg`;
+const track320 = `${process.env.PUBLIC_URL}/audio/ab67616d0000b273b5b88522c8bb1c121e41e964.mp3`;
+const img321 = `${process.env.PUBLIC_URL}/artwork/artworks-000067975818-2s9bqy-t500x500.jpg`;
+const track321 = `${process.env.PUBLIC_URL}/audio/artworks-000067975818-2s9bqy-t500x500.mp3`;
+const img322 = `${process.env.PUBLIC_URL}/artwork/5054197450563-cover-zoom.jpg`;
+const track322 = `${process.env.PUBLIC_URL}/audio/5054197450563-cover-zoom.mp3`;
 
 
 
 const data = [
+    {
+        id: "0",
+        title: "Electric Youth – WeAreTheYouth",
+        duration: 192000,
+        streamUrl: track0,
+        artworkUrl: img80,
+    },
     {
         id: "5d4ca036e66f3ae771c008e56b111d116f7142cb",
         title: "Dynatron – 37 Million Horsepower",
@@ -1261,7 +1265,7 @@ const data = [
     },
     {
         id: "0a7f83bc97fce9011c53081b56db1e6d3c1eec29",
-        title: "moskva-kassiopeya – Odyssey Pt. I",
+        title: "kassiopeya – Odyssey Pt. I",
         duration: 260000,
         streamUrl: track88,
         artworkUrl: img88,
@@ -2868,6 +2872,41 @@ const data = [
         duration: 275000,
         streamUrl: track317,
         artworkUrl: img317,
+    },
+    {
+        id: '318',
+        title: 'Synthwave (The 80S Revival)',
+        duration: 242000,
+        streamUrl: track318,
+        artworkUrl: img318,
+    },
+    {
+        id: '319',
+        title: 'Rushline - Someone (Extended Mix)',
+        duration: 244000,
+        streamUrl: track319,
+        artworkUrl: img319,
+    },
+    {
+        id: '320',
+        title: 'Не забувай - SadSvit',
+        duration: 153000,
+        streamUrl: track320,
+        artworkUrl: img320,
+    },
+    {
+        id: '321',
+        title: 'Dorian la tormenta de arena',
+        duration: 306000,
+        streamUrl: track321,
+        artworkUrl: img321,
+    },
+    {
+        id: '322',
+        title: 'HIBELL - talking to the moon',
+        duration: 151000,
+        streamUrl: track322,
+        artworkUrl: img322,
     },
     
 ];

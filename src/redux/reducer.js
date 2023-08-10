@@ -20,7 +20,7 @@ const reducer = (state = initialState, action) => {
             }
         }
         case "crateRandomList": {
-            if (state.randomList.length === 0) {
+            
                 const shuffledArray = [...state.totalMusicList];
                 for (let i = shuffledArray.length - 1; i > 0; i--) {
                     const j = Math.floor(Math.random() * (i + 1));
@@ -34,12 +34,7 @@ const reducer = (state = initialState, action) => {
                     playList: "random",
                     randomList: shuffledArray,
                 };
-            } else {
-                return {
-                    ...state,
-                    playList: "random",
-                };
-            }
+            
         }
         case "crateDefaultList": {
             return {
