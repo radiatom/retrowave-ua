@@ -7,7 +7,6 @@ const initialState = {
     randomList: [],
     defaultList: [],
     ratingList: [],
-    userList: [],
     position: 0,
     volume: 50,
 };
