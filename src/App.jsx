@@ -28,7 +28,7 @@ function App() {
             //виконається при першому заході на сторінку і коли в локал сторі нема данних
             dispatch(addMusics()); //відправити запит на пісні якщо наш стор пустий
         }else {
-            dispatch({ type: "crateRandomList" }); //створити масив рандомних треків
+            dispatch({ type: "crateDefaultList" }); //створити масив рандомних треків
             dispatch({ type: "addMusic", position }); //завантажити трек під індексом 'position' перший раз
         }
     }, [totalMusicList.length]);

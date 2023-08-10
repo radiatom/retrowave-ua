@@ -65,6 +65,12 @@ const reducer = (state = initialState, action) => {
                         music: state.ratingList[action.position],
                     };
                 }
+                case "default": {
+                    return {
+                        ...state,
+                        music: state.defaultList[action.position],
+                    };
+                }
                 default:
                     return state;
             }
