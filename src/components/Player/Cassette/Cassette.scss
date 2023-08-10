@@ -66,6 +66,37 @@
             left: 6px;
         }
     }
+    &__spoilerList {
+        will-change: max-height; // це CSS властивість, яка дозволяє вказати браузеру, що елемент буде змінювати певні властивості, і браузер може підготуватися до цього, забезпечивши кращу продуктивність анімацій і перетворень.
+        position: absolute;
+        top:0px;
+        left: 12px;
+        z-index: 100;
+        max-height: 0;
+        transition: top 0.5s;
+        &.open {
+            top: -32px;
+        }
+        @media (max-width: 500px) {
+            top: 105px;
+            left: 6px;
+        }
+        .list {
+            will-change: color; // це CSS властивість, яка дозволяє вказати браузеру, що елемент буде змінювати певні властивості, і браузер може підготуватися до цього, забезпечивши кращу продуктивність анімацій і перетворень.
+            display: flex;
+            justify-content: space-around;
+            width: 287px;
+            background-color: rgb(32, 13, 3);
+            border-radius: 10px 10px 0 0;
+            @media (max-width: 500px) {
+                width: 143px;
+            }
+            img{
+                width: 30px;
+                cursor: pointer;
+            }
+        }
+    }
     &__body {
         position: absolute;
         z-index: 100;

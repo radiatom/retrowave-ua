@@ -36,7 +36,10 @@ const reducer = (state = initialState, action) => {
                     randomList: shuffledArray,
                 };
             } else {
-                return state;
+                return {
+                    ...state,
+                    playList: "random",
+                };
             }
         }
         case "crateDefaultList": {
@@ -115,9 +118,9 @@ const reducer = (state = initialState, action) => {
             return {
                 ...state,
                 totalMusicList: updatedTotalMusicList,
-                randomList:updatedRandomList,
-                defaultList:updatedDefaultList,
-                ratingList:updatedRatingList,
+                randomList: updatedRandomList,
+                defaultList: updatedDefaultList,
+                ratingList: updatedRatingList,
                 music: { ...state.music, rating: action.rating },
             };
         }

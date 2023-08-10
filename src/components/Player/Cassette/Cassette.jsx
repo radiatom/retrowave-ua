@@ -1,31 +1,97 @@
 import React, { useState } from "react";
 import "./Cassette.scss";
 import download from "./../../../img/icons/downloadMp3.svg";
-import list from './../../../img/icons/list.png'
-import { useDispatch } from "react-redux";
+import list from "./../../../img/icons/list.png";
+import { useDispatch, useSelector } from "react-redux";
+import randomImg from "./../../../img/icons/random.png";
+import ratingImg from "./../../../img/icons/rating.png";
+import defaultImg from "./../../../img/icons/default.png";
+import { typePlaylistSelector } from "../../../selectorApp";
+
 const Cassette = ({ music }) => {
+    const typePlayList = useSelector(typePlaylistSelector);
     const [open, setOpen] = useState(false);
     const [openList, setOpenList] = useState(false);
-    const dispatch = useDispatch()
-    const clickListIcon=()=>{
-        dispatch({type:"crateRatingList"})
-        dispatch({type:"setPosition",position:0})
-    }
+    const dispatch = useDispatch();
+    const clickRatingListIcon = () => {
+        dispatch({ type: "crateRatingList" });
+        dispatch({ type: "setPosition", position: 0 });
+        setOpenList(false);
+    };
+    const clickDefaultListIcon = () => {
+        dispatch({ type: "crateDefaultList" });
+        dispatch({ type: "setPosition", position: 0 });
+        setOpenList(false);
+    };
+    const clickRandomListIcon = () => {
+        dispatch({ type: "crateRandomList" });
+        dispatch({ type: "setPosition", position: 0 });
+        setOpenList(false);
+    };
+
+    const ico = () => {
+        switch (typePlayList) {
+            case "random": {
+                return randomImg;
+            }
+            case "default": {
+                return defaultImg;
+            }
+            case "rating": {
+                return ratingImg;
+            }
+            default:
+                return list;
+        }
+    };
     return (
         <div className="cassette">
             {/*зображення касети*/}
             <img
+                onClick={() => setOpenList(!openList)}
+                className={
+                    openList
+                        ? "cassette__listIcon active"
+                        : "cassette__listIcon"
+                }
+                src={ico()}
+                alt="list"
+            />
+            <div
+                className={
+                    openList
+                        ? "cassette__spoilerList open"
+                        : "cassette__spoilerList"
+                }
+            >
+                <div className="list">
+                    <img
+                        onClick={() => clickRandomListIcon()}
+                        src={randomImg}
+                        alt="randomImg"
+                    />
+                    <img
+                        onClick={() => clickRatingListIcon()}
+                        src={ratingImg}
+                        alt="ratingImg"
+                    />
+                    <img
+                        onClick={() => clickDefaultListIcon()}
+                        src={defaultImg}
+                        alt="defaultImg"
+                    />
+                    {/* <img src={list} alt="list" /> */}
+                </div>
+            </div>
+            <img
                 onClick={() => setOpen(!open)}
-                className={open?"cassette__downloadIcon active":"cassette__downloadIcon"}
+                className={
+                    open
+                        ? "cassette__downloadIcon active"
+                        : "cassette__downloadIcon"
+                }
                 src={download}
                 alt="download"
-            />
-            <img
-                // onClick={() => setOpenList(!openList)}
-                onClick={()=>clickListIcon()}
-                className={openList?"cassette__listIcon active":"cassette__listIcon"}
-                src={list}
-                alt="list"
             />
             <div
                 className={
@@ -43,7 +109,7 @@ const Cassette = ({ music }) => {
                     </a>
                     <a
                         className="download__link"
-                        href={ music.streamUrl}
+                        href={music.streamUrl}
                         download
                         target="_blank"
                     >
