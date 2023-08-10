@@ -6,6 +6,7 @@ import {
     addDataAppSelector,
     positionSelector,
     totalMusicListAppSelector,
+    typePlaylistSelector,
 } from "./selectorApp";
 import Volume from "./components/Volume/Volume";
 import Rating from "./components/Rating/Rating";
@@ -15,6 +16,7 @@ import Logo from "./components/Logo/Logo";
 
 function App() {
     const totalMusicList = useSelector(totalMusicListAppSelector);
+    const typePlayList = useSelector(typePlaylistSelector);
     const music = useSelector(addDataAppSelector);
     const position = useSelector(positionSelector); //позиція треку
     const dispatch = useDispatch();
@@ -35,7 +37,7 @@ function App() {
 
     useEffect(() => {
         dispatch({ type: "addMusic", position }); //завантажити трек під індексом 'position' при зміні позиції
-    }, [position]);
+    }, [position,typePlayList]);
 
     const prev = () => {
         if (position > 0) {
