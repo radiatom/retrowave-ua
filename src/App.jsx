@@ -77,15 +77,15 @@ function App() {
                         src={music.streamUrl}
                         ref={audioRef}
                     ></audio>
-                    <PlayLists
+                    {/* <PlayLists
                         music={music}
                         prev={prev}
                         next={next}
                         position={position}
                         audioRef={audioRef}
-                    />
-                    {/* <div className="theme__container"> */}
-                    {/* <h1 className="theme__h1">Retrowave Radio UA</h1>
+                    /> */}
+                    <div className="theme__container">
+                    <h1 className="theme__h1">Retrowave Radio UA</h1>
                         <Logo />
                         <Player
                             music={music}
@@ -95,16 +95,16 @@ function App() {
                         />
                         <h2 className="theme__title">
                             <span>{music.idTrack}.</span> {music.title}
-                        </h2> */}
+                        </h2>
                     {/* <h2 className="theme__title"><span>{position}.</span> {music.title}</h2> */}
-                    {/* <Time
+                    <Time
                             audioRef={audioRef}
                             duration={music.duration}
                             next={next}
                         />
                         <Rating rating={music.rating} id={music.id} />
-                        <Volume /> */}
-                    {/* </div> */}
+                        <Volume />
+                    </div>
                 </div>
             )}
         </div>

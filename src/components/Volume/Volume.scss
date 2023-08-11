@@ -15,9 +15,7 @@
     &__noMute{
         background-image: url("./../../img/icons/volume.svg");
     }
-    &__mute{
-        background-image: url("./../../img/icons/volume_mute.svg");
-    }
+    
 }
 .volume__level {
     display: inline-block;
@@ -33,15 +31,12 @@
     background-repeat: no-repeat;
     background-position: center;
     background-image: url("/img/icons/volume_medium.svg");
-}
-.volume__level_medium {
-    background-image: url("/img/icons/volume_medium.svg");
+    &.mute{
+        background-image: url("./../../img/icons/volume_mute.svg");
+    }
 }
 .volume__level_high {
-    background-image: url("/img/icons/volume_high.svg");
-}
-.volume__level_mute {
-    background-image: url("/img/icons/volume_mute.svg");
+    background-image: url("/img/icons/volume_high.svg");//ше не працює
 }
 .volume__range {
     -webkit-appearance: none;

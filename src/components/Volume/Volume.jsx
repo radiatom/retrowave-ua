@@ -11,6 +11,7 @@ const Volume = () => {
         return (document.querySelector(".audio").volume = value);
     };//функція зміни значення в тегові аудіо
     useEffect(() => {
+        if(value>0){setMute(false)}
         changeValue(value / 100);
     }, [value]); //встановлення гучності за допомогою двохсторонього звязування
     const click = () => {
@@ -25,7 +26,7 @@ const Volume = () => {
         <div className="volume">
             <button
                 onClick={() => click()}
-                className={mute ? "volume__mute" : "volume__noMute"}
+                className="volume__noMute"
             ></button>
             <input
                 type="range"
@@ -38,7 +39,7 @@ const Volume = () => {
                 }
                 className="volume__range"
             />
-            <div className="volume__level" id="volume-level"></div>
+            <div className={mute ? "volume__level mute" : "volume__level "}></div>
         </div>
     );
 };
