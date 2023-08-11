@@ -1,0 +1,28 @@
+.valueBoombox {
+    position: absolute;
+    &__volume {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        position: absolute;
+        top: 270px;
+        left: 708px;
+        background: url("./../../../img/volume.png") 0 0/100% 100% no-repeat;
+        &_circle {
+            will-change: transform;
+            transition: transform 0.5s;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            font-family: "Times New Roman", Times, serif;
+            font-weight: 900;
+            font-size: 10px;
+            line-height: 10px;
+        }
+    }
+    &__range {
+        position: absolute;
+        left: 550px;
+        top: 10px;
+    }
+}

@@ -1,20 +1,22 @@
-.playLists{
-      width: 1280px;
-      height: 780px;
-      z-index: 100;
-      position: relative;
-      margin: 0 auto;
-      background: url('./../../img/boombox-5467421_1280.webp')0 0/100% 100% no-repeat;
-      &__timer{
-            position: absolute;
-            background-color: black;
-            width: 45px;
-            padding-left: 5px;
-            top:364px;
-            left:645px;
-            font-size: 15px;
-            line-height: 14px;
-            font-family: 'Times New Roman', Times, serif;
-            letter-spacing: 7px;
-      }
+.playLists {
+    width: 1280px;
+    height: 780px;
+    z-index: 100;
+    position: relative;
+    margin: 0 auto;
+    background: url("./../../img/boombox-5467421_1280.webp") 0 0/100% 100%
+        no-repeat;
+    &__timer {
+        position: absolute;
+        background-color: black;
+        width: 45px;
+        padding-left: 5px;
+        top: 364px;
+        left: 645px;
+        font-size: 15px;
+        line-height: 14px;
+        font-family: "Times New Roman", Times, serif;
+        letter-spacing: 7px;
+    }
+    
 }
