@@ -1,0 +1,55 @@
+.panelBoombox {
+    position: relative;
+    width: 284px;
+    height: 43px;
+    text-align: center;
+    top: 460px;
+    left:498px;
+    opacity: 0.6;
+    &__controls {
+        //позиціонує кнопки управління по середині
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        &__button {
+            will-change: transform;
+            display: inline-block;
+            vertical-align: top;
+            width: 65px;
+            height: 100%;
+            background: none;
+            background-repeat: no-repeat;
+            background-position: center;
+            transition: transform 0.3s;
+            &:hover {
+                transform: scale(1.2);
+            }
+            &.prev {
+                background-image: url("/img/icons/prev.svg");
+                &.none {
+                    opacity: 0.3;
+                    cursor: default;
+                }
+            }
+            &.play {
+                background-image: url("/img/icons/play.svg");
+            }
+            &.pause {
+                background-image: url("/img/icons/pause.svg");
+            }
+            &.next {
+                background-image: url("/img/icons/next.svg");
+            }
+            &.stop{
+                background-color: aliceblue;
+                width: 20px;
+                height: 20px;
+                border-radius: 5px;
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
