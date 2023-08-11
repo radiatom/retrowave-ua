@@ -82,6 +82,7 @@ function App() {
                         prev={prev}
                         next={next}
                         position={position}
+                        audioRef={audioRef}
                     />
                     {/* <div className="theme__container"> */}
                     {/* <h1 className="theme__h1">Retrowave Radio UA</h1>
