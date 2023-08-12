@@ -1,0 +1,27 @@
+.soundLevel{
+      position: absolute;
+      top:286px;
+      left:783px;
+      display: flex;
+      &__level{
+            will-change: background-color;
+            width: 10px;
+            height: 10px;
+            border: 1px solid black;
+            background-color: grey;
+            &.lightGreen{
+                  background-color: greenyellow;
+                  box-shadow: 0 0 6px greenyellow, 0 1px 3px greenyellow;
+            }
+            &.lightYellow{
+                  background-color: yellow;
+                  box-shadow: 0 0 6px yellow, 0 1px 3px yellow;
+
+            }
+            &.lightRed{
+                  background-color: red;
+                  box-shadow: 0 0 6px red, 0 1px 3px red;
+
+            }
+      }
+}

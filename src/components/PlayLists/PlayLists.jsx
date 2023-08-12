@@ -3,6 +3,7 @@ import "./PlayLists.scss";
 import CassetteBoombox from "./CassetteBoombox/CassetteBoombox";
 import PanelBoombox from "./PanelBoombox/PanelBoombox";
 import ValueBoombox from "./ValueBoombox/ValueBoombox";
+import SoundLevel from "./SoundLevel/SoundLevel";
 
 const PlayLists = ({ music, prev, next, position, audioRef }) => {
     const newTimeForBoombox = (second) => {
@@ -40,6 +41,7 @@ const PlayLists = ({ music, prev, next, position, audioRef }) => {
         <div className="playLists">
             <div className="playLists__timer">{currentTime}</div>
             <ValueBoombox/>
+            <SoundLevel audioRef={audioRef} play={play}/>
             <CassetteBoombox music={music} play={play} />
             <PanelBoombox
                 play={play}

@@ -9,6 +9,7 @@ const Time = ({ duration, audioRef, next }) => {
             remainingSeconds < 10 ? "0" : ""
         }${remainingSeconds}`;
     }; //функція для перетворення мілісекунд в хвилини
+    
     const [time, setTime] = useState(0);
     useEffect(() => {
         if(duration>0){

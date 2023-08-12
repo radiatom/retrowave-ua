@@ -19,14 +19,6 @@ const ValueBoombox = () => {
         changeValue(value / 100);
     }, [value]); //встановлення гучності за допомогою двохсторонього звязування
 
-//     const click = () => {
-//         setMute(!mute);
-//         if (document.querySelector(".audio").volume === 0) {
-//             changeValue(value / 100); //вертаємо попереднє заняення
-//         } else {
-//             changeValue(0); //вимикаємо гучність
-//         }
-//     };
     return (
         <div className="valueBoombox">
             <div className="valueBoombox__volume">
@@ -34,6 +26,9 @@ const ValueBoombox = () => {
                     |
                 </div>
             </div>
+            <button
+                className="volume__noMute valueBoombox__icon"
+            ></button>
             <input
                 type="range"
                 min="0"
