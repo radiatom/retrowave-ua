@@ -4,6 +4,9 @@ import CassetteBoombox from "./CassetteBoombox/CassetteBoombox";
 import PanelBoombox from "./PanelBoombox/PanelBoombox";
 import ValueBoombox from "./ValueBoombox/ValueBoombox";
 import SoundLevel from "./SoundLevel/SoundLevel";
+import List from "./List/List";
+import { leftListSelector, rightListSelector } from "../../selectorApp";
+import { useSelector } from "react-redux";
 
 const PlayLists = ({ music, prev, next, position, audioRef }) => {
     const newTimeForBoombox = (second) => {
@@ -37,12 +40,24 @@ const PlayLists = ({ music, prev, next, position, audioRef }) => {
             next();
         }
     }, [currentTime]); //закінчиться час то після перемикнеться далі
+
+
+const listLeft=useSelector(leftListSelector)
+const listRight=useSelector(rightListSelector)
+
     return (
         <div className="playLists">
             <div className="playLists__timer">{currentTime}</div>
-            <ValueBoombox/>
-            <SoundLevel audioRef={audioRef} play={play}/>
+            <ValueBoombox />
+            <SoundLevel audioRef={audioRef} play={play} />
             <CassetteBoombox music={music} play={play} />
+            <div className="playLists__left">
+                <List position={'left'} list={listLeft}/>
+            </div>
+            <div className="playLists__right">
+                <List position='right'list={listRight}/>
+            </div>
+
             <PanelBoombox
                 play={play}
                 setPlay={setPlay}

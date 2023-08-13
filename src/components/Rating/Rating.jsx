@@ -2,53 +2,45 @@ import React, { useState } from "react";
 import "./Rating.scss";
 import { useDispatch } from "react-redux";
 
+
+
 const Rating = ({ rating, id }) => {
     const dispatch = useDispatch();
     const setRating = (value) => {
-        dispatch({ type: "setRating", id, rating:value });
+        dispatch({ type: "setRating", id, rating: value });
     };
     return (
         <div className="rating">
-            <span
+            <div
                 onClick={() => setRating(1)}
                 className={
-                    rating >= 1
-                        ? "rating__item active rating-item"
-                        : "rating__item rating-item"
+                    rating >= 1 ? "rating__item active " : "rating__item "
                 }
-            ></span>
-            <span
+            ></div>
+            <div
                 onClick={() => setRating(2)}
                 className={
-                    rating >= 2
-                        ? "rating__item active rating-item"
-                        : "rating__item rating-item"
+                    rating >= 2 ? "rating__item active " : "rating__item "
                 }
-            ></span>
-            <span
+            ></div>
+            <div
                 onClick={() => setRating(3)}
                 className={
-                    rating >= 3
-                        ? "rating__item active rating-item"
-                        : "rating__item rating-item"
+                    rating >= 3 ? "rating__item active " : "rating__item "
                 }
-            ></span>
-            <span
+            ></div>
+            <div
                 onClick={() => setRating(4)}
                 className={
-                    rating >= 4
-                        ? "rating__item active rating-item"
-                        : "rating__item rating-item"
+                    rating >= 4 ? "rating__item active " : "rating__item "
                 }
-            ></span>
-            <span
+            ></div>
+            <div
                 onClick={() => setRating(5)}
                 className={
-                    rating >= 5
-                        ? "rating__item active rating-item"
-                        : "rating__item rating-item"
+                    rating >= 5 ? "rating__item active " : "rating__item "
                 }
-            ></span>
+            ></div>
         </div>
     );
 };

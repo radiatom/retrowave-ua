@@ -1,0 +1,23 @@
+.track {
+    font-size: 13px;
+    line-height: 13px;
+    display: flex;
+    width: 100%;
+    &__position {
+        width: 7%;
+        text-align: center;
+    }
+    &__title {
+        white-space: nowrap; /* Забороняє переноси */
+        overflow: hidden; /* Приховує вміст, що виходить за межі */
+        text-overflow: ellipsis; /* Відображає три крапки, якщо вміст обрізаний */
+        width: 60%;
+        text-align: start;
+    }
+    &__rating{
+      width: 24%;
+    }
+    &__duration{
+      width: 7%;
+    }
+}

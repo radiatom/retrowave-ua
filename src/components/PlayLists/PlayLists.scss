@@ -18,5 +18,16 @@
         font-family: "Times New Roman", Times, serif;
         letter-spacing: 7px;
     }
-    
+    &__left{
+        position: absolute;
+        top: 329px;
+        left: 26px;
+        clip-path: polygon(0 0, 100% 0, 100% 318px, 400px 318px, 400px 100%, 0 100%);
+    }
+    &__right{
+        position: absolute;
+        top: 328px;
+        left: 832px;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 22px 100%, 22px 318px, 0 318px);
+    }
 }

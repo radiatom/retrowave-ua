@@ -9,6 +9,10 @@ const initialState = {
     ratingList: [],
     position: 0,
     volume: 50,
+    list: {
+        left: [],
+        right: [],
+    },
 };
 const reducer = (state = initialState, action) => {
     switch (action.type) {
@@ -20,21 +24,19 @@ const reducer = (state = initialState, action) => {
             }
         }
         case "crateRandomList": {
-            
-                const shuffledArray = [...state.totalMusicList];
-                for (let i = shuffledArray.length - 1; i > 0; i--) {
-                    const j = Math.floor(Math.random() * (i + 1));
-                    [shuffledArray[i], shuffledArray[j]] = [
-                        shuffledArray[j],
-                        shuffledArray[i],
-                    ];
-                }
-                return {
-                    ...state,
-                    playList: "random",
-                    randomList: shuffledArray,
-                };
-            
+            const shuffledArray = [...state.totalMusicList];
+            for (let i = shuffledArray.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [shuffledArray[i], shuffledArray[j]] = [
+                    shuffledArray[j],
+                    shuffledArray[i],
+                ];
+            }
+            return {
+                ...state,
+                playList: "random",
+                randomList: shuffledArray,
+            };
         }
         case "crateDefaultList": {
             return {
@@ -109,6 +111,16 @@ const reducer = (state = initialState, action) => {
                 action.id,
                 action.rating
             ); //шукаємо обєкт по айді , змінюємо його рейтинг, та вертаємо новий масив з новими данними
+            const updatedleftList = updateValueById(
+                state.list.left,
+                action.id,
+                action.rating
+            ); //шукаємо обєкт по айді , змінюємо його рейтинг, та вертаємо новий масив з новими данними
+            const updatedRightList = updateValueById(
+                state.list.right,
+                action.id,
+                action.rating
+            ); //шукаємо обєкт по айді , змінюємо його рейтинг, та вертаємо новий масив з новими данними
             return {
                 ...state,
                 totalMusicList: updatedTotalMusicList,
@@ -116,7 +128,66 @@ const reducer = (state = initialState, action) => {
                 defaultList: updatedDefaultList,
                 ratingList: updatedRatingList,
                 music: { ...state.music, rating: action.rating },
+                list: {
+                    left: updatedleftList,
+                    right: updatedRightList,
+                },
             };
+        }
+        case "setList": {
+            switch (action.position) {
+                case "left": {
+                    switch (action.typeList) {
+                        case "rating": {
+                            return {
+                                ...state,
+                                list: { ...state.list, left: state.ratingList },
+                            };
+                        }
+                        case "default": {
+
+                            return {
+                                ...state,
+                                list: { ...state.list, left: state.defaultList },
+                            }
+                        }
+                        case "random": {
+                            return {
+                                ...state,
+                                list: { ...state.list, left: state.randomList },
+                            }
+                        }
+                        default:
+                            return state;
+                    }
+                }
+                case "right": {
+                    switch (action.typeList) {
+                        case "rating": {
+                            return {
+                                ...state,
+                                list: { ...state.list, right: state.ratingList },
+                            };
+                        }
+                        case "default": {
+                            return {
+                                ...state,
+                                list: { ...state.list, right: state.defaultList },
+                            }
+                        }
+                        case "random": {
+                            return {
+                                ...state,
+                                list: { ...state.list, right: state.randomList },
+                            }
+                        }
+                        default:
+                            return state;
+                    }
+                }
+                default:
+                    return state;
+            }
         }
         default:
             return state;

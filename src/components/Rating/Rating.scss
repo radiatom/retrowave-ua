@@ -1,22 +1,25 @@
 .rating {
-    display: inline-block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
     &__item {
-        display: inline-block;
+        // display: inline-block;
         padding: 0 3px;
         width: 24px;
         height: 100%;
-        background-image: url("/img/icons/star.svg");
+        background: url("/img/icons/star.svg") 0 0/ 100% 100% no-repeat;
         background-repeat: no-repeat;
         background-position: center;
         cursor: pointer;
         &.active{
-            background-image: url("/img/icons/star_fill.svg");
+            background: url("/img/icons/star_fill.svg") 0 0/ 100% 100% no-repeat;
         }
     }
     &:hover &__item {
-        background-image: url("/img/icons/star_fill.svg");
+        background: url("/img/icons/star_fill.svg") 0 0/ 100% 100% no-repeat;
     }
     &:hover &__item:hover ~ &__item {
-        background-image: url("/img/icons/star.svg");
+        background: url("/img/icons/star.svg") 0 0/ 100% 100% no-repeat;
     }
 }
