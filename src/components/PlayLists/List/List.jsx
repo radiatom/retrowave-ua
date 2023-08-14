@@ -33,7 +33,7 @@ const List = ({ position, list }) => {
     };
     useEffect(() => {
       if(openInput){
-            setTimeout(()=>{setOpenInput(false)},5000)
+            setTimeout(()=>{setOpenInput(false)},15000)
       }
     }, [openInput]);//автозакривання
     return (
@@ -85,7 +85,7 @@ const List = ({ position, list }) => {
                       })
                     : "No tracks"}
             </div>
-            {Boolean(openListName!=='Default'&&openListName!=='Random'&&openListName!=='Rating')&&(
+            {Boolean(openListName!=='Default'&&openListName!=='Random'&&openListName!=='Rating'&&openListName!=='')&&(
                   <button className="list__delete" onClick={()=>dispatch({type:'deleteNewList',name:openListName})}>Delete this list</button>
             )}
         </div>
