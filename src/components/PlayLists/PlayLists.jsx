@@ -9,7 +9,7 @@ import { leftListSelector, openListNameSelector, rightListSelector } from "../..
 import { useSelector } from "react-redux";
 import { newTimeForBoombox } from "../../function";
 
-const PlayLists = ({ music, prev, next, position, audioRef }) => {
+const PlayLists = ({ music, prev, next, position, audioRef,setOpenLists }) => {
     const [play, setPlay] = useState(false); //анімація плеєра
 
     useEffect(() => {
@@ -67,6 +67,7 @@ const openListName=useSelector(openListNameSelector)
                 prev={prev}
                 next={next}
                 position={position}
+                setOpenLists={setOpenLists}
             />
         </div>
     );

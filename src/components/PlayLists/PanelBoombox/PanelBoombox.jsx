@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./PanelBoombox.scss";
 
-const PanelBoombox = ({ music, prev, next, position,play ,setPlay }) => {
+const PanelBoombox = ({ music, prev, next, position,play ,setPlay,setOpenLists }) => {
 
     useEffect(() => {
         if (play) {
@@ -16,6 +16,7 @@ const PanelBoombox = ({ music, prev, next, position,play ,setPlay }) => {
     const clickPause = () => {
         setPlay(false); //стиль плеєра який не грає
         document.querySelector(".audio").pause(); //пауза
+        setOpenLists(false)
     };
     return (
         <div className={play ? "panelBoombox play" : "panelBoombox"}>

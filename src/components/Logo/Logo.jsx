@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Logo.scss";
 import logo from "./../../img/logo.png";
-const Logo = () => {
+const Logo = ({setOpenLists}) => {
     const [open, setOpen] = useState(false);
     useEffect(() => {
         const interval = setInterval(() => {
@@ -13,7 +13,7 @@ const Logo = () => {
     }, []);
 //коли появляється друга картинка ззаду то логотип стає світлішим
     return (
-        <div className="logo">
+        <div className="logo" onClick={()=>setOpenLists(true)}>
             <img className={`logo__img 1`} src={logo} alt="logo" />
             <img
                 className={open ? `logo__img` : "logo__img closed"}

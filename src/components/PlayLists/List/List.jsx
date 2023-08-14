@@ -37,12 +37,12 @@ const List = ({ position, list,openListName, setOpenListName }) => {
       }
     }, [openInput]);//автозакривання
     return (
-        <div className="list">
-            <div className="list__buttons">
+        <div className="List">
+            <div className="List__buttons">
                 <img
                     src={addIco}
                     alt="addIco"
-                    className="list__btn"
+                    className="List__btn"
                     onClick={() => setOpenInput(!openInput)}
                 />
                 {namesPlayLists.map((item) => {
@@ -50,8 +50,8 @@ const List = ({ position, list,openListName, setOpenListName }) => {
                         <button
                             className={
                                 openListName[position+''] === item
-                                    ? "list__btn open"
-                                    : "list__btn"
+                                    ? "List__btn open"
+                                    : "List__btn"
                             }
                             onClick={() => openList(item)}
                         >
@@ -61,7 +61,7 @@ const List = ({ position, list,openListName, setOpenListName }) => {
                 })}
             </div>
             <input
-                className={openInput ? "list__input open" : "list__input"}
+                className={openInput ? "List__input open" : "List__input"}
                 type="text"
                 name="namelist"
                 placeholder="Enter new name list"
@@ -69,7 +69,7 @@ const List = ({ position, list,openListName, setOpenListName }) => {
                 onChange={(event) => setInputText(event.target.value)}
                 onKeyDown={pressEnter}
             />
-            <div className="list__tracks">
+            <div className="List__tracks">
                 {list
                     ? list.map((track, index) => {
                           return (
@@ -88,7 +88,7 @@ const List = ({ position, list,openListName, setOpenListName }) => {
                     : "No tracks"}
             </div>
             {Boolean(openListName[position+'']!=='Default'&&openListName[position+'']!=='Random'&&openListName[position+'']!=='Rating'&&openListName[position+'']!=='')&&(
-                  <button className="list__delete" onClick={()=>dispatch({type:'deleteNewList',name:openListName[position+'']})}>Delete this list</button>
+                  <button className="List__delete" onClick={()=>dispatch({type:'deleteNewList',name:openListName[position+'']})}>Delete this list</button>
             )}
         </div>
     );

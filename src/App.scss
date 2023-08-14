@@ -41,6 +41,7 @@
         overflow: hidden; //приховати заголовок h1 але щоб він обовязково був
     }
     &__container {
+        will-change: transform;
         position: relative;
         // padding: 70px 0;
         z-index: 100;
@@ -51,6 +52,10 @@
         align-items: center;
         justify-content: space-around;
         padding: 60px 0;
+        transition: transform 1s;
+        &.close{
+        transform: scale(0.77);
+    }
     }
     &__title {
         margin: 0;
@@ -68,6 +73,17 @@
         width: 125px;
         height: 25px;
     }
+    &__playLists{
+        will-change: top;
+        position: absolute;
+        z-index: 120;
+        top:-1500px;
+        transition:top 1s;
+        &.open{
+            top: 0;
+        }
+    }
+    
 }
 
 

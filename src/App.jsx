@@ -23,7 +23,7 @@ function App() {
     const dispatch = useDispatch();
     const audioRef = useRef(null);
     const [back, setBack] = useState(false); //завантаження фонової картинки
-
+    const [openLists, setOpenLists]=useState(false)
     useEffect(() => {
         setBack(true); //заблюрити фон
         if (totalMusicList.length === 0) {
@@ -78,16 +78,19 @@ function App() {
                         ref={audioRef}
                         id="audio"
                     ></audio>
-                    <PlayLists
-                        music={music}
-                        prev={prev}
-                        next={next}
-                        position={position}
-                        audioRef={audioRef}
-                    />
-                    {/* <div className="theme__container">
+                    <div className={openLists?"theme__playLists open":"theme__playLists"}>
+                        <PlayLists
+                            music={music}
+                            prev={prev}
+                            next={next}
+                            position={position}
+                            audioRef={audioRef}
+                            setOpenLists={setOpenLists}
+                        />
+                    </div>
+                     <div className={openLists?"theme__container close":"theme__container"}>
                         <h1 className="theme__h1">Retrowave Radio UA</h1>
-                        <Logo />
+                        <Logo setOpenLists={setOpenLists} />
                         <Player
                             music={music}
                             prev={prev}
@@ -96,9 +99,9 @@ function App() {
                         />
                         <h2 className="theme__title">
                             <span>{music.idTrack}.</span> {music.title}
-                        </h2> */}
+                        </h2> 
                         {/* <h2 className="theme__title"><span>{position}.</span> {music.title}</h2> */}
-                        {/* <Time
+                         <Time
                             audioRef={audioRef}
                             duration={music.duration}
                             next={next}
@@ -107,7 +110,7 @@ function App() {
                             <Rating rating={music.rating} id={music.id} />
                         </div>
                         <Volume />
-                    </div> */}
+                    </div> 
                 </div>
             )}
         </div>
