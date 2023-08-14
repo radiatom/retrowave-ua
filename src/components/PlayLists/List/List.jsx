@@ -8,10 +8,10 @@ const List = ({ position, list }) => {
     const namesPlayLists = useSelector(namesPlayListsSelector);
     const dispatch = useDispatch();
 
-    const [openListName, setOpenlistName] = useState("");
+    const [openListName, setOpenlistName] = useState("");//анімація кнопки що відкритий плейлист якийсь плейлист за назвою плейлиста 
     const openList = (name) => {
-        dispatch({ type: `crate${name}List` });
-        dispatch({ type: "setList", position, typeList: name });
+        dispatch({ type: `crate${name}List` });//сворюємо новий масив плейлиста для відображення виконається лише якщо це запит на отримання стандартних плейлистів
+        dispatch({ type: "setList", position, typeList: name });//добавляємо новий масив на відображення , якщо typeList невідомий редюсеру він пойме що це новий плейлист та добавить зі списку нових плейлистів той що потрібно на відображення
         setOpenlistName(name);
     }; //відкрити плейлист за назвою назва має бути з великої літери
 
@@ -19,7 +19,7 @@ const List = ({ position, list }) => {
     const [inputText,setInputText]=useState('')
     const pressEnter = (event) => {
       if (event.key === "Enter") {
-        dispatch({ type: "crateNewList", newName: capitalizeFirstLetter(inputText) });
+        dispatch({ type: "crateNewList", newName: capitalizeFirstLetter(inputText) });//створюємо всій лейлист
         setInputText('')
         setOpenInput(false)
       }
@@ -59,7 +59,7 @@ const List = ({ position, list }) => {
                 onKeyDown={pressEnter}
             />
             <div className="list__tracks">
-                {list.map((track, index) => {
+                {list?list.map((track, index) => {
                     return (
                         <Track
                             id={track.id}
@@ -70,7 +70,7 @@ const List = ({ position, list }) => {
                             duration={track.duration}
                         />
                     );
-                })}
+                }):'No tracks'}
             </div>
         </div>
     );

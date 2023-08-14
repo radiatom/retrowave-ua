@@ -16,3 +16,10 @@ export const newTime = (second) => {
     }
     return str[0].toUpperCase() + str.slice(1);
 }// робить першу літеру рядка великою
+
+export const lowerFirstLetter=(str)=> {
+    if (str.length === 0) {
+        return str;
+    }
+    return str[0].toLowerCase() + str.slice(1);
+}// робить першу літеру рядка низькою
