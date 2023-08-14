@@ -9,3 +9,10 @@ export const newTime = (second) => {
  export  const newTimeForBoombox = (second) => {
       return second.toString().padStart(3, "0");
   }; //функція для перетворення секунди в значення 000
+  
+  export const capitalizeFirstLetter=(str)=> {
+    if (str.length === 0) {
+        return str;
+    }
+    return str[0].toUpperCase() + str.slice(1);
+}// робить першу літеру рядка великою
