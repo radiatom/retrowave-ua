@@ -48,11 +48,8 @@
         top: -1px;
         box-shadow: 2px 2px 2px 2px black;
         transition: top 0.2s, box-shadow 0.2s;
+        cursor: pointer;
         &.open {
-            top: 1px;
-            box-shadow: 0 0 0 0 black;
-        }
-        &:focus{
             top: 1px;
             box-shadow: 0 0 0 0 black;
         }
@@ -67,5 +64,14 @@
             width: 0;
             height: 0;
         }
+    }
+    &__delete{
+        background-color: red;
+        color: aliceblue;
+        padding: 5px;
+        position: absolute;
+        top: 375px;
+        left: 0;
+        width: 100%;
     }
 }

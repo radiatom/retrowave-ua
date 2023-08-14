@@ -23,3 +23,7 @@ export const lowerFirstLetter=(str)=> {
     }
     return str[0].toLowerCase() + str.slice(1);
 }// робить першу літеру рядка низькою
+
+export const checkNameInArray=(name, array)=> {
+    return array.includes(name);
+}//функція яка перевіряє наявність певної назви в масиві.return  true or folse

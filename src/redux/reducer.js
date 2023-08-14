@@ -160,6 +160,11 @@ const reducer = (state = initialState, action) => {
                                 list: { ...state.list, left: state.randomList },
                             };
                         }
+                        case "": {
+                            return {
+                                ...state,
+                            };
+                        }
                         default:
                             return {
                                 ...state,
@@ -212,6 +217,24 @@ const reducer = (state = initialState, action) => {
                 ...state,
                 [`${action.newName}List`]: [],
                 namesPlayLists: [...state.namesPlayLists, action.newName],
+            };
+        }
+        case "deleteNewList": {
+            // const newState=state.filter(list=>list!==state[`${action.newName}List`])
+            // const newNamesPlayLists =state.namesPlayLists.filter(name=>name!==action.Name)
+            // return {
+            //     ...newState,
+            //     namesPlayLists: newNamesPlayLists,
+            // };
+            const newState = { ...state }; // Створюємо копію об'єкту
+            delete newState[action.name + "List"]; // Видаляємо відповідний список
+
+            const newNamesPlayLists = state.namesPlayLists.filter(
+                (name) => name !== action.name
+            );
+            return {
+                ...newState,
+                namesPlayLists: newNamesPlayLists,
             };
         }
         default:
