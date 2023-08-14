@@ -80,6 +80,7 @@ const List = ({ position, list }) => {
                                   key={index}
                                   rating={track.rating}
                                   duration={track.duration}
+                                  openListName={openListName}
                               />
                           );
                       })

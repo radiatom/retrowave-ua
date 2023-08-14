@@ -4,9 +4,9 @@ const initialState = {
     totalMusicList: [],
     music: {},
     playList: "",
-    randomList: [],
-    defaultList: [],
-    ratingList: [],
+    RandomList: [],
+    DefaultList: [],
+    RatingList: [],
     position: 0,
     volume: 50,
     list: {
@@ -36,39 +36,39 @@ const reducer = (state = initialState, action) => {
             return {
                 ...state,
                 playList: "random",
-                randomList: shuffledArray,
+                RandomList: shuffledArray,
             };
         }
         case "crateDefaultList": {
             return {
                 ...state,
                 playList: "default",
-                defaultList: state.totalMusicList,
+                DefaultList: state.totalMusicList,
             };
         }
         case "crateRatingList": {
             const newArray = [...state.totalMusicList];
             newArray.sort((a, b) => b.rating - a.rating);
-            return { ...state, playList: "rating", ratingList: newArray };
+            return { ...state, playList: "rating", RatingList: newArray };
         }
         case "addMusic": {
             switch (state.playList) {
                 case "random": {
                     return {
                         ...state,
-                        music: state.randomList[action.position],
+                        music: state.RandomList[action.position],
                     };
                 }
                 case "rating": {
                     return {
                         ...state,
-                        music: state.ratingList[action.position],
+                        music: state.RatingList[action.position],
                     };
                 }
                 case "default": {
                     return {
                         ...state,
-                        music: state.defaultList[action.position],
+                        music: state.DefaultList[action.position],
                     };
                 }
                 default:
@@ -98,17 +98,17 @@ const reducer = (state = initialState, action) => {
                 action.rating
             ); //шукаємо обєкт по айді , змінюємо його рейтинг, та вертаємо новий масив з новими данними
             const updatedRandomList = updateValueById(
-                state.randomList,
+                state.RandomList,
                 action.id,
                 action.rating
             ); //шукаємо обєкт по айді , змінюємо його рейтинг, та вертаємо новий масив з новими данними
             const updatedDefaultList = updateValueById(
-                state.defaultList,
+                state.DefaultList,
                 action.id,
                 action.rating
             ); //шукаємо обєкт по айді , змінюємо його рейтинг, та вертаємо новий масив з новими данними
             const updatedRatingList = updateValueById(
-                state.ratingList,
+                state.RatingList,
                 action.id,
                 action.rating
             ); //шукаємо обєкт по айді , змінюємо його рейтинг, та вертаємо новий масив з новими данними
@@ -125,9 +125,9 @@ const reducer = (state = initialState, action) => {
             return {
                 ...state,
                 totalMusicList: updatedTotalMusicList,
-                randomList: updatedRandomList,
-                defaultList: updatedDefaultList,
-                ratingList: updatedRatingList,
+                RandomList: updatedRandomList,
+                DefaultList: updatedDefaultList,
+                RatingList: updatedRatingList,
                 music: { ...state.music, rating: action.rating },
                 list: {
                     left: updatedleftList,
@@ -142,7 +142,7 @@ const reducer = (state = initialState, action) => {
                         case "Rating": {
                             return {
                                 ...state,
-                                list: { ...state.list, left: state.ratingList },
+                                list: { ...state.list, left: state.RatingList },
                             };
                         }
                         case "Default": {
@@ -150,14 +150,14 @@ const reducer = (state = initialState, action) => {
                                 ...state,
                                 list: {
                                     ...state.list,
-                                    left: state.defaultList,
+                                    left: state.DefaultList,
                                 },
                             };
                         }
                         case "Random": {
                             return {
                                 ...state,
-                                list: { ...state.list, left: state.randomList },
+                                list: { ...state.list, left: state.RandomList },
                             };
                         }
                         case "": {
@@ -170,7 +170,7 @@ const reducer = (state = initialState, action) => {
                                 ...state,
                                 list: {
                                     ...state.list,
-                                    left: state[`${action.newName}List`],
+                                    left: [...state[`${action.newName}List`]],
                                 },
                             };
                     }
@@ -182,7 +182,7 @@ const reducer = (state = initialState, action) => {
                                 ...state,
                                 list: {
                                     ...state.list,
-                                    right: state.ratingList,
+                                    right: state.RatingList,
                                 },
                             };
                         }
@@ -191,7 +191,7 @@ const reducer = (state = initialState, action) => {
                                 ...state,
                                 list: {
                                     ...state.list,
-                                    right: state.defaultList,
+                                    right: state.DefaultList,
                                 },
                             };
                         }
@@ -200,12 +200,24 @@ const reducer = (state = initialState, action) => {
                                 ...state,
                                 list: {
                                     ...state.list,
-                                    right: state.randomList,
+                                    right: state.RandomList,
                                 },
                             };
                         }
+                        case "": {
+                            return {
+                                ...state,
+                            };
+                        }
                         default:
-                            return state;
+                            debugger
+                            return {
+                                ...state,
+                                list: {
+                                    ...state.list,
+                                    right: [...state[`${action.newName}List`]],
+                                },
+                            };
                     }
                 }
                 default:
@@ -235,6 +247,19 @@ const reducer = (state = initialState, action) => {
             return {
                 ...newState,
                 namesPlayLists: newNamesPlayLists,
+            };
+        }
+        case "addTrackIntoList": {
+            debugger
+            const track = state[action.currentList + "List"].find(
+                (item) => item.id === action.id
+            );
+            return {
+                ...state,
+                [action.intoList + "List"]: [
+                    ...state[action.intoList + "List"],
+                    track,
+                ],
             };
         }
         default:
