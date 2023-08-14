@@ -6,25 +6,24 @@ import Track from "./Track/Track";
 import { capitalizeFirstLetter } from "../../../function";
 import addIco from "./../../../img/icons/add.svg";
 import { useEffect } from "react";
-import { checkNameInArray } from './../../../function';
 
-const List = ({ position, list }) => {
+const List = ({ position, list,openListName, setOpenListName }) => {
     const namesPlayLists = useSelector(namesPlayListsSelector);
     const dispatch = useDispatch();
+     
+    // const [openListName, setOpenlistName] = useState(""); //анімація кнопки що відкритий плейлист якийсь плейлист за назвою плейлиста
 
-    const [openListName, setOpenlistName] = useState(""); //анімація кнопки що відкритий плейлист якийсь плейлист за назвою плейлиста
     const openList = (name) => {
         dispatch({ type: `crate${name}List` }); //сворюємо новий масив плейлиста для відображення виконається лише якщо це запит на отримання стандартних плейлистів
         dispatch({ type: "setList", position, typeList: name }); //добавляємо новий масив на відображення , якщо typeList невідомий редюсеру він пойме що це новий плейлист та добавить зі списку нових плейлистів той що потрібно на відображення
-        setOpenlistName(name);
+        setOpenListName(position, name);
     }; //відкрити плейлист за назвою назва має бути з великої літери
-
     const [openInput, setOpenInput] = useState(false);
     const [inputText, setInputText] = useState("");
     const pressEnter = (event) => {
         if (event.key === "Enter") {
             dispatch({
-                type: "crateNewList",
+                type: "addNewList",
                 newName: capitalizeFirstLetter(inputText),
             }); //створюємо всій лейлист
             setInputText("");
@@ -41,7 +40,7 @@ const List = ({ position, list }) => {
             <div className="list__buttons">
                 <img
                     src={addIco}
-                    alt=""
+                    alt="addIco"
                     className="list__btn"
                     onClick={() => setOpenInput(!openInput)}
                 />
@@ -49,7 +48,7 @@ const List = ({ position, list }) => {
                     return (
                         <button
                             className={
-                                openListName === item
+                                openListName[position+''] === item
                                     ? "list__btn open"
                                     : "list__btn"
                             }
@@ -81,13 +80,14 @@ const List = ({ position, list }) => {
                                   rating={track.rating}
                                   duration={track.duration}
                                   openListName={openListName}
+                                  position={position}
                               />
                           );
                       })
                     : "No tracks"}
             </div>
-            {Boolean(openListName!=='Default'&&openListName!=='Random'&&openListName!=='Rating'&&openListName!=='')&&(
-                  <button className="list__delete" onClick={()=>dispatch({type:'deleteNewList',name:openListName})}>Delete this list</button>
+            {Boolean(openListName[position+'']!=='Default'&&openListName[position+'']!=='Random'&&openListName[position+'']!=='Rating'&&openListName[position+'']!=='')&&(
+                  <button className="list__delete" onClick={()=>dispatch({type:'deleteNewList',name:openListName[position+'']})}>Delete this list</button>
             )}
         </div>
     );

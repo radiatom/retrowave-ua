@@ -7,10 +7,25 @@ import addIco from "./../../../../img/icons/add.svg";
 import { namesPlayListsSelector } from "../../../../selectorApp";
 import { useDispatch, useSelector } from "react-redux";
 
-const Track = ({ title, index, rating, duration, id, openListName }) => {
+const Track = ({ title, index, rating, duration, id, openListName,position }) => {
     const [active, setActive] = useState(false);
     const namesPlayLists = useSelector(namesPlayListsSelector);
     const dispatch = useDispatch();
+    const click = (name) => {
+        dispatch({
+            type: "addTrackIntoList",
+            intoList: name,
+            currentList: openListName[position+''],
+            id: id,
+        });
+        const secondNameOpenList={...openListName}
+        delete secondNameOpenList[position+'']
+       if(Object.values(secondNameOpenList)[0]===name){ if(position==="left"){//якщо в правому вікні робиться операція до в лівому добавиться нова пісня
+            dispatch({ type: "setList", position:"right", typeList: name })
+        }else{dispatch({ type: "setList", position:"left", typeList: name })}}
+
+        setActive(false);
+    };
     return (
         <div className="track">
             <div className="track__position">{index + 1}</div>
@@ -33,14 +48,7 @@ const Track = ({ title, index, rating, duration, id, openListName }) => {
                         return (
                             <button
                                 className="track__btn"
-                                onClick={() =>
-                                    dispatch({
-                                        type: "addTrackIntoList",
-                                        intoList: name,
-                                        currentList: openListName,
-                                        id: id,
-                                    })
-                                }
+                                onClick={() => click(name)}
                             >
                                 {name}
                             </button>

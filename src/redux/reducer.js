@@ -170,7 +170,7 @@ const reducer = (state = initialState, action) => {
                                 ...state,
                                 list: {
                                     ...state.list,
-                                    left: [...state[`${action.newName}List`]],
+                                    left: [...state[`${action.typeList}List`]],
                                 },
                             };
                     }
@@ -210,12 +210,11 @@ const reducer = (state = initialState, action) => {
                             };
                         }
                         default:
-                            debugger
                             return {
                                 ...state,
                                 list: {
                                     ...state.list,
-                                    right: [...state[`${action.newName}List`]],
+                                    right: [...state[`${action.typeList}List`]],
                                 },
                             };
                     }
@@ -224,7 +223,7 @@ const reducer = (state = initialState, action) => {
                     return state;
             }
         }
-        case "crateNewList": {
+        case "addNewList": {
             return {
                 ...state,
                 [`${action.newName}List`]: [],
@@ -232,12 +231,6 @@ const reducer = (state = initialState, action) => {
             };
         }
         case "deleteNewList": {
-            // const newState=state.filter(list=>list!==state[`${action.newName}List`])
-            // const newNamesPlayLists =state.namesPlayLists.filter(name=>name!==action.Name)
-            // return {
-            //     ...newState,
-            //     namesPlayLists: newNamesPlayLists,
-            // };
             const newState = { ...state }; // Створюємо копію об'єкту
             delete newState[action.name + "List"]; // Видаляємо відповідний список
 
@@ -250,7 +243,6 @@ const reducer = (state = initialState, action) => {
             };
         }
         case "addTrackIntoList": {
-            debugger
             const track = state[action.currentList + "List"].find(
                 (item) => item.id === action.id
             );
