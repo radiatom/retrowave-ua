@@ -11,13 +11,13 @@
         white-space: nowrap; /* Забороняє переноси */
         overflow: hidden; /* Приховує вміст, що виходить за межі */
         text-overflow: ellipsis; /* Відображає три крапки, якщо вміст обрізаний */
-        width: 60%;
+        width: 50%;
         text-align: start;
     }
     &__rating{
-      width: 24%;
+      width: 65px;
     }
     &__duration{
-      width: 7%;
+      width: 10%;
     }
 }

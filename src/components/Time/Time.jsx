@@ -1,15 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./Time.scss";
+import { newTime } from "../../function";
 
 const Time = ({ duration, audioRef, next }) => {
-    const newTime = (second) => {
-        const minutes = Math.floor(second / 60);
-        const remainingSeconds = second % 60;
-        return `${minutes}:${
-            remainingSeconds < 10 ? "0" : ""
-        }${remainingSeconds}`;
-    }; //функція для перетворення мілісекунд в хвилини
-    
     const [time, setTime] = useState(0);
     useEffect(() => {
         if(duration>0){

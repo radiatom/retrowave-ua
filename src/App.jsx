@@ -78,14 +78,14 @@ function App() {
                         ref={audioRef}
                         id="audio"
                     ></audio>
-                    {/* <PlayLists
+                    <PlayLists
                         music={music}
                         prev={prev}
                         next={next}
                         position={position}
                         audioRef={audioRef}
-                    /> */}
-                    <div className="theme__container">
+                    />
+                    {/* <div className="theme__container">
                         <h1 className="theme__h1">Retrowave Radio UA</h1>
                         <Logo />
                         <Player
@@ -96,18 +96,18 @@ function App() {
                         />
                         <h2 className="theme__title">
                             <span>{music.idTrack}.</span> {music.title}
-                        </h2>
+                        </h2> */}
                         {/* <h2 className="theme__title"><span>{position}.</span> {music.title}</h2> */}
-                        <Time
+                        {/* <Time
                             audioRef={audioRef}
                             duration={music.duration}
                             next={next}
                         />
-                        {/* <div className="theme__rating"> */}
+                        <div className="theme__rating">
                             <Rating rating={music.rating} id={music.id} />
-                        {/* </div> */}
+                        </div>
                         <Volume />
-                    </div>
+                    </div> */}
                 </div>
             )}
         </div>

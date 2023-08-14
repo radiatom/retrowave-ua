@@ -1,19 +1,39 @@
-.List{
-      overflow-y: scroll;
-      scrollbar-width: none;
-      &::-webkit-scrollbar {
+.list {
+    overflow-y: scroll;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+    }
+    width: 422px;
+    height: 400px;
+    background-color: rgba(196, 194, 179, 0.952);
+    border: 1px solid rgb(80, 78, 78);
+    &__buttons {
+        background-color: grey;
+        padding: 8px;
+        display: flex;
+        width: 100%;
+        overflow-x: scroll;
+
+        &::-webkit-scrollbar {
             width: 0;
             height: 0;
-          }
-      width: 422px;
-      height: 400px;
-      background-color: rgba(190, 176, 156, 0.945);
-      // background-color: antiquewhite;
-      box-shadow: 0 0 5px 3px rgb(73, 73, 73);
-      padding: 5px;
-      &__btn{
-            background-color: rgba(245, 222, 179, 0);
-            padding:0 5px;
-            margin: 0;
-      }
+        }
+    }
+    &__btn {
+      will-change: top, box-shadow;
+        color: rgb(255, 208, 0);
+        background-color: rgb(70, 69, 67);
+        padding: 5px;
+        margin-right: 8px;
+        position: relative;
+        top: -1px;
+        box-shadow: 2px 2px 2px 2px black;
+        transition: top 0.2s, box-shadow 0.2s;
+        &:hover {
+            top: 1px;
+            box-shadow: 0 0 0 0 black;
+        }
+    }
 }

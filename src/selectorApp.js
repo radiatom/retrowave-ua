@@ -19,3 +19,6 @@ export const leftListSelector=(state)=>{
 export const rightListSelector=(state)=>{
       return state.dataPage.list.right
 }
+export const namesPlayListsSelector=(state)=>{
+      return state.dataPage.namesPlayLists
+}

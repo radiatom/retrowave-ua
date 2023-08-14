@@ -7,11 +7,9 @@ import SoundLevel from "./SoundLevel/SoundLevel";
 import List from "./List/List";
 import { leftListSelector, rightListSelector } from "../../selectorApp";
 import { useSelector } from "react-redux";
+import { newTimeForBoombox } from "../../function";
 
 const PlayLists = ({ music, prev, next, position, audioRef }) => {
-    const newTimeForBoombox = (second) => {
-        return second.toString().padStart(3, "0");
-    }; //функція для перетворення секунди в значення 000
     const [play, setPlay] = useState(false); //анімація плеєра
 
     useEffect(() => {
@@ -27,6 +25,7 @@ const PlayLists = ({ music, prev, next, position, audioRef }) => {
             }
         };
     }, []); //слідкуємо за аудіо треком
+
     const [currentTime, setCurrentTime] = useState("000"); //лічильник часу
     const handleTimeUpdate = () => {
         if (audioRef.current) {
@@ -35,6 +34,7 @@ const PlayLists = ({ music, prev, next, position, audioRef }) => {
             );
         }
     }; //оновлюємо лічильник слідкуючи за аудіо
+    
     useEffect(() => {
         if (currentTime >= parseInt(music.duration.toString().substr(0, 3))) {
             next();
