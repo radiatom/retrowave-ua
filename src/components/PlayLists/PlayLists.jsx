@@ -5,7 +5,7 @@ import PanelBoombox from "./PanelBoombox/PanelBoombox";
 import ValueBoombox from "./ValueBoombox/ValueBoombox";
 import SoundLevel from "./SoundLevel/SoundLevel";
 import List from "./List/List";
-import { leftListSelector, rightListSelector } from "../../selectorApp";
+import { leftListSelector, openListNameSelector, rightListSelector } from "../../selectorApp";
 import { useSelector } from "react-redux";
 import { newTimeForBoombox } from "../../function";
 
@@ -44,14 +44,8 @@ const PlayLists = ({ music, prev, next, position, audioRef }) => {
 
 const listLeft=useSelector(leftListSelector)
 const listRight=useSelector(rightListSelector)
+const openListName=useSelector(openListNameSelector)
 
-
-const [openListName, setCurrentNameOpenlist] = useState({left:'',right:''}); //анімація кнопки що відкритий плейлист якийсь плейлист за назвою плейлиста
-const setOpenListName=(position,name)=>{
-    if(position==='left'){
-        setCurrentNameOpenlist({...openListName, left:name})
-    }else{setCurrentNameOpenlist({...openListName, right:name})}
-}
     return (
         <div className="playLists">
             <div className="playLists__timer">{currentTime}</div>
@@ -60,10 +54,10 @@ const setOpenListName=(position,name)=>{
             <CassetteBoombox music={music} play={play} />
 
             <div className="playLists__left">
-                <List position='left' list={listLeft} openListName={openListName} setOpenListName={setOpenListName}/>
+                <List position='left' list={listLeft} openListName={openListName} />
             </div>
             <div className="playLists__right">
-                <List position='right'list={listRight} openListName={openListName} setOpenListName={setOpenListName}/>
+                <List position='right'list={listRight} openListName={openListName} />
             </div>
 
             <PanelBoombox

@@ -16,7 +16,8 @@ const List = ({ position, list,openListName, setOpenListName }) => {
     const openList = (name) => {
         dispatch({ type: `crate${name}List` }); //сворюємо новий масив плейлиста для відображення виконається лише якщо це запит на отримання стандартних плейлистів
         dispatch({ type: "setList", position, typeList: name }); //добавляємо новий масив на відображення , якщо typeList невідомий редюсеру він пойме що це новий плейлист та добавить зі списку нових плейлистів той що потрібно на відображення
-        setOpenListName(position, name);
+        // setOpenListName(position, name);
+        dispatch({type:'setOpenListName',position,name})
     }; //відкрити плейлист за назвою назва має бути з великої літери
     const [openInput, setOpenInput] = useState(false);
     const [inputText, setInputText] = useState("");

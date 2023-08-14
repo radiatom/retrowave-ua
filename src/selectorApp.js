@@ -22,3 +22,6 @@ export const rightListSelector=(state)=>{
 export const namesPlayListsSelector=(state)=>{
       return state.dataPage.namesPlayLists
 }
+export const openListNameSelector=(state)=>{
+      return state.dataPage.openListName
+}

@@ -14,6 +14,7 @@ const initialState = {
         right: [],
     },
     namesPlayLists: ["Default", "Rating", "Random"],
+    openListName: { left: "", right: "" },
 };
 const reducer = (state = initialState, action) => {
     switch (action.type) {
@@ -253,6 +254,19 @@ const reducer = (state = initialState, action) => {
                     track,
                 ],
             };
+        }
+        case "setOpenListName": {
+            if (action.position === "left") {
+                return {
+                    ...state,
+                    openListName: { ...state.openListName, left: action.name },
+                };
+            } else {
+                return {
+                    ...state,
+                    openListName: { ...state.openListName, right: action.name },
+                };
+            }
         }
         default:
             return state;
