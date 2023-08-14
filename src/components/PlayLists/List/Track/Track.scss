@@ -32,4 +32,19 @@
         box-shadow: 0 0 2px 2px rgb(29, 195, 201)
       }
     }
+    &__spoiler{
+      will-change: left;
+      position: absolute;
+      left: -450px;
+      transition: left 0.3s;
+      width: 90%;
+      background-color: aquamarine;
+      &.open{
+        left:0;
+      }
+    }
+    &__btn{
+      padding: 0 5px;
+      margin: 0 2px;
+    }
 }
