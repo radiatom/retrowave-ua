@@ -40,13 +40,13 @@ const Cassette = ({ music }) => {
 
     const ico = () => {
         switch (nameCurrentListPlayer) {
-            case "random": {
+            case "Random": {
                 return randomImg;
             }
-            case "default": {
+            case "Default": {
                 return defaultImg;
             }
-            case "rating": {
+            case "Rating": {
                 return ratingImg;
             }
             default:

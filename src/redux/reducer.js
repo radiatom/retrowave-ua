@@ -37,7 +37,7 @@ const reducer = (state = initialState, action) => {
             }
             return {
                 ...state,
-                nameCurrentListPlayer: "random",
+                nameCurrentListPlayer: "Random",
                 RandomList: shuffledArray,
             };
         }
@@ -45,34 +45,34 @@ const reducer = (state = initialState, action) => {
             return (state.DefaultList.length === 0
                 ? {
                       ...state,
-                      nameCurrentListPlayer: "default",
+                      nameCurrentListPlayer: "Default",
                       DefaultList: state.totalMusicList,
                   }
                 : {
                       ...state,
-                      nameCurrentListPlayer: "default",
+                      nameCurrentListPlayer: "Default",
                   });
         }
         case "createPlayerRatingList": {
             const newArray = [...state.totalMusicList];
             newArray.sort((a, b) => b.rating - a.rating);
-            return { ...state, nameCurrentListPlayer: "rating", RatingList: newArray };
+            return { ...state, nameCurrentListPlayer: "Rating", RatingList: newArray };
         }
         case "addMusic": {
             switch (state.nameCurrentListPlayer) {
-                case "random": {
+                case "Random": {
                     return {
                         ...state,
                         music: state.RandomList[action.position],
                     };
                 }
-                case "rating": {
+                case "Rating": {
                     return {
                         ...state,
                         music: state.RatingList[action.position],
                     };
                 }
-                case "default": {
+                case "Default": {
                     return {
                         ...state,
                         music: state.DefaultList[action.position],
