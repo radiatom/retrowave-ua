@@ -47,8 +47,8 @@ const List = ({ leftOrRight, list, openListName }) => {
                     className="List__btn"
                     onClick={() => setOpenInput(!openInput)}
                 />
-                {namesPlaylists.map((item) => {
-                    return (
+                {namesPlaylists.map((item,index) => {
+                    if(index!==2){return (
                         <button
                             className={
                                 openListName[leftOrRight + ""] === item
@@ -59,7 +59,7 @@ const List = ({ leftOrRight, list, openListName }) => {
                         >
                             {item}
                         </button>
-                    );
+                    )};
                 })}
             </div>
             <input

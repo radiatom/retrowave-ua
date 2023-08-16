@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Cassette.scss";
 import { useDispatch, useSelector } from "react-redux";
-import { nameCurrentListPlayerSelector } from "./../../../../selectorApp";
+import { nameCurrentListPlayerSelector, namesPlaylistsSelector } from "./../../../../selectorApp";
 import download from "./../../../../img/icons/downloadMp3.svg";
 import list from "./../../../../img/icons/man.png";
 import randomImg from "./../../../../img/icons/random.png";
@@ -10,6 +10,7 @@ import defaultImg from "./../../../../img/icons/default.png";
 
 const Cassette = ({ music }) => {
     const nameCurrentListPlayer = useSelector(nameCurrentListPlayerSelector);
+    const namesPlaylists =useSelector(namesPlaylistsSelector)
     const [open, setOpen] = useState(false);
     const [openList, setOpenList] = useState(false);
     const dispatch = useDispatch();
@@ -22,18 +23,8 @@ const Cassette = ({ music }) => {
     if(open===true){
         setTimeout(()=>setOpen(false),10000)
     }//ховати вікно якщо його не сховав сам користувач
-    const clickRatingListIcon = () => {
-        dispatch({ type: "createPlayerRatingList" });
-        dispatch({ type: "setPosition", position: 0 });
-        setOpenList(false);
-    };
-    const clickDefaultListIcon = () => {
-        dispatch({ type: "createPlayerDefaultList" });
-        dispatch({ type: "setPosition", position: 0 });
-        setOpenList(false);
-    };
-    const clickRandomListIcon = () => {
-        dispatch({ type: "createPlayerRandomList" });
+    const clickListIcon = (name) => {
+        dispatch({ type: "createPlayerList" ,name });
         dispatch({ type: "setPosition", position: 0 });
         setOpenList(false);
     };
@@ -74,22 +65,26 @@ const Cassette = ({ music }) => {
                 }
             >
                 <div className="list">
-                    <img
-                        onClick={() => clickRandomListIcon()}
+                    {/* <img
+                        onClick={() => clickListIcon('Random')}
                         src={randomImg}
                         alt="randomImg"
                     />
                     <img
-                        onClick={() => clickRatingListIcon()}
+                        onClick={() => clickListIcon("Rating")}
                         src={ratingImg}
                         alt="ratingImg"
                     />
                     <img
-                        onClick={() => clickDefaultListIcon()}
+                        onClick={() => clickListIcon("Default")}
                         src={defaultImg}
                         alt="defaultImg"
-                    />
-                    {/* <img src={list} alt="list" /> */}
+                    /> */}
+                    {namesPlaylists.map((item,index)=>{
+                        return(
+                            <span key={index} onClick={() => clickListIcon(item)}>{item}</span>
+                        )
+                    })}
                 </div>
             </div>
             <img

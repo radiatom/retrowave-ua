@@ -9,7 +9,7 @@ const initialState = {
     RandomList: [],
     position: 0,
     volume: 50,
-    namesPlaylists: ["Default", "Rating"],
+    namesPlaylists: ["Default", "Rating", "Random"],
     list: {
         left: [],
         right: [],
@@ -19,33 +19,47 @@ const initialState = {
 const reducer = (state = initialState, action) => {
     switch (action.type) {
         case "addMusicList": {
-                return { ...state, DefaultList: action.data };
+            return { ...state, DefaultList: action.data };
         }
-        case "createPlayerRandomList": {
-            const shuffledArray = [...state.DefaultList];
-            for (let i = shuffledArray.length - 1; i > 0; i--) {
-                const j = Math.floor(Math.random() * (i + 1));
-                [shuffledArray[i], shuffledArray[j]] = [
-                    shuffledArray[j],
-                    shuffledArray[i],
-                ];
+        case "createPlayerList": {
+            switch (action.name) {
+                case "Default": {
+                    return {
+                        ...state,
+                        nameCurrentListPlayer: "Default",
+                    };
+                }
+                case "Rating": {
+                    const newArray = [...state.DefaultList];
+                    newArray.sort((a, b) => b.rating - a.rating);
+                    return {
+                        ...state,
+                        nameCurrentListPlayer: "Rating",
+                        RatingList: newArray,
+                    };
+                }
+                case "Random": {
+                    const shuffledArray = [...state.DefaultList];
+                    for (let i = shuffledArray.length - 1; i > 0; i--) {
+                        const j = Math.floor(Math.random() * (i + 1));
+                        [shuffledArray[i], shuffledArray[j]] = [
+                            shuffledArray[j],
+                            shuffledArray[i],
+                        ];
+                    }
+                    return {
+                        ...state,
+                        nameCurrentListPlayer: "Random",
+                        RandomList: shuffledArray,
+                    };
+                }
+                default: {
+                    return {
+                        ...state,
+                        nameCurrentListPlayer: action.name,
+                    };
+                }
             }
-            return {
-                ...state,
-                nameCurrentListPlayer: "Random",
-                RandomList: shuffledArray,
-            };
-        }
-        case "createPlayerDefaultList": {
-            return {
-                      ...state,
-                      nameCurrentListPlayer: "Default",
-                  };
-        }
-        case "createPlayerRatingList": {
-            const newArray = [...state.DefaultList];
-            newArray.sort((a, b) => b.rating - a.rating);
-            return { ...state, nameCurrentListPlayer: "Rating", RatingList: newArray };
         }
         case "addMusic": {
             switch (state.nameCurrentListPlayer) {
@@ -68,7 +82,12 @@ const reducer = (state = initialState, action) => {
                     };
                 }
                 default:
-                    return state;
+                    return {
+                        ...state,
+                        music: state[state.nameCurrentListPlayer + "List"][
+                            action.position
+                        ],
+                    };
             }
         }
         case "setPosition": {
@@ -257,7 +276,7 @@ export const addMusics = () => async (dispatch) => {
         // artworkUrl:"https://retrowave.ru"+track.artworkUrl,//для api
         // streamUrl:"https://retrowave.ru"+track.streamUrl//для api
     }));
-    dispatch({ type: "addMusicList", data: updatedData });//добавляємо в наш стор нові данні
-    dispatch({ type: "addMusic", position:0 });// відображаємо перший трек
+    dispatch({ type: "addMusicList", data: updatedData }); //добавляємо в наш стор нові данні
+    dispatch({ type: "addMusic", position: 0 }); // відображаємо перший трек
 };
 export default reducer;

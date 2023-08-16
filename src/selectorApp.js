@@ -4,7 +4,6 @@ export const addDataAppSelector=(state)=>{
 export const DefaultListSelector=(state)=>{
       return state.dataPage.DefaultList
 }
-
 export const nameCurrentListPlayerSelector=(state)=>{
       return state.dataPage.nameCurrentListPlayer
 }

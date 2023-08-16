@@ -44,7 +44,7 @@ const Track = ({ title, index, rating, duration, id, openListName,leftOrRight })
             />
             <div className={active ? "track__spoiler open" : "track__spoiler"}>
                 {namesPlaylists.map((name, index) => {
-                    if (index > 1) {
+                    if (index > 2) {
                         return (
                             <button
                                 className="track__btn"
