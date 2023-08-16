@@ -7,6 +7,7 @@ import {
     positionSelector,
     nameCurrentListPlayerSelector,
     DefaultListSelector,
+    numberOfTracksSelector,
 } from "./selectorApp";
 import Boombox from "./components/Boombox/Boombox";
 import Player from "./components/Player/Player";
@@ -18,6 +19,7 @@ function App() {
     const position = useSelector(positionSelector); //позиція в плейлисті
     const DefaultList = useSelector(DefaultListSelector);//весь список треків
     const music = useSelector(addDataAppSelector);//дані про трек
+    const numberOfTracks =useSelector(numberOfTracksSelector)//кількість треків в листі що відтворюється
     const dispatch = useDispatch();
     const audioRef = useRef(null);
 
@@ -39,7 +41,7 @@ function App() {
         }
     };
     const next = () => {
-        if (position < DefaultList.length - 1) {
+        if (position < numberOfTracks - 1) {
             //якщо в списку 4 пісні
             dispatch({ type: "setPosition", position: position + 1 });
             // setPosition(position + 1);

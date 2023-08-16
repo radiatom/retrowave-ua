@@ -25,3 +25,6 @@ export const namesPlaylistsSelector=(state)=>{
 export const openListNameSelector=(state)=>{
       return state.dataPage.openListName
 }
+export const numberOfTracksSelector=(state)=>{
+      return state.dataPage.numberOfTracks
+}

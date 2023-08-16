@@ -8,6 +8,7 @@ const initialState = {
     RatingList: [],
     RandomList: [],
     position: 0,
+    numberOfTracks:0,
     volume: 50,
     namesPlaylists: ["Default", "Rating", "Random"],
     list: {
@@ -67,18 +68,21 @@ const reducer = (state = initialState, action) => {
                     return {
                         ...state,
                         music: state.RandomList[action.position],
+                        numberOfTracks:state.RandomList.length
                     };
                 }
                 case "Rating": {
                     return {
                         ...state,
                         music: state.RatingList[action.position],
+                        numberOfTracks:state.RatingList.length
                     };
                 }
                 case "Default": {
                     return {
                         ...state,
                         music: state.DefaultList[action.position],
+                        numberOfTracks:state.DefaultList.length
                     };
                 }
                 default:
@@ -87,6 +91,7 @@ const reducer = (state = initialState, action) => {
                         music: state[state.nameCurrentListPlayer + "List"][
                             action.position
                         ],
+                        numberOfTracks:state[state.nameCurrentListPlayer + "List"].length
                     };
             }
         }
@@ -242,13 +247,22 @@ const reducer = (state = initialState, action) => {
             const track = state[action.currentList + "List"].find(
                 (item) => item.id === action.id
             );
-            return {
+            if(action.intoList===state.nameCurrentListPlayer){
+                return {
+                    ...state,
+                    numberOfTracks:state[action.intoList + "List"].length+1,
+                    [action.intoList + "List"]: [
+                        ...state[action.intoList + "List"],
+                        track,
+                    ],
+                };
+            }else{return {
                 ...state,
                 [action.intoList + "List"]: [
                     ...state[action.intoList + "List"],
                     track,
                 ],
-            };
+            };}
         }
         case "setOpenListName": {
             if (action.position === "left") {
