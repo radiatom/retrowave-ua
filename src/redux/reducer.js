@@ -8,7 +8,7 @@ const initialState = {
     RatingList: [],
     RandomList: [],
     position: 0,
-    numberOfTracks:0,
+    numberOfTracks: 0,
     volume: 50,
     namesPlaylists: ["Default", "Rating", "Random"],
     list: {
@@ -68,31 +68,45 @@ const reducer = (state = initialState, action) => {
                     return {
                         ...state,
                         music: state.RandomList[action.position],
-                        numberOfTracks:state.RandomList.length
+                        numberOfTracks: state.RandomList.length,
                     };
                 }
                 case "Rating": {
                     return {
                         ...state,
                         music: state.RatingList[action.position],
-                        numberOfTracks:state.RatingList.length
+                        numberOfTracks: state.RatingList.length,
                     };
                 }
                 case "Default": {
                     return {
                         ...state,
                         music: state.DefaultList[action.position],
-                        numberOfTracks:state.DefaultList.length
+                        numberOfTracks: state.DefaultList.length,
                     };
                 }
-                default:
+                default: {
+                    const track =
+                        state[state.nameCurrentListPlayer + "List"].length === 0
+                            ? {
+                                  id: "000",
+                                  title: "No traks in this list",
+                                  duration: 0,
+                                  streamUrl: "",
+                                  artworkUrl: "",
+                                  rating: 5,
+                                  idTrack: 0,
+                              }
+                            : state[state.nameCurrentListPlayer + "List"][
+                                  action.position
+                              ];
                     return {
                         ...state,
-                        music: state[state.nameCurrentListPlayer + "List"][
-                            action.position
-                        ],
-                        numberOfTracks:state[state.nameCurrentListPlayer + "List"].length
+                        music: track,
+                        numberOfTracks:
+                            state[state.nameCurrentListPlayer + "List"].length,
                     };
+                }
             }
         }
         case "setPosition": {
@@ -247,22 +261,24 @@ const reducer = (state = initialState, action) => {
             const track = state[action.currentList + "List"].find(
                 (item) => item.id === action.id
             );
-            if(action.intoList===state.nameCurrentListPlayer){
+            if (action.intoList === state.nameCurrentListPlayer) {
                 return {
                     ...state,
-                    numberOfTracks:state[action.intoList + "List"].length+1,
+                    numberOfTracks: state[action.intoList + "List"].length + 1,
                     [action.intoList + "List"]: [
                         ...state[action.intoList + "List"],
                         track,
                     ],
                 };
-            }else{return {
-                ...state,
-                [action.intoList + "List"]: [
-                    ...state[action.intoList + "List"],
-                    track,
-                ],
-            };}
+            } else {
+                return {
+                    ...state,
+                    [action.intoList + "List"]: [
+                        ...state[action.intoList + "List"],
+                        track,
+                    ],
+                };
+            }
         }
         case "setOpenListName": {
             if (action.position === "left") {
