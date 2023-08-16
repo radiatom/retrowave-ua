@@ -4,12 +4,12 @@ import Rating from "./../../../Rating/Rating";
 import { newTime } from "../../../../function";
 import { useState } from "react";
 import addIco from "./../../../../img/icons/add.svg";
-import { namesPlayListsSelector } from "../../../../selectorApp";
+import { namesPlaylistsSelector } from "../../../../selectorApp";
 import { useDispatch, useSelector } from "react-redux";
 
 const Track = ({ title, index, rating, duration, id, openListName,leftOrRight }) => {
     const [active, setActive] = useState(false);
-    const namesPlayLists = useSelector(namesPlayListsSelector);
+    const namesPlaylists = useSelector(namesPlaylistsSelector);
     const dispatch = useDispatch();
     const click = (name) => {
         dispatch({
@@ -43,7 +43,7 @@ const Track = ({ title, index, rating, duration, id, openListName,leftOrRight })
                 alt="addIco"
             />
             <div className={active ? "track__spoiler open" : "track__spoiler"}>
-                {namesPlayLists.map((name, index) => {
+                {namesPlaylists.map((name, index) => {
                     if (index > 1) {
                         return (
                             <button

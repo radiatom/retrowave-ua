@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import "./List.scss";
 import { useDispatch, useSelector } from "react-redux";
-import {  namesPlayListsSelector } from "../../../selectorApp";
+import {  namesPlaylistsSelector } from "../../../selectorApp";
 import Track from "./Track/Track";
 import { capitalizeFirstLetter } from "../../../function";
 import addIco from "./../../../img/icons/add.svg";
 import { useEffect } from "react";
 
 const List = ({ leftOrRight, list, openListName }) => {
-    const namesPlayLists = useSelector(namesPlayListsSelector);
+    const namesPlaylists = useSelector(namesPlaylistsSelector);
 
     const [openInput, setOpenInput] = useState(false);
     useEffect(() => {
@@ -54,7 +54,7 @@ const List = ({ leftOrRight, list, openListName }) => {
                     className="List__btn"
                     onClick={() => setOpenInput(!openInput)}
                 />
-                {namesPlayLists.map((item) => {
+                {namesPlaylists.map((item) => {
                     return (
                         <button
                             className={

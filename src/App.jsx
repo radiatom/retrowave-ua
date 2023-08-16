@@ -6,7 +6,7 @@ import {
     addDataAppSelector,
     positionSelector,
     totalMusicListAppSelector,
-    namePlayListSelector,
+    nameCurrentListPlayerSelector,
 } from "./selectorApp";
 import Boombox from "./components/Boombox/Boombox";
 import Player from "./components/Player/Player";
@@ -15,7 +15,7 @@ function App() {
     const [back, setBack] = useState(false); //блюр фонової картинки
     const [openBoombox, setOpenBoombox] = useState(false);//показати бумбокс?
     const totalMusicList = useSelector(totalMusicListAppSelector);//весь список треків
-    const namePlayList = useSelector(namePlayListSelector);//назва поточного плейлиста
+    const nameCurrentListPlayer = useSelector(nameCurrentListPlayerSelector);//назва поточного плейлиста
     const music = useSelector(addDataAppSelector);//дані про трек
     const position = useSelector(positionSelector); //позиція в плейлисті
     const dispatch = useDispatch();
@@ -27,8 +27,8 @@ function App() {
             //виконається при першому заході на сторінку і коли в локал сторі нема данних
             dispatch(addMusics()); //відправити запит на пісні якщо наш стор пустий
         } else {
-            if (namePlayList === "") {
-                dispatch({ type: "crateDefaultList" });
+            if (nameCurrentListPlayer === "") {
+                dispatch({ type: "createPlayerDefaultList" });
             } //створити масив рандомних треків
             dispatch({ type: "addMusic", position }); //завантажити трек під індексом 'position' перший раз
         }
@@ -36,7 +36,7 @@ function App() {
 
     useEffect(() => {
         dispatch({ type: "addMusic", position }); //завантажити трек під індексом 'position' при зміні позиції
-    }, [position, namePlayList]);
+    }, [position, nameCurrentListPlayer]);
 
     const prev = () => {
         if (position > 0) {

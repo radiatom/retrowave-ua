@@ -4,13 +4,13 @@ import { updateValueById } from "../function";
 const initialState = {
     totalMusicList: [],
     music: {},
-    namePlayList: "",
+    nameCurrentListPlayer: "",
     RandomList: [],
     DefaultList: [],
     RatingList: [],
     position: 0,
     volume: 50,
-    namesPlayLists: ["Default", "Rating"],
+    namesPlaylists: ["Default", "Rating"],
     list: {
         left: [],
         right: [],
@@ -26,7 +26,7 @@ const reducer = (state = initialState, action) => {
                 return state;
             }
         }
-        case "crateRandomList": {
+        case "createPlayerRandomList": {
             const shuffledArray = [...state.totalMusicList];
             for (let i = shuffledArray.length - 1; i > 0; i--) {
                 const j = Math.floor(Math.random() * (i + 1));
@@ -37,24 +37,29 @@ const reducer = (state = initialState, action) => {
             }
             return {
                 ...state,
-                namePlayList: "random",
+                nameCurrentListPlayer: "random",
                 RandomList: shuffledArray,
             };
         }
-        case "crateDefaultList": {
-            return {
-                ...state,
-                namePlayList: "default",
-                DefaultList: state.totalMusicList,
-            };
+        case "createPlayerDefaultList": {
+            return (state.DefaultList.length === 0
+                ? {
+                      ...state,
+                      nameCurrentListPlayer: "default",
+                      DefaultList: state.totalMusicList,
+                  }
+                : {
+                      ...state,
+                      nameCurrentListPlayer: "default",
+                  });
         }
-        case "crateRatingList": {
+        case "createPlayerRatingList": {
             const newArray = [...state.totalMusicList];
             newArray.sort((a, b) => b.rating - a.rating);
-            return { ...state, namePlayList: "rating", RatingList: newArray };
+            return { ...state, nameCurrentListPlayer: "rating", RatingList: newArray };
         }
         case "addMusic": {
-            switch (state.namePlayList) {
+            switch (state.nameCurrentListPlayer) {
                 case "random": {
                     return {
                         ...state,
@@ -110,7 +115,7 @@ const reducer = (state = initialState, action) => {
                           state.list.left,
                           action.id,
                           action.rating
-                      );//якщо відкритий плейлист 'рейтинг' тоді добавити відсортований масив треків по рейтингу, якщо відкритий якийсь інший плейлист то просто оновити рейтинг однієї пісні
+                      ); //якщо відкритий плейлист 'рейтинг' тоді добавити відсортований масив треків по рейтингу, якщо відкритий якийсь інший плейлист то просто оновити рейтинг однієї пісні
 
             const updatedRightList =
                 state.openListName.right === "Rating"
@@ -210,19 +215,19 @@ const reducer = (state = initialState, action) => {
             return {
                 ...state,
                 [`${action.newName}List`]: [],
-                namesPlayLists: [...state.namesPlayLists, action.newName],
+                namesPlaylists: [...state.namesPlaylists, action.newName],
             };
         }
         case "deleteNewList": {
             const newState = { ...state }; // Створюємо копію об'єкту
             delete newState[action.name + "List"]; // Видаляємо відповідний список
 
-            const newNamesPlayLists = state.namesPlayLists.filter(
+            const newnamesPlaylists = state.namesPlaylists.filter(
                 (name) => name !== action.name
             );
             return {
                 ...newState,
-                namesPlayLists: newNamesPlayLists,
+                namesPlaylists: newnamesPlaylists,
             };
         }
         case "addTrackIntoList": {

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Cassette.scss";
 import { useDispatch, useSelector } from "react-redux";
-import { namePlayListSelector } from "./../../../../selectorApp";
+import { nameCurrentListPlayerSelector } from "./../../../../selectorApp";
 import download from "./../../../../img/icons/downloadMp3.svg";
 import list from "./../../../../img/icons/list.png";
 import randomImg from "./../../../../img/icons/random.png";
@@ -9,7 +9,7 @@ import ratingImg from "./../../../../img/icons/rating.png";
 import defaultImg from "./../../../../img/icons/default.png";
 
 const Cassette = ({ music }) => {
-    const namePlayList = useSelector(namePlayListSelector);
+    const nameCurrentListPlayer = useSelector(nameCurrentListPlayerSelector);
     const [open, setOpen] = useState(false);
     const [openList, setOpenList] = useState(false);
     const dispatch = useDispatch();
@@ -23,23 +23,23 @@ const Cassette = ({ music }) => {
         setTimeout(()=>setOpen(false),10000)
     }//ховати вікно якщо його не сховав сам користувач
     const clickRatingListIcon = () => {
-        dispatch({ type: "crateRatingList" });
+        dispatch({ type: "createPlayerRatingList" });
         dispatch({ type: "setPosition", position: 0 });
         setOpenList(false);
     };
     const clickDefaultListIcon = () => {
-        dispatch({ type: "crateDefaultList" });
+        dispatch({ type: "createPlayerDefaultList" });
         dispatch({ type: "setPosition", position: 0 });
         setOpenList(false);
     };
     const clickRandomListIcon = () => {
-        dispatch({ type: "crateRandomList" });
+        dispatch({ type: "createPlayerRandomList" });
         dispatch({ type: "setPosition", position: 0 });
         setOpenList(false);
     };
 
     const ico = () => {
-        switch (namePlayList) {
+        switch (nameCurrentListPlayer) {
             case "random": {
                 return randomImg;
             }
