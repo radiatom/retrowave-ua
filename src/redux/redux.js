@@ -10,7 +10,7 @@ import { persistStore, persistReducer } from "redux-persist";
 import storage from "redux-persist/lib/storage"; // defaults to localStorage for web
 
 const persistConfig = {
-    key: '45adsd459482d4567fsda68344sd3fjhf',
+    key: '45adsd459482d454567fsda4sdfjhf',
     storage,
 }// для local storage
 

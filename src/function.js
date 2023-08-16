@@ -27,3 +27,13 @@ export const lowerFirstLetter=(str)=> {
 export const checkNameInArray=(name, array)=> {
     return array.includes(name);
 }//функція яка перевіряє наявність певної назви в масиві.return  true or folse
+export const updateValueById = (array, idToFind, newValue) => {
+    const updatedArray = array.map((item) => {
+        if (item.id === idToFind) {
+            // Копіюємо об'єкт і змінюємо значення
+            return { ...item, rating: newValue };
+        }
+        return item;
+    });
+    return updatedArray;
+}; 

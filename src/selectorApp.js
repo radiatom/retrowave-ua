@@ -4,6 +4,7 @@ export const addDataAppSelector=(state)=>{
 export const totalMusicListAppSelector=(state)=>{
       return state.dataPage.totalMusicList
 }
+
 export const namePlayListSelector=(state)=>{
       return state.dataPage.namePlayList
 }

@@ -1,4 +1,5 @@
 import { allApi } from "../api/api";
+import { updateValueById } from "../function";
 
 const initialState = {
     totalMusicList: [],
@@ -9,11 +10,11 @@ const initialState = {
     RatingList: [],
     position: 0,
     volume: 50,
+    namesPlayLists: ["Default", "Rating"],
     list: {
         left: [],
         right: [],
     },
-    namesPlayLists: ["Default", "Rating"],
     openListName: { left: "", right: "" },
 };
 const reducer = (state = initialState, action) => {
@@ -83,21 +84,15 @@ const reducer = (state = initialState, action) => {
             return { ...state, volume: action.volume };
         }
         case "setRating": {
-            const updateValueById = (array, idToFind, newValue) => {
-                const updatedArray = array.map((item) => {
-                    if (item.id === idToFind) {
-                        // Копіюємо об'єкт і змінюємо значення
-                        return { ...item, rating: newValue };
-                    }
-                    return item;
-                });
-                return updatedArray;
-            };
             const updatedTotalMusicList = updateValueById(
                 state.totalMusicList,
                 action.id,
                 action.rating
             ); //шукаємо обєкт по айді , змінюємо його рейтинг, та вертаємо новий масив з новими данними
+
+            const updatedRatingList = [...updatedTotalMusicList];
+            updatedRatingList.sort((a, b) => b.rating - a.rating); //відразу сортуємо по рейтингу
+
             const updatedRandomList = updateValueById(
                 state.RandomList,
                 action.id,
@@ -108,21 +103,23 @@ const reducer = (state = initialState, action) => {
                 action.id,
                 action.rating
             ); //шукаємо обєкт по айді , змінюємо його рейтинг, та вертаємо новий масив з новими данними
-            const updatedRatingList = updateValueById(
-                state.RatingList,
-                action.id,
-                action.rating
-            ); //шукаємо обєкт по айді , змінюємо його рейтинг, та вертаємо новий масив з новими данними
-            const updatedleftList = updateValueById(
-                state.list.left,
-                action.id,
-                action.rating
-            ); //шукаємо обєкт по айді , змінюємо його рейтинг, та вертаємо новий масив з новими данними
-            const updatedRightList = updateValueById(
-                state.list.right,
-                action.id,
-                action.rating
-            ); //шукаємо обєкт по айді , змінюємо його рейтинг, та вертаємо новий масив з новими данними
+            const updatedleftList =
+                state.openListName.left === "Rating"
+                    ? updatedRatingList
+                    : updateValueById(
+                          state.list.left,
+                          action.id,
+                          action.rating
+                      );//якщо відкритий плейлист 'рейтинг' тоді добавити відсортований масив треків по рейтингу, якщо відкритий якийсь інший плейлист то просто оновити рейтинг однієї пісні
+
+            const updatedRightList =
+                state.openListName.right === "Rating"
+                    ? updatedRatingList
+                    : updateValueById(
+                          state.list.right,
+                          action.id,
+                          action.rating
+                      ); //якщо відкритий плейлист 'рейтинг' тоді добавити відсортований масив треків по рейтингу, якщо відкритий якийсь інший плейлист то просто оновити рейтинг однієї пісні
             return {
                 ...state,
                 totalMusicList: updatedTotalMusicList,
@@ -141,11 +138,9 @@ const reducer = (state = initialState, action) => {
                 case "left": {
                     switch (action.typeList) {
                         case "Rating": {
-                            const newArray = [...state.totalMusicList];
-                            newArray.sort((a, b) => b.rating - a.rating);
                             return {
                                 ...state,
-                                list: { ...state.list, left: newArray },
+                                list: { ...state.list, left: state.RatingList },
                             };
                         }
                         case "Default": {
@@ -175,11 +170,12 @@ const reducer = (state = initialState, action) => {
                 case "right": {
                     switch (action.typeList) {
                         case "Rating": {
-                            const newArray = [...state.totalMusicList];
-                            newArray.sort((a, b) => b.rating - a.rating);
                             return {
                                 ...state,
-                                list: { ...state.list, right: newArray },
+                                list: {
+                                    ...state.list,
+                                    right: state.RatingList,
+                                },
                             };
                         }
                         case "Default": {
