@@ -16,7 +16,7 @@ const List = ({ leftOrRight, list, openListName }) => {
         if (openInput) {
             setTimeout(() => {
                 setOpenInput(false);
-            }, 15000);
+            }, 20000);
         }
     }, [openInput]); //автозакривання
 
@@ -71,7 +71,7 @@ const List = ({ leftOrRight, list, openListName }) => {
                 onChange={(event) => setInputText(event.target.value)}
                 onKeyDown={pressEnter}
                 pattern="[A-Za-z]*"
-                title="Введіть лише латинські букви"
+                title="Enter only Latin letters"
             />
             <div className="List__tracks">
                 {list

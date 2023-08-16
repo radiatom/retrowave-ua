@@ -1,34 +1,44 @@
 import React, { useState } from "react";
 import "./Cassette.scss";
 import { useDispatch, useSelector } from "react-redux";
-import { nameCurrentListPlayerSelector, namesPlaylistsSelector } from "./../../../../selectorApp";
+import {
+    nameCurrentListPlayerSelector,
+    namesPlaylistsSelector,
+} from "./../../../../selectorApp";
 import download from "./../../../../img/icons/downloadMp3.svg";
 import list from "./../../../../img/icons/man.png";
 import randomImg from "./../../../../img/icons/random.png";
 import ratingImg from "./../../../../img/icons/rating.png";
 import defaultImg from "./../../../../img/icons/default.png";
+import { useEffect } from "react";
 
 const Cassette = ({ music }) => {
     const nameCurrentListPlayer = useSelector(nameCurrentListPlayerSelector);
-    const namesPlaylists =useSelector(namesPlaylistsSelector)
+    const namesPlaylists = useSelector(namesPlaylistsSelector);
     const [open, setOpen] = useState(false);
     const [openList, setOpenList] = useState(false);
     const dispatch = useDispatch();
-    const clickOnListIco=()=>{
-        setOpenList(!openList)
-    }
+    const clickOnListIco = () => {
+        setOpenList(!openList);
+    };
     if(openList===true){
         setTimeout(()=>setOpenList(false),10000)
     }//ховати вікно якщо його не сховав сам користувач
-    if(open===true){
-        setTimeout(()=>setOpen(false),10000)
-    }//ховати вікно якщо його не сховав сам користувач
+    if (open === true) {
+        setTimeout(() => setOpen(false), 10000);
+    } //ховати вікно якщо його не сховав сам користувач
     const clickListIcon = (name) => {
-        dispatch({ type: "createPlayerList" ,name });
+        dispatch({ type: "createPlayerList", name });
         dispatch({ type: "setPosition", position: 0 });
         setOpenList(false);
     };
 
+    const [style, setStyle] = useState({ top: `0px` });
+    useEffect(() => {
+        const hight = document.getElementById("list").offsetHeight;
+        setStyle({ top: `-${hight}px` });
+    }, [namesPlaylists]);
+    
     const ico = () => {
         switch (nameCurrentListPlayer) {
             case "Random": {
@@ -57,16 +67,10 @@ const Cassette = ({ music }) => {
                 src={ico()}
                 alt="list"
             />
-            <div
-                className={
-                    openList
-                        ? "cassette__spoilerList open"
-                        : "cassette__spoilerList"
-                }
-            >
-                <div className="list">
-                    {/* <img
-                        onClick={() => clickListIcon('Random')}
+            <div className="cassette__spoilerList" style={openList?style:{top:'0px'}} >
+                <div className="list" id="list">
+                    <img
+                        onClick={() => clickListIcon("Random")}
                         src={randomImg}
                         alt="randomImg"
                     />
@@ -79,11 +83,18 @@ const Cassette = ({ music }) => {
                         onClick={() => clickListIcon("Default")}
                         src={defaultImg}
                         alt="defaultImg"
-                    /> */}
-                    {namesPlaylists.map((item,index)=>{
-                        return(
-                            <span key={index} onClick={() => clickListIcon(item)}>{item}</span>
-                        )
+                    />
+                    {namesPlaylists.map((item, index) => {
+                        if (index > 2) {
+                            return (
+                                <span
+                                    key={index}
+                                    onClick={() => clickListIcon(item)}
+                                >
+                                    {item}
+                                </span>
+                            );
+                        }
                     })}
                 </div>
             </div>
