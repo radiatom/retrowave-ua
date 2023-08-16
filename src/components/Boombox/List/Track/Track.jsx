@@ -7,7 +7,7 @@ import addIco from "./../../../../img/icons/add.svg";
 import { namesPlayListsSelector } from "../../../../selectorApp";
 import { useDispatch, useSelector } from "react-redux";
 
-const Track = ({ title, index, rating, duration, id, openListName,position }) => {
+const Track = ({ title, index, rating, duration, id, openListName,leftOrRight }) => {
     const [active, setActive] = useState(false);
     const namesPlayLists = useSelector(namesPlayListsSelector);
     const dispatch = useDispatch();
@@ -15,12 +15,12 @@ const Track = ({ title, index, rating, duration, id, openListName,position }) =>
         dispatch({
             type: "addTrackIntoList",
             intoList: name,
-            currentList: openListName[position+''],
+            currentList: openListName[leftOrRight+''],
             id: id,
         });
         const secondNameOpenList={...openListName}
-        delete secondNameOpenList[position+'']
-       if(Object.values(secondNameOpenList)[0]===name){ if(position==="left"){//якщо в правому вікні робиться операція до в лівому добавиться нова пісня
+        delete secondNameOpenList[leftOrRight+'']
+       if(Object.values(secondNameOpenList)[0]===name){ if(leftOrRight==="left"){//якщо в правому вікні робиться операція до в лівому добавиться нова пісня
             dispatch({ type: "setList", position:"right", typeList: name })
         }else{dispatch({ type: "setList", position:"left", typeList: name })}}
 

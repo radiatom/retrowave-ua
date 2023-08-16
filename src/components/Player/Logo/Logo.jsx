@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Logo.scss";
 import logo from "./../../../img/logo.png";
-const Logo = ({setOpenLists}) => {
+const Logo = ({setOpenBoombox}) => {
     const [open, setOpen] = useState(false);
     useEffect(() => {
         const interval = setInterval(() => {
@@ -13,7 +13,7 @@ const Logo = ({setOpenLists}) => {
     }, []);
 //коли появляється друга картинка ззаду то логотип стає світлішим
     return (
-        <div className="logo" onClick={()=>setOpenLists(true)}>
+        <div className="logo" onClick={()=>setOpenBoombox(true)}>
             <img className={`logo__img 1`} src={logo} alt="logo" />
             <img
                 className={open ? `logo__img` : "logo__img closed"}

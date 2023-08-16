@@ -7,17 +7,17 @@ import { capitalizeFirstLetter } from "../../../function";
 import addIco from "./../../../img/icons/add.svg";
 import { useEffect } from "react";
 
-const List = ({ position, list,openListName, setOpenListName }) => {
+const List = ({ leftOrRight, list,openListName, }) => {
     const namesPlayLists = useSelector(namesPlayListsSelector);
     const dispatch = useDispatch();
      
     // const [openListName, setOpenlistName] = useState(""); //анімація кнопки що відкритий плейлист якийсь плейлист за назвою плейлиста
 
     const openList = (name) => {
-        dispatch({ type: `crate${name}List` }); //сворюємо новий масив плейлиста для відображення виконається лише якщо це запит на отримання стандартних плейлистів
-        dispatch({ type: "setList", position, typeList: name }); //добавляємо новий масив на відображення , якщо typeList невідомий редюсеру він пойме що це новий плейлист та добавить зі списку нових плейлистів той що потрібно на відображення
-        // setOpenListName(position, name);
-        dispatch({type:'setOpenListName',position,name})
+        // dispatch({ type: `crate${name}List` }); //сворюємо новий масив плейлиста для відображення виконається лише якщо це запит на отримання стандартних плейлистів
+        dispatch({ type: "setList", position:leftOrRight, typeList: name }); //добавляємо новий масив на відображення , якщо typeList невідомий редюсеру він пойме що це новий плейлист та добавить зі списку нових плейлистів той що потрібно на відображення
+        // setOpenListName(position:leftOrRight, name);
+        dispatch({type:'setOpenListName',position:leftOrRight,name})
     }; //відкрити плейлист за назвою назва має бути з великої літери
     const [openInput, setOpenInput] = useState(false);
     const [inputText, setInputText] = useState("");
@@ -49,7 +49,7 @@ const List = ({ position, list,openListName, setOpenListName }) => {
                     return (
                         <button
                             className={
-                                openListName[position+''] === item
+                                openListName[leftOrRight+''] === item
                                     ? "List__btn open"
                                     : "List__btn"
                             }
@@ -81,14 +81,14 @@ const List = ({ position, list,openListName, setOpenListName }) => {
                                   rating={track.rating}
                                   duration={track.duration}
                                   openListName={openListName}
-                                  position={position}
+                                  leftOrRight={leftOrRight}
                               />
                           );
                       })
                     : "No tracks"}
             </div>
-            {Boolean(openListName[position+'']!=='Default'&&openListName[position+'']!=='Random'&&openListName[position+'']!=='Rating'&&openListName[position+'']!=='')&&(
-                  <button className="List__delete" onClick={()=>dispatch({type:'deleteNewList',name:openListName[position+'']})}>Delete this list</button>
+            {Boolean(openListName[leftOrRight+'']!=='Default'&&openListName[leftOrRight+'']!=='Random'&&openListName[leftOrRight+'']!=='Rating'&&openListName[leftOrRight+'']!=='')&&(
+                  <button className="List__delete" onClick={()=>dispatch({type:'deleteNewList',name:openListName[leftOrRight+'']})}>Delete this list</button>
             )}
         </div>
     );

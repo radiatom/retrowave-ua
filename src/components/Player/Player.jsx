@@ -6,10 +6,10 @@ import Time from './Time/Time'
 import Rating from './../Rating/Rating'
 import Volume from './Volume/Volume'
 
-const Player = ({ setOpenLists, music, prev, next, position, audioRef }) => {
+const Player = ({ setOpenBoombox, music, prev, next, position, audioRef }) => {
     return (
         <div className="player">
-            <Logo setOpenLists={setOpenLists} />
+            <Logo setOpenBoombox={setOpenBoombox} />
             <Panel music={music} prev={prev} next={next} position={position} />
             <h2 className="player__title">
                 <span>{music.idTrack}.</span> {music.title}

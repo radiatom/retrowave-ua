@@ -13,7 +13,7 @@ const initialState = {
         left: [],
         right: [],
     },
-    namesPlayLists: ["Default", "Rating", "Random"],
+    namesPlayLists: ["Default", "Rating"],
     openListName: { left: "", right: "" },
 };
 const reducer = (state = initialState, action) => {
@@ -141,9 +141,11 @@ const reducer = (state = initialState, action) => {
                 case "left": {
                     switch (action.typeList) {
                         case "Rating": {
+                            const newArray = [...state.totalMusicList];
+                            newArray.sort((a, b) => b.rating - a.rating);
                             return {
                                 ...state,
-                                list: { ...state.list, left: state.RatingList },
+                                list: { ...state.list, left: newArray },
                             };
                         }
                         case "Default": {
@@ -151,14 +153,8 @@ const reducer = (state = initialState, action) => {
                                 ...state,
                                 list: {
                                     ...state.list,
-                                    left: state.DefaultList,
+                                    left: state.totalMusicList,
                                 },
-                            };
-                        }
-                        case "Random": {
-                            return {
-                                ...state,
-                                list: { ...state.list, left: state.RandomList },
                             };
                         }
                         case "": {
@@ -179,12 +175,11 @@ const reducer = (state = initialState, action) => {
                 case "right": {
                     switch (action.typeList) {
                         case "Rating": {
+                            const newArray = [...state.totalMusicList];
+                            newArray.sort((a, b) => b.rating - a.rating);
                             return {
                                 ...state,
-                                list: {
-                                    ...state.list,
-                                    right: state.RatingList,
-                                },
+                                list: { ...state.list, right: newArray },
                             };
                         }
                         case "Default": {
@@ -192,16 +187,7 @@ const reducer = (state = initialState, action) => {
                                 ...state,
                                 list: {
                                     ...state.list,
-                                    right: state.DefaultList,
-                                },
-                            };
-                        }
-                        case "Random": {
-                            return {
-                                ...state,
-                                list: {
-                                    ...state.list,
-                                    right: state.RandomList,
+                                    right: state.totalMusicList,
                                 },
                             };
                         }
