@@ -5,8 +5,8 @@ import { useDispatch, useSelector } from "react-redux";
 import {
     addDataAppSelector,
     positionSelector,
-    totalMusicListAppSelector,
     nameCurrentListPlayerSelector,
+    DefaultListSelector,
 } from "./selectorApp";
 import Boombox from "./components/Boombox/Boombox";
 import Player from "./components/Player/Player";
@@ -16,23 +16,17 @@ function App() {
     const [openBoombox, setOpenBoombox] = useState(false);//показати бумбокс?
     const nameCurrentListPlayer = useSelector(nameCurrentListPlayerSelector);//назва поточного плейлиста
     const position = useSelector(positionSelector); //позиція в плейлисті
-    const totalMusicList = useSelector(totalMusicListAppSelector);//весь список треків
+    const DefaultList = useSelector(DefaultListSelector);//весь список треків
     const music = useSelector(addDataAppSelector);//дані про трек
     const dispatch = useDispatch();
     const audioRef = useRef(null);
 
     useEffect(() => {
         setBack(true); //заблюрити фон
-        if (totalMusicList.length === 0) {
-            //виконається при першому заході на сторінку і коли в локал сторі нема данних
+        if (DefaultList.length === 0) {
             dispatch(addMusics()); //відправити запит на пісні якщо наш стор пустий
-        } else {
-            if (nameCurrentListPlayer === "") {
-                dispatch({ type: "createPlayerDefaultList" });
-            } //створити масив рандомних треків
-            dispatch({ type: "addMusic", position }); //завантажити трек під індексом 'position' перший раз
-        }
-    }, [totalMusicList.length]);
+        } 
+    }, []);
 
     useEffect(() => {
         dispatch({ type: "addMusic", position }); //завантажити трек під індексом 'position' при зміні позиції
@@ -45,7 +39,7 @@ function App() {
         }
     };
     const next = () => {
-        if (position < totalMusicList.length - 1) {
+        if (position < DefaultList.length - 1) {
             //якщо в списку 4 пісні
             dispatch({ type: "setPosition", position: position + 1 });
             // setPosition(position + 1);

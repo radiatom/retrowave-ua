@@ -2,12 +2,11 @@ import { allApi } from "../api/api";
 import { updateValueById } from "../function";
 
 const initialState = {
-    totalMusicList: [],
     music: {},
-    nameCurrentListPlayer: "",
-    RandomList: [],
+    nameCurrentListPlayer: "Default",
     DefaultList: [],
     RatingList: [],
+    RandomList: [],
     position: 0,
     volume: 50,
     namesPlaylists: ["Default", "Rating"],
@@ -20,14 +19,10 @@ const initialState = {
 const reducer = (state = initialState, action) => {
     switch (action.type) {
         case "addMusicList": {
-            if (state.totalMusicList.length === 0) {
-                return { ...state, totalMusicList: action.data };
-            } else {
-                return state;
-            }
+                return { ...state, DefaultList: action.data };
         }
         case "createPlayerRandomList": {
-            const shuffledArray = [...state.totalMusicList];
+            const shuffledArray = [...state.DefaultList];
             for (let i = shuffledArray.length - 1; i > 0; i--) {
                 const j = Math.floor(Math.random() * (i + 1));
                 [shuffledArray[i], shuffledArray[j]] = [
@@ -42,19 +37,13 @@ const reducer = (state = initialState, action) => {
             };
         }
         case "createPlayerDefaultList": {
-            return (state.DefaultList.length === 0
-                ? {
+            return {
                       ...state,
                       nameCurrentListPlayer: "Default",
-                      DefaultList: state.totalMusicList,
-                  }
-                : {
-                      ...state,
-                      nameCurrentListPlayer: "Default",
-                  });
+                  };
         }
         case "createPlayerRatingList": {
-            const newArray = [...state.totalMusicList];
+            const newArray = [...state.DefaultList];
             newArray.sort((a, b) => b.rating - a.rating);
             return { ...state, nameCurrentListPlayer: "Rating", RatingList: newArray };
         }
@@ -90,7 +79,7 @@ const reducer = (state = initialState, action) => {
         }
         case "setRating": {
             const updatedTotalMusicList = updateValueById(
-                state.totalMusicList,
+                state.DefaultList,
                 action.id,
                 action.rating
             ); //шукаємо обєкт по айді , змінюємо його рейтинг, та вертаємо новий масив з новими данними
@@ -127,7 +116,7 @@ const reducer = (state = initialState, action) => {
                       ); //якщо відкритий плейлист 'рейтинг' тоді добавити відсортований масив треків по рейтингу, якщо відкритий якийсь інший плейлист то просто оновити рейтинг однієї пісні
             return {
                 ...state,
-                totalMusicList: updatedTotalMusicList,
+                DefaultList: updatedTotalMusicList,
                 RandomList: updatedRandomList,
                 DefaultList: updatedDefaultList,
                 RatingList: updatedRatingList,
@@ -153,7 +142,7 @@ const reducer = (state = initialState, action) => {
                                 ...state,
                                 list: {
                                     ...state.list,
-                                    left: state.totalMusicList,
+                                    left: state.DefaultList,
                                 },
                             };
                         }
@@ -188,7 +177,7 @@ const reducer = (state = initialState, action) => {
                                 ...state,
                                 list: {
                                     ...state.list,
-                                    right: state.totalMusicList,
+                                    right: state.DefaultList,
                                 },
                             };
                         }
@@ -268,6 +257,7 @@ export const addMusics = () => async (dispatch) => {
         // artworkUrl:"https://retrowave.ru"+track.artworkUrl,//для api
         // streamUrl:"https://retrowave.ru"+track.streamUrl//для api
     }));
-    dispatch({ type: "addMusicList", data: updatedData });
+    dispatch({ type: "addMusicList", data: updatedData });//добавляємо в наш стор нові данні
+    dispatch({ type: "addMusic", position:0 });// відображаємо перший трек
 };
 export default reducer;

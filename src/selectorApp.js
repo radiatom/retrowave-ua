@@ -1,8 +1,8 @@
 export const addDataAppSelector=(state)=>{
       return state.dataPage.music
 }
-export const totalMusicListAppSelector=(state)=>{
-      return state.dataPage.totalMusicList
+export const DefaultListSelector=(state)=>{
+      return state.dataPage.DefaultList
 }
 
 export const nameCurrentListPlayerSelector=(state)=>{
