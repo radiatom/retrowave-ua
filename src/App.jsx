@@ -14,10 +14,10 @@ import Player from "./components/Player/Player";
 function App() {
     const [back, setBack] = useState(false); //блюр фонової картинки
     const [openBoombox, setOpenBoombox] = useState(false);//показати бумбокс?
-    const totalMusicList = useSelector(totalMusicListAppSelector);//весь список треків
     const nameCurrentListPlayer = useSelector(nameCurrentListPlayerSelector);//назва поточного плейлиста
-    const music = useSelector(addDataAppSelector);//дані про трек
     const position = useSelector(positionSelector); //позиція в плейлисті
+    const totalMusicList = useSelector(totalMusicListAppSelector);//весь список треків
+    const music = useSelector(addDataAppSelector);//дані про трек
     const dispatch = useDispatch();
     const audioRef = useRef(null);
 
