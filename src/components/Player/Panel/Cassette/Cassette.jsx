@@ -21,9 +21,9 @@ const Cassette = ({ music }) => {
     const clickOnListIco = () => {
         setOpenList(!openList);
     };
-    if(openList===true){
-        setTimeout(()=>setOpenList(false),10000)
-    }//ховати вікно якщо його не сховав сам користувач
+    if (openList === true) {
+        setTimeout(() => setOpenList(false), 10000);
+    } //ховати вікно якщо його не сховав сам користувач
     if (open === true) {
         setTimeout(() => setOpen(false), 10000);
     } //ховати вікно якщо його не сховав сам користувач
@@ -38,7 +38,7 @@ const Cassette = ({ music }) => {
         const hight = document.getElementById("list").offsetHeight;
         setStyle({ top: `-${hight}px` });
     }, [namesPlaylists]);
-    
+
     const ico = () => {
         switch (nameCurrentListPlayer) {
             case "Random": {
@@ -67,36 +67,38 @@ const Cassette = ({ music }) => {
                 src={ico()}
                 alt="list"
             />
-            <div className="cassette__spoilerList" style={openList?style:{top:'0px'}} >
-                <div className="list" id="list">
-                    <img
-                        onClick={() => clickListIcon("Random")}
-                        src={randomImg}
-                        alt="randomImg"
-                    />
-                    <img
-                        onClick={() => clickListIcon("Rating")}
-                        src={ratingImg}
-                        alt="ratingImg"
-                    />
-                    <img
-                        onClick={() => clickListIcon("Default")}
-                        src={defaultImg}
-                        alt="defaultImg"
-                    />
-                    {namesPlaylists.map((item, index) => {
-                        if (index > 2) {
-                            return (
-                                <span
-                                    key={index}
-                                    onClick={() => clickListIcon(item)}
-                                >
-                                    {item}
-                                </span>
-                            );
-                        }
-                    })}
-                </div>
+            <div
+                className="cassette__list"
+                style={openList ? style : { top: "0px" }}
+                id="list"
+            >
+                <img
+                    onClick={() => clickListIcon("Random")}
+                    src={randomImg}
+                    alt="randomImg"
+                />
+                <img
+                    onClick={() => clickListIcon("Rating")}
+                    src={ratingImg}
+                    alt="ratingImg"
+                />
+                <img
+                    onClick={() => clickListIcon("Default")}
+                    src={defaultImg}
+                    alt="defaultImg"
+                />
+                {namesPlaylists.map((item, index) => {
+                    if (index > 2) {
+                        return (
+                            <span
+                                key={index}
+                                onClick={() => clickListIcon(item)}
+                            >
+                                {item}
+                            </span>
+                        );
+                    }
+                })}
             </div>
             <img
                 onClick={() => setOpen(!open)}
