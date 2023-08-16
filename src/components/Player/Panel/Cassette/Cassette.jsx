@@ -3,7 +3,7 @@ import "./Cassette.scss";
 import { useDispatch, useSelector } from "react-redux";
 import { nameCurrentListPlayerSelector } from "./../../../../selectorApp";
 import download from "./../../../../img/icons/downloadMp3.svg";
-import list from "./../../../../img/icons/list.png";
+import list from "./../../../../img/icons/man.png";
 import randomImg from "./../../../../img/icons/random.png";
 import ratingImg from "./../../../../img/icons/rating.png";
 import defaultImg from "./../../../../img/icons/default.png";
