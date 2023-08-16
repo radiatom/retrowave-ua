@@ -74,7 +74,7 @@ const List = ({ leftOrRight, list, openListName }) => {
                 title="Enter only Latin letters"
             />
             <div className="List__tracks">
-                {list
+                {list.length>0
                     ? list.map((track, index) => {
                           return (
                               <Track
@@ -89,7 +89,7 @@ const List = ({ leftOrRight, list, openListName }) => {
                               />
                           );
                       })
-                    : "No tracks"}
+                    : <h3 className="List__NoTracks">No tracks</h3>}
             </div>
             {Boolean(
                 openListName[leftOrRight + ""] !== "Default" &&

@@ -65,6 +65,10 @@
             height: 0;
         }
     }
+    &__NoTracks{
+        line-height: 20px;
+        font-size: 20px;
+    }
     &__delete{
         background-color: red;
         color: aliceblue;
