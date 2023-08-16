@@ -4,8 +4,8 @@ export const addDataAppSelector=(state)=>{
 export const totalMusicListAppSelector=(state)=>{
       return state.dataPage.totalMusicList
 }
-export const typePlaylistSelector=(state)=>{
-      return state.dataPage.playList
+export const namePlayListSelector=(state)=>{
+      return state.dataPage.namePlayList
 }
 export const volumeSelector=(state)=>{
       return state.dataPage.volume

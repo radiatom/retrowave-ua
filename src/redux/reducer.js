@@ -3,7 +3,7 @@ import { allApi } from "../api/api";
 const initialState = {
     totalMusicList: [],
     music: {},
-    playList: "",
+    namePlayList: "",
     RandomList: [],
     DefaultList: [],
     RatingList: [],
@@ -36,24 +36,24 @@ const reducer = (state = initialState, action) => {
             }
             return {
                 ...state,
-                playList: "random",
+                namePlayList: "random",
                 RandomList: shuffledArray,
             };
         }
         case "crateDefaultList": {
             return {
                 ...state,
-                playList: "default",
+                namePlayList: "default",
                 DefaultList: state.totalMusicList,
             };
         }
         case "crateRatingList": {
             const newArray = [...state.totalMusicList];
             newArray.sort((a, b) => b.rating - a.rating);
-            return { ...state, playList: "rating", RatingList: newArray };
+            return { ...state, namePlayList: "rating", RatingList: newArray };
         }
         case "addMusic": {
-            switch (state.playList) {
+            switch (state.namePlayList) {
                 case "random": {
                     return {
                         ...state,

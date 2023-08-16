@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Logo.scss";
-import logo from "./../../img/logo.png";
+import logo from "./../../../img/logo.png";
 const Logo = ({setOpenLists}) => {
     const [open, setOpen] = useState(false);
     useEffect(() => {

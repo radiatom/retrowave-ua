@@ -13,7 +13,7 @@
         background-position: center;
     }
     &__noMute{
-        background-image: url("./../../img/icons/volume.svg");
+        background-image: url("./../../../img/icons/volume.svg");
     }
     
 }
@@ -32,7 +32,7 @@
     background-position: center;
     background-image: url("/img/icons/volume_medium.svg");
     &.mute{
-        background-image: url("./../../img/icons/volume_mute.svg");
+        background-image: url("./../../../img/icons/volume_mute.svg");
     }
 }
 .volume__level_high {

@@ -1,47 +1,25 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./Player.scss";
-import Cassette from "./Cassette/Cassette";
+import Logo from './Logo/Logo'
+import Panel from './Panel/Panel'
+import Time from './Time/Time'
+import Rating from './../Rating/Rating'
+import Volume from './Volume/Volume'
 
-const Player = ({ music, prev, next, position }) => {
-    const [play, setPlay] = useState(false);//анімація плеєра
-
-    useEffect(() => {
-        if (play) {
-            document.querySelector(".audio").play(); //запуск відтворення
-        }
-    }, [play, music]);// Відтворити музику при зміні об'єкту music
-
-    const clickPlay = () => {
-        if (play) {
-            setPlay(false);//стиль плеєра який не грає
-            document.querySelector(".audio").pause(); //пауза
-        } else {
-            setPlay(true);//стиль плеєра який грає
-            document.querySelector(".audio").play(); //запуск відтворення
-        }
-    };
+const Player = ({ setOpenLists, music, prev, next, position, audioRef }) => {
     return (
-        <div className={play ? "player play" : "player"}>
-            <Cassette music={music} />
-            <div className="player__controls">
-                <button
-                    onClick={prev}
-                    className={position>0?"player__controls__button prev":"player__controls__button prev none"}
-                ></button>
-                <button
-                    onClick={clickPlay}
-                    className={
-                        play
-                            ? "player__controls__button pause"
-                            : " player__controls__button play"
-                    }
-                    autoFocus="yes"
-                ></button>
-                <button
-                    onClick={next}
-                    className="player__controls__button next"
-                ></button>
+        <div className="player">
+            <Logo setOpenLists={setOpenLists} />
+            <Panel music={music} prev={prev} next={next} position={position} />
+            <h2 className="player__title">
+                <span>{music.idTrack}.</span> {music.title}
+            </h2>
+            {/* <h2 className="player__title"><span>{position}.</span> {music.title}</h2> */}
+            <Time audioRef={audioRef} duration={music.duration} next={next} />
+            <div className="player__rating">
+                <Rating rating={music.rating} id={music.id} />
             </div>
+            <Volume />
         </div>
     );
 };

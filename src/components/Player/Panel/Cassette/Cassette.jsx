@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import "./Cassette.scss";
-import download from "./../../../img/icons/downloadMp3.svg";
-import list from "./../../../img/icons/list.png";
 import { useDispatch, useSelector } from "react-redux";
-import randomImg from "./../../../img/icons/random.png";
-import ratingImg from "./../../../img/icons/rating.png";
-import defaultImg from "./../../../img/icons/default.png";
-import { typePlaylistSelector } from "../../../selectorApp";
+import { namePlayListSelector } from "./../../../../selectorApp";
+import download from "./../../../../img/icons/downloadMp3.svg";
+import list from "./../../../../img/icons/list.png";
+import randomImg from "./../../../../img/icons/random.png";
+import ratingImg from "./../../../../img/icons/rating.png";
+import defaultImg from "./../../../../img/icons/default.png";
 
 const Cassette = ({ music }) => {
-    const typePlayList = useSelector(typePlaylistSelector);
+    const namePlayList = useSelector(namePlayListSelector);
     const [open, setOpen] = useState(false);
     const [openList, setOpenList] = useState(false);
     const dispatch = useDispatch();
@@ -39,7 +39,7 @@ const Cassette = ({ music }) => {
     };
 
     const ico = () => {
-        switch (typePlayList) {
+        switch (namePlayList) {
             case "random": {
                 return randomImg;
             }

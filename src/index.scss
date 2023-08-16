@@ -1,6 +1,7 @@
+@import url(https://db.onlinewebfonts.com/c/e1c54273e7b240a0a0f62221e243ab69?family=Newtown+Italic+V1);
 
 body {
-  font-family:sans-serif;
+  // font-family:sans-serif;
   letter-spacing: 1px;
 }
 
@@ -94,4 +95,36 @@ h6 {
   font-weight: 400;
   cursor: default;
   //вимкнення зміни вигляну мишки
+}
+
+//added
+html {
+  color: #fefefe;
+}
+::-moz-selection {
+  background: #ff3ae6;
+  text-shadow: none;
+}
+::selection {
+  background: #ff3ae6;
+  text-shadow: none;
+}
+:focus {
+  outline-color: #ff3ae6;
+}
+@keyframes cassette-reel-spin {
+  0% {
+      -webkit-transform: rotate(0);
+      -moz-transform: rotate(0);
+      -o-transform: rotate(0);
+      -ms-transform: rotate(0);
+      transform: rotate(0);
+  }
+  100% {
+      -webkit-transform: rotate(-360deg);
+      -moz-transform: rotate(-360deg);
+      -o-transform: rotate(-360deg);
+      -ms-transform: rotate(-360deg);
+      transform: rotate(-360deg);
+  }
 }

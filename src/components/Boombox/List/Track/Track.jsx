@@ -1,6 +1,6 @@
 import React from "react";
 import "./Track.scss";
-import Rating from "../../../Rating/Rating";
+import Rating from "./../../../Rating/Rating";
 import { newTime } from "../../../../function";
 import { useState } from "react";
 import addIco from "./../../../../img/icons/add.svg";

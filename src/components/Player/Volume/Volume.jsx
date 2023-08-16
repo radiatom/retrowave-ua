@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Volume.scss";
 import { useDispatch, useSelector } from "react-redux";
-import { volumeSelector } from "../../selectorApp";
+import { volumeSelector } from "./../../../selectorApp";
 
 const Volume = () => {
     const [mute, setMute] = useState(false);//включення чи вимкнення звуку

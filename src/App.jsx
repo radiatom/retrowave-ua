@@ -6,31 +6,28 @@ import {
     addDataAppSelector,
     positionSelector,
     totalMusicListAppSelector,
-    typePlaylistSelector,
+    namePlayListSelector,
 } from "./selectorApp";
-import Volume from "./components/Volume/Volume";
-import Rating from "./components/Rating/Rating";
-import Time from "./components/Time/Time";
+import Boombox from "./components/Boombox/Boombox";
 import Player from "./components/Player/Player";
-import Logo from "./components/Logo/Logo";
-import PlayLists from "./components/PlayLists/PlayLists";
 
 function App() {
-    const totalMusicList = useSelector(totalMusicListAppSelector);
-    const typePlayList = useSelector(typePlaylistSelector);
-    const music = useSelector(addDataAppSelector);
-    const position = useSelector(positionSelector); //позиція треку
+    const [back, setBack] = useState(false); //блюр фонової картинки
+    const [openBoombox, setOpenBoombox] = useState(false);//показати бумбокс?
+    const totalMusicList = useSelector(totalMusicListAppSelector);//весь список треків
+    const namePlayList = useSelector(namePlayListSelector);//назва поточного плейлиста
+    const music = useSelector(addDataAppSelector);//дані про трек
+    const position = useSelector(positionSelector); //позиція в плейлисті
     const dispatch = useDispatch();
     const audioRef = useRef(null);
-    const [back, setBack] = useState(false); //завантаження фонової картинки
-    const [openLists, setOpenLists]=useState(false)
+
     useEffect(() => {
         setBack(true); //заблюрити фон
         if (totalMusicList.length === 0) {
             //виконається при першому заході на сторінку і коли в локал сторі нема данних
             dispatch(addMusics()); //відправити запит на пісні якщо наш стор пустий
         } else {
-            if (typePlayList === "") {
+            if (namePlayList === "") {
                 dispatch({ type: "crateDefaultList" });
             } //створити масив рандомних треків
             dispatch({ type: "addMusic", position }); //завантажити трек під індексом 'position' перший раз
@@ -39,7 +36,7 @@ function App() {
 
     useEffect(() => {
         dispatch({ type: "addMusic", position }); //завантажити трек під індексом 'position' при зміні позиції
-    }, [position, typePlayList]);
+    }, [position, namePlayList]);
 
     const prev = () => {
         if (position > 0) {
@@ -58,62 +55,47 @@ function App() {
         }
     };
     return (
-        <div className="App">
-            {music && (
+        music && (
+            <div
+                className="app" //темний фон якщо нема зображення
+                style={{
+                    backgroundImage: `url( ${music.artworkUrl})`,
+                }}
+            >
+                <div className={back ? "app__blur active" : "app__blur"}></div>
+                <audio
+                    className="audio"
+                    src={music.streamUrl}
+                    ref={audioRef}
+                    id="audio"
+                ></audio>
+                <h1 className="app__h1">Retrowave Radio UA</h1>
                 <div
-                    className="theme theme_palms" //темна тема а якщо є зображення тоді замість теми зображення
-                    style={{
-                        backgroundImage: `url( ${music.artworkUrl})`,
-                    }}
+                    className={openBoombox ? "app__boombox open" : "app__boombox"}
                 >
-                    {/*блюр фону*/}
-                    <div
-                        className={
-                            back ? "theme__overlay active" : "theme__overlay"
-                        }
-                    ></div>
-                    <audio
-                        className="audio"
-                        src={music.streamUrl}
-                        ref={audioRef}
-                        id="audio"
-                    ></audio>
-                    <div className={openLists?"theme__playLists open":"theme__playLists"}>
-                        <PlayLists
-                            music={music}
-                            prev={prev}
-                            next={next}
-                            position={position}
-                            audioRef={audioRef}
-                            setOpenLists={setOpenLists}
-                        />
-                    </div>
-                     <div className={openLists?"theme__container close":"theme__container"}>
-                        <h1 className="theme__h1">Retrowave Radio UA</h1>
-                        <Logo setOpenLists={setOpenLists} />
-                        <Player
-                            music={music}
-                            prev={prev}
-                            next={next}
-                            position={position}
-                        />
-                        <h2 className="theme__title">
-                            <span>{music.idTrack}.</span> {music.title}
-                        </h2> 
-                        {/* <h2 className="theme__title"><span>{position}.</span> {music.title}</h2> */}
-                         <Time
-                            audioRef={audioRef}
-                            duration={music.duration}
-                            next={next}
-                        />
-                        <div className="theme__rating">
-                            <Rating rating={music.rating} id={music.id} />
-                        </div>
-                        <Volume />
-                    </div> 
+                    <Boombox
+                        music={music}
+                        prev={prev}
+                        next={next}
+                        position={position}
+                        audioRef={audioRef}
+                        setOpenBoombox={setOpenBoombox}
+                    />
                 </div>
-            )}
-        </div>
+                <div
+                    className={openBoombox ? "app__player" : "app__player open"}
+                >
+                    <Player
+                        music={music}
+                        prev={prev}
+                        next={next}
+                        position={position}
+                        audioRef={audioRef}
+                        setOpenBoombox={setOpenBoombox}
+                    />
+                </div>
+            </div>
+        )
     );
 }
 

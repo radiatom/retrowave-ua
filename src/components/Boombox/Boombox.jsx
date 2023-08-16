@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./PlayLists.scss";
+import "./Boombox.scss";
 import CassetteBoombox from "./CassetteBoombox/CassetteBoombox";
 import PanelBoombox from "./PanelBoombox/PanelBoombox";
 import ValueBoombox from "./ValueBoombox/ValueBoombox";
@@ -9,7 +9,7 @@ import { leftListSelector, openListNameSelector, rightListSelector } from "../..
 import { useSelector } from "react-redux";
 import { newTimeForBoombox } from "../../function";
 
-const PlayLists = ({ music, prev, next, position, audioRef,setOpenLists }) => {
+const Boombox = ({ music, prev, next, position, audioRef,setOpenBoombox }) => {
     const [play, setPlay] = useState(false); //анімація плеєра
 
     useEffect(() => {
@@ -47,19 +47,18 @@ const listRight=useSelector(rightListSelector)
 const openListName=useSelector(openListNameSelector)
 
     return (
-        <div className="playLists">
-            <div className="playLists__timer">{currentTime}</div>
+        <div className="boombox">
+            <div className="boombox__timer">{currentTime}</div>
             <ValueBoombox />
             <SoundLevel audioRef={audioRef} play={play} />
             <CassetteBoombox music={music} play={play} />
 
-            <div className="playLists__left">
+            <div className="boombox__left">
                 <List position='left' list={listLeft} openListName={openListName} />
             </div>
-            <div className="playLists__right">
+            <div className="boombox__right">
                 <List position='right'list={listRight} openListName={openListName} />
             </div>
-
             <PanelBoombox
                 play={play}
                 setPlay={setPlay}
@@ -67,10 +66,10 @@ const openListName=useSelector(openListNameSelector)
                 prev={prev}
                 next={next}
                 position={position}
-                setOpenLists={setOpenLists}
+                setOpenBoombox={setOpenBoombox}
             />
         </div>
     );
 };
 
-export default PlayLists;
+export default Boombox;

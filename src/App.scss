@@ -1,24 +1,14 @@
-@import url(https://db.onlinewebfonts.com/c/e1c54273e7b240a0a0f62221e243ab69?family=Newtown+Italic+V1);
-.App {
-    width: 100%;
-    height: 100%;
-    background-color: #313945;
-}
-.audio{
-}
-.theme {
+.app {
     position: relative;
     width: 100%;
     height: 100%;
     background-size: cover;
     text-align: center;
     font-size: 30px;
-    font-family: "Newtown Italic V1";//шрифт
-    &_palms {
-        background-color: #313945;
-    }
-    &__overlay {
-        will-change: opacity;// це CSS властивість, яка дозволяє вказати браузеру, що елемент буде змінювати певні властивості, і браузер може підготуватися до цього, забезпечивши кращу продуктивність анімацій і перетворень. 
+    font-family: "Newtown Italic V1"; //шрифт
+    background-color: #313945;
+    &__blur {
+        will-change: opacity; // це CSS властивість, яка дозволяє вказати браузеру, що елемент буде змінювати певні властивості, і браузер може підготуватися до цього, забезпечивши кращу продуктивність анімацій і перетворень.
         opacity: 0;
         transition: opacity 1.5s ease-in-out;
         position: absolute;
@@ -34,91 +24,30 @@
         }
     }
     &__h1 {
-        // position: relative;
         position: absolute;
         width: 0px;
         height: 0px;
         overflow: hidden; //приховати заголовок h1 але щоб він обовязково був
     }
-    &__container {
-        will-change: transform;
-        position: relative;
-        // padding: 70px 0;
-        z-index: 100;
+    &__player {
         width: 100%;
         height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        padding: 60px 0;
+        will-change: transform;
         transition: transform 1s;
-        &.close{
         transform: scale(0.77);
-    }
-    }
-    &__title {
-        margin: 0;
-        font-size: inherit;
-        font-weight: normal;
-        @media(max-width:600px){
-            font-size: 17px;
-        }
-        span{
-            color: #9cf1ff;
+        &.open {
+            transform: scale(1);
         }
     }
-    &__rating{
-        position: relative;
-        width: 125px;
-        height: 25px;
-    }
-    &__playLists{
+    &__boombox {
         will-change: top;
         position: absolute;
         z-index: 120;
-        top:-1500px;
-        transition:top 1s;
-        &.open{
+        top: -1500px;
+        transition: top 1s;
+        &.open {
             top: 0;
         }
-    }
-    
-}
-
-
-html {
-    // font-family: Arial, sans-serif;
-    // font-size: 16px;
-    color: #fefefe;
-}
-::-moz-selection {
-    background: #ff3ae6;
-    text-shadow: none;
-}
-::selection {
-    background: #ff3ae6;
-    text-shadow: none;
-}
-:focus {
-    outline-color: #ff3ae6;
-}
-
-
-@keyframes cassette-reel-spin {
-    0% {
-        -webkit-transform: rotate(0);
-        -moz-transform: rotate(0);
-        -o-transform: rotate(0);
-        -ms-transform: rotate(0);
-        transform: rotate(0);
-    }
-    100% {
-        -webkit-transform: rotate(-360deg);
-        -moz-transform: rotate(-360deg);
-        -o-transform: rotate(-360deg);
-        -ms-transform: rotate(-360deg);
-        transform: rotate(-360deg);
     }
 }
 
