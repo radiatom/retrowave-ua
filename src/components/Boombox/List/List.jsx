@@ -9,6 +9,7 @@ import { useEffect } from "react";
 
 const List = ({ leftOrRight, list, openListName }) => {
     const namesPlaylists = useSelector(namesPlaylistsSelector);
+    const dispatch = useDispatch();
 
     const [openInput, setOpenInput] = useState(false);
     useEffect(() => {
@@ -19,14 +20,6 @@ const List = ({ leftOrRight, list, openListName }) => {
         }
     }, [openInput]); //автозакривання
 
-    const dispatch = useDispatch();
-    // useEffect(() => {
-    //     dispatch({
-    //         type: "setList",
-    //         position: leftOrRight,
-    //         typeList: openListName[leftOrRight + ""],
-    //     });
-    // }, [RatingList]); //динамічно оновлювати плейлист якщо в ньому відбулася якась зміна
 
     const openList = (name) => {
         dispatch({ type: "setList", position: leftOrRight, typeList: name }); //добавляємо новий масив на відображення , якщо typeList невідомий редюсеру він пойме що це новий плейлист та добавить зі списку нових плейлистів той що потрібно на відображення
@@ -77,6 +70,8 @@ const List = ({ leftOrRight, list, openListName }) => {
                 value={inputText}
                 onChange={(event) => setInputText(event.target.value)}
                 onKeyDown={pressEnter}
+                pattern="[A-Za-z]*"
+                title="Введіть лише латинські букви"
             />
             <div className="List__tracks">
                 {list
