@@ -4,9 +4,10 @@
     z-index: 100;
     position: relative;
     margin: 0 auto;
-    background: url("./../../img/boombox-5467421_1280.webp") 0 0/100% 100%
-        no-repeat;
-        line-height: 13px;
+    background: url("./../../img/boombox-5467421_1280.webp") 0 0/100% 100% no-repeat;
+    line-height: 13px;
+    transform: scale(0.8);
+    margin: -70px 0 ;
     &__timer {
         position: absolute;
         background-color: black;
@@ -19,13 +20,13 @@
         font-family: "Times New Roman", Times, serif;
         letter-spacing: 7px;
     }
-    &__left{
+    &__left {
         position: absolute;
         top: 329px;
         left: 26px;
         clip-path: polygon(0 0, 100% 0, 100% 318px, 400px 318px, 400px 100%, 0 100%);
     }
-    &__right{
+    &__right {
         position: absolute;
         top: 328px;
         left: 832px;

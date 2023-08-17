@@ -32,7 +32,7 @@ const Cassette = ({ music }) => {
 
     const [style, setStyle] = useState({ top: `0px` });
     useEffect(() => {
-        const hight = document.getElementById("list").offsetHeight;
+        const hight = document.getElementById("cassette__list").offsetHeight;
         setStyle({ top: `-${hight}px` });
     }, [namesPlaylists]);
 
@@ -63,7 +63,7 @@ const Cassette = ({ music }) => {
                 src={ico()}
                 alt="list"
             />
-            <div className="cassette__list" style={openList ? style : { top: "0px" }} id="list">
+            <div className="cassette__list" style={openList ? style : { top: "0px" }} id="cassette__list">
                 <img onClick={() => clickListIcon("Random")} src={randomImg} alt="randomImg" />
                 <img onClick={() => clickListIcon("Rating")} src={ratingImg} alt="ratingImg" />
                 <img onClick={() => clickListIcon("Default")} src={defaultImg} alt="defaultImg" />

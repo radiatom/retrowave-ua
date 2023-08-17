@@ -2,7 +2,7 @@ import React from "react";
 import "./ListTracks.scss";
 import Track from "../Track/Track";
 
-const ListTracks = ({list,pageNumber,openListName,leftOrRight}) => {
+const ListTracks = ({ list, pageNumber, openListName, leftOrRight }) => {
     return (
         <div className="listTracks">
             {list.length > 0

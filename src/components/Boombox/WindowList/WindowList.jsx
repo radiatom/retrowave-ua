@@ -11,6 +11,8 @@ import ListTracks from "./ListTracks/ListTracks";
 const WindowList = ({ leftOrRight, list, openListName }) => {
     const namesPlaylists = useSelector(namesPlaylistsSelector);
     const dispatch = useDispatch();
+    const pagesNumbers = useSelector(pageNumberSelector);
+    const pageNumber = leftOrRight === "left" ? pagesNumbers.left : pagesNumbers.right;
 
     const [openInput, setOpenInput] = useState(false);
     useEffect(() => {
@@ -38,9 +40,6 @@ const WindowList = ({ leftOrRight, list, openListName }) => {
             setOpenInput(false);
         }
     };
-
-    const pagesNumbers = useSelector(pageNumberSelector);
-    const pageNumber = leftOrRight === "left" ? pagesNumbers.left : pagesNumbers.right;
 
     return (
         <div className="windowList">
