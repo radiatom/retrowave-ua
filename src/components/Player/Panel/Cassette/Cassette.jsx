@@ -47,6 +47,9 @@ const Cassette = ({ music }) => {
             case "Default": {
                 return defaultImg;
             }
+            case "": {
+                return defaultImg;
+            }
             case "Rating": {
                 return ratingImg;
             }

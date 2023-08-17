@@ -3,7 +3,7 @@ import { updateValueById } from "../function";
 
 const initialState = {
     music: {},
-    nameCurrentListPlayer: "Default",
+    nameCurrentListPlayer: "",
     DefaultList: [],
     RatingList: [],
     RandomList: [],
@@ -79,6 +79,13 @@ const reducer = (state = initialState, action) => {
                     };
                 }
                 case "Default": {
+                    return {
+                        ...state,
+                        music: state.DefaultList[action.position],
+                        numberOfTracks: state.DefaultList.length,
+                    };
+                }
+                case "": {
                     return {
                         ...state,
                         music: state.DefaultList[action.position],
