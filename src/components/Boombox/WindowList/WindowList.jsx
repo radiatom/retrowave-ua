@@ -50,18 +50,6 @@ const WindowList = ({ leftOrRight, list, openListName }) => {
                         dispatch({
                             type: "setPageNumber",
                             position: leftOrRight,
-                            number: pageNumber + 1,
-                        })
-                    }
-                    className="windowList__btn"
-                >
-                    +p
-                </button>
-                <button
-                    onClick={() =>
-                        dispatch({
-                            type: "setPageNumber",
-                            position: leftOrRight,
                             number: pageNumber - 1,
                         })
                     }

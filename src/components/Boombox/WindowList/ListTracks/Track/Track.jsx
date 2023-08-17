@@ -4,10 +4,11 @@ import Rating from "./../../../../Rating/Rating";
 import { newTime } from "../../../../../function";
 import { useState } from "react";
 import addIco from "./../../../../../img/icons/add.svg";
-import { namesPlaylistsSelector } from "../../../../../selectorApp";
+import { namesPlaylistsSelector, openListNameSelector } from "../../../../../selectorApp";
 import { useDispatch, useSelector } from "react-redux";
 
-const Track = ({ title, index, rating, duration, id, openListName, leftOrRight }) => {
+const Track = ({ title, index, rating, duration, id,  leftOrRight }) => {
+    const openListName = useSelector(openListNameSelector)
     const [active, setActive] = useState(false);
     const namesPlaylists = useSelector(namesPlaylistsSelector);
     const dispatch = useDispatch();

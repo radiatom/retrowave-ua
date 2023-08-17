@@ -11,10 +11,9 @@ const ListTracks = ({ list, pageNumber, openListName, leftOrRight }) => {
         return function cleanup() {
             container.removeEventListener("scroll", scrollHandler);
         };
-    }, [pageNumber]); //слідкувати за скролом
+    }, []); //слідкувати за скролом
 
     const scrollHandler = (e) => {
-        console.log(e.target.scrollHeight, e.target.scrollTop + 348);
         if (e.target.scrollTop + 348 > e.target.scrollHeight) {
             dispatch({
                 type: "setPageNumber",
@@ -36,7 +35,6 @@ const ListTracks = ({ list, pageNumber, openListName, leftOrRight }) => {
                                   key={index}
                                   rating={track.rating}
                                   duration={track.duration}
-                                  openListName={openListName}
                                   leftOrRight={leftOrRight}
                               />
                           );
