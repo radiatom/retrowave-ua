@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./List.scss";
+import "./WindowList.scss";
 import { useDispatch, useSelector } from "react-redux";
 import { namesPlaylistsSelector, pageNumberSelector } from "../../../selectorApp";
 import Track from "./Track/Track";
@@ -7,7 +7,7 @@ import { capitalizeFirstLetter } from "../../../function";
 import addIco from "./../../../img/icons/add.svg";
 import { useEffect } from "react";
 
-const List = ({ leftOrRight, list, openListName }) => {
+const WindowList = ({ leftOrRight, list, openListName }) => {
     const namesPlaylists = useSelector(namesPlaylistsSelector);
     const dispatch = useDispatch();
 
@@ -44,9 +44,9 @@ const List = ({ leftOrRight, list, openListName }) => {
     const pageNumber = leftOrRight === "left" ? pagesNumbers.left : pagesNumbers.right;
 
     return (
-        <div className="List">
-            <div className="List__buttons">
-                <img src={addIco} alt="addIco" className="List__btn" onClick={() => setOpenInput(!openInput)} />
+        <div className="windowList">
+            <div className="windowList__buttons">
+                <img src={addIco} alt="addIco" className="windowList__btn" onClick={() => setOpenInput(!openInput)} />
                 <button
                     onClick={() =>
                         dispatch({
@@ -55,7 +55,7 @@ const List = ({ leftOrRight, list, openListName }) => {
                             number: pageNumber + 1,
                         })
                     }
-                    className="List__btn"
+                    className="windowList__btn"
                 >
                     +p
                 </button>
@@ -67,7 +67,7 @@ const List = ({ leftOrRight, list, openListName }) => {
                             number: pageNumber - 1,
                         })
                     }
-                    className="List__btn"
+                    className="windowList__btn"
                 >
                     -p
                 </button>
@@ -75,7 +75,7 @@ const List = ({ leftOrRight, list, openListName }) => {
                     if (index !== 2) {
                         return (
                             <button
-                                className={openListName[leftOrRight + ""] === item ? "List__btn open" : "List__btn"}
+                                className={openListName[leftOrRight + ""] === item ? "windowList__btn open" : "windowList__btn"}
                                 onClick={() => openList(item)}
                             >
                                 {item}
@@ -85,7 +85,7 @@ const List = ({ leftOrRight, list, openListName }) => {
                 })}
             </div>
             <input
-                className={openInput ? "List__input open" : "List__input"}
+                className={openInput ? "windowList__input open" : "windowList__input"}
                 type="text"
                 name="namelist"
                 placeholder="Enter new name list"
@@ -95,7 +95,7 @@ const List = ({ leftOrRight, list, openListName }) => {
                 pattern="[A-Za-z]*"
                 title="Enter only Latin letters"
             />
-            <div className="List__tracks">
+            <div className="windowList__tracks">
                 {list.length > 0
                     ? list.map((track, index) => {
                           if (index < pageNumber * 10) {
@@ -113,7 +113,7 @@ const List = ({ leftOrRight, list, openListName }) => {
                               );
                           }
                       })
-                    : listName !== "" && <h3 className="List__NoTracks">No tracks</h3>}
+                    : listName !== "" && <h3 className="windowList__NoTracks">No tracks</h3>}
             </div>
             {Boolean(
                 openListName[leftOrRight + ""] !== "Default" &&
@@ -122,7 +122,7 @@ const List = ({ leftOrRight, list, openListName }) => {
                     openListName[leftOrRight + ""] !== ""
             ) && (
                 <button
-                    className="List__delete"
+                    className="windowList__delete"
                     onClick={() =>
                         dispatch({
                             type: "deleteNewList",
@@ -137,4 +137,4 @@ const List = ({ leftOrRight, list, openListName }) => {
     );
 };
 
-export default List;
+export default WindowList;
