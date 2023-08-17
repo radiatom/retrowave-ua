@@ -7,7 +7,7 @@ import addIco from "./../../../../img/icons/add.svg";
 import { namesPlaylistsSelector } from "../../../../selectorApp";
 import { useDispatch, useSelector } from "react-redux";
 
-const Track = ({ title, index, rating, duration, id, openListName,leftOrRight }) => {
+const Track = ({ title, index, rating, duration, id, openListName, leftOrRight }) => {
     const [active, setActive] = useState(false);
     const namesPlaylists = useSelector(namesPlaylistsSelector);
     const dispatch = useDispatch();
@@ -15,14 +15,19 @@ const Track = ({ title, index, rating, duration, id, openListName,leftOrRight })
         dispatch({
             type: "addTrackIntoList",
             intoList: name,
-            currentList: openListName[leftOrRight+''],
+            currentList: openListName[leftOrRight + ""],
             id: id,
         });
-        const secondNameOpenList={...openListName}
-        delete secondNameOpenList[leftOrRight+'']
-       if(Object.values(secondNameOpenList)[0]===name){ if(leftOrRight==="left"){//якщо в правому вікні робиться операція до в лівому добавиться нова пісня
-            dispatch({ type: "setList", position:"right", typeList: name })
-        }else{dispatch({ type: "setList", position:"left", typeList: name })}}
+        const secondNameOpenList = { ...openListName };
+        delete secondNameOpenList[leftOrRight + ""];
+        if (Object.values(secondNameOpenList)[0] === name) {
+            if (leftOrRight === "left") {
+                //якщо в правому вікні робиться операція до в лівому добавиться нова пісня
+                dispatch({ type: "setList", position: "right", typeList: name });
+            } else {
+                dispatch({ type: "setList", position: "left", typeList: name });
+            }
+        }
 
         setActive(false);
     };
@@ -33,9 +38,7 @@ const Track = ({ title, index, rating, duration, id, openListName,leftOrRight })
             <div className="track__rating">
                 <Rating rating={rating} id={id} />{" "}
             </div>
-            <div className="track__duration">
-                {newTime(Math.round(duration / 1000))}
-            </div>
+            <div className="track__duration">{newTime(Math.round(duration / 1000))}</div>
             <img
                 className={active ? "track__addIco active" : "track__addIco"}
                 onClick={() => setActive(!active)}
@@ -46,10 +49,7 @@ const Track = ({ title, index, rating, duration, id, openListName,leftOrRight })
                 {namesPlaylists.map((name, index) => {
                     if (index > 2) {
                         return (
-                            <button
-                                className="track__btn"
-                                onClick={() => click(name)}
-                            >
+                            <button className="track__btn" onClick={() => click(name)}>
                                 {name}
                             </button>
                         );

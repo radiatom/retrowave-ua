@@ -14,12 +14,12 @@ import Player from "./components/Player/Player";
 
 function App() {
     const [back, setBack] = useState(false); //блюр фонової картинки
-    const [openBoombox, setOpenBoombox] = useState(false);//показати бумбокс?
-    const nameCurrentListPlayer = useSelector(nameCurrentListPlayerSelector);//назва поточного плейлиста
+    const [openBoombox, setOpenBoombox] = useState(false); //показати бумбокс?
+    const nameCurrentListPlayer = useSelector(nameCurrentListPlayerSelector); //назва поточного плейлиста
     const position = useSelector(positionSelector); //позиція в плейлисті
-    const DefaultList = useSelector(DefaultListSelector);//весь список треків
-    const music = useSelector(addDataAppSelector);//дані про трек
-    const numberOfTracks =useSelector(numberOfTracksSelector)//кількість треків в листі що відтворюється
+    const DefaultList = useSelector(DefaultListSelector); //весь список треків
+    const music = useSelector(addDataAppSelector); //дані про трек
+    const numberOfTracks = useSelector(numberOfTracksSelector); //кількість треків в листі що відтворюється
     const dispatch = useDispatch();
     const audioRef = useRef(null);
 
@@ -27,7 +27,7 @@ function App() {
         setBack(true); //заблюрити фон
         if (DefaultList.length === 0) {
             dispatch(addMusics()); //відправити запит на пісні якщо наш стор пустий
-        } 
+        }
     }, []);
 
     useEffect(() => {
@@ -59,16 +59,9 @@ function App() {
                 }}
             >
                 <div className={back ? "app__blur active" : "app__blur"}></div>
-                <audio
-                    className="audio"
-                    src={music.streamUrl}
-                    ref={audioRef}
-                    id="audio"
-                ></audio>
+                <audio className="audio" src={music.streamUrl} ref={audioRef} id="audio"></audio>
                 <h1 className="app__h1">Retrowave Radio UA</h1>
-                <div
-                    className={openBoombox ? "app__boombox open" : "app__boombox"}
-                >
+                <div className={openBoombox ? "app__boombox open" : "app__boombox"}>
                     <Boombox
                         music={music}
                         prev={prev}
@@ -78,9 +71,7 @@ function App() {
                         setOpenBoombox={setOpenBoombox}
                     />
                 </div>
-                <div
-                    className={openBoombox ? "app__player" : "app__player open"}
-                >
+                <div className={openBoombox ? "app__player" : "app__player open"}>
                     <Player
                         music={music}
                         prev={prev}

@@ -5,7 +5,7 @@ import { newTime } from "./../../../function";
 const Time = ({ duration, audioRef, next }) => {
     const [time, setTime] = useState(0);
     useEffect(() => {
-        if(duration>0){
+        if (duration > 0) {
             const timesSeconds = parseInt(duration.toString().substr(0, 3));
             setTime(newTime(timesSeconds));
         }
@@ -17,21 +17,18 @@ const Time = ({ duration, audioRef, next }) => {
         }
         return () => {
             if (audioRef.current) {
-                audioRef.current.removeEventListener(
-                    "timeupdate",
-                    handleTimeUpdate
-                );
+                audioRef.current.removeEventListener("timeupdate", handleTimeUpdate);
             }
         };
-    }, []);//слідкуємо за аудіо треком
+    }, []); //слідкуємо за аудіо треком
 
     const [currentTime, setCurrentTime] = useState("0:00"); //лічильник часу
     const handleTimeUpdate = () => {
         if (audioRef.current) {
             setCurrentTime(newTime(Math.round(audioRef.current.currentTime)));
         }
-    };//оновлюємо лічильник слідкуючи за аудіо
-    
+    }; //оновлюємо лічильник слідкуючи за аудіо
+
     useEffect(() => {
         if (currentTime >= time) {
             next();

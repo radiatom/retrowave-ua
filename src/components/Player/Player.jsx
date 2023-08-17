@@ -1,10 +1,10 @@
 import React from "react";
 import "./Player.scss";
-import Logo from './Logo/Logo'
-import Panel from './Panel/Panel'
-import Time from './Time/Time'
-import Rating from './../Rating/Rating'
-import Volume from './Volume/Volume'
+import Logo from "./Logo/Logo";
+import Panel from "./Panel/Panel";
+import Time from "./Time/Time";
+import Rating from "./../Rating/Rating";
+import Volume from "./Volume/Volume";
 
 const Player = ({ setOpenBoombox, music, prev, next, position, audioRef }) => {
     return (

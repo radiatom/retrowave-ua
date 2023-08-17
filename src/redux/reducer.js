@@ -44,10 +44,7 @@ const reducer = (state = initialState, action) => {
                     const shuffledArray = [...state.DefaultList];
                     for (let i = shuffledArray.length - 1; i > 0; i--) {
                         const j = Math.floor(Math.random() * (i + 1));
-                        [shuffledArray[i], shuffledArray[j]] = [
-                            shuffledArray[j],
-                            shuffledArray[i],
-                        ];
+                        [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
                     }
                     return {
                         ...state,
@@ -105,14 +102,11 @@ const reducer = (state = initialState, action) => {
                                   rating: 5,
                                   idTrack: 0,
                               }
-                            : state[state.nameCurrentListPlayer + "List"][
-                                  action.position
-                              ];
+                            : state[state.nameCurrentListPlayer + "List"][action.position];
                     return {
                         ...state,
                         music: track,
-                        numberOfTracks:
-                            state[state.nameCurrentListPlayer + "List"].length,
+                        numberOfTracks: state[state.nameCurrentListPlayer + "List"].length,
                     };
                 }
             }
@@ -124,42 +118,22 @@ const reducer = (state = initialState, action) => {
             return { ...state, volume: action.volume };
         }
         case "setRating": {
-            const updatedTotalMusicList = updateValueById(
-                state.DefaultList,
-                action.id,
-                action.rating
-            ); //шукаємо обєкт по айді , змінюємо його рейтинг, та вертаємо новий масив з новими данними
+            const updatedTotalMusicList = updateValueById(state.DefaultList, action.id, action.rating); //шукаємо обєкт по айді , змінюємо його рейтинг, та вертаємо новий масив з новими данними
 
             const updatedRatingList = [...updatedTotalMusicList];
             updatedRatingList.sort((a, b) => b.rating - a.rating); //відразу сортуємо по рейтингу
 
-            const updatedRandomList = updateValueById(
-                state.RandomList,
-                action.id,
-                action.rating
-            ); //шукаємо обєкт по айді , змінюємо його рейтинг, та вертаємо новий масив з новими данними
-            const updatedDefaultList = updateValueById(
-                state.DefaultList,
-                action.id,
-                action.rating
-            ); //шукаємо обєкт по айді , змінюємо його рейтинг, та вертаємо новий масив з новими данними
+            const updatedRandomList = updateValueById(state.RandomList, action.id, action.rating); //шукаємо обєкт по айді , змінюємо його рейтинг, та вертаємо новий масив з новими данними
+            const updatedDefaultList = updateValueById(state.DefaultList, action.id, action.rating); //шукаємо обєкт по айді , змінюємо його рейтинг, та вертаємо новий масив з новими данними
             const updatedleftList =
                 state.openListName.left === "Rating"
                     ? updatedRatingList
-                    : updateValueById(
-                          state.list.left,
-                          action.id,
-                          action.rating
-                      ); //якщо відкритий плейлист 'рейтинг' тоді добавити відсортований масив треків по рейтингу, якщо відкритий якийсь інший плейлист то просто оновити рейтинг однієї пісні
+                    : updateValueById(state.list.left, action.id, action.rating); //якщо відкритий плейлист 'рейтинг' тоді добавити відсортований масив треків по рейтингу, якщо відкритий якийсь інший плейлист то просто оновити рейтинг однієї пісні
 
             const updatedRightList =
                 state.openListName.right === "Rating"
                     ? updatedRatingList
-                    : updateValueById(
-                          state.list.right,
-                          action.id,
-                          action.rating
-                      ); //якщо відкритий плейлист 'рейтинг' тоді добавити відсортований масив треків по рейтингу, якщо відкритий якийсь інший плейлист то просто оновити рейтинг однієї пісні
+                    : updateValueById(state.list.right, action.id, action.rating); //якщо відкритий плейлист 'рейтинг' тоді добавити відсортований масив треків по рейтингу, якщо відкритий якийсь інший плейлист то просто оновити рейтинг однієї пісні
             return {
                 ...state,
                 DefaultList: updatedTotalMusicList,
@@ -282,34 +256,24 @@ const reducer = (state = initialState, action) => {
             const newState = { ...state }; // Створюємо копію об'єкту
             delete newState[action.name + "List"]; // Видаляємо відповідний список
 
-            const newnamesPlaylists = state.namesPlaylists.filter(
-                (name) => name !== action.name
-            );
+            const newnamesPlaylists = state.namesPlaylists.filter((name) => name !== action.name);
             return {
                 ...newState,
                 namesPlaylists: newnamesPlaylists,
             };
         }
         case "addTrackIntoList": {
-            const track = state[action.currentList + "List"].find(
-                (item) => item.id === action.id
-            );
+            const track = state[action.currentList + "List"].find((item) => item.id === action.id);
             if (action.intoList === state.nameCurrentListPlayer) {
                 return {
                     ...state,
                     numberOfTracks: state[action.intoList + "List"].length + 1,
-                    [action.intoList + "List"]: [
-                        ...state[action.intoList + "List"],
-                        track,
-                    ],
+                    [action.intoList + "List"]: [...state[action.intoList + "List"], track],
                 };
             } else {
                 return {
                     ...state,
-                    [action.intoList + "List"]: [
-                        ...state[action.intoList + "List"],
-                        track,
-                    ],
+                    [action.intoList + "List"]: [...state[action.intoList + "List"], track],
                 };
             }
         }

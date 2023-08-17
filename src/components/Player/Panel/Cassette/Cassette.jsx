@@ -1,10 +1,7 @@
 import React, { useState } from "react";
 import "./Cassette.scss";
 import { useDispatch, useSelector } from "react-redux";
-import {
-    nameCurrentListPlayerSelector,
-    namesPlaylistsSelector,
-} from "./../../../../selectorApp";
+import { nameCurrentListPlayerSelector, namesPlaylistsSelector } from "./../../../../selectorApp";
 import download from "./../../../../img/icons/downloadMp3.svg";
 import list from "./../../../../img/icons/man.png";
 import randomImg from "./../../../../img/icons/random.png";
@@ -62,41 +59,18 @@ const Cassette = ({ music }) => {
             {/*зображення касети*/}
             <img
                 onClick={() => clickOnListIco()}
-                className={
-                    openList
-                        ? "cassette__listIcon active"
-                        : "cassette__listIcon"
-                }
+                className={openList ? "cassette__listIcon active" : "cassette__listIcon"}
                 src={ico()}
                 alt="list"
             />
-            <div
-                className="cassette__list"
-                style={openList ? style : { top: "0px" }}
-                id="list"
-            >
-                <img
-                    onClick={() => clickListIcon("Random")}
-                    src={randomImg}
-                    alt="randomImg"
-                />
-                <img
-                    onClick={() => clickListIcon("Rating")}
-                    src={ratingImg}
-                    alt="ratingImg"
-                />
-                <img
-                    onClick={() => clickListIcon("Default")}
-                    src={defaultImg}
-                    alt="defaultImg"
-                />
+            <div className="cassette__list" style={openList ? style : { top: "0px" }} id="list">
+                <img onClick={() => clickListIcon("Random")} src={randomImg} alt="randomImg" />
+                <img onClick={() => clickListIcon("Rating")} src={ratingImg} alt="ratingImg" />
+                <img onClick={() => clickListIcon("Default")} src={defaultImg} alt="defaultImg" />
                 {namesPlaylists.map((item, index) => {
                     if (index > 2) {
                         return (
-                            <span
-                                key={index}
-                                onClick={() => clickListIcon(item)}
-                            >
+                            <span key={index} onClick={() => clickListIcon(item)}>
                                 {item}
                             </span>
                         );
@@ -105,34 +79,16 @@ const Cassette = ({ music }) => {
             </div>
             <img
                 onClick={() => setOpen(!open)}
-                className={
-                    open
-                        ? "cassette__downloadIcon active"
-                        : "cassette__downloadIcon"
-                }
+                className={open ? "cassette__downloadIcon active" : "cassette__downloadIcon"}
                 src={download}
                 alt="download"
             />
-            <div
-                className={
-                    open ? "cassette__spoiler open" : "cassette__spoiler"
-                }
-            >
+            <div className={open ? "cassette__spoiler open" : "cassette__spoiler"}>
                 <div className="download">
-                    <a
-                        className="download__link"
-                        href={music.artworkUrl}
-                        download
-                        target="_blank"
-                    >
+                    <a className="download__link" href={music.artworkUrl} download target="_blank">
                         IMG
                     </a>
-                    <a
-                        className="download__link"
-                        href={music.streamUrl}
-                        download
-                        target="_blank"
-                    >
+                    <a className="download__link" href={music.streamUrl} download target="_blank">
                         MP3
                     </a>
                 </div>

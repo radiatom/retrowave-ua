@@ -1,10 +1,7 @@
 import React, { useState } from "react";
 import "./List.scss";
 import { useDispatch, useSelector } from "react-redux";
-import {
-    namesPlaylistsSelector,
-    pageNumberSelector,
-} from "../../../selectorApp";
+import { namesPlaylistsSelector, pageNumberSelector } from "../../../selectorApp";
 import Track from "./Track/Track";
 import { capitalizeFirstLetter } from "../../../function";
 import addIco from "./../../../img/icons/add.svg";
@@ -44,18 +41,12 @@ const List = ({ leftOrRight, list, openListName }) => {
     };
 
     const pagesNumbers = useSelector(pageNumberSelector);
-    const pageNumber =
-        leftOrRight === "left" ? pagesNumbers.left : pagesNumbers.right;
+    const pageNumber = leftOrRight === "left" ? pagesNumbers.left : pagesNumbers.right;
 
     return (
         <div className="List">
             <div className="List__buttons">
-                <img
-                    src={addIco}
-                    alt="addIco"
-                    className="List__btn"
-                    onClick={() => setOpenInput(!openInput)}
-                />
+                <img src={addIco} alt="addIco" className="List__btn" onClick={() => setOpenInput(!openInput)} />
                 <button
                     onClick={() =>
                         dispatch({
@@ -84,11 +75,7 @@ const List = ({ leftOrRight, list, openListName }) => {
                     if (index !== 2) {
                         return (
                             <button
-                                className={
-                                    openListName[leftOrRight + ""] === item
-                                        ? "List__btn open"
-                                        : "List__btn"
-                                }
+                                className={openListName[leftOrRight + ""] === item ? "List__btn open" : "List__btn"}
                                 onClick={() => openList(item)}
                             >
                                 {item}
@@ -126,9 +113,7 @@ const List = ({ leftOrRight, list, openListName }) => {
                               );
                           }
                       })
-                    : listName !== "" && (
-                          <h3 className="List__NoTracks">No tracks</h3>
-                      )}
+                    : listName !== "" && <h3 className="List__NoTracks">No tracks</h3>}
             </div>
             {Boolean(
                 openListName[leftOrRight + ""] !== "Default" &&

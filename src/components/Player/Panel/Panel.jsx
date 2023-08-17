@@ -3,20 +3,20 @@ import "./Panel.scss";
 import Cassette from "./Cassette/Cassette";
 
 const Panel = ({ music, prev, next, position }) => {
-    const [play, setPlay] = useState(false);//анімація плеєра
+    const [play, setPlay] = useState(false); //анімація плеєра
 
     useEffect(() => {
         if (play) {
             document.querySelector(".audio").play(); //запуск відтворення
         }
-    }, [play, music]);// Відтворити музику при зміні об'єкту music
+    }, [play, music]); // Відтворити музику при зміні об'єкту music
 
     const clickPlay = () => {
         if (play) {
-            setPlay(false);//стиль плеєра який не грає
+            setPlay(false); //стиль плеєра який не грає
             document.querySelector(".audio").pause(); //пауза
         } else {
-            setPlay(true);//стиль плеєра який грає
+            setPlay(true); //стиль плеєра який грає
             document.querySelector(".audio").play(); //запуск відтворення
         }
     };
@@ -26,21 +26,14 @@ const Panel = ({ music, prev, next, position }) => {
             <div className="panel__controls">
                 <button
                     onClick={prev}
-                    className={position>0?"panel__controls__button prev":"panel__controls__button prev none"}
+                    className={position > 0 ? "panel__controls__button prev" : "panel__controls__button prev none"}
                 ></button>
                 <button
                     onClick={clickPlay}
-                    className={
-                        play
-                            ? "panel__controls__button pause"
-                            : " panel__controls__button play"
-                    }
+                    className={play ? "panel__controls__button pause" : " panel__controls__button play"}
                     autoFocus="yes"
                 ></button>
-                <button
-                    onClick={next}
-                    className="panel__controls__button next"
-                ></button>
+                <button onClick={next} className="panel__controls__button next"></button>
             </div>
         </div>
     );

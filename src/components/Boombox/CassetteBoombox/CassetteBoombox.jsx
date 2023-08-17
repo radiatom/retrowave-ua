@@ -1,9 +1,9 @@
 import React from "react";
-import './CassetteBoombox.scss'
+import "./CassetteBoombox.scss";
 
-const CassetteBoombox = ({music,play}) => {
+const CassetteBoombox = ({ music, play }) => {
     return (
-        <div className={play?"cassetteBoombox play":"cassetteBoombox"}>
+        <div className={play ? "cassetteBoombox play" : "cassetteBoombox"}>
             <div
                 className="cassetteBoombox__cover"
                 style={{

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-const SoundAnalyzer = ({ setLevel,play }) => {
+const SoundAnalyzer = ({ setLevel, play }) => {
     const [audioContext, setAudioContext] = useState(null);
     const [analyser, setAnalyser] = useState(null);
 
@@ -13,7 +13,7 @@ const SoundAnalyzer = ({ setLevel,play }) => {
 
     useEffect(() => {
         const audioElement = document.getElementById("audio");
-        
+
         // const context = new AudioContext();
         const context = audioContext === null ? new AudioContext() : null;
         const analyserNode = context.createAnalyser();
@@ -30,19 +30,14 @@ const SoundAnalyzer = ({ setLevel,play }) => {
             context.delete();
         }
     }, []);
-        
+
     useEffect(() => {
-        if (analyser && audioContext&& play) {
+        if (analyser && audioContext && play) {
             const dataArray = new Uint8Array(analyser.frequencyBinCount);
 
             const updateFrequencyData = () => {
                 analyser.getByteFrequencyData(dataArray);
-                const frequencyValue =
-                    dataArray[
-                        Math.floor(
-                            (800 / audioContext.sampleRate) * dataArray.length
-                        )
-                    ];
+                const frequencyValue = dataArray[Math.floor((800 / audioContext.sampleRate) * dataArray.length)];
                 handleFrequencyUpdate(frequencyValue);
                 requestAnimationFrame(updateFrequencyData);
             };

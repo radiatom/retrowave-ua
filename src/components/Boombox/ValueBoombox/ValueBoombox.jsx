@@ -9,8 +9,8 @@ const ValueBoombox = () => {
 
     const [transform, setTransform] = useState({});
     useEffect(() => {
-      setTransform({ transform: `rotate(${value * 3 - 150}deg)` });
-    }, [value]);//анімується крутилка
+        setTransform({ transform: `rotate(${value * 3 - 150}deg)` });
+    }, [value]); //анімується крутилка
 
     const changeValue = (value) => {
         return (document.querySelector(".audio").volume = value);
@@ -26,18 +26,14 @@ const ValueBoombox = () => {
                     |
                 </div>
             </div>
-            <button
-                className="volume__noMute valueBoombox__icon"
-            ></button>
+            <button className="volume__noMute valueBoombox__icon"></button>
             <input
                 type="range"
                 min="0"
                 max="100"
                 step="1"
                 value={value}
-                onChange={(e) =>
-                    dispatch({ type: "setVolume", volume: e.target.value })
-                }
+                onChange={(e) => dispatch({ type: "setVolume", volume: e.target.value })}
                 className="volume__range valueBoombox__range"
             />
         </div>
