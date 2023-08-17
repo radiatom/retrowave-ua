@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./List.scss";
 import { useDispatch, useSelector } from "react-redux";
-import {  namesPlaylistsSelector } from "../../../selectorApp";
+import {  namesPlaylistsSelector, pageNumberSelector } from "../../../selectorApp";
 import Track from "./Track/Track";
 import { capitalizeFirstLetter } from "../../../function";
 import addIco from "./../../../img/icons/add.svg";
@@ -24,6 +24,7 @@ const List = ({ leftOrRight, list, openListName }) => {
     const openList = (name) => {
         dispatch({ type: "setList", position: leftOrRight, typeList: name }); //добавляємо новий масив на відображення , якщо typeList невідомий редюсеру він пойме що це новий плейлист та добавить зі списку нових плейлистів той що потрібно на відображення
         dispatch({ type: "setOpenListName", position: leftOrRight, name });//фіксуємо назву плейлиста який ми зараз відображаємо
+        dispatch({type:'setPageNumber',position:leftOrRight,number:1})//вертаємо початкове значення номера сторінки
     }; //відкрити плейлист за назвою назва має бути з великої літери
 
     const [inputText, setInputText] = useState("");
@@ -38,6 +39,9 @@ const List = ({ leftOrRight, list, openListName }) => {
         }
     };
     
+    const pagesNumbers=useSelector(pageNumberSelector)
+    const pageNumber=leftOrRight==='left'?pagesNumbers.left:pagesNumbers.right
+
     return (
         <div className="List">
             <div className="List__buttons">
@@ -47,6 +51,8 @@ const List = ({ leftOrRight, list, openListName }) => {
                     className="List__btn"
                     onClick={() => setOpenInput(!openInput)}
                 />
+                <button onClick={()=>dispatch({type:'setPageNumber',position:leftOrRight,number:pageNumber+1})} className="List__btn">+p</button>
+                <button onClick={()=>dispatch({type:'setPageNumber',position:leftOrRight,number:pageNumber-1})} className="List__btn">-p</button>
                 {namesPlaylists.map((item,index) => {
                     if(index!==2){return (
                         <button
@@ -76,7 +82,8 @@ const List = ({ leftOrRight, list, openListName }) => {
             <div className="List__tracks">
                 {list.length>0
                     ? list.map((track, index) => {
-                          return (
+                          if(index<pageNumber*10){
+                            return (
                               <Track
                                   id={track.id}
                                   title={track.title}
@@ -88,6 +95,7 @@ const List = ({ leftOrRight, list, openListName }) => {
                                   leftOrRight={leftOrRight}
                               />
                           );
+                        }
                       })
                     : <h3 className="List__NoTracks">No tracks</h3>}
             </div>

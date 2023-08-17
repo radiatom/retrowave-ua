@@ -15,6 +15,7 @@ const initialState = {
         left: [],
         right: [],
     },
+    pageNumber: { left: 1, right: 1 },
     openListName: { left: "", right: "" },
 };
 const reducer = (state = initialState, action) => {
@@ -171,6 +172,31 @@ const reducer = (state = initialState, action) => {
                     right: updatedRightList,
                 },
             };
+        }
+        case "setPageNumber": {
+            switch (action.position) {
+                case "left": {
+                    return {
+                        ...state,
+                        pageNumber: {
+                            ...state.pageNumber,
+                            left: action.number,
+                        },
+                    };
+                }
+                case "right": {
+                    return {
+                        ...state,
+                        pageNumber: {
+                            ...state.pageNumber,
+                            right: action.number,
+                        },
+                    };
+                }
+                default: {
+                    return state;
+                }
+            }
         }
         case "setList": {
             switch (action.position) {

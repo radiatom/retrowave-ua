@@ -28,3 +28,6 @@ export const openListNameSelector=(state)=>{
 export const numberOfTracksSelector=(state)=>{
       return state.dataPage.numberOfTracks
 }
+export const pageNumberSelector=(state)=>{
+      return state.dataPage.pageNumber
+}
