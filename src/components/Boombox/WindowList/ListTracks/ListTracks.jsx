@@ -11,7 +11,7 @@ const ListTracks = ({ list, pageNumber, openListName, leftOrRight }) => {
         return function cleanup() {
             container.removeEventListener("scroll", scrollHandler);
         };
-    }, []); //слідкувати за скролом
+    }, [pageNumber]); //слідкувати за скролом
 
     const scrollHandler = (e) => {
         if (e.target.scrollTop + 348 > e.target.scrollHeight) {
@@ -20,7 +20,15 @@ const ListTracks = ({ list, pageNumber, openListName, leftOrRight }) => {
                 position: leftOrRight,
                 number: pageNumber + 1,
             });
-        } //при висоті скролу  виконуємо фукцію
+        } //при при скролі до низу виконуємо фукцію
+
+        if (e.target.scrollTop + 348 < e.target.scrollHeight/2) {
+            dispatch({
+                type: "setPageNumber",
+                position: leftOrRight,
+                number: pageNumber - 1,
+            });
+        } //при при скролі до верха виконуємо фукцію
     }; //реакція на скрол
     return (
         <div className="listTracks" id={`${leftOrRight}listTracks`}>
