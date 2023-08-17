@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import "./List.scss";
 import { useDispatch, useSelector } from "react-redux";
-import {  namesPlaylistsSelector, pageNumberSelector } from "../../../selectorApp";
+import {
+    namesPlaylistsSelector,
+    pageNumberSelector,
+} from "../../../selectorApp";
 import Track from "./Track/Track";
 import { capitalizeFirstLetter } from "../../../function";
 import addIco from "./../../../img/icons/add.svg";
@@ -20,11 +23,12 @@ const List = ({ leftOrRight, list, openListName }) => {
         }
     }, [openInput]); //автозакривання
 
+    const listName = openListName[leftOrRight + ""];
 
     const openList = (name) => {
         dispatch({ type: "setList", position: leftOrRight, typeList: name }); //добавляємо новий масив на відображення , якщо typeList невідомий редюсеру він пойме що це новий плейлист та добавить зі списку нових плейлистів той що потрібно на відображення
-        dispatch({ type: "setOpenListName", position: leftOrRight, name });//фіксуємо назву плейлиста який ми зараз відображаємо
-        dispatch({type:'setPageNumber',position:leftOrRight,number:1})//вертаємо початкове значення номера сторінки
+        dispatch({ type: "setOpenListName", position: leftOrRight, name }); //фіксуємо назву плейлиста який ми зараз відображаємо
+        dispatch({ type: "setPageNumber", position: leftOrRight, number: 1 }); //вертаємо початкове значення номера сторінки
     }; //відкрити плейлист за назвою назва має бути з великої літери
 
     const [inputText, setInputText] = useState("");
@@ -38,9 +42,10 @@ const List = ({ leftOrRight, list, openListName }) => {
             setOpenInput(false);
         }
     };
-    
-    const pagesNumbers=useSelector(pageNumberSelector)
-    const pageNumber=leftOrRight==='left'?pagesNumbers.left:pagesNumbers.right
+
+    const pagesNumbers = useSelector(pageNumberSelector);
+    const pageNumber =
+        leftOrRight === "left" ? pagesNumbers.left : pagesNumbers.right;
 
     return (
         <div className="List">
@@ -51,21 +56,45 @@ const List = ({ leftOrRight, list, openListName }) => {
                     className="List__btn"
                     onClick={() => setOpenInput(!openInput)}
                 />
-                <button onClick={()=>dispatch({type:'setPageNumber',position:leftOrRight,number:pageNumber+1})} className="List__btn">+p</button>
-                <button onClick={()=>dispatch({type:'setPageNumber',position:leftOrRight,number:pageNumber-1})} className="List__btn">-p</button>
-                {namesPlaylists.map((item,index) => {
-                    if(index!==2){return (
-                        <button
-                            className={
-                                openListName[leftOrRight + ""] === item
-                                    ? "List__btn open"
-                                    : "List__btn"
-                            }
-                            onClick={() => openList(item)}
-                        >
-                            {item}
-                        </button>
-                    )};
+                <button
+                    onClick={() =>
+                        dispatch({
+                            type: "setPageNumber",
+                            position: leftOrRight,
+                            number: pageNumber + 1,
+                        })
+                    }
+                    className="List__btn"
+                >
+                    +p
+                </button>
+                <button
+                    onClick={() =>
+                        dispatch({
+                            type: "setPageNumber",
+                            position: leftOrRight,
+                            number: pageNumber - 1,
+                        })
+                    }
+                    className="List__btn"
+                >
+                    -p
+                </button>
+                {namesPlaylists.map((item, index) => {
+                    if (index !== 2) {
+                        return (
+                            <button
+                                className={
+                                    openListName[leftOrRight + ""] === item
+                                        ? "List__btn open"
+                                        : "List__btn"
+                                }
+                                onClick={() => openList(item)}
+                            >
+                                {item}
+                            </button>
+                        );
+                    }
                 })}
             </div>
             <input
@@ -80,24 +109,26 @@ const List = ({ leftOrRight, list, openListName }) => {
                 title="Enter only Latin letters"
             />
             <div className="List__tracks">
-                {list.length>0
+                {list.length > 0
                     ? list.map((track, index) => {
-                          if(index<pageNumber*10){
-                            return (
-                              <Track
-                                  id={track.id}
-                                  title={track.title}
-                                  index={index}
-                                  key={index}
-                                  rating={track.rating}
-                                  duration={track.duration}
-                                  openListName={openListName}
-                                  leftOrRight={leftOrRight}
-                              />
-                          );
-                        }
+                          if (index < pageNumber * 10) {
+                              return (
+                                  <Track
+                                      id={track.id}
+                                      title={track.title}
+                                      index={index}
+                                      key={index}
+                                      rating={track.rating}
+                                      duration={track.duration}
+                                      openListName={openListName}
+                                      leftOrRight={leftOrRight}
+                                  />
+                              );
+                          }
                       })
-                    : <h3 className="List__NoTracks">No tracks</h3>}
+                    : listName !== "" && (
+                          <h3 className="List__NoTracks">No tracks</h3>
+                      )}
             </div>
             {Boolean(
                 openListName[leftOrRight + ""] !== "Default" &&
