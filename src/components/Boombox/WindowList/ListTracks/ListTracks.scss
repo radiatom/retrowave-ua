@@ -11,4 +11,6 @@
         background-color: #b68221; /* колір "ползунка" скрола */
         border-radius: 5px; /* закруглені кути "ползунка" */
     }
+    scroll-behavior: smooth; /* Додаємо плавність скроллу */
 }
+// transition: scroll-behavior 0.5s ease-in-out;

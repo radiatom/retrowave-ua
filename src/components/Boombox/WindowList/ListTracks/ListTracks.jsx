@@ -22,7 +22,7 @@ const ListTracks = ({ list, pageNumber, openListName, leftOrRight }) => {
             });
         } //при при скролі до низу виконуємо фукцію
 
-        if (e.target.scrollTop + 348 < e.target.scrollHeight/2) {
+        if (e.target.scrollTop + 348 < e.target.scrollHeight / 2) {
             dispatch({
                 type: "setPageNumber",
                 position: leftOrRight,
@@ -34,7 +34,9 @@ const ListTracks = ({ list, pageNumber, openListName, leftOrRight }) => {
         <div className="listTracks" id={`${leftOrRight}listTracks`}>
             {list.length > 0
                 ? list.map((track, index) => {
-                      if (index < pageNumber * 14) {
+                      console.log((index + 14) * pageNumber - 2);
+                      if (index < pageNumber * 14 && index > pageNumber * 14 - 42) {
+                          //відображати порціями по 14треків на одну сторінку, але якщо треків білше 42(три сторінки) то не відображати перші трекі
                           return (
                               <Track
                                   id={track.id}

@@ -45,18 +45,6 @@ const WindowList = ({ leftOrRight, list, openListName }) => {
         <div className="windowList">
             <div className="windowList__buttons">
                 <img src={addIco} alt="addIco" className="windowList__btn" onClick={() => setOpenInput(!openInput)} />
-                <button
-                    onClick={() =>
-                        dispatch({
-                            type: "setPageNumber",
-                            position: leftOrRight,
-                            number: pageNumber - 1,
-                        })
-                    }
-                    className="windowList__btn"
-                >
-                    -p
-                </button>
                 {namesPlaylists.map((item, index) => {
                     if (index !== 2) {
                         return (
