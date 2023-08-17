@@ -5,7 +5,10 @@
     overflow-y: scroll;
     scrollbar-width: none;
     &::-webkit-scrollbar {
-        width: 0;
-        height: 0;
+        width: 7px; //висота повзунка
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: #b68221; /* колір "ползунка" скрола */
+        border-radius: 5px; /* закруглені кути "ползунка" */
     }
 }

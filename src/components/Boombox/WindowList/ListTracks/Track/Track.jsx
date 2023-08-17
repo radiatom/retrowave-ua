@@ -1,10 +1,10 @@
 import React from "react";
 import "./Track.scss";
-import Rating from "./../../../Rating/Rating";
-import { newTime } from "../../../../function";
+import Rating from "./../../../../Rating/Rating";
+import { newTime } from "../../../../../function";
 import { useState } from "react";
-import addIco from "./../../../../img/icons/add.svg";
-import { namesPlaylistsSelector } from "../../../../selectorApp";
+import addIco from "./../../../../../img/icons/add.svg";
+import { namesPlaylistsSelector } from "../../../../../selectorApp";
 import { useDispatch, useSelector } from "react-redux";
 
 const Track = ({ title, index, rating, duration, id, openListName, leftOrRight }) => {
