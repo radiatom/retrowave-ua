@@ -1,0 +1,11 @@
+.listTracks {
+    padding: 5px 5px 0 5px;
+    position: relative;
+    height: 87%;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+    }
+}

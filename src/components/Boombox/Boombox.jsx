@@ -38,7 +38,7 @@ const Boombox = ({ music, prev, next, audioRef, setOpenBoombox, position }) => {
 
     const listLeft = useSelector(leftListSelector);
     const listRight = useSelector(rightListSelector);
-    const openListName = useSelector(openListNameSelector);
+    const openListsNames = useSelector(openListNameSelector);
 
     return (
         <div className="boombox">
@@ -48,10 +48,10 @@ const Boombox = ({ music, prev, next, audioRef, setOpenBoombox, position }) => {
             <CassetteBoombox music={music} play={play} />
 
             <div className="boombox__left">
-                <WindowList leftOrRight="left" list={listLeft} openListName={openListName} />
+                <WindowList leftOrRight="left" list={listLeft} openListName={openListsNames["left"]} />
             </div>
             <div className="boombox__right">
-                <WindowList leftOrRight="right" list={listRight} openListName={openListName} />
+                <WindowList leftOrRight="right" list={listRight} openListName={openListsNames["right"]} />
             </div>
             <PanelBoombox
                 play={play}

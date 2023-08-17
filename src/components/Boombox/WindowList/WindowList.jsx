@@ -2,10 +2,11 @@ import React, { useState } from "react";
 import "./WindowList.scss";
 import { useDispatch, useSelector } from "react-redux";
 import { namesPlaylistsSelector, pageNumberSelector } from "../../../selectorApp";
-import Track from "./Track/Track";
 import { capitalizeFirstLetter } from "../../../function";
 import addIco from "./../../../img/icons/add.svg";
 import { useEffect } from "react";
+import BtnDeleteList from "./BtnDeleteList/BtnDeleteList";
+import ListTracks from "./ListTracks/ListTracks";
 
 const WindowList = ({ leftOrRight, list, openListName }) => {
     const namesPlaylists = useSelector(namesPlaylistsSelector);
@@ -19,8 +20,6 @@ const WindowList = ({ leftOrRight, list, openListName }) => {
             }, 20000);
         }
     }, [openInput]); //автозакривання
-
-    const listName = openListName[leftOrRight + ""];
 
     const openList = (name) => {
         dispatch({ type: "setList", position: leftOrRight, typeList: name }); //добавляємо новий масив на відображення , якщо typeList невідомий редюсеру він пойме що це новий плейлист та добавить зі списку нових плейлистів той що потрібно на відображення
@@ -75,7 +74,7 @@ const WindowList = ({ leftOrRight, list, openListName }) => {
                     if (index !== 2) {
                         return (
                             <button
-                                className={openListName[leftOrRight + ""] === item ? "windowList__btn open" : "windowList__btn"}
+                                className={openListName === item ? "windowList__btn open" : "windowList__btn"}
                                 onClick={() => openList(item)}
                             >
                                 {item}
@@ -95,44 +94,8 @@ const WindowList = ({ leftOrRight, list, openListName }) => {
                 pattern="[A-Za-z]*"
                 title="Enter only Latin letters"
             />
-            <div className="windowList__tracks">
-                {list.length > 0
-                    ? list.map((track, index) => {
-                          if (index < pageNumber * 10) {
-                              return (
-                                  <Track
-                                      id={track.id}
-                                      title={track.title}
-                                      index={index}
-                                      key={index}
-                                      rating={track.rating}
-                                      duration={track.duration}
-                                      openListName={openListName}
-                                      leftOrRight={leftOrRight}
-                                  />
-                              );
-                          }
-                      })
-                    : listName !== "" && <h3 className="windowList__NoTracks">No tracks</h3>}
-            </div>
-            {Boolean(
-                openListName[leftOrRight + ""] !== "Default" &&
-                    openListName[leftOrRight + ""] !== "Random" &&
-                    openListName[leftOrRight + ""] !== "Rating" &&
-                    openListName[leftOrRight + ""] !== ""
-            ) && (
-                <button
-                    className="windowList__delete"
-                    onClick={() =>
-                        dispatch({
-                            type: "deleteNewList",
-                            name: openListName[leftOrRight + ""],
-                        })
-                    }
-                >
-                    Delete this list
-                </button>
-            )}
+            <ListTracks list={list} pageNumber={pageNumber} openListName={openListName} leftOrRight={leftOrRight} />
+            <BtnDeleteList openListName={openListName} />
         </div>
     );
 };
