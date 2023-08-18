@@ -6,19 +6,21 @@ import { useState } from "react";
 import addIco from "./../../../../../img/icons/add.svg";
 import { namesPlaylistsSelector, openListNameSelector } from "../../../../../selectorApp";
 import { useDispatch, useSelector } from "react-redux";
+import BtnDeleteTrack from "./BtnDeleteTrack/BtnDeleteTrack";
 
 const Track = ({ title, index, rating, duration, id,  leftOrRight }) => {
     const openListName = useSelector(openListNameSelector)
     const [active, setActive] = useState(false);
     const namesPlaylists = useSelector(namesPlaylistsSelector);
     const dispatch = useDispatch();
-    const click = (name) => {
+    const clickAddingTrack = (name) => {
         dispatch({
             type: "addTrackIntoList",
             intoList: name,
             currentList: openListName[leftOrRight + ""],
             id: id,
         });
+        
         const secondNameOpenList = { ...openListName };
         delete secondNameOpenList[leftOrRight + ""];
         if (Object.values(secondNameOpenList)[0] === name) {
@@ -32,6 +34,22 @@ const Track = ({ title, index, rating, duration, id,  leftOrRight }) => {
 
         setActive(false);
     };
+    const clickDeleteTrack = () => {
+        dispatch({type:'deleteTrackWithList',currentList:openListName[leftOrRight + ""],id})
+        dispatch({ type: "setList", position: leftOrRight, typeList: openListName[leftOrRight + ""] }); //добавляємо новий масив на відображення 
+       
+        const secondNameOpenList = { ...openListName };
+        delete secondNameOpenList[leftOrRight + ""];
+        if (Object.values(secondNameOpenList)[0] === openListName[leftOrRight + ""]) {
+            if (leftOrRight === "left") {
+                //якщо в правому вікні робиться операція до в лівому добавиться нова пісня
+                dispatch({ type: "setList", position: "right", typeList: openListName[leftOrRight + ""] });
+            } else {
+                dispatch({ type: "setList", position: "left", typeList: openListName[leftOrRight + ""] });
+            }
+        }
+    };
+   
     return (
         <div className="track">
             <div className="track__position">{index + 1}</div>
@@ -50,13 +68,14 @@ const Track = ({ title, index, rating, duration, id,  leftOrRight }) => {
                 {namesPlaylists.map((name, index) => {
                     if (index > 2) {
                         return (
-                            <button className="track__btn" onClick={() => click(name)}>
+                            <button className="track__btn" onClick={() => clickAddingTrack(name)}>
                                 {name}
                             </button>
                         );
                     }
                 })}
             </div>
+            <BtnDeleteTrack openListName={openListName[leftOrRight + ""]}clickDeleteTrack={clickDeleteTrack}/>
         </div>
     );
 };

@@ -267,13 +267,28 @@ const reducer = (state = initialState, action) => {
             if (action.intoList === state.nameCurrentListPlayer) {
                 return {
                     ...state,
-                    numberOfTracks: state[action.intoList + "List"].length + 1,
+                    numberOfTracks: state[action.intoList + "List"].length + 1,//для оновлення плеєва
                     [action.intoList + "List"]: [...state[action.intoList + "List"], track],
                 };
             } else {
                 return {
                     ...state,
                     [action.intoList + "List"]: [...state[action.intoList + "List"], track],
+                };
+            }
+        }
+        case "deleteTrackWithList": {
+            const newList = state[action.currentList + "List"].filter((item) => item.id !== action.id);
+            if (action.currentList === state.nameCurrentListPlayer) {
+                return {
+                    ...state,
+                    numberOfTracks: state[action.currentList + "List"].length -1,//для оновлення плеєра
+                    [action.currentList + "List"]: newList,
+                };
+            } else {
+                return {
+                    ...state,
+                    [action.currentList + "List"]: newList,
                 };
             }
         }
