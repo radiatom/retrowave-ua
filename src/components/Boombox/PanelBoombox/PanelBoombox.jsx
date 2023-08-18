@@ -12,10 +12,12 @@ const PanelBoombox = ({ music, prev, next, position, play, setPlay, setOpenBoomb
         setPlay(true); //стиль плеєра який грає
         document.querySelector(".audio").play(); //запуск відтворення
     };
+    const clickEject = () => {
+        setOpenBoombox(false);
+    };
     const clickPause = () => {
         setPlay(false); //стиль плеєра який не грає
         document.querySelector(".audio").pause(); //пауза
-        setOpenBoombox(false);
     };
     return (
         <div className={play ? "panelBoombox play" : "panelBoombox"}>
@@ -27,9 +29,7 @@ const PanelBoombox = ({ music, prev, next, position, play, setPlay, setOpenBoomb
                     className={position > 0 ? "panelBoombox__controls__button prev" : "panelBoombox__controls__button prev none"}
                 ></button>
                 <button onClick={next} className="panelBoombox__controls__button next"></button>
-                <button onClick={() => clickPause()} className="panelBoombox__controls__button">
-                    <div className="panelBoombox__controls__button stop"></div>
-                </button>
+                <button onClick={() => clickEject()} className="panelBoombox__controls__button eject"></button>
                 <button onClick={() => clickPause()} className="panelBoombox__controls__button pause"></button>
             </div>
         </div>

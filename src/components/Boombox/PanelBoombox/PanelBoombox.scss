@@ -41,14 +41,8 @@
             &.next {
                 background-image: url("/img/icons/next.svg");
             }
-            &.stop{
-                background-color: aliceblue;
-                width: 20px;
-                height: 20px;
-                border-radius: 5px;
-                &:hover{
-                    transform: scale(1.1);
-                }
+            &.eject{
+                background: url('/img/icons/eject.png')7px 6px/70% 70% no-repeat;
             }
         }
     }
