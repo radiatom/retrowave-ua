@@ -37,3 +37,7 @@ export const updateValueById = (array, idToFind, newValue) => {
     });
     return updatedArray;
 }; 
+export const containsLatinAndDigits=(inputString)=> {
+    const pattern = /^[a-zA-Z0-9]+$/;
+    return pattern.test(inputString);
+  }

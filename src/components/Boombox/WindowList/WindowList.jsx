@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./WindowList.scss";
 import { useDispatch, useSelector } from "react-redux";
 import { namesPlaylistsSelector, pageNumberSelector } from "../../../selectorApp";
-import { capitalizeFirstLetter } from "../../../function";
+import { capitalizeFirstLetter, containsLatinAndDigits } from "../../../function";
 import addIco from "./../../../img/icons/add.svg";
 import { useEffect } from "react";
 import BtnDeleteList from "./BtnDeleteList/BtnDeleteList";
@@ -32,10 +32,10 @@ const WindowList = ({ leftOrRight, list, openListName }) => {
     const [inputText, setInputText] = useState("");
     const pressEnter = (event) => {
         if (event.key === "Enter") {
-            dispatch({
+            if(containsLatinAndDigits(inputText)){dispatch({
                 type: "addNewList",
                 newName: capitalizeFirstLetter(inputText),
-            }); //створюємо всій лейлист
+            })}; //створюємо всій лейлист якщо там є латинські букви чи цифри
             setInputText("");
             setOpenInput(false);
         }
@@ -62,12 +62,10 @@ const WindowList = ({ leftOrRight, list, openListName }) => {
                 className={openInput ? "windowList__input open" : "windowList__input"}
                 type="text"
                 name="namelist"
-                placeholder="Enter new name list"
+                placeholder="Enter new name list (only Latin letters)"
                 value={inputText}
                 onChange={(event) => setInputText(event.target.value)}
                 onKeyDown={pressEnter}
-                pattern="[A-Za-z]*"
-                title="Enter only Latin letters"
             />
             <ListTracks list={list} pageNumber={pageNumber} openListName={openListName} leftOrRight={leftOrRight} />
             <BtnDeleteList openListName={openListName} />

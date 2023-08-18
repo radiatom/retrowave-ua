@@ -8,8 +8,8 @@ import { namesPlaylistsSelector, openListNameSelector } from "../../../../../sel
 import { useDispatch, useSelector } from "react-redux";
 import BtnDeleteTrack from "./BtnDeleteTrack/BtnDeleteTrack";
 
-const Track = ({ title, index, rating, duration, id,  leftOrRight }) => {
-    const openListName = useSelector(openListNameSelector)
+const Track = ({ title, index, rating, duration, id, leftOrRight }) => {
+    const openListName = useSelector(openListNameSelector);
     const [active, setActive] = useState(false);
     const namesPlaylists = useSelector(namesPlaylistsSelector);
     const dispatch = useDispatch();
@@ -20,7 +20,7 @@ const Track = ({ title, index, rating, duration, id,  leftOrRight }) => {
             currentList: openListName[leftOrRight + ""],
             id: id,
         });
-        
+
         const secondNameOpenList = { ...openListName };
         delete secondNameOpenList[leftOrRight + ""];
         if (Object.values(secondNameOpenList)[0] === name) {
@@ -35,9 +35,9 @@ const Track = ({ title, index, rating, duration, id,  leftOrRight }) => {
         setActive(false);
     };
     const clickDeleteTrack = () => {
-        dispatch({type:'deleteTrackWithList',currentList:openListName[leftOrRight + ""],id})
-        dispatch({ type: "setList", position: leftOrRight, typeList: openListName[leftOrRight + ""] }); //добавляємо новий масив на відображення 
-       
+        dispatch({ type: "deleteTrackWithList", currentList: openListName[leftOrRight + ""], id });
+        dispatch({ type: "setList", position: leftOrRight, typeList: openListName[leftOrRight + ""] }); //добавляємо новий масив на відображення
+
         const secondNameOpenList = { ...openListName };
         delete secondNameOpenList[leftOrRight + ""];
         if (Object.values(secondNameOpenList)[0] === openListName[leftOrRight + ""]) {
@@ -49,7 +49,7 @@ const Track = ({ title, index, rating, duration, id,  leftOrRight }) => {
             }
         }
     };
-   
+
     return (
         <div className="track">
             <div className="track__position">{index + 1}</div>
@@ -75,7 +75,7 @@ const Track = ({ title, index, rating, duration, id,  leftOrRight }) => {
                     }
                 })}
             </div>
-            <BtnDeleteTrack openListName={openListName[leftOrRight + ""]}clickDeleteTrack={clickDeleteTrack}/>
+            <BtnDeleteTrack openListName={openListName[leftOrRight + ""]} clickDeleteTrack={clickDeleteTrack} />
         </div>
     );
 };
