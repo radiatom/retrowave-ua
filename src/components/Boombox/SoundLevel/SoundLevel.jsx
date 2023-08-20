@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./SoundLevel.scss";
-import SoundAnalyzer from "../ValueBoombox/SoundAnalyzer";
+import SoundAnalyzer from "./SoundAnalyzer";
+import SoundAnalyzer1 from "./SoundAnalyzer1";
+
 
 const SoundLevel = ({ play, audioRef }) => {
     const [level, setLevel] = useState(0);
@@ -27,6 +29,7 @@ const SoundLevel = ({ play, audioRef }) => {
     return (
         <div className="soundLevel" onClick={() => preparation()}>
             {play ? <SoundAnalyzer setLevel={setLevel} play={play} /> : ""}
+            {/* <SoundAnalyzer1 audioRef={audioRef} frequency={800} setLevel={setLevel}/> */}
             <div className={level >= 1 ? "soundLevel__level lightGreen" : "soundLevel__level"}></div>
             <div className={level >= 2 ? "soundLevel__level lightGreen" : "soundLevel__level"}></div>
             <div className={level >= 3 ? "soundLevel__level lightYellow" : "soundLevel__level"}></div>

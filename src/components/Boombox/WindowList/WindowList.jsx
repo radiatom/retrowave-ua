@@ -19,7 +19,7 @@ const WindowList = ({ leftOrRight, list, openListName }) => {
         if (openInput) {
             setTimeout(() => {
                 setOpenInput(false);
-            }, 20000);
+            }, 30000);
         }
     }, [openInput]); //автозакривання
 
