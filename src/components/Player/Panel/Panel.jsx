@@ -2,22 +2,22 @@ import React, { useEffect, useState } from "react";
 import "./Panel.scss";
 import Cassette from "./Cassette/Cassette";
 
-const Panel = ({ music, prev, next, position }) => {
+const Panel = ({ music, prev, next, position,audioRef }) => {
     const [play, setPlay] = useState(false); //анімація плеєра
 
     useEffect(() => {
         if (play) {
-            document.querySelector(".audio").play(); //запуск відтворення
+            audioRef.current.play(); //запуск відтворення
         }
     }, [play, music]); // Відтворити музику при зміні об'єкту music
 
     const clickPlay = () => {
         if (play) {
             setPlay(false); //стиль плеєра який не грає
-            document.querySelector(".audio").pause(); //пауза
+            audioRef.current.pause(); //пауза
         } else {
             setPlay(true); //стиль плеєра який грає
-            document.querySelector(".audio").play(); //запуск відтворення
+            audioRef.current.play(); //запуск відтворення
         }
     };
     return (

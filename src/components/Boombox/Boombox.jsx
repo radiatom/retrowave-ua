@@ -12,29 +12,29 @@ import { newTimeForBoombox } from "../../function";
 const Boombox = ({ music, prev, next, audioRef, setOpenBoombox, position }) => {
     const [play, setPlay] = useState(false); //анімація плеєра
 
-    // useEffect(() => {
-    //     if (audioRef.current) {
-    //         audioRef.current.addEventListener("timeupdate", handleTimeUpdate);
-    //     }
-    //     return () => {
-    //         if (audioRef.current) {
-    //             audioRef.current.removeEventListener("timeupdate", handleTimeUpdate);
-    //         }
-    //     };
-    // }, []); //слідкуємо за аудіо треком
+    useEffect(() => {
+        if (audioRef.current) {
+            audioRef.current.addEventListener("timeupdate", handleTimeUpdate);
+        }
+        return () => {
+            if (audioRef.current) {
+                audioRef.current.removeEventListener("timeupdate", handleTimeUpdate);
+            }
+        };
+    }, []); //слідкуємо за аудіо треком
 
     const [currentTime, setCurrentTime] = useState("000"); //лічильник часу
-    // const handleTimeUpdate = () => {
-    //     if (audioRef.current) {
-    //         setCurrentTime(newTimeForBoombox(Math.round(audioRef.current.currentTime)));
-    //     }
-    // }; //оновлюємо лічильник слідкуючи за аудіо
+    const handleTimeUpdate = () => {
+        if (audioRef.current) {
+            setCurrentTime(newTimeForBoombox(Math.round(audioRef.current.currentTime)));
+        }
+    }; //оновлюємо лічильник слідкуючи за аудіо
 
-    // useEffect(() => {
-    //     if (currentTime >= parseInt(music.duration.toString().substr(0, 3))) {
-    //         next();
-    //     }
-    // }, [currentTime]); //закінчиться час то після перемикнеться далі
+    useEffect(() => {
+        if (currentTime >= parseInt(music.duration.toString().substr(0, 3))) {
+            next();
+        }
+    }, [currentTime]); //закінчиться час то після перемикнеться далі
 
     const listLeft = useSelector(leftListSelector);
     const listRight = useSelector(rightListSelector);
@@ -43,7 +43,7 @@ const Boombox = ({ music, prev, next, audioRef, setOpenBoombox, position }) => {
     return (
         <div className="boombox">
             <div className="boombox__timer">{currentTime}</div>
-            <ValueBoombox />
+            <ValueBoombox  audioRef={audioRef}/>
             <SoundLevel audioRef={audioRef} play={play} />
             <CassetteBoombox music={music} play={play} />
 
@@ -61,6 +61,7 @@ const Boombox = ({ music, prev, next, audioRef, setOpenBoombox, position }) => {
                 next={next}
                 position={position}
                 setOpenBoombox={setOpenBoombox}
+                audioRef={audioRef}
             />
         </div>
     );

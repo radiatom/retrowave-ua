@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import "./App.scss";
 import { addMusics } from "./redux/reducer";
 import { useDispatch, useSelector } from "react-redux";
@@ -11,6 +11,7 @@ import {
 } from "./selectorApp";
 import Boombox from "./components/Boombox/Boombox";
 import Player from "./components/Player/Player";
+import AudioWaveForm from "./components/AudioWaveForm/AudioWaveForm";
 
 function App() {
     const [back, setBack] = useState(false); //блюр фонової картинки
@@ -50,6 +51,35 @@ function App() {
             // setPosition(0);
         }
     };
+
+    const [analyzerData, setAnalyzerData] = useState(null);
+    const audioAnalyzer = () => {
+        // create a new AudioContext
+        const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+        // створити вузол аналізатора з розміром буфера 2048
+        const analyzer = audioCtx.createAnalyser();
+        analyzer.fftSize = 2048;
+
+        const bufferLength = analyzer.frequencyBinCount;
+        const dataArray = new Uint8Array(bufferLength);
+        const source = audioCtx.createMediaElementSource(audioRef.current);
+        source.connect(analyzer);
+        source.connect(audioCtx.destination);
+        source.onended = () => {
+            source.disconnect();
+        };
+
+        // встановити стан analiserData за допомогою аналізатора, bufferLength і dataArray
+        setAnalyzerData({ analyzer, bufferLength, dataArray });
+    };
+    const [analiz, setAnaliz] = useState(false);
+    useEffect(() => {
+        setAnaliz(true);
+        if (analiz) {
+            audioAnalyzer();
+        }
+    }, [analiz]); //запуск візуалізатора еквалайзера
+
     return (
         music && (
             <div
@@ -61,6 +91,7 @@ function App() {
                 <div className={back ? "app__blur active" : "app__blur"}></div>
                 <audio className="audio" src={music.streamUrl} ref={audioRef} id="audio"></audio>
                 <h1 className="app__h1">Retrowave Radio UA</h1>
+                <div className="app__audioWaveForm">{analyzerData && <AudioWaveForm analyzerData={analyzerData} />}</div>
                 <div className={openBoombox ? "app__boombox open" : "app__boombox"}>
                     <Boombox
                         music={music}

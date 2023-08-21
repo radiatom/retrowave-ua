@@ -10,7 +10,7 @@ const Player = ({ setOpenBoombox, music, prev, next, position, audioRef }) => {
     return (
         <div className="player">
             <Logo setOpenBoombox={setOpenBoombox} />
-            <Panel music={music} prev={prev} next={next} position={position} />
+            <Panel music={music} prev={prev} next={next} position={position} audioRef={audioRef}/>
             <h2 className="player__title">
                 <span>{music.idTrack}.</span> {music.title}
             </h2>

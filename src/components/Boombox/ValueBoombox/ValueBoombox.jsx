@@ -3,21 +3,18 @@ import "./ValueBoombox.scss";
 import { useDispatch, useSelector } from "react-redux";
 import { volumeSelector } from "../../../selectorApp";
 
-const ValueBoombox = () => {
+const ValueBoombox = ({audioRef}) => {
     const value = useSelector(volumeSelector); //значення величини звуку
     const dispatch = useDispatch();
 
     const [transform, setTransform] = useState({});
-    useEffect(() => {
-        setTransform({ transform: `rotate(${value * 3 - 150}deg)` });
-    }, [value]); //анімується крутилка
-
     const changeValue = (value) => {
-        return (document.querySelector(".audio").volume = value);
+        return (audioRef.current.volume = value);
     }; //функція зміни значення в тегові аудіо
     useEffect(() => {
-        changeValue(value / 100);
-    }, [value]); //встановлення гучності за допомогою двохсторонього звязування
+        setTransform({ transform: `rotate(${value * 3 - 150}deg)` });//анімується крутилка
+        changeValue(value / 100);//встановлення гучності за допомогою двохсторонього звязування
+    }, [value]); 
 
     return (
         <div className="valueBoombox">

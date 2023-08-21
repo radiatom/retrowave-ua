@@ -1,23 +1,23 @@
 import React, { useEffect } from "react";
 import "./PanelBoombox.scss";
 
-const PanelBoombox = ({ music, prev, next, position, play, setPlay, setOpenBoombox }) => {
+const PanelBoombox = ({ music, prev, next, position, play, setPlay, setOpenBoombox,audioRef}) => {
     useEffect(() => {
         if (play) {
-            document.querySelector(".audio").play(); //запуск відтворення
+            audioRef.current.play(); //запуск відтворення
         }
     }, [play, music]); // Відтворити музику при зміні об'єкту music
 
     const clickPlay = () => {
         setPlay(true); //стиль плеєра який грає
-        document.querySelector(".audio").play(); //запуск відтворення
+        audioRef.current.play(); //запуск відтворення
     };
     const clickEject = () => {
         setOpenBoombox(false);
     };
     const clickPause = () => {
         setPlay(false); //стиль плеєра який не грає
-        document.querySelector(".audio").pause(); //пауза
+        audioRef.current.pause(); //пауза
     };
     return (
         <div className={play ? "panelBoombox play" : "panelBoombox"}>

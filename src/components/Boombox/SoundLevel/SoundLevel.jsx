@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from "react";
 import "./SoundLevel.scss";
+// import SoundAnalyzer0 from "./SoundAnalyzer0";
 import SoundAnalyzer from "./SoundAnalyzer";
-import SoundAnalyzer1 from "./SoundAnalyzer1";
 
 
 const SoundLevel = ({ play, audioRef }) => {
     const [level, setLevel] = useState(0);
+    useEffect(() => {
+        console.log(level)
+    }, [level]);
     useEffect(() => {
         if (play === true) {
             setLevel(1);
@@ -26,10 +29,11 @@ const SoundLevel = ({ play, audioRef }) => {
         console.log(array[40]);
     };
 
+
+    
     return (
         <div className="soundLevel" onClick={() => preparation()}>
-            {play ? <SoundAnalyzer setLevel={setLevel} play={play} /> : ""}
-            {/* <SoundAnalyzer1 audioRef={audioRef} frequency={800} setLevel={setLevel}/> */}
+            {/* <SoundAnalyzer audioRef={audioRef} frequency={800} setLevel={setLevel} /> */}
             <div className={level >= 1 ? "soundLevel__level lightGreen" : "soundLevel__level"}></div>
             <div className={level >= 2 ? "soundLevel__level lightGreen" : "soundLevel__level"}></div>
             <div className={level >= 3 ? "soundLevel__level lightYellow" : "soundLevel__level"}></div>

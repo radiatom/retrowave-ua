@@ -1,51 +1,35 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 
-const SoundAnalyzer = ({ setLevel, play }) => {
-    const [audioContext, setAudioContext] = useState(null);
-    const [analyser, setAnalyser] = useState(null);
+const FrequencyAnalyzer = React.memo(({ audioRef, frequency, setLevel }) => {
+  useEffect(() => {
+        if (!audioRef.current) return;
 
-    const handleFrequencyUpdate = (value) => {
-        // Оновлення стану або виконання інших дій на основі значення частоти
-        const newValue = Math.round((value - 100) / 10);
-        setLevel(newValue);
-        console.log(newValue);
-    };
+        const audioContext = new AudioContext();
+        const analyserNode = audioContext.createAnalyser();
 
-    useEffect(() => {
-        const audioElement = document.getElementById("audio");
-
-        // const context = new AudioContext();
-        const context = audioContext === null ? new AudioContext() : null;
-        const analyserNode = context.createAnalyser();
-        const sourceNode = context.createMediaElementSource(audioElement);
-
+        const sourceNode = audioContext.createMediaElementSource(audioRef.current);
         sourceNode.connect(analyserNode);
-        analyserNode.connect(context.destination);
+        analyserNode.connect(audioContext.destination);
 
-        analyserNode.fftSize = 2048; // Розмір FFT (Fast Fourier Transform)
+        analyserNode.fftSize = 2048;
 
-        setAudioContext(context);
-        setAnalyser(analyserNode);
-        if (play === false) {
-            context.delete();
-        }
-    }, []);
+        const dataArray = new Uint8Array(analyserNode.frequencyBinCount);
 
-    useEffect(() => {
-        if (analyser && audioContext && play) {
-            const dataArray = new Uint8Array(analyser.frequencyBinCount);
-
-            const updateFrequencyData = () => {
-                analyser.getByteFrequencyData(dataArray);
-                const frequencyValue = dataArray[Math.floor((800 / audioContext.sampleRate) * dataArray.length)];
-                handleFrequencyUpdate(frequencyValue);
-                requestAnimationFrame(updateFrequencyData);
-            };
-
+        const updateFrequencyData = () => {
+            analyserNode.getByteFrequencyData(dataArray);
+            const frequencyValue = dataArray[Math.floor((frequency / audioContext.sampleRate) * dataArray.length)];
+            console.log('yes')
+            setLevel(Math.round((frequencyValue - 100) / 10))  
             requestAnimationFrame(updateFrequencyData);
-        }
-    }, [analyser, audioContext]);
+        };
+        requestAnimationFrame(updateFrequencyData);
 
-    return null; // Даний компонент не відображає нічого, а лише використовується для аналізу
-};
-export default SoundAnalyzer;
+        return () => {
+            audioContext.close();
+        };
+    }, [audioRef, frequency, setLevel]);
+
+    return null;
+})
+
+export default FrequencyAnalyzer;

@@ -9,6 +9,7 @@
     &__position {
         width: 7%;
         text-align: center;
+        cursor: default;
     }
     &__title {
         white-space: nowrap; /* Забороняє переноси */
@@ -22,6 +23,7 @@
     }
     &__duration{
       width: 10%;
+      cursor: default;
     }
     &__addIco{
       width: 20px;
