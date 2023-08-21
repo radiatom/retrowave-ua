@@ -48,10 +48,10 @@ const Boombox = ({ music, prev, next, audioRef, setOpenBoombox, position }) => {
             <CassetteBoombox music={music} play={play} />
 
             <div className="boombox__left">
-                <WindowList leftOrRight="left" list={listLeft} openListName={openListsNames["left"]} />
+                <WindowList leftOrRight="left" list={listLeft} openListName={openListsNames["left"]} portion = {14} lineHight = {20}/>
             </div>
             <div className="boombox__right">
-                <WindowList leftOrRight="right" list={listRight} openListName={openListsNames["right"]} />
+                <WindowList leftOrRight="right" list={listRight} openListName={openListsNames["right"]} portion = {14} lineHight = {20}/>
             </div>
             <PanelBoombox
                 play={play}

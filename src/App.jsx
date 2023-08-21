@@ -12,6 +12,7 @@ import {
 import Boombox from "./components/Boombox/Boombox";
 import Player from "./components/Player/Player";
 import AudioWaveForm from "./components/AudioWaveForm/AudioWaveForm";
+import PlayList from "./components/PlayList/PlayList";
 
 function App() {
     const [back, setBack] = useState(false); //блюр фонової картинки
@@ -23,6 +24,7 @@ function App() {
     const numberOfTracks = useSelector(numberOfTracksSelector); //кількість треків в листі що відтворюється
     const dispatch = useDispatch();
     const audioRef = useRef(null);
+    const appRef = useRef(null);
 
     useEffect(() => {
         setBack(true); //заблюрити фон
@@ -80,6 +82,11 @@ function App() {
         }
     }, [analiz]); //запуск візуалізатора еквалайзера
 
+    const [widthDevice, setWidthDevice] = useState(null);
+    useEffect(() => {
+        setWidthDevice(appRef.current.offsetWidth);
+    }, [appRef]);
+
     return (
         music && (
             <div
@@ -87,20 +94,25 @@ function App() {
                 style={{
                     backgroundImage: `url( ${music.artworkUrl})`,
                 }}
+                ref={appRef}
             >
                 <div className={back ? "app__blur active" : "app__blur"}></div>
                 <audio className="audio" src={music.streamUrl} ref={audioRef} id="audio"></audio>
                 <h1 className="app__h1">Retrowave Radio UA</h1>
                 <div className="app__audioWaveForm">{analyzerData && <AudioWaveForm analyzerData={analyzerData} />}</div>
                 <div className={openBoombox ? "app__boombox open" : "app__boombox"}>
-                    <Boombox
-                        music={music}
-                        prev={prev}
-                        next={next}
-                        position={position}
-                        audioRef={audioRef}
-                        setOpenBoombox={setOpenBoombox}
-                    />
+                    {widthDevice > 1024 ? (
+                        <Boombox
+                            music={music}
+                            prev={prev}
+                            next={next}
+                            position={position}
+                            audioRef={audioRef}
+                            setOpenBoombox={setOpenBoombox}
+                        />
+                    ) : (
+                        <PlayList music={music} position={position} audioRef={audioRef} setOpenBoombox={setOpenBoombox} />
+                    )}
                 </div>
                 <div className={openBoombox ? "app__player" : "app__player open"}>
                     <Player

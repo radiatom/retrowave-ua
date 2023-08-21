@@ -38,9 +38,9 @@
     &__spoiler {
         will-change: left;
         position: absolute;
-        left: -360px;
+        left: -90%;
         transition: left 0.24s;
-        width: 72%;
+        width: 90%;
         background-color: aquamarine;
 
         &.open {

@@ -8,7 +8,7 @@ import { useEffect } from "react";
 import BtnDeleteList from "./BtnDeleteList/BtnDeleteList";
 import ListTracks from "./ListTracks/ListTracks";
 
-const WindowList = ({ leftOrRight, list, openListName }) => {
+const WindowList = ({ leftOrRight, list, openListName, portion , lineHight  }) => {
     const namesPlaylists = useSelector(namesPlaylistsSelector);
     const dispatch = useDispatch();
     const pagesNumbers = useSelector(pageNumberSelector);
@@ -32,10 +32,12 @@ const WindowList = ({ leftOrRight, list, openListName }) => {
     const [inputText, setInputText] = useState("");
     const pressEnter = (event) => {
         if (event.key === "Enter") {
-            if(containsLatinAndDigits(inputText)){dispatch({
-                type: "addNewList",
-                newName: capitalizeFirstLetter(inputText),
-            })}; //створюємо всій лейлист якщо там є латинські букви чи цифри
+            if (containsLatinAndDigits(inputText)) {
+                dispatch({
+                    type: "addNewList",
+                    newName: capitalizeFirstLetter(inputText),
+                });
+            } //створюємо всій лейлист якщо там є латинські букви чи цифри
             setInputText("");
             setOpenInput(false);
         }
@@ -44,7 +46,9 @@ const WindowList = ({ leftOrRight, list, openListName }) => {
     return (
         <div className="windowList">
             <div className="windowList__buttons">
-                <img src={addIco} alt="addIco" className="windowList__btn" onClick={() => setOpenInput(!openInput)} />
+                <button className="windowList__btn" onClick={() => setOpenInput(!openInput)}>
+                    +
+                </button>
                 {namesPlaylists.map((item, index) => {
                     if (index !== 2) {
                         return (
@@ -67,7 +71,14 @@ const WindowList = ({ leftOrRight, list, openListName }) => {
                 onChange={(event) => setInputText(event.target.value)}
                 onKeyDown={pressEnter}
             />
-            <ListTracks list={list} pageNumber={pageNumber} openListName={openListName} leftOrRight={leftOrRight} />
+            <ListTracks
+                list={list}
+                pageNumber={pageNumber}
+                openListName={openListName}
+                leftOrRight={leftOrRight}
+                portion={portion}
+                lineHight={lineHight}
+            />
             <BtnDeleteList openListName={openListName} />
         </div>
     );

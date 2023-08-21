@@ -3,7 +3,7 @@ import "./ListTracks.scss";
 import Track from "./Track/Track";
 import { useDispatch } from "react-redux";
 
-const ListTracks = ({ list, pageNumber, openListName, leftOrRight }) => {
+const ListTracks = ({ list, pageNumber, openListName, leftOrRight,portion,lineHight }) => {
     const dispatch = useDispatch();
     useEffect(() => {
         const container = document.getElementById(`${leftOrRight}listTracks`);
@@ -14,7 +14,8 @@ const ListTracks = ({ list, pageNumber, openListName, leftOrRight }) => {
     }, [pageNumber]); //слідкувати за скролом
 
     const scrollHandler = (e) => {
-        if (e.target.scrollTop + 348 > e.target.scrollHeight&&list.length/14>=pageNumber) {//348 це висота одної сторінки 14треків
+        console.log(e.target.scrollTop + portion*lineHight,e.target.scrollHeight)
+        if (e.target.scrollTop + portion*lineHight > e.target.scrollHeight&&list.length/portion>=pageNumber) {//portion*lineHight це висота одної сторінки portionтреків
             dispatch({
                 type: "setPageNumber",
                 position: leftOrRight,
@@ -22,7 +23,7 @@ const ListTracks = ({ list, pageNumber, openListName, leftOrRight }) => {
             });
         } //при при скролі до низу виконуємо фукцію
 
-        if (e.target.scrollTop+1000 < 1045&&pageNumber>2) {//1045 це висота трьох сторнікок по 14 треків
+        if (e.target.scrollTop+portion*lineHight*3-45 < portion*lineHight*3&&pageNumber>2) {//portion*lineHight*3 це висота трьох сторнікок по portion треків
             dispatch({
                 type: "setPageNumber",
                 position: leftOrRight,
@@ -34,8 +35,8 @@ const ListTracks = ({ list, pageNumber, openListName, leftOrRight }) => {
         <div className="listTracks" id={`${leftOrRight}listTracks`}>
             {list.length > 0
                 ? list.map((track, index) => {
-                      if (index < pageNumber * 14 && index > pageNumber * 14 - 42) {//41 це три сторінки треків по 14 штук
-                          //відображати порціями по 14треків на одну сторінку, але якщо треків білше 42(три сторінки) то не відображати перші трекі
+                      if (index < pageNumber * portion && index > pageNumber * portion - portion*3) {//portion*3 це три сторінки треків по portion штук
+                          //відображати порціями по portionтреків на одну сторінку, але якщо треків білше 42(три сторінки) то не відображати перші трекі
                           return (
                               <Track
                                   id={track.id}
