@@ -44,7 +44,7 @@ const Boombox = ({ music, prev, next, audioRef, setOpenBoombox, position }) => {
         <div className="boombox">
             <div className="boombox__timer">{currentTime}</div>
             <ValueBoombox  audioRef={audioRef}/>
-            <SoundLevel audioRef={audioRef} play={play} />
+            {/* <SoundLevel audioRef={audioRef} play={play} /> */}
             <CassetteBoombox music={music} play={play} />
 
             <div className="boombox__left">

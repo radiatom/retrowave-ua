@@ -1,13 +1,13 @@
 .track {
-    font-size: 13px;
+    font-size: 10.4px;
     display: flex;
     width: 100%;
-    height: 20px;
-    margin-bottom: 5px;
-    line-height: 20px;
+    height: 16px;
+    margin-bottom: 4px;
+    line-height: 16px;
     justify-content: space-between;
     &__position {
-        width: 7%;
+        width: 5.6%;
         text-align: center;
         cursor: default;
     }
@@ -15,38 +15,40 @@
         white-space: nowrap; /* Забороняє переноси */
         overflow: hidden; /* Приховує вміст, що виходить за межі */
         text-overflow: ellipsis; /* Відображає три крапки, якщо вміст обрізаний */
-        width: 50%;
+        width: 40%;
         text-align: start;
     }
-    &__rating{
-      width: 65px;
+    &__rating {
+        width: 52px;
     }
-    &__duration{
-      width: 10%;
-      cursor: default;
+    &__duration {
+        width: 8%;
+        cursor: default;
     }
-    &__addIco{
-      width: 20px;
-      border-radius: 50%;
-      box-shadow: 0 0 2px 2px rgb(201, 146, 29);
-      cursor: pointer;
-      &.active{
-        box-shadow: 0 0 2px 2px rgb(29, 195, 201)
-      }
+    &__addIco {
+        width: 16px;
+        border-radius: 50%;
+        box-shadow: 0 0 1.6px 1.6px rgb(201, 146, 29);
+        cursor: pointer;
+
+        &.active {
+            box-shadow: 0 0 1.6px 1.6px rgb(29, 195, 201);
+        }
     }
-    &__spoiler{
-      will-change: left;
-      position: absolute;
-      left: -450px;
-      transition: left 0.3s;
-      width: 90%;
-      background-color: aquamarine;
-      &.open{
-        left:0;
-      }
+    &__spoiler {
+        will-change: left;
+        position: absolute;
+        left: -360px;
+        transition: left 0.24s;
+        width: 72%;
+        background-color: aquamarine;
+
+        &.open {
+            left: 0;
+        }
     }
-    &__btn{
-      padding: 0 5px;
-      margin: 0 2px;
+    &__btn {
+        padding: 0 4px;
+        margin: 0 1.6px;
     }
 }

@@ -1,35 +1,36 @@
 .boombox {
-    width: 1280px;
-    height: 780px;
+    width: 1024px;
+    height: 624px;
     z-index: 100;
     position: relative;
     margin: 0 auto;
-    background: url("./../../img/boombox-5467421_1280.webp") 0 0/100% 100% no-repeat;
+    background: url("./../../img/boombox-5467421_1280.webp") 0 0/1024px 624px no-repeat;
     line-height: 13px;
-    transform: scale(0.8);
-    margin: -70px 0 ;
     &__timer {
         position: absolute;
         background-color: black;
-        width: 45px;
-        padding-left: 5px;
-        top: 364px;
-        left: 645px;
-        font-size: 15px;
-        line-height: 14px;
+        width: 36px;
+        padding-left: 4px;
+        top: 291px;
+        left: 516px;
+        font-size: 12px;
+        line-height: 11.2px;
         font-family: "Times New Roman", Times, serif;
-        letter-spacing: 7px;
+        letter-spacing: 5.6px;
     }
     &__left {
         position: absolute;
-        top: 329px;
-        left: 26px;
-        clip-path: polygon(0 0, 100% 0, 100% 318px, 400px 318px, 400px 100%, 0 100%);
+        top: 263px;
+        left: 20.8px;
+        clip-path: polygon(0 0, 100% 0, 100% 254px, 320px 254px, 320px 100%, 0 100%);
     }
     &__right {
         position: absolute;
-        top: 328px;
-        left: 832px;
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 22px 100%, 22px 318px, 0 318px);
+        top: 262.4px;
+        left: 665.6px;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 17.6px 100%, 17.6px 254.4px, 0 254.4px);
+    }
+    @media(max-width:1024px){
+        display: none;
     }
 }

@@ -1,8 +1,9 @@
 .cassetteBoombox {
-    position: relative;
-    top: 410px;
-    width: 310px;
-    height: 195px;
+    position: absolute;
+    top: 328px;
+    left:387px;
+    width: 248px;
+    height: 156px;
     margin: 0 auto;
     &__body {
         position: absolute;
@@ -10,74 +11,66 @@
         top: 0;
         width: 100%;
         height: 100%;
-        background: url("./../../../img/cassette-body.png") 0 0/100% 100%
-            // no-repeat;
+        background: url("./../../../img/cassette-body.png") 0 0/100% 100%;
+        // no-repeat;
     } //картинка касети
     &__cover {
         position: absolute;
         z-index: 100;
-        top: 13px;
-        left: 16px;
-        width: 278px;
-        height: 132px;
+        top: 10.4px;
+        left: 12.8px;
+        width: 222.4px;
+        height: 105.6px;
         background-color: #343331;
         background-size: cover;
         background-position: center center;
         clip-path: polygon(
             //робимо обмеження
-            278px 132px,
-            278px 0,
+            222.4px 105.6px,
+            222.4px 0,
             0 0,
-            0 132px,
-            278px 132px,
+            0 105.6px,
+            222.4px 105.6px,
 
             //малюєм полігон
-            67px 90px,
-            54px 80px,
-            54px 64px,
-            68px 52px,
-
-            82px 52px,
-            95px 65px,
-            95px 73px,
-            182px 73px,
-            182px 65px,
-            195px 52px,
-
-            210px 52px,
-            224px 65px,
-            224px 77px,
-            211px 90px,
-
-            195px 90px,
-            182px 80px,
-            182px 65px,
-            95px 73px,
-            95px 80px,
-            83px 90px,
-
-            67px 90px,
-//позиція від ліва\позиція від верху
+            53.6px 72px,
+            43.2px 64px,
+            43.2px 51.2px,
+            54.4px 41.6px,
+            65.6px 41.6px,
+            76px 52px,
+            76px 58.4px,
+            145.6px 58.4px,
+            145.6px 52px,
+            156px 41.6px,
+            168.8px 41.6px,
+            179.2px 52px,
+            179.2px 61.6px,
+            168.8px 72px,
+            156px 72px,
+            145.6px 64px,
+            145.6px 52px,
+            76px 58.4px,
+            76px 64px,
+            66.4px 72px,
+            53.6px 72px
         ); //вирізання куска елемента в середині касети
     } //покриття касети
     &__reel {
         position: absolute;
         z-index: 90;
-        top: 65px;
-        width: 34px;
-        height: 39px;
-        background: url("./../../../img/cassette-reel.png") 0 0/100% 100%
-            no-repeat; //кружок що обертається в касеті
+        top: 52px;
+        width: 27.2px;
+        height: 31.2px;
+        background: url("./../../../img/cassette-reel.png") 0 0/100% 100% no-repeat;
         background-repeat: no-repeat;
-        // box-shadow: 0 0 0 0;
         color: #16181a;
         border-radius: 50%;
-        // clip-path: circle(50% at 50% 50%);
         &_left {
-            left: 72px;
+            left: 57.6px;
         }
         &_right {
-            left: 204px;
+            left: 163.2px;
         }
     } //колеса з анімацією де колесо повільніше обертається, коли не задана анімація на праве колесо то обидва будуть крутитись повільно
     &.play {

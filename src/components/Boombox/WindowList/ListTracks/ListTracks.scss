@@ -1,15 +1,15 @@
 .listTracks {
-    padding: 5px 5px 0 5px;
+    padding: 4px 4px 0 4px;
     position: relative;
     height: 87%;
     overflow-y: scroll;
     scrollbar-width: none;
     &::-webkit-scrollbar {
-        width: 7px; //висота повзунка
+        width: 5.6px; //висота повзунка
     }
     &::-webkit-scrollbar-thumb {
         background-color: #b68221; /* колір "ползунка" скрола */
-        border-radius: 5px; /* закруглені кути "ползунка" */
+        border-radius: 4px; /* закруглені кути "ползунка" */
     }
     scroll-behavior: smooth; /* Додаємо плавність скроллу */
 }
