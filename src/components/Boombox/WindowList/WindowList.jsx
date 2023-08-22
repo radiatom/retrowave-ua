@@ -13,6 +13,7 @@ const WindowList = React.memo(({ leftOrRight, list, openListName, portion, lineH
     const pagesNumbers = useSelector(pageNumberSelector);
     const pageNumber = leftOrRight === "left" ? pagesNumbers.left : pagesNumbers.right;
 
+    
     const [openInput, setOpenInput] = useState(false);
     useEffect(() => {
         if (openInput) {
@@ -79,7 +80,7 @@ const WindowList = React.memo(({ leftOrRight, list, openListName, portion, lineH
                 portion={portion}
                 lineHight={lineHight}
             />
-            <BtnDeleteList openListName={openListName} />
+            <BtnDeleteList openListName={openListName} openList={openList} />
         </div>
     );
 });
