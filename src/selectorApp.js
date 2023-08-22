@@ -13,11 +13,8 @@ export const volumeSelector=(state)=>{
 export const positionSelector=(state)=>{
       return state.dataPage.position
 }
-export const leftListSelector=(state)=>{
-      return state.dataPage.list.left
-}
-export const rightListSelector=(state)=>{
-      return state.dataPage.list.right
+export const listSelector=(state)=>{
+      return state.dataPage.list
 }
 export const namesPlaylistsSelector=(state)=>{
       return state.dataPage.namesPlaylists

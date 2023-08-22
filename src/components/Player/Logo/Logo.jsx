@@ -11,7 +11,7 @@ const Logo = React.memo(({ setOpenBoombox }) => {
             clearInterval(interval);
         };
     }, []);
-    //коли появляється друга картинка ззаду то логотип стає світлішим
+    //коли появляється друга картинка ззаду то логотип стає світлішим. це функція миготіння логотипа
     return (
         <div className="logo" onClick={() => setOpenBoombox(true)}>
             <img className={`logo__img 1`} src={logo} alt="logo" />

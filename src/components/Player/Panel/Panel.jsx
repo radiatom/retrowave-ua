@@ -4,20 +4,21 @@ import Cassette from "./Cassette/Cassette";
 
 const Panel = React.memo(({ music, prev, next, position, audioRef }) => {
     const [play, setPlay] = useState(false); //анімація плеєра
+    const audio=audioRef.current
 
     useEffect(() => {
         if (play) {
-            audioRef.current.play(); //запуск відтворення
+            audio.play(); 
         }
     }, [play, music]); // Відтворити музику при зміні об'єкту music
 
     const clickPlay = () => {
         if (play) {
             setPlay(false); //стиль плеєра який не грає
-            audioRef.current.pause(); //пауза
+            audio.pause(); 
         } else {
             setPlay(true); //стиль плеєра який грає
-            audioRef.current.play(); //запуск відтворення
+            audio.play(); 
         }
     };
     return (

@@ -3,9 +3,9 @@ import "./Boombox.scss";
 import CassetteBoombox from "./CassetteBoombox/CassetteBoombox";
 import PanelBoombox from "./PanelBoombox/PanelBoombox";
 import ValueBoombox from "./ValueBoombox/ValueBoombox";
-import SoundLevel from "./SoundLevel/SoundLevel";
+// import SoundLevel from "./SoundLevel/SoundLevel";
 import WindowList from "./WindowList/WindowList";
-import { leftListSelector, openListNameSelector, rightListSelector } from "../../selectorApp";
+import { leftListSelector, listSelector, openListNameSelector } from "../../selectorApp";
 import { useSelector } from "react-redux";
 import { newTimeForBoombox } from "../../function";
 
@@ -34,10 +34,9 @@ const Boombox = ({ music, prev, next, audioRef, setOpenBoombox, position }) => {
         if (currentTime >= parseInt(music.duration.toString().substr(0, 3))) {
             next();
         }
-    }, [currentTime]); //закінчиться час то після перемикнеться далі
+    }, [currentTime]); //закінчиться час то плеєр перемикнеться далі
 
-    const listLeft = useSelector(leftListSelector);
-    const listRight = useSelector(rightListSelector);
+    const list = useSelector(listSelector);
     const openListsNames = useSelector(openListNameSelector);
 
     return (
@@ -48,10 +47,10 @@ const Boombox = ({ music, prev, next, audioRef, setOpenBoombox, position }) => {
             <CassetteBoombox music={music} play={play} />
 
             <div className="boombox__left">
-                <WindowList leftOrRight="left" list={listLeft} openListName={openListsNames["left"]} portion = {14} lineHight = {20}/>
+                <WindowList leftOrRight="left" list={list.left} openListName={openListsNames["left"]} portion = {14} lineHight = {20}/>
             </div>
             <div className="boombox__right">
-                <WindowList leftOrRight="right" list={listRight} openListName={openListsNames["right"]} portion = {14} lineHight = {20}/>
+                <WindowList leftOrRight="right" list={list.right} openListName={openListsNames["right"]} portion = {14} lineHight = {20}/>
             </div>
             <PanelBoombox
                 play={play}

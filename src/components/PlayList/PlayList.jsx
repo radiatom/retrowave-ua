@@ -1,11 +1,11 @@
 import React from "react";
 import "./PlayList.scss";
 import { useSelector } from "react-redux";
-import { leftListSelector, openListNameSelector } from "../../selectorApp";
+import {  listSelector, openListNameSelector } from "../../selectorApp";
 import WindowList from "../Boombox/WindowList/WindowList";
 
 const PlayList = ({ music, position, audioRef, setOpenBoombox }) => {
-    const listLeft = useSelector(leftListSelector);
+    const list = useSelector(listSelector);
     const openListsNames = useSelector(openListNameSelector);
 
     return (
@@ -13,7 +13,7 @@ const PlayList = ({ music, position, audioRef, setOpenBoombox }) => {
             <div className="playList__left">
                 <WindowList
                     leftOrRight="left"
-                    list={listLeft}
+                    list={list.left}
                     openListName={openListsNames["left"]}
                     portion={30}
                     lineHight={20}
