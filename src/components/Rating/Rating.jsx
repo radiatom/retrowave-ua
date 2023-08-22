@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Rating.scss";
 import { useDispatch } from "react-redux";
 

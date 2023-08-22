@@ -7,26 +7,29 @@ const Volume = React.memo(({ audioRef }) => {
     const [mute, setMute] = useState(false); //включення чи вимкнення звуку
     const value = useSelector(volumeSelector); //значення величини звуку
     const dispatch = useDispatch();
-    const changeValue = (value) => {
-        return (audioRef.current.volume = value);
-    }; //функція зміни значення в тегові аудіо
+
     useEffect(() => {
         if (value > 0) {
             setMute(false);
         }
         changeValue(value / 100);
     }, [value]); //встановлення гучності за допомогою двохсторонього звязування
-    const click = () => {
-        setMute(!mute);
-        if (audioRef.current.volume === 0) {
+
+    const changeValue = (value) => {
+        audioRef.current.volume = value;
+    }; //функція зміни значення в аудіо
+
+    const toggleMute = () => {
+        if (mute) {
             changeValue(value / 100); //вертаємо попереднє заняення
         } else {
             changeValue(0); //вимикаємо гучність
         }
+        setMute(!mute);
     };
     return (
         <div className="volume">
-            <button onClick={() => click()} className="volume__noMute"></button>
+            <button onClick={toggleMute} className="volume__noMute"></button>
             <input
                 type="range"
                 min="0"
