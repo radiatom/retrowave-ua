@@ -17,6 +17,7 @@
         text-overflow: ellipsis; /* Відображає три крапки, якщо вміст обрізаний */
         width: 40%;
         text-align: start;
+        cursor: pointer;
     }
     &__rating {
         width: 52px;

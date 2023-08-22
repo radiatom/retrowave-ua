@@ -8,7 +8,7 @@ import { namesPlaylistsSelector, openListNameSelector } from "../../../../../sel
 import { useDispatch, useSelector } from "react-redux";
 import BtnDeleteTrack from "./BtnDeleteTrack/BtnDeleteTrack";
 
-const Track = React.memo(({ title, index, rating, duration, id, leftOrRight }) => {
+const Track = React.memo(({ title, index, rating, duration, id, leftOrRight}) => {
     const openListName = useSelector(openListNameSelector);
     const [active, setActive] = useState(false);
     const namesPlaylists = useSelector(namesPlaylistsSelector);
@@ -50,10 +50,15 @@ const Track = React.memo(({ title, index, rating, duration, id, leftOrRight }) =
         }
     };
 
+    const playTrack=()=>{
+        dispatch({ type: "createPlayerList", name:openListName[leftOrRight + ""] });
+        dispatch({ type: "setPosition", position: index });
+    }
+
     return (
         <div className="track">
             <div className="track__position">{index + 1}</div>
-            <div className="track__title">{title}</div>
+            <div className="track__title" onClick={playTrack}>{title}</div>
             <div className="track__rating">
                 <Rating rating={rating} id={id} />{" "}
             </div>
