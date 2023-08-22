@@ -23,20 +23,15 @@
         top: 263px;
         left: 20.8px;
         clip-path: polygon(0 0, 100% 0, 100% 254px, 320px 254px, 320px 100%, 0 100%);
-
         width: 337.6px;
-    height: 320px;
+        height: 320px;
     }
     &__right {
         position: absolute;
         top: 262.4px;
         left: 665.6px;
         clip-path: polygon(0 0, 100% 0, 100% 100%, 17.6px 100%, 17.6px 254.4px, 0 254.4px);
-
         width: 337.6px;
-    height: 320px;
-    }
-    @media(max-width:1024px){
-        display: none;
+        height: 320px;
     }
 }

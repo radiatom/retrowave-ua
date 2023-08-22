@@ -9,7 +9,7 @@ const PlayList = ({ music, position, audioRef, setOpenBoombox }) => {
     const openListsNames = useSelector(openListNameSelector);
 
     return (
-        <div className="playList" onClick={()=>setOpenBoombox(false)}>
+        <div className="playList" >
             <div className="playList__left">
                 <WindowList
                     leftOrRight="left"

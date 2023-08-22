@@ -3,12 +3,12 @@ import "./Volume.scss";
 import { useDispatch, useSelector } from "react-redux";
 import { volumeSelector } from "./../../../selectorApp";
 
-const Volume = () => {
+const Volume = React.memo(({ audioRef }) => {
     const [mute, setMute] = useState(false); //включення чи вимкнення звуку
     const value = useSelector(volumeSelector); //значення величини звуку
     const dispatch = useDispatch();
     const changeValue = (value) => {
-        return (document.querySelector(".audio").volume = value);
+        return (audioRef.current.volume = value);
     }; //функція зміни значення в тегові аудіо
     useEffect(() => {
         if (value > 0) {
@@ -18,7 +18,7 @@ const Volume = () => {
     }, [value]); //встановлення гучності за допомогою двохсторонього звязування
     const click = () => {
         setMute(!mute);
-        if (document.querySelector(".audio").volume === 0) {
+        if (audioRef.current.volume === 0) {
             changeValue(value / 100); //вертаємо попереднє заняення
         } else {
             changeValue(0); //вимикаємо гучність
@@ -39,6 +39,6 @@ const Volume = () => {
             <div className={mute ? "volume__level mute" : "volume__level "}></div>
         </div>
     );
-};
+});
 
 export default Volume;

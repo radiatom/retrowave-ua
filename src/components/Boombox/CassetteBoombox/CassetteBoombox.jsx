@@ -1,7 +1,7 @@
 import React from "react";
 import "./CassetteBoombox.scss";
 
-const CassetteBoombox = ({ music, play }) => {
+const CassetteBoombox = React.memo(({ music, play }) => {
     return (
         <div className={play ? "cassetteBoombox play" : "cassetteBoombox"}>
             <div
@@ -15,6 +15,6 @@ const CassetteBoombox = ({ music, play }) => {
             <div className="cassetteBoombox__body"></div>
         </div>
     );
-};
+});
 
 export default CassetteBoombox;

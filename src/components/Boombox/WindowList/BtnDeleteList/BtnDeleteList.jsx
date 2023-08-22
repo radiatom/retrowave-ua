@@ -2,7 +2,7 @@ import React from "react";
 import "./BtnDeleteList.scss";
 import { useDispatch } from "react-redux";
 
-const BtnDeleteList = ({ openListName }) => {
+const BtnDeleteList = React.memo(({ openListName }) => {
     const dispatch = useDispatch();
     return (
         <>
@@ -23,6 +23,6 @@ const BtnDeleteList = ({ openListName }) => {
             )}
         </>
     );
-};
+});
 
 export default BtnDeleteList;

@@ -3,12 +3,11 @@ import "./WindowList.scss";
 import { useDispatch, useSelector } from "react-redux";
 import { namesPlaylistsSelector, pageNumberSelector } from "../../../selectorApp";
 import { capitalizeFirstLetter, containsLatinAndDigits } from "../../../function";
-import addIco from "./../../../img/icons/add.svg";
 import { useEffect } from "react";
 import BtnDeleteList from "./BtnDeleteList/BtnDeleteList";
 import ListTracks from "./ListTracks/ListTracks";
 
-const WindowList = ({ leftOrRight, list, openListName, portion , lineHight  }) => {
+const WindowList = React.memo(({ leftOrRight, list, openListName, portion, lineHight }) => {
     const namesPlaylists = useSelector(namesPlaylistsSelector);
     const dispatch = useDispatch();
     const pagesNumbers = useSelector(pageNumberSelector);
@@ -53,6 +52,7 @@ const WindowList = ({ leftOrRight, list, openListName, portion , lineHight  }) =
                     if (index !== 2) {
                         return (
                             <button
+                                key={index}
                                 className={openListName === item ? "windowList__btn open" : "windowList__btn"}
                                 onClick={() => openList(item)}
                             >
@@ -82,6 +82,6 @@ const WindowList = ({ leftOrRight, list, openListName, portion , lineHight  }) =
             <BtnDeleteList openListName={openListName} />
         </div>
     );
-};
+});
 
 export default WindowList;

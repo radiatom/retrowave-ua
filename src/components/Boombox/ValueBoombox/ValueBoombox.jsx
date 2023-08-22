@@ -3,7 +3,7 @@ import "./ValueBoombox.scss";
 import { useDispatch, useSelector } from "react-redux";
 import { volumeSelector } from "../../../selectorApp";
 
-const ValueBoombox = ({audioRef}) => {
+const ValueBoombox = React.memo(({audioRef}) => {
     const value = useSelector(volumeSelector); //значення величини звуку
     const dispatch = useDispatch();
 
@@ -35,6 +35,6 @@ const ValueBoombox = ({audioRef}) => {
             />
         </div>
     );
-};
+})
 
 export default ValueBoombox;

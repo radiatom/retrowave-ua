@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "./PanelBoombox.scss";
 
-const PanelBoombox = ({ music, prev, next, position, play, setPlay, setOpenBoombox,audioRef}) => {
+const PanelBoombox = React.memo(({ music, prev, next, position, play, setPlay, setOpenBoombox, audioRef }) => {
     useEffect(() => {
         if (play) {
             audioRef.current.play(); //запуск відтворення
@@ -34,6 +34,6 @@ const PanelBoombox = ({ music, prev, next, position, play, setPlay, setOpenBoomb
             </div>
         </div>
     );
-};
+});
 
 export default PanelBoombox;

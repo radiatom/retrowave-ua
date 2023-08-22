@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Logo.scss";
 import logo from "./../../../img/logo.png";
-const Logo = ({ setOpenBoombox }) => {
+const Logo = React.memo(({ setOpenBoombox }) => {
     const [open, setOpen] = useState(false);
     useEffect(() => {
         const interval = setInterval(() => {
@@ -18,6 +18,6 @@ const Logo = ({ setOpenBoombox }) => {
             <img className={open ? `logo__img` : "logo__img closed"} src={logo} alt="logo" />
         </div>
     );
-};
+});
 
 export default Logo;

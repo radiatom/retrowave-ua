@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Panel.scss";
 import Cassette from "./Cassette/Cassette";
 
-const Panel = ({ music, prev, next, position,audioRef }) => {
+const Panel = React.memo(({ music, prev, next, position, audioRef }) => {
     const [play, setPlay] = useState(false); //анімація плеєра
 
     useEffect(() => {
@@ -37,6 +37,6 @@ const Panel = ({ music, prev, next, position,audioRef }) => {
             </div>
         </div>
     );
-};
+});
 
 export default Panel;

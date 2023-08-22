@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Time.scss";
 import { newTime } from "./../../../function";
 
-const Time = ({ duration, audioRef, next }) => {
+const Time = React.memo(({ duration, audioRef, next }) => {
     const [time, setTime] = useState(0);
     useEffect(() => {
         if (duration > 0) {
@@ -41,6 +41,6 @@ const Time = ({ duration, audioRef, next }) => {
             <span className="time total">/{time}</span>
         </div>
     );
-};
+});
 
 export default Time;

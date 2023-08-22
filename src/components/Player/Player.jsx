@@ -6,11 +6,11 @@ import Time from "./Time/Time";
 import Rating from "./../Rating/Rating";
 import Volume from "./Volume/Volume";
 
-const Player = ({ setOpenBoombox, music, prev, next, position, audioRef }) => {
+const Player = React.memo(({ setOpenBoombox, music, prev, next, position, audioRef }) => {
     return (
         <div className="player">
             <Logo setOpenBoombox={setOpenBoombox} />
-            <Panel music={music} prev={prev} next={next} position={position} audioRef={audioRef}/>
+            <Panel music={music} prev={prev} next={next} position={position} audioRef={audioRef} />
             <h2 className="player__title">
                 <span>{music.idTrack}.</span> {music.title}
             </h2>
@@ -19,9 +19,9 @@ const Player = ({ setOpenBoombox, music, prev, next, position, audioRef }) => {
             <div className="player__rating">
                 <Rating rating={music.rating} id={music.id} />
             </div>
-            <Volume />
+            <Volume audioRef={audioRef}/>
         </div>
     );
-};
+});
 
 export default Player;

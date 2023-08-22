@@ -9,7 +9,7 @@ import ratingImg from "./../../../../img/icons/rating.png";
 import defaultImg from "./../../../../img/icons/default.png";
 import { useEffect } from "react";
 
-const Cassette = ({ music }) => {
+const Cassette = React.memo(({ music }) => {
     const nameCurrentListPlayer = useSelector(nameCurrentListPlayerSelector);
     const namesPlaylists = useSelector(namesPlaylistsSelector);
     const [open, setOpen] = useState(false);
@@ -104,6 +104,6 @@ const Cassette = ({ music }) => {
             <div className="cassette__body"></div>
         </div>
     );
-};
+})
 
 export default Cassette;

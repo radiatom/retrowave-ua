@@ -1,6 +1,8 @@
+import React from "react";
 import { useRef, useEffect } from "react";
 import useSize from "./useSize";
-import './canvas.scss'
+import "./canvas.scss";
+
 // Ця функція приймає аудіодані, аналізує їх і генерує хвилю
 // який візуалізується на елементі canvas.
 function animateBars(analyser, canvas, canvasCtx, dataArray, bufferLength) {
@@ -12,7 +14,7 @@ function animateBars(analyser, canvas, canvasCtx, dataArray, bufferLength) {
 
     // Розрахувати висоту полотна.
     const HEIGHT = canvas.height / 2;
-    
+
     // Розраховуємо ширину кожного стовпчика у хвилі на основі ширини полотна та довжини буфера.
     var barWidth = Math.ceil(canvas.width / bufferLength) * 2.5;
 
@@ -26,7 +28,7 @@ function animateBars(analyser, canvas, canvasCtx, dataArray, bufferLength) {
         barHeight = (dataArray[i] / 255) * HEIGHT;
         const blueShade = Math.floor((dataArray[i] / 255) * 5); // генерувати відтінок синього на основі аудіовходу *5 це буде більше останього відтінку
         // const blueHex = ["#61dafb", "#5ac8fa", "#50b6f5", "#419de6", "#20232a"][blueShade]; // використовувати сині відтінки логотипу React
-        const blueHex = ["#ffffff", "#f3f368", "#ffff00", "#ff7300", "#ff0000"][blueShade]// використовувати  відтінки  вогню
+        const blueHex = ["#ffffff", "#f3f368", "#ffff00", "#ff7300", "#ff0000"][blueShade]; // використовувати  відтінки  вогню
         // Встановити стиль заливки полотна на випадкові значення RGB.
         canvasCtx.fillStyle = blueHex;
 
@@ -38,7 +40,7 @@ function animateBars(analyser, canvas, canvasCtx, dataArray, bufferLength) {
     }
 }
 // Component to render the waveform
-const AudioWaveForm = ({ analyzerData }) => {
+const AudioWaveForm = React.memo(({ analyzerData }) => {
     // Посилання на елемент canvas
     const canvasRef = useRef(null);
     const { dataArray, analyzer, bufferLength } = analyzerData;
@@ -65,14 +67,7 @@ const AudioWaveForm = ({ analyzerData }) => {
         draw(dataArray, analyzer, bufferLength);
     }, [dataArray, analyzer, bufferLength]);
 
-    return (
-        <canvas
-            className="canvas"
-            ref={canvasRef}
-            width={width}
-            height={height}
-        />
-    );
-};
+    return <canvas className="canvas" ref={canvasRef} width={width} height={height} />;
+});
 
 export default AudioWaveForm;
