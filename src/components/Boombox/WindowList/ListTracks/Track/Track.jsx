@@ -4,7 +4,7 @@ import Rating from "./../../../../Rating/Rating";
 import { newTime } from "../../../../../function";
 import { useState } from "react";
 import addIco from "./../../../../../img/icons/add.svg";
-import { namesPlaylistsSelector, openListNameSelector } from "../../../../../selectorApp";
+import { addDataAppSelector, namesPlaylistsSelector, openListNameSelector } from "../../../../../selectorApp";
 import { useDispatch, useSelector } from "react-redux";
 import BtnDeleteTrack from "./BtnDeleteTrack/BtnDeleteTrack";
 
@@ -12,7 +12,9 @@ const Track = React.memo(({ title, index, rating, duration, id, leftOrRight}) =>
     const openListName = useSelector(openListNameSelector);
     const [active, setActive] = useState(false);
     const namesPlaylists = useSelector(namesPlaylistsSelector);
+    const music = useSelector(addDataAppSelector); //дані про трек
     const dispatch = useDispatch();
+    
     const clickAddingTrack = (name) => {
         dispatch({
             type: "addTrackIntoList",
@@ -56,7 +58,7 @@ const Track = React.memo(({ title, index, rating, duration, id, leftOrRight}) =>
     }
 
     return (
-        <div className="track">
+        <div className={music.title===title?"track sounds":"track"}>
             <div className="track__position">{index + 1}</div>
             <div className="track__title" onClick={playTrack}>{title}</div>
             <div className="track__rating">
