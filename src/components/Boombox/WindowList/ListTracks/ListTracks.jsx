@@ -11,10 +11,10 @@ const ListTracks = React.memo(({ list, pageNumber, openListName, leftOrRight, po
         return function cleanup() {
             container.removeEventListener("scroll", scrollHandler);
         };
-    }, [pageNumber]); //слідкувати за скролом
+    }, [pageNumber,list]); //слідкувати за скролом
 
     const scrollHandler = (e) => {
-        console.log(e.target.scrollTop + portion * lineHight, e.target.scrollHeight);
+        // console.log(e.target.scrollTop + portion * lineHight, e.target.scrollHeight,list.length / portion , pageNumber,list.length,portion);
         if (e.target.scrollTop + portion * lineHight > e.target.scrollHeight && list.length / portion >= pageNumber) {
             //portion*lineHight це висота одної сторінки portionтреків
             dispatch({

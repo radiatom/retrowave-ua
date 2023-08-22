@@ -1,11 +1,12 @@
 .windowList {
     position: relative;
-    // width: 337.6px;
-    // height: 320px;
     width: 100%;
     height: 100%;
     background-color: rgba(196, 194, 179, 0.952);
     border: 1px solid rgb(80, 78, 78);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     &__buttons {
         position: relative;
         background-color: grey;
