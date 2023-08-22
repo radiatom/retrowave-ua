@@ -1,12 +1,12 @@
 import React, { useEffect } from "react";
 import "./PanelBoombox.scss";
 
-const PanelBoombox = React.memo(({ music, prev, next, position, play, setPlay, setOpenBoombox, audioRef }) => {
+const PanelBoombox = React.memo(({  prev, next, position, play=false, setPlay=()=>{}, setOpenBoombox, audioRef }) => {
     useEffect(() => {
         if (play) {
             audioRef.current.play(); //запуск відтворення
         }
-    }, [play, music]); // Відтворити музику при зміні об'єкту music
+    }, [play, position]); // Відтворити музику при зміні позиції
 
     const clickPlay = () => {
         setPlay(true); //стиль плеєра який грає
@@ -20,7 +20,7 @@ const PanelBoombox = React.memo(({ music, prev, next, position, play, setPlay, s
         audioRef.current.pause(); //пауза
     };
     return (
-        <div className={play ? "panelBoombox play" : "panelBoombox"}>
+        <div className="panelBoombox">
             <div className="panelBoombox__controls">
                 <button className="panelBoombox__controls__button"></button>
                 <button onClick={clickPlay} className=" panelBoombox__controls__button play" autoFocus="yes"></button>

@@ -52,16 +52,17 @@ const Boombox = ({ music, prev, next, audioRef, setOpenBoombox, position }) => {
             <div className="boombox__right">
                 <WindowList leftOrRight="right" list={list.right} openListName={openListsNames["right"]} portion = {14} lineHight = {20}/>
             </div>
-            <PanelBoombox
-                play={play}
-                setPlay={setPlay}
-                music={music}
-                prev={prev}
-                next={next}
-                position={position}
-                setOpenBoombox={setOpenBoombox}
-                audioRef={audioRef}
-            />
+            <div className="boombox__panel">
+                <PanelBoombox
+                    play={play}
+                    setPlay={setPlay}
+                    prev={prev}
+                    next={next}
+                    position={position}
+                    setOpenBoombox={setOpenBoombox}
+                    audioRef={audioRef}
+                />
+            </div>
         </div>
     );
 };

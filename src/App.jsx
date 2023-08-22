@@ -101,7 +101,7 @@ function App() {
                 <h1 className="app__h1">Retrowave Radio UA</h1>
                 <div className="app__audioWaveForm">{analyzerData && <AudioWaveForm analyzerData={analyzerData} />}</div>
                 <div className={openBoombox ? "app__boombox open" : "app__boombox"}>
-                    {widthDevice > 1024 ? (
+                    {widthDevice > 1022 ? (
                         <Boombox
                             music={music}
                             prev={prev}
@@ -111,7 +111,15 @@ function App() {
                             setOpenBoombox={setOpenBoombox}
                         />
                     ) : (
-                        <PlayList music={music} position={position} audioRef={audioRef} setOpenBoombox={setOpenBoombox} />
+                        <PlayList
+                            music={music}
+                            position={position}
+                            audioRef={audioRef}
+                            setOpenBoombox={setOpenBoombox}
+                            prev={prev}
+                            next={next}
+                            
+                        />
                     )}
                 </div>
                 <div className={openBoombox ? "app__player" : "app__player open"}>
