@@ -5,17 +5,17 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    &__panel{
-        position: relative;
-        left: -20px;
-        margin-bottom: 40px;
-    }
     &__left{
         width: 800px;
         height: 70%;
+        margin-bottom: 40px;
         @media(max-width:800px){
             width: 100%;
         }
+    }
+    &__panel{
+        position: relative;
+        left: -20px;
     }
     
 }

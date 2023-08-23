@@ -11,6 +11,15 @@ const PlayList = ({ prev, next, position, audioRef, setOpenBoombox, setAnaliz, p
 
     return (
         <div className="playList">
+            <div className="playList__left">
+                <WindowList
+                    leftOrRight="left"
+                    list={list.left}
+                    openListName={openListsNames["left"]}
+                    portion={30}
+                    lineHight={20}
+                />
+            </div>
             <div className="playList__panel">
                 <PanelBoombox
                     prev={prev}
@@ -21,15 +30,6 @@ const PlayList = ({ prev, next, position, audioRef, setOpenBoombox, setAnaliz, p
                     setAnaliz={setAnaliz}
                     play={play}
                     setPlay={setPlay}
-                />
-            </div>
-            <div className="playList__left">
-                <WindowList
-                    leftOrRight="left"
-                    list={list.left}
-                    openListName={openListsNames["left"]}
-                    portion={30}
-                    lineHight={20}
                 />
             </div>
         </div>
