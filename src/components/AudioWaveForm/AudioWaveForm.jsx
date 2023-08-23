@@ -28,7 +28,9 @@ function animateBars(analyser, canvas, canvasCtx, dataArray, bufferLength) {
         barHeight = (dataArray[i] / 255) * HEIGHT;
         const blueShade = Math.floor((dataArray[i] / 255) * 5); // генерувати відтінок синього на основі аудіовходу *5 це буде більше останього відтінку
         // const blueHex = ["#61dafb", "#5ac8fa", "#50b6f5", "#419de6", "#20232a"][blueShade]; // використовувати сині відтінки логотипу React
-        const blueHex = ["#ffffff", "#f3f368", "#ffff00", "#ff7300", "#ff0000"][blueShade]; // використовувати  відтінки  вогню
+        // const blueHex = ["#ffffff", "#f3f368", "#ffff00", "#ff7300", "#ff0000"][blueShade]; // використовувати  відтінки  вогню
+        //  const blueHex = ["#20232a", "#ffffff", "#ffffff", "#ffffff", "#20232a"][blueShade]; // використовувати  відтінки  блискавки
+         const blueHex = ["#50b6f5","#008000", "#86c528",  "#0000ff", "#d400ff"][blueShade]; // використовувати північного сяйва
         // Встановити стиль заливки полотна на випадкові значення RGB.
         canvasCtx.fillStyle = blueHex;
 

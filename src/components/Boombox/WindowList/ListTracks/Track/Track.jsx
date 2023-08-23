@@ -8,13 +8,13 @@ import { addDataAppSelector, namesPlaylistsSelector, openListNameSelector } from
 import { useDispatch, useSelector } from "react-redux";
 import BtnDeleteTrack from "./BtnDeleteTrack/BtnDeleteTrack";
 
-const Track = React.memo(({ title, index, rating, duration, id, leftOrRight}) => {
+const Track = React.memo(({ title, index, rating, duration, id, leftOrRight }) => {
     const openListName = useSelector(openListNameSelector);
     const [active, setActive] = useState(false);
     const namesPlaylists = useSelector(namesPlaylistsSelector);
     const music = useSelector(addDataAppSelector); //дані про трек
     const dispatch = useDispatch();
-    
+
     const clickAddingTrack = (name) => {
         dispatch({
             type: "addTrackIntoList",
@@ -52,25 +52,31 @@ const Track = React.memo(({ title, index, rating, duration, id, leftOrRight}) =>
         }
     };
 
-    const playTrack=()=>{
-        dispatch({ type: "createPlayerList", name:openListName[leftOrRight + ""] });
+    const playTrack = () => {
+        dispatch({ type: "createPlayerList", name: openListName[leftOrRight + ""] });
         dispatch({ type: "setPosition", position: index });
-    }
+    };
 
     return (
-        <div className={music.title===title?"track sounds":"track"}>
+        <div className={music.title === title ? "track sounds" : "track"}>
             <div className="track__position">{index + 1}</div>
-            <div className="track__title" onClick={playTrack}>{title}</div>
+            <div className="track__title" onClick={playTrack}>
+                {title}
+            </div>
             <div className="track__rating">
                 <Rating rating={rating} id={id} />{" "}
             </div>
             <div className="track__duration">{newTime(Math.round(duration / 1000))}</div>
-            <img
-                className={active ? "track__addIco active" : "track__addIco"}
-                onClick={() => setActive(!active)}
-                src={addIco}
-                alt="addIco"
-            />
+            {Boolean(
+                namesPlaylists.length>3
+            ) && (
+                <img
+                    className={active ? "track__addIco active" : "track__addIco"}
+                    onClick={() => setActive(!active)}
+                    src={addIco}
+                    alt="addIco"
+                />
+            )}
             <div className={active ? "track__spoiler open" : "track__spoiler"}>
                 {namesPlaylists.map((name, index) => {
                     if (index > 2) {
