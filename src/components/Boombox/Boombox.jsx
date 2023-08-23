@@ -9,9 +9,7 @@ import { leftListSelector, listSelector, openListNameSelector } from "../../sele
 import { useSelector } from "react-redux";
 import { newTimeForBoombox } from "../../function";
 
-const Boombox = ({ music, prev, next, audioRef, setOpenBoombox, position }) => {
-    const [play, setPlay] = useState(false); //анімація плеєра
-
+const Boombox = ({ music, prev, next, audioRef, setOpenBoombox, position, setAnaliz, play, setPlay }) => {
     useEffect(() => {
         if (audioRef.current) {
             audioRef.current.addEventListener("timeupdate", handleTimeUpdate);
@@ -42,15 +40,27 @@ const Boombox = ({ music, prev, next, audioRef, setOpenBoombox, position }) => {
     return (
         <div className="boombox">
             <div className="boombox__timer">{currentTime}</div>
-            <ValueBoombox  audioRef={audioRef}/>
+            <ValueBoombox audioRef={audioRef} />
             {/* <SoundLevel audioRef={audioRef} play={play} /> */}
             <CassetteBoombox music={music} play={play} />
 
             <div className="boombox__left">
-                <WindowList leftOrRight="left" list={list.left} openListName={openListsNames["left"]} portion = {14} lineHight = {20}/>
+                <WindowList
+                    leftOrRight="left"
+                    list={list.left}
+                    openListName={openListsNames["left"]}
+                    portion={14}
+                    lineHight={20}
+                />
             </div>
             <div className="boombox__right">
-                <WindowList leftOrRight="right" list={list.right} openListName={openListsNames["right"]} portion = {14} lineHight = {20}/>
+                <WindowList
+                    leftOrRight="right"
+                    list={list.right}
+                    openListName={openListsNames["right"]}
+                    portion={14}
+                    lineHight={20}
+                />
             </div>
             <div className="boombox__panel">
                 <PanelBoombox
@@ -61,6 +71,7 @@ const Boombox = ({ music, prev, next, audioRef, setOpenBoombox, position }) => {
                     position={position}
                     setOpenBoombox={setOpenBoombox}
                     audioRef={audioRef}
+                    setAnaliz={setAnaliz}
                 />
             </div>
         </div>

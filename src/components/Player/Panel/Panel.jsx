@@ -2,8 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Panel.scss";
 import Cassette from "./Cassette/Cassette";
 
-const Panel = React.memo(({ music, prev, next, position, audioRef }) => {
-    const [play, setPlay] = useState(false); //анімація плеєра
+const Panel = React.memo(({ music, prev, next, position, audioRef,setAnaliz,setPlay,play }) => {
     const audio=audioRef.current
 
     useEffect(() => {
@@ -17,13 +16,14 @@ const Panel = React.memo(({ music, prev, next, position, audioRef }) => {
             setPlay(false); //стиль плеєра який не грає
             audio.pause(); 
         } else {
+            setAnaliz(true)
             setPlay(true); //стиль плеєра який грає
             audio.play(); 
         }
     };
     return (
         <div className={play ? "panel play" : "panel"}>
-            <Cassette music={music} />
+            <Cassette music={music} play={play}/>
             <div className="panel__controls">
                 <button
                     onClick={prev}

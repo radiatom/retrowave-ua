@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "./PanelBoombox.scss";
 
-const PanelBoombox = ({  prev, next, position, play=false, setPlay=()=>{}, setOpenBoombox, audioRef }) => {
+const PanelBoombox = ({  prev, next, position, play, setPlay, setOpenBoombox, audioRef,setAnaliz }) => {
     useEffect(() => {
         if (play) {
             audioRef.current.play(); //запуск відтворення
@@ -9,6 +9,7 @@ const PanelBoombox = ({  prev, next, position, play=false, setPlay=()=>{}, setOp
     }, [play, position]); // Відтворити музику при зміні позиції
 
     const clickPlay = () => {
+        setAnaliz(true)
         setPlay(true); //стиль плеєра який грає
         audioRef.current.play(); //запуск відтворення
     };

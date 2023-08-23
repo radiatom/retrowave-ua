@@ -9,7 +9,7 @@ import ratingImg from "./../../../../img/icons/rating.png";
 import defaultImg from "./../../../../img/icons/default.png";
 import { useEffect } from "react";
 
-const Cassette = React.memo(({ music }) => {
+const Cassette = React.memo(({ music,play }) => {
     const dispatch = useDispatch();
     const nameCurrentListPlayer = useSelector(nameCurrentListPlayerSelector);
     const namesPlaylists = useSelector(namesPlaylistsSelector);
@@ -59,7 +59,7 @@ const Cassette = React.memo(({ music }) => {
     };
 
     return (
-        <div className="cassette">
+        <div className={play?"cassette play":"cassette"}>
             <img
                 onClick={() => clickOnListIco()}
                 className={openList ? "cassette__listIcon active" : "cassette__listIcon"}
@@ -88,10 +88,10 @@ const Cassette = React.memo(({ music }) => {
             />
             <div className={open ? "cassette__spoiler open" : "cassette__spoiler"}>
                 <div className="download">
-                    <a className="download__link" href={music.artworkUrl} download target="_blank">
+                    <a className="download__link" href={music.artworkUrl} download target="_blank" rel="noopener">
                         IMG
                     </a>
-                    <a className="download__link" href={music.streamUrl} download target="_blank">
+                    <a className="download__link" href={music.streamUrl} download target="_blank" rel="noopener">
                         MP3
                     </a>
                 </div>

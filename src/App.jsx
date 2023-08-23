@@ -17,6 +17,7 @@ import PlayList from "./components/PlayList/PlayList";
 function App() {
     const [back, setBack] = useState(false); //блюр фонової картинки
     const [openBoombox, setOpenBoombox] = useState(false); //показати бумбокс?
+    const [play, setPlay] = useState(false); //анімація плеєра
     const nameCurrentListPlayer = useSelector(nameCurrentListPlayerSelector); //назва поточного плейлиста
     const position = useSelector(positionSelector); //позиція в плейлисті
     const DefaultList = useSelector(DefaultListSelector); //весь список треків
@@ -40,17 +41,14 @@ function App() {
     const prev = () => {
         if (position > 0) {
             dispatch({ type: "setPosition", position: position - 1 });
-            // setPosition(position - 1);
         }
     };
     const next = () => {
         if (position < numberOfTracks - 1) {
             //якщо в списку 4 пісні
             dispatch({ type: "setPosition", position: position + 1 });
-            // setPosition(position + 1);
         } else {
             dispatch({ type: "setPosition", position: 0 });
-            // setPosition(0);
         }
     };
 
@@ -76,7 +74,6 @@ function App() {
     };
     const [analiz, setAnaliz] = useState(false);
     useEffect(() => {
-        setAnaliz(true);
         if (analiz) {
             audioAnalyzer();
         }
@@ -109,6 +106,8 @@ function App() {
                             position={position}
                             audioRef={audioRef}
                             setOpenBoombox={setOpenBoombox}
+                            setAnaliz={setAnaliz}
+                            play={play} setPlay={setPlay}
                         />
                     ) : (
                         <PlayList
@@ -118,7 +117,8 @@ function App() {
                             setOpenBoombox={setOpenBoombox}
                             prev={prev}
                             next={next}
-                            
+                            setAnaliz={setAnaliz}
+                            play={play} setPlay={setPlay}
                         />
                     )}
                 </div>
@@ -130,6 +130,8 @@ function App() {
                         position={position}
                         audioRef={audioRef}
                         setOpenBoombox={setOpenBoombox}
+                        setAnaliz={setAnaliz}
+                        play={play} setPlay={setPlay}
                     />
                 </div>
             </div>
