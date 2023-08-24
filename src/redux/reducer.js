@@ -315,8 +315,11 @@ export const addMusics = () => async (dispatch) => {
         ...track,
         rating: 0,
         idTrack: index + 1,
+        artworkUrl:`${process.env.PUBLIC_URL}${track.artworkUrl}`,//для сервера
+        streamUrl:`${process.env.PUBLIC_URL}${track.streamUrl}`//для сервера
         // artworkUrl:"https://retrowave.ru"+track.artworkUrl,//для api
         // streamUrl:"https://retrowave.ru"+track.streamUrl//для api
+        
     }));
     dispatch({ type: "addMusicList", data: updatedData }); //добавляємо в наш стор нові данні
     dispatch({ type: "addMusic", position: 0 }); // відображаємо перший трек
