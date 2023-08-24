@@ -2695,6 +2695,13 @@ export const data = [
         duration: 297000,
         streamUrl: `/audio/57a84dad931cdd7c212f87bc4f338dcf6d8b4438.mp3`,
         artworkUrl: `/artwork/57a84dad931cdd7c212f87bc4f338dcf6d8b4438.jpg`
+      },
+      {
+        id: 'b20c6eed81633f0f8368dc8be533c23b420a7797',
+        title: 'Nitelight – Together Again (feat. Joel Goodson)',
+        duration: 259000,
+        streamUrl: '/audio/b20c6eed81633f0f8368dc8be533c23b420a7797.mp3',
+        artworkUrl: '/artwork/b20c6eed81633f0f8368dc8be533c23b420a7797.jpg'
       }
 ];
 export const getData = () => {
@@ -2712,28 +2719,4 @@ const addNewTrack = (title,duration,nameFile) => {
 addNewTrack("Gesaffelstein – Aleph","4:46","3")
 
 //функції для нових пісень з респонса
-const tracks = []//масив респонса по новому запиті
-function getUniqueObjects(array2) {
-    const uniqueObjects = [];
-    // Додаємо об'єкти з другого масиву, які не мають однакового значення в першому масиві
-    for (const obj of array2) {
-        if (!data.some((item) => item.title === obj.title)) {
-            uniqueObjects.push(obj);
-        }
-    }
-    const uniqueArray = uniqueObjects.filter(
-        //фільтруємо щоб не було одинакових
-        (obj, index, self) =>
-            index ===
-            self.findIndex(
-                (o) =>
-                    o.id === obj.id &&
-                    o.title === obj.title &&
-                    o.duration === obj.duration &&
-                    o.streamUrl === obj.streamUrl &&
-                    o.artworkUrl === obj.artworkUrl
-            )
-    );
-    return uniqueArray;
-} //беремо новий масив з інтернета, порівнюємо з моїм масивом з сервера та повертаємо масив обєктів яких в мене нема
-// console.log(getUniqueObjects(tracks));
+
