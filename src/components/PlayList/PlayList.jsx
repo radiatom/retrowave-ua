@@ -3,7 +3,7 @@ import "./PlayList.scss";
 import { useSelector } from "react-redux";
 import { listSelector, openListNameSelector } from "../../selectorApp";
 import WindowList from "../Boombox/WindowList/WindowList";
-import PanelBoombox from "../Boombox/PanelBoombox/PanelBoombox";
+import Panel from "./../Panel/Panel";
 
 const PlayList = ({ prev, next, position, audioRef, setOpenBoombox, setAnaliz, play, setPlay }) => {
     const list = useSelector(listSelector);
@@ -11,7 +11,7 @@ const PlayList = ({ prev, next, position, audioRef, setOpenBoombox, setAnaliz, p
 
     return (
         <div className="playList">
-            <div className="playList__left">
+            <div className="playList__windowList">
                 <WindowList
                     leftOrRight="left"
                     list={list.left}
@@ -21,7 +21,7 @@ const PlayList = ({ prev, next, position, audioRef, setOpenBoombox, setAnaliz, p
                 />
             </div>
             <div className="playList__panel">
-                <PanelBoombox
+                <Panel
                     prev={prev}
                     next={next}
                     position={position}

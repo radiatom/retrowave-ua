@@ -3,7 +3,7 @@ import "./CassetteBoombox.scss";
 
 const CassetteBoombox = React.memo(({ music, play }) => {
     return (
-        <div className={play ? "cassetteBoombox play" : "cassetteBoombox"}>
+        <div className={play ? "cassetteBoombox cassetteBoombox_play" : "cassetteBoombox"}>
             <div
                 className="cassetteBoombox__cover"
                 style={{

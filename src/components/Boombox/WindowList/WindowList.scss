@@ -38,7 +38,7 @@
         transition: top 0.16s, box-shadow 0.16s;
         cursor: pointer;
         max-height: 30px;
-        &.open {
+        &_pressed {
             top: 0.8px;
             box-shadow: 0 0 0 0 black;
         }
@@ -55,15 +55,11 @@
         font-size: 16px;
         padding: 4px;
         transition: top 0.24s;
-        &.open {
+        &_open {
             top: 13%;
         }
         &:focus {
             outline: none;
         }
-    }
-    &__NoTracks {
-        line-height: 16px;
-        font-size: 16px;
     }
 }

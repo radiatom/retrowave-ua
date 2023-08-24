@@ -53,7 +53,7 @@ const ListTracks = React.memo(({ list, pageNumber, openListName, leftOrRight, po
                           );
                       }
                   })
-                : openListName !== "" && <h3 className="windowList__NoTracks">No tracks</h3>}
+                : openListName !== "" && <h3 className="listTracks__hint">No tracks</h3>}
         </div>
     );
 });

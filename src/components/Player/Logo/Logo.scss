@@ -15,13 +15,8 @@
         width: 100%;
         transition: opacity 0.4s ;
         opacity: 1;
-        &.closed {
+        &_opacity {
             opacity: 0;
-        }
-        &.1 {
-            background-image: url("/img/logo.png");
-            background-size: contain;
-            background-repeat: no-repeat;
         }
     }
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import "./Player.scss";
 import Logo from "./Logo/Logo";
-import Panel from "./Panel/Panel";
+import PanelPlayer from "./PanelPlayer/PanelPlayer";
 import Time from "./Time/Time";
 import Rating from "./../Rating/Rating";
 import Volume from "./Volume/Volume";
@@ -10,7 +10,7 @@ const Player = React.memo(({ setOpenBoombox, music, prev, next, position, audioR
     return (
         <div className="player">
             <Logo setOpenBoombox={setOpenBoombox} />
-            <Panel
+            <PanelPlayer
                 music={music}
                 prev={prev}
                 next={next}

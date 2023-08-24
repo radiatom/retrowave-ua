@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import "./Boombox.scss";
 import CassetteBoombox from "./CassetteBoombox/CassetteBoombox";
-import PanelBoombox from "./PanelBoombox/PanelBoombox";
+import Panel from "./../Panel/Panel";
 import ValueBoombox from "./ValueBoombox/ValueBoombox";
 // import SoundLevel from "./SoundLevel/SoundLevel";
 import WindowList from "./WindowList/WindowList";
-import { leftListSelector, listSelector, openListNameSelector } from "../../selectorApp";
+import { listSelector, openListNameSelector } from "../../selectorApp";
 import { useSelector } from "react-redux";
 import { newTimeForBoombox } from "../../function";
 
@@ -44,7 +44,7 @@ const Boombox = ({ music, prev, next, audioRef, setOpenBoombox, position, setAna
             {/* <SoundLevel audioRef={audioRef} play={play} /> */}
             <CassetteBoombox music={music} play={play} />
 
-            <div className="boombox__left">
+            <div className="boombox__leftWindowList">
                 <WindowList
                     leftOrRight="left"
                     list={list.left}
@@ -53,7 +53,7 @@ const Boombox = ({ music, prev, next, audioRef, setOpenBoombox, position, setAna
                     lineHight={20}
                 />
             </div>
-            <div className="boombox__right">
+            <div className="boombox__rightWindowList">
                 <WindowList
                     leftOrRight="right"
                     list={list.right}
@@ -62,8 +62,8 @@ const Boombox = ({ music, prev, next, audioRef, setOpenBoombox, position, setAna
                     lineHight={20}
                 />
             </div>
-            <div className="boombox__panel">
-                <PanelBoombox
+            <div className="boombox__panelBoombox">
+                <Panel
                     play={play}
                     setPlay={setPlay}
                     prev={prev}

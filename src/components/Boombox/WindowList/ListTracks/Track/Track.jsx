@@ -58,7 +58,7 @@ const Track = React.memo(({ title, index, rating, duration, id, leftOrRight }) =
     };
 
     return (
-        <div className={music.title === title ? "track sounds" : "track"}>
+        <div className={music.title === title ? "track track_sounds" : "track"}>
             <div className="track__position">{index + 1}</div>
             <div className="track__title" onClick={playTrack}>
                 {title}
@@ -71,17 +71,17 @@ const Track = React.memo(({ title, index, rating, duration, id, leftOrRight }) =
                 namesPlaylists.length>3
             ) && (
                 <img
-                    className={active ? "track__addIco active" : "track__addIco"}
+                    className={active ? "track__addIco track__addIco_active" : "track__addIco"}
                     onClick={() => setActive(!active)}
                     src={addIco}
                     alt="addIco"
                 />
             )}
-            <div className={active ? "track__spoiler open" : "track__spoiler"}>
+            <div className={active ? "track__spoiler track__spoiler_open" : "track__spoiler"}>
                 {namesPlaylists.map((name, index) => {
                     if (index > 2) {
                         return (
-                            <button className="track__btn" onClick={() => clickAddingTrack(name)} key={index}>
+                            <button className="track__btnToList" onClick={() => clickAddingTrack(name)} key={index}>
                                 {name}
                             </button>
                         );

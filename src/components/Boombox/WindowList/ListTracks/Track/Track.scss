@@ -6,6 +6,9 @@
     margin-bottom: 4px;
     line-height: 16px;
     justify-content: space-between;
+    &_sounds {
+        background-color: rgb(255, 94, 0);
+    }
     &__position {
         width: 5.6%;
         text-align: center;
@@ -31,8 +34,7 @@
         border-radius: 50%;
         box-shadow: 0 0 1.6px 1.6px rgb(201, 146, 29);
         cursor: pointer;
-
-        &.active {
+        &_active {
             box-shadow: 0 0 1.6px 1.6px rgb(29, 195, 201);
         }
     }
@@ -43,16 +45,12 @@
         transition: left 0.24s;
         width: 90%;
         background-color: aquamarine;
-
-        &.open {
+        &_open {
             left: 0;
         }
     }
-    &__btn {
+    &__btnToList {
         padding: 0 4px;
         margin: 0 1.6px;
-    }
-    &.sounds{
-        background-color: rgb(255, 94, 0);
     }
 }

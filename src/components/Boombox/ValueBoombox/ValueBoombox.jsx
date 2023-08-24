@@ -23,7 +23,7 @@ const ValueBoombox = React.memo(({audioRef}) => {
                     |
                 </div>
             </div>
-            <button className="volume__noMute valueBoombox__icon"></button>
+            <button className="valueBoombox__icon"></button>
             <input
                 type="range"
                 min="0"
@@ -31,7 +31,7 @@ const ValueBoombox = React.memo(({audioRef}) => {
                 step="1"
                 value={value}
                 onChange={(e) => dispatch({ type: "setVolume", volume: e.target.value })}
-                className="volume__range valueBoombox__range"
+                className="range valueBoombox__range"
             />
         </div>
     );

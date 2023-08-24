@@ -1,0 +1,38 @@
+.panelPlayer {
+    position: relative;
+    width: 600px;
+    // height: 100%;
+    text-align: center;
+    @media (max-width: 600px) {
+        width: 100%;
+    }
+    &__controls {
+        //позиціонує кнопки управління по середині
+        position: absolute;
+        z-index: 1000;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        @media (max-width: 500px) {
+            top: 27px;
+        }
+    }
+    &__button {
+        width: 65px;
+        height: 30px;
+    }
+    &_play {
+        .cassette {
+            &__reel {
+                &_left {
+                    animation: cassette-reel-spin 3s linear infinite; //анімація обертання
+                }
+                &_right {
+                    animation: cassette-reel-spin 1.5s linear infinite; //анімація обертання
+                }
+            }
+        }
+    }
+}

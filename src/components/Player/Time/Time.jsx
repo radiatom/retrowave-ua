@@ -37,8 +37,8 @@ const Time = React.memo(({ duration, audioRef, next }) => {
 
     return (
         <div className="time">
-            <span className="time elapsed">{currentTime}</span>
-            <span className="time total">/{time}</span>
+            <span className="time time_elapsed">{currentTime}</span>
+            <span className="time time_total">/{time}</span>
         </div>
     );
 });

@@ -29,5 +29,15 @@
         position: absolute;
         left: 416px;
         top: 8px;
+        display: inline-block;
+        vertical-align: middle;
+        width: 24px;
+        height: 24px;
+        margin-right: 4px;
+        border: 0;
+        background: none;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url("./../../../img/icons/volume.svg");
     }
 }

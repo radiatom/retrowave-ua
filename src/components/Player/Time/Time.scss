@@ -1,25 +1,23 @@
 .time {
     cursor: default;
-    &.elapsed {
+    &_elapsed {
         display: inline-block;
         vertical-align: bottom;
-        // width: 80px;
         line-height: 30px;
         text-align: left;
-        @media(max-width:500px){
+        @media (max-width: 500px) {
             line-height: 20px;
             font-size: 20px;
         }
     } //лічильник
-    &.total {
+    &_total {
         display: inline-block;
         vertical-align: bottom;
-        // width: 60px;
         line-height: 22px;
         overflow: hidden;
         color: #9cf1ff;
         font-size: 18px;
-        @media(max-width:500px){
+        @media (max-width: 500px) {
             line-height: 14px;
             font-size: 14px;
         }

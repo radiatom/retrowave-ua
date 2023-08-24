@@ -37,9 +37,9 @@ const Volume = React.memo(({ audioRef }) => {
                 step="1"
                 value={value}
                 onChange={(e) => dispatch({ type: "setVolume", volume: e.target.value })}
-                className="volume__range"
+                className="range"
             />
-            <div className={mute ? "volume__level mute" : "volume__level "}></div>
+            <div className={mute ? "volume__level volume__leve_mute" : "volume__level"}></div>
         </div>
     );
 });

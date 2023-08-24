@@ -54,7 +54,7 @@ const WindowList = React.memo(({ leftOrRight, list, openListName, portion, lineH
                         return (
                             <button
                                 key={index}
-                                className={openListName === item ? "windowList__btn open" : "windowList__btn"}
+                                className={openListName === item ? "windowList__btn windowList__btn_pressed" : "windowList__btn"}
                                 onClick={() => openList(item)}
                             >
                                 {item}
@@ -64,7 +64,7 @@ const WindowList = React.memo(({ leftOrRight, list, openListName, portion, lineH
                 })}
             </div>
             <input
-                className={openInput ? "windowList__input open" : "windowList__input"}
+                className={openInput ? "windowList__input windowList__input_open" : "windowList__input"}
                 type="text"
                 name="namelist"
                 placeholder="Enter new name list (only Latin letters)"

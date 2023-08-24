@@ -73,7 +73,7 @@
             left: 163.2px;
         }
     } //колеса з анімацією де колесо повільніше обертається, коли не задана анімація на праве колесо то обидва будуть крутитись повільно
-    &.play {
+    &_play {
         .cassetteBoombox__reel {
             &_left {
                 animation: cassette-reel-spin 3s linear infinite; //анімація обертання
