@@ -13,7 +13,7 @@ const Cassette = React.memo(({ music,play }) => {
     const dispatch = useDispatch();
     const nameCurrentListPlayer = useSelector(nameCurrentListPlayerSelector);
     const namesPlaylists = useSelector(namesPlaylistsSelector);
-    const [open, setOpen] = useState(false);
+    const [openDownloadSpoiler, setOpenDownloadSpoiler] = useState(false);
     const [openList, setOpenList] = useState(false);
     const [style, setStyle] = useState({ top: `0px` });
 
@@ -25,8 +25,8 @@ const Cassette = React.memo(({ music,play }) => {
     if (openList === true) {
         setTimeout(() => setOpenList(false), 10000);
     } //ховати вікно якщо його не сховав сам користувач
-    if (open === true) {
-        setTimeout(() => setOpen(false), 10000);
+    if (openDownloadSpoiler === true) {
+        setTimeout(() => setOpenDownloadSpoiler(false), 10000);
     } //ховати вікно якщо його не сховав сам користувач
 
     const ico = () => {
@@ -81,12 +81,12 @@ const Cassette = React.memo(({ music,play }) => {
                 })}
             </div>
             <img
-                onClick={() => setOpen(!open)}
-                className={open ? "cassette__downloadIcon active" : "cassette__downloadIcon"}
+                onClick={() => setOpenDownloadSpoiler(!openDownloadSpoiler)}
+                className={openDownloadSpoiler ? "cassette__downloadIcon active" : "cassette__downloadIcon"}
                 src={download}
                 alt="download"
             />
-            <div className={open ? "cassette__spoiler open" : "cassette__spoiler"}>
+            <div className={openDownloadSpoiler ? "cassette__spoiler open" : "cassette__spoiler"}>
                 <div className="download">
                     <a className="download__link" href={music.artworkUrl} download target="_blank" rel="noopener">
                         IMG
