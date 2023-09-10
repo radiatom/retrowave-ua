@@ -6,6 +6,7 @@ import { capitalizeFirstLetter, containsLatinAndDigits } from "../../../function
 import { useEffect } from "react";
 import BtnDeleteList from "./BtnDeleteList/BtnDeleteList";
 import ListTracks from "./ListTracks/ListTracks";
+import { addNewList, setList, setOpenListName, setPageNumber } from "../../../reduxToolkit/reducer";
 
 const WindowList = React.memo(({ leftOrRight, list, openListName, portion, lineHight }) => {
     const namesPlaylists = useSelector(namesPlaylistsSelector);
@@ -13,8 +14,14 @@ const WindowList = React.memo(({ leftOrRight, list, openListName, portion, lineH
     const pagesNumbers = useSelector(pageNumberSelector);
     const pageNumber = leftOrRight === "left" ? pagesNumbers.left : pagesNumbers.right;
 
-    
     const [openInput, setOpenInput] = useState(false);
+    
+    const openList = (name) => {
+        dispatch(setList({ position: leftOrRight, typeList: name })); //добавляємо новий масив на відображення , якщо typeList невідомий редюсеру він пойме що це новий плейлист та добавить зі списку нових плейлистів той що потрібно на відображення
+        dispatch(setOpenListName({ position: leftOrRight, name })); //фіксуємо назву плейлиста який ми зараз відображаємо
+        dispatch(setPageNumber({ position: leftOrRight, number: 1 })); //вертаємо початкове значення номера сторінки
+    }; //відкрити плейлист за назвою назва має бути з великої літери
+    
     useEffect(() => {
         if (openInput) {
             setTimeout(() => {
@@ -22,21 +29,11 @@ const WindowList = React.memo(({ leftOrRight, list, openListName, portion, lineH
             }, 30000);
         }
     }, [openInput]); //автозакривання
-
-    const openList = (name) => {
-        dispatch({ type: "setList", position: leftOrRight, typeList: name }); //добавляємо новий масив на відображення , якщо typeList невідомий редюсеру він пойме що це новий плейлист та добавить зі списку нових плейлистів той що потрібно на відображення
-        dispatch({ type: "setOpenListName", position: leftOrRight, name }); //фіксуємо назву плейлиста який ми зараз відображаємо
-        dispatch({ type: "setPageNumber", position: leftOrRight, number: 1 }); //вертаємо початкове значення номера сторінки
-    }; //відкрити плейлист за назвою назва має бути з великої літери
-
     const [inputText, setInputText] = useState("");
     const pressEnter = (event) => {
         if (event.key === "Enter") {
             if (containsLatinAndDigits(inputText)) {
-                dispatch({
-                    type: "addNewList",
-                    newName: capitalizeFirstLetter(inputText),
-                });
+                dispatch(addNewList({ newName: capitalizeFirstLetter(inputText) }));
             } //створюємо всій лейлист якщо там є латинські букви чи цифри
             setInputText("");
             setOpenInput(false);

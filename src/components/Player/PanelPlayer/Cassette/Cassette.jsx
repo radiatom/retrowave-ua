@@ -8,19 +8,15 @@ import randomImg from "./../../../../img/icons/random.png";
 import ratingImg from "./../../../../img/icons/rating.png";
 import defaultImg from "./../../../../img/icons/default.png";
 import { useEffect } from "react";
+import { createPlayerList, setPosition } from "./../../../../reduxToolkit/reducer";
 
-const Cassette = React.memo(({ music,play }) => {
+const Cassette = React.memo(({ music, play }) => {
     const dispatch = useDispatch();
     const nameCurrentListPlayer = useSelector(nameCurrentListPlayerSelector);
     const namesPlaylists = useSelector(namesPlaylistsSelector);
     const [openDownloadSpoiler, setOpenDownloadSpoiler] = useState(false);
     const [openList, setOpenList] = useState(false);
     const [style, setStyle] = useState({ top: `0px` });
-
-    useEffect(() => {
-        const hight = document.getElementById("cassette__list").offsetHeight;
-        setStyle({ top: `-${hight}px` });
-    }, [namesPlaylists]);
 
     if (openList === true) {
         setTimeout(() => setOpenList(false), 10000);
@@ -51,15 +47,23 @@ const Cassette = React.memo(({ music,play }) => {
     const clickOnListIco = () => {
         setOpenList(!openList);
     };
-    
+
     const clickListIcon = (name) => {
-        dispatch({ type: "createPlayerList", name });
-        dispatch({ type: "setPosition", position: 0 });
+        dispatch(createPlayerList({ name }));
+        dispatch(setPosition({ position: 0 }));
         setOpenList(false);
     };
 
+    useEffect(() => {
+        const hight = document.getElementById("cassette__list").offsetHeight;
+        setStyle({ top: `-${hight}px` });
+    }, [namesPlaylists]);
+    useEffect(() => {
+        const hight = document.getElementById("cassette__list").offsetHeight;
+        setStyle({ top: `-${hight}px` });
+    }, []);
     return (
-        <div className={play?"cassette play":"cassette"}>
+        <div className={play ? "cassette play" : "cassette"}>
             <img
                 onClick={() => clickOnListIco()}
                 className={openList ? "cassette__listIcon active" : "cassette__listIcon"}
@@ -107,6 +111,6 @@ const Cassette = React.memo(({ music,play }) => {
             <div className="cassette__body"></div>
         </div>
     );
-})
+});
 
 export default Cassette;

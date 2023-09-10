@@ -4,6 +4,12 @@ import { newTime } from "./../../../function";
 
 const Time = React.memo(({ duration, audioRef, next }) => {
     const [time, setTime] = useState(0);
+    const [currentTime, setCurrentTime] = useState("0:00"); //лічильник часу
+    const handleTimeUpdate = () => {
+        if (audioRef.current) {
+            setCurrentTime(newTime(Math.round(audioRef.current.currentTime)));
+        }
+    }; //оновлюємо лічильник слідкуючи за аудіо
     useEffect(() => {
         if (duration > 0) {
             const timesSeconds = parseInt(duration.toString().substr(0, 3));
@@ -22,12 +28,6 @@ const Time = React.memo(({ duration, audioRef, next }) => {
         };
     }, []); //слідкуємо за аудіо треком
 
-    const [currentTime, setCurrentTime] = useState("0:00"); //лічильник часу
-    const handleTimeUpdate = () => {
-        if (audioRef.current) {
-            setCurrentTime(newTime(Math.round(audioRef.current.currentTime)));
-        }
-    }; //оновлюємо лічильник слідкуючи за аудіо
 
     useEffect(() => {
         if (currentTime >= time) {
