@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./ValueBoombox.scss";
 import { useDispatch, useSelector } from "react-redux";
 import { volumeSelector } from "../../../selectorApp";
+import { setVolume } from "../../../reduxToolkit/reducer";
 
 const ValueBoombox = React.memo(({audioRef}) => {
     const value = useSelector(volumeSelector); //значення величини звуку
@@ -30,7 +31,7 @@ const ValueBoombox = React.memo(({audioRef}) => {
                 max="100"
                 step="1"
                 value={value}
-                onChange={(e) => dispatch({ type: "setVolume", volume: e.target.value })}
+                onChange={(e) => dispatch(setVolume({volume: e.target.value }))}
                 className="range valueBoombox__range"
             />
         </div>

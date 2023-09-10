@@ -29,7 +29,7 @@ const Boombox = ({ music, prev, next, audioRef, setOpenBoombox, position, setAna
     }; //оновлюємо лічильник слідкуючи за аудіо
 
     useEffect(() => {
-        if (currentTime >= parseInt(music.duration.toString().substr(0, 3))) {
+       if (music.duration!==undefined&&currentTime >= parseInt(music.duration.toString().substr(0, 3))) {
             next();
         }
     }, [currentTime]); //закінчиться час то плеєр перемикнеться далі

@@ -4,13 +4,7 @@ import Cassette from "./Cassette/Cassette";
 
 const PanelPlayer = React.memo(({ music, prev, next, position, audioRef, setAnaliz, setPlay, play }) => {
     const audio = audioRef.current;
-
-    useEffect(() => {
-        if (play) {
-            audio.play();
-        }
-    }, [play, music]); // Відтворити музику при зміні об'єкту music
-
+    
     const clickPlay = () => {
         if (play) {
             setPlay(false); //стиль плеєра який не грає
@@ -21,6 +15,12 @@ const PanelPlayer = React.memo(({ music, prev, next, position, audioRef, setAnal
             audio.play();
         }
     };
+    
+    useEffect(() => {
+        if (play) {
+            audio.play();
+        }
+    }, [play, music]); // Відтворити музику при зміні об'єкту music
     return (
         <div className={play ? "panelPlayer panelPlayer_play" : "panelPlayer"}>
             <Cassette music={music} play={play} />

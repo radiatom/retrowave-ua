@@ -1,14 +1,12 @@
 import React from "react";
 import "./BtnDeleteList.scss";
 import { useDispatch } from "react-redux";
+import { deleteNewList } from "../../../../reduxToolkit/reducer";
 
 const BtnDeleteList = React.memo(({ openListName, openList }) => {
     const dispatch = useDispatch();
     const click = () => {
-        dispatch({
-            type: "deleteNewList",
-            name: openListName,
-        });
+        dispatch(deleteNewList({ name: openListName }));
         openList("Default");
     };
     return (

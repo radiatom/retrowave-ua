@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import "./App.scss";
-import { addMusics } from "./redux/reducer";
+// import { addMusics } from "./redux/reducer";
+import { addMusic, addMusics, setPosition } from "./reduxToolkit/reducer";
 import { useDispatch, useSelector } from "react-redux";
 import {
     addDataAppSelector,
@@ -35,20 +36,20 @@ function App() {
     }, []);
 
     useEffect(() => {
-        dispatch({ type: "addMusic", position }); //завантажити трек під індексом 'position' при зміні позиції
+        dispatch(addMusic({position })); //завантажити трек під індексом 'position' при зміні позиції
     }, [position, nameCurrentListPlayer]);
 
     const prev = () => {
         if (position > 0) {
-            dispatch({ type: "setPosition", position: position - 1 });
+            dispatch(setPosition({position: position - 1 }));
         }
     };
     const next = () => {
         if (position < numberOfTracks - 1) {
             //якщо в списку 4 пісні
-            dispatch({ type: "setPosition", position: position + 1 });
+            dispatch(setPosition({position: position + 1 }));
         } else {
-            dispatch({ type: "setPosition", position: 0 });
+            dispatch(setPosition({position: 0 }));
         }
     };
 
@@ -81,7 +82,7 @@ function App() {
 
     const [widthDevice, setWidthDevice] = useState(null);
     useEffect(() => {
-        setWidthDevice(appRef.current.offsetWidth);
+        if(appRef.current){setWidthDevice(appRef.current.offsetWidth);}
     }, [appRef]);
     
     return (
