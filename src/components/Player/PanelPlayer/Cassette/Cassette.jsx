@@ -21,7 +21,10 @@ const Cassette = React.memo(({ music,play }) => {
         const hight = document.getElementById("cassette__list").offsetHeight;
         setStyle({ top: `-${hight}px` });
     }, [namesPlaylists]);
-
+    useEffect(() => {
+        const hight = document.getElementById("cassette__list").offsetHeight;
+        setStyle({ top: `-${hight}px` });
+    }, []);
     if (openList === true) {
         setTimeout(() => setOpenList(false), 10000);
     } //ховати вікно якщо його не сховав сам користувач

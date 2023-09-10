@@ -83,6 +83,7 @@ function App() {
     useEffect(() => {
         setWidthDevice(appRef.current.offsetWidth);
     }, [appRef]);
+    
     return (
         music && (
             <div

@@ -1283,13 +1283,6 @@ export const data = [
         artworkUrl: `/artwork/9789a3d23a4c8e75836d02eb13fcaea698c67e76.jpg`
       },
       {
-        id: '6049f0377e2c325a6a90b90db1e8bf7c5e657161',
-        title: 'Empathy Test – Holding On',
-        duration: 249159.34999999998,
-        streamUrl: `/audio/6049f0377e2c325a6a90b90db1e8bf7c5e657161.mp3`,
-        artworkUrl: `/artwork/6049f0377e2c325a6a90b90db1e8bf7c5e657161.jpg`
-      },
-      {
         id: '8b26847f4751208715912bae97ac526a83984479',
         title: 'Midnight Static – Synthesized Dreams',
         duration: 224000,
