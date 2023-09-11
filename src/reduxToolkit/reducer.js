@@ -227,6 +227,9 @@ const reducer = createSlice({
                     state.position = 0; //відтворюємо перший трек}
                 }
             }
+            if(action.payload.id===state.music.id){
+                state.position = state.position-1
+            }
         },
         setOpenListName(state, action) {
             if (action.payload.position === "left") {
