@@ -137,9 +137,9 @@ const reducer = createSlice({
                     state.pageNumber.right = action.payload.number;
                     break;
                 }
-                default: {
-                    state = state;
-                }
+                // default: {
+                //     state = state;
+                // }
             }
         },
         setList(state, action) {
@@ -155,7 +155,7 @@ const reducer = createSlice({
                             break;
                         }
                         case "": {
-                            state = state;
+                            // state = state;
                             break;
                         }
                         default: {
@@ -176,7 +176,7 @@ const reducer = createSlice({
                             break;
                         }
                         case "": {
-                            state = state;
+                            // state = state;
                             break;
                         }
                         default: {
@@ -185,8 +185,8 @@ const reducer = createSlice({
                     }
                     break;
                 }
-                default:
-                    state = state;
+                // default:
+                //     state = state;
             }
         },
         addNewList(state, action) {
