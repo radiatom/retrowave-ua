@@ -13,7 +13,8 @@ const reducer = createSlice({
         position: 0,
         numberOfTracks: 0,
         volume: 50,
-        namesPlaylists: ["Default", "Rating", "Random"],
+        namesPlayerPlaylists: ["Default", "Rating", "Random"],
+        namesBoomboxPlaylists: ["Default", "Rating", "Random"],
         list: {
             left: [],
             right: [],
@@ -191,20 +192,24 @@ const reducer = createSlice({
         },
         addNewList(state, action) {
             state[`${action.payload.newName}List`] = [];
-            state.namesPlaylists = [...state.namesPlaylists, action.payload.newName];
+            state.namesBoomboxPlaylists.push(action.payload.newName);
         },
         deleteNewList(state, action) {
             delete state[action.payload.name + "List"]; // Видаляємо відповідний список
-            state.namesPlaylists = state.namesPlaylists.filter((name) => name !== action.payload.name);
+            state.namesPlayerPlaylists = state.namesPlayerPlaylists.filter((name) => name !== action.payload.name);
+            state.namesBoomboxPlaylists = state.namesBoomboxPlaylists.filter((name) => name !== action.payload.name);
         },
         addTrackIntoList(state, action) {
             const track = state[action.payload.currentList + "List"].find((item) => item.id === action.payload.id);
             if (action.payload.intoList === state.nameCurrentListPlayer) {
                 state.numberOfTracks = state[action.payload.intoList + "List"].length + 1; //для оновлення плеєва
-                state[action.payload.intoList + "List"] = [...state[action.payload.intoList + "List"], track];
+                state[action.payload.intoList + "List"].push(track);
             } else {
-                state[action.payload.intoList + "List"] = [...state[action.payload.intoList + "List"], track];
+                state[action.payload.intoList + "List"].push(track);
             }
+            if (state[action.payload.intoList + "List"].length === 1) {
+                state.namesPlayerPlaylists.push(action.payload.intoList);
+            } //якщо щойно добавили перший трек в плейлист тоді відобразити назву плейлисталиста в списку плейлистівлистів плеєра
         },
         deleteTrackWithList(state, action) {
             const newList = state[action.payload.currentList + "List"].filter((item) => item.id !== action.payload.id);
@@ -213,6 +218,14 @@ const reducer = createSlice({
                 state[action.payload.currentList + "List"] = newList;
             } else {
                 state[action.payload.currentList + "List"] = newList;
+            }
+            if (state[action.payload.currentList + "List"].length === 0) {//коли в плейлисті нема треків
+                const newNamesPlayerPlaylists = state.namesPlayerPlaylists.filter((item) => item !== action.payload.currentList); //видаляємо назву плейлиста з списку відображення плейлистів в плеєрі
+                state.namesPlayerPlaylists = newNamesPlayerPlaylists; //добавляємо відфільтрований масив назв плейлистів
+                if (action.payload.currentList === state.nameCurrentListPlayer) {//якщо поточний плейлист який відтворює плеєр є такий що не потрібно відображати
+                    state.nameCurrentListPlayer = "Default"; //перемикаємо плеєр на відображення дефотного плейлиста
+                    state.position = 0; //відтворюємо перший трек}
+                }
             }
         },
         setOpenListName(state, action) {
@@ -252,7 +265,6 @@ export const addMusics = () => async (dispatch) => {
         // artworkUrl:"https://retrowave.ru"+track.artworkUrl,//для api
         // streamUrl:"https://retrowave.ru"+track.streamUrl//для api
     }));
-    dispatch(addMusicList({data:updatedData}))
-    dispatch(addMusic({position:0}))
-
+    dispatch(addMusicList({ data: updatedData }));
+    dispatch(addMusic({ position: 0 }));
 };
