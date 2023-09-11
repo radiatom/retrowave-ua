@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import "./Cassette.scss";
 import { useDispatch, useSelector } from "react-redux";
 import { nameCurrentListPlayerSelector, namesPlayerPlaylistsSelector } from "./../../../../selectorApp";
@@ -16,6 +16,7 @@ const Cassette = React.memo(({ music, play }) => {
     const namesPlaylists = useSelector(namesPlayerPlaylistsSelector);
     const [openDownloadSpoiler, setOpenDownloadSpoiler] = useState(false);
     const [openList, setOpenList] = useState(false);
+    const caseteListRef=useRef(null)
     const [style, setStyle] = useState({ top: `0px` });
 
     if (openList === true) {
@@ -55,11 +56,11 @@ const Cassette = React.memo(({ music, play }) => {
     };
 
     useEffect(() => {
-        const hight = document.getElementById("cassette__list").offsetHeight;
+        const hight = caseteListRef.current.offsetHeight;
         setStyle({ top: `-${hight}px` });
     }, [namesPlaylists]);
     useEffect(() => {
-        const hight = document.getElementById("cassette__list").offsetHeight;
+        const hight = caseteListRef.current.offsetHeight;
         setStyle({ top: `-${hight}px` });
     }, []);
     return (
@@ -70,7 +71,7 @@ const Cassette = React.memo(({ music, play }) => {
                 src={ico()}
                 alt="list"
             />
-            <div className="cassette__list" style={openList ? style : { top: "0px" }} id="cassette__list">
+            <div className="cassette__list" style={openList ? style : { top: "0px" }}  ref={caseteListRef}>
                 <img onClick={() => clickListIcon("Random")} src={randomImg} alt="randomImg" />
                 <img onClick={() => clickListIcon("Rating")} src={ratingImg} alt="ratingImg" />
                 <img onClick={() => clickListIcon("Default")} src={defaultImg} alt="defaultImg" />
