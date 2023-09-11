@@ -77,19 +77,7 @@ const reducer = createSlice({
                     break;
                 }
                 default: {
-                    const track =
-                        state[state.nameCurrentListPlayer + "List"].length === 0
-                            ? {
-                                  id: "000",
-                                  title: "No traks in this list",
-                                  duration: 0,
-                                  streamUrl: "",
-                                  artworkUrl: "",
-                                  rating: 5,
-                                  idTrack: 0,
-                              }
-                            : state[state.nameCurrentListPlayer + "List"][action.payload.position];
-                    state.music = track;
+                    state.music = state[state.nameCurrentListPlayer + "List"][action.payload.position];
                     state.numberOfTracks = state[state.nameCurrentListPlayer + "List"].length;
                 }
             }
