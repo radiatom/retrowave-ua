@@ -17,7 +17,10 @@ export const listSelector=(state)=>{
       return state.dataPage.list
 }
 export const namesPlaylistsSelector=(state)=>{
-      return state.dataPage.namesPlaylists
+      return state.dataPage.namesBoomboxPlaylists
+}
+export const namesPlayerPlaylistsSelector=(state)=>{
+      return state.dataPage.namesPlayerPlaylists
 }
 export const openListNameSelector=(state)=>{
       return state.dataPage.openListName

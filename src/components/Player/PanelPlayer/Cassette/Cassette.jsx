@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Cassette.scss";
 import { useDispatch, useSelector } from "react-redux";
-import { nameCurrentListPlayerSelector, namesPlaylistsSelector } from "./../../../../selectorApp";
+import { nameCurrentListPlayerSelector, namesPlayerPlaylistsSelector } from "./../../../../selectorApp";
 import download from "./../../../../img/icons/downloadMp3.svg";
 import list from "./../../../../img/icons/man.png";
 import randomImg from "./../../../../img/icons/random.png";
@@ -13,7 +13,7 @@ import { createPlayerList, setPosition } from "./../../../../reduxToolkit/reduce
 const Cassette = React.memo(({ music, play }) => {
     const dispatch = useDispatch();
     const nameCurrentListPlayer = useSelector(nameCurrentListPlayerSelector);
-    const namesPlaylists = useSelector(namesPlaylistsSelector);
+    const namesPlaylists = useSelector(namesPlayerPlaylistsSelector);
     const [openDownloadSpoiler, setOpenDownloadSpoiler] = useState(false);
     const [openList, setOpenList] = useState(false);
     const [style, setStyle] = useState({ top: `0px` });
