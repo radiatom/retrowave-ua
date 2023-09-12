@@ -216,7 +216,7 @@ const reducer = createSlice({
                 }
             }
             if(action.payload.id===state.music.id){//якщо трек який зараз грає в плеєрі видаляється
-                state.position = state.position-1
+                if(state.position>1){state.position = state.position-1}
             }
         },
         setOpenListName(state, action) {
