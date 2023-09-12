@@ -1,11 +1,11 @@
 import React from "react";
 import "./DeleteAlert.scss";
 
-const DeleteAlert = ({ setYesOrNO }) => {
+const DeleteAlert = ({ setYesOrNo }) => {
     return (
         <div className="deleteAlert">
-            <button onClick={() => setYesOrNO(true)}>Yes</button>
-            <button onClick={() => setYesOrNO(false)}>No</button>
+            <button onClick={() => setYesOrNo(true)}>Yes</button>
+            <button onClick={() => setYesOrNo(false)}>No</button>
         </div>
     );
 };
