@@ -1,0 +1,15 @@
+    .deleteAlert{
+        border: 1px solid red;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        button{
+            margin: 0 5px;
+        }
+        &:first-child{
+            color: greenyellow;
+        }
+        &:last-child{
+            color: red;
+        }
+    }
