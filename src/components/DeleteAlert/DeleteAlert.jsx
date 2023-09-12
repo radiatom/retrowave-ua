@@ -15,7 +15,7 @@ const DeleteAlert = ({ setActiveAlert, action }) => {
     return (
         <div className="deleteAlert">
             <button onClick={() => setYesOrNo(true)}>Yes</button>
-            <button onClick={() => setYesOrNo(false)}>No</button>
+            <button onClick={() => setActiveAlert(false)}>No</button>
         </div>
     );
 };
