@@ -5,11 +5,13 @@
     justify-content: center;
     button{
         margin: 0 5px;
-    }
-    &:first-child{
-        color: greenyellow;
-    }
-    &:last-child{
-        color: red;
+        padding: 0 5px;
+        background-color: rgba(240, 248, 255, 0);
+        &:first-child{
+            color: rgb(111, 184, 3);
+        }
+        &:last-child{
+            color: red;
+        }
     }
 }
