@@ -18,6 +18,8 @@ import {
 const Track = React.memo(({ title, index, rating, duration, id, leftOrRight }) => {
     const openListName = useSelector(openListNameSelector);
     const [active, setActive] = useState(false);
+    const [activeAlert, setActiveAlert] = useState(false);
+
     const namesPlaylists = useSelector(namesPlaylistsSelector);
     const music = useSelector(addDataAppSelector); //дані про трек
     const dispatch = useDispatch();
