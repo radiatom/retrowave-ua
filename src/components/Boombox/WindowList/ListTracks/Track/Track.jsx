@@ -20,7 +20,6 @@ const Track = React.memo(({ title, index, rating, duration, id, leftOrRight }) =
     const openListName = useSelector(openListNameSelector);
     const [active, setActive] = useState(false);
     const [activeAlert, setActiveAlert] = useState(false);
-    const [yesOrNo, setYesOrNo] = useState(null);
 
     const namesPlaylists = useSelector(namesPlaylistsSelector);
     const music = useSelector(addDataAppSelector); //дані про трек
@@ -62,15 +61,6 @@ const Track = React.memo(({ title, index, rating, duration, id, leftOrRight }) =
         dispatch(createPlayerList({ name: openListName[leftOrRight + ""] }));
         dispatch(setPosition({ position: index }));
     };
-
-    useEffect(() => {
-        if (yesOrNo === true) {
-            clickDeleteTrack();
-            setActiveAlert(null);
-        } else {
-            setActiveAlert(null);
-        }
-    }, [yesOrNo]);
     return (
         <div className={music.title === title ? "track track_sounds" : "track"}>
             <div className="track__position">{index + 1}</div>
@@ -101,7 +91,7 @@ const Track = React.memo(({ title, index, rating, duration, id, leftOrRight }) =
                 })}
             </div>
             <div className={activeAlert ? "track__spoiler track__spoiler_open" : "track__spoiler"}>
-                <DeleteAlert setYesOrNo={setYesOrNo} />
+                <DeleteAlert setActiveAlert={setActiveAlert} action={clickDeleteTrack} />
             </div>
             <BtnDeleteTrack openListName={openListName[leftOrRight + ""]} setActiveAlert={setActiveAlert} />
         </div>
