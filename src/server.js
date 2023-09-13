@@ -2701,7 +2701,7 @@ export const getData = () => {
     return data;
 };
 const addNewTrack = (title,duration,nameFile) => {
-    data.push({
+    data.unshift({
         id: data.length + 1,
         title,
         duration:timeToMilliseconds(duration),
@@ -2709,7 +2709,12 @@ const addNewTrack = (title,duration,nameFile) => {
         artworkUrl: `/artwork/${nameFile}.jpg`,
     });
 };
+addNewTrack("Dangerous Feelings - Mahuia Bridgman Cooper","2:56","4")
 addNewTrack("Gesaffelstein – Aleph","4:46","3")
+addNewTrack("Telaviv Skeler","2:03","8")
+addNewTrack("Shadow in the Cloud Mahuia Bridgman","2:26","7")
+addNewTrack("You Don t Know How Far I ll Go - Mahuia Bridgman Cooper","2:23","5")
+addNewTrack("Mahuia Bridgman-Cooper - Shadow in the Cloud","6:13","6")
 
 //функції для нових пісень з респонса
 

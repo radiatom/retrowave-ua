@@ -84,7 +84,6 @@ function App() {
     useEffect(() => {
         if(appRef.current){setWidthDevice(appRef.current.offsetWidth);}
     }, [appRef]);
-    
     return (
         music && (
             <div
