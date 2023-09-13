@@ -8,8 +8,7 @@ const DeleteAlert = ({ setActiveAlert, action }) => {
         if (yesOrNo === true) {
             action();
             setActiveAlert(false);
-        } else {
-            setActiveAlert(false);
+            setYesOrNo(null)
         }
     }, [yesOrNo]);
     return (
