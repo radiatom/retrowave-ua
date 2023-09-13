@@ -215,7 +215,7 @@ const reducer = createSlice({
                     state.position = 0; //відтворюємо перший трек}
                 }
             }
-            if(action.payload.id===state.music.id){//якщо трек який зараз грає в плеєрі видаляється
+            if(action.payload.id===state.music.id&&state.nameCurrentListPlayer===action.payload.currentList){//якщо трек який зараз грає в плеєрі видаляється
                 if(state.position>1){state.position = state.position-1}
             }
         },
