@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import "./BtnDeleteList.scss";
 import { useDispatch } from "react-redux";
 import { deleteNewList } from "../../../../reduxToolkit/reducer";
+import DeleteAlert from "./../../../DeleteAlert/DeleteAlert";
 
 const BtnDeleteList = React.memo(({ openListName, openList }) => {
+    const [activeAlert, setActiveAlert] = useState(false);
+
     const dispatch = useDispatch();
     const click = () => {
         dispatch(deleteNewList({ name: openListName }));
@@ -13,11 +16,16 @@ const BtnDeleteList = React.memo(({ openListName, openList }) => {
         <>
             {Boolean(
                 openListName !== "Default" && openListName !== "Random" && openListName !== "Rating" && openListName !== ""
-            ) && (
-                <button className="btnDeleteList" onClick={click}>
-                    Delete this list
-                </button>
-            )}
+            ) &&
+                    <div>
+                        <div className={activeAlert?"btnDeleteList__deleteAlert btnDeleteList__deleteAlert_open":"btnDeleteList__deleteAlert"}>
+                            <DeleteAlert setActiveAlert={setActiveAlert} action={click}/>
+                        </div>
+                        <button className='btnDeleteList btnDeleteList_open' onClick={()=>setActiveAlert(!activeAlert)}>
+                            Delete this list
+                        </button>
+                    </div>
+                }
         </>
     );
 });
