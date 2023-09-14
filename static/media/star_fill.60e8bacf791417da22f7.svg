@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>star_on</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="star_on" sketch:type="MSArtboardGroup" fill="#FFFFFF">
+            <path d="M6.18359826,21.7897185 C5.20613487,22.3025384 4.56374535,21.8454966 4.75175628,20.7515765 L5.76707715,14.8440476 L1.46610891,10.6603124 C0.675324419,9.89108266 0.91238873,9.1401641 2.01302388,8.9805633 L7.95681581,8.11866645 L10.6149604,2.74381915 C11.1036921,1.75558914 11.8925954,1.74853769 12.3848144,2.74381915 L15.0429589,8.11866645 L20.9867509,8.9805633 C22.0795882,9.13903335 22.3300929,9.88559387 21.5336658,10.6603124 L17.2326976,14.8440476 L18.2480185,20.7515765 C18.4346974,21.8377463 17.8006145,22.3061976 16.8161765,21.7897185 L11.4998874,19.0005617 L6.18359826,21.7897185 Z" id="Star-22" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

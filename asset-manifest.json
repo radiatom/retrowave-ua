@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/retrowave-ua/static/css/main.f893fbf9.css",
+    "main.js": "/retrowave-ua/static/js/main.05a59804.js",
+    "static/js/787.0fca225c.chunk.js": "/retrowave-ua/static/js/787.0fca225c.chunk.js",
+    "static/media/boombox-5467421_1280.webp": "/retrowave-ua/static/media/boombox-5467421_1280.ff88da65b0635724d1ae.webp",
+    "static/media/logo.png": "/retrowave-ua/static/media/logo.496187083652700ecba6.png",
+    "static/media/cassette-body.png": "/retrowave-ua/static/media/cassette-body.e07a3f8143f8ed4ecaac.png",
+    "static/media/volume.png": "/retrowave-ua/static/media/volume.e6bf7801d51d3f26180f.png",
+    "static/media/volume_high.svg": "/retrowave-ua/static/media/volume_high.20946d3fc2ab80964726.svg",
+    "static/media/volume_mute.svg": "/retrowave-ua/static/media/volume_mute.d53a71a2d8f338cfb677.svg",
+    "static/media/volume_medium.svg": "/retrowave-ua/static/media/volume_medium.ff3550a0e43e78b65e03.svg",
+    "static/media/star.svg": "/retrowave-ua/static/media/star.8e51c1179848f0ba512a.svg",
+    "static/media/prev.svg": "/retrowave-ua/static/media/prev.31b376a146ec4885d062.svg",
+    "static/media/star_fill.svg": "/retrowave-ua/static/media/star_fill.60e8bacf791417da22f7.svg",
+    "static/media/volume.svg": "/retrowave-ua/static/media/volume.e74cb91164517b60ddac.svg",
+    "static/media/next.svg": "/retrowave-ua/static/media/next.2f5cc03619c9be0cb106.svg",
+    "static/media/downloadMp3.svg": "/retrowave-ua/static/media/downloadMp3.863f9a3a17e77b99f481164b0f69c2d2.svg",
+    "static/media/pause.svg": "/retrowave-ua/static/media/pause.388b723f00fe7ecdd7da.svg",
+    "static/media/play.svg": "/retrowave-ua/static/media/play.e1e41e7dab63aaabc2c2.svg",
+    "index.html": "/retrowave-ua/index.html",
+    "static/media/add.svg": "/retrowave-ua/static/media/add.586b9161d8b2dcf513d0bc2ccb1bdfb3.svg",
+    "main.f893fbf9.css.map": "/retrowave-ua/static/css/main.f893fbf9.css.map",
+    "main.05a59804.js.map": "/retrowave-ua/static/js/main.05a59804.js.map",
+    "787.0fca225c.chunk.js.map": "/retrowave-ua/static/js/787.0fca225c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f893fbf9.css",
+    "static/js/main.05a59804.js"
+  ]
+}
