@@ -251,8 +251,10 @@ export const addMusics = () => async (dispatch) => {
         ...track,
         rating: 0,
         idTrack: index + 1,
-        artworkUrl: "./assets"+`${track.artworkUrl}`, //для сервера
-        streamUrl: "./assets"+`${track.streamUrl}`, //для сервера
+        // artworkUrl: "./assets"+`${track.artworkUrl}`, //для сервера
+        // streamUrl: "./assets"+`${track.streamUrl}`, //для сервера
+        artworkUrl: "/retrowave-ua/assets"+`${track.artworkUrl}`, //для сервера
+        streamUrl: "/retrowave-ua/assets"+`${track.streamUrl}`, //для сервера
         // artworkUrl:`${process.env.PUBLIC_URL}${track.artworkUrl}`,//для сервера
         // streamUrl:`${process.env.PUBLIC_URL}${track.streamUrl}`//для сервера
         // artworkUrl:`${import.meta.env.VITE_PUBLIC_URL+"/assets"+track.artworkUrl}`,//для сервера
