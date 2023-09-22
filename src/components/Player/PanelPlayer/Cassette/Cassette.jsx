@@ -62,7 +62,7 @@ const Cassette = React.memo(({ music, play }) => {
     useEffect(() => {
         const hight = caseteListRef.current.offsetHeight;
         setStyle({ top: `-${hight}px` });
-    });
+    },[]);
     return (
         <div className={play ? "cassette play" : "cassette"}>
             <img

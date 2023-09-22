@@ -9,7 +9,7 @@ const reducers = combineReducers({
 });
 
 const persistConfig = {
-    key: "846452898h5jl456str",
+    key: "84645f2834298h5jl456str",
     storage,
 };
 
