@@ -251,12 +251,12 @@ export const addMusics = () => async (dispatch) => {
         ...track,
         rating: 0,
         idTrack: index + 1,
-        // artworkUrl: "./src/assets"+`${track.artworkUrl}`, //для сервера
-        // streamUrl: "./src/assets"+`${track.streamUrl}`, //для сервера
+        artworkUrl: "./assets"+`${track.artworkUrl}`, //для сервера
+        streamUrl: "./assets"+`${track.streamUrl}`, //для сервера
         // artworkUrl:`${process.env.PUBLIC_URL}${track.artworkUrl}`,//для сервера
         // streamUrl:`${process.env.PUBLIC_URL}${track.streamUrl}`//для сервера
-        artworkUrl:`${import.meta.env.VITE_PUBLIC_URL+"/assets"}${track.artworkUrl}`,//для сервера
-        streamUrl:`${import.meta.env.VITE_PUBLIC_URL+"/assets"}${track.streamUrl}`//для сервера
+        // artworkUrl:`${import.meta.env.VITE_PUBLIC_URL+"/assets"+track.artworkUrl}`,//для сервера
+        // streamUrl:`${import.meta.env.VITE_PUBLIC_URL+"/assets"+track.streamUrl}`//для сервера
         // artworkUrl:"https://retrowave.ru"+track.artworkUrl,//для api
         // streamUrl:"https://retrowave.ru"+track.streamUrl//для api
     }));
