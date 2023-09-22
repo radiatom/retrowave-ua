@@ -3,7 +3,7 @@ import "./Track.scss";
 import Rating from "./../../../../Rating/Rating";
 import { newTime } from "../../../../../function";
 import { useState } from "react";
-import addIco from "./../../../../../img/icons/add.svg";
+import addIco from "./../../../../../assets/img/icons/add.svg";
 import { addDataAppSelector, namesPlaylistsSelector, openListNameSelector } from "../../../../../selectorApp";
 import { useDispatch, useSelector } from "react-redux";
 import BtnDeleteTrack from "./BtnDeleteTrack/BtnDeleteTrack";

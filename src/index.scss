@@ -1,89 +1,89 @@
 @import url(https://db.onlinewebfonts.com/c/e1c54273e7b240a0a0f62221e243ab69?family=Newtown+Italic+V1);
 
 body {
-  // font-family:sans-serif;
-  letter-spacing: 1px;
+    // font-family:sans-serif;
+    letter-spacing: 1px;
 }
 
 * {
-  padding: 0;
-  margin: 0;
-  border: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
 }
 *,
 *:before,
 *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
-:focus{
-  // outline: none;
-  //табуляція видна tab scrole
+:focus {
+    // outline: none;
+    //табуляція видна tab scrole
 }
 :active {
-  outline: none;
+    outline: none;
 }
-a:focus{
-  // outline: none;
-  //табуляція видна tab scrole
+a:focus {
+    // outline: none;
+    //табуляція видна tab scrole
 }
 a:active {
-  outline: none;
+    outline: none;
 }
 
 nav,
 footer,
 header,
 aside {
-  display: block;
+    display: block;
 }
 
 html,
 body {
-  width: 100%;
-  height: 100%;
-  font-size: 16px;
-  font-weight: 400;
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  .root{
     width: 100%;
-     height: 100%; 
-  }
+    height: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    >div {//:root
+        width: 100%;
+        height: 100%;
+    }
 }
 input,
 button,
 textarea {
-  font-family: inherit;
+    font-family: inherit;
 }
 input::-ms-clear {
-  display: none;
+    display: none;
 }
 button {
-  cursor: pointer;
+    cursor: pointer;
 }
 button::-moz-focus-inner {
-  padding: 0;
-  border: 0;
+    padding: 0;
+    border: 0;
 }
 a,
 a:visited {
-  text-decoration: none;
+    text-decoration: none;
 }
 a:hover {
-  text-decoration: none;
+    text-decoration: none;
 }
 ul li {
-  list-style: none;
+    list-style: none;
 }
 img {
-  vertical-align: top;
+    vertical-align: top;
 }
-P{
-  cursor: default;
+P {
+    cursor: default;
 }
 h1,
 h2,
@@ -91,180 +91,179 @@ h3,
 h4,
 h5,
 h6 {
-  font-size: 14px;
-  font-weight: 400;
-  cursor: default;
-  //вимкнення зміни вигляну мишки
+    font-size: 14px;
+    font-weight: 400;
+    cursor: default;
+    //вимкнення зміни вигляну мишки
 }
 
 //added
 html {
-  color: #fefefe;
+    color: #fefefe;
 }
 ::-moz-selection {
-  background: #ff3ae6;
-  text-shadow: none;
+    background: #ff3ae6;
+    text-shadow: none;
 }
 ::selection {
-  background: #ff3ae6;
-  text-shadow: none;
+    background: #ff3ae6;
+    text-shadow: none;
 }
 :focus {
-  outline-color: #ff3ae6;
+    outline-color: #ff3ae6;
 }
 @keyframes cassette-reel-spin {
-  0% {
-      -webkit-transform: rotate(0);
-      -moz-transform: rotate(0);
-      -o-transform: rotate(0);
-      -ms-transform: rotate(0);
-      transform: rotate(0);
-  }
-  100% {
-      -webkit-transform: rotate(-360deg);
-      -moz-transform: rotate(-360deg);
-      -o-transform: rotate(-360deg);
-      -ms-transform: rotate(-360deg);
-      transform: rotate(-360deg);
-  }
+    0% {
+        -webkit-transform: rotate(0);
+        -moz-transform: rotate(0);
+        -o-transform: rotate(0);
+        -ms-transform: rotate(0);
+        transform: rotate(0);
+    }
+    100% {
+        -webkit-transform: rotate(-360deg);
+        -moz-transform: rotate(-360deg);
+        -o-transform: rotate(-360deg);
+        -ms-transform: rotate(-360deg);
+        transform: rotate(-360deg);
+    }
 }
 
 .range {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  vertical-align: middle;
-  width: 180px;
-  background: none;
-  overflow: hidden;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    vertical-align: middle;
+    width: 180px;
+    background: none;
+    overflow: hidden;
 }
 .range:focus {
-  outline: none;
+    outline: none;
 }
 .range::-webkit-slider-runnable-track {
-  width: 100%;
-  height: 24px;
-  cursor: pointer;
-  background-image: -webkit-linear-gradient(
-      top,
-      transparent 0,
-      transparent 11px,
-      rgba(255, 255, 255, 0.2) 11px,
-      rgba(255, 255, 255, 0.2) 13px,
-      transparent 13px,
-      transparent 24px
-  );
-  background-image: -moz-linear-gradient(
-      top,
-      transparent 0,
-      transparent 11px,
-      rgba(255, 255, 255, 0.2) 11px,
-      rgba(255, 255, 255, 0.2) 13px,
-      transparent 13px,
-      transparent 24px
-  );
-  background-image: -o-linear-gradient(
-      top,
-      transparent 0,
-      transparent 11px,
-      rgba(255, 255, 255, 0.2) 11px,
-      rgba(255, 255, 255, 0.2) 13px,
-      transparent 13px,
-      transparent 24px
-  );
-  background-image: -ms-linear-gradient(
-      top,
-      transparent 0,
-      transparent 11px,
-      rgba(255, 255, 255, 0.2) 11px,
-      rgba(255, 255, 255, 0.2) 13px,
-      transparent 13px,
-      transparent 24px
-  );
-  background-image: linear-gradient(
-      to bottom,
-      transparent 0,
-      transparent 11px,
-      rgba(255, 255, 255, 0.2) 11px,
-      rgba(255, 255, 255, 0.2) 13px,
-      transparent 13px,
-      transparent 24px
-  );
+    width: 100%;
+    height: 24px;
+    cursor: pointer;
+    background-image: -webkit-linear-gradient(
+        top,
+        transparent 0,
+        transparent 11px,
+        rgba(255, 255, 255, 0.2) 11px,
+        rgba(255, 255, 255, 0.2) 13px,
+        transparent 13px,
+        transparent 24px
+    );
+    background-image: -moz-linear-gradient(
+        top,
+        transparent 0,
+        transparent 11px,
+        rgba(255, 255, 255, 0.2) 11px,
+        rgba(255, 255, 255, 0.2) 13px,
+        transparent 13px,
+        transparent 24px
+    );
+    background-image: -o-linear-gradient(
+        top,
+        transparent 0,
+        transparent 11px,
+        rgba(255, 255, 255, 0.2) 11px,
+        rgba(255, 255, 255, 0.2) 13px,
+        transparent 13px,
+        transparent 24px
+    );
+    background-image: -ms-linear-gradient(
+        top,
+        transparent 0,
+        transparent 11px,
+        rgba(255, 255, 255, 0.2) 11px,
+        rgba(255, 255, 255, 0.2) 13px,
+        transparent 13px,
+        transparent 24px
+    );
+    background-image: linear-gradient(
+        to bottom,
+        transparent 0,
+        transparent 11px,
+        rgba(255, 255, 255, 0.2) 11px,
+        rgba(255, 255, 255, 0.2) 13px,
+        transparent 13px,
+        transparent 24px
+    );
 }
 .range::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  position: relative;
-  width: 12px;
-  height: 12px;
-  margin-top: 6px;
-  border-radius: 50%;
-  cursor: pointer;
-  background-color: #fff;
-  -webkit-transition: background-color 0.1s linear;
-  -moz-transition: background-color 0.1s linear;
-  -o-transition: background-color 0.1s linear;
-  -ms-transition: background-color 0.1s linear;
-  transition: background-color 0.1s linear;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: relative;
+    width: 12px;
+    height: 12px;
+    margin-top: 6px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #fff;
+    -webkit-transition: background-color 0.1s linear;
+    -moz-transition: background-color 0.1s linear;
+    -o-transition: background-color 0.1s linear;
+    -ms-transition: background-color 0.1s linear;
+    transition: background-color 0.1s linear;
 }
 .range::-webkit-slider-thumb:before {
-  pointer-events: none;
-  content: "";
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  width: 99999px;
-  height: 2px;
-  background: #fff;
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 99999px;
+    height: 2px;
+    background: #fff;
 }
 .range::-moz-range-thumb {
-  position: relative;
-  width: 12px;
-  height: 12px;
-  margin-top: 6px;
-  border-radius: 50%;
-  cursor: pointer;
+    position: relative;
+    width: 12px;
+    height: 12px;
+    margin-top: 6px;
+    border-radius: 50%;
+    cursor: pointer;
 }
 .range_min.range::-webkit-slider-thumb:before {
-  right: 12px;
+    right: 12px;
 }
 .range_max.range::-webkit-slider-thumb:before {
-  right: 0;
+    right: 0;
 }
 .range:hover.range::-webkit-slider-thumb {
-  background-color: #fff;
+    background-color: #fff;
 }
 
-
 .panelButton {
-  will-change: transform;
-  display: inline-block;
-  vertical-align: top;
-  background: none;
-  background-repeat: no-repeat;
-  background-position: center;
-  transition: transform 0.24s;
-  &:hover {
-      transform: scale(1.2);
-  }
-  &_prev {
-      background-image: url("/img/icons/prev.svg");
-      &_opacity {
-          opacity: 0.3;
-          cursor: default;
-      }
-  }
-  &_play {
-      background-image: url("/img/icons/play.svg");
-  }
-  &_pause {
-      background-image: url("/img/icons/pause.svg");
-  }
-  &_next {
-      background-image: url("/img/icons/next.svg");
-  }
-  &_eject {
-      background: url("/img/icons/eject.png") 5.6px 4.8px/70% 70% no-repeat;
-  }
+    will-change: transform;
+    display: inline-block;
+    vertical-align: top;
+    background: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.24s;
+    &:hover {
+        transform: scale(1.2);
+    }
+    &_prev {
+        background-image: url("./assets/img/icons/prev.svg");
+        &_opacity {
+            opacity: 0.3;
+            cursor: default;
+        }
+    }
+    &_play {
+        background-image: url("./assets/img/icons/play.svg");
+    }
+    &_pause {
+        background-image: url("./assets/img/icons/pause.svg");
+    }
+    &_next {
+        background-image: url("./assets/img/icons/next.svg");
+    }
+    &_eject {
+        background: url("./assets/img/icons/eject.png") 5.6px 4.8px/70% 70% no-repeat;
+    }
 }

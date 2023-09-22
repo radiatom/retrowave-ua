@@ -1,6 +1,6 @@
 import React from "react";
 import "./BtnDeleteTrack.scss";
-import deleteIco from "./../../../../../../img/icons/deleteTrack.png";
+import deleteIco from "./../../../../../../assets/img/icons/deleteTrack.png";
 
 const BtnDeleteTrack = React.memo(({ openListName, setActiveAlert }) => {
     return (

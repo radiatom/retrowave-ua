@@ -12,7 +12,7 @@
         background-position: center;
     }
     &__noMute{
-        background-image: url("./../../../img/icons/volume.svg");
+        background-image: url("./../../../assets/img/icons/volume.svg");
     }
 }
 .volume__level {
@@ -28,12 +28,12 @@
     background: none;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url("/img/icons/volume_medium.svg");
+    background-image: url("./../../../assets/img/icons/volume_medium.svg");
     &_mute{
-        background-image: url("./../../../img/icons/volume_mute.svg");
+        background-image: url("./../../../assets/img/icons/volume_mute.svg");
     }
 }
 .volume__level_high {
-    background-image: url("/img/icons/volume_high.svg");//ше не працює
+    background-image: url("./../../../assets/img/icons/volume_high.svg");//ше не працює
 }
 

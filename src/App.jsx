@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from "react";
+import { FC, useEffect, useRef, useState } from "react";
 import "./App.scss";
 // import { addMusics } from "./redux/reducer";
 import { addMusic, addMusics, setPosition } from "./reduxToolkit/reducer";
@@ -36,20 +36,20 @@ function App() {
     }, []);
 
     useEffect(() => {
-        dispatch(addMusic({position })); //завантажити трек під індексом 'position' при зміні позиції
+        dispatch(addMusic({ position })); //завантажити трек під індексом 'position' при зміні позиції
     }, [position, nameCurrentListPlayer]);
 
     const prev = () => {
         if (position > 0) {
-            dispatch(setPosition({position: position - 1 }));
+            dispatch(setPosition({ position: position - 1 }));
         }
     };
     const next = () => {
         if (position < numberOfTracks - 1) {
             //якщо в списку 4 пісні
-            dispatch(setPosition({position: position + 1 }));
+            dispatch(setPosition({ position: position + 1 }));
         } else {
-            dispatch(setPosition({position: 0 }));
+            dispatch(setPosition({ position: 0 }));
         }
     };
 
@@ -82,7 +82,9 @@ function App() {
 
     const [widthDevice, setWidthDevice] = useState(null);
     useEffect(() => {
-        if(appRef.current){setWidthDevice(appRef.current.offsetWidth);}
+        if (appRef.current) {
+            setWidthDevice(appRef.current.offsetWidth);
+        }
     }, [appRef]);
     return (
         music && (
@@ -107,7 +109,8 @@ function App() {
                             audioRef={audioRef}
                             setOpenBoombox={setOpenBoombox}
                             setAnaliz={setAnaliz}
-                            play={play} setPlay={setPlay}
+                            play={play}
+                            setPlay={setPlay}
                         />
                     ) : (
                         <PlayList
@@ -118,7 +121,8 @@ function App() {
                             prev={prev}
                             next={next}
                             setAnaliz={setAnaliz}
-                            play={play} setPlay={setPlay}
+                            play={play}
+                            setPlay={setPlay}
                         />
                     )}
                 </div>
@@ -131,7 +135,8 @@ function App() {
                         audioRef={audioRef}
                         setOpenBoombox={setOpenBoombox}
                         setAnaliz={setAnaliz}
-                        play={play} setPlay={setPlay}
+                        play={play}
+                        setPlay={setPlay}
                     />
                 </div>
             </div>

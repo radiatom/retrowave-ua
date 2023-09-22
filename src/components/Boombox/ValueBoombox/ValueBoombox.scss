@@ -7,7 +7,7 @@
         position: absolute;
         top: 216px;
         left: 566.4px;
-        background: url("./../../../img/volume.png") 0 0/100% 100% no-repeat;
+        background: url("./../../../assets/img/volume.png") 0 0/100% 100% no-repeat;
         &_circle {
             will-change: transform;
             transition: transform 0.5s;
@@ -38,6 +38,6 @@
         background: none;
         background-repeat: no-repeat;
         background-position: center;
-        background-image: url("./../../../img/icons/volume.svg");
+        background-image: url("./../../../assets/img/icons/volume.svg");
     }
 }

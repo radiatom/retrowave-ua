@@ -2,11 +2,11 @@ import React, { useRef, useState } from "react";
 import "./Cassette.scss";
 import { useDispatch, useSelector } from "react-redux";
 import { nameCurrentListPlayerSelector, namesPlayerPlaylistsSelector } from "./../../../../selectorApp";
-import download from "./../../../../img/icons/downloadMp3.svg";
-import list from "./../../../../img/icons/man.png";
-import randomImg from "./../../../../img/icons/random.png";
-import ratingImg from "./../../../../img/icons/rating.png";
-import defaultImg from "./../../../../img/icons/default.png";
+import download from "./../../../../assets/img/icons/downloadMp3.svg";
+import list from "./../../../../assets/img/icons/man.png";
+import randomImg from "./../../../../assets/img/icons/random.png";
+import ratingImg from "./../../../../assets/img/icons/rating.png";
+import defaultImg from "./../../../../assets/img/icons/default.png";
 import { useEffect } from "react";
 import { createPlayerList, setPosition } from "./../../../../reduxToolkit/reducer";
 
@@ -62,7 +62,7 @@ const Cassette = React.memo(({ music, play }) => {
     useEffect(() => {
         const hight = caseteListRef.current.offsetHeight;
         setStyle({ top: `-${hight}px` });
-    }, []);
+    });
     return (
         <div className={play ? "cassette play" : "cassette"}>
             <img
