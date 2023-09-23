@@ -259,8 +259,11 @@ export const addMusics = () => async (dispatch) => {
         // streamUrl:`${process.env.PUBLIC_URL}${track.streamUrl}`//для сервера
         // artworkUrl:`${track.artworkUrl}`,//працює лише локально але не на хостінгу(аудіо та картинки в publick)
         // streamUrl:`${track.streamUrl}`//працює лише локально але не на хостінгу(аудіо та картинки в publick)
-        artworkUrl: new URL(`${track.artworkUrl}`, import.meta.url).href, //працює лише локально але не на хостінгу(аудіо та картинки в publick). коли аудіо та картинки в src локально і на хостингу не працює
-        streamUrl: new URL(`${track.streamUrl}`, import.meta.url).href, //працює лише локально але не на хостінгу(аудіо та картинки в publick). коли аудіо та картинки в src локально і на хостингу не працює
+        // artworkUrl: new URL(`${track.artworkUrl}`, import.meta.url).href, //працює лише локально але не на хостінгу(аудіо та картинки в public). коли аудіо та картинки в src локально і на хостингу не працює
+        // streamUrl: new URL(`${track.streamUrl}`, import.meta.url).href, //працює лише локально але не на хостінгу(аудіо та картинки в public). коли аудіо та картинки в src локально і на хостингу не працює
+        artworkUrl: new URL(`${"/retrowave-ua/"+track.artworkUrl}`, import.meta.url).href, //працює лише локально (аудіо та картинки в public). 
+        streamUrl: new URL(`${"/retrowave-ua/"+track.streamUrl}`, import.meta.url).href, //працює лише локально (аудіо та картинки в public). 
+        
         // artworkUrl:`${import.meta.env.VITE_PUBLIC_URL+"/assets"+track.artworkUrl}`,//для сервера
         // streamUrl:`${import.meta.env.VITE_PUBLIC_URL+"/assets"+track.streamUrl}`//для сервера
         // artworkUrl:"https://retrowave.ru"+track.artworkUrl,//для api
