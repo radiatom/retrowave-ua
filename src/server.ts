@@ -1,6 +1,13 @@
 import { timeToMilliseconds } from "./function";
-
-export const data = [
+export type trakType = {
+    id: string;
+    title: string;
+    duration: number;
+    streamUrl: string;
+    artworkUrl: string;
+};
+export type dataType = Array<trakType>;
+export const data: dataType = [
     {
         id: "0",
         title: "Electric Youth – WeAreTheYouth",
@@ -2196,9 +2203,10 @@ export const data = [
 export const getData = () => {
     return data;
 };
-const addNewTrack = (title, duration, nameFile) => {
+const addNewTrack = (title: string, duration: string, nameFile: string) => {
+    const newLength: number = data.length + 1;
     data.unshift({
-        id: data.length + 1,
+        id: newLength.toString(),
         title,
         duration: timeToMilliseconds(duration),
         streamUrl: `/audio/${nameFile}.mp3`,
