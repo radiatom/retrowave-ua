@@ -1,4 +1,4 @@
-import { dataType } from "./server";
+import { dataType } from "./reduxToolkit/reducer";
 
 export const newTime = (second:number):string => {
     const minutes = Math.floor(second / 60);

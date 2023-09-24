@@ -1,6 +1,6 @@
-import axios from "axios";
-import {getData} from './../server'
-const data1Dowland=[]//масив невідомих мені треків
+// import axios from "axios";
+import {getData} from '../server'
+// const data1Dowland=[]//масив невідомих мені треків
 export const allApi = {
     getAddMusics: () => {
         // return data1Dowland //нові майбутні

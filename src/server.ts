@@ -1,13 +1,13 @@
 import { timeToMilliseconds } from "./function";
-export type trakType = {
+type serverTrakType = {
     id: string;
     title: string;
     duration: number;
     streamUrl: string;
     artworkUrl: string;
 };
-export type dataType = Array<trakType>;
-export const data: dataType = [
+export type serverDataType = Array<serverTrakType>;
+export const data: serverDataType = [
     {
         id: "0",
         title: "Electric Youth – WeAreTheYouth",
