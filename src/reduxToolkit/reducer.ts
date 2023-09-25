@@ -7,7 +7,7 @@ export type pageNumberType = { left: number; right: number };
 export type openListNameType = { left: string; right: string };
 
 export type initialStateType = {
-    music: trakType | object;
+    music: trackType | object;
     nameCurrentListPlayer: string;
     DefaultList: dataType | [];
     RatingList: dataType | [];
@@ -280,23 +280,39 @@ export const addMusics = ():AddMusicsThunk => async (dispatch) => {
         ...track,
         rating: 0,
         idTrack: index + 1,
-        artworkUrl: new URL(`${"/retrowave-ua" + track.artworkUrl}`, import.meta.url).href, //мій ля сервер ля api
-        streamUrl: new URL(`${"/retrowave-ua" + track.streamUrl}`, import.meta.url).href, //мій ля сервер ля api
-        // artworkUrl:"https://retrowave.ru"+track.artworkUrl,//дimport { data } from './../server';
-        // streamUrl:"https://retrowave.ru"+track.streamUrl//для api
+        artworkUrl: new URL(`${"/retrowave-ua" + track.artworkUrl}`, import.meta.url).href, //мій ля сервер 
+        streamUrl: new URL(`${"/retrowave-ua" + track.streamUrl}`, import.meta.url).href, //мій ля сервер
+        // artworkUrl:"https://retrowave.ru"+track.artworkUrl,
+        // streamUrl:"https://retrowave.ru"+track.streamUrl
     }));
     dispatch(addMusicList({ data: updatedData }));
     dispatch(addMusic({ position: 0 }));
 };
+
+export type actionsTypes =
+    | AddMusicListAction
+    | CreatePlayerListAction
+    | AddMusicAction
+    | SetPositionAction
+    | SetVolumeAction
+    | SetRatingAction
+    | SetPageNumberAction
+    | SetListAction
+    | AddNewListAction
+    | DeleteNewListAction
+    | AddTrackIntoListAction
+    | DeleteTrackWithListAction
+    | SetOpenListNameAction;
+    
 export type dataType = Array<trackType>;
 export type trackType = {
-    rating: number;
-    idTrack: number;
-    artworkUrl: string;
-    streamUrl: string;
-    id: string;
-    title: string;
-    duration: number;
+    rating: number|undefined;
+    idTrack: number|undefined;
+    artworkUrl: string|undefined;
+    streamUrl: string|undefined;
+    id: string|undefined;
+    title: string|undefined;
+    duration: number|undefined;
 };
 export type AddMusicListAction = PayloadAction<{ data: dataType }>;
 

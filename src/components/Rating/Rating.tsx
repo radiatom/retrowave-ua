@@ -1,11 +1,14 @@
-import React from "react";
+import React, { FC } from "react";
 import "./Rating.scss";
 import { useDispatch } from "react-redux";
-import { setRating } from "./../../reduxToolkit/reducer";
-
-const Rating = React.memo(({ rating, id }) => {
+import { setRating } from "../../reduxToolkit/reducer";
+type RatingPropsType = {
+    rating: number;
+    id: string;
+};
+const Rating: FC<RatingPropsType> = React.memo(({ rating, id }) => {
     const dispatch = useDispatch();
-    const clickRating = (value) => {
+    const clickRating = (value: number) => {
         dispatch(setRating({ id, rating: value }));
     };
     return (

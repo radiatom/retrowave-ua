@@ -15,7 +15,7 @@ import Player from "./components/Player/Player";
 import AudioWaveForm from "./components/AudioWaveForm/AudioWaveForm";
 import PlayList from "./components/PlayList/PlayList";
 
-function App() {
+const App: FC = () => {
     const [back, setBack] = useState(false); //блюр фонової картинки
     const [openBoombox, setOpenBoombox] = useState(false); //показати бумбокс?
     const [play, setPlay] = useState(false); //анімація плеєра
@@ -25,8 +25,8 @@ function App() {
     const music = useSelector(addDataAppSelector); //дані про трек
     const numberOfTracks = useSelector(numberOfTracksSelector); //кількість треків в листі що відтворюється
     const dispatch = useDispatch();
-    const audioRef = useRef(null);
-    const appRef = useRef(null);
+    const audioRef = useRef<HTMLMediaElement>(null);
+    const appRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
         setBack(true); //заблюрити фон
@@ -80,14 +80,14 @@ function App() {
         }
     }, [analiz]); //запуск візуалізатора еквалайзера
 
-    const [widthDevice, setWidthDevice] = useState(null);
+    const [widthDevice, setWidthDevice] = useState(0);
     useEffect(() => {
         if (appRef.current) {
             setWidthDevice(appRef.current.offsetWidth);
         }
     }, [appRef]);
     return (
-        music && (
+        "id" in music && (
             <div
                 className="app" //темний фон якщо нема зображення
                 style={{
@@ -142,6 +142,6 @@ function App() {
             </div>
         )
     );
-}
+};
 
 export default App;

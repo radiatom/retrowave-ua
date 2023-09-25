@@ -2738,3 +2738,17 @@ const getUniqueObjects = (array2: dataType): dataType => {
 }; //беремо новий масив з інтернета, порівнюємо з моїм масивом з сервера та повертаємо масив обєктів яких в мене нема
 
 console.log(getUniqueObjects(tracks));
+
+type objType = {
+    id: number;
+    name: string;
+};
+type apiType = {
+    obj: objType | object;
+};
+const api: apiType = {
+    obj: {},
+};
+if ('id' in api.obj) {
+    console.log(api.obj.id);
+}
