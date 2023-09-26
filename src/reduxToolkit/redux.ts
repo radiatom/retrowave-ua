@@ -9,7 +9,7 @@ const reducers = combineReducers({
 });
 
 const persistConfig = {
-    key: "84645f42s45lfs456str",
+    key: "84645f4kd72s47l856sftr",
     storage,
 };
 
@@ -24,5 +24,5 @@ const store = configureStore({
             },
         }),
 });
-
+export type RootStateType=ReturnType<typeof store.getState>
 export default store;

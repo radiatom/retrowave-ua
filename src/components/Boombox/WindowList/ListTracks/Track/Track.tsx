@@ -1,6 +1,6 @@
-import React, { useEffect } from "react";
+import React, { FC } from "react";
 import "./Track.scss";
-import Rating from "./../../../../Rating/Rating";
+import Rating from "../../../../Rating/Rating";
 import { newTime } from "../../../../../function";
 import { useState } from "react";
 import addIco from "./../../../../../assets/img/icons/add.svg";
@@ -13,10 +13,18 @@ import {
     deleteTrackWithList,
     setPosition,
     createPlayerList,
-} from "./../../../../../reduxToolkit/reducer";
+} from "../../../../../reduxToolkit/reducer";
 import DeleteAlert from "../../../../DeleteAlert/DeleteAlert";
 
-const Track = React.memo(({ title, index, rating, duration, id, leftOrRight }) => {
+type TrackPropsType = {
+    title: string;
+    index: number;
+    rating: number;
+    duration: number;
+    id: string;
+    leftOrRight: string;
+};
+const Track: FC<TrackPropsType> = React.memo(({ title, index, rating, duration, id, leftOrRight }) => {
     const openListName = useSelector(openListNameSelector);
     const [active, setActive] = useState(false);
     const [activeAlert, setActiveAlert] = useState(false);
@@ -25,7 +33,7 @@ const Track = React.memo(({ title, index, rating, duration, id, leftOrRight }) =
     const music = useSelector(addDataAppSelector); //дані про трек
     const dispatch = useDispatch();
 
-    const clickAddingTrack = (name) => {
+    const clickAddingTrack = (name: string) => {
         dispatch(addTrackIntoList({ intoList: name, currentList: openListName[leftOrRight + ""], id: id }));
 
         const secondNameOpenList = { ...openListName };
@@ -62,39 +70,42 @@ const Track = React.memo(({ title, index, rating, duration, id, leftOrRight }) =
         dispatch(setPosition({ position: index }));
     };
     return (
-        <div className={music.title === title ? "track track_sounds" : "track"}>
-            <div className="track__position">{index + 1}</div>
-            <div className="track__title" onClick={playTrack}>
-                {title}
+        music !== undefined &&
+        "id" in music && (
+            <div className={music.title === title ? "track track_sounds" : "track"}>
+                <div className="track__position">{index + 1}</div>
+                <div className="track__title" onClick={playTrack}>
+                    {title}
+                </div>
+                <div className="track__rating">
+                    <Rating rating={rating} id={id} />{" "}
+                </div>
+                <div className="track__duration">{newTime(Math.round(duration / 1000))}</div>
+                {Boolean(namesPlaylists.length > 3) && (
+                    <img
+                        className={active ? "track__addIco track__addIco_active" : "track__addIco"}
+                        onClick={() => setActive(!active)}
+                        src={addIco}
+                        alt="addIco"
+                    />
+                )}
+                <div className={active ? "track__spoiler track__spoiler_open" : "track__spoiler"}>
+                    {namesPlaylists.map((name, index) => {
+                        if (index > 2) {
+                            return (
+                                <button className="track__btnToList" onClick={() => clickAddingTrack(name)} key={index}>
+                                    {name}
+                                </button>
+                            );
+                        }
+                    })}
+                </div>
+                <div className={activeAlert ? "track__spoiler track__spoiler_open" : "track__spoiler"}>
+                    <DeleteAlert setActiveAlert={setActiveAlert} action={clickDeleteTrack} />
+                </div>
+                <BtnDeleteTrack openListName={openListName[leftOrRight + ""]} setActiveAlert={setActiveAlert} />
             </div>
-            <div className="track__rating">
-                <Rating rating={rating} id={id} />{" "}
-            </div>
-            <div className="track__duration">{newTime(Math.round(duration / 1000))}</div>
-            {Boolean(namesPlaylists.length > 3) && (
-                <img
-                    className={active ? "track__addIco track__addIco_active" : "track__addIco"}
-                    onClick={() => setActive(!active)}
-                    src={addIco}
-                    alt="addIco"
-                />
-            )}
-            <div className={active ? "track__spoiler track__spoiler_open" : "track__spoiler"}>
-                {namesPlaylists.map((name, index) => {
-                    if (index > 2) {
-                        return (
-                            <button className="track__btnToList" onClick={() => clickAddingTrack(name)} key={index}>
-                                {name}
-                            </button>
-                        );
-                    }
-                })}
-            </div>
-            <div className={activeAlert ? "track__spoiler track__spoiler_open" : "track__spoiler"}>
-                <DeleteAlert setActiveAlert={setActiveAlert} action={clickDeleteTrack} />
-            </div>
-            <BtnDeleteTrack openListName={openListName[leftOrRight + ""]} setActiveAlert={setActiveAlert} />
-        </div>
+        )
     );
 });
 

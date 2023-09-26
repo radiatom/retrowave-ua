@@ -1,9 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React, { FC, useEffect, useState } from "react";
 import "./Time.scss";
-import { newTime } from "./../../../function";
+import { newTime } from "../../../function";
 
-const Time = React.memo(({ duration, audioRef, next }) => {
-    const [time, setTime] = useState(0);
+type TimePropsType = {
+    duration: number;
+    audioRef: React.RefObject<HTMLMediaElement>;
+    next: () => void;
+};
+const Time: FC<TimePropsType> = React.memo(({ duration, audioRef, next }) => {
+    const [time, setTime] = useState("");
     const [currentTime, setCurrentTime] = useState("0:00"); //лічильник часу
     const handleTimeUpdate = () => {
         if (audioRef.current) {
@@ -27,7 +32,6 @@ const Time = React.memo(({ duration, audioRef, next }) => {
             }
         };
     }, []); //слідкуємо за аудіо треком
-
 
     useEffect(() => {
         if (currentTime >= time) {

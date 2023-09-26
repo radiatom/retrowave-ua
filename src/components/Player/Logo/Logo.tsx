@@ -1,7 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { FC, useEffect, useState } from "react";
 import "./Logo.scss";
 import logo from "./../../../assets/img/logo.png";
-const Logo = React.memo(({ setOpenBoombox }) => {
+
+type LogoPropsType={
+    setOpenBoombox:React.Dispatch<React.SetStateAction<boolean>>
+}
+const Logo:FC<LogoPropsType> = React.memo(({ setOpenBoombox }) => {
     const [open, setOpen] = useState(false);
     useEffect(() => {
         const interval = setInterval(() => {

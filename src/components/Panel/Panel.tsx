@@ -1,21 +1,34 @@
-import React, { useEffect } from "react";
+import React, { FC, useEffect } from "react";
 import "./Panel.scss";
-
-const Panel = ({ prev, next, position, play, setPlay, setOpenBoombox, audioRef, setAnaliz }) => {
+type PanelPropsType = {
+    prev: () => void;
+    next: () => void;
+    position: number;
+    play: boolean;
+    setPlay: React.Dispatch<React.SetStateAction<boolean>>;
+    setOpenBoombox: React.Dispatch<React.SetStateAction<boolean>>;
+    audioRef: React.RefObject<HTMLMediaElement>;
+    setAnaliz: React.Dispatch<React.SetStateAction<boolean>>;
+};
+const Panel: FC<PanelPropsType> = ({ prev, next, position, play, setPlay, setOpenBoombox, audioRef, setAnaliz }) => {
     const clickPlay = () => {
-        setAnaliz(true);
-        setPlay(true); //стиль плеєра який грає
-        audioRef.current.play(); //запуск відтворення
+        if (audioRef.current) {
+            setAnaliz(true);
+            setPlay(true); //стиль плеєра який грає
+            audioRef.current.play(); //запуск відтворення
+        }
     };
     const clickEject = () => {
         setOpenBoombox(false);
     };
     const clickPause = () => {
-        setPlay(false); //стиль плеєра який не грає
-        audioRef.current.pause(); //пауза
+        if (audioRef.current) {
+            setPlay(false); //стиль плеєра який не грає
+            audioRef.current.pause(); //пауза
+        }
     };
     useEffect(() => {
-        if (play) {
+        if (play && audioRef.current) {
             audioRef.current.play(); //запуск відтворення
         }
     }, [play, position]); // Відтворити музику при зміні позиції
@@ -23,11 +36,7 @@ const Panel = ({ prev, next, position, play, setPlay, setOpenBoombox, audioRef, 
         <div className="panel">
             <div className="panel__controls">
                 <button className="panel__button panelButton"></button>
-                <button
-                    onClick={clickPlay}
-                    className="panel__button  panelButton panelButton_play"
-                    autoFocus="yes"
-                ></button>
+                <button onClick={clickPlay} className="panel__button  panelButton panelButton_play" autoFocus={true}></button>
                 <button
                     onClick={prev}
                     className={

@@ -15,18 +15,19 @@ import Player from "./components/Player/Player";
 import AudioWaveForm from "./components/AudioWaveForm/AudioWaveForm";
 import PlayList from "./components/PlayList/PlayList";
 
-function App() {
+const App: FC = () => {
     const [back, setBack] = useState(false); //блюр фонової картинки
     const [openBoombox, setOpenBoombox] = useState(false); //показати бумбокс?
     const [play, setPlay] = useState(false); //анімація плеєра
+    const [analiz, setAnaliz] = useState(false);
     const nameCurrentListPlayer = useSelector(nameCurrentListPlayerSelector); //назва поточного плейлиста
     const position = useSelector(positionSelector); //позиція в плейлисті
     const DefaultList = useSelector(DefaultListSelector); //весь список треків
     const music = useSelector(addDataAppSelector); //дані про трек
     const numberOfTracks = useSelector(numberOfTracksSelector); //кількість треків в листі що відтворюється
     const dispatch = useDispatch();
-    const audioRef = useRef(null);
-    const appRef = useRef(null);
+    const audioRef = useRef<HTMLMediaElement>(null);
+    const appRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
         setBack(true); //заблюрити фон
@@ -53,41 +54,42 @@ function App() {
         }
     };
 
-    const [analyzerData, setAnalyzerData] = useState(null);
+    const [analyzerData, setAnalyzerData] = useState({});
     const audioAnalyzer = () => {
-        // create a new AudioContext
-        const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-        // створити вузол аналізатора з розміром буфера 2048
-        const analyzer = audioCtx.createAnalyser();
-        analyzer.fftSize = 2048;
+        if (audioRef.current) {
+            // create a new AudioContext
+            const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+            // створити вузол аналізатора з розміром буфера 2048
+            const analyzer = audioCtx.createAnalyser();
+            analyzer.fftSize = 2048;
 
-        const bufferLength = analyzer.frequencyBinCount;
-        const dataArray = new Uint8Array(bufferLength);
-        const source = audioCtx.createMediaElementSource(audioRef.current);
-        source.connect(analyzer);
-        source.connect(audioCtx.destination);
-        source.onended = () => {
-            source.disconnect();
-        };
+            const bufferLength = analyzer.frequencyBinCount;
+            const dataArray = new Uint8Array(bufferLength);
+            const source = audioCtx.createMediaElementSource(audioRef.current);
+            source.connect(analyzer);
+            source.connect(audioCtx.destination);
+            audioRef.current.onended = () => {
+                source.disconnect();
+            };
 
-        // встановити стан analiserData за допомогою аналізатора, bufferLength і dataArray
-        setAnalyzerData({ analyzer, bufferLength, dataArray });
+            // встановити стан analiserData за допомогою аналізатора, bufferLength і dataArray
+            setAnalyzerData({ analyzer, bufferLength, dataArray });
+        }
     };
-    const [analiz, setAnaliz] = useState(false);
     useEffect(() => {
         if (analiz) {
             audioAnalyzer();
         }
     }, [analiz]); //запуск візуалізатора еквалайзера
 
-    const [widthDevice, setWidthDevice] = useState(null);
+    const [widthDevice, setWidthDevice] = useState(0);
     useEffect(() => {
         if (appRef.current) {
             setWidthDevice(appRef.current.offsetWidth);
         }
     }, [appRef]);
     return (
-        music && (
+        music!==undefined  &&"id" in music &&  (
             <div
                 className="app" //темний фон якщо нема зображення
                 style={{
@@ -114,7 +116,6 @@ function App() {
                         />
                     ) : (
                         <PlayList
-                            music={music}
                             position={position}
                             audioRef={audioRef}
                             setOpenBoombox={setOpenBoombox}
@@ -142,6 +143,6 @@ function App() {
             </div>
         )
     );
-}
+};
 
 export default App;

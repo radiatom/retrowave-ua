@@ -1,8 +1,12 @@
-import React from "react";
+import React, { FC } from "react";
 import "./BtnDeleteTrack.scss";
 import deleteIco from "./../../../../../../assets/img/icons/deleteTrack.png";
 
-const BtnDeleteTrack = React.memo(({ openListName, setActiveAlert }) => {
+type BtnDeleteTrackPropsType = {
+    openListName: string;
+    setActiveAlert: React.Dispatch<React.SetStateAction<boolean>>;
+};
+const BtnDeleteTrack: FC<BtnDeleteTrackPropsType> = React.memo(({ openListName, setActiveAlert }) => {
     return (
         <>
             {Boolean(

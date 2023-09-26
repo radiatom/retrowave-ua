@@ -1,7 +1,12 @@
-import React from "react";
+import React, { FC } from "react";
 import "./CassetteBoombox.scss";
+import { trackType } from "../../../reduxToolkit/reducer";
 
-const CassetteBoombox = React.memo(({ music, play }) => {
+type CassetteBoomboxPropsType = {
+    music: trackType;
+    play: boolean;
+};
+const CassetteBoombox: FC<CassetteBoomboxPropsType> = React.memo(({ music, play }) => {
     return (
         <div className={play ? "cassetteBoombox cassetteBoombox_play" : "cassetteBoombox"}>
             <div

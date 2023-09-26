@@ -1,15 +1,27 @@
-import React, { useEffect, useState } from "react";
+import React, { FC, useEffect, useState } from "react";
 import "./Boombox.scss";
 import CassetteBoombox from "./CassetteBoombox/CassetteBoombox";
-import Panel from "./../Panel/Panel";
+import Panel from "../Panel/Panel";
 import ValueBoombox from "./ValueBoombox/ValueBoombox";
 // import SoundLevel from "./SoundLevel/SoundLevel";
-import WindowList from "./WindowList/WindowList";
+import WindowList from "./WindowList/WindowList.tsx";
 import { listSelector, openListNameSelector } from "../../selectorApp";
 import { useSelector } from "react-redux";
 import { newTimeForBoombox } from "../../function";
+import { trackType } from "./../../reduxToolkit/reducer";
 
-const Boombox = ({ music, prev, next, audioRef, setOpenBoombox, position, setAnaliz, play, setPlay }) => {
+type BoomboxPropsType = {
+    music: trackType;
+    prev: () => void;
+    next: () => void;
+    audioRef: React.RefObject<HTMLMediaElement>;
+    setOpenBoombox: React.Dispatch<React.SetStateAction<boolean>>;
+    position: number;
+    setAnaliz: React.Dispatch<React.SetStateAction<boolean>>;
+    play: boolean;
+    setPlay: React.Dispatch<React.SetStateAction<boolean>>;
+};
+const Boombox: FC<BoomboxPropsType> = ({ music, prev, next, audioRef, setOpenBoombox, position, setAnaliz, play, setPlay }) => {
     useEffect(() => {
         if (audioRef.current) {
             audioRef.current.addEventListener("timeupdate", handleTimeUpdate);
@@ -29,8 +41,11 @@ const Boombox = ({ music, prev, next, audioRef, setOpenBoombox, position, setAna
     }; //оновлюємо лічильник слідкуючи за аудіо
 
     useEffect(() => {
-       if (music.duration!==undefined&&currentTime >= parseInt(music.duration.toString().substr(0, 3))) {
-            next();
+        if (audioRef.current) {
+            // if (music.duration !== undefined && currentTime >= parseInt(music.duration.toString().substr(0, 3))) {
+            if (music.duration !== undefined && audioRef.current.currentTime / 1000 >= music.duration) {
+                next();
+            }
         }
     }, [currentTime]); //закінчиться час то плеєр перемикнеться далі
 
