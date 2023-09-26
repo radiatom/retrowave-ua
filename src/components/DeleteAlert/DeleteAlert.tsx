@@ -1,9 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, { FC, useEffect, useState } from "react";
 import "./DeleteAlert.scss";
-
-const DeleteAlert = ({ setActiveAlert, action }) => {
+type DeleteAlertPropsType ={
+    setActiveAlert:React.Dispatch<React.SetStateAction<boolean>>
+    action:()=>void
+}
+const DeleteAlert:FC<DeleteAlertPropsType> = ({ setActiveAlert, action }) => {
     //action- дія яку виконує згода на видалення; setActiveAlert-дія яка ховає чи відображає вікно DeleteAlert
-    const [yesOrNo, setYesOrNo] = useState(null);
+    const [yesOrNo, setYesOrNo] = useState<boolean | null>(null);
     useEffect(() => {
         if (yesOrNo === true) {
             action();

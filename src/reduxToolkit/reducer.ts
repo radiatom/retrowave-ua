@@ -327,12 +327,12 @@ export type SetVolumeAction = PayloadAction<{ volume: number }>;
 export type SetRatingAction = PayloadAction<{ id: string; rating: number }>;
 
 export type SetPageNumberAction = PayloadAction<{
-  position: 'left' | 'right';
+  position: string;
   number: number;
 }>;
 
 export type SetListAction = PayloadAction<{
-  position: 'left' | 'right';
+  position: string;
   typeList: string;
 }>;
 
@@ -352,7 +352,7 @@ export type DeleteTrackWithListAction = PayloadAction<{
 }>;
 
 export type SetOpenListNameAction = PayloadAction<{
-  position: 'left' | 'right';
+  position: string;
   name: string;
 }>;
 

@@ -19,6 +19,7 @@ const App: FC = () => {
     const [back, setBack] = useState(false); //блюр фонової картинки
     const [openBoombox, setOpenBoombox] = useState(false); //показати бумбокс?
     const [play, setPlay] = useState(false); //анімація плеєра
+    const [analiz, setAnaliz] = useState(false);
     const nameCurrentListPlayer = useSelector(nameCurrentListPlayerSelector); //назва поточного плейлиста
     const position = useSelector(positionSelector); //позиція в плейлисті
     const DefaultList = useSelector(DefaultListSelector); //весь список треків
@@ -53,27 +54,28 @@ const App: FC = () => {
         }
     };
 
-    const [analyzerData, setAnalyzerData] = useState(null);
+    const [analyzerData, setAnalyzerData] = useState({});
     const audioAnalyzer = () => {
-        // create a new AudioContext
-        const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-        // створити вузол аналізатора з розміром буфера 2048
-        const analyzer = audioCtx.createAnalyser();
-        analyzer.fftSize = 2048;
+        if (audioRef.current) {
+            // create a new AudioContext
+            const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+            // створити вузол аналізатора з розміром буфера 2048
+            const analyzer = audioCtx.createAnalyser();
+            analyzer.fftSize = 2048;
 
-        const bufferLength = analyzer.frequencyBinCount;
-        const dataArray = new Uint8Array(bufferLength);
-        const source = audioCtx.createMediaElementSource(audioRef.current);
-        source.connect(analyzer);
-        source.connect(audioCtx.destination);
-        source.onended = () => {
-            source.disconnect();
-        };
+            const bufferLength = analyzer.frequencyBinCount;
+            const dataArray = new Uint8Array(bufferLength);
+            const source = audioCtx.createMediaElementSource(audioRef.current);
+            source.connect(analyzer);
+            source.connect(audioCtx.destination);
+            audioRef.current.onended = () => {
+                source.disconnect();
+            };
 
-        // встановити стан analiserData за допомогою аналізатора, bufferLength і dataArray
-        setAnalyzerData({ analyzer, bufferLength, dataArray });
+            // встановити стан analiserData за допомогою аналізатора, bufferLength і dataArray
+            setAnalyzerData({ analyzer, bufferLength, dataArray });
+        }
     };
-    const [analiz, setAnaliz] = useState(false);
     useEffect(() => {
         if (analiz) {
             audioAnalyzer();
@@ -87,7 +89,7 @@ const App: FC = () => {
         }
     }, [appRef]);
     return (
-        "id" in music && (
+        music!==undefined  &&"id" in music &&  (
             <div
                 className="app" //темний фон якщо нема зображення
                 style={{

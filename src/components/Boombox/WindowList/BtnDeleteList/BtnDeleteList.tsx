@@ -1,10 +1,14 @@
-import React, { useState } from "react";
+import React, { FC, useState } from "react";
 import "./BtnDeleteList.scss";
 import { useDispatch } from "react-redux";
 import { deleteNewList } from "../../../../reduxToolkit/reducer";
-import DeleteAlert from "./../../../DeleteAlert/DeleteAlert";
+import DeleteAlert from "../../../DeleteAlert/DeleteAlert";
 
-const BtnDeleteList = React.memo(({ openListName, openList }) => {
+type BtnDeleteListPropsType={
+    openListName:string
+    openList:(name:string)=>void
+}
+const BtnDeleteList:FC<BtnDeleteListPropsType> = React.memo(({ openListName, openList }) => {
     const [activeAlert, setActiveAlert] = useState(false);
 
     const dispatch = useDispatch();
