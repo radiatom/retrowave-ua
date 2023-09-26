@@ -36,7 +36,7 @@ const Panel: FC<PanelPropsType> = ({ prev, next, position, play, setPlay, setOpe
         <div className="panel">
             <div className="panel__controls">
                 <button className="panel__button panelButton"></button>
-                <button onClick={clickPlay} className="panel__button  panelButton panelButton_play" autoFocus="yes"></button>
+                <button onClick={clickPlay} className="panel__button  panelButton panelButton_play" autoFocus={true}></button>
                 <button
                     onClick={prev}
                     className={

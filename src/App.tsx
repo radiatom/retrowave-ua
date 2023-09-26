@@ -116,7 +116,6 @@ const App: FC = () => {
                         />
                     ) : (
                         <PlayList
-                            music={music}
                             position={position}
                             audioRef={audioRef}
                             setOpenBoombox={setOpenBoombox}

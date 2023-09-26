@@ -1,18 +1,23 @@
-import React, { useEffect, useState } from "react";
+import React, { FC, useEffect, useState } from "react";
 import "./Volume.scss";
 import { useDispatch, useSelector } from "react-redux";
-import { volumeSelector } from "./../../../selectorApp";
+import { volumeSelector } from "../../../selectorApp";
 import { setVolume } from "../../../reduxToolkit/reducer";
 
-const Volume = React.memo(({ audioRef }) => {
+type VolumePropsType = {
+    audioRef: React.RefObject<HTMLMediaElement>;
+};
+const Volume: FC<VolumePropsType> = React.memo(({ audioRef }) => {
     const [mute, setMute] = useState(false); //включення чи вимкнення звуку
     const value = useSelector(volumeSelector); //значення величини звуку
     const dispatch = useDispatch();
-    
-    const changeValue = (value) => {
-        audioRef.current.volume = value;
+
+    const changeValue = (value: number) => {
+        if (audioRef.current) {
+            audioRef.current.volume = value;
+        }
     }; //функція зміни значення в аудіо
-    
+
     const toggleMute = () => {
         if (mute) {
             changeValue(value / 100); //вертаємо попереднє заняення
@@ -21,7 +26,7 @@ const Volume = React.memo(({ audioRef }) => {
         }
         setMute(!mute);
     };
-    
+
     useEffect(() => {
         if (value > 0) {
             setMute(false);
@@ -37,7 +42,7 @@ const Volume = React.memo(({ audioRef }) => {
                 max="100"
                 step="1"
                 value={value}
-                onChange={(e) => dispatch(setVolume({volume: e.target.value }))}
+                onChange={(e) => dispatch(setVolume({ volume: +e.target.value }))}
                 className="range"
             />
             <div className={mute ? "volume__level volume__leve_mute" : "volume__level"}></div>

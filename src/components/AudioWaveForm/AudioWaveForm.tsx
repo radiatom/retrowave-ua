@@ -1,11 +1,11 @@
-import React from "react";
+import React, { FC } from "react";
 import { useRef, useEffect } from "react";
 import useSize from "./useSize";
 import "./canvas.scss";
 
 // Ця функція приймає аудіодані, аналізує їх і генерує хвилю
 // який візуалізується на елементі canvas.
-function animateBars(analyser, canvas, canvasCtx, dataArray, bufferLength) {
+const animateBars=(analyser, canvas, canvasCtx, dataArray, bufferLength)=> {
     // Аналізуйте аудіодані за допомогою методу `getByteFrequencyData` API веб-аудіо.
     analyser.getByteFrequencyData(dataArray);
 
@@ -16,14 +16,14 @@ function animateBars(analyser, canvas, canvasCtx, dataArray, bufferLength) {
     const HEIGHT = canvas.height / 2;
 
     // Розраховуємо ширину кожного стовпчика у хвилі на основі ширини полотна та довжини буфера.
-    var barWidth = Math.ceil(canvas.width / bufferLength) * 2.5;
+    const barWidth = Math.ceil(canvas.width / bufferLength) * 2.5;
 
     // Ініціалізація змінних для висоти смужки та x-позиції.
     let barHeight;
     let x = 0;
 
     // Перегляд кожного елемента в `dataArray`.
-    for (var i = 0; i < bufferLength; i++) {
+    for (let i = 0; i < bufferLength; i++) {
         // Обчислити висоту поточної панелі на основі аудіоданих і висоти полотна.
         barHeight = (dataArray[i] / 255) * HEIGHT;
         const blueShade = Math.floor((dataArray[i] / 255) * 5); // генерувати відтінок синього на основі аудіовходу *5 це буде більше останього відтінку
@@ -41,8 +41,12 @@ function animateBars(analyser, canvas, canvasCtx, dataArray, bufferLength) {
         x += barWidth + 1;
     }
 }
+
+type AudioWaveFormPropstype={
+    analyzerData:React.Dispatch<React.SetStateAction<object>>
+}
 // Component to render the waveform
-const AudioWaveForm = React.memo(({ analyzerData }) => {
+const AudioWaveForm:FC<AudioWaveFormPropstype> = React.memo(({ analyzerData }) => {
     // Посилання на елемент canvas
     const canvasRef = useRef(null);
     const { dataArray, analyzer, bufferLength } = analyzerData;

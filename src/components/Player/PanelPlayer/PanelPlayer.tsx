@@ -1,24 +1,34 @@
-import React, { useEffect, useState } from "react";
+import React, { FC, useEffect} from "react";
 import "./PanelPlayer.scss";
 import Cassette from "./Cassette/Cassette";
+import { trackType } from "../../../reduxToolkit/reducer";
 
-const PanelPlayer = React.memo(({ music, prev, next, position, audioRef, setAnaliz, setPlay, play }) => {
-    const audio = audioRef.current;
+type PanelPlayerPropsType={
+    music:trackType
+    prev: () => void;
+    next: () => void;
+    position: number;
+    play: boolean;
+    setPlay: React.Dispatch<React.SetStateAction<boolean>>;
+    audioRef: React.RefObject<HTMLMediaElement>;
+    setAnaliz: React.Dispatch<React.SetStateAction<boolean>>;
+}
+const PanelPlayer:FC<PanelPlayerPropsType> = React.memo(({ music, prev, next, position, audioRef, setAnaliz, setPlay, play }) => {
     
     const clickPlay = () => {
-        if (play) {
+        if(audioRef.current){if (play) {
             setPlay(false); //стиль плеєра який не грає
-            audio.pause();
+            audioRef.current.pause();
         } else {
             setAnaliz(true);
             setPlay(true); //стиль плеєра який грає
-            audio.play();
-        }
+            audioRef.current.play();
+        }}
     };
     
     useEffect(() => {
-        if (play) {
-            audio.play();
+        if (play&&audioRef.current) {
+            audioRef.current.play();
         }
     }, [play, music]); // Відтворити музику при зміні об'єкту music
     return (
@@ -40,7 +50,7 @@ const PanelPlayer = React.memo(({ music, prev, next, position, audioRef, setAnal
                             ? "panelPlayer__button panelButton panelButton_pause"
                             : "panelPlayer__button panelButton panelButton_play"
                     }
-                    autoFocus="yes"
+                    autoFocus={true}
                 ></button>
                 <button onClick={next} className="panelPlayer__button panelButton panelButton_next"></button>
             </div>

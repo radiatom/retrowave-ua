@@ -1,22 +1,26 @@
-import React, { useRef, useState } from "react";
+import React, { FC, useRef, useState } from "react";
 import "./Cassette.scss";
 import { useDispatch, useSelector } from "react-redux";
-import { nameCurrentListPlayerSelector, namesPlayerPlaylistsSelector } from "./../../../../selectorApp";
+import { nameCurrentListPlayerSelector, namesPlayerPlaylistsSelector } from "../../../../selectorApp";
 import download from "./../../../../assets/img/icons/downloadMp3.svg";
 import list from "./../../../../assets/img/icons/man.png";
 import randomImg from "./../../../../assets/img/icons/random.png";
 import ratingImg from "./../../../../assets/img/icons/rating.png";
 import defaultImg from "./../../../../assets/img/icons/default.png";
 import { useEffect } from "react";
-import { createPlayerList, setPosition } from "./../../../../reduxToolkit/reducer";
+import { createPlayerList, setPosition, trackType } from "../../../../reduxToolkit/reducer";
 
-const Cassette = React.memo(({ music, play }) => {
+type CassettePropsType = {
+    music: trackType;
+    play: boolean;
+};
+const Cassette: FC<CassettePropsType> = React.memo(({ music, play }) => {
     const dispatch = useDispatch();
     const nameCurrentListPlayer = useSelector(nameCurrentListPlayerSelector);
     const namesPlaylists = useSelector(namesPlayerPlaylistsSelector);
     const [openDownloadSpoiler, setOpenDownloadSpoiler] = useState(false);
     const [openList, setOpenList] = useState(false);
-    const caseteListRef=useRef(null)
+    const caseteListRef = useRef(null);
     const [style, setStyle] = useState({ top: `0px` });
 
     if (openList === true) {
@@ -49,20 +53,22 @@ const Cassette = React.memo(({ music, play }) => {
         setOpenList(!openList);
     };
 
-    const clickListIcon = (name) => {
+    const clickListIcon = (name: string) => {
         dispatch(createPlayerList({ name }));
         dispatch(setPosition({ position: 0 }));
         setOpenList(false);
     };
 
     useEffect(() => {
-        const hight = caseteListRef.current.offsetHeight;
-        setStyle({ top: `-${hight}px` });
+        if (caseteListRef.current) {
+            setStyle({ top: `-${caseteListRef.current.offsetHeight}px` });
+        }
     }, [namesPlaylists]);
     useEffect(() => {
-        const hight = caseteListRef.current.offsetHeight;
-        setStyle({ top: `-${hight}px` });
-    },[]);
+        if (caseteListRef.current) {
+            setStyle({ top: `-${caseteListRef.current.offsetHeight}px` });
+        }
+    }, []);
     return (
         <div className={play ? "cassette play" : "cassette"}>
             <img
@@ -71,7 +77,7 @@ const Cassette = React.memo(({ music, play }) => {
                 src={ico()}
                 alt="list"
             />
-            <div className="cassette__list" style={openList ? style : { top: "0px" }}  ref={caseteListRef}>
+            <div className="cassette__list" style={openList ? style : { top: "0px" }} ref={caseteListRef}>
                 <img onClick={() => clickListIcon("Random")} src={randomImg} alt="randomImg" />
                 <img onClick={() => clickListIcon("Rating")} src={ratingImg} alt="ratingImg" />
                 <img onClick={() => clickListIcon("Default")} src={defaultImg} alt="defaultImg" />

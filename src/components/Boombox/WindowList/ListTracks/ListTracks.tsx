@@ -1,6 +1,6 @@
 import React, { FC, useEffect } from "react";
 import "./ListTracks.scss";
-import Track from "./Track/Track";
+import Track from "./Track/Track.tsx";
 import { useDispatch } from "react-redux";
 import { dataType, setPageNumber } from "../../../../reduxToolkit/reducer";
 
