@@ -8,6 +8,7 @@ import {
     timeToMilliseconds,
 } from "./function";
 import { dataType } from "./reduxToolkit/reducer";
+import { addNewTrackToServer, getData, serverDataType } from "./server";
 
 describe("testing fn newTimeForBoombox ", () => {
     it("return string:000 from number:0", () => {
@@ -40,7 +41,7 @@ describe("testing fn capitalizeFirstLetter", () => {
 });
 
 describe("testing fn updateValueById", () => {
-    const data: dataType = [
+    const array: dataType = [
         {
             id: "0",
             title: "Electric Youth – WeAreTheYouth",
@@ -70,7 +71,7 @@ describe("testing fn updateValueById", () => {
         },
     ];
     it("update rating by id", () => {
-        expect(updateValueById(data, "5d4ca036e66f3ae771c008e56b111d116f7142cb", 4)).toStrictEqual([
+        expect(updateValueById(array, "5d4ca036e66f3ae771c008e56b111d116f7142cb", 4)).toStrictEqual([
             {
                 id: "0",
                 title: "Electric Youth – WeAreTheYouth",
@@ -114,5 +115,17 @@ describe("testing fn containsLatinAndDigits", () => {
 describe("testing fn timeToMilliseconds", () => {
     it("return miliseconds from the format: string:4:46", () => {
         expect(timeToMilliseconds("4:46")).toBe(286000);
+    });
+});
+
+describe("testing fn addNewTrackToServer from file server.ts", () => {
+    it("add new track to the beginning of the array", () => {
+        addNewTrackToServer("Telaviv Skeler", "2:09", "8");
+        const updatedData: serverDataType = getData();
+        const newTrack = updatedData.find((track) => track.title === "Telaviv Skeler");
+        expect(newTrack).toBeDefined(); // Переконайтеся, що трек існує
+        expect(newTrack?.duration).toBe(129000); // Перевірте, чи правильно встановлено тривалість
+        expect(newTrack?.streamUrl).toBe("/audio/8.mp3"); // Перевірте, чи правильно встановлено URL потоку
+        expect(newTrack?.artworkUrl).toBe("/artwork/8.jpg"); // Перевірте, чи правильно встановлено URL потоку
     });
 });

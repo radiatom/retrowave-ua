@@ -2203,7 +2203,7 @@ export const data: serverDataType = [
 export const getData = () => {
     return data;
 };
-const addNewTrack = (title: string, duration: string, nameFile: string) => {
+export const addNewTrackToServer = (title: string, duration: string, nameFile: string) => {
     const newLength: number = data.length + 1;
     data.unshift({
         id: newLength.toString(),
@@ -2213,11 +2213,11 @@ const addNewTrack = (title: string, duration: string, nameFile: string) => {
         artworkUrl: `/artwork/${nameFile}.jpg`,
     });
 };
-addNewTrack("Dangerous Feelings - Mahuia Bridgman Cooper", "2:56", "4");
-addNewTrack("Gesaffelstein – Aleph", "4:46", "3");
-addNewTrack("Telaviv Skeler", "2:09", "8");
-addNewTrack("Shadow in the Cloud Mahuia Bridgman", "2:26", "7");
-addNewTrack("You Don t Know How Far I ll Go - Mahuia Bridgman Cooper", "2:23", "5");
-addNewTrack("Mahuia Bridgman-Cooper - Shadow in the Cloud", "6:13", "6");
+addNewTrackToServer("Dangerous Feelings - Mahuia Bridgman Cooper", "2:56", "4");
+addNewTrackToServer("Gesaffelstein – Aleph", "4:46", "3");
+addNewTrackToServer("Telaviv Skeler", "2:09", "8");
+addNewTrackToServer("Shadow in the Cloud Mahuia Bridgman", "2:26", "7");
+addNewTrackToServer("You Don t Know How Far I ll Go - Mahuia Bridgman Cooper", "2:23", "5");
+addNewTrackToServer("Mahuia Bridgman-Cooper - Shadow in the Cloud", "6:13", "6");
 
 //функції для нових пісень з респонса

@@ -49,5 +49,3 @@ export const timeToMilliseconds = (timeString:string):number => {
     const totalMilliseconds = parseInt(minutes) * 60 * 1000 + parseInt(seconds) * 1000;
     return totalMilliseconds;
 }; //4:46 в мілісекунди
-
-
