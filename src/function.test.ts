@@ -124,6 +124,7 @@ describe("testing fn addNewTrackToServer from file server.ts", () => {
         const updatedData: serverDataType = getData();
         const newTrack = updatedData.find((track) => track.title === "Telaviv Skeler");
         expect(newTrack).toBeDefined(); // Переконайтеся, що трек існує
+        expect(newTrack?.id).toBe(updatedData.length+'');
         expect(newTrack?.duration).toBe(129000); // Перевірте, чи правильно встановлено тривалість
         expect(newTrack?.streamUrl).toBe("/audio/8.mp3"); // Перевірте, чи правильно встановлено URL потоку
         expect(newTrack?.artworkUrl).toBe("/artwork/8.jpg"); // Перевірте, чи правильно встановлено URL потоку
