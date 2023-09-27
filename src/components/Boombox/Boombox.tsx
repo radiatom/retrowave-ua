@@ -4,7 +4,7 @@ import CassetteBoombox from "./CassetteBoombox/CassetteBoombox";
 import Panel from "../Panel/Panel";
 import ValueBoombox from "./ValueBoombox/ValueBoombox";
 // import SoundLevel from "./SoundLevel/SoundLevel";
-import WindowList from "./WindowList/WindowList.tsx";
+import WindowList from "./WindowList/WindowList";
 import { listSelector, openListNameSelector } from "../../selectorApp";
 import { useSelector } from "react-redux";
 import { newTimeForBoombox } from "../../function";
