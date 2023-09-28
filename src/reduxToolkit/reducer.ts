@@ -114,13 +114,10 @@ const reducer = createSlice({
             state.volume = action.payload.volume;
         },
         setRating(state, action: SetRatingAction) {
-            const updatedTotalMusicList = updateValueById(state.DefaultList, action.payload.id, action.payload.rating); //шукаємо обєкт по айді , змінюємо його рейтинг, та вертаємо новий масив з новими данними
-
-            const updatedRatingList = [...updatedTotalMusicList];
-            updatedRatingList.sort((a, b) => b.rating - a.rating); //відразу сортуємо по рейтингу
-
-            const updatedRandomList = updateValueById(state.RandomList, action.payload.id, action.payload.rating); //шукаємо обєкт по айді , змінюємо його рейтинг, та вертаємо новий масив з новими данними
             const updatedDefaultList = updateValueById(state.DefaultList, action.payload.id, action.payload.rating); //шукаємо обєкт по айді , змінюємо його рейтинг, та вертаємо новий масив з новими данними
+            const updatedRatingList = [...updatedDefaultList];
+            updatedRatingList.sort((a, b) => b.rating - a.rating); //відразу сортуємо по рейтингу
+            const updatedRandomList = updateValueById(state.RandomList, action.payload.id, action.payload.rating); //шукаємо обєкт по айді , змінюємо його рейтинг, та вертаємо новий масив з новими данними
             const updatedleftList =
                 state.openListName.left === "Rating"
                     ? updatedRatingList
@@ -131,9 +128,8 @@ const reducer = createSlice({
                     ? updatedRatingList
                     : updateValueById(state.list.right, action.payload.id, action.payload.rating); //якщо відкритий плейлист 'рейтинг' тоді добавити відсортований масив треків по рейтингу, якщо відкритий якийсь інший плейлист то просто оновити рейтинг однієї пісні
 
-            state.DefaultList = updatedTotalMusicList;
-            state.RandomList = updatedRandomList;
             state.DefaultList = updatedDefaultList;
+            state.RandomList = updatedRandomList;
             state.RatingList = updatedRatingList;
             state.music = { ...state.music, rating: action.payload.rating };
             state.list = {
