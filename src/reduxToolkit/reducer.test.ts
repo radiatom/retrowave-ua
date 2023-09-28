@@ -2,9 +2,14 @@ import { describe, expect, it } from "vitest";
 import reducer, {
     addMusic,
     addMusicList,
+    addNewList,
+    addTrackIntoList,
     createPlayerList,
     dataType,
+    deleteNewList,
     initialStateType,
+    setList,
+    setPageNumber,
     setPosition,
     setRating,
     setVolume,
@@ -39,7 +44,6 @@ const data: dataType = [
         streamUrl: "./../",
     },
 ];
-
 const state: initialStateType = {
     music: {},
     nameCurrentListPlayer: "",
@@ -57,6 +61,42 @@ const state: initialStateType = {
     },
     pageNumber: { left: 1, right: 1 },
     openListName: { left: "", right: "" },
+};
+const initialStateSetList: initialStateType = {
+    ...state,
+    DefaultList: [
+        {
+            id: "5d4ca036e66f3ae771c008e56b111d116f7142cb",
+            title: "DefaultList",
+            duration: 276000,
+            rating: 1,
+            idTrack: 2,
+            artworkUrl: "./../",
+            streamUrl: "./../",
+        },
+    ],
+    RatingList: [
+        {
+            id: "594ea8427e44a724a5ce1782c3d3dcf058735e1e",
+            title: "RatingList",
+            duration: 249000,
+            rating: 2,
+            idTrack: 3,
+            artworkUrl: "./../",
+            streamUrl: "./../",
+        },
+    ],
+    NewnameList: [
+        {
+            id: "48643145",
+            title: "NewnameList",
+            duration: 249000,
+            rating: 2,
+            idTrack: 3,
+            artworkUrl: "./../",
+            streamUrl: "./../",
+        },
+    ],
 };
 
 describe("reducer", () => {
@@ -154,6 +194,42 @@ describe("reducer", () => {
         };
         expect(reducer(initialState, action)).toEqual(expectState);
     });
+    it("test addMusic nameCurrentListPlayer:Random", () => {
+        const initialState: initialStateType = { ...state, nameCurrentListPlayer: "Random", RandomList: data };
+        const action = addMusic({ position: 1 });
+        const expectState: initialStateType = {
+            ...initialState,
+            numberOfTracks: 3,
+            music: {
+                id: "5d4ca036e66f3ae771c008e56b111d116f7142cb",
+                title: "Dynatron – 37 Million Horsepower",
+                duration: 276000,
+                rating: 1,
+                idTrack: 2,
+                artworkUrl: "./../",
+                streamUrl: "./../",
+            },
+        };
+        expect(reducer(initialState, action)).toEqual(expectState);
+    });
+    it("test addMusic nameCurrentListPlayer:Rating", () => {
+        const initialState: initialStateType = { ...state, nameCurrentListPlayer: "Rating", RatingList: data };
+        const action = addMusic({ position: 1 });
+        const expectState: initialStateType = {
+            ...initialState,
+            numberOfTracks: 3,
+            music: {
+                id: "5d4ca036e66f3ae771c008e56b111d116f7142cb",
+                title: "Dynatron – 37 Million Horsepower",
+                duration: 276000,
+                rating: 1,
+                idTrack: 2,
+                artworkUrl: "./../",
+                streamUrl: "./../",
+            },
+        };
+        expect(reducer(initialState, action)).toEqual(expectState);
+    });
     it("test setPosition ", () => {
         const initialState: initialStateType = state;
         const action = setPosition({ position: 80 });
@@ -227,7 +303,7 @@ describe("reducer", () => {
         ];
         const initialState: initialStateType = {
             ...state,
-            music:{
+            music: {
                 id: "5d4ca036e66f3ae771c008e56b111d116f7142cb",
                 title: "Dynatron – 37 Million Horsepower",
                 duration: 276000,
@@ -268,4 +344,237 @@ describe("reducer", () => {
         };
         expect(reducer(initialState, action)).toEqual(expectState);
     });
+    it("test setPageNumber position: left", () => {
+        const initialState: initialStateType = state;
+        const action = setPageNumber({ position: "left", number: 25 });
+        const expectState = { ...state, pageNumber: { left: 25, right: 1 } };
+        expect(reducer(initialState, action)).toEqual(expectState);
+    });
+    it("test setPageNumber position: right", () => {
+        const initialState: initialStateType = state;
+        const action = setPageNumber({ position: "right", number: 25 });
+        const expectState = { ...state, pageNumber: { left: 1, right: 25 } };
+        expect(reducer(initialState, action)).toEqual(expectState);
+    });
+    it("test setList position: left; typeList: Rating", () => {
+        const action = setList({ position: "left", typeList: "Rating" });
+        const expectState = {
+            ...initialStateSetList,
+            list: {
+                ...state.list,
+                left: [
+                    {
+                        id: "594ea8427e44a724a5ce1782c3d3dcf058735e1e",
+                        title: "RatingList",
+                        duration: 249000,
+                        rating: 2,
+                        idTrack: 3,
+                        artworkUrl: "./../",
+                        streamUrl: "./../",
+                    },
+                ],
+            },
+        };
+        expect(reducer(initialStateSetList, action)).toEqual(expectState);
+    });
+    it("test setList position: left; typeList: Default", () => {
+        const action = setList({ position: "left", typeList: "Default" });
+        const expectState = {
+            ...initialStateSetList,
+            list: {
+                ...state.list,
+                left: [
+                    {
+                        id: "5d4ca036e66f3ae771c008e56b111d116f7142cb",
+                        title: "DefaultList",
+                        duration: 276000,
+                        rating: 1,
+                        idTrack: 2,
+                        artworkUrl: "./../",
+                        streamUrl: "./../",
+                    },
+                ],
+            },
+        };
+        expect(reducer(initialStateSetList, action)).toEqual(expectState);
+    });
+    it("test setList position: left; typeList: Newname", () => {
+        const action = setList({ position: "left", typeList: "Newname" });
+        const expectState = {
+            ...initialStateSetList,
+            list: {
+                ...state.list,
+                left: [
+                    {
+                        id: "48643145",
+                        title: "NewnameList",
+                        duration: 249000,
+                        rating: 2,
+                        idTrack: 3,
+                        artworkUrl: "./../",
+                        streamUrl: "./../",
+                    },
+                ],
+            },
+        };
+        expect(reducer(initialStateSetList, action)).toEqual(expectState);
+    });
+    it("test setList position: right; typeList: Newname", () => {
+        const action = setList({ position: "right", typeList: "Newname" });
+        const expectState = {
+            ...initialStateSetList,
+            list: {
+                ...state.list,
+                right: [
+                    {
+                        id: "48643145",
+                        title: "NewnameList",
+                        duration: 249000,
+                        rating: 2,
+                        idTrack: 3,
+                        artworkUrl: "./../",
+                        streamUrl: "./../",
+                    },
+                ],
+            },
+        };
+        expect(reducer(initialStateSetList, action)).toEqual(expectState);
+    });
+    it("test setList position: right; typeList: Default", () => {
+        const action = setList({ position: "right", typeList: "Default" });
+        const expectState = {
+            ...initialStateSetList,
+            list: {
+                ...state.list,
+                right: [
+                    {
+                        id: "5d4ca036e66f3ae771c008e56b111d116f7142cb",
+                        title: "DefaultList",
+                        duration: 276000,
+                        rating: 1,
+                        idTrack: 2,
+                        artworkUrl: "./../",
+                        streamUrl: "./../",
+                    },
+                ],
+            },
+        };
+        expect(reducer(initialStateSetList, action)).toEqual(expectState);
+    });
+    it("test setList position: right; typeList: Rating", () => {
+        const action = setList({ position: "right", typeList: "Rating" });
+        const expectState = {
+            ...initialStateSetList,
+            list: {
+                ...state.list,
+                right: [
+                    {
+                        id: "594ea8427e44a724a5ce1782c3d3dcf058735e1e",
+                        title: "RatingList",
+                        duration: 249000,
+                        rating: 2,
+                        idTrack: 3,
+                        artworkUrl: "./../",
+                        streamUrl: "./../",
+                    },
+                ],
+            },
+        };
+        expect(reducer(initialStateSetList, action)).toEqual(expectState);
+    });
+    it("test addNewList", () => {
+        const initialState: initialStateType = state;
+        const action = addNewList({ newName: "New" });
+        expect(reducer(initialState, action).NewList).toStrictEqual([]);
+        expect(reducer(initialState, action).namesBoomboxPlaylists).toStrictEqual(["Default", "Rating", "Random", "New"]);
+    });
+    it("test deleteNewList", () => {
+        const initialState: initialStateType = {
+            ...state,
+            NewList: [],
+            namesBoomboxPlaylists: ["Default", "Rating", "Random", "New"],
+            namesPlayerPlaylists: ["Default", "Rating", "Random", "New"],
+        };
+        const action = deleteNewList({ name: "New" });
+        expect(reducer(initialState, action).NewList).toBe(undefined);
+        expect(reducer(initialState, action).namesBoomboxPlaylists).toStrictEqual(["Default", "Rating", "Random"]);
+        expect(reducer(initialState, action).namesPlayerPlaylists).toStrictEqual(["Default", "Rating", "Random"]);
+    });
+    it("test addTrackIntoList, add first track into newList", () => {
+        const initialState: initialStateType = { ...state, DefaultList: data, nameCurrentListPlayer: "Default", NewList: [] };
+        const action = addTrackIntoList({
+            currentList: "Default",
+            id: "5d4ca036e66f3ae771c008e56b111d116f7142cb",
+            intoList: "New",
+        });
+        const expectState: initialStateType = {
+            ...initialState,
+            namesPlayerPlaylists: ["Default", "Rating", "Random", "New"],
+            NewList: [
+                {
+                    id: "5d4ca036e66f3ae771c008e56b111d116f7142cb",
+                    title: "Dynatron – 37 Million Horsepower",
+                    duration: 276000,
+                    rating: 1,
+                    idTrack: 2,
+                    artworkUrl: "./../",
+                    streamUrl: "./../",
+                },
+            ],
+        };
+        expect(reducer(initialState, action)).toEqual(expectState);
+    });
+    it("test addTrackIntoList, add second track into newList", () => {
+        const initialState: initialStateType = {
+            ...state,
+            DefaultList: data,
+            nameCurrentListPlayer: "New",
+            namesPlayerPlaylists: ["Default", "Rating", "Random", "New"],
+            NewList: [
+                {
+                    id: "0",
+                    title: "Electric Youth – WeAreTheYouth",
+                    duration: 192000,
+                    rating: 3,
+                    idTrack: 1,
+                    artworkUrl: "./../",
+                    streamUrl: "./../",
+                },
+            ],
+        };
+        const action = addTrackIntoList({
+            currentList: "Default",
+            id: "5d4ca036e66f3ae771c008e56b111d116f7142cb",
+            intoList: "New",
+        });
+        const expectState: initialStateType = {
+            ...initialState,
+            numberOfTracks:2,
+            NewList: [
+                {
+                    id: "0",
+                    title: "Electric Youth – WeAreTheYouth",
+                    duration: 192000,
+                    rating: 3,
+                    idTrack: 1,
+                    artworkUrl: "./../",
+                    streamUrl: "./../",
+                },
+                {
+                    id: "5d4ca036e66f3ae771c008e56b111d116f7142cb",
+                    title: "Dynatron – 37 Million Horsepower",
+                    duration: 276000,
+                    rating: 1,
+                    idTrack: 2,
+                    artworkUrl: "./../",
+                    streamUrl: "./../",
+                },
+            ],
+        };
+        expect(reducer(initialState, action)).toEqual(expectState);
+    });
 });
+
+//toBe перевіряє, чи об'єкти є однаковими за посиланням. Іншими словами, цей метод перевіряє, чи це один і той же об'єкт або примітивне значення.
+//toStrictEqual перевіряє глибоку рівність об'єктів. Це означає, що він перевіряє значення об'єктів та їхню вкладеність.
+//toEqual також перевіряє глибоку рівність об'єктів, але це дозволяє їм бути в іншому порядку.

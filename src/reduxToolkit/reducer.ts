@@ -147,9 +147,6 @@ const reducer = createSlice({
                     state.pageNumber.right = action.payload.number;
                     break;
                 }
-                // default: {
-                //     state = state;
-                // }
             }
         },
         setList(state, action: SetListAction) {
@@ -209,12 +206,12 @@ const reducer = createSlice({
             state.namesBoomboxPlaylists = state.namesBoomboxPlaylists.filter((name: string) => name !== action.payload.name);
         },
         addTrackIntoList(state, action: AddTrackIntoListAction) {
-            const track = state[action.payload.currentList + "List"].find((item: trackType) => item.id === action.payload.id);
-            if (action.payload.intoList === state.nameCurrentListPlayer) {
+            const track = state[action.payload.currentList + "List"].find((item: trackType) => item.id === action.payload.id);//находимо трек в списку звідки добавляємо
+            if (action.payload.intoList === state.nameCurrentListPlayer) {//якщо список в який добавляємо відкритий в плеєрі
                 state.numberOfTracks = state[action.payload.intoList + "List"].length + 1; //для оновлення плеєва
-                state[action.payload.intoList + "List"].push(track);
+                state[action.payload.intoList + "List"].push(track);//добавляємо трек в вибраний список
             } else {
-                state[action.payload.intoList + "List"].push(track);
+                state[action.payload.intoList + "List"].push(track);//добавляємо трек в вибраний список
             }
             if (state[action.payload.intoList + "List"].length === 1) {
                 state.namesPlayerPlaylists.push(action.payload.intoList);
