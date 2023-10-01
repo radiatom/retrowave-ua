@@ -7,6 +7,7 @@ import reducer, {
     createPlayerList,
     dataType,
     deleteNewList,
+    deleteTrackWithList,
     initialStateType,
     setList,
     setPageNumber,
@@ -549,7 +550,7 @@ describe("reducer", () => {
         });
         const expectState: initialStateType = {
             ...initialState,
-            numberOfTracks:2,
+            numberOfTracks: 2,
             NewList: [
                 {
                     id: "0",
@@ -572,6 +573,96 @@ describe("reducer", () => {
             ],
         };
         expect(reducer(initialState, action)).toEqual(expectState);
+    });
+    it("test deleteTrackWithList, delete track with big Newlist.The track is playing in the player ", () => {
+        const initialState: initialStateType = {
+            ...state,
+            position: 1,
+            DefaultList: data,
+            nameCurrentListPlayer: "Default",
+            NewList: data,
+            music: {
+                id: "5d4ca036e66f3ae771c008e56b111d116f7142cb",
+                title: "Dynatron – 37 Million Horsepower",
+                duration: 276000,
+                rating: 1,
+                idTrack: 2,
+                artworkUrl: "./../",
+                streamUrl: "./../",
+            },
+        };
+        const action = () => {
+            deleteTrackWithList({ currentList: "New", id: "5d4ca036e66f3ae771c008e56b111d116f7142cb" });
+        };
+        const expectState: initialStateType = {
+            ...state,
+            position: 0,
+            music: {
+                id: "0",
+                title: "Electric Youth – WeAreTheYouth",
+                duration: 192000,
+                rating: 3,
+                idTrack: 1,
+                artworkUrl: "./../",
+                streamUrl: "./../",
+            },
+            NewList: [
+                {
+                    id: "0",
+                    title: "Electric Youth – WeAreTheYouth",
+                    duration: 192000,
+                    rating: 3,
+                    idTrack: 1,
+                    artworkUrl: "./../",
+                    streamUrl: "./../",
+                },
+                {
+                    id: "594ea8427e44a724a5ce1782c3d3dcf058735e1e",
+                    title: "Muscle – All My Ex's Died In Texas",
+                    duration: 249000,
+                    rating: 2,
+                    idTrack: 3,
+                    artworkUrl: "./../",
+                    streamUrl: "./../",
+                },
+            ],
+        };
+    });
+    it("test deleteTrackWithList, delete track with Newlist.Newlist have one treck. The track is playing in the player", () => {
+        const initialState: initialStateType = {
+            ...state,
+            namesPlayerPlaylists: ["Default", "Rating", "Random", "New"],
+            nameCurrentListPlayer: "New",
+            music: {
+                id: "5d4ca036e66f3ae771c008e56b111d116f7142cb",
+                title: "Dynatron – 37 Million Horsepower",
+                duration: 276000,
+                rating: 1,
+                idTrack: 2,
+                artworkUrl: "./../",
+                streamUrl: "./../",
+            },
+            NewList: [
+                {
+                    id: "5d4ca036e66f3ae771c008e56b111d116f7142cb",
+                    title: "Dynatron – 37 Million Horsepower",
+                    duration: 276000,
+                    rating: 1,
+                    idTrack: 2,
+                    artworkUrl: "./../",
+                    streamUrl: "./../",
+                },
+            ],
+        };
+        const action = () => {
+            deleteTrackWithList({ currentList: "New", id: "5d4ca036e66f3ae771c008e56b111d116f7142cb" });
+        };
+        const expectState: initialStateType = {
+            ...state,
+            NewList: [],
+            namesPlayerPlaylists: ["Default", "Rating", "Random"],
+            nameCurrentListPlayer: "Default",
+        };
     });
 });
 

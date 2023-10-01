@@ -279,8 +279,6 @@ export const addMusics = (): AddMusicsThunk => async (dispatch) => {
         idTrack: index + 1,
         artworkUrl: new URL(`${"/retrowave-ua" + track.artworkUrl}`, import.meta.url).href, //мій ля сервер
         streamUrl: new URL(`${"/retrowave-ua" + track.streamUrl}`, import.meta.url).href, //мій ля сервер
-        // artworkUrl:"https://retrowave.ru"+track.artworkUrl,
-        // streamUrl:"https://retrowave.ru"+track.streamUrl
     }));
     dispatch(addMusicList({ data: updatedData }));
     dispatch(addMusic({ position: 0 }));
@@ -332,7 +330,6 @@ export type SetListAction = PayloadAction<{
     position: string;
     typeList: string;
 }>;
-
 export type AddNewListAction = PayloadAction<{ newName: string }>;
 
 export type DeleteNewListAction = PayloadAction<{ name: string }>;
@@ -352,3 +349,4 @@ export type SetOpenListNameAction = PayloadAction<{
     position: string;
     name: string;
 }>;
+
