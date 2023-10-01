@@ -1,6 +1,6 @@
 import { allApi } from "../api/api";
 import { updateValueById } from "../function";
-import { Action, createSlice,PayloadAction, ThunkAction  } from "@reduxjs/toolkit";
+import { Action, createSlice, PayloadAction, ThunkAction } from "@reduxjs/toolkit";
 import { serverDataType } from "../server";
 
 export type pageNumberType = { left: number; right: number };
@@ -46,24 +46,26 @@ const reducer = createSlice({
     name: "toolkit",
     initialState: initialState,
     reducers: {
-        addMusicList(state, action:AddMusicListAction) {
+        addMusicList(state, action: AddMusicListAction) {
             state.DefaultList = action.payload.data;
         },
-        createPlayerList(state, action:CreatePlayerListAction ) {
+        createPlayerList(state, action: CreatePlayerListAction) {
             switch (action.payload.name) {
                 case "Default": {
                     state.nameCurrentListPlayer = "Default";
                     break;
                 }
                 case "Rating": {
-                    const newArray:dataType = [...state.DefaultList];
-                    newArray.sort((a, b) => b.rating - a.rating);
+                    const newArray: dataType = [...state.DefaultList];
+                    newArray.sort((a, b) => {
+                        return b.rating - a.rating;
+                    });
                     state.nameCurrentListPlayer = "Rating";
                     state.RatingList = newArray;
                     break;
                 }
                 case "Random": {
-                    const shuffledArray:dataType = [...state.DefaultList];
+                    const shuffledArray: dataType = [...state.DefaultList];
                     for (let i = shuffledArray.length - 1; i > 0; i--) {
                         const j = Math.floor(Math.random() * (i + 1));
                         [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
@@ -77,7 +79,7 @@ const reducer = createSlice({
                 }
             }
         },
-        addMusic(state, action:AddMusicAction ) {
+        addMusic(state, action: AddMusicAction) {
             switch (state.nameCurrentListPlayer) {
                 case "Random": {
                     state.music = state.RandomList[action.payload.position];
@@ -105,20 +107,17 @@ const reducer = createSlice({
                 }
             }
         },
-        setPosition(state, action:SetPositionAction ) {
+        setPosition(state, action: SetPositionAction) {
             state.position = action.payload.position;
         },
-        setVolume(state, action:SetVolumeAction ) {
+        setVolume(state, action: SetVolumeAction) {
             state.volume = action.payload.volume;
         },
-        setRating(state, action:SetRatingAction ) {
-            const updatedTotalMusicList = updateValueById(state.DefaultList, action.payload.id, action.payload.rating); //шукаємо обєкт по айді , змінюємо його рейтинг, та вертаємо новий масив з новими данними
-
-            const updatedRatingList = [...updatedTotalMusicList];
-            updatedRatingList.sort((a, b) => b.rating - a.rating); //відразу сортуємо по рейтингу
-
-            const updatedRandomList = updateValueById(state.RandomList, action.payload.id, action.payload.rating); //шукаємо обєкт по айді , змінюємо його рейтинг, та вертаємо новий масив з новими данними
+        setRating(state, action: SetRatingAction) {
             const updatedDefaultList = updateValueById(state.DefaultList, action.payload.id, action.payload.rating); //шукаємо обєкт по айді , змінюємо його рейтинг, та вертаємо новий масив з новими данними
+            const updatedRatingList = [...updatedDefaultList];
+            updatedRatingList.sort((a, b) => b.rating - a.rating); //відразу сортуємо по рейтингу
+            const updatedRandomList = updateValueById(state.RandomList, action.payload.id, action.payload.rating); //шукаємо обєкт по айді , змінюємо його рейтинг, та вертаємо новий масив з новими данними
             const updatedleftList =
                 state.openListName.left === "Rating"
                     ? updatedRatingList
@@ -129,9 +128,8 @@ const reducer = createSlice({
                     ? updatedRatingList
                     : updateValueById(state.list.right, action.payload.id, action.payload.rating); //якщо відкритий плейлист 'рейтинг' тоді добавити відсортований масив треків по рейтингу, якщо відкритий якийсь інший плейлист то просто оновити рейтинг однієї пісні
 
-            state.DefaultList = updatedTotalMusicList;
-            state.RandomList = updatedRandomList;
             state.DefaultList = updatedDefaultList;
+            state.RandomList = updatedRandomList;
             state.RatingList = updatedRatingList;
             state.music = { ...state.music, rating: action.payload.rating };
             state.list = {
@@ -139,7 +137,7 @@ const reducer = createSlice({
                 right: updatedRightList,
             };
         },
-        setPageNumber(state, action:SetPageNumberAction ) {
+        setPageNumber(state, action: SetPageNumberAction) {
             switch (action.payload.position) {
                 case "left": {
                     state.pageNumber.left = action.payload.number;
@@ -149,12 +147,9 @@ const reducer = createSlice({
                     state.pageNumber.right = action.payload.number;
                     break;
                 }
-                // default: {
-                //     state = state;
-                // }
             }
         },
-        setList(state, action:SetListAction ) {
+        setList(state, action: SetListAction) {
             switch (action.payload.position) {
                 case "left": {
                     switch (action.payload.typeList) {
@@ -201,29 +196,29 @@ const reducer = createSlice({
                 //     state = state;
             }
         },
-        addNewList(state, action:AddNewListAction ) {
+        addNewList(state, action: AddNewListAction) {
             state[`${action.payload.newName}List`] = [];
             state.namesBoomboxPlaylists.push(action.payload.newName);
         },
-        deleteNewList(state, action:DeleteNewListAction ) {
+        deleteNewList(state, action: DeleteNewListAction) {
             delete state[action.payload.name + "List"]; // Видаляємо відповідний список
-            state.namesPlayerPlaylists = state.namesPlayerPlaylists.filter((name:string) => name !== action.payload.name);
-            state.namesBoomboxPlaylists = state.namesBoomboxPlaylists.filter((name:string) => name !== action.payload.name);
+            state.namesPlayerPlaylists = state.namesPlayerPlaylists.filter((name: string) => name !== action.payload.name);
+            state.namesBoomboxPlaylists = state.namesBoomboxPlaylists.filter((name: string) => name !== action.payload.name);
         },
-        addTrackIntoList(state, action:AddTrackIntoListAction ) {
-            const track = state[action.payload.currentList + "List"].find((item:trackType) => item.id === action.payload.id);
-            if (action.payload.intoList === state.nameCurrentListPlayer) {
+        addTrackIntoList(state, action: AddTrackIntoListAction) {
+            const track = state[action.payload.currentList + "List"].find((item: trackType) => item.id === action.payload.id);//находимо трек в списку звідки добавляємо
+            if (action.payload.intoList === state.nameCurrentListPlayer) {//якщо список в який добавляємо відкритий в плеєрі
                 state.numberOfTracks = state[action.payload.intoList + "List"].length + 1; //для оновлення плеєва
-                state[action.payload.intoList + "List"].push(track);
+                state[action.payload.intoList + "List"].push(track);//добавляємо трек в вибраний список
             } else {
-                state[action.payload.intoList + "List"].push(track);
+                state[action.payload.intoList + "List"].push(track);//добавляємо трек в вибраний список
             }
             if (state[action.payload.intoList + "List"].length === 1) {
                 state.namesPlayerPlaylists.push(action.payload.intoList);
             } //якщо щойно добавили перший трек в плейлист тоді відобразити назву плейлисталиста в списку плейлистівлистів плеєра
         },
-        deleteTrackWithList(state, action:DeleteTrackWithListAction ) {
-            const newList = state[action.payload.currentList + "List"].filter((item:trackType) => item.id !== action.payload.id);
+        deleteTrackWithList(state, action: DeleteTrackWithListAction) {
+            const newList = state[action.payload.currentList + "List"].filter((item: trackType) => item.id !== action.payload.id);
             if (action.payload.currentList === state.nameCurrentListPlayer) {
                 state.numberOfTracks = state[action.payload.currentList + "List"].length - 1; //для оновлення списку в плеєрі
                 state[action.payload.currentList + "List"] = newList;
@@ -232,7 +227,9 @@ const reducer = createSlice({
             }
             if (state[action.payload.currentList + "List"].length === 0) {
                 //коли в плейлисті нема треків
-                const newNamesPlayerPlaylists = state.namesPlayerPlaylists.filter((item:string) => item !== action.payload.currentList); //видаляємо назву плейлиста з списку відображення плейлистів в плеєрі
+                const newNamesPlayerPlaylists = state.namesPlayerPlaylists.filter(
+                    (item: string) => item !== action.payload.currentList
+                ); //видаляємо назву плейлиста з списку відображення плейлистів в плеєрі
                 state.namesPlayerPlaylists = newNamesPlayerPlaylists; //добавляємо відфільтрований масив назв плейлистів
                 if (action.payload.currentList === state.nameCurrentListPlayer) {
                     //якщо поточний плейлист який відтворює плеєр є такий що не потрібно відображати
@@ -247,7 +244,7 @@ const reducer = createSlice({
                 }
             }
         },
-        setOpenListName(state, action:SetOpenListNameAction ) {
+        setOpenListName(state, action: SetOpenListNameAction) {
             if (action.payload.position === "left") {
                 state.openListName = { ...state.openListName, left: action.payload.name };
             } else {
@@ -274,16 +271,14 @@ export const {
 } = reducer.actions;
 
 type AddMusicsThunk = ThunkAction<void, initialStateType, unknown, Action>;
-export const addMusics = ():AddMusicsThunk => async (dispatch) => {
+export const addMusics = (): AddMusicsThunk => async (dispatch) => {
     const data: serverDataType = await allApi.getAddMusics();
     const updatedData: dataType = data.map((track, index) => ({
         ...track,
         rating: 0,
         idTrack: index + 1,
-        artworkUrl: new URL(`${"/retrowave-ua" + track.artworkUrl}`, import.meta.url).href, //мій ля сервер 
+        artworkUrl: new URL(`${"/retrowave-ua" + track.artworkUrl}`, import.meta.url).href, //мій ля сервер
         streamUrl: new URL(`${"/retrowave-ua" + track.streamUrl}`, import.meta.url).href, //мій ля сервер
-        // artworkUrl:"https://retrowave.ru"+track.artworkUrl,
-        // streamUrl:"https://retrowave.ru"+track.streamUrl
     }));
     dispatch(addMusicList({ data: updatedData }));
     dispatch(addMusic({ position: 0 }));
@@ -303,16 +298,16 @@ export type actionsTypes =
     | AddTrackIntoListAction
     | DeleteTrackWithListAction
     | SetOpenListNameAction;
-    
+
 export type dataType = Array<trackType>;
 export type trackType = {
-    rating: number|undefined;
-    idTrack: number|undefined;
-    artworkUrl: string|undefined;
-    streamUrl: string|undefined;
-    id: string|undefined;
-    title: string|undefined;
-    duration: number|undefined;
+    rating: number | undefined;
+    idTrack: number | undefined;
+    artworkUrl: string | undefined;
+    streamUrl: string | undefined;
+    id: string | undefined;
+    title: string | undefined;
+    duration: number | undefined;
 };
 export type AddMusicListAction = PayloadAction<{ data: dataType }>;
 
@@ -327,32 +322,31 @@ export type SetVolumeAction = PayloadAction<{ volume: number }>;
 export type SetRatingAction = PayloadAction<{ id: string; rating: number }>;
 
 export type SetPageNumberAction = PayloadAction<{
-  position: string;
-  number: number;
+    position: string;
+    number: number;
 }>;
 
 export type SetListAction = PayloadAction<{
-  position: string;
-  typeList: string;
+    position: string;
+    typeList: string;
 }>;
-
 export type AddNewListAction = PayloadAction<{ newName: string }>;
 
 export type DeleteNewListAction = PayloadAction<{ name: string }>;
 
 export type AddTrackIntoListAction = PayloadAction<{
-  currentList: string;
-  id: string;
-  intoList: string;
+    currentList: string;
+    id: string;
+    intoList: string;
 }>;
 
 export type DeleteTrackWithListAction = PayloadAction<{
-  currentList: string;
-  id: string;
+    currentList: string;
+    id: string;
 }>;
 
 export type SetOpenListNameAction = PayloadAction<{
-  position: string;
-  name: string;
+    position: string;
+    name: string;
 }>;
 

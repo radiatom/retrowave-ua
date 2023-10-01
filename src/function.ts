@@ -8,7 +8,7 @@ export const newTime = (second:number):string => {
 
 export const newTimeForBoombox = (second:number):string => {
     return second.toString().padStart(3, "0");
-}; //функція для перетворення секунди в значення 000
+}; //функція для перетворення секунди в значення "000"
 
 export const capitalizeFirstLetter = (str:string):string => {
     if (str.length === 0) {
@@ -49,5 +49,3 @@ export const timeToMilliseconds = (timeString:string):number => {
     const totalMilliseconds = parseInt(minutes) * 60 * 1000 + parseInt(seconds) * 1000;
     return totalMilliseconds;
 }; //4:46 в мілісекунди
-
-
